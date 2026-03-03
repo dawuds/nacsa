@@ -1,0 +1,139 @@
+{
+  "s49": {
+    "sectionId": "s49",
+    "part": "VII",
+    "title": "Obligation of secrecy",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "Information acquired under the Act must be kept confidential; unauthorized disclosure is a criminal offence.",
+      "requirements": [
+        {
+          "id": "s49-L1",
+          "requirement": "Ensure all persons performing functions under the Act maintain strict confidentiality of information acquired in the course of those functions",
+          "rationale": "Breach of secrecy carries RM500,000/10 years — one of the highest penalties under the Act",
+          "owner": "All Staff with Act-related functions",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s49",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s49-L2",
+          "requirement": "Only disclose Act-related information for permitted purposes: purposes of the Act, civil/criminal proceedings, or with written CE consent",
+          "rationale": "Three narrow exceptions define the boundaries of permitted disclosure",
+          "owner": "Compliance Officer",
+          "frequency": "Per-disclosure",
+          "priority": "Critical",
+          "source": "s49",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical controls for protecting Act-related information.",
+      "requirements": [
+        {
+          "id": "s49-T1",
+          "requirement": "Implement information classification and handling procedures for Act-related data (incident reports, risk assessments, audit results, threat intelligence), with access restricted to authorized personnel",
+          "rationale": "Technical controls must enforce the secrecy obligation across all systems and channels",
+          "owner": "IT Security Team",
+          "frequency": "Continuous",
+          "priority": "High",
+          "source": "s49",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance framework for secrecy obligations.",
+      "requirements": [
+        {
+          "id": "s49-G1",
+          "requirement": "Include Act secrecy obligations in staff training, employment contracts, and NDA arrangements for all personnel with access to Act-related information",
+          "rationale": "Staff awareness and contractual commitments are the first line of defence against unauthorized disclosure",
+          "owner": "HR / Legal",
+          "frequency": "On-boarding + annual refresh",
+          "priority": "High",
+          "source": "s49",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s52": {
+    "sectionId": "s52",
+    "part": "VII",
+    "title": "Offences by body corporate",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "Directors and officers face personal criminal liability for corporate offences unless they prove due diligence. Corporate fines may be multiplied by 10x.",
+      "requirements": [
+        {
+          "id": "s52-L1",
+          "requirement": "Directors, CEO, COO, managers and officers must be able to demonstrate that they exercised all due diligence to prevent the commission of any offence by the body corporate",
+          "rationale": "Reverse burden of proof — officers are deemed to have committed the offence unless they can prove due diligence and lack of knowledge/consent/connivance",
+          "owner": "Board / C-Suite",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s52",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s52-L2",
+          "requirement": "Maintain evidence of board-level engagement with NCII compliance, including meeting minutes, compliance reports reviewed, decisions made, and resources allocated",
+          "rationale": "Due diligence defence requires demonstrable evidence of active governance, not passive awareness",
+          "owner": "Company Secretary",
+          "frequency": "Per board meeting",
+          "priority": "Critical",
+          "source": "s52",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No direct technical requirements; s52 is a liability provision.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Board governance framework to support due diligence defence.",
+      "requirements": [
+        {
+          "id": "s52-G1",
+          "requirement": "Establish a Board Cyber Security Committee or assign NCII compliance oversight to an existing board committee with regular reporting cadence",
+          "rationale": "Structured board oversight is the foundation of a credible due diligence defence under s52",
+          "owner": "Board Chairman",
+          "frequency": "Quarterly minimum",
+          "priority": "Critical",
+          "source": "s52",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s52-G2",
+          "requirement": "Ensure adequate resources (budget, staffing, tools) are allocated for NCII compliance, with board-approved budget for cyber security risk treatment",
+          "rationale": "Demonstrating resource allocation is key evidence of due diligence by directors",
+          "owner": "Board / CFO",
+          "frequency": "Annual (budget cycle)",
+          "priority": "Critical",
+          "source": "s52",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  }
+}

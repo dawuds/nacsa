@@ -1,0 +1,70 @@
+{
+  "description": "Mappings from Cyber Security Act 2024 (Act 854) provisions to subsidiary regulations",
+  "lastUpdated": "2024-12-31",
+  "mappings": [
+    {
+      "section": "s21",
+      "sectionTitle": "Cyber security risk assessment",
+      "regulation": "Cyber Security (Risk Assessment and Audit) Regulations 2024",
+      "regulationId": "risk-assessment-and-audit",
+      "relationship": "prescribes",
+      "details": "Prescribes risk assessment methodology, frequency (not exceeding 12 months), approved assessor requirements, submission timelines, and report format"
+    },
+    {
+      "section": "s23",
+      "sectionTitle": "Cyber security audit",
+      "regulation": "Cyber Security (Risk Assessment and Audit) Regulations 2024",
+      "regulationId": "risk-assessment-and-audit",
+      "relationship": "prescribes",
+      "details": "Prescribes audit scope, frequency, approved auditor qualifications, submission timelines, and report format"
+    },
+    {
+      "section": "s26",
+      "sectionTitle": "Notification of cyber security incident",
+      "regulation": "Cyber Security (Notification of Cyber Security Incident) Regulations 2024",
+      "regulationId": "notification-of-incident",
+      "relationship": "prescribes",
+      "details": "Prescribes notification form, required information fields, definition of 'significant impact', notification timelines for non-significant incidents, and follow-up reporting requirements"
+    },
+    {
+      "section": "s28",
+      "sectionTitle": "Licensing of cyber security service providers",
+      "regulation": "Cyber Security (Licensing of Cyber Security Service Providers) Regulations 2024",
+      "regulationId": "licensing",
+      "relationship": "prescribes",
+      "details": "Prescribes application form, qualification requirements, licence conditions, fee schedule, renewal procedure, and classes of cyber security services requiring licensing"
+    },
+    {
+      "section": "s29",
+      "sectionTitle": "Duration and renewal of licence",
+      "regulation": "Cyber Security (Licensing of Cyber Security Service Providers) Regulations 2024",
+      "regulationId": "licensing",
+      "relationship": "prescribes",
+      "details": "Prescribes renewal application form and fees"
+    },
+    {
+      "section": "s31",
+      "sectionTitle": "Register of licensees",
+      "regulation": "Cyber Security (Licensing of Cyber Security Service Providers) Regulations 2024",
+      "regulationId": "licensing",
+      "relationship": "prescribes",
+      "details": "Prescribes register particulars and public access arrangements"
+    },
+    {
+      "section": "s54",
+      "sectionTitle": "Compounding of offences",
+      "regulation": "Cyber Security (Compounding of Offences) Regulations 2024",
+      "regulationId": "compounding-of-offences",
+      "relationship": "prescribes",
+      "details": "Prescribes which offences are compoundable and the compound amount calculation method (up to 50% of maximum fine)"
+    },
+    {
+      "section": "s60",
+      "sectionTitle": "Power to make regulations",
+      "regulation": "All subsidiary regulations",
+      "regulationId": null,
+      "relationship": "enables",
+      "details": "Enabling provision under which all four subsidiary regulations are made"
+    }
+  ]
+}

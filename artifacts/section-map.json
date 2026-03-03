@@ -1,0 +1,644 @@
+{
+  "sectionToArtifacts": {
+    "s15": [
+      "directive-compliance-tracker",
+      "regulatory-change-report"
+    ],
+    "s17": [
+      "ncii-cybersecurity-policy",
+      "asset-management-policy",
+      "ncii-registration-procedure",
+      "ncii-asset-register",
+      "network-diagram-register",
+      "asset-discovery-logs"
+    ],
+    "s18": [
+      "ncii-cybersecurity-policy",
+      "access-control-policy",
+      "risk-management-policy",
+      "information-classification-policy",
+      "acceptable-use-policy",
+      "change-management-policy",
+      "bcdr-policy",
+      "vendor-security-policy",
+      "vulnerability-management-policy",
+      "encryption-policy",
+      "network-security-policy",
+      "physical-security-policy",
+      "awareness-training-policy",
+      "asset-management-policy",
+      "cloud-security-policy",
+      "data-protection-policy",
+      "supply-chain-security-policy",
+      "remote-access-policy",
+      "vulnerability-scanning-procedure",
+      "patch-management-procedure",
+      "access-provisioning-procedure",
+      "change-management-procedure",
+      "backup-recovery-procedure",
+      "threat-intelligence-procedure",
+      "bc-invocation-procedure",
+      "security-escalation-procedure",
+      "vendor-onboarding-procedure",
+      "key-management-procedure",
+      "security-baseline-procedure",
+      "awareness-training-procedure",
+      "security-config-baseline",
+      "network-segmentation-standard",
+      "endpoint-protection-standard",
+      "logging-monitoring-standard",
+      "authentication-standard",
+      "encryption-standard",
+      "secure-development-standard",
+      "cloud-security-standard",
+      "mobile-device-standard",
+      "wireless-security-standard",
+      "email-security-standard",
+      "api-security-standard",
+      "database-security-standard",
+      "web-application-standard",
+      "dns-security-standard",
+      "certificate-management-standard",
+      "iot-ot-security-standard",
+      "backup-standard",
+      "physical-security-standard",
+      "ncii-asset-register",
+      "vendor-register",
+      "access-rights-register",
+      "change-request-register",
+      "vulnerability-register",
+      "training-records-register",
+      "exception-register",
+      "bcp-register",
+      "encryption-key-inventory",
+      "certificate-inventory",
+      "network-diagram-register",
+      "data-classification-register",
+      "quarterly-board-report",
+      "annual-ncii-compliance-report",
+      "vulnerability-assessment-report",
+      "security-metrics-dashboard",
+      "threat-landscape-report",
+      "vendor-risk-report",
+      "bcdr-test-report",
+      "awareness-effectiveness-report",
+      "security-architecture-report",
+      "ce-submission-package",
+      "annual-awareness-report",
+      "cloud-posture-report",
+      "supply-chain-risk-report",
+      "security-event-logs",
+      "access-logs",
+      "change-management-logs",
+      "patch-deployment-logs",
+      "backup-verification-logs",
+      "vulnerability-scan-results",
+      "firewall-rule-logs",
+      "privilege-escalation-logs",
+      "authentication-logs",
+      "data-access-audit-trail",
+      "network-traffic-logs",
+      "email-gateway-logs",
+      "dns-query-logs",
+      "application-logs",
+      "database-activity-logs",
+      "physical-access-logs",
+      "configuration-change-logs",
+      "certificate-lifecycle-logs",
+      "asset-discovery-logs"
+    ],
+    "s21": [
+      "risk-management-policy",
+      "vulnerability-management-policy",
+      "risk-assessment-procedure",
+      "vulnerability-scanning-procedure",
+      "penetration-testing-procedure",
+      "risk-register",
+      "vulnerability-register",
+      "risk-assessment-report",
+      "pentest-report",
+      "vulnerability-assessment-report",
+      "security-architecture-report",
+      "ce-submission-package",
+      "vulnerability-scan-results"
+    ],
+    "s22": [
+      "audit-compliance-policy",
+      "audit-engagement-procedure",
+      "audit-findings-register",
+      "annual-ncii-compliance-report",
+      "audit-report",
+      "compliance-gap-report",
+      "ce-submission-package"
+    ],
+    "s23": [
+      "incident-response-policy",
+      "bcdr-policy",
+      "audit-compliance-policy",
+      "incident-notification-procedure",
+      "audit-engagement-procedure",
+      "incident-response-procedure",
+      "forensic-investigation-procedure",
+      "bc-invocation-procedure",
+      "security-escalation-procedure",
+      "logging-monitoring-standard",
+      "incident-classification-standard",
+      "incident-register",
+      "audit-findings-register",
+      "audit-report",
+      "post-incident-report",
+      "security-event-logs",
+      "incident-investigation-logs"
+    ],
+    "s24": [
+      "ncii-cybersecurity-policy",
+      "access-control-policy",
+      "change-management-policy",
+      "encryption-policy",
+      "network-security-policy",
+      "cloud-security-policy",
+      "remote-access-policy",
+      "cop-compliance-procedure",
+      "security-baseline-procedure",
+      "security-config-baseline",
+      "network-segmentation-standard",
+      "authentication-standard",
+      "encryption-standard",
+      "cloud-security-standard",
+      "api-security-standard",
+      "iot-ot-security-standard",
+      "cop-compliance-register",
+      "standards-compliance-tracker",
+      "compliance-gap-report",
+      "regulatory-change-report"
+    ],
+    "s25": [
+      "threat-intelligence-procedure",
+      "threat-intelligence-log",
+      "threat-landscape-report"
+    ],
+    "s26": [
+      "incident-response-policy",
+      "incident-notification-procedure",
+      "incident-response-procedure",
+      "incident-classification-standard",
+      "incident-register",
+      "incident-notification-report",
+      "post-incident-report"
+    ],
+    "s28": [
+      "vendor-security-policy",
+      "supply-chain-security-policy",
+      "vendor-onboarding-procedure",
+      "penetration-testing-procedure",
+      "vendor-register",
+      "licence-register",
+      "pentest-report",
+      "vendor-risk-report",
+      "supply-chain-risk-report"
+    ],
+    "s32": [
+      "licence-register"
+    ],
+    "s44": [
+      "forensic-investigation-procedure",
+      "incident-investigation-logs"
+    ],
+    "s49": [
+      "information-classification-policy",
+      "data-protection-policy",
+      "data-classification-register",
+      "data-access-audit-trail"
+    ],
+    "s57": [
+      "ncii-registration-procedure"
+    ]
+  },
+  "artifactToSections": {
+    "ncii-cybersecurity-policy": [
+      "s17",
+      "s18",
+      "s24"
+    ],
+    "incident-response-policy": [
+      "s23",
+      "s26"
+    ],
+    "access-control-policy": [
+      "s18",
+      "s24"
+    ],
+    "risk-management-policy": [
+      "s21",
+      "s18"
+    ],
+    "information-classification-policy": [
+      "s18",
+      "s49"
+    ],
+    "acceptable-use-policy": [
+      "s18"
+    ],
+    "change-management-policy": [
+      "s18",
+      "s24"
+    ],
+    "bcdr-policy": [
+      "s18",
+      "s23"
+    ],
+    "vendor-security-policy": [
+      "s18",
+      "s28"
+    ],
+    "vulnerability-management-policy": [
+      "s18",
+      "s21"
+    ],
+    "encryption-policy": [
+      "s18",
+      "s24"
+    ],
+    "network-security-policy": [
+      "s18",
+      "s24"
+    ],
+    "physical-security-policy": [
+      "s18"
+    ],
+    "awareness-training-policy": [
+      "s18"
+    ],
+    "asset-management-policy": [
+      "s17",
+      "s18"
+    ],
+    "cloud-security-policy": [
+      "s18",
+      "s24"
+    ],
+    "data-protection-policy": [
+      "s18",
+      "s49"
+    ],
+    "supply-chain-security-policy": [
+      "s18",
+      "s28"
+    ],
+    "audit-compliance-policy": [
+      "s22",
+      "s23"
+    ],
+    "remote-access-policy": [
+      "s18",
+      "s24"
+    ],
+    "ncii-registration-procedure": [
+      "s17",
+      "s57"
+    ],
+    "incident-notification-procedure": [
+      "s26",
+      "s23"
+    ],
+    "risk-assessment-procedure": [
+      "s21"
+    ],
+    "audit-engagement-procedure": [
+      "s22",
+      "s23"
+    ],
+    "cop-compliance-procedure": [
+      "s24"
+    ],
+    "vulnerability-scanning-procedure": [
+      "s18",
+      "s21"
+    ],
+    "patch-management-procedure": [
+      "s18"
+    ],
+    "access-provisioning-procedure": [
+      "s18"
+    ],
+    "change-management-procedure": [
+      "s18"
+    ],
+    "backup-recovery-procedure": [
+      "s18"
+    ],
+    "incident-response-procedure": [
+      "s23",
+      "s26"
+    ],
+    "forensic-investigation-procedure": [
+      "s23",
+      "s44"
+    ],
+    "threat-intelligence-procedure": [
+      "s25",
+      "s18"
+    ],
+    "bc-invocation-procedure": [
+      "s18",
+      "s23"
+    ],
+    "security-escalation-procedure": [
+      "s18",
+      "s23"
+    ],
+    "vendor-onboarding-procedure": [
+      "s18",
+      "s28"
+    ],
+    "key-management-procedure": [
+      "s18"
+    ],
+    "penetration-testing-procedure": [
+      "s21",
+      "s28"
+    ],
+    "security-baseline-procedure": [
+      "s18",
+      "s24"
+    ],
+    "awareness-training-procedure": [
+      "s18"
+    ],
+    "security-config-baseline": [
+      "s18",
+      "s24"
+    ],
+    "network-segmentation-standard": [
+      "s18",
+      "s24"
+    ],
+    "endpoint-protection-standard": [
+      "s18"
+    ],
+    "logging-monitoring-standard": [
+      "s18",
+      "s23"
+    ],
+    "authentication-standard": [
+      "s18",
+      "s24"
+    ],
+    "encryption-standard": [
+      "s18",
+      "s24"
+    ],
+    "secure-development-standard": [
+      "s18"
+    ],
+    "cloud-security-standard": [
+      "s18",
+      "s24"
+    ],
+    "mobile-device-standard": [
+      "s18"
+    ],
+    "wireless-security-standard": [
+      "s18"
+    ],
+    "email-security-standard": [
+      "s18"
+    ],
+    "api-security-standard": [
+      "s18",
+      "s24"
+    ],
+    "database-security-standard": [
+      "s18"
+    ],
+    "web-application-standard": [
+      "s18"
+    ],
+    "dns-security-standard": [
+      "s18"
+    ],
+    "certificate-management-standard": [
+      "s18"
+    ],
+    "iot-ot-security-standard": [
+      "s18",
+      "s24"
+    ],
+    "backup-standard": [
+      "s18"
+    ],
+    "physical-security-standard": [
+      "s18"
+    ],
+    "incident-classification-standard": [
+      "s23",
+      "s26"
+    ],
+    "ncii-asset-register": [
+      "s17",
+      "s18"
+    ],
+    "risk-register": [
+      "s21"
+    ],
+    "incident-register": [
+      "s23",
+      "s26"
+    ],
+    "audit-findings-register": [
+      "s22",
+      "s23"
+    ],
+    "cop-compliance-register": [
+      "s24"
+    ],
+    "vendor-register": [
+      "s18",
+      "s28"
+    ],
+    "access-rights-register": [
+      "s18"
+    ],
+    "change-request-register": [
+      "s18"
+    ],
+    "vulnerability-register": [
+      "s18",
+      "s21"
+    ],
+    "licence-register": [
+      "s28",
+      "s32"
+    ],
+    "directive-compliance-tracker": [
+      "s15"
+    ],
+    "standards-compliance-tracker": [
+      "s24"
+    ],
+    "training-records-register": [
+      "s18"
+    ],
+    "exception-register": [
+      "s18"
+    ],
+    "bcp-register": [
+      "s18"
+    ],
+    "encryption-key-inventory": [
+      "s18"
+    ],
+    "certificate-inventory": [
+      "s18"
+    ],
+    "network-diagram-register": [
+      "s17",
+      "s18"
+    ],
+    "data-classification-register": [
+      "s18",
+      "s49"
+    ],
+    "threat-intelligence-log": [
+      "s25"
+    ],
+    "quarterly-board-report": [
+      "s18"
+    ],
+    "annual-ncii-compliance-report": [
+      "s18",
+      "s22"
+    ],
+    "risk-assessment-report": [
+      "s21"
+    ],
+    "audit-report": [
+      "s22",
+      "s23"
+    ],
+    "incident-notification-report": [
+      "s26"
+    ],
+    "post-incident-report": [
+      "s26",
+      "s23"
+    ],
+    "pentest-report": [
+      "s21",
+      "s28"
+    ],
+    "vulnerability-assessment-report": [
+      "s18",
+      "s21"
+    ],
+    "security-metrics-dashboard": [
+      "s18"
+    ],
+    "threat-landscape-report": [
+      "s25",
+      "s18"
+    ],
+    "vendor-risk-report": [
+      "s18",
+      "s28"
+    ],
+    "bcdr-test-report": [
+      "s18"
+    ],
+    "awareness-effectiveness-report": [
+      "s18"
+    ],
+    "compliance-gap-report": [
+      "s22",
+      "s24"
+    ],
+    "security-architecture-report": [
+      "s18",
+      "s21"
+    ],
+    "ce-submission-package": [
+      "s18",
+      "s21",
+      "s22"
+    ],
+    "annual-awareness-report": [
+      "s18"
+    ],
+    "regulatory-change-report": [
+      "s15",
+      "s24"
+    ],
+    "cloud-posture-report": [
+      "s18"
+    ],
+    "supply-chain-risk-report": [
+      "s18",
+      "s28"
+    ],
+    "security-event-logs": [
+      "s18",
+      "s23"
+    ],
+    "access-logs": [
+      "s18"
+    ],
+    "change-management-logs": [
+      "s18"
+    ],
+    "incident-investigation-logs": [
+      "s23",
+      "s44"
+    ],
+    "patch-deployment-logs": [
+      "s18"
+    ],
+    "backup-verification-logs": [
+      "s18"
+    ],
+    "vulnerability-scan-results": [
+      "s18",
+      "s21"
+    ],
+    "firewall-rule-logs": [
+      "s18"
+    ],
+    "privilege-escalation-logs": [
+      "s18"
+    ],
+    "authentication-logs": [
+      "s18"
+    ],
+    "data-access-audit-trail": [
+      "s18",
+      "s49"
+    ],
+    "network-traffic-logs": [
+      "s18"
+    ],
+    "email-gateway-logs": [
+      "s18"
+    ],
+    "dns-query-logs": [
+      "s18"
+    ],
+    "application-logs": [
+      "s18"
+    ],
+    "database-activity-logs": [
+      "s18"
+    ],
+    "physical-access-logs": [
+      "s18"
+    ],
+    "configuration-change-logs": [
+      "s18"
+    ],
+    "certificate-lifecycle-logs": [
+      "s18"
+    ],
+    "asset-discovery-logs": [
+      "s17",
+      "s18"
+    ]
+  }
+}

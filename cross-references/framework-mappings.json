@@ -1,0 +1,469 @@
+{
+  "nistCsf": {
+    "frameworkName": "NIST Cybersecurity Framework 2.0",
+    "frameworkReference": "NIST CSF 2.0 (February 2024)",
+    "effectiveDate": "2024-02-26",
+    "mappings": [
+      {
+        "nacsaSection": "s17",
+        "nacsaName": "Designation of NCII entity",
+        "nistSubcategory": "GV.OC-01",
+        "nistName": "Organizational context for cybersecurity risk management is understood",
+        "similarity": "high",
+        "notes": "NCII designation requires understanding the organization's role in critical infrastructure, directly mapping to organizational context identification"
+      },
+      {
+        "nacsaSection": "s17",
+        "nacsaName": "Designation of NCII entity",
+        "nistSubcategory": "GV.OC-02",
+        "nistName": "Internal and external stakeholders are understood",
+        "similarity": "medium",
+        "notes": "Designation involves understanding the entity's relationship with sector leads and NACSA"
+      },
+      {
+        "nacsaSection": "s18",
+        "nacsaName": "Duties of NCII entity",
+        "nistSubcategory": "GV.OC-03",
+        "nistName": "Legal, regulatory, and contractual requirements are understood",
+        "similarity": "high",
+        "notes": "s18 creates comprehensive legal obligations that must be identified and managed"
+      },
+      {
+        "nacsaSection": "s18",
+        "nacsaName": "Duties of NCII entity",
+        "nistSubcategory": "GV.RM-01",
+        "nistName": "Risk management objectives are established and expressed",
+        "similarity": "high",
+        "notes": "s18(1)(a) duty to implement and maintain cyber security measures requires clear risk management objectives"
+      },
+      {
+        "nacsaSection": "s21",
+        "nacsaName": "Cyber security risk assessment",
+        "nistSubcategory": "GV.RM-02",
+        "nistName": "Risk appetite and tolerance statements are established",
+        "similarity": "medium",
+        "notes": "Risk assessment must inform organizational risk appetite, though the Act mandates the assessment rather than risk acceptance"
+      },
+      {
+        "nacsaSection": "s21",
+        "nacsaName": "Cyber security risk assessment",
+        "nistSubcategory": "ID.RA-01",
+        "nistName": "Vulnerabilities in assets are identified",
+        "similarity": "high",
+        "notes": "NCII risk assessment requires systematic vulnerability identification"
+      },
+      {
+        "nacsaSection": "s21",
+        "nacsaName": "Cyber security risk assessment",
+        "nistSubcategory": "ID.RA-02",
+        "nistName": "Cyber threat intelligence is received from information sharing forums",
+        "similarity": "medium",
+        "notes": "Risk assessment should be threat-informed; s25 threat sharing also contributes"
+      },
+      {
+        "nacsaSection": "s21",
+        "nacsaName": "Cyber security risk assessment",
+        "nistSubcategory": "ID.RA-03",
+        "nistName": "Internal and external threats are identified",
+        "similarity": "high",
+        "notes": "NCII risk assessment must cover both internal and external threat landscape"
+      },
+      {
+        "nacsaSection": "s21",
+        "nacsaName": "Cyber security risk assessment",
+        "nistSubcategory": "ID.RA-05",
+        "nistName": "Risks, threats, and vulnerabilities are used to determine likelihood and impact",
+        "similarity": "high",
+        "notes": "Direct alignment — risk assessment methodology combines threats, vulnerabilities, and impact"
+      },
+      {
+        "nacsaSection": "s17",
+        "nacsaName": "NCII asset identification",
+        "nistSubcategory": "ID.AM-01",
+        "nistName": "Inventories of hardware managed by the organization are maintained",
+        "similarity": "high",
+        "notes": "NCII designation and duties require comprehensive asset identification"
+      },
+      {
+        "nacsaSection": "s17",
+        "nacsaName": "NCII asset identification",
+        "nistSubcategory": "ID.AM-02",
+        "nistName": "Inventories of software, services, and systems managed by the organization are maintained",
+        "similarity": "high",
+        "notes": "NCII inventory must include software, services, and systems"
+      },
+      {
+        "nacsaSection": "s18",
+        "nacsaName": "Cyber security measures",
+        "nistSubcategory": "PR.AC-01",
+        "nistName": "Identities and credentials for authorized users, services, and hardware are managed",
+        "similarity": "high",
+        "notes": "Access control is a core component of the s18 duty to maintain cyber security measures"
+      },
+      {
+        "nacsaSection": "s18",
+        "nacsaName": "Cyber security measures",
+        "nistSubcategory": "PR.DS-01",
+        "nistName": "Data-at-rest is protected",
+        "similarity": "medium",
+        "notes": "Data protection is part of comprehensive cyber security measures for NCII"
+      },
+      {
+        "nacsaSection": "s18",
+        "nacsaName": "Cyber security measures",
+        "nistSubcategory": "PR.DS-02",
+        "nistName": "Data-in-transit is protected",
+        "similarity": "medium",
+        "notes": "Transit data protection required as part of cyber security measures"
+      },
+      {
+        "nacsaSection": "s26",
+        "nacsaName": "Incident notification",
+        "nistSubcategory": "DE.CM-01",
+        "nistName": "Networks and network services are monitored",
+        "similarity": "high",
+        "notes": "6-hour notification requires robust detection capability via continuous monitoring"
+      },
+      {
+        "nacsaSection": "s26",
+        "nacsaName": "Incident notification",
+        "nistSubcategory": "DE.AE-02",
+        "nistName": "Potentially adverse events are analyzed to better understand associated activities",
+        "similarity": "high",
+        "notes": "Incident classification for 'significant impact' determination requires event analysis"
+      },
+      {
+        "nacsaSection": "s26",
+        "nacsaName": "Incident notification",
+        "nistSubcategory": "RS.MA-01",
+        "nistName": "The incident response plan is executed in coordination with relevant third parties",
+        "similarity": "high",
+        "notes": "s26 notification to NACSA is a key third-party coordination element of incident response"
+      },
+      {
+        "nacsaSection": "s26",
+        "nacsaName": "Incident notification",
+        "nistSubcategory": "RS.CO-02",
+        "nistName": "Internal and external stakeholders are notified of incidents",
+        "similarity": "high",
+        "notes": "Direct mapping — s26 mandates external notification to CE/NACSA"
+      },
+      {
+        "nacsaSection": "s25",
+        "nacsaName": "Threat information sharing",
+        "nistSubcategory": "RS.CO-03",
+        "nistName": "Information is shared consistent with response plans",
+        "similarity": "high",
+        "notes": "s25 mandates sharing threat information that may affect other NCII"
+      },
+      {
+        "nacsaSection": "s23",
+        "nacsaName": "Cyber security audit",
+        "nistSubcategory": "GV.OC-04",
+        "nistName": "Critical objectives, capabilities, and services are understood",
+        "similarity": "medium",
+        "notes": "Audit scope must reflect understanding of critical objectives and services"
+      },
+      {
+        "nacsaSection": "s52",
+        "nacsaName": "Body corporate liability",
+        "nistSubcategory": "GV.RR-01",
+        "nistName": "Organizational leadership is responsible and accountable for cybersecurity risk",
+        "similarity": "high",
+        "notes": "s52 creates personal criminal liability for directors, directly enforcing leadership accountability"
+      }
+    ]
+  },
+  "iso27001": {
+    "frameworkName": "ISO/IEC 27001:2022 Information Security Management Systems",
+    "frameworkReference": "ISO/IEC 27001:2022",
+    "effectiveDate": "2022-10-25",
+    "mappings": [
+      {
+        "nacsaSection": "s17",
+        "nacsaName": "NCII entity designation",
+        "isoClause": "A.5.1",
+        "isoName": "Policies for information security",
+        "similarity": "high",
+        "notes": "Designation triggers requirement for NCII-specific information security policies"
+      },
+      {
+        "nacsaSection": "s17",
+        "nacsaName": "NCII asset identification",
+        "isoClause": "A.5.9",
+        "isoName": "Inventory of information and other associated assets",
+        "similarity": "high",
+        "notes": "NCII asset register directly maps to ISO asset inventory requirement"
+      },
+      {
+        "nacsaSection": "s18",
+        "nacsaName": "Duties of NCII entity",
+        "isoClause": "A.5.2",
+        "isoName": "Information security roles and responsibilities",
+        "similarity": "high",
+        "notes": "s18 duties require clear role assignment across the organization"
+      },
+      {
+        "nacsaSection": "s18",
+        "nacsaName": "Cyber security measures",
+        "isoClause": "A.8.1",
+        "isoName": "User endpoint devices",
+        "similarity": "medium",
+        "notes": "Endpoint protection is part of the comprehensive cyber security measures duty"
+      },
+      {
+        "nacsaSection": "s21",
+        "nacsaName": "Risk assessment",
+        "isoClause": "6.1.2",
+        "isoName": "Information security risk assessment",
+        "similarity": "high",
+        "notes": "Direct alignment — both require systematic risk assessment processes"
+      },
+      {
+        "nacsaSection": "s21",
+        "nacsaName": "Risk treatment",
+        "isoClause": "6.1.3",
+        "isoName": "Information security risk treatment",
+        "similarity": "high",
+        "notes": "Risk treatment plan requirement aligns with ISO risk treatment process"
+      },
+      {
+        "nacsaSection": "s23",
+        "nacsaName": "Cyber security audit",
+        "isoClause": "9.2",
+        "isoName": "Internal audit",
+        "similarity": "high",
+        "notes": "Both require periodic audits of the security management system"
+      },
+      {
+        "nacsaSection": "s23",
+        "nacsaName": "Audit and review",
+        "isoClause": "9.3",
+        "isoName": "Management review",
+        "similarity": "medium",
+        "notes": "Audit results feed management review; board reporting under s52 aligns"
+      },
+      {
+        "nacsaSection": "s26",
+        "nacsaName": "Incident notification",
+        "isoClause": "A.5.24",
+        "isoName": "Information security incident management planning and preparation",
+        "similarity": "high",
+        "notes": "6-hour notification requires robust incident management planning"
+      },
+      {
+        "nacsaSection": "s26",
+        "nacsaName": "Incident notification",
+        "isoClause": "A.5.25",
+        "isoName": "Assessment and decision on information security events",
+        "similarity": "high",
+        "notes": "Incident classification for 'significant impact' determination"
+      },
+      {
+        "nacsaSection": "s26",
+        "nacsaName": "Incident notification",
+        "isoClause": "A.5.26",
+        "isoName": "Response to information security incidents",
+        "similarity": "high",
+        "notes": "Incident response including mandatory notification to NACSA"
+      },
+      {
+        "nacsaSection": "s49",
+        "nacsaName": "Secrecy obligation",
+        "isoClause": "A.5.10",
+        "isoName": "Acceptable use of information and other associated assets",
+        "similarity": "medium",
+        "notes": "Secrecy obligation requires information use restrictions"
+      },
+      {
+        "nacsaSection": "s49",
+        "nacsaName": "Secrecy obligation",
+        "isoClause": "A.6.6",
+        "isoName": "Confidentiality or non-disclosure agreements",
+        "similarity": "high",
+        "notes": "NDAs needed to enforce s49 secrecy obligations on staff and contractors"
+      },
+      {
+        "nacsaSection": "s52",
+        "nacsaName": "Corporate governance",
+        "isoClause": "5.1",
+        "isoName": "Leadership and commitment",
+        "similarity": "high",
+        "notes": "Director liability provision drives top management commitment to security"
+      },
+      {
+        "nacsaSection": "s28",
+        "nacsaName": "Service provider licensing",
+        "isoClause": "A.5.19",
+        "isoName": "Information security in supplier relationships",
+        "similarity": "high",
+        "notes": "Licensing regime adds regulatory layer to supplier security management"
+      }
+    ]
+  },
+  "rmit": {
+    "frameworkName": "BNM Risk Management in Technology (RMiT)",
+    "frameworkReference": "BNM/RH/PD 028-100",
+    "effectiveDate": "2020-06-01",
+    "mappings": [
+      {
+        "nacsaSection": "s17",
+        "nacsaName": "NCII designation",
+        "rmitClause": "10.1",
+        "rmitName": "Critical systems identification",
+        "similarity": "high",
+        "notes": "Both require identification and classification of critical systems; RMiT's critical system definition aligns with NCII for financial sector"
+      },
+      {
+        "nacsaSection": "s18",
+        "nacsaName": "NCII duties",
+        "rmitClause": "10.18",
+        "rmitName": "Board oversight of technology risk",
+        "similarity": "high",
+        "notes": "Both require board-level oversight; RMiT prescribes specific board reporting requirements"
+      },
+      {
+        "nacsaSection": "s21",
+        "nacsaName": "Risk assessment",
+        "rmitClause": "10.7",
+        "rmitName": "Technology risk assessment",
+        "similarity": "high",
+        "notes": "Both mandate periodic risk assessments; RMiT specifies annual minimum frequency"
+      },
+      {
+        "nacsaSection": "s23",
+        "nacsaName": "Audit",
+        "rmitClause": "10.67",
+        "rmitName": "Technology audit",
+        "similarity": "high",
+        "notes": "Both mandate periodic audits by qualified auditors; RMiT specifies audit scope and frequency"
+      },
+      {
+        "nacsaSection": "s26",
+        "nacsaName": "Incident notification",
+        "rmitClause": "10.65",
+        "rmitName": "Incident reporting to BNM",
+        "similarity": "high",
+        "notes": "Both mandate incident notification; Act 854 adds 6-hour requirement on top of RMiT's existing BNM reporting"
+      },
+      {
+        "nacsaSection": "s28",
+        "nacsaName": "Service provider licensing",
+        "rmitClause": "10.49",
+        "rmitName": "Cloud and outsourcing governance",
+        "similarity": "medium",
+        "notes": "Act 854 licensing adds to RMiT's outsourcing due diligence requirements for security service providers"
+      },
+      {
+        "nacsaSection": "s24",
+        "nacsaName": "Standards compliance",
+        "rmitClause": "10.51",
+        "rmitName": "Security standards",
+        "similarity": "high",
+        "notes": "Both reference security standards compliance; banking sector must meet both RMiT and NACSA standards"
+      }
+    ]
+  },
+  "pdpa": {
+    "frameworkName": "Personal Data Protection Act 2010 (Act 709)",
+    "frameworkReference": "Act 709 (as amended by A1699)",
+    "effectiveDate": "2025-06-01",
+    "mappings": [
+      {
+        "nacsaSection": "s18",
+        "nacsaName": "Cyber security measures",
+        "pdpaSection": "s9",
+        "pdpaName": "Security Principle",
+        "similarity": "medium",
+        "notes": "PDPA's Security Principle requires security measures for personal data; Act 854 requires cyber security measures for NCII — overlapping where NCII processes personal data"
+      },
+      {
+        "nacsaSection": "s26",
+        "nacsaName": "Incident notification (6 hours)",
+        "pdpaSection": "s143A",
+        "pdpaName": "Data breach notification (72 hours)",
+        "similarity": "medium",
+        "notes": "Both mandate incident/breach notification but with different timelines (6h vs 72h) and recipients (NACSA vs JPDP). A cyber incident involving personal data breach may trigger both obligations"
+      },
+      {
+        "nacsaSection": "s49",
+        "nacsaName": "Secrecy obligation",
+        "pdpaSection": "s129A",
+        "pdpaName": "Cross-border transfer restrictions",
+        "similarity": "low",
+        "notes": "Different information protection objectives: s49 protects Act-related operational information; PDPA protects personal data. Both limit unauthorized disclosure"
+      },
+      {
+        "nacsaSection": "s52",
+        "nacsaName": "Corporate officer liability",
+        "pdpaSection": "s133",
+        "pdpaName": "Offences by body corporate",
+        "similarity": "high",
+        "notes": "Both create reverse-burden director liability with due diligence defence. Act 854 adds 10x corporate fine multiplier"
+      }
+    ]
+  },
+  "cisControls": {
+    "frameworkName": "CIS Critical Security Controls v8.1",
+    "frameworkReference": "CIS Controls v8.1",
+    "effectiveDate": "2024-06-01",
+    "mappings": [
+      {
+        "nacsaSection": "s17",
+        "nacsaName": "NCII asset identification",
+        "cisControl": "1",
+        "cisName": "Inventory and Control of Enterprise Assets",
+        "similarity": "high",
+        "notes": "NCII asset register directly maps to CIS Control 1 enterprise asset inventory"
+      },
+      {
+        "nacsaSection": "s17",
+        "nacsaName": "NCII asset identification",
+        "cisControl": "2",
+        "cisName": "Inventory and Control of Software Assets",
+        "similarity": "high",
+        "notes": "Software inventory for NCII assets maps to CIS Control 2"
+      },
+      {
+        "nacsaSection": "s18",
+        "nacsaName": "Cyber security measures",
+        "cisControl": "3",
+        "cisName": "Data Protection",
+        "similarity": "medium",
+        "notes": "Data protection measures are part of comprehensive NCII cyber security"
+      },
+      {
+        "nacsaSection": "s18",
+        "nacsaName": "Cyber security measures",
+        "cisControl": "4",
+        "cisName": "Secure Configuration of Enterprise Assets and Software",
+        "similarity": "high",
+        "notes": "Secure configuration is a core cyber security measure for NCII protection"
+      },
+      {
+        "nacsaSection": "s18",
+        "nacsaName": "Cyber security measures",
+        "cisControl": "6",
+        "cisName": "Access Control Management",
+        "similarity": "high",
+        "notes": "Access control is fundamental to NCII protection"
+      },
+      {
+        "nacsaSection": "s26",
+        "nacsaName": "Incident notification",
+        "cisControl": "17",
+        "cisName": "Incident Response Management",
+        "similarity": "high",
+        "notes": "CIS Control 17 maps directly to Act 854's incident notification and response requirements"
+      },
+      {
+        "nacsaSection": "s21",
+        "nacsaName": "Risk assessment",
+        "cisControl": "7",
+        "cisName": "Continuous Vulnerability Management",
+        "similarity": "medium",
+        "notes": "Vulnerability management is a component of the broader risk assessment requirement"
+      }
+    ]
+  }
+}

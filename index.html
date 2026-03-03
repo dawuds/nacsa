@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NACSA Act 854 Explorer</title>
+  <meta name="description" content="Interactive browser for Malaysia's Cyber Security Act 2024 (Act 854) — explore provisions, NCII sectors, requirements, evidence guidance, controls, penalties, and cross-references.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="site-header">
+    <div class="header-inner">
+      <a href="#" class="header-brand">
+        <h1>NACSA Act 854 Explorer</h1>
+        <span class="header-subtitle">Cyber Security Act 2024 (Act 854)</span>
+      </a>
+      <div class="header-search">
+        <input type="text" id="search-input" placeholder="Search provisions, sectors, penalties…" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <nav class="nav" id="site-nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-link active" data-view="overview">Overview</a>
+      <a href="#sectors" class="nav-link" data-view="sectors">Sectors</a>
+      <a href="#penalties" class="nav-link" data-view="penalties">Penalties</a>
+      <a href="#controls" class="nav-link" data-view="controls">Controls</a>
+      <a href="#artifacts" class="nav-link" data-view="artifacts">Artifacts</a>
+      <a href="#framework" class="nav-link" data-view="framework">Framework</a>
+      <a href="#supplements" class="nav-link" data-view="supplements">Supplements</a>
+      <a href="#cross-references" class="nav-link" data-view="cross-references">Cross-Refs</a>
+    </div>
+  </nav>
+  <div id="app">
+    <div class="loading">
+      <div class="spinner"></div>
+      <span>Loading Act 854 data…</span>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

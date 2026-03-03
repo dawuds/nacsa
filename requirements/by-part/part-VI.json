@@ -1,0 +1,59 @@
+{
+  "s44": {
+    "sectionId": "s44",
+    "part": "VI",
+    "title": "Obstruction",
+    "obligationType": "prohibitive",
+    "legal": {
+      "summary": "Entities must not obstruct authorized officers exercising enforcement powers.",
+      "requirements": [
+        {
+          "id": "s44-L1",
+          "requirement": "Cooperate fully with authorized officers conducting investigations, inspections, or enforcement activities under Part VI, providing requested access, documents, and information",
+          "rationale": "Obstruction carries RM300,000/5 years; includes refusing access, hindering officers, refusing to produce documents, or refusing to answer questions",
+          "owner": "All Staff",
+          "frequency": "On enforcement action",
+          "priority": "Critical",
+          "source": "s44",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical cooperation requirements during enforcement.",
+      "requirements": [
+        {
+          "id": "s44-T1",
+          "requirement": "Be prepared to provide passwords, encryption keys, decryption codes, and any other means required for authorized officers to access computerized data during searches (per s37)",
+          "rationale": "Failure to provide technical access constitutes obstruction under s44(c)",
+          "owner": "IT Security Team",
+          "frequency": "On enforcement action",
+          "priority": "Critical",
+          "source": "s44",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for handling enforcement interactions.",
+      "requirements": [
+        {
+          "id": "s44-G1",
+          "requirement": "Establish a documented procedure for interacting with NACSA authorized officers during inspections and investigations, including designated points of contact and escalation to legal counsel",
+          "rationale": "Structured response prevents accidental obstruction while protecting the organization's rights",
+          "owner": "Legal Counsel",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s44",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  }
+}

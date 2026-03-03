@@ -1,0 +1,63 @@
+{
+  "id": "directive-threat-intelligence",
+  "title": "Directive on Threat Intelligence Sharing",
+  "type": "directive",
+  "issuedBy": "Chief Executive, NACSA",
+  "issuedUnder": "s15",
+  "gazetteDate": "2024-10-01",
+  "effectiveDate": "2024-10-01",
+  "subject": "Threat intelligence sharing formats, platforms, classification levels, and sharing protocols between NCII entities, sector leads, and NACSA",
+  "status": "in-force",
+  "applicableTo": "All NCII entities and NCII sector leads",
+  "provisions": [
+    {
+      "id": "threat-intel-1",
+      "title": "Purpose and scope",
+      "requirement": "This directive establishes the technical standards, formats, and operational protocols for the sharing of cyber threat intelligence among NCII entities, NCII sector leads, and NACSA. It operationalizes the threat information sharing obligations under section 25 and the Chief Executive's information sharing powers under section 27. This directive is to be read in conjunction with the Directive on NCII Information Sharing, which governs the overarching information sharing framework and handling requirements.",
+      "explanation": "While the Information Sharing directive sets the framework (TLP, channels, handling rules), this directive focuses on the technical aspects of threat intelligence specifically: what format to use, how to structure indicators, and how the sharing platforms operate. Together, these two directives create a complete threat intelligence sharing ecosystem.",
+      "relatedActSection": "s25"
+    },
+    {
+      "id": "threat-intel-2",
+      "title": "Standard threat intelligence formats",
+      "requirement": "All structured threat intelligence shared under this directive shall conform to the following format standards: (a) indicators of compromise (IOCs) shall be shared using the Structured Threat Information eXpression (STIX) version 2.1 format or later; (b) automated IOC sharing shall use the Trusted Automated eXchange of Intelligence Information (TAXII) version 2.1 protocol or later; (c) vulnerability information shall reference Common Vulnerabilities and Exposures (CVE) identifiers where available and use the Common Vulnerability Scoring System (CVSS) for severity ratings; and (d) threat actor and campaign information shall use the MITRE ATT&CK framework for tactics, techniques, and procedures (TTPs) classification. NACSA shall publish and maintain a STIX/TAXII Implementation Guide specific to the Malaysian NCII context.",
+      "explanation": "Standardized formats are essential for automated threat intelligence processing. STIX and TAXII are the global standards for structured threat data exchange, adopted by organizations worldwide. Requiring their use ensures that Malaysian NCII entities can both consume and produce intelligence compatible with international partners and automated defense tools.",
+      "relatedActSection": "s25"
+    },
+    {
+      "id": "threat-intel-3",
+      "title": "NACSA Threat Intelligence Sharing Platform",
+      "requirement": "NACSA shall operate and maintain the Threat Intelligence Sharing Platform (TISP) as the primary platform for automated threat intelligence exchange among NCII entities, sector leads, and NACSA. The TISP shall: (a) support STIX 2.1 and TAXII 2.1 for automated indicator exchange; (b) provide sector-specific channels allowing sector leads to distribute intelligence relevant to their sector; (c) support TLP-based access controls ensuring information is visible only to authorized recipients in accordance with its classification; (d) maintain a searchable repository of historical threat intelligence for trend analysis; and (e) integrate with NACSA's monitoring and alerting systems for real-time threat notification. Every NCII entity shall connect to the TISP within sixty (60) calendar days of completing registration under the NCII Entity Registration directive and shall maintain automated connectivity for receiving and processing threat intelligence feeds.",
+      "explanation": "The TISP is the national platform for automated threat intelligence sharing. It goes beyond a simple sharing portal by providing sector-specific channels, historical search, TLP-enforced access controls, and real-time alerting. The 60-day connection requirement after registration ensures new NCII entities are rapidly integrated into the national threat intelligence ecosystem.",
+      "relatedActSection": "s25"
+    },
+    {
+      "id": "threat-intel-4",
+      "title": "Threat intelligence quality requirements",
+      "requirement": "Threat intelligence shared by NCII entities through the TISP or other approved channels shall meet minimum quality standards: (a) all IOCs shall include context describing the observed behavior, the confidence level (High, Medium, or Low), and the date of observation; (b) IOCs shall be validated by the submitting entity before sharing to minimize false positives; (c) threat intelligence reports shall include an assessment of relevance to Malaysian NCII, the sectors potentially affected, and recommended defensive actions; (d) all shared intelligence shall include a source reliability rating using the Admiralty Code (A through F for source reliability, 1 through 6 for information credibility); and (e) time-sensitive intelligence, including IOCs associated with active campaigns targeting Malaysian NCII, shall be shared within four (4) hours of validation.",
+      "explanation": "Raw, uncontextualized IOCs can cause more harm than good, generating alert fatigue and false positives. This provision ensures shared intelligence meets quality standards: IOCs must include context and confidence levels, be pre-validated, and include actionable recommendations. The Admiralty Code provides a standardized way to express how reliable the source is and how credible the information is.",
+      "relatedActSection": "s25"
+    },
+    {
+      "id": "threat-intel-5",
+      "title": "Sector-level threat intelligence coordination",
+      "requirement": "Each NCII sector lead shall: (a) establish a Sector Threat Intelligence Working Group comprising representatives from NCII entities within its sector; (b) convene the Working Group at intervals not exceeding three (3) months, or more frequently during periods of elevated threat activity; (c) produce and distribute a Sector Threat Landscape Report at intervals not exceeding six (6) months, summarizing the key threats, trends, and incidents relevant to the sector; (d) coordinate with other sector leads through NACSA to share cross-sector threat intelligence; and (e) escalate to NACSA any intelligence suggesting coordinated attacks targeting multiple entities within the sector or across sectors.",
+      "explanation": "Sector leads are the hubs for threat intelligence within their sectors. Quarterly working group meetings build relationships and trust among sector entities, facilitating faster informal sharing during crises. The six-monthly Sector Threat Landscape Report gives entities strategic situational awareness beyond their individual visibility. Cross-sector coordination through NACSA prevents intelligence silos.",
+      "relatedActSection": "s19"
+    },
+    {
+      "id": "threat-intel-6",
+      "title": "International threat intelligence cooperation",
+      "requirement": "NACSA shall, in exercise of the Chief Executive's powers under section 27(1)(d), maintain threat intelligence sharing arrangements with: (a) national CERTs and cyber security agencies of ASEAN member states; (b) international threat intelligence sharing communities and organizations, including FIRST and relevant ISACs (Information Sharing and Analysis Centers); and (c) foreign governments and international organizations pursuant to bilateral or multilateral agreements. Threat intelligence received from international partners shall be processed, contextualized for Malaysian NCII relevance, and distributed to affected NCII entities and sector leads through the TISP in accordance with any sharing restrictions imposed by the originating party.",
+      "explanation": "Cyber threats are transnational. NACSA maintains international sharing relationships to access intelligence beyond what domestic entities can detect. Intelligence from foreign partners is processed and contextualized for Malaysian relevance before distribution, ensuring NCII entities receive actionable intelligence rather than raw foreign data. Sharing restrictions from originating parties are respected to maintain trust.",
+      "relatedActSection": "s27"
+    },
+    {
+      "id": "threat-intel-7",
+      "title": "Threat intelligence consumption and action",
+      "requirement": "Every NCII entity shall: (a) designate a threat intelligence function or point of contact responsible for receiving, analyzing, and acting upon threat intelligence received through the TISP and other approved channels; (b) integrate threat intelligence feeds from the TISP into the entity's security monitoring and detection systems within one hundred and twenty (120) calendar days of connecting to the TISP; (c) implement processes to evaluate received IOCs and, where applicable, use them to update detection rules, blocklists, and security controls; (d) report to its NCII sector lead, on a quarterly basis, summary statistics on threat intelligence consumption including the number of IOCs received, acted upon, and the number of detections generated; and (e) participate in sector-level threat intelligence exercises organized by the NCII sector lead not less than once per year.",
+      "explanation": "Receiving threat intelligence is only useful if entities actually act on it. This provision mandates that entities integrate TISP feeds into their security tools, create detection rules from shared IOCs, and report on how effectively they are using the intelligence. Annual exercises test the threat intelligence consumption chain from receipt to detection, ensuring it works under pressure.",
+      "relatedActSection": "s18"
+    }
+  ]
+}

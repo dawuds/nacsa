@@ -1,0 +1,152 @@
+{
+  "s28": {
+    "sectionId": "s28",
+    "part": "V",
+    "title": "Licensing of cyber security service providers",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "Mandatory licensing for all persons providing prescribed cyber security services.",
+      "requirements": [
+        {
+          "id": "s28-L1",
+          "requirement": "Obtain a valid licence from the CE before providing any cyber security service as defined in s2",
+          "rationale": "Unlicensed provision is a criminal offence (RM500,000/10 years)",
+          "owner": "Service Provider Management",
+          "frequency": "Initial + renewal",
+          "priority": "Critical",
+          "source": "s28",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s28-L2",
+          "requirement": "Comply with all conditions imposed on the licence by the CE",
+          "rationale": "Licence conditions may include qualifications, staffing, insurance, and operational requirements",
+          "owner": "Service Provider Management",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s28",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical competency requirements for licensed service providers.",
+      "requirements": [
+        {
+          "id": "s28-T1",
+          "requirement": "Maintain the technical competencies, certifications, tools, and infrastructure required by licence conditions for each licensed service category",
+          "rationale": "Licensed services include SOC monitoring, penetration testing, and incident response — each requiring specific technical capabilities",
+          "owner": "Technical Director",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s28",
+          "sourceType": "regulation",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for licensing compliance by service providers.",
+      "requirements": [
+        {
+          "id": "s28-G1",
+          "requirement": "For NCII entities: verify that all engaged cyber security service providers hold valid licences under Part V before engagement and throughout the service period",
+          "rationale": "Engaging unlicensed providers may constitute failure to comply with s18 duties",
+          "owner": "Procurement",
+          "frequency": "Per-engagement",
+          "priority": "High",
+          "source": "s28",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s32": {
+    "sectionId": "s32",
+    "part": "V",
+    "title": "Obligations of licensee",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "Licensed cyber security service providers must maintain professional standards, confidentiality, and records.",
+      "requirements": [
+        {
+          "id": "s32-L1",
+          "requirement": "Maintain standards of competence, integrity and professionalism in the provision of all cyber security services",
+          "rationale": "Professional standards obligation applies to all licensed activities",
+          "owner": "Service Provider CEO",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s32",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s32-L2",
+          "requirement": "Maintain strict confidentiality of all information obtained in the course of providing cyber security services",
+          "rationale": "Service providers have deep access to client NCII; unauthorized disclosure could compromise national security",
+          "owner": "All Staff",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s32",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s32-L3",
+          "requirement": "Keep and maintain comprehensive records of all cyber security services provided, including scope, findings, and recommendations",
+          "rationale": "Records support regulatory oversight and audit trail for services rendered to NCII entities",
+          "owner": "Service Delivery",
+          "frequency": "Per-engagement",
+          "priority": "High",
+          "source": "s32",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical obligations for licensed service providers.",
+      "requirements": [
+        {
+          "id": "s32-T1",
+          "requirement": "Implement information security controls to protect client information, including encryption, access controls, and secure data handling procedures",
+          "rationale": "Confidentiality obligation requires technical protection of sensitive NCII data obtained during service delivery",
+          "owner": "Technical Director",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s32",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for licensee professional obligations.",
+      "requirements": [
+        {
+          "id": "s32-G1",
+          "requirement": "Implement a quality management system covering staff competency, service delivery standards, record keeping, and compliance with CE directives and guidelines",
+          "rationale": "Systematic approach to meeting the broad professional obligations under s32",
+          "owner": "Service Provider CEO",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s32",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  }
+}

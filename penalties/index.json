@@ -1,0 +1,441 @@
+[
+  {
+    "id": "pen-s18-2",
+    "section": "s18(2)",
+    "part": "IV",
+    "offence": "Failure to comply with NCII entity duties",
+    "description": "A person who is designated as an NCII entity under section 17 and fails to comply with any duty imposed under section 18(1), including duties to implement measures for the management of cyber security risks, report cyber security incidents, and comply with directions issued by the Chief Executive.",
+    "penalty": {
+      "fine": "RM500,000",
+      "fineNumeric": 500000,
+      "imprisonment": "10 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "designation",
+    "bodyCorporate": {
+      "fine": "RM5,000,000",
+      "fineNumeric": 5000000,
+      "directorLiability": true
+    },
+    "compoundable": true,
+    "notes": "Applies to all NCII entities designated under s17. The body corporate fine is calculated at 10x the individual fine per s52. Directors, managers, and officers may be jointly and severally liable under s52(2) if the offence was committed with their consent or connivance."
+  },
+  {
+    "id": "pen-s20-3",
+    "section": "s20(3)",
+    "part": "IV",
+    "offence": "Failure to provide information when requested",
+    "description": "A person who fails to provide information, documents, or access to any computer or apparatus when required to do so by the Chief Executive under section 20(1) for the purposes of carrying out functions under this Act.",
+    "penalty": {
+      "fine": "RM200,000",
+      "fineNumeric": 200000,
+      "imprisonment": "3 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "information",
+    "bodyCorporate": {
+      "fine": "RM2,000,000",
+      "fineNumeric": 2000000,
+      "directorLiability": true
+    },
+    "compoundable": true,
+    "notes": "The Chief Executive may require any person to provide information reasonably required for the performance of functions under the Act. Refusal or failure to comply without reasonable excuse constitutes an offence."
+  },
+  {
+    "id": "pen-s20-4",
+    "section": "s20(4)",
+    "part": "IV",
+    "offence": "Providing false or misleading information",
+    "description": "A person who provides information, documents, or material that is false or misleading in a material particular in response to a requirement under section 20(1), whether the person knows it to be false or misleading or is reckless as to whether it is false or misleading.",
+    "penalty": {
+      "fine": "RM300,000",
+      "fineNumeric": 300000,
+      "imprisonment": "5 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "information",
+    "bodyCorporate": {
+      "fine": "RM3,000,000",
+      "fineNumeric": 3000000,
+      "directorLiability": true
+    },
+    "compoundable": false,
+    "notes": "Higher penalty than simple failure to provide information (s20(3)) due to the deliberate or reckless nature of providing false or misleading information. Not compoundable given the element of dishonesty involved."
+  },
+  {
+    "id": "pen-s21-4",
+    "section": "s21(4)",
+    "part": "IV",
+    "offence": "Failure to conduct cyber security risk assessment",
+    "description": "An NCII entity that fails to conduct a cyber security risk assessment in accordance with the requirements specified by the Chief Executive under section 21(1), or fails to submit the risk assessment report within the time period specified.",
+    "penalty": {
+      "fine": "RM500,000",
+      "fineNumeric": 500000,
+      "imprisonment": "10 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "risk-assessment",
+    "bodyCorporate": {
+      "fine": "RM5,000,000",
+      "fineNumeric": 5000000,
+      "directorLiability": true
+    },
+    "compoundable": true,
+    "notes": "Risk assessments must be conducted in the manner and within the time period specified by the Chief Executive. The assessment must address threats, vulnerabilities, and potential impacts to the national critical information infrastructure."
+  },
+  {
+    "id": "pen-s22-4",
+    "section": "s22(4)",
+    "part": "IV",
+    "offence": "Failure to comply with code of practice",
+    "description": "An NCII entity that fails to comply with any code of practice issued or approved by the Chief Executive under section 22(1) relating to cyber security measures, standards, or procedures applicable to national critical information infrastructure.",
+    "penalty": {
+      "fine": "RM200,000",
+      "fineNumeric": 200000,
+      "imprisonment": "3 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "standards",
+    "bodyCorporate": {
+      "fine": "RM2,000,000",
+      "fineNumeric": 2000000,
+      "directorLiability": true
+    },
+    "compoundable": true,
+    "notes": "Codes of practice may be issued or approved by the Chief Executive to provide practical guidance on compliance with the Act. Non-compliance may be used as evidence in proceedings but a code of practice does not itself have the force of law unless adopted under this section."
+  },
+  {
+    "id": "pen-s23-4",
+    "section": "s23(4)",
+    "part": "IV",
+    "offence": "Failure to conduct cyber security audit",
+    "description": "An NCII entity that fails to conduct a cyber security audit when directed by the Chief Executive under section 23(1), or fails to appoint an auditor approved by the Chief Executive, or fails to submit the audit report within the prescribed period.",
+    "penalty": {
+      "fine": "RM500,000",
+      "fineNumeric": 500000,
+      "imprisonment": "10 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "audit",
+    "bodyCorporate": {
+      "fine": "RM5,000,000",
+      "fineNumeric": 5000000,
+      "directorLiability": true
+    },
+    "compoundable": true,
+    "notes": "The audit must be carried out by an auditor approved by the Chief Executive. The audit report must be submitted to the Chief Executive and the relevant sector lead. The Chief Executive may direct remedial action based on audit findings."
+  },
+  {
+    "id": "pen-s24-3",
+    "section": "s24(3)",
+    "part": "IV",
+    "offence": "Failure to comply with cyber security standards",
+    "description": "An NCII entity that fails to comply with any cyber security standards or directions issued by the Chief Executive under section 24(1) regarding the design, configuration, operation, or maintenance of national critical information infrastructure.",
+    "penalty": {
+      "fine": "RM200,000",
+      "fineNumeric": 200000,
+      "imprisonment": "3 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "standards",
+    "bodyCorporate": {
+      "fine": "RM2,000,000",
+      "fineNumeric": 2000000,
+      "directorLiability": true
+    },
+    "compoundable": true,
+    "notes": "Standards may relate to any aspect of the design, configuration, operation, or maintenance of NCII. The Chief Executive may adopt or adapt international standards or develop Malaysia-specific standards."
+  },
+  {
+    "id": "pen-s25-2",
+    "section": "s25(2)",
+    "part": "IV",
+    "offence": "Failure to share cyber threat information",
+    "description": "An NCII entity that fails to provide cyber threat information or details of cyber security vulnerabilities to the Chief Executive or a sector lead when required to do so under section 25(1).",
+    "penalty": {
+      "fine": "RM200,000",
+      "fineNumeric": 200000,
+      "imprisonment": "3 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "notification",
+    "bodyCorporate": {
+      "fine": "RM2,000,000",
+      "fineNumeric": 2000000,
+      "directorLiability": true
+    },
+    "compoundable": true,
+    "notes": "Threat information sharing is essential for maintaining national cyber security situational awareness. The requirement applies to sharing with both NACSA (through the Chief Executive) and the relevant sector lead."
+  },
+  {
+    "id": "pen-s26-3",
+    "section": "s26(3)",
+    "part": "IV",
+    "offence": "Failure to notify cyber security incident",
+    "description": "An NCII entity that fails to notify the Chief Executive of a cyber security incident affecting or that may affect the national critical information infrastructure within the time period prescribed, or fails to provide the required information about the incident.",
+    "penalty": {
+      "fine": "RM500,000",
+      "fineNumeric": 500000,
+      "imprisonment": "10 years",
+      "or_both": true
+    },
+    "continuingOffence": {
+      "daily": "RM5,000",
+      "dailyNumeric": 5000
+    },
+    "category": "notification",
+    "bodyCorporate": {
+      "fine": "RM5,000,000",
+      "fineNumeric": 5000000,
+      "directorLiability": true
+    },
+    "compoundable": true,
+    "notes": "This is the only offence in Part IV that carries a continuing daily penalty of RM5,000 for each day the offence continues after conviction. The continuing offence provision reflects the critical importance of timely incident notification. Notification must include the nature of the incident, systems affected, and measures taken or proposed."
+  },
+  {
+    "id": "pen-s26-4",
+    "section": "s26(4)",
+    "part": "IV",
+    "offence": "False or misleading cyber security incident notification",
+    "description": "A person who, in purported compliance with the incident notification requirement under section 26(1), provides information that is false or misleading in a material particular, whether the person knows it to be false or misleading or is reckless as to whether it is false or misleading.",
+    "penalty": {
+      "fine": "RM300,000",
+      "fineNumeric": 300000,
+      "imprisonment": "5 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "notification",
+    "bodyCorporate": {
+      "fine": "RM3,000,000",
+      "fineNumeric": 3000000,
+      "directorLiability": true
+    },
+    "compoundable": false,
+    "notes": "Separate and distinct offence from failure to notify (s26(3)). The element of dishonesty makes this non-compoundable. False or misleading notifications undermine the national incident response capability and may delay appropriate response measures."
+  },
+  {
+    "id": "pen-s28-5",
+    "section": "s28(5)",
+    "part": "V",
+    "offence": "Unlicensed provision of cyber security service",
+    "description": "A person who provides any cyber security service prescribed under section 28(1) without holding a valid licence issued by the Chief Executive, or who holds themselves out as being licensed when they are not.",
+    "penalty": {
+      "fine": "RM500,000",
+      "fineNumeric": 500000,
+      "imprisonment": "10 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "licensing",
+    "bodyCorporate": {
+      "fine": "RM5,000,000",
+      "fineNumeric": 5000000,
+      "directorLiability": true
+    },
+    "compoundable": false,
+    "notes": "Cyber security services that require licensing are prescribed by the Minister by order published in the Gazette. Providing such services without a licence is a serious offence and is not compoundable. The licensing regime ensures minimum competency standards for cyber security service providers operating in Malaysia."
+  },
+  {
+    "id": "pen-s32",
+    "section": "s32",
+    "part": "V",
+    "offence": "Failure to comply with licensee obligations",
+    "description": "A licensed cyber security service provider who fails to comply with any obligation, condition, or restriction imposed under the licence or under regulations made under section 32, including obligations relating to record-keeping, reporting, professional standards, and continuity of service.",
+    "penalty": {
+      "fine": "As prescribed by regulations",
+      "fineNumeric": null,
+      "imprisonment": "As prescribed by regulations",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "licensing",
+    "bodyCorporate": {
+      "fine": "As prescribed by regulations (up to 10x per s52)",
+      "fineNumeric": null,
+      "directorLiability": true
+    },
+    "compoundable": true,
+    "notes": "Specific penalties are to be prescribed by regulations made by the Minister under section 67. The regulations may provide for different penalties for different types of non-compliance. Until regulations are gazetted, the specific penalty quantum is not fixed. The s52 body corporate multiplier would apply once the base fine is prescribed."
+  },
+  {
+    "id": "pen-s40-3",
+    "section": "s40(3)",
+    "part": "VI",
+    "offence": "Failure to attend before authorized officer when required",
+    "description": "A person who, having been required to attend before an authorized officer under section 40(1) for the purposes of an investigation, fails to attend at the time and place specified without reasonable excuse.",
+    "penalty": {
+      "fine": "As prescribed by regulations",
+      "fineNumeric": null,
+      "imprisonment": "As prescribed by regulations",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "enforcement",
+    "bodyCorporate": {
+      "fine": "As prescribed by regulations (up to 10x per s52)",
+      "fineNumeric": null,
+      "directorLiability": true
+    },
+    "compoundable": true,
+    "notes": "Specific penalties are to be prescribed by regulations. The authorized officer has powers to require attendance for the purpose of examining any person as a witness in relation to an investigation under the Act. A reasonable excuse is a defence to this charge."
+  },
+  {
+    "id": "pen-s44",
+    "section": "s44",
+    "part": "VI",
+    "offence": "Obstruction of authorized officer",
+    "description": "A person who obstructs, impedes, or interferes with an authorized officer in the exercise of powers under Part VI of the Act, including powers of investigation, search, seizure, and access to computer systems, or who refuses to provide reasonable assistance to an authorized officer.",
+    "penalty": {
+      "fine": "RM300,000",
+      "fineNumeric": 300000,
+      "imprisonment": "5 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "obstruction",
+    "bodyCorporate": {
+      "fine": "RM3,000,000",
+      "fineNumeric": 3000000,
+      "directorLiability": true
+    },
+    "compoundable": false,
+    "notes": "Obstruction of an authorized officer is a serious offence and is not compoundable. This covers both active obstruction (physical interference, destruction of evidence) and passive obstruction (refusal to cooperate, withholding access). Authorized officers include officers of NACSA and any public officer authorized by the Chief Executive."
+  },
+  {
+    "id": "pen-s49-2",
+    "section": "s49(2)",
+    "part": "VII",
+    "offence": "Breach of secrecy obligation",
+    "description": "A person who discloses any information obtained in the exercise of powers or performance of functions under the Act, in contravention of the secrecy provisions of section 49(1), including information relating to NCII entities, cyber security incidents, vulnerabilities, or investigation details.",
+    "penalty": {
+      "fine": "RM500,000",
+      "fineNumeric": 500000,
+      "imprisonment": "10 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "secrecy",
+    "bodyCorporate": {
+      "fine": "RM5,000,000",
+      "fineNumeric": 5000000,
+      "directorLiability": true
+    },
+    "compoundable": false,
+    "notes": "The secrecy obligation applies to the Chief Executive, authorized officers, and any person who has access to information obtained under the Act. Exceptions exist for disclosure required by law, for the purposes of criminal proceedings, or with the written consent of the person to whom the information relates. Not compoundable due to the sensitivity of information involved."
+  },
+  {
+    "id": "pen-s52",
+    "section": "s52",
+    "part": "VII",
+    "offence": "Offence by body corporate",
+    "description": "Where a body corporate commits an offence under this Act, the body corporate shall be liable to a fine of not more than ten times the maximum fine prescribed for that offence. Any director, chief executive officer, chief operating officer, manager, secretary, or similar officer who consented to, connived in, or whose neglect contributed to the commission of the offence may be charged jointly or severally with the body corporate.",
+    "penalty": {
+      "fine": "Up to 10x the maximum fine for the underlying offence",
+      "fineNumeric": null,
+      "imprisonment": "N/A — applies the imprisonment term of the underlying offence to liable officers",
+      "or_both": false
+    },
+    "continuingOffence": null,
+    "category": "corporate-liability",
+    "bodyCorporate": null,
+    "compoundable": false,
+    "notes": "Section 52 is a general provision that applies to all offences under the Act when committed by a body corporate. It establishes two principles: (1) the body corporate faces up to 10x the individual fine; (2) individual directors and officers face personal criminal liability if they consented, connived, or were negligent. This section does not create a standalone offence but modifies penalties for all other offences. The body corporate multiplier is the basis for all bodyCorporate fine calculations in this dataset."
+  },
+  {
+    "id": "pen-s61",
+    "section": "s61",
+    "part": "IX",
+    "offence": "Unauthorized access to NCII computer (Computer Crimes Act s5 enhancement)",
+    "description": "Consequential amendment to the Computer Crimes Act 1997 — enhanced penalty for an offence under section 5 of the Computer Crimes Act (unauthorized access to computer material) where the offence is committed against any computer or computer system that is designated as national critical information infrastructure under the Cyber Security Act 2024.",
+    "penalty": {
+      "fine": "RM1,000,000",
+      "fineNumeric": 1000000,
+      "imprisonment": "15 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "computer-crimes",
+    "bodyCorporate": {
+      "fine": "RM10,000,000",
+      "fineNumeric": 10000000,
+      "directorLiability": true
+    },
+    "compoundable": false,
+    "notes": "Consequential amendment in Part IX. The base Computer Crimes Act s5 offence carries lower penalties; this provision significantly enhances the penalty when the target is NCII. Reflects the elevated national security risk of unauthorized access to critical infrastructure systems. The 10x body corporate multiplier under s52 applies."
+  },
+  {
+    "id": "pen-s62",
+    "section": "s62",
+    "part": "IX",
+    "offence": "Unauthorized access with intent to commit offence involving NCII (Computer Crimes Act s6 enhancement)",
+    "description": "Consequential amendment to the Computer Crimes Act 1997 — enhanced penalty for an offence under section 6 of the Computer Crimes Act (unauthorized access with intent to commit or facilitate the commission of a further offence) where the offence involves any computer or computer system designated as national critical information infrastructure.",
+    "penalty": {
+      "fine": "RM1,000,000",
+      "fineNumeric": 1000000,
+      "imprisonment": "15 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "computer-crimes",
+    "bodyCorporate": {
+      "fine": "RM10,000,000",
+      "fineNumeric": 10000000,
+      "directorLiability": true
+    },
+    "compoundable": false,
+    "notes": "Consequential amendment in Part IX. This covers the aggravated offence where unauthorized access is committed with intent to facilitate a further criminal offence involving NCII. The further offence need not actually be committed. The 10x body corporate multiplier under s52 applies."
+  },
+  {
+    "id": "pen-s63",
+    "section": "s63",
+    "part": "IX",
+    "offence": "Unauthorized modification of NCII computer contents (Computer Crimes Act s7 enhancement)",
+    "description": "Consequential amendment to the Computer Crimes Act 1997 — enhanced penalty for an offence under section 7 of the Computer Crimes Act (unauthorized modification of the contents of any computer) where the modification is to any computer or computer system designated as national critical information infrastructure.",
+    "penalty": {
+      "fine": "RM1,500,000",
+      "fineNumeric": 1500000,
+      "imprisonment": "20 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "computer-crimes",
+    "bodyCorporate": {
+      "fine": "RM15,000,000",
+      "fineNumeric": 15000000,
+      "directorLiability": true
+    },
+    "compoundable": false,
+    "notes": "Consequential amendment in Part IX. Unauthorized modification carries the second-highest penalty among the computer crimes amendments, reflecting the severe impact that unauthorized changes to NCII systems can have on national security and essential services. Modification includes alteration, deletion, or addition of any program or data. The 10x body corporate multiplier under s52 applies."
+  },
+  {
+    "id": "pen-s64",
+    "section": "s64",
+    "part": "IX",
+    "offence": "Wrongful communication involving NCII (Computer Crimes Act s8A enhancement)",
+    "description": "Consequential amendment to the Computer Crimes Act 1997 — enhanced penalty for an offence under section 8A of the Computer Crimes Act (wrongful communication of means of access or passwords) where the offence relates to any computer or computer system designated as national critical information infrastructure.",
+    "penalty": {
+      "fine": "RM2,000,000",
+      "fineNumeric": 2000000,
+      "imprisonment": "20 years",
+      "or_both": true
+    },
+    "continuingOffence": null,
+    "category": "computer-crimes",
+    "bodyCorporate": {
+      "fine": "RM20,000,000",
+      "fineNumeric": 20000000,
+      "directorLiability": true
+    },
+    "compoundable": false,
+    "notes": "Consequential amendment in Part IX. This carries the highest penalty in the entire Act at RM2,000,000 and 20 years imprisonment, reflecting the extreme gravity of sharing access credentials or means of access to national critical information infrastructure. The body corporate fine of RM20,000,000 (10x under s52) is the highest corporate penalty in the Act. Section 8A of the Computer Crimes Act covers wrongful communication of number, code, password, or other means of access to any computer."
+  }
+]

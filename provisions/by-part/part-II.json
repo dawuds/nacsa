@@ -1,0 +1,64 @@
+[
+  {
+    "id": "s5",
+    "part": "II",
+    "division": null,
+    "title": "Functions of the Agency",
+    "sectionNumber": 5,
+    "obligationType": "administrative",
+    "verbatim": "(1) The National Cyber Security Agency shall have the following functions:\n(a) to be the national lead agency for cyber security matters;\n(b) to advise and coordinate the implementation of cyber security policies;\n(c) to develop and implement national cyber security strategies, standards, guidelines, codes of practice and directives;\n(d) to monitor, assess and respond to cyber security threats and incidents;\n(e) to promote cooperation and coordination on cyber security matters among Government Entities, NCII sector leads and NCII entities;\n(f) to promote research and development in cyber security;\n(g) to enhance awareness and education on cyber security;\n(h) to advise on any matter relating to the cyber security of national critical information infrastructure;\n(i) to coordinate with foreign countries and international organizations on cyber security;\n(j) to carry out any other functions as may be prescribed.\n(2) The Agency shall have all such powers as may be necessary for, or in connection with, or reasonably incidental to, the performance of its functions under this Act.",
+    "translation": "Establishes NACSA as Malaysia's national lead agency for all cyber security matters. Its functions span policy coordination, strategy development, standards-setting, threat monitoring and incident response, inter-agency coordination, R&D promotion, awareness building, NCII advisory, and international cooperation. The broad 'incidental powers' clause in subsection (2) gives NACSA flexibility to exercise any power necessary to fulfil these functions.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "NACSA",
+      "functions",
+      "national lead agency",
+      "cyber security policy",
+      "coordination",
+      "standards",
+      "guidelines"
+    ]
+  },
+  {
+    "id": "s6",
+    "part": "II",
+    "division": null,
+    "title": "Appointment and powers of Chief Executive",
+    "sectionNumber": 6,
+    "obligationType": "administrative",
+    "verbatim": "(1) The Prime Minister shall appoint a Chief Executive of the National Cyber Security Agency.\n(2) The Chief Executive shall be responsible for the management, administration and control of the Agency.\n(3) The Chief Executive shall have such powers as may be necessary to carry out his functions under this Act.\n(4) The Chief Executive may, in writing, delegate any of his functions, duties or powers to any officer of the Agency.\n(5) The delegation under subsection (4) shall not preclude the Chief Executive from performing or exercising, at any time, the functions, duties or powers so delegated.",
+    "translation": "The Prime Minister appoints the Chief Executive (CE) of NACSA, who is responsible for the agency's overall management and administration. The CE holds broad powers necessary for the Act's implementation and may delegate functions to NACSA officers in writing, while retaining the ability to exercise those delegated powers at any time. The CE's directives under s15 form a key regulatory instrument under the Act.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "Chief Executive",
+      "appointment",
+      "delegation",
+      "powers",
+      "NACSA",
+      "prime minister"
+    ]
+  },
+  {
+    "id": "s7",
+    "part": "II",
+    "division": null,
+    "title": "Appointment of officers and servants",
+    "sectionNumber": 7,
+    "obligationType": "administrative",
+    "verbatim": "(1) The Chief Executive may authorize in writing any officer of the Agency or any public officer to exercise the powers of enforcement under this Act.\n(2) Such officers shall be subject to the direction and control of the Chief Executive.\n(3) Any person authorized under subsection (1) shall be deemed to be a public servant within the meaning of the Penal Code.",
+    "translation": "The CE may authorize NACSA officers or public officers in writing to exercise enforcement powers under the Act. These authorized officers operate under the CE's direction and are deemed public servants (gaining protections and obligations under the Penal Code). This is the mechanism by which enforcement capacity is created for NCII inspections, investigations, and audits.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "authorized officer",
+      "enforcement",
+      "public servant",
+      "authorization"
+    ]
+  }
+]

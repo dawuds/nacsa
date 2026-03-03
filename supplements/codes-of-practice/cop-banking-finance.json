@@ -1,0 +1,182 @@
+{
+  "id": "cop-banking-finance",
+  "title": "Code of Practice for the Banking and Finance Sector",
+  "type": "code-of-practice",
+  "sectorId": "banking-finance",
+  "sectorLead": "Bank Negara Malaysia",
+  "approvedUnder": "s22",
+  "gazetteDate": "2025-03-15",
+  "effectiveDate": "2025-06-01",
+  "status": "published",
+  "version": "1.0",
+  "domains": [
+    {
+      "id": "bf-cop-1",
+      "name": "Governance and Oversight",
+      "description": "Board and senior management oversight of NCII cybersecurity within financial institutions",
+      "requirements": [
+        {
+          "id": "bf-cop-1.1",
+          "requirement": "The board of directors shall establish a Board Technology Risk Committee or equivalent, with at least one member possessing demonstrated competency in cyber security, responsible for approving the institution's NCII cyber security strategy, risk appetite, and resource allocation.",
+          "rationale": "Financial institutions operate NCII that underpins national economic stability. Board-level oversight with competent membership ensures strategic cyber security decisions are informed and appropriately resourced.",
+          "relatedActSection": "s18",
+          "relatedFramework": "BNM RMiT 10.18; BNM Policy Document on Corporate Governance"
+        },
+        {
+          "id": "bf-cop-1.2",
+          "requirement": "The institution shall appoint a Chief Information Security Officer (CISO) at senior management level, independent of IT operations, with authority to escalate NCII security matters directly to the board and to the sector lead regulator.",
+          "rationale": "Independence of the CISO from IT operations prevents conflicts of interest between operational delivery pressures and security requirements. Direct board access ensures critical NCII risks are not filtered or suppressed.",
+          "relatedActSection": "s18",
+          "relatedFramework": "BNM RMiT 10.19; ISO 27001 A.5"
+        },
+        {
+          "id": "bf-cop-1.3",
+          "requirement": "The institution shall implement a three-lines-of-defence model for NCII cyber security: operational management as first line, risk management and compliance as second line, and independent internal audit as third line, with annual assurance reporting to the board.",
+          "rationale": "The three-lines-of-defence model provides layered assurance that NCII security controls are designed, implemented, and independently verified, reducing the probability of systematic failures in protection.",
+          "relatedActSection": "s20",
+          "relatedFramework": "BNM RMiT 10.20; IIA Three Lines Model"
+        }
+      ]
+    },
+    {
+      "id": "bf-cop-2",
+      "name": "NCII Asset Management and Data Classification",
+      "description": "Identification, classification, and protection of critical information assets and financial data within NCII systems",
+      "requirements": [
+        {
+          "id": "bf-cop-2.1",
+          "requirement": "The institution shall maintain a real-time asset inventory of all NCII components including core banking systems, payment processing infrastructure, SWIFT messaging systems, ATM networks, and internet banking platforms, with automated discovery mechanisms to detect unauthorised assets.",
+          "rationale": "Financial sector NCII encompasses a wide range of interconnected systems. Real-time inventory with automated discovery ensures that shadow IT and unauthorised devices do not introduce unmonitored risks.",
+          "relatedActSection": "s16",
+          "relatedFramework": "BNM RMiT 10.27; ISO 27001 A.8; PCI DSS Req. 2"
+        },
+        {
+          "id": "bf-cop-2.2",
+          "requirement": "Financial data processed, stored, or transmitted by NCII systems shall be classified using a four-tier scheme (Public, Internal, Confidential, Restricted) aligned with BNM data management requirements, with encryption standards mandated for Confidential and Restricted tiers at rest and in transit.",
+          "rationale": "Financial data classification ensures that protective measures are proportionate to the sensitivity and criticality of data. Mandatory encryption for higher tiers directly mitigates the risk of data exfiltration from NCII systems.",
+          "relatedActSection": "s18",
+          "relatedFramework": "BNM RMiT 10.30; PDPA 2010; PCI DSS Req. 3-4"
+        },
+        {
+          "id": "bf-cop-2.3",
+          "requirement": "Third-party service providers with access to or hosting of NCII components shall be subject to due diligence assessments prior to engagement and continuous monitoring thereafter, with contractual obligations for security controls equivalent to those mandated under this Code of Practice.",
+          "rationale": "Financial sector NCII increasingly relies on third-party providers including cloud services and fintech partners. Ensuring equivalent security standards across the supply chain prevents the weakest link from compromising critical infrastructure.",
+          "relatedActSection": "s18",
+          "relatedFramework": "BNM RMiT 10.51-10.54; BNM Outsourcing Policy"
+        }
+      ]
+    },
+    {
+      "id": "bf-cop-3",
+      "name": "Cyber Risk Management",
+      "description": "Systematic assessment and treatment of cyber security risks to financial sector NCII",
+      "requirements": [
+        {
+          "id": "bf-cop-3.1",
+          "requirement": "The institution shall conduct comprehensive cyber risk assessments of all NCII systems at least semi-annually, incorporating threat intelligence specific to the financial sector including indicators shared by BNM Financial Sector Cyber Threat Intelligence (FS-CTI) platform.",
+          "rationale": "The financial sector faces sophisticated and evolving threats from nation-state actors, organised crime, and hacktivists. Semi-annual assessments incorporating sector-specific threat intelligence ensure risk evaluations reflect current threat realities.",
+          "relatedActSection": "s18",
+          "relatedFramework": "BNM RMiT 10.22-10.24; ISO 27005; NIST CSF ID.RA"
+        },
+        {
+          "id": "bf-cop-3.2",
+          "requirement": "The institution shall conduct annual red team exercises simulating advanced persistent threats against NCII systems, using NACSA-approved assessment providers, with findings reported to the board and remediation tracked to closure.",
+          "rationale": "Red team exercises provide realistic testing of the institution's ability to detect and respond to sophisticated attacks on NCII, going beyond automated vulnerability scans to test the full defence-in-depth capability.",
+          "relatedActSection": "s18",
+          "relatedFramework": "BNM RMiT 10.41; TIBER-EU; CBEST"
+        },
+        {
+          "id": "bf-cop-3.3",
+          "requirement": "Vulnerability management for NCII systems shall follow defined Service Level Agreements: critical vulnerabilities patched within 14 days, high within 30 days, medium within 90 days. Where patching is not feasible, compensating controls must be documented and approved by the CISO.",
+          "rationale": "Timely vulnerability remediation is essential for financial NCII given the high value of financial assets and data. Defined SLAs with an exception process balance operational constraints with security imperatives.",
+          "relatedActSection": "s18",
+          "relatedFramework": "BNM RMiT 10.38; ISO 27001 A.8.8; PCI DSS Req. 6"
+        }
+      ]
+    },
+    {
+      "id": "bf-cop-4",
+      "name": "Access Control and Transaction Security",
+      "description": "Controls governing logical access to NCII and the integrity of financial transactions processed by critical infrastructure",
+      "requirements": [
+        {
+          "id": "bf-cop-4.1",
+          "requirement": "All access to NCII systems shall be controlled through centralised identity and access management (IAM), with multi-factor authentication mandatory for all users. Privileged access shall additionally require just-in-time provisioning with time-limited sessions and mandatory approval workflows.",
+          "rationale": "Financial NCII systems process high-value transactions and hold sensitive financial data. Centralised IAM with strong authentication and privileged access controls reduces the risk of both external compromise and insider abuse.",
+          "relatedActSection": "s18",
+          "relatedFramework": "BNM RMiT 10.32-10.34; ISO 27001 A.9; PCI DSS Req. 7-8"
+        },
+        {
+          "id": "bf-cop-4.2",
+          "requirement": "Transaction processing systems designated as NCII shall implement real-time fraud detection and anomaly monitoring, with automated alerting for transactions exceeding defined thresholds or deviating from established behavioural baselines.",
+          "rationale": "Real-time monitoring of transactions on NCII payment systems is essential to detect and prevent fraudulent manipulation that could undermine confidence in the national financial system.",
+          "relatedActSection": "s18",
+          "relatedFramework": "BNM RMiT 10.43; BNM e-Payment Guidelines; PCI DSS Req. 10"
+        },
+        {
+          "id": "bf-cop-4.3",
+          "requirement": "Inter-bank NCII communication channels including RENTAS, FPX, and DuitNow gateway connections shall be secured using end-to-end encryption with mutual TLS authentication, with cryptographic keys managed in FIPS 140-2 Level 3 or equivalent hardware security modules.",
+          "rationale": "Inter-bank payment infrastructure forms the backbone of Malaysia's financial NCII. End-to-end encryption with hardware-backed key management protects the integrity and confidentiality of systemically important financial transactions.",
+          "relatedActSection": "s18",
+          "relatedFramework": "BNM RMiT 10.35; PayNet Security Standards; ISO 27001 A.10"
+        }
+      ]
+    },
+    {
+      "id": "bf-cop-5",
+      "name": "Incident Response and Regulatory Reporting",
+      "description": "Detection, containment, and mandatory reporting of cyber security incidents affecting financial sector NCII",
+      "requirements": [
+        {
+          "id": "bf-cop-5.1",
+          "requirement": "The institution shall operate or subscribe to a 24/7 Security Operations Centre (SOC) with capability to detect, triage, and initiate response to cyber security incidents affecting NCII within 15 minutes of alert generation.",
+          "rationale": "The interconnected and time-sensitive nature of financial systems demands rapid detection and response. A 15-minute triage target ensures that incidents are assessed before they can cascade across payment networks and markets.",
+          "relatedActSection": "s23",
+          "relatedFramework": "BNM RMiT 10.42-10.44; ISO 27035; NIST CSF DE.AE"
+        },
+        {
+          "id": "bf-cop-5.2",
+          "requirement": "Cyber security incidents affecting NCII shall be reported simultaneously to NACSA and Bank Negara Malaysia within two hours of confirmation, with initial reports including impact assessment on financial services availability, customer data exposure, and potential systemic implications.",
+          "rationale": "Dual reporting to NACSA and BNM enables coordinated national and sectoral response. The two-hour window for confirmed incidents balances the need for speed with the requirement for meaningful initial assessment.",
+          "relatedActSection": "s23",
+          "relatedFramework": "BNM RMiT 10.45; BNM Incident Reporting Framework"
+        },
+        {
+          "id": "bf-cop-5.3",
+          "requirement": "The institution shall participate in sector-wide cyber crisis simulation exercises coordinated by BNM at least annually, testing cross-institutional incident response procedures, communication protocols, and systemic recovery capabilities.",
+          "rationale": "Financial sector NCII is highly interdependent. Sector-wide exercises ensure that institutions can coordinate effectively during systemic cyber events that affect multiple organisations simultaneously.",
+          "relatedActSection": "s23",
+          "relatedFramework": "BNM RMiT 10.46; BNM Crisis Management Framework"
+        }
+      ]
+    },
+    {
+      "id": "bf-cop-6",
+      "name": "Business Continuity and Systemic Resilience",
+      "description": "Ensuring continuity of critical financial services and systemic stability during cyber disruptions to NCII",
+      "requirements": [
+        {
+          "id": "bf-cop-6.1",
+          "requirement": "The institution shall maintain a cyber-specific Business Continuity Plan for NCII systems with Recovery Time Objectives not exceeding two hours for systemically important payment and settlement systems, and four hours for other NCII-designated financial services.",
+          "rationale": "Financial NCII supports time-critical services including interbank settlements and payment processing. Stringent RTOs ensure that disruptions do not trigger systemic risks to financial stability.",
+          "relatedActSection": "s18",
+          "relatedFramework": "BNM RMiT 10.47-10.49; BNM BCM Policy; ISO 22301"
+        },
+        {
+          "id": "bf-cop-6.2",
+          "requirement": "NCII disaster recovery infrastructure shall be maintained at a geographically separate site within Malaysia, with active-active or active-passive configurations tested through failover exercises at least semi-annually.",
+          "rationale": "Geographic separation of disaster recovery sites protects against regional events, while regular failover testing validates that recovery procedures work as designed under realistic conditions.",
+          "relatedActSection": "s18",
+          "relatedFramework": "BNM RMiT 10.50; BNM Data Centre Requirements; ISO 22301 Clause 8"
+        },
+        {
+          "id": "bf-cop-6.3",
+          "requirement": "The institution shall maintain offline backup copies of critical transaction databases and system configurations, stored in immutable format, to enable recovery from destructive cyber attacks including ransomware and wiper malware targeting NCII systems.",
+          "rationale": "Destructive malware targeting financial NCII may compromise online backups. Offline, immutable backups provide a last-resort recovery capability that preserves the integrity of financial records.",
+          "relatedActSection": "s18",
+          "relatedFramework": "BNM RMiT 10.50; NIST CSF PR.IP-4; ISO 27001 A.12.3"
+        }
+      ]
+    }
+  ]
+}

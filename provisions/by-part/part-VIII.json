@@ -1,0 +1,101 @@
+[
+  {
+    "id": "s56",
+    "part": "VIII",
+    "division": null,
+    "title": "Saving provisions",
+    "sectionNumber": 56,
+    "obligationType": "administrative",
+    "verbatim": "(1) Any act, decision, or order made, or any licence, permit or authority granted, under any written law relating to cyber security before the commencement of this Act shall, so far as it is consistent with this Act, continue in force until revoked or replaced.\n(2) Any investigation, proceeding or other action commenced before the date of commencement of this Act may be continued as if this Act had not been enacted.",
+    "translation": "Preserves the validity of pre-existing cyber security-related acts, decisions, licences, and permits insofar as they are consistent with the new Act. Investigations and proceedings that were underway before commencement continue under the prior legal framework. This prevents a regulatory vacuum during the transition period.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "saving",
+      "continuity",
+      "pre-existing",
+      "transition"
+    ]
+  },
+  {
+    "id": "s57",
+    "part": "VIII",
+    "division": null,
+    "title": "Transitional provision for NCII entities",
+    "sectionNumber": 57,
+    "obligationType": "procedural",
+    "verbatim": "(1) Any person who, immediately before the commencement of this Act, was operating or managing a national critical information infrastructure shall, within such period as may be prescribed, register with the Chief Executive.\n(2) Until such person is designated as an NCII entity under section 17, the person shall be deemed to be an NCII entity for the purposes of this Act.",
+    "translation": "Existing NCII operators must register with the CE within a prescribed period after commencement. Until formal designation under s17, they are deemed to be NCII entities — meaning they immediately bear all Part IV obligations. This ensures no gap in NCII protection during the transition from the pre-Act regime.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": [
+      "all"
+    ],
+    "keywords": [
+      "transitional",
+      "registration",
+      "deemed NCII entity",
+      "existing operators"
+    ]
+  },
+  {
+    "id": "s58",
+    "part": "VIII",
+    "division": null,
+    "title": "Transitional provision for cyber security service providers",
+    "sectionNumber": 58,
+    "obligationType": "procedural",
+    "verbatim": "(1) Any person who, immediately before the commencement of this Act, was providing a cyber security service shall, within such period as may be prescribed, apply for a licence under section 28.\n(2) Until such application is determined, the person shall be deemed to hold a valid licence for the purposes of this Act.",
+    "translation": "Existing cyber security service providers must apply for a licence within the prescribed period. Until their application is determined, they are deemed licensed — allowing continued operations without disruption while formal licensing is processed.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "transitional",
+      "service providers",
+      "deemed licence",
+      "application period"
+    ]
+  },
+  {
+    "id": "s59",
+    "part": "VIII",
+    "division": null,
+    "title": "Transitional — pending proceedings",
+    "sectionNumber": 59,
+    "obligationType": "procedural",
+    "verbatim": "Any investigation, inquiry, trial, or proceedings in any court commenced or pending immediately before the date of commencement of this Act in respect of any offence related to cyber security shall, after such date, be continued under the relevant written law as if this Act had not been enacted.",
+    "translation": "Pending legal proceedings related to cyber security offences continue under the law that applied when they were commenced, not under the new Act. This ensures legal certainty and fairness for ongoing cases.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "pending proceedings",
+      "continuity",
+      "prior law"
+    ]
+  },
+  {
+    "id": "s60",
+    "part": "VIII",
+    "division": null,
+    "title": "Power to make regulations",
+    "sectionNumber": 60,
+    "obligationType": "enabling",
+    "verbatim": "(1) The Minister may make such regulations as may be necessary or expedient for the purpose of carrying out the provisions of this Act.\n(2) Without prejudice to the generality of subsection (1), regulations may be made for—\n(a) prescribing the forms to be used and the fees to be paid under this Act;\n(b) prescribing the procedure for cyber security risk assessments and audits;\n(c) prescribing the requirements for notification of cyber security incidents;\n(d) prescribing the conditions and procedures for the licensing of cyber security service providers;\n(e) prescribing the offences which may be compounded under section 54;\n(f) prescribing the classes of cyber security services;\n(g) any other matter required to be prescribed under this Act.\n(3) Regulations made under this section may prescribe any act or omission in contravention of the regulations to be an offence and may prescribe penalties of a fine not exceeding three hundred thousand ringgit or imprisonment for a term not exceeding five years or to both.",
+    "translation": "The Minister may make regulations on any matter needed to carry out the Act, specifically covering forms, fees, risk assessment/audit procedures, incident notification requirements, licensing conditions, compoundable offences, and cyber security service classes. Regulations may create offences with penalties up to RM300,000 and/or 5 years. This is the enabling provision for the four subsidiary regulations gazetted alongside the Act.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "regulations",
+      "Minister",
+      "prescribe",
+      "forms",
+      "fees",
+      "licensing",
+      "offences"
+    ]
+  }
+]

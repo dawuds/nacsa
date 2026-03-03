@@ -1,0 +1,393 @@
+{
+  "s17": {
+    "sectionId": "s17",
+    "part": "IV",
+    "title": "Designation of NCII entity and NCII sector lead",
+    "obligationType": "mandatory",
+    "auditorFocus": "NACSA assessors will verify that the entity has been formally designated by written notice, understands the scope of its NCII designation, and has initiated compliance programs for all Part IV obligations. They will check for the designation notice, board briefing records, and evidence that the 30-day appeal window was considered.",
+    "evidenceItems": [
+      {
+        "id": "s17-E1",
+        "name": "NCII Designation Notice",
+        "description": "Original written notice from the CE designating the entity as an NCII entity, including the scope of designated infrastructure",
+        "whatGoodLooksLike": ["Original CE designation letter on file", "Clear identification of designated NCII assets in scope", "Date of designation and effective date documented"],
+        "commonGaps": ["Designation notice not retained or misfiled", "Scope of designated NCII not clearly understood by operational teams", "No communication of designation to relevant business units"],
+        "suggestedSources": ["Regulatory correspondence files", "Company Secretary records", "Legal department files"],
+        "format": "Official letter / PDF",
+        "retentionPeriod": "Permanent (duration of designation)"
+      },
+      {
+        "id": "s17-E2",
+        "name": "NCII Asset Register",
+        "description": "Comprehensive inventory of all assets designated as NCII, including system names, descriptions, criticality classifications, owners, and interdependencies",
+        "whatGoodLooksLike": ["Complete inventory of all designated NCII assets", "Criticality classification for each asset", "Owner assignment and review dates", "Dependency mapping between NCII assets"],
+        "commonGaps": ["Asset register is incomplete or outdated", "No criticality classification", "Shadow IT or cloud assets not captured", "Dependencies not mapped"],
+        "suggestedSources": ["CMDB", "IT asset management system", "Enterprise architecture documentation"],
+        "format": "Spreadsheet / CMDB export / Database",
+        "retentionPeriod": "Continuously maintained"
+      },
+      {
+        "id": "s17-E3",
+        "name": "Board Designation Briefing Record",
+        "description": "Minutes or record of board briefing on NCII designation, compliance obligations, penalty exposure, and director liability under s52",
+        "whatGoodLooksLike": ["Board minutes recording NCII designation discussion", "Clear acknowledgement of compliance obligations", "Decision to allocate resources for compliance program", "Director liability awareness documented"],
+        "commonGaps": ["No board-level awareness of NCII designation", "Delegation without board oversight", "No resource allocation decision recorded"],
+        "suggestedSources": ["Board minutes", "Board papers", "Company Secretary records"],
+        "format": "Minutes / Board papers",
+        "retentionPeriod": "7 years minimum"
+      }
+    ],
+    "auditTips": [
+      "Confirm the designation notice is on file and dated — this establishes the compliance timeline",
+      "Check that the scope of designated NCII is clearly documented and understood by IT and compliance teams",
+      "Verify board-level awareness within 30 days of designation",
+      "If no appeal was filed, confirm the 30-day window was considered and a decision was documented"
+    ]
+  },
+  "s18": {
+    "sectionId": "s18",
+    "part": "IV",
+    "title": "Duties of NCII entity",
+    "obligationType": "mandatory",
+    "auditorFocus": "Assessors will conduct a comprehensive review of the entity's compliance program across all s18(1)(a)-(g) duties. This is the broadest evidence requirement and will include review of cyber security measures, standards compliance, incident reporting capability, risk assessment and audit records, and information provision processes.",
+    "evidenceItems": [
+      {
+        "id": "s18-E1",
+        "name": "NCII Cyber Security Policy",
+        "description": "Board-approved policy documenting the organization's commitment to NCII protection, covering all s18(1) duties",
+        "whatGoodLooksLike": ["Board-approved with clear effective date", "Covers all s18(1)(a)-(g) duties explicitly", "References applicable standards, CoPs and directives", "Clear roles and responsibilities for NCII compliance", "Annual review cycle documented"],
+        "commonGaps": ["Generic IT security policy without NCII-specific provisions", "Not board-approved or outdated", "Missing reference to Act obligations", "No designated accountability for NCII compliance"],
+        "suggestedSources": ["Document management system", "CISO office", "Compliance library"],
+        "format": "PDF/DOCX, version-controlled",
+        "retentionPeriod": "Current + 3 prior versions"
+      },
+      {
+        "id": "s18-E2",
+        "name": "NCII Compliance Program Charter",
+        "description": "Document establishing the compliance program, organizational structure, roles and reporting lines for NCII compliance management",
+        "whatGoodLooksLike": ["Named NCII compliance officer with clear mandate", "Reporting lines to CISO and Board", "Cross-functional team with defined responsibilities", "Budget allocation documented", "Compliance calendar covering all periodic obligations"],
+        "commonGaps": ["No dedicated compliance program or officer", "Compliance responsibilities dispersed without coordination", "No budget allocation", "Missing compliance calendar"],
+        "suggestedSources": ["CISO office", "HR organizational charts", "Budget documents"],
+        "format": "PDF/DOCX",
+        "retentionPeriod": "Current version"
+      },
+      {
+        "id": "s18-E3",
+        "name": "Quarterly Board Compliance Report",
+        "description": "Regular report to the Board on NCII compliance status, covering risk assessment results, audit findings, incidents, and remediation progress",
+        "whatGoodLooksLike": ["Quarterly cadence maintained", "Covers all s18 duty areas", "Includes risk RAG status", "Tracks remediation progress against previous findings", "Records board discussions and decisions"],
+        "commonGaps": ["No regular board reporting", "Reports lack specificity on NCII compliance", "No tracking of remediation progress", "Board not engaged in discussion"],
+        "suggestedSources": ["Board papers", "CISO reports", "Compliance dashboards"],
+        "format": "Presentation / Report",
+        "retentionPeriod": "7 years"
+      }
+    ],
+    "auditTips": [
+      "Request the NCII compliance program charter or equivalent — this frames the entire compliance effort",
+      "Review at least 4 quarters of board reporting to assess reporting cadence and quality",
+      "Cross-reference the compliance calendar against actual completion dates for periodic obligations",
+      "Verify that the compliance program covers all seven duties in s18(1)(a)-(g)"
+    ]
+  },
+  "s21": {
+    "sectionId": "s21",
+    "part": "IV",
+    "title": "Cyber security risk assessment",
+    "obligationType": "mandatory",
+    "auditorFocus": "Assessors will verify that risk assessments are conducted at prescribed intervals by CE-approved assessors, using appropriate methodology, and that results are submitted to both the CE and sector lead within prescribed timeframes. They will also review the risk treatment plan and its implementation progress.",
+    "evidenceItems": [
+      {
+        "id": "s21-E1",
+        "name": "Risk Assessment Report",
+        "description": "Complete cyber security risk assessment report for NCII, conducted by a CE-approved assessor",
+        "whatGoodLooksLike": ["Conducted within prescribed frequency", "Performed by CE-approved person (verified licence)", "Covers all designated NCII assets", "Follows prescribed methodology", "Clearly identifies threats, vulnerabilities, impacts and risk levels", "Includes risk treatment recommendations"],
+        "commonGaps": ["Assessment overdue or not conducted", "Assessor not CE-approved", "Scope does not cover all designated NCII", "Methodology does not meet regulatory requirements", "Risk ratings not justified"],
+        "suggestedSources": ["CISO office", "Approved assessor deliverables", "Risk management system"],
+        "format": "PDF report",
+        "retentionPeriod": "Current + 2 prior assessments"
+      },
+      {
+        "id": "s21-E2",
+        "name": "CE Submission Acknowledgement",
+        "description": "Evidence of timely submission of risk assessment results to the CE and sector lead",
+        "whatGoodLooksLike": ["Submission within prescribed timeframe", "Acknowledgement from CE/NACSA", "Acknowledgement from sector lead", "Complete assessment results submitted"],
+        "commonGaps": ["Late submission", "Submission to CE only (not sector lead)", "No acknowledgement retained", "Incomplete results submitted"],
+        "suggestedSources": ["Regulatory correspondence", "Email records", "NACSA portal submissions"],
+        "format": "Email / Portal confirmation / Letter",
+        "retentionPeriod": "7 years"
+      },
+      {
+        "id": "s21-E3",
+        "name": "Risk Treatment Plan",
+        "description": "Plan documenting how identified risks will be addressed, with actions, owners, timelines and resource requirements",
+        "whatGoodLooksLike": ["Treatment action for every high/critical risk", "Named owners for each action", "Realistic timelines", "Board-approved resource allocation", "Progress tracking mechanism"],
+        "commonGaps": ["No treatment plan developed", "Actions not assigned to owners", "Timelines unrealistic or missed", "No progress tracking", "Board not informed of treatment requirements"],
+        "suggestedSources": ["Risk management system", "CISO reports", "Project management tools"],
+        "format": "Spreadsheet / Project plan / GRC tool",
+        "retentionPeriod": "Until superseded by next assessment"
+      },
+      {
+        "id": "s21-E4",
+        "name": "Approved Assessor Licence Verification",
+        "description": "Evidence verifying the risk assessor holds a valid CE-issued licence under Part V at the time of the assessment",
+        "whatGoodLooksLike": ["Copy of assessor's valid licence", "Licence verification against CE register", "Licence validity covers the assessment period", "Assessor qualifications documented"],
+        "commonGaps": ["No licence verification performed", "Licence expired at time of assessment", "Assessor not on CE register"],
+        "suggestedSources": ["Procurement records", "CE licensee register", "Contract documentation"],
+        "format": "Licence copy / Register extract",
+        "retentionPeriod": "Duration of assessment validity"
+      }
+    ],
+    "auditTips": [
+      "First check: is the most recent risk assessment within the prescribed period? Overdue assessments are the most common compliance gap",
+      "Verify the assessor's licence was valid at the time of the assessment by checking the CE register",
+      "Review submission timestamps against prescribed deadlines for both CE and sector lead submissions",
+      "Assess the risk treatment plan — findings without treatment plans suggest a tick-box approach rather than genuine risk management"
+    ]
+  },
+  "s22": {
+    "sectionId": "s22",
+    "part": "IV",
+    "title": "Codes of practice",
+    "obligationType": "mandatory",
+    "auditorFocus": "Assessors will verify that the entity has identified all applicable codes of practice for its sector, conducted a gap analysis, and achieved compliance. They will check for evidence of ongoing CoP monitoring and implementation of any CoP updates.",
+    "evidenceItems": [
+      {
+        "id": "s22-E1",
+        "name": "CoP Compliance Gap Analysis",
+        "description": "Documented assessment of the organization's compliance with applicable sector-specific code of practice requirements",
+        "whatGoodLooksLike": ["All applicable CoP requirements identified", "Current compliance status per requirement", "Gap identification with remediation actions", "Compliance percentage tracked over time"],
+        "commonGaps": ["No gap analysis conducted", "CoP requirements not fully identified", "Gap analysis outdated", "No remediation plan for identified gaps"],
+        "suggestedSources": ["Compliance team", "GRC tool", "Internal audit reports"],
+        "format": "Spreadsheet / GRC tool export",
+        "retentionPeriod": "Current + 1 prior version"
+      },
+      {
+        "id": "s22-E2",
+        "name": "CoP Implementation Evidence Pack",
+        "description": "Collection of evidence demonstrating compliance with each applicable CoP requirement (policies, procedures, configurations, test results)",
+        "whatGoodLooksLike": ["Evidence mapped to each CoP requirement", "Evidence is current and dated", "Includes both documentary and technical evidence", "Reviewed and quality-checked"],
+        "commonGaps": ["Evidence collection ad-hoc rather than systematic", "Evidence outdated", "Technical controls not verified", "Evidence incomplete for some requirements"],
+        "suggestedSources": ["Multiple departments", "Configuration management", "Test results"],
+        "format": "Evidence portfolio / GRC tool",
+        "retentionPeriod": "Duration of CoP version applicability"
+      }
+    ],
+    "auditTips": [
+      "Confirm which CoP version is applicable and whether the entity is aware of any pending updates",
+      "Look for a structured compliance register mapping each CoP requirement to evidence, rather than ad-hoc evidence collection",
+      "Verify that technical requirements in the CoP have been implemented, not just documented"
+    ]
+  },
+  "s23": {
+    "sectionId": "s23",
+    "part": "IV",
+    "title": "Cyber security audit",
+    "obligationType": "mandatory",
+    "auditorFocus": "Assessors will verify that audits are conducted at prescribed intervals by CE-approved auditors, covering the full regulatory compliance scope, and that results are submitted to both the CE and sector lead within prescribed timeframes. They will review audit findings and the remediation tracking process.",
+    "evidenceItems": [
+      {
+        "id": "s23-E1",
+        "name": "Cyber Security Audit Report",
+        "description": "Complete audit report covering compliance with the Act, regulations, directives, codes of practice, and standards",
+        "whatGoodLooksLike": ["Conducted within prescribed frequency", "Performed by CE-approved auditor (verified licence)", "Covers full regulatory compliance scope", "Includes technical testing results", "Clear findings with severity ratings", "Recommendations are specific and actionable"],
+        "commonGaps": ["Audit overdue or not conducted", "Auditor not CE-approved", "Scope too narrow (missing regulations/directives)", "No technical testing component", "Findings vague or generic"],
+        "suggestedSources": ["CISO office", "External auditor deliverables", "Compliance library"],
+        "format": "PDF report",
+        "retentionPeriod": "Current + 2 prior audits"
+      },
+      {
+        "id": "s23-E2",
+        "name": "Audit Submission Evidence",
+        "description": "Evidence of timely submission of audit results to the CE and sector lead",
+        "whatGoodLooksLike": ["Submission within prescribed timeframe", "Acknowledgement from CE/NACSA and sector lead", "Complete audit results submitted"],
+        "commonGaps": ["Late submission", "Submission to one party only", "No submission evidence retained"],
+        "suggestedSources": ["Regulatory correspondence", "NACSA portal", "Email records"],
+        "format": "Email / Portal confirmation / Letter",
+        "retentionPeriod": "7 years"
+      },
+      {
+        "id": "s23-E3",
+        "name": "Audit Remediation Tracker",
+        "description": "Tracking register for all audit findings with remediation actions, owners, timelines, and closure status",
+        "whatGoodLooksLike": ["All findings tracked with unique IDs", "Named owners and realistic timelines", "Regular progress reviews documented", "Closed items verified", "Escalation for overdue items"],
+        "commonGaps": ["No systematic tracking of findings", "Overdue items without escalation", "No verification of finding closure", "Findings carried forward across multiple audit cycles"],
+        "suggestedSources": ["GRC tool", "Compliance tracking spreadsheet", "Project management system"],
+        "format": "Spreadsheet / GRC tool",
+        "retentionPeriod": "Until all findings closed + 2 years"
+      }
+    ],
+    "auditTips": [
+      "Check audit frequency compliance — the most recent audit must be within the prescribed period",
+      "Verify auditor licence validity at the time of the audit",
+      "Review the remediation tracker for carried-forward findings from prior audit cycles — these indicate systemic compliance issues",
+      "Confirm audit scope covers regulations, directives, and CoPs — not just the Act itself"
+    ]
+  },
+  "s26": {
+    "sectionId": "s26",
+    "part": "IV",
+    "title": "Notification of cyber security incident",
+    "obligationType": "mandatory",
+    "auditorFocus": "Assessors will evaluate the entity's incident detection capability, notification process, and compliance history. They will verify whether past incidents were notified within the 6-hour window, review the incident response plan and notification templates, and test response readiness through process walkthroughs.",
+    "evidenceItems": [
+      {
+        "id": "s26-E1",
+        "name": "Incident Response Plan (IRP)",
+        "description": "Documented plan for detecting, classifying, responding to, and notifying cyber security incidents, with clear 6-hour notification workflow",
+        "whatGoodLooksLike": ["Board-approved IRP with clear effective date", "6-hour notification workflow mapped with decision points", "Roles and responsibilities defined including 24/7 contacts", "Incident classification criteria aligned with 'significant impact' definition", "Pre-drafted notification templates", "Escalation procedures to CE and sector lead"],
+        "commonGaps": ["No IRP or generic IT incident plan without s26 alignment", "6-hour notification workflow not explicit", "No 24/7 contact arrangements", "Classification criteria undefined", "No pre-drafted templates"],
+        "suggestedSources": ["CISO office", "SOC", "Compliance library"],
+        "format": "PDF/DOCX, version-controlled",
+        "retentionPeriod": "Current version + 2 prior"
+      },
+      {
+        "id": "s26-E2",
+        "name": "Incident Notification Records",
+        "description": "Records of all incident notifications submitted to the CE, including timestamps demonstrating 6-hour compliance",
+        "whatGoodLooksLike": ["Notification submitted within 6 hours of awareness for significant incidents", "All prescribed information fields completed", "Acknowledgement from NACSA received", "Follow-up notifications provided as required", "Timeline reconstruction showing awareness → classification → notification"],
+        "commonGaps": ["Notifications late or not submitted", "Incomplete prescribed information", "No acknowledgement retained", "No timeline documentation"],
+        "suggestedSources": ["SOC records", "NACSA portal", "Email correspondence", "Incident tracking system"],
+        "format": "Notification forms / Email / Portal records",
+        "retentionPeriod": "7 years"
+      },
+      {
+        "id": "s26-E3",
+        "name": "IRP Testing Records",
+        "description": "Records of IRP testing including tabletop exercises, simulations, and drills that specifically test the 6-hour notification workflow",
+        "whatGoodLooksLike": ["Semi-annual testing at minimum", "Scenarios include 6-hour notification trigger", "Lessons learned documented", "Improvements implemented post-exercise", "Key personnel participation recorded"],
+        "commonGaps": ["No IRP testing conducted", "Testing does not cover notification workflow", "No lessons learned or improvements", "Key decision-makers not involved in exercises"],
+        "suggestedSources": ["SOC", "Incident Response Team", "Training records"],
+        "format": "Exercise reports / Attendance records",
+        "retentionPeriod": "3 years"
+      },
+      {
+        "id": "s26-E4",
+        "name": "24/7 On-Call Roster",
+        "description": "Current roster of personnel authorized to make incident notification decisions and submit notifications to the CE outside business hours",
+        "whatGoodLooksLike": ["Named individuals with contact details", "Delegated authority documented", "Coverage for all time zones and leave periods", "Roster regularly updated"],
+        "commonGaps": ["No out-of-hours notification capability", "Single point of failure", "Roster outdated", "No delegated authority for notification"],
+        "suggestedSources": ["SOC", "HR", "CISO office"],
+        "format": "Roster document / On-call system",
+        "retentionPeriod": "Current version"
+      },
+      {
+        "id": "s26-E5",
+        "name": "Post-Incident Review Reports",
+        "description": "Root cause analysis and lessons learned reports for all notified incidents",
+        "whatGoodLooksLike": ["Completed within 30 days of incident closure", "Root cause analysis with evidence", "Lessons learned with specific improvement actions", "Improvements tracked to completion", "Shared with relevant stakeholders"],
+        "commonGaps": ["No post-incident reviews conducted", "Reviews superficial without root cause analysis", "Improvement actions not tracked", "Findings not communicated to management"],
+        "suggestedSources": ["Incident Response Team", "CISO office", "Risk management"],
+        "format": "PDF report",
+        "retentionPeriod": "7 years"
+      }
+    ],
+    "auditTips": [
+      "Request a walkthrough of the 6-hour notification workflow with the incident response team — time the process",
+      "If any incidents occurred since designation, verify notification timelines by comparing SOC awareness timestamps against notification submission timestamps",
+      "Check whether IRP tabletop exercises included realistic scenarios that trigger s26 notification",
+      "Verify 24/7 coverage — call the on-call number during the assessment to verify response"
+    ]
+  },
+  "s28": {
+    "sectionId": "s28",
+    "part": "V",
+    "title": "Licensing of cyber security service providers",
+    "obligationType": "mandatory",
+    "auditorFocus": "For service providers: assessors will verify licence validity, conditions compliance, and professional standards. For NCII entities: assessors will verify that engaged service providers hold valid licences.",
+    "evidenceItems": [
+      {
+        "id": "s28-E1",
+        "name": "CE-Issued Licence",
+        "description": "Valid licence granted by the CE to provide cyber security services",
+        "whatGoodLooksLike": ["Licence currently valid and not expired/suspended/revoked", "Covers all services being provided", "Conditions clearly understood and documented", "Renewal tracked before 30-day pre-expiry deadline"],
+        "commonGaps": ["Licence expired without renewal", "Services provided outside licence scope", "Conditions not monitored"],
+        "suggestedSources": ["Company records", "CE register", "Legal department"],
+        "format": "Licence document",
+        "retentionPeriod": "Duration of licence"
+      },
+      {
+        "id": "s28-E2",
+        "name": "Third-Party Licence Verification (for NCII entities)",
+        "description": "Records verifying that all engaged cyber security service providers hold valid CE-issued licences",
+        "whatGoodLooksLike": ["Licence verified before engagement", "Periodic re-verification during service period", "Register check evidence retained", "Contract clauses requiring licence maintenance"],
+        "commonGaps": ["No pre-engagement verification", "No ongoing monitoring of licence status", "Reliance on provider self-declaration without verification"],
+        "suggestedSources": ["Procurement records", "Vendor management system", "CE licensee register"],
+        "format": "Register extract / Verification records",
+        "retentionPeriod": "Duration of engagement + 2 years"
+      }
+    ],
+    "auditTips": [
+      "For NCII entities: request a list of all cyber security service providers and cross-reference against the CE register",
+      "For service providers: verify the licence has not been suspended or revoked since issuance",
+      "Check whether the licence covers the specific services being provided (SOC monitoring, pentest, IR)"
+    ]
+  },
+  "s49": {
+    "sectionId": "s49",
+    "part": "VII",
+    "title": "Obligation of secrecy",
+    "obligationType": "mandatory",
+    "auditorFocus": "Assessors will verify that the entity has implemented controls to protect Act-related information, including access restrictions, classification procedures, and staff awareness of secrecy obligations.",
+    "evidenceItems": [
+      {
+        "id": "s49-E1",
+        "name": "Information Classification and Handling Procedures",
+        "description": "Procedures for classifying and handling Act-related information (incident reports, risk assessments, audit results, threat intelligence)",
+        "whatGoodLooksLike": ["Classification scheme includes Act-related information category", "Handling requirements defined (storage, transmission, disposal)", "Access restricted to authorized personnel", "Regular review of access rights"],
+        "commonGaps": ["No specific classification for Act-related information", "Handling procedures not defined", "Overly broad access to sensitive Act-related data"],
+        "suggestedSources": ["Information security policies", "Data classification procedures", "Access control records"],
+        "format": "Policy document / Procedure",
+        "retentionPeriod": "Current version"
+      },
+      {
+        "id": "s49-E2",
+        "name": "Staff Awareness and NDA Records",
+        "description": "Records of staff awareness training on secrecy obligations and signed NDAs for personnel with access to Act-related information",
+        "whatGoodLooksLike": ["All relevant staff trained on s49 obligations", "NDAs signed by personnel with access", "Training records maintained", "Annual refresher training"],
+        "commonGaps": ["No awareness of s49 obligations", "NDAs not updated to reference Act 854", "Training not conducted for new joiners"],
+        "suggestedSources": ["HR records", "Training management system", "Legal department"],
+        "format": "Training records / Signed NDAs",
+        "retentionPeriod": "Duration of employment + 3 years"
+      }
+    ],
+    "auditTips": [
+      "Check whether NDAs and employment contracts reference Act 854 secrecy obligations specifically",
+      "Verify access controls on Act-related information — who has access to incident reports and risk assessment results?",
+      "Ask staff questions about their understanding of what information is covered by s49"
+    ]
+  },
+  "s52": {
+    "sectionId": "s52",
+    "part": "VII",
+    "title": "Offences by body corporate",
+    "obligationType": "mandatory",
+    "auditorFocus": "Assessors will evaluate whether the Board and officers can demonstrate the due diligence defence — that any offence was committed without their knowledge/consent/connivance and that they exercised all due diligence to prevent it.",
+    "evidenceItems": [
+      {
+        "id": "s52-E1",
+        "name": "Board Cyber Security Oversight Records",
+        "description": "Evidence of board-level engagement with NCII compliance including meeting minutes, compliance reports reviewed, decisions made, and resources allocated",
+        "whatGoodLooksLike": ["Regular board agenda item for cyber security", "Board receives and discusses NCII compliance reports", "Decisions on resource allocation documented", "Board-approved cyber security strategy and budget", "Board training on Act obligations including personal liability"],
+        "commonGaps": ["No board-level cyber security oversight", "Compliance reports not presented to board", "No documented resource allocation decisions", "Board unaware of personal liability under s52"],
+        "suggestedSources": ["Board minutes", "Board papers", "Company Secretary records"],
+        "format": "Minutes / Board papers",
+        "retentionPeriod": "7 years minimum"
+      },
+      {
+        "id": "s52-E2",
+        "name": "Director Due Diligence Evidence Pack",
+        "description": "Compilation of evidence that each director/officer exercised due diligence in preventing Act offences",
+        "whatGoodLooksLike": ["Training completion records for directors on Act obligations", "Evidence of questioning and challenging management on compliance", "Approval of adequate resources for NCII compliance", "Establishment or oversight of compliance committee"],
+        "commonGaps": ["No specific due diligence evidence maintained", "Directors not trained on Act obligations", "Passive governance approach — receive reports but no engagement"],
+        "suggestedSources": ["Board records", "Training records", "Committee papers"],
+        "format": "Evidence portfolio",
+        "retentionPeriod": "7 years"
+      }
+    ],
+    "auditTips": [
+      "This is the personal liability provision — directors will be very interested in understanding what constitutes sufficient due diligence",
+      "Look for evidence of active governance (questioning, challenging, deciding) not just passive receipt of reports",
+      "Verify that the 10x fine multiplier for body corporates has been communicated to the board and factored into risk assessments"
+    ]
+  }
+}

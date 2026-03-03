@@ -1,0 +1,168 @@
+{
+  "id": "cop-ict",
+  "title": "Code of Practice for the Information and Communication Technology Sector",
+  "type": "code-of-practice",
+  "sectorId": "ict",
+  "sectorLead": "Malaysian Communications and Multimedia Commission",
+  "approvedUnder": "s22",
+  "gazetteDate": null,
+  "effectiveDate": null,
+  "status": "template_issued",
+  "version": "1.0-draft",
+  "domains": [
+    {
+      "id": "ict-cop-1",
+      "name": "Governance and Regulatory Alignment",
+      "description": "Cyber security governance for ICT NCII operators integrating obligations under the Cyber Security Act with existing MCMC regulatory requirements",
+      "requirements": [
+        {
+          "id": "ict-cop-1.1",
+          "requirement": "The NCII entity shall establish an integrated cyber security governance framework that addresses obligations under both the Cyber Security Act 2024 and the Communications and Multimedia Act 1998, with a designated CISO responsible for compliance across both regulatory regimes.",
+          "rationale": "ICT NCII operators including telecommunications providers and internet service providers already operate under MCMC licensing conditions. Integrated governance prevents duplication and ensures coherent security management across overlapping regulatory requirements.",
+          "relatedActSection": "s18",
+          "relatedFramework": "CMA 1998 s263; MCMC MTSFB TC G015; ISO 27001 A.5"
+        },
+        {
+          "id": "ict-cop-1.2",
+          "requirement": "The board or equivalent governing body shall approve the NCII cyber security strategy annually, allocating a dedicated budget line for NCII protection that is separately tracked and reported, proportionate to the criticality and scale of the NCII operated.",
+          "rationale": "ICT NCII forms the digital backbone upon which all other NCII sectors depend. Dedicated budgeting ensures that cyber security investment is transparent, measurable, and commensurate with the outsized systemic impact of ICT infrastructure failure.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MCMC General Consumer Code; ISO 27001 Clause 5.1"
+        },
+        {
+          "id": "ict-cop-1.3",
+          "requirement": "The NCII entity shall conduct annual independent cyber security audits of NCII systems by NACSA-recognised assessors, with findings reported to both the board and MCMC within 30 days of audit completion.",
+          "rationale": "Independent auditing provides objective assurance that ICT NCII security controls are effective. Reporting to both the board and the sector regulator ensures accountability and enables regulatory oversight.",
+          "relatedActSection": "s20",
+          "relatedFramework": "MCMC Licence Conditions; ISO 27001 Clause 9.2"
+        }
+      ]
+    },
+    {
+      "id": "ict-cop-2",
+      "name": "Critical Network Infrastructure Protection",
+      "description": "Protection of telecommunications networks, internet exchange points, DNS infrastructure, and data centres designated as NCII",
+      "requirements": [
+        {
+          "id": "ict-cop-2.1",
+          "requirement": "The NCII entity shall implement redundant and geographically diverse network architectures for NCII telecommunications infrastructure, with no single point of failure capable of disrupting more than 20 percent of the services carried on the designated critical infrastructure.",
+          "rationale": "Telecommunications NCII serves as the foundation for all digital communications. Geographic diversity and redundancy ensure that localised physical or cyber events cannot cause catastrophic loss of national communications capability.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MCMC MTSFB TC G015; ITU-T X.805; ISO 27001 A.17"
+        },
+        {
+          "id": "ict-cop-2.2",
+          "requirement": "DNS infrastructure designated as NCII shall implement DNSSEC for all zones served, with anycast distribution across a minimum of three geographically separated nodes within Malaysia, and DDoS mitigation capacity sufficient to withstand attacks of at least 100 Gbps.",
+          "rationale": "DNS is a foundational internet service whose compromise could redirect or disrupt traffic for millions of users. DNSSEC prevents cache poisoning, anycast ensures availability, and DDoS mitigation protects against volumetric denial of service.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MYNIC Operating Standards; ICANN SSAC Advisory; NIST SP 800-81-2"
+        },
+        {
+          "id": "ict-cop-2.3",
+          "requirement": "Internet Exchange Points (IXPs) designated as NCII shall implement route filtering based on Internet Routing Registry (IRR) data and Resource Public Key Infrastructure (RPKI) validation to prevent route hijacking, with real-time monitoring for anomalous routing events.",
+          "rationale": "BGP route hijacking can redirect national internet traffic through adversary-controlled infrastructure for surveillance or disruption. Route security controls at IXPs protect the integrity of Malaysia's internet routing infrastructure.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MANRS Operator Guidelines; MYIX Operating Policy; NIST SP 800-189"
+        }
+      ]
+    },
+    {
+      "id": "ict-cop-3",
+      "name": "Supply Chain and Equipment Security",
+      "description": "Security requirements for ICT equipment, software, and services incorporated into NCII, including vendor risk management",
+      "requirements": [
+        {
+          "id": "ict-cop-3.1",
+          "requirement": "The NCII entity shall maintain a supply chain risk management programme that assesses the security posture of all vendors providing equipment, software, or managed services for NCII, with enhanced due diligence for vendors providing core network equipment or software.",
+          "rationale": "ICT NCII relies on complex global supply chains. Supply chain compromise through backdoored equipment or software can provide persistent access to critical infrastructure that is extremely difficult to detect after deployment.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MCMC Network Equipment Security Assurance; NIST SP 800-161; EU 5G Toolbox"
+        },
+        {
+          "id": "ict-cop-3.2",
+          "requirement": "Core network equipment deployed in telecommunications NCII shall be sourced only from vendors that have undergone and passed a security evaluation recognised by NACSA, covering hardware integrity, software assurance, and the vendor's susceptibility to foreign government interference.",
+          "rationale": "Core network equipment operates at the highest privilege level in telecommunications NCII. Security evaluation ensures that equipment does not contain undisclosed capabilities that could be exploited by hostile actors including foreign governments.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MCMC Technical Standards; 3GPP SCAS; GSMA NESAS"
+        },
+        {
+          "id": "ict-cop-3.3",
+          "requirement": "The NCII entity shall implement software bill of materials (SBOM) requirements for all software deployed on NCII systems, enabling rapid identification of affected systems when vulnerabilities are disclosed in third-party components.",
+          "rationale": "Modern ICT systems incorporate extensive third-party software components. SBOMs enable rapid vulnerability response by providing immediate visibility into which NCII systems are affected by newly disclosed vulnerabilities such as those in open-source libraries.",
+          "relatedActSection": "s18",
+          "relatedFramework": "NTIA SBOM Minimum Elements; ISO 27001 A.14; NIST SP 800-218"
+        }
+      ]
+    },
+    {
+      "id": "ict-cop-4",
+      "name": "Monitoring, Detection, and Threat Intelligence",
+      "description": "Continuous monitoring and threat detection capabilities for ICT NCII with sector-wide intelligence sharing",
+      "requirements": [
+        {
+          "id": "ict-cop-4.1",
+          "requirement": "The NCII entity shall operate a Security Operations Centre providing 24/7 monitoring of all NCII systems with automated correlation of events, with the capability to detect and triage potential security incidents within 15 minutes of alert generation.",
+          "rationale": "ICT NCII operates continuously and serves as the foundation for other critical sectors. Round-the-clock monitoring with rapid triage ensures that attacks on telecommunications and internet infrastructure are detected before they cascade to dependent sectors.",
+          "relatedActSection": "s23",
+          "relatedFramework": "MCMC MTSFB TC G015; ISO 27001 A.12.4; NIST CSF DE"
+        },
+        {
+          "id": "ict-cop-4.2",
+          "requirement": "The NCII entity shall participate in the NACSA ICT Sector Threat Intelligence Sharing Platform, contributing indicators of compromise, threat observations, and vulnerability information, and consuming shared intelligence for proactive defence of NCII systems.",
+          "rationale": "ICT NCII operators collectively observe the majority of national cyber traffic. Structured intelligence sharing across the sector multiplies each operator's visibility and enables coordinated defence against threats that target multiple operators simultaneously.",
+          "relatedActSection": "s23",
+          "relatedFramework": "MyCERT Threat Intelligence Framework; STIX/TAXII; ISO 27001 A.6.1"
+        },
+        {
+          "id": "ict-cop-4.3",
+          "requirement": "The NCII entity shall deploy network-based intrusion detection and deep packet inspection capabilities at all NCII network peering points and gateways, with detection signatures updated within four hours of publication by NACSA or MyCERT.",
+          "rationale": "Network peering points and gateways are the boundaries where external threats enter NCII networks. Rapid signature updates ensure that newly identified threats are detected at the perimeter before they can reach internal NCII systems.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MCMC MTSFB TC G015; NIST SP 800-94; ISO 27001 A.13"
+        }
+      ]
+    },
+    {
+      "id": "ict-cop-5",
+      "name": "Incident Response and Sector Coordination",
+      "description": "Incident response capabilities and coordination mechanisms across the ICT sector for NCII-affecting incidents",
+      "requirements": [
+        {
+          "id": "ict-cop-5.1",
+          "requirement": "Cyber security incidents affecting ICT NCII shall be reported to NACSA and MCMC within two hours of confirmation, with immediate notification required for incidents affecting inter-operator interconnection, international gateway capacity, or DNS resolution services.",
+          "rationale": "Incidents affecting ICT NCII can rapidly cascade to all sectors that depend on telecommunications and internet connectivity. Rapid reporting enables NACSA and MCMC to coordinate national response and warn other NCII operators of potential downstream impacts.",
+          "relatedActSection": "s23",
+          "relatedFramework": "MCMC Incident Reporting Requirements; MyCERT Incident Handling Framework"
+        },
+        {
+          "id": "ict-cop-5.2",
+          "requirement": "The NCII entity shall maintain documented mutual aid agreements with other ICT NCII operators for cyber security incident response, enabling sharing of technical resources, capacity, and expertise during incidents that exceed individual operator response capability.",
+          "rationale": "Major cyber incidents may overwhelm individual operator response capacity. Mutual aid agreements ensure that the sector can collectively respond to large-scale events through pooled resources and coordinated action.",
+          "relatedActSection": "s23",
+          "relatedFramework": "MCMC Industry Cooperation Framework; ISO 27035-3"
+        }
+      ]
+    },
+    {
+      "id": "ict-cop-6",
+      "name": "Resilience and Service Continuity",
+      "description": "Ensuring availability and rapid recovery of ICT services designated as NCII",
+      "requirements": [
+        {
+          "id": "ict-cop-6.1",
+          "requirement": "ICT NCII systems shall be designed for a minimum availability of 99.99 percent measured annually, with Recovery Time Objectives not exceeding one hour for core telecommunications switching and routing infrastructure and four hours for value-added service platforms.",
+          "rationale": "ICT NCII underpins all other sectors' operations. A 99.99 percent availability target limits annual downtime to under one hour, ensuring that telecommunications infrastructure provides the reliability that dependent critical services require.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MCMC QoS Standards; ITU-T E.800; ISO 22301"
+        },
+        {
+          "id": "ict-cop-6.2",
+          "requirement": "The NCII entity shall maintain the capability to operate essential telecommunications services during extended power outages, with backup power systems providing a minimum of 72 hours of autonomous operation for core NCII nodes and 24 hours for access network elements.",
+          "rationale": "ICT NCII must remain operational during power disruptions that may accompany or compound cyber incidents. Extended backup power capacity ensures that telecommunications services continue to support emergency response and national coordination.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MCMC MTSFB TC G015; ISO 22301 Clause 8.3"
+        }
+      ]
+    }
+  ]
+}

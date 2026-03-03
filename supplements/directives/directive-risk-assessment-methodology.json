@@ -1,0 +1,63 @@
+{
+  "id": "directive-risk-assessment-methodology",
+  "title": "Directive on Risk Assessment Methodology",
+  "type": "directive",
+  "issuedBy": "Chief Executive, NACSA",
+  "issuedUnder": "s15",
+  "gazetteDate": "2024-09-15",
+  "effectiveDate": "2024-09-15",
+  "subject": "Detailed risk assessment methodology requirements, threat categorization, vulnerability scoring, and risk calculation approaches for NCII entities",
+  "status": "in-force",
+  "applicableTo": "All NCII entities",
+  "provisions": [
+    {
+      "id": "risk-meth-1",
+      "title": "Purpose and scope",
+      "requirement": "This directive establishes the minimum methodology requirements for cyber security risk assessments conducted under section 21 of the Act and the Cyber Security (Risk Assessment and Audit) Regulations 2024. All NCII entities shall conduct risk assessments using a methodology that is consistent with this directive and appropriate to the nature, scale, and complexity of the entity's national critical information infrastructure.",
+      "explanation": "While the Regulations set the frequency and submission requirements, this directive specifies how the risk assessment must actually be conducted. The methodology must be proportionate to the entity's infrastructure complexity, recognizing that a power generation facility faces different risk profiles than a financial services platform.",
+      "relatedActSection": "s21"
+    },
+    {
+      "id": "risk-meth-2",
+      "title": "Asset identification and valuation",
+      "requirement": "The risk assessment shall begin with a comprehensive identification of all assets constituting or supporting the national critical information infrastructure. Each asset shall be assigned a criticality value based on: (a) the impact of its unavailability on essential service delivery; (b) the sensitivity of data processed, stored, or transmitted by the asset; (c) the degree of interconnection with other NCII assets or public-facing networks; and (d) the asset's role in the entity's business continuity and disaster recovery capability. Assets shall be classified as Critical, High, Medium, or Low criticality using the NCII Asset Criticality Matrix published by NACSA.",
+      "explanation": "Risk assessment starts with knowing what you have and how important it is. Entities must map every asset related to their NCII and classify it by criticality. The four-tier classification (Critical, High, Medium, Low) determines the depth of subsequent threat and vulnerability analysis required.",
+      "relatedActSection": "s21"
+    },
+    {
+      "id": "risk-meth-3",
+      "title": "Threat identification and categorization",
+      "requirement": "The risk assessment shall identify and categorize threats applicable to the entity's national critical information infrastructure. Threat categorization shall, at a minimum, address the following threat categories: (a) nation-state actors and advanced persistent threats; (b) cyber criminal organizations; (c) hacktivists and ideologically motivated actors; (d) insider threats, both malicious and inadvertent; (e) supply chain threats affecting third-party components and services; (f) natural disasters and environmental events affecting infrastructure availability; and (g) technical failures and system vulnerabilities. Threat likelihood shall be assessed using qualitative or quantitative methods aligned with recognized frameworks such as ISO 27005, NIST SP 800-30, or equivalent standards approved by the Chief Executive.",
+      "explanation": "Entities cannot cherry-pick which threats to consider. The directive mandates coverage of all major threat categories relevant to Malaysian NCII, from sophisticated state-sponsored attacks to insider threats and supply chain risks. Threat assessment must use recognized international standards.",
+      "relatedActSection": "s21"
+    },
+    {
+      "id": "risk-meth-4",
+      "title": "Vulnerability assessment",
+      "requirement": "The risk assessment shall include a technical vulnerability assessment of all Critical and High criticality assets. The vulnerability assessment shall include: (a) automated vulnerability scanning using tools approved or recognized by NACSA; (b) configuration review against applicable security baselines and hardening standards; (c) review of patch management status and currency; (d) assessment of access control mechanisms and authentication configurations; and (e) analysis of network segmentation and boundary protection adequacy. Vulnerabilities shall be scored using the Common Vulnerability Scoring System (CVSS) version 3.1 or later, and findings rated as Critical (CVSS 9.0-10.0), High (CVSS 7.0-8.9), Medium (CVSS 4.0-6.9), or Low (CVSS 0.1-3.9).",
+      "explanation": "For the most important assets, a hands-on technical vulnerability assessment is required, not just a paper exercise. Entities must use automated scanning tools, check configurations against baselines, verify patching, and assess access controls and network architecture. The standard CVSS scoring system ensures consistent severity ratings across all NCII sectors.",
+      "relatedActSection": "s21"
+    },
+    {
+      "id": "risk-meth-5",
+      "title": "Risk calculation and evaluation",
+      "requirement": "Risk levels shall be calculated by evaluating the combination of threat likelihood, vulnerability severity, and asset criticality. The risk evaluation shall produce a risk rating for each identified risk using a minimum five-level scale: Critical, High, Medium, Low, and Negligible. The methodology for combining threat, vulnerability, and impact factors shall be documented and reproducible. Risks rated Critical or High shall be reported to the Chief Executive and the relevant NCII sector lead within fourteen (14) calendar days of the risk assessment's completion, separate from and in addition to the submission of the full risk assessment report.",
+      "explanation": "Risk is the combination of how likely a threat is, how exploitable the vulnerability is, and how critical the affected asset is. The five-level scale provides granularity beyond simple high/medium/low. Critical and High risks must be fast-tracked to NACSA and the sector lead within 14 days, providing an early warning mechanism before the full report is due.",
+      "relatedActSection": "s21"
+    },
+    {
+      "id": "risk-meth-6",
+      "title": "Risk treatment plan",
+      "requirement": "For each risk rated Medium or above, the NCII entity shall develop a risk treatment plan specifying: (a) the chosen treatment option (mitigate, transfer, accept, or avoid); (b) specific security controls or measures to be implemented; (c) the responsible person for implementation; (d) the target completion date; and (e) the expected residual risk level after treatment. Risk acceptance for Critical or High risks shall require written approval from the entity's board of directors, chief executive officer, or equivalent governing authority, and shall be reported to the Chief Executive within thirty (30) calendar days.",
+      "explanation": "Identifying risks is not enough; entities must plan how to address them. For Critical and High risks that the entity chooses to accept rather than mitigate, board-level sign-off is required and NACSA must be notified. This ensures risk acceptance decisions are made at the highest governance level and are visible to the regulator.",
+      "relatedActSection": "s21"
+    },
+    {
+      "id": "risk-meth-7",
+      "title": "Approved assessors",
+      "requirement": "Cyber security risk assessments under section 21 shall be conducted or supervised by a person holding a valid licence under Part V of the Act and approved by the Chief Executive for the purpose of conducting NCII risk assessments. The approved assessor shall have demonstrated competence in risk assessment methodology, relevant sector knowledge, and familiarity with the regulatory requirements of the Act. The Chief Executive shall maintain and publish a list of approved assessors on the NACSA Cyber Security Portal.",
+      "explanation": "Risk assessments cannot be self-conducted by just anyone. They must be done by licensed and specifically approved cyber security professionals. NACSA publishes a list of approved assessors so entities can verify credentials. This ensures assessment quality and independence across all NCII sectors.",
+      "relatedActSection": "s21"
+    }
+  ]
+}

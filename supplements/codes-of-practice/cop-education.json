@@ -1,0 +1,105 @@
+{
+  "id": "cop-education",
+  "title": "Code of Practice for the Education Sector",
+  "type": "code-of-practice",
+  "sectorId": "education",
+  "sectorLead": "Ministry of Education / Ministry of Higher Education",
+  "approvedUnder": "s22",
+  "gazetteDate": null,
+  "effectiveDate": null,
+  "status": "pending",
+  "version": "0.1-placeholder",
+  "domains": [
+    {
+      "id": "ed-cop-1",
+      "name": "Governance and Institutional Oversight",
+      "description": "Cyber security governance for education NCII including national examination systems, student records infrastructure, and education management information systems",
+      "requirements": [
+        {
+          "id": "ed-cop-1.1",
+          "requirement": "The NCII entity shall establish a cyber security governance structure that addresses the protection of national examination systems, student information systems, and education management platforms designated as NCII, with a designated officer accountable for cyber security at the institutional or agency level.",
+          "rationale": "Education NCII supports systems that affect millions of students and the integrity of national qualifications. Governance structures must ensure these systems receive dedicated security attention proportionate to their national significance.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Education Act 1996; MOE ICT Policy; ISO 27001 A.5"
+        },
+        {
+          "id": "ed-cop-1.2",
+          "requirement": "The NCII entity shall develop a cyber security policy addressing the unique challenges of the education environment, including the large and diverse user population, the use of personal devices by students and staff, and the balance between academic openness and information protection.",
+          "rationale": "Education NCII operates in environments with high user turnover, personal device usage, and a culture of openness. Sector-specific policies must address these realities while maintaining protection of nationally critical education infrastructure.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MOE ICT Policy; MOHE University Governance Guidelines; ISO 27001 A.5"
+        }
+      ]
+    },
+    {
+      "id": "ed-cop-2",
+      "name": "Examination System Integrity",
+      "description": "Protection of national examination systems, question banks, and results processing infrastructure designated as NCII",
+      "requirements": [
+        {
+          "id": "ed-cop-2.1",
+          "requirement": "National examination systems designated as NCII, including question bank management, examination paper generation, answer processing, and results compilation, shall be deployed on isolated infrastructure with no direct internet connectivity during examination preparation and processing periods.",
+          "rationale": "The integrity of national examinations is fundamental to public trust in the education system. Network isolation during critical periods prevents remote attacks that could compromise question confidentiality or manipulate examination results.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Malaysian Examinations Council Standards; Lembaga Peperiksaan Operating Procedures; ISO 27001 A.13"
+        },
+        {
+          "id": "ed-cop-2.2",
+          "requirement": "All access to examination NCII systems shall be controlled through multi-factor authentication with role-based access, comprehensive audit logging of all data access and modifications, and segregation of duties ensuring no single individual can both create examination content and process results.",
+          "rationale": "Examination systems are high-value targets for fraud. Multi-factor authentication, audit trails, and segregation of duties provide layered protection against both external compromise and insider manipulation of examination NCII.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Malaysian Examinations Council Security Standards; ISO 27001 A.9; ISO 27001 A.12.4"
+        },
+        {
+          "id": "ed-cop-2.3",
+          "requirement": "Examination results data stored in NCII systems shall be protected with cryptographic integrity controls preventing unauthorised modification, with tamper-evident records of all changes to student grades and qualifications retained permanently.",
+          "rationale": "Examination results form the basis for academic progression and professional qualification. Cryptographic integrity controls ensure that stored results cannot be altered after official publication, protecting the credibility of national qualifications.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Malaysian Qualifications Agency Standards; ISO 27001 A.10; ISO 27001 A.12.4"
+        }
+      ]
+    },
+    {
+      "id": "ed-cop-3",
+      "name": "Student Data Protection and Privacy",
+      "description": "Protection of student personal data and academic records within education NCII",
+      "requirements": [
+        {
+          "id": "ed-cop-3.1",
+          "requirement": "Student personal data and academic records stored in education NCII systems shall be encrypted at rest and in transit, with access controls ensuring that student data is accessible only to authorised education personnel with a legitimate educational purpose.",
+          "rationale": "Education NCII holds personal data of minors and young adults. Strong encryption and purpose-limited access controls protect vulnerable populations from identity theft, profiling, and misuse of academic records.",
+          "relatedActSection": "s18",
+          "relatedFramework": "PDPA 2010; Child Act 2001; ISO 27001 A.10; ISO 27799"
+        },
+        {
+          "id": "ed-cop-3.2",
+          "requirement": "The NCII entity shall implement data retention and disposal policies for student records in accordance with education regulatory requirements, with secure deletion procedures for data that has exceeded its retention period and audit trails for all disposal actions.",
+          "rationale": "Education NCII accumulates large volumes of student data over time. Structured retention and disposal prevents indefinite accumulation of personal data beyond its legitimate purpose, reducing both privacy risk and the impact of potential data breaches.",
+          "relatedActSection": "s18",
+          "relatedFramework": "PDPA 2010 Principle 10; National Archives Act 2003; ISO 27001 A.8.3"
+        }
+      ]
+    },
+    {
+      "id": "ed-cop-4",
+      "name": "Incident Response and Academic Continuity",
+      "description": "Cyber incident response for education NCII with focus on maintaining academic calendar integrity and examination schedules",
+      "requirements": [
+        {
+          "id": "ed-cop-4.1",
+          "requirement": "Cyber security incidents affecting education NCII shall be reported to NACSA and the relevant Ministry (Education or Higher Education) within six hours of detection, with immediate escalation for incidents affecting active national examination processes, university admission systems during intake periods, or systems holding student financial aid data.",
+          "rationale": "Education NCII incidents during time-critical periods such as examinations and admissions can affect millions of students. Immediate escalation enables national coordination to protect academic calendar integrity and student welfare.",
+          "relatedActSection": "s23",
+          "relatedFramework": "MOE ICT Incident Procedures; ISO 27035"
+        },
+        {
+          "id": "ed-cop-4.2",
+          "requirement": "The NCII entity shall maintain documented contingency plans for the continuation of national examinations and academic administration in the event of NCII system compromise, including provisions for paper-based fallback, schedule rescheduling protocols, and alternative assessment mechanisms.",
+          "rationale": "Examination disruptions have severe consequences for students and national education outcomes. Contingency plans ensure that academic assessment can proceed even if digital NCII systems are unavailable due to cyber incidents.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Malaysian Examinations Council Contingency Plans; ISO 22301; MOE Emergency Procedures"
+        }
+      ]
+    }
+  ]
+}

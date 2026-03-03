@@ -1,0 +1,122 @@
+[
+  {
+    "id": "s28",
+    "part": "V",
+    "division": null,
+    "title": "Licensing of cyber security service providers",
+    "sectionNumber": 28,
+    "obligationType": "mandatory",
+    "verbatim": "(1) No person shall provide any cyber security service unless the person holds a valid licence granted under this Act.\n(2) An application for a licence shall be made to the Chief Executive in such form and manner as may be prescribed.\n(3) The Chief Executive may, upon receiving an application under subsection (2), grant or refuse to grant the licence.\n(4) A licence granted under this section shall be subject to such conditions as the Chief Executive may impose.\n(5) Any person who contravenes subsection (1) commits an offence and shall, on conviction, be liable to a fine not exceeding five hundred thousand ringgit or to imprisonment for a term not exceeding ten years or to both.",
+    "translation": "Creates a mandatory licensing regime for cyber security service providers. No person may provide cyber security services (defined in s2 to include SOC monitoring, penetration testing, and incident response) without a valid CE-issued licence. Applications are made in prescribed form; the CE may impose licence conditions. Unlicensed provision is a serious criminal offence (RM500,000/10 years). The Cyber Security (Licensing) Regulations 2024 prescribe detailed application procedures, qualifications, and conditions.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "licensing",
+      "cyber security service",
+      "mandatory licence",
+      "application",
+      "offence",
+      "service provider"
+    ]
+  },
+  {
+    "id": "s29",
+    "part": "V",
+    "division": null,
+    "title": "Duration and renewal of licence",
+    "sectionNumber": 29,
+    "obligationType": "procedural",
+    "verbatim": "(1) A licence granted under section 28 shall be valid for a period of three years from the date of grant unless sooner revoked or suspended.\n(2) A licence may be renewed upon application made to the Chief Executive not less than thirty days before the expiry of the licence.\n(3) The provisions of section 28 shall apply to an application for renewal as they apply to an application for the grant of a licence.",
+    "translation": "Licences are valid for 3 years and renewable. Renewal applications must be submitted at least 30 days before expiry, following the same process as initial applications. Service providers must plan for timely renewal to avoid gaps in licensed status.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "licence duration",
+      "renewal",
+      "three years",
+      "expiry",
+      "application"
+    ]
+  },
+  {
+    "id": "s30",
+    "part": "V",
+    "division": null,
+    "title": "Suspension and revocation of licence",
+    "sectionNumber": 30,
+    "obligationType": "procedural",
+    "verbatim": "(1) The Chief Executive may suspend or revoke a licence if the licensee—\n(a) has contravened any provision of this Act or any condition of the licence;\n(b) has been convicted of any offence involving fraud or dishonesty;\n(c) obtained the licence through fraud, misrepresentation or concealment of a material fact;\n(d) has ceased to carry on the business of providing cyber security services; or\n(e) is a body corporate and is being wound up.\n(2) Before suspending or revoking a licence, the Chief Executive shall give the licensee a written notice of his intention to do so and shall give the licensee an opportunity to make representations.\n(3) A person aggrieved by a suspension or revocation may appeal to the Minister within thirty days.",
+    "translation": "The CE may suspend or revoke a licence for: contravening the Act or licence conditions, fraud or dishonesty convictions, obtaining the licence by misrepresentation, ceasing business operations, or corporate winding up. Procedural fairness is required — the licensee must receive written notice and an opportunity to make representations before suspension/revocation. A 30-day appeal right to the Minister exists.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "suspension",
+      "revocation",
+      "licence",
+      "representations",
+      "appeal",
+      "Minister"
+    ]
+  },
+  {
+    "id": "s31",
+    "part": "V",
+    "division": null,
+    "title": "Register of licensees",
+    "sectionNumber": 31,
+    "obligationType": "administrative",
+    "verbatim": "(1) The Chief Executive shall maintain a register of all persons who hold a licence granted under this Part.\n(2) The register shall contain such particulars as may be prescribed.\n(3) The register or any extract thereof, certified by the Chief Executive, shall be admissible as prima facie evidence.",
+    "translation": "The CE maintains a public register of licensed cyber security service providers. The register contents are prescribed by regulation and certified extracts are admissible as prima facie evidence. This enables NCII entities to verify that their service providers (e.g., auditors, penetration testers) hold valid licences.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "register",
+      "licensees",
+      "public record",
+      "evidence"
+    ]
+  },
+  {
+    "id": "s32",
+    "part": "V",
+    "division": null,
+    "title": "Obligations of licensee",
+    "sectionNumber": 32,
+    "obligationType": "mandatory",
+    "verbatim": "(1) A licensee shall—\n(a) comply with all conditions of the licence;\n(b) maintain the standards of competence, integrity and professionalism in the provision of cyber security services;\n(c) maintain the confidentiality of any information obtained in the course of providing cyber security services;\n(d) keep and maintain records of all cyber security services provided; and\n(e) comply with any directive or guideline issued by the Chief Executive.\n(2) A licensee that fails to comply with subsection (1) commits an offence.",
+    "translation": "Licensed providers must comply with licence conditions, maintain professional standards (competence, integrity, professionalism), preserve client confidentiality, keep service records, and follow CE directives/guidelines. Non-compliance is a criminal offence. The confidentiality obligation is particularly important given that licensed providers may have deep access to NCII entities' systems and sensitive security information.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "licensee obligations",
+      "competence",
+      "confidentiality",
+      "records",
+      "professionalism"
+    ]
+  },
+  {
+    "id": "s33",
+    "part": "V",
+    "division": null,
+    "title": "Effect of suspension or revocation",
+    "sectionNumber": 33,
+    "obligationType": "procedural",
+    "verbatim": "(1) Where a licence is suspended or revoked, the licensee shall immediately cease to provide any cyber security service.\n(2) The suspension or revocation of a licence shall not affect any liability incurred before the date of the suspension or revocation.",
+    "translation": "Upon suspension or revocation, a licensee must immediately stop providing cyber security services. However, liabilities incurred before the suspension/revocation (e.g., contractual obligations, penalties for past non-compliance) remain enforceable.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "suspension effect",
+      "cessation",
+      "liability",
+      "revocation"
+    ]
+  }
+]

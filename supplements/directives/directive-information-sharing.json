@@ -1,0 +1,56 @@
+{
+  "id": "directive-information-sharing",
+  "title": "Directive on NCII Information Sharing",
+  "type": "directive",
+  "issuedBy": "Chief Executive, NACSA",
+  "issuedUnder": "s15",
+  "gazetteDate": "2024-09-15",
+  "effectiveDate": "2024-09-15",
+  "subject": "Information sharing protocols, classification handling, secure channels, and trust frameworks for threat intelligence exchange among NCII entities, sector leads, and NACSA",
+  "status": "in-force",
+  "applicableTo": "All NCII entities and NCII sector leads",
+  "provisions": [
+    {
+      "id": "info-share-1",
+      "title": "Purpose and scope",
+      "requirement": "This directive establishes the protocols, channels, and trust framework for the sharing of cyber security information among NCII entities, NCII sector leads, and NACSA pursuant to sections 25 and 27 of the Act. The directive covers the sharing of threat information, vulnerability disclosures, incident intelligence, indicators of compromise (IOCs), and other cyber security information relevant to the protection of national critical information infrastructure.",
+      "explanation": "Creates a structured framework for the information sharing duties in s25 (entity duty to share threat info) and s27 (CE power to share information). Covers the full spectrum of cyber security intelligence, from raw indicators of compromise to analyzed threat reports.",
+      "relatedActSection": "s25"
+    },
+    {
+      "id": "info-share-2",
+      "title": "Traffic Light Protocol adoption",
+      "requirement": "All cyber security information shared under this directive shall be classified using the Traffic Light Protocol (TLP) version 2.0 as published by FIRST (Forum of Incident Response and Security Teams). The following classifications shall apply: (a) TLP:RED — for information restricted to specific named recipients only, not to be shared further; (b) TLP:AMBER+STRICT — for information limited to the recipient organization only; (c) TLP:AMBER — for information shareable within the recipient's sector community on a need-to-know basis; (d) TLP:GREEN — for information shareable within the NCII community but not publicly; and (e) TLP:CLEAR — for information with no sharing restrictions. Where information is received from the Chief Executive under section 27, the TLP classification assigned by NACSA shall be observed by all recipients.",
+      "explanation": "Adopts the internationally recognized TLP framework to control how shared information can be further distributed. This gives entities confidence that sensitive threat data they share will not be inappropriately disseminated. NACSA sets the TLP level when it distributes information, ensuring consistent handling across all recipients.",
+      "relatedActSection": "s25"
+    },
+    {
+      "id": "info-share-3",
+      "title": "Mandatory sharing obligations",
+      "requirement": "In accordance with section 25, an NCII entity shall share with the Chief Executive, as soon as practicable and in no case later than twenty-four (24) hours after becoming aware, any information relating to: (a) a cyber security threat that may affect any other national critical information infrastructure, whether within or outside the entity's NCII sector; (b) the discovery of a previously unknown vulnerability in any system, software, or component that is reasonably believed to be in use by other NCII entities; (c) indicators of compromise (IOCs) associated with active or recent attacks against the entity's national critical information infrastructure; and (d) tactics, techniques, and procedures (TTPs) observed in attacks against the entity's national critical information infrastructure. Information shared under this provision shall be classified at a minimum of TLP:AMBER unless a higher restriction is warranted.",
+      "explanation": "Puts a concrete 24-hour deadline on the 'as soon as practicable' duty in s25. Specifies four categories of information that must always be shared: cross-sector threats, new vulnerabilities, IOCs from attacks, and observed attacker TTPs. The default TLP:AMBER classification protects entities while still enabling controlled sharing within the NCII community.",
+      "relatedActSection": "s25"
+    },
+    {
+      "id": "info-share-4",
+      "title": "Secure sharing channels",
+      "requirement": "All information shared under this directive shall be transmitted through secure channels approved by the Chief Executive. The approved sharing channels are: (a) the NACSA Threat Intelligence Sharing Platform (TISP), operated and maintained by NACSA; (b) encrypted email using S/MIME or PGP encryption with NACSA-issued or NACSA-approved certificates; (c) the NACSA Secure Messaging Service for time-critical communications; and (d) in-person briefings conducted at NACSA-approved secure facilities for TLP:RED information. Sharing of classified or TLP:RED information through any channel not approved under this directive is prohibited. Each NCII entity shall designate at least two (2) authorized personnel to access the TISP and shall ensure continuity of access at all times.",
+      "explanation": "Information security starts with the channels used to share it. This provision mandates specific approved platforms and encryption standards, preventing sensitive threat data from being shared via insecure means such as unencrypted email or consumer messaging apps. The requirement for two authorized TISP users ensures continuous access even during personnel changes or absences.",
+      "relatedActSection": "s25"
+    },
+    {
+      "id": "info-share-5",
+      "title": "Handling and protection of shared information",
+      "requirement": "Any NCII entity or NCII sector lead receiving cyber security information under this directive shall: (a) handle the information in accordance with its TLP classification; (b) restrict access to the information to personnel with a legitimate need to know; (c) not further share, publish, or disclose the information beyond the scope permitted by its TLP classification without the prior written consent of the originating party or the Chief Executive; (d) store the information on systems meeting the security requirements appropriate to its classification; and (e) destroy or securely delete the information when it is no longer required for the purpose for which it was shared, unless retention is required for regulatory or legal purposes. Breach of handling obligations under this provision may be treated as a failure to comply with a directive of the Chief Executive under section 15(2).",
+      "explanation": "Receiving entities have strict handling obligations that mirror the TLP classifications. Information must be kept on appropriately secured systems, restricted to need-to-know personnel, and deleted when no longer needed. Mishandling is enforceable as a directive breach, creating real accountability for information protection throughout the sharing chain.",
+      "relatedActSection": "s27"
+    },
+    {
+      "id": "info-share-6",
+      "title": "Liability protection for good-faith sharing",
+      "requirement": "No NCII entity, NCII sector lead, or officer thereof shall be subject to civil liability for the sharing of cyber security information in good faith and in accordance with this directive and sections 25 and 27 of the Act, provided that the information is shared: (a) through the approved channels specified in this directive; (b) in accordance with the applicable TLP classification; (c) for the purpose of protecting national critical information infrastructure; and (d) without malicious intent or gross negligence. This protection does not extend to the sharing of personal data or commercially confidential information that is not directly relevant to a cyber security threat, vulnerability, or incident.",
+      "explanation": "A major barrier to information sharing is fear of legal liability. This provision creates a safe harbor for entities that share threat information in good faith through proper channels. Entities cannot be sued for sharing IOCs or threat data that help protect others, unless they act maliciously or share irrelevant personal or commercial data.",
+      "relatedActSection": "s25"
+    }
+  ]
+}

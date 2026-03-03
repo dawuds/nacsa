@@ -1,0 +1,81 @@
+[
+  {
+    "id": "I",
+    "name": "Preliminary",
+    "sections": "1-4",
+    "description": "Short title, commencement, interpretation of key definitions including 'cyber security', 'national critical information infrastructure', 'cyber security incident', 'cyber security service provider', and application of the Act",
+    "divisions": null
+  },
+  {
+    "id": "II",
+    "name": "The National Cyber Security Agency",
+    "sections": "5-7",
+    "description": "Establishment of NACSA's functions and powers, appointment and authority of the Chief Executive of the National Cyber Security Agency, and appointment of officers and servants",
+    "divisions": null
+  },
+  {
+    "id": "III",
+    "name": "The National Cyber Security Committee",
+    "sections": "8-16",
+    "description": "Establishment, composition, functions and procedures of the National Cyber Security Committee chaired by the Prime Minister, including delegation of functions, meetings, minutes, and secretariat arrangements",
+    "divisions": null
+  },
+  {
+    "id": "IV",
+    "name": "National Critical Information Infrastructure",
+    "sections": "17-27",
+    "description": "Core compliance framework: designation of NCII entities and sectors, duties of NCII entities, information provision obligations, cyber security risk assessments and audits, compliance with standards and codes of practice, incident notification requirements, and information sharing mechanisms",
+    "divisions": [
+      {
+        "id": "IV-1",
+        "name": "Designation and Duties",
+        "sections": "17-20"
+      },
+      {
+        "id": "IV-2",
+        "name": "Risk Assessment, Audit and Standards",
+        "sections": "21-24"
+      },
+      {
+        "id": "IV-3",
+        "name": "Incident Notification and Information Sharing",
+        "sections": "25-27"
+      }
+    ]
+  },
+  {
+    "id": "V",
+    "name": "Licensing of Cyber Security Service Providers",
+    "sections": "28-33",
+    "description": "Licensing regime for cyber security service providers, licence conditions, suspension and revocation, register of licensees, and offences for unlicensed provision of cyber security services",
+    "divisions": null
+  },
+  {
+    "id": "VI",
+    "name": "Powers of Enforcement",
+    "sections": "34-47",
+    "description": "Powers of authorized officers including investigation, search and seizure with and without warrant, access to computerized data, power to intercept communications, obstruction offences, and seizure of property",
+    "divisions": null
+  },
+  {
+    "id": "VII",
+    "name": "General",
+    "sections": "48-55",
+    "description": "General provisions including appeals to the Minister, obligation of secrecy, protection of informers, evidence of agent provocateur, offences by body corporate, prosecution requirements, compounding of offences, and protection against suits",
+    "divisions": null
+  },
+  {
+    "id": "VIII",
+    "name": "Saving and Transitional",
+    "sections": "56-60",
+    "description": "Saving provisions for existing obligations and transitional arrangements for entities operating before commencement of the Act, including existing NCII entities, cyber security service providers, and pending proceedings",
+    "divisions": null
+  },
+  {
+    "id": "IX",
+    "name": "Amendment to the Computer Crimes Act 1997",
+    "sections": "61-64",
+    "description": "Consequential amendments to the Computer Crimes Act 1997 [Act 563] to align with the Cyber Security Act 2024, including enhanced penalties and new offence provisions related to critical information infrastructure",
+    "divisions": null
+  }
+]

@@ -1,0 +1,182 @@
+{
+  "id": "cop-government",
+  "title": "Code of Practice for the Government Sector",
+  "type": "code-of-practice",
+  "sectorId": "government",
+  "sectorLead": "MAMPU",
+  "approvedUnder": "s22",
+  "gazetteDate": null,
+  "effectiveDate": null,
+  "status": "template_issued",
+  "version": "1.0-draft",
+  "domains": [
+    {
+      "id": "gov-cop-1",
+      "name": "Governance and Oversight",
+      "description": "Establishment of cyber security governance structures within government agencies operating NCII",
+      "requirements": [
+        {
+          "id": "gov-cop-1.1",
+          "requirement": "The head of agency shall designate a Chief Information Security Officer (CISO) with direct reporting authority to the Secretary General or equivalent, responsible for overseeing all NCII cyber security matters within the agency.",
+          "rationale": "Government agencies require clear lines of accountability for NCII protection. Direct reporting to senior leadership ensures cyber security decisions receive appropriate executive attention and resource allocation.",
+          "relatedActSection": "s18",
+          "relatedFramework": "RAKKSSA 3.0 Domain 1"
+        },
+        {
+          "id": "gov-cop-1.2",
+          "requirement": "Each agency operating NCII shall establish a Cyber Security Steering Committee that convenes at minimum quarterly to review the agency's NCII risk posture, approve security policies, and ensure compliance with this Code of Practice.",
+          "rationale": "Structured governance through a steering committee ensures systematic oversight and prevents ad hoc decision-making on critical infrastructure protection.",
+          "relatedActSection": "s18",
+          "relatedFramework": "RAKKSSA 3.0 Domain 1; MyGovCloud Security Policy"
+        },
+        {
+          "id": "gov-cop-1.3",
+          "requirement": "The agency shall maintain a documented NCII cyber security policy aligned with national directives issued by NACSA and MAMPU, reviewed and updated at least annually or upon significant changes to the threat landscape.",
+          "rationale": "A formal, regularly updated policy ensures that government NCII protection measures remain current with evolving threats and aligned with whole-of-government security directives.",
+          "relatedActSection": "s22",
+          "relatedFramework": "RAKKSSA 3.0 Domain 2; ISMS ISO 27001 A.5"
+        }
+      ]
+    },
+    {
+      "id": "gov-cop-2",
+      "name": "NCII Asset Classification and Management",
+      "description": "Identification, classification, and lifecycle management of government NCII assets",
+      "requirements": [
+        {
+          "id": "gov-cop-2.1",
+          "requirement": "The agency shall maintain a comprehensive and current inventory of all NCII assets including hardware, software, data repositories, and interconnected systems, classified according to the Official Government Classification Scheme and NCII criticality levels defined under the Act.",
+          "rationale": "Accurate asset identification and classification is foundational to protecting government NCII. Assets cannot be protected if they are not known and appropriately categorised.",
+          "relatedActSection": "s16",
+          "relatedFramework": "RAKKSSA 3.0 Domain 3; ISO 27001 A.8"
+        },
+        {
+          "id": "gov-cop-2.2",
+          "requirement": "All NCII assets shall be assigned a designated asset owner within the agency who is accountable for the security, availability, and integrity of the asset throughout its lifecycle, from commissioning to decommissioning.",
+          "rationale": "Clear asset ownership ensures accountability and prevents gaps in protection that arise when responsibility for NCII assets is ambiguous.",
+          "relatedActSection": "s16",
+          "relatedFramework": "RAKKSSA 3.0 Domain 3"
+        },
+        {
+          "id": "gov-cop-2.3",
+          "requirement": "The agency shall implement a secure asset disposal procedure for NCII components, including certified data sanitisation or physical destruction, with auditable records maintained for a minimum of seven years.",
+          "rationale": "Improper disposal of government NCII assets may expose sensitive national information. Certified destruction with record-keeping ensures no data remnants persist beyond the asset's operational life.",
+          "relatedActSection": "s18",
+          "relatedFramework": "RAKKSSA 3.0 Domain 3; Arahan Keselamatan (Semakan dan Pindaan 2017)"
+        }
+      ]
+    },
+    {
+      "id": "gov-cop-3",
+      "name": "Risk Assessment and Management",
+      "description": "Systematic identification, assessment, and treatment of cyber security risks to government NCII",
+      "requirements": [
+        {
+          "id": "gov-cop-3.1",
+          "requirement": "The agency shall conduct a formal NCII cyber security risk assessment at least annually, or whenever significant changes occur to infrastructure, services, or the threat environment, using a methodology approved by NACSA.",
+          "rationale": "Regular risk assessments ensure that government agencies maintain an accurate understanding of threats to their NCII and can prioritise protective measures accordingly.",
+          "relatedActSection": "s18",
+          "relatedFramework": "RAKKSSA 3.0 Domain 4; ISO 27005; MyRAM"
+        },
+        {
+          "id": "gov-cop-3.2",
+          "requirement": "Risk treatment plans for identified NCII vulnerabilities shall be documented, approved by the CISO, and implemented within timeframes proportionate to the severity of the risk, with critical risks addressed within 30 days of identification.",
+          "rationale": "Timely remediation of identified risks prevents known vulnerabilities from being exploited. Defined timelines ensure that risk treatment is not indefinitely deferred.",
+          "relatedActSection": "s18",
+          "relatedFramework": "RAKKSSA 3.0 Domain 4; ISO 27001 A.8.8"
+        },
+        {
+          "id": "gov-cop-3.3",
+          "requirement": "The agency shall maintain a risk register for all NCII assets and systems, reporting residual risk status to the Cyber Security Steering Committee quarterly and to NACSA upon request.",
+          "rationale": "A centralised risk register provides visibility into the aggregate risk posture of government NCII and enables informed decision-making at both agency and national levels.",
+          "relatedActSection": "s20",
+          "relatedFramework": "RAKKSSA 3.0 Domain 4; ISO 27001 Clause 6.1"
+        }
+      ]
+    },
+    {
+      "id": "gov-cop-4",
+      "name": "Access Control and Network Security",
+      "description": "Controls governing access to government NCII systems and protection of government network infrastructure",
+      "requirements": [
+        {
+          "id": "gov-cop-4.1",
+          "requirement": "Access to NCII systems shall be granted on a least-privilege and need-to-know basis, with multi-factor authentication mandatory for all administrative and remote access to NCII components.",
+          "rationale": "Government NCII systems are high-value targets for nation-state and criminal actors. Multi-factor authentication and least-privilege principles significantly reduce the attack surface for unauthorised access.",
+          "relatedActSection": "s18",
+          "relatedFramework": "RAKKSSA 3.0 Domain 5; ISO 27001 A.9; 1GovNet Security Standards"
+        },
+        {
+          "id": "gov-cop-4.2",
+          "requirement": "Government NCII networks shall be segmented from general-purpose government networks, with traffic between segments controlled by approved firewall rules and monitored through intrusion detection systems integrated with the national SOC.",
+          "rationale": "Network segmentation isolates critical infrastructure from less secure segments, limiting lateral movement by adversaries and reducing the blast radius of any security breach.",
+          "relatedActSection": "s18",
+          "relatedFramework": "RAKKSSA 3.0 Domain 5; 1GovNet Architecture; ISO 27001 A.13"
+        },
+        {
+          "id": "gov-cop-4.3",
+          "requirement": "All privileged access sessions on NCII systems shall be logged and subject to session recording. Access logs shall be retained for a minimum of three years and made available to NACSA for audit purposes.",
+          "rationale": "Comprehensive logging of privileged access to government NCII provides an audit trail for forensic investigation and deters insider threats through accountability.",
+          "relatedActSection": "s20",
+          "relatedFramework": "RAKKSSA 3.0 Domain 5; ISO 27001 A.12.4"
+        }
+      ]
+    },
+    {
+      "id": "gov-cop-5",
+      "name": "Incident Management and Reporting",
+      "description": "Detection, response, and mandatory reporting of cyber security incidents affecting government NCII",
+      "requirements": [
+        {
+          "id": "gov-cop-5.1",
+          "requirement": "The agency shall establish a Cyber Security Incident Response Team (CSIRT) or designate responsibility to an existing team, with documented procedures for detecting, containing, eradicating, and recovering from cyber security incidents affecting NCII.",
+          "rationale": "A prepared incident response capability minimises the impact and duration of cyber security incidents on government NCII, ensuring continuity of essential government services.",
+          "relatedActSection": "s23",
+          "relatedFramework": "RAKKSSA 3.0 Domain 7; ISO 27035"
+        },
+        {
+          "id": "gov-cop-5.2",
+          "requirement": "Cyber security incidents affecting NCII shall be reported to NACSA within six hours of detection for critical incidents and within 24 hours for non-critical incidents, using the prescribed national incident reporting format.",
+          "rationale": "Timely incident reporting enables NACSA to coordinate national response efforts, issue warnings to other agencies, and maintain situational awareness of threats to government NCII.",
+          "relatedActSection": "s23",
+          "relatedFramework": "RAKKSSA 3.0 Domain 7; Pekeliling Am Bil. 1 Tahun 2001"
+        },
+        {
+          "id": "gov-cop-5.3",
+          "requirement": "The agency shall conduct a post-incident review within 30 days of incident closure, documenting root cause analysis, lessons learned, and corrective actions, with a summary report submitted to NACSA.",
+          "rationale": "Post-incident reviews strengthen future defences by identifying systemic weaknesses exposed during the incident and ensuring corrective measures prevent recurrence.",
+          "relatedActSection": "s23",
+          "relatedFramework": "RAKKSSA 3.0 Domain 7; ISO 27035-2"
+        }
+      ]
+    },
+    {
+      "id": "gov-cop-6",
+      "name": "Business Continuity and Disaster Recovery",
+      "description": "Ensuring continuity of essential government services dependent on NCII during and after cyber security incidents",
+      "requirements": [
+        {
+          "id": "gov-cop-6.1",
+          "requirement": "The agency shall develop and maintain a Business Continuity Plan (BCP) and Disaster Recovery Plan (DRP) specifically addressing cyber security scenarios affecting NCII, tested through tabletop or full-scale exercises at least annually.",
+          "rationale": "Government services dependent on NCII must be resilient to cyber disruptions. Regular testing validates that recovery procedures are effective and personnel are prepared.",
+          "relatedActSection": "s18",
+          "relatedFramework": "RAKKSSA 3.0 Domain 8; ISO 22301; Arahan MKN No. 24"
+        },
+        {
+          "id": "gov-cop-6.2",
+          "requirement": "Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO) shall be defined for all NCII systems, with RTOs not exceeding four hours for systems classified as critical to national security or public safety.",
+          "rationale": "Defined and stringent recovery objectives ensure that the most critical government NCII systems are restored within timeframes that prevent cascading impacts on national security and public welfare.",
+          "relatedActSection": "s18",
+          "relatedFramework": "RAKKSSA 3.0 Domain 8; ISO 22301 Clause 8.3"
+        },
+        {
+          "id": "gov-cop-6.3",
+          "requirement": "Backup copies of NCII data and system configurations shall be maintained in geographically separate, secure locations within Malaysia, with backup integrity verified through regular restoration tests.",
+          "rationale": "Geographically distributed backups within national borders ensure data sovereignty while protecting against localised disasters that could destroy both primary systems and co-located backups.",
+          "relatedActSection": "s18",
+          "relatedFramework": "RAKKSSA 3.0 Domain 8; ISO 27001 A.12.3; PDPA 2010"
+        }
+      ]
+    }
+  ]
+}

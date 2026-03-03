@@ -1,0 +1,968 @@
+{
+  "s17": {
+    "sectionId": "s17",
+    "part": "IV",
+    "title": "Designation of NCII entity and NCII sector lead",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "Gateway provision for all Part IV obligations. Designation as an NCII entity triggers the full compliance duty catalogue.",
+      "requirements": [
+        {
+          "id": "s17-L1",
+          "requirement": "Identify whether the organization owns or operates infrastructure that could qualify as NCII and proactively assess designation risk",
+          "rationale": "Once designated, the entity bears immediate obligations under ss18-26 with severe penalties for non-compliance",
+          "owner": "Board / CEO",
+          "frequency": "Annual",
+          "priority": "Critical",
+          "source": "s17",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s17-L2",
+          "requirement": "Upon receiving a designation notice, verify the scope of designated NCII assets and understand the full compliance obligations triggered",
+          "rationale": "Designation scope determines which systems are subject to risk assessment, audit, and incident notification requirements",
+          "owner": "Legal Counsel",
+          "frequency": "On designation",
+          "priority": "Critical",
+          "source": "s17",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s17-L3",
+          "requirement": "If aggrieved by designation, file an appeal to the Minister within 30 days of notification",
+          "rationale": "Strict 30-day time limit for appeals; failure to appeal within this period results in designation becoming final",
+          "owner": "Legal Counsel",
+          "frequency": "On designation",
+          "priority": "High",
+          "source": "s17",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Asset identification and scoping for NCII designation.",
+      "requirements": [
+        {
+          "id": "s17-T1",
+          "requirement": "Maintain a comprehensive asset inventory identifying all systems that may qualify as NCII, including their criticality assessment and interdependencies",
+          "rationale": "CE considers the nature, extent, and consequences of compromise — organizations need to understand their own NCII landscape",
+          "owner": "IT Asset Management",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s17",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s17-T2",
+          "requirement": "Map system dependencies and identify single points of failure for designated NCII assets",
+          "rationale": "Understanding the blast radius of infrastructure compromise is essential for both designation assessment and subsequent compliance",
+          "owner": "Enterprise Architect",
+          "frequency": "Annual",
+          "priority": "High",
+          "source": "s17",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Board-level awareness and governance for NCII designation and its implications.",
+      "requirements": [
+        {
+          "id": "s17-G1",
+          "requirement": "Brief the Board on NCII designation implications including full compliance obligations, penalty exposure (up to RM500,000/10 years), and director liability under s52",
+          "rationale": "Board must understand that designation creates personal liability for directors and officers",
+          "owner": "Company Secretary / Legal",
+          "frequency": "On designation",
+          "priority": "Critical",
+          "source": "s17",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s17-G2",
+          "requirement": "Appoint a designated NCII compliance officer and establish clear accountability for Act compliance",
+          "rationale": "Cross-functional compliance program requires dedicated ownership given breadth of obligations",
+          "owner": "CEO",
+          "frequency": "On designation",
+          "priority": "Critical",
+          "source": "s17",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s18": {
+    "sectionId": "s18",
+    "part": "IV",
+    "title": "Duties of NCII entity",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "Comprehensive duty catalogue for NCII entities. Breach of any duty is a criminal offence (RM500,000/10 years).",
+      "requirements": [
+        {
+          "id": "s18-L1",
+          "requirement": "Implement and maintain cyber security measures to protect NCII, ensuring measures are current, effective, and proportionate to the risk profile",
+          "rationale": "Overarching obligation encompassing all technical and organizational measures for NCII protection",
+          "owner": "CISO",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s18",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s18-L2",
+          "requirement": "Comply with all applicable standards, codes of practice, and directives issued under the Act",
+          "rationale": "s18(1)(b) creates a legal obligation to comply with subsidiary instruments, making non-compliance with any standard/CoP/directive a criminal offence",
+          "owner": "Compliance Officer",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s18",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s18-L3",
+          "requirement": "Report cyber security incidents to the CE in accordance with s26 notification requirements",
+          "rationale": "s18(1)(c) duty to report, read with s26 6-hour timeline for significant incidents",
+          "owner": "Incident Response Lead",
+          "frequency": "Per-incident",
+          "priority": "Critical",
+          "source": "s18",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s18-L4",
+          "requirement": "Conduct or cause to be conducted cyber security risk assessments per s21 requirements",
+          "rationale": "s18(1)(d) duty read with s21 for prescribed frequency and approved assessor requirement",
+          "owner": "CISO",
+          "frequency": "As prescribed (typically annual)",
+          "priority": "Critical",
+          "source": "s18",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s18-L5",
+          "requirement": "Conduct or cause to be conducted cyber security audits per s23 requirements",
+          "rationale": "s18(1)(e) duty read with s23 for prescribed frequency and approved auditor requirement",
+          "owner": "CISO",
+          "frequency": "As prescribed (typically annual)",
+          "priority": "Critical",
+          "source": "s18",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s18-L6",
+          "requirement": "Provide information as required by the CE or NCII sector lead under s20",
+          "rationale": "s18(1)(f) duty to cooperate with regulatory information requests",
+          "owner": "Compliance Officer",
+          "frequency": "On request",
+          "priority": "High",
+          "source": "s18",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical implementation of NCII protection measures across the full cyber security lifecycle.",
+      "requirements": [
+        {
+          "id": "s18-T1",
+          "requirement": "Deploy and maintain defence-in-depth security architecture for all designated NCII assets, including network segmentation, access controls, encryption, and monitoring",
+          "rationale": "Duty to implement and maintain cyber security measures requires a comprehensive technical security program",
+          "owner": "IT Security Team",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s18",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s18-T2",
+          "requirement": "Implement 24/7 security monitoring capability for designated NCII, with alerting and escalation for potential incidents",
+          "rationale": "6-hour incident notification window requires real-time detection capability",
+          "owner": "SOC Manager",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s18",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s18-T3",
+          "requirement": "Maintain current patch management and vulnerability remediation processes for NCII assets",
+          "rationale": "Known vulnerabilities in NCII assets could constitute failure to maintain cyber security measures",
+          "owner": "IT Operations",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s18",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance framework for NCII entity duties and compliance program management.",
+      "requirements": [
+        {
+          "id": "s18-G1",
+          "requirement": "Establish a comprehensive NCII compliance program with clear policies, procedures, roles and responsibilities covering all s18(1) duties",
+          "rationale": "Multiple concurrent obligations require an integrated compliance management approach",
+          "owner": "CISO",
+          "frequency": "Annual review",
+          "priority": "Critical",
+          "source": "s18",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s18-G2",
+          "requirement": "Report quarterly to the Board on NCII compliance status, covering risk assessment results, audit findings, incident history, and remediation progress",
+          "rationale": "Director liability under s52 requires boards to demonstrate active oversight of NCII compliance",
+          "owner": "CISO",
+          "frequency": "Quarterly",
+          "priority": "High",
+          "source": "s18",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s19": {
+    "sectionId": "s19",
+    "part": "IV",
+    "title": "Duties of NCII sector lead",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "Sector leads must coordinate, monitor, and support NCII entities within their sector.",
+      "requirements": [
+        {
+          "id": "s19-L1",
+          "requirement": "Coordinate and monitor the cyber security posture of all NCII in the designated sector",
+          "rationale": "Sector leads are the regulatory intermediary between NACSA and individual NCII entities",
+          "owner": "Sector Lead Agency Head",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s19",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s19-L2",
+          "requirement": "Develop and recommend sector-specific codes of practice for CE approval under s22",
+          "rationale": "CoPs tailor the Act's general requirements to sector-specific contexts and risk profiles",
+          "owner": "Sector Lead Technical Team",
+          "frequency": "Initial + periodic updates",
+          "priority": "High",
+          "source": "s19",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s19-L3",
+          "requirement": "Report to the CE on the state of cyber security in the sector",
+          "rationale": "Feeds into national-level situational awareness and policy development",
+          "owner": "Sector Lead Agency Head",
+          "frequency": "As prescribed",
+          "priority": "High",
+          "source": "s19",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical coordination and advisory functions of sector leads.",
+      "requirements": [
+        {
+          "id": "s19-T1",
+          "requirement": "Establish sector-level threat intelligence sharing mechanism and coordinate sectoral incident response",
+          "rationale": "Sector leads must be technically capable of monitoring and coordinating cyber security across their sector",
+          "owner": "Sector Lead CERT",
+          "frequency": "Continuous",
+          "priority": "High",
+          "source": "s19",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Sector-level governance framework for NCII oversight.",
+      "requirements": [
+        {
+          "id": "s19-G1",
+          "requirement": "Establish a sector-level NCII governance forum for regular engagement with NCII entities, including compliance support and best-practice sharing",
+          "rationale": "s19(1)(c) duty to advise NCII entities and s19(1)(e) duty to assist compliance require structured engagement",
+          "owner": "Sector Lead Agency",
+          "frequency": "Quarterly",
+          "priority": "High",
+          "source": "s19",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s20": {
+    "sectionId": "s20",
+    "part": "IV",
+    "title": "Provision of information",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "NCII entities must provide information and documents when requested by the CE, with criminal penalties for non-compliance or providing false information.",
+      "requirements": [
+        {
+          "id": "s20-L1",
+          "requirement": "Respond to CE information requests within the specified period, providing complete and accurate information about NCII assets, security posture, and operations",
+          "rationale": "Non-compliance carries RM200,000/3 years; false information carries RM300,000/5 years",
+          "owner": "Compliance Officer",
+          "frequency": "On request",
+          "priority": "Critical",
+          "source": "s20",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s20-L2",
+          "requirement": "Establish internal processes to collect and verify NCII information rapidly, ensuring responses can meet CE-specified timelines",
+          "rationale": "Information requests may have tight deadlines; organizations need ready access to asset inventories, configuration data, and security documentation",
+          "owner": "IT Asset Management",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s20",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical capability to produce accurate NCII information on demand.",
+      "requirements": [
+        {
+          "id": "s20-T1",
+          "requirement": "Maintain up-to-date NCII asset register with system configurations, network diagrams, data flow maps, and security control inventory",
+          "rationale": "CE information requests may require detailed technical documentation about NCII assets",
+          "owner": "IT Asset Management",
+          "frequency": "Continuous",
+          "priority": "High",
+          "source": "s20",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance processes for handling regulatory information requests.",
+      "requirements": [
+        {
+          "id": "s20-G1",
+          "requirement": "Establish a regulatory request handling procedure with defined roles, escalation paths, and quality assurance checks to ensure accuracy of responses",
+          "rationale": "Criminal liability for false or misleading information requires robust verification before submission",
+          "owner": "Compliance Officer",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s20",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s21": {
+    "sectionId": "s21",
+    "part": "IV",
+    "title": "Cyber security risk assessment",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "Mandatory periodic and on-demand risk assessments by approved persons, with results submitted to CE and sector lead.",
+      "requirements": [
+        {
+          "id": "s21-L1",
+          "requirement": "Conduct cyber security risk assessments at intervals not exceeding the prescribed period (typically annually) for all designated NCII",
+          "rationale": "Non-compliance carries RM500,000/10 years — one of the highest penalty tiers under the Act",
+          "owner": "CISO",
+          "frequency": "Annual (or as prescribed)",
+          "priority": "Critical",
+          "source": "s21",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s21-L2",
+          "requirement": "Conduct additional risk assessments within the period specified when directed by the CE",
+          "rationale": "CE may direct ad-hoc assessments in response to emerging threats, sector-wide incidents, or compliance concerns",
+          "owner": "CISO",
+          "frequency": "On CE direction",
+          "priority": "Critical",
+          "source": "s21",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s21-L3",
+          "requirement": "Engage only CE-approved persons to conduct the risk assessment",
+          "rationale": "Assessment quality assurance — approved persons are typically licensed cyber security service providers under Part V",
+          "owner": "Procurement / CISO",
+          "frequency": "Per-assessment",
+          "priority": "Critical",
+          "source": "s21",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s21-L4",
+          "requirement": "Submit risk assessment results to the CE and the relevant NCII sector lead within prescribed timeframes",
+          "rationale": "Results inform NACSA's national NCII risk picture and the sector lead's oversight function",
+          "owner": "CISO",
+          "frequency": "Post-assessment",
+          "priority": "Critical",
+          "source": "s21",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical execution of cyber security risk assessment methodology.",
+      "requirements": [
+        {
+          "id": "s21-T1",
+          "requirement": "Apply the risk assessment methodology specified in the Cyber Security (Risk Assessment and Audit) Regulations 2024, covering threat identification, vulnerability assessment, impact analysis, and risk evaluation for all NCII assets",
+          "rationale": "Methodology must align with CE-prescribed standards to ensure consistency across the national NCII landscape",
+          "owner": "Risk Assessment Team",
+          "frequency": "Annual",
+          "priority": "Critical",
+          "source": "s21",
+          "sourceType": "regulation",
+          "sector": null,
+          "tightens": "s21-L1"
+        },
+        {
+          "id": "s21-T2",
+          "requirement": "Include assessment of supply chain risks, third-party dependencies, and interconnected infrastructure in the NCII risk assessment scope",
+          "rationale": "NCII risk assessments must consider the full attack surface, not just internal systems",
+          "owner": "Risk Assessment Team",
+          "frequency": "Annual",
+          "priority": "High",
+          "source": "s21",
+          "sourceType": "directive",
+          "sector": null,
+          "tightens": "s21-L1"
+        },
+        {
+          "id": "s21-T3",
+          "requirement": "Develop and implement a risk treatment plan addressing all identified risks, with clear timelines, resource allocation, and accountable owners for each treatment action",
+          "rationale": "Risk assessment is only valuable if findings are acted upon; treatment plan demonstrates due diligence",
+          "owner": "CISO",
+          "frequency": "Post-assessment",
+          "priority": "Critical",
+          "source": "s21",
+          "sourceType": "regulation",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance framework for risk assessment program management.",
+      "requirements": [
+        {
+          "id": "s21-G1",
+          "requirement": "Present risk assessment results and treatment plan to the Board, obtaining formal approval and resource commitment for remediation activities",
+          "rationale": "Director liability (s52) requires board-level engagement with NCII risk findings",
+          "owner": "CISO",
+          "frequency": "Annual",
+          "priority": "Critical",
+          "source": "s21",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s21-G2",
+          "requirement": "Track risk treatment plan implementation progress and report on residual risk status to the CE/sector lead as required",
+          "rationale": "Ongoing accountability for risk remediation beyond the assessment itself",
+          "owner": "Risk Management",
+          "frequency": "Quarterly",
+          "priority": "High",
+          "source": "s21",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s22": {
+    "sectionId": "s22",
+    "part": "IV",
+    "title": "Codes of practice",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "NCII entities must comply with CE-approved codes of practice applicable to their sector.",
+      "requirements": [
+        {
+          "id": "s22-L1",
+          "requirement": "Identify all codes of practice approved under s22 that apply to the organization's NCII sector and ensure full compliance",
+          "rationale": "Non-compliance with CoPs is a criminal offence (RM200,000/3 years)",
+          "owner": "Compliance Officer",
+          "frequency": "Ongoing",
+          "priority": "Critical",
+          "source": "s22",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s22-L2",
+          "requirement": "Monitor for CE variations, revocations, or replacements of applicable codes of practice and implement changes within specified timeframes",
+          "rationale": "CoPs may be updated as threats evolve; entities must maintain compliance with current versions",
+          "owner": "Compliance Officer",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s22",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Implementation of sector-specific CoP technical requirements.",
+      "requirements": [
+        {
+          "id": "s22-T1",
+          "requirement": "Implement the technical standards, security controls, and best practices specified in the applicable sector CoP",
+          "rationale": "CoPs translate the Act's general cyber security duty into sector-specific, actionable technical requirements",
+          "owner": "IT Security Team",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s22",
+          "sourceType": "code-of-practice",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for CoP compliance tracking.",
+      "requirements": [
+        {
+          "id": "s22-G1",
+          "requirement": "Conduct periodic gap analysis between current practices and CoP requirements, maintaining a compliance status register",
+          "rationale": "Structured tracking ensures sustained compliance and identifies gaps proactively before audit",
+          "owner": "Compliance Officer",
+          "frequency": "Semi-annual",
+          "priority": "High",
+          "source": "s22",
+          "sourceType": "code-of-practice",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s23": {
+    "sectionId": "s23",
+    "part": "IV",
+    "title": "Cyber security audit",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "Mandatory periodic and on-demand cyber security audits by approved persons, with results submitted to CE and sector lead.",
+      "requirements": [
+        {
+          "id": "s23-L1",
+          "requirement": "Conduct cyber security audits at intervals not exceeding the prescribed period (typically annually) for all designated NCII",
+          "rationale": "Non-compliance carries RM500,000/10 years — same penalty tier as risk assessment failure",
+          "owner": "CISO",
+          "frequency": "Annual (or as prescribed)",
+          "priority": "Critical",
+          "source": "s23",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s23-L2",
+          "requirement": "Conduct additional audits within the period specified when directed by the CE",
+          "rationale": "CE may direct audits in response to incidents, risk assessment findings, or compliance concerns",
+          "owner": "CISO",
+          "frequency": "On CE direction",
+          "priority": "Critical",
+          "source": "s23",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s23-L3",
+          "requirement": "Engage only CE-approved persons to conduct the audit",
+          "rationale": "Audit quality assurance — approved auditors must hold valid licences under Part V",
+          "owner": "Procurement / CISO",
+          "frequency": "Per-audit",
+          "priority": "Critical",
+          "source": "s23",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s23-L4",
+          "requirement": "Submit audit results to the CE and the relevant NCII sector lead within prescribed timeframes",
+          "rationale": "Audit results inform regulatory oversight and sectoral compliance monitoring",
+          "owner": "CISO",
+          "frequency": "Post-audit",
+          "priority": "Critical",
+          "source": "s23",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical scope and execution of cyber security audit.",
+      "requirements": [
+        {
+          "id": "s23-T1",
+          "requirement": "Audit scope must cover compliance with the Act, regulations, directives, applicable codes of practice, and standards determined by the CE under s24",
+          "rationale": "Comprehensive audit scope ensures the full regulatory framework is assessed, not just technical controls",
+          "owner": "Audit Team",
+          "frequency": "Annual",
+          "priority": "Critical",
+          "source": "s23",
+          "sourceType": "regulation",
+          "sector": null,
+          "tightens": "s23-L1"
+        },
+        {
+          "id": "s23-T2",
+          "requirement": "Include technical testing (vulnerability assessment, penetration testing, configuration review) as part of the audit, proportionate to the NCII risk profile",
+          "rationale": "Audit must go beyond document review to verify actual security posture of NCII assets",
+          "owner": "Audit Team",
+          "frequency": "Annual",
+          "priority": "High",
+          "source": "s23",
+          "sourceType": "directive",
+          "sector": null,
+          "tightens": "s23-L1"
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for audit program management and remediation tracking.",
+      "requirements": [
+        {
+          "id": "s23-G1",
+          "requirement": "Present audit findings to the Board and develop a remediation plan with clear timelines for addressing each finding",
+          "rationale": "Board oversight of audit findings demonstrates due diligence; unaddressed findings create ongoing compliance risk",
+          "owner": "CISO",
+          "frequency": "Post-audit",
+          "priority": "Critical",
+          "source": "s23",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s23-G2",
+          "requirement": "Track remediation progress for all audit findings and ensure closure within agreed timelines, with escalation for overdue items",
+          "rationale": "Demonstrating remediation effort is critical for subsequent audit cycles and regulatory engagement",
+          "owner": "Compliance Officer",
+          "frequency": "Monthly",
+          "priority": "High",
+          "source": "s23",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s24": {
+    "sectionId": "s24",
+    "part": "IV",
+    "title": "Standards of cyber security",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "NCII entities must comply with CE-determined cyber security standards within specified timeframes.",
+      "requirements": [
+        {
+          "id": "s24-L1",
+          "requirement": "Comply with all cyber security standards determined by the CE under s24(1) within the implementation period specified",
+          "rationale": "Non-compliance is a criminal offence (RM200,000/3 years)",
+          "owner": "CISO",
+          "frequency": "Per-standard",
+          "priority": "Critical",
+          "source": "s24",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical implementation of CE-determined standards.",
+      "requirements": [
+        {
+          "id": "s24-T1",
+          "requirement": "Conduct gap analysis between current security posture and each applicable CE-determined standard, implementing required controls within the specified compliance deadline",
+          "rationale": "Standards may reference international frameworks (ISO 27001, NIST CSF) or prescribe specific technical configurations",
+          "owner": "IT Security Team",
+          "frequency": "Per-standard",
+          "priority": "Critical",
+          "source": "s24",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Standards compliance management and monitoring.",
+      "requirements": [
+        {
+          "id": "s24-G1",
+          "requirement": "Maintain a standards compliance register tracking the organization's status against each applicable CE-determined standard",
+          "rationale": "Multiple standards may apply; structured tracking ensures nothing falls through the cracks",
+          "owner": "Compliance Officer",
+          "frequency": "Quarterly review",
+          "priority": "High",
+          "source": "s24",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s25": {
+    "sectionId": "s25",
+    "part": "IV",
+    "title": "Duty to provide information on threats",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "NCII entities must share threat information that could affect other NCII with the CE as soon as practicable.",
+      "requirements": [
+        {
+          "id": "s25-L1",
+          "requirement": "Report to the CE as soon as practicable any information relating to a cyber security threat or incident that may affect other NCII beyond the entity's own infrastructure",
+          "rationale": "Enables cross-sector early warning and coordinated response; non-compliance carries RM200,000/3 years",
+          "owner": "SOC Manager / CISO",
+          "frequency": "Per-event",
+          "priority": "Critical",
+          "source": "s25",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical capability for threat intelligence sharing.",
+      "requirements": [
+        {
+          "id": "s25-T1",
+          "requirement": "Establish processes and channels to identify, assess and rapidly share threat intelligence relevant to other NCII with the CE, including indicators of compromise, attack patterns, and vulnerability disclosures",
+          "rationale": "Sharing must be timely ('as soon as practicable') — requires automation and pre-established communication channels",
+          "owner": "SOC Manager",
+          "frequency": "Continuous",
+          "priority": "High",
+          "source": "s25",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for threat intelligence sharing decisions.",
+      "requirements": [
+        {
+          "id": "s25-G1",
+          "requirement": "Define criteria and escalation procedures for determining when threat information may affect other NCII and triggers the s25 sharing obligation",
+          "rationale": "Employees need clear guidance on what constitutes a reportable threat to avoid both under-reporting and over-reporting",
+          "owner": "CISO",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s25",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s26": {
+    "sectionId": "s26",
+    "part": "IV",
+    "title": "Notification of cyber security incident",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "NCII entities must notify the CE of cyber security incidents within 6 hours (significant impact) or other prescribed periods. Heaviest penalties in Part IV.",
+      "requirements": [
+        {
+          "id": "s26-L1",
+          "requirement": "Notify the CE within 6 hours of becoming aware of a cyber security incident that has a significant impact on NCII",
+          "rationale": "Most time-critical obligation under the Act; non-compliance carries RM500,000/10 years plus RM5,000/day continuing offence",
+          "owner": "Incident Response Lead",
+          "frequency": "Per-incident",
+          "priority": "Critical",
+          "source": "s26",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s26-L2",
+          "requirement": "For incidents without significant impact, notify the CE within the period prescribed by regulations",
+          "rationale": "Non-significant incidents still require notification, though with a longer timeline",
+          "owner": "Incident Response Lead",
+          "frequency": "Per-incident",
+          "priority": "Critical",
+          "source": "s26",
+          "sourceType": "regulation",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s26-L3",
+          "requirement": "Include all prescribed information in the incident notification, ensuring accuracy and completeness",
+          "rationale": "False or misleading notification is a separate offence (RM300,000/5 years under s26(4))",
+          "owner": "Incident Response Lead",
+          "frequency": "Per-incident",
+          "priority": "Critical",
+          "source": "s26",
+          "sourceType": "regulation",
+          "sector": null,
+          "tightens": "s26-L1"
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical incident detection and notification capability.",
+      "requirements": [
+        {
+          "id": "s26-T1",
+          "requirement": "Deploy SIEM, IDS/IPS, EDR, and other detection technologies capable of identifying cyber security incidents affecting NCII in near-real-time",
+          "rationale": "6-hour clock starts at 'becoming aware' — organizations must have capability to detect incidents rapidly",
+          "owner": "SOC Manager",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s26",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s26-T2",
+          "requirement": "Establish pre-configured incident notification templates and secure communication channels to NACSA, enabling sub-6-hour notification",
+          "rationale": "Notification templates reduce response time and ensure prescribed information fields are not missed during high-pressure incident response",
+          "owner": "Incident Response Team",
+          "frequency": "Annual review",
+          "priority": "Critical",
+          "source": "s26",
+          "sourceType": "regulation",
+          "sector": null,
+          "tightens": "s26-L1"
+        },
+        {
+          "id": "s26-T3",
+          "requirement": "Implement incident classification framework with clear criteria for determining 'significant impact' triggering the 6-hour notification window",
+          "rationale": "Rapid triage is essential — the clock starts at awareness, not at classification",
+          "owner": "SOC Manager",
+          "frequency": "Annual review",
+          "priority": "Critical",
+          "source": "s26",
+          "sourceType": "directive",
+          "sector": null,
+          "tightens": "s26-L1"
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Incident response governance and readiness.",
+      "requirements": [
+        {
+          "id": "s26-G1",
+          "requirement": "Maintain a documented, tested incident response plan (IRP) with clear roles, escalation procedures, and notification workflows aligned with the 6-hour timeline",
+          "rationale": "IRP must be operationally ready — not just documented — with regular tabletop exercises and drills",
+          "owner": "CISO",
+          "frequency": "Annual review, semi-annual testing",
+          "priority": "Critical",
+          "source": "s26",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s26-G2",
+          "requirement": "Ensure 24/7 availability of personnel authorized to approve and send incident notifications to the CE",
+          "rationale": "6-hour notification window applies regardless of time of day; requires on-call arrangements and delegated authority",
+          "owner": "CISO",
+          "frequency": "Continuous",
+          "priority": "Critical",
+          "source": "s26",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s26-G3",
+          "requirement": "Conduct post-incident reviews for all notified incidents, documenting lessons learned and implementing improvements",
+          "rationale": "Continuous improvement of incident response capability reduces future risk and demonstrates mature governance",
+          "owner": "Incident Response Lead",
+          "frequency": "Post-incident",
+          "priority": "High",
+          "source": "s26",
+          "sourceType": "directive",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  }
+}

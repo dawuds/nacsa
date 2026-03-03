@@ -1,0 +1,63 @@
+{
+  "id": "directive-incident-notification",
+  "title": "Directive on Incident Notification Timelines and Format",
+  "type": "directive",
+  "issuedBy": "Chief Executive, NACSA",
+  "issuedUnder": "s15",
+  "gazetteDate": "2024-09-15",
+  "effectiveDate": "2024-09-15",
+  "subject": "Detailed notification format templates, significant impact classification criteria, escalation procedures, and follow-up reporting requirements for cyber security incidents",
+  "status": "in-force",
+  "applicableTo": "All NCII entities",
+  "provisions": [
+    {
+      "id": "inc-notif-1",
+      "title": "Purpose and relationship to Regulations",
+      "requirement": "This directive supplements the Cyber Security (Notification of Cyber Security Incident) Regulations 2024 by providing detailed guidance on the classification of cyber security incidents, the format and content of notifications, escalation procedures, and follow-up reporting obligations. Where there is any inconsistency between this directive and the Regulations, the Regulations shall prevail.",
+      "explanation": "This directive adds operational detail to the Notification Regulations. It clarifies how to classify incidents and what information to include in notifications. The Regulations take precedence if any conflict arises, maintaining the hierarchy of regulatory instruments.",
+      "relatedActSection": "s26"
+    },
+    {
+      "id": "inc-notif-2",
+      "title": "Significant impact classification",
+      "requirement": "For the purpose of section 26(1)(a), a cyber security incident shall be classified as having a 'significant impact' where it: (a) results in the disruption, degradation, or unavailability of any essential service delivered through or supported by the national critical information infrastructure for a continuous period exceeding thirty (30) minutes; (b) involves the confirmed or suspected exfiltration, unauthorized access to, or compromise of data classified as Confidential, Secret, or Top Secret under the Official Secrets Act 1972, or personal data of more than ten thousand (10,000) individuals; (c) involves the confirmed or suspected compromise of any system classified as Critical under the NCII Asset Categorization directive; (d) involves ransomware, destructive malware, or wiper attacks affecting any part of the national critical information infrastructure; or (e) involves confirmed or suspected activity by an advanced persistent threat actor or nation-state actor targeting the entity's national critical information infrastructure.",
+      "explanation": "This is the key classification that triggers the 6-hour notification window under s26. The five criteria cover service disruption (30+ minutes), major data breaches (10,000+ individuals or classified data), compromise of Critical systems, destructive attacks (ransomware/wipers), and APT activity. Meeting any single criterion triggers the 6-hour obligation.",
+      "relatedActSection": "s26"
+    },
+    {
+      "id": "inc-notif-3",
+      "title": "Initial notification format",
+      "requirement": "The initial notification under section 26(1) shall be submitted using Form INC-1 through the NACSA Cyber Security Incident Reporting Portal and shall contain, at a minimum: (a) the NCII entity's registration number and name of the responsible officer; (b) the date and time the incident was detected and the date and time the entity became aware of the incident; (c) a description of the incident type and attack vector, to the extent known; (d) the systems, networks, and services affected; (e) the assessed severity and impact classification; (f) initial containment actions taken or in progress; (g) whether law enforcement has been notified; and (h) the primary point of contact for NACSA coordination. Where the entity is unable to complete all fields within the 6-hour notification window, it shall submit a partial notification with available information and indicate which fields will be supplemented in the follow-up report.",
+      "explanation": "The initial notification must be as comprehensive as possible within the 6-hour window. If the entity is still responding to the incident and cannot fill in all details, partial submission is permitted provided it indicates which information is outstanding. This balances the need for speed with the reality that full details are rarely available during active incident response.",
+      "relatedActSection": "s26"
+    },
+    {
+      "id": "inc-notif-4",
+      "title": "Follow-up reporting obligations",
+      "requirement": "The NCII entity shall submit follow-up reports to the Chief Executive as follows: (a) an Updated Incident Report (Form INC-2) within seventy-two (72) hours of the initial notification, providing updated details on the incident scope, impact assessment, root cause analysis (preliminary), and remediation status; (b) a Detailed Incident Report (Form INC-3) within fourteen (14) calendar days of the initial notification, providing a comprehensive account including confirmed root cause analysis, full impact assessment, timeline of events, lessons learned, and a remediation and recovery plan; and (c) a Final Closure Report (Form INC-4) within thirty (30) calendar days of full incident resolution, confirming completion of remediation actions, residual risk assessment, and improvements implemented to prevent recurrence.",
+      "explanation": "Incident reporting is a multi-stage process. The 72-hour update provides NACSA with better situation awareness as the incident unfolds. The 14-day detailed report captures root cause and lessons learned while still fresh. The 30-day closure report confirms remediation is complete. Together these ensure incidents are not just reported but fully resolved and documented.",
+      "relatedActSection": "s26"
+    },
+    {
+      "id": "inc-notif-5",
+      "title": "Escalation procedures",
+      "requirement": "In addition to notification through the Portal, an NCII entity shall immediately escalate an incident by direct communication (telephone or secure messaging) to the NACSA Cyber Emergency Response Team (CERT) where the incident: (a) has been classified as significant impact under this directive; (b) involves the potential for cascading impact to other NCII entities or sectors; (c) involves suspected nation-state or terrorist activity; or (d) involves a request for NACSA technical assistance in incident containment or remediation. The NACSA CERT shall operate a 24/7 escalation hotline, the details of which shall be provided to all registered NCII entities upon completion of registration.",
+      "explanation": "For the most serious incidents, portal submission alone is not enough. Entities must also call or message NACSA's CERT directly for immediate attention. This dual-channel approach ensures critical incidents receive human attention immediately rather than waiting in a digital queue.",
+      "relatedActSection": "s26"
+    },
+    {
+      "id": "inc-notif-6",
+      "title": "Confidentiality of incident information",
+      "requirement": "All information provided in incident notifications under this directive shall be treated as confidential by NACSA and shall not be disclosed except: (a) to the relevant NCII sector lead for the purpose of coordinating sector-level response; (b) to other NCII entities where the Chief Executive considers disclosure necessary for the protection of their national critical information infrastructure, in accordance with section 27; (c) to law enforcement agencies for the investigation of criminal offences; or (d) as required by any written law. Incident information shared with other entities shall be anonymized to the extent practicable unless the originating entity consents to attribution.",
+      "explanation": "Entities may hesitate to report incidents fully if they fear public disclosure or reputational damage. This provision assures them that NACSA will treat incident information confidentially, sharing it only where legally necessary or for protective purposes. Anonymization is the default when sharing with other entities, encouraging frank and complete reporting.",
+      "relatedActSection": "s27"
+    },
+    {
+      "id": "inc-notif-7",
+      "title": "Record keeping",
+      "requirement": "Every NCII entity shall maintain a register of all cyber security incidents affecting its national critical information infrastructure, regardless of whether the incident met the threshold for notification under section 26. The incident register shall record: (a) the date and time of detection; (b) the nature and classification of the incident; (c) the systems and services affected; (d) containment and remediation actions taken; (e) the notification status (notified, not notified with reasons); and (f) lessons learned and preventive measures implemented. The register shall be retained for a minimum of seven (7) years and shall be made available to the Chief Executive or authorized officers upon request.",
+      "explanation": "Entities must log all incidents, not just those that trigger the notification obligation. This creates a complete incident history that auditors and NACSA can review to assess the entity's security posture and incident management maturity. The 7-year retention period ensures historical data is available for trend analysis and investigations.",
+      "relatedActSection": "s26"
+    }
+  ]
+}

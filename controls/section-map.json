@@ -1,0 +1,388 @@
+{
+  "sectionToControls": {
+    "s17": [
+      "ncii-entity-registration",
+      "ncii-asset-inventory"
+    ],
+    "s18": [
+      "ncii-entity-registration",
+      "ncii-governance-structure",
+      "ncii-policy-framework",
+      "ncii-board-awareness"
+    ],
+    "s22": [
+      "ncii-policy-framework",
+      "ncii-asset-inventory",
+      "ncii-asset-classification",
+      "ncii-asset-lifecycle",
+      "ncii-risk-assessment-programme",
+      "ncii-threat-modelling",
+      "ncii-risk-treatment",
+      "ncii-bia",
+      "ncii-identity-management",
+      "ncii-privileged-access",
+      "ncii-mfa",
+      "ncii-remote-access",
+      "ncii-network-architecture",
+      "ncii-network-monitoring",
+      "ncii-dns-security",
+      "ncii-network-access-control",
+      "ncii-soc-operations",
+      "ncii-continuity-plan",
+      "ncii-backup-recovery",
+      "ncii-disaster-recovery",
+      "ncii-vendor-risk-assessment",
+      "ncii-supply-chain-contracts",
+      "ncii-supply-chain-monitoring",
+      "ncii-security-awareness",
+      "ncii-technical-training",
+      "ncii-vulnerability-scanning",
+      "ncii-patch-management",
+      "ncii-penetration-testing",
+      "ncii-vulnerability-disclosure",
+      "ncii-encryption-standards",
+      "ncii-key-management",
+      "ncii-certificate-management",
+      "ncii-facility-access",
+      "ncii-environmental-protection",
+      "ncii-physical-monitoring",
+      "ncii-cloud-governance",
+      "ncii-cloud-workload-protection",
+      "ncii-cloud-identity",
+      "ncii-change-control",
+      "ncii-configuration-management",
+      "ncii-emergency-change",
+      "ncii-release-management"
+    ],
+    "s23": [
+      "ncii-asset-classification",
+      "ncii-asset-lifecycle",
+      "ncii-risk-assessment-programme",
+      "ncii-risk-treatment",
+      "ncii-bia",
+      "ncii-identity-management",
+      "ncii-privileged-access",
+      "ncii-mfa",
+      "ncii-remote-access",
+      "ncii-network-architecture",
+      "ncii-dns-security",
+      "ncii-network-access-control",
+      "ncii-continuity-plan",
+      "ncii-backup-recovery",
+      "ncii-disaster-recovery",
+      "ncii-vendor-risk-assessment",
+      "ncii-supply-chain-monitoring",
+      "ncii-security-awareness",
+      "ncii-technical-training",
+      "ncii-vulnerability-scanning",
+      "ncii-patch-management",
+      "ncii-penetration-testing",
+      "ncii-encryption-standards",
+      "ncii-key-management",
+      "ncii-certificate-management",
+      "ncii-facility-access",
+      "ncii-environmental-protection",
+      "ncii-physical-monitoring",
+      "ncii-cloud-governance",
+      "ncii-cloud-workload-protection",
+      "ncii-cloud-identity",
+      "ncii-change-control",
+      "ncii-configuration-management",
+      "ncii-release-management"
+    ],
+    "s24": [
+      "ncii-threat-modelling",
+      "ncii-bia",
+      "ncii-network-monitoring",
+      "ncii-soc-operations",
+      "ncii-disaster-recovery",
+      "ncii-patch-management",
+      "ncii-penetration-testing",
+      "ncii-emergency-change"
+    ],
+    "s25": [
+      "ncii-incident-response-plan",
+      "ncii-incident-notification",
+      "ncii-soc-operations",
+      "ncii-vulnerability-disclosure",
+      "ncii-emergency-change"
+    ],
+    "s26": [
+      "ncii-incident-response-plan",
+      "ncii-incident-notification",
+      "ncii-digital-forensics"
+    ],
+    "s27": [
+      "ncii-incident-response-plan",
+      "ncii-incident-notification",
+      "ncii-digital-forensics"
+    ],
+    "s28": [
+      "ncii-incident-notification",
+      "ncii-digital-forensics"
+    ],
+    "s29": [
+      "ncii-internal-audit",
+      "ncii-external-audit"
+    ],
+    "s30": [
+      "ncii-internal-audit",
+      "ncii-external-audit",
+      "ncii-compliance-monitoring",
+      "ncii-evidence-management"
+    ],
+    "s31": [
+      "ncii-external-audit",
+      "ncii-evidence-management"
+    ],
+    "s32": [
+      "ncii-external-audit",
+      "ncii-evidence-management"
+    ],
+    "s47": [
+      "ncii-vendor-risk-assessment",
+      "ncii-supply-chain-contracts",
+      "ncii-supply-chain-monitoring",
+      "ncii-cloud-governance"
+    ],
+    "s52": [
+      "ncii-governance-structure",
+      "ncii-compliance-programme",
+      "ncii-compliance-monitoring",
+      "ncii-board-awareness"
+    ],
+    "s53": [
+      "ncii-compliance-programme"
+    ]
+  },
+  "controlToSections": {
+    "ncii-asset-classification": [
+      "s22",
+      "s23"
+    ],
+    "ncii-asset-inventory": [
+      "s17",
+      "s22"
+    ],
+    "ncii-asset-lifecycle": [
+      "s22",
+      "s23"
+    ],
+    "ncii-backup-recovery": [
+      "s22",
+      "s23"
+    ],
+    "ncii-bia": [
+      "s22",
+      "s23",
+      "s24"
+    ],
+    "ncii-board-awareness": [
+      "s18",
+      "s52"
+    ],
+    "ncii-certificate-management": [
+      "s22",
+      "s23"
+    ],
+    "ncii-change-control": [
+      "s22",
+      "s23"
+    ],
+    "ncii-cloud-governance": [
+      "s22",
+      "s23",
+      "s47"
+    ],
+    "ncii-cloud-identity": [
+      "s22",
+      "s23"
+    ],
+    "ncii-cloud-workload-protection": [
+      "s22",
+      "s23"
+    ],
+    "ncii-compliance-monitoring": [
+      "s52",
+      "s30"
+    ],
+    "ncii-compliance-programme": [
+      "s52",
+      "s53"
+    ],
+    "ncii-configuration-management": [
+      "s22",
+      "s23"
+    ],
+    "ncii-continuity-plan": [
+      "s22",
+      "s23"
+    ],
+    "ncii-digital-forensics": [
+      "s26",
+      "s27",
+      "s28"
+    ],
+    "ncii-disaster-recovery": [
+      "s22",
+      "s23",
+      "s24"
+    ],
+    "ncii-dns-security": [
+      "s22",
+      "s23"
+    ],
+    "ncii-emergency-change": [
+      "s22",
+      "s24",
+      "s25"
+    ],
+    "ncii-encryption-standards": [
+      "s22",
+      "s23"
+    ],
+    "ncii-entity-registration": [
+      "s17",
+      "s18"
+    ],
+    "ncii-environmental-protection": [
+      "s22",
+      "s23"
+    ],
+    "ncii-evidence-management": [
+      "s30",
+      "s31",
+      "s32"
+    ],
+    "ncii-external-audit": [
+      "s29",
+      "s30",
+      "s31",
+      "s32"
+    ],
+    "ncii-facility-access": [
+      "s22",
+      "s23"
+    ],
+    "ncii-governance-structure": [
+      "s18",
+      "s52"
+    ],
+    "ncii-identity-management": [
+      "s22",
+      "s23"
+    ],
+    "ncii-incident-notification": [
+      "s25",
+      "s26",
+      "s27",
+      "s28"
+    ],
+    "ncii-incident-response-plan": [
+      "s25",
+      "s26",
+      "s27"
+    ],
+    "ncii-internal-audit": [
+      "s29",
+      "s30"
+    ],
+    "ncii-key-management": [
+      "s22",
+      "s23"
+    ],
+    "ncii-mfa": [
+      "s22",
+      "s23"
+    ],
+    "ncii-network-access-control": [
+      "s22",
+      "s23"
+    ],
+    "ncii-network-architecture": [
+      "s22",
+      "s23"
+    ],
+    "ncii-network-monitoring": [
+      "s22",
+      "s24"
+    ],
+    "ncii-patch-management": [
+      "s22",
+      "s23",
+      "s24"
+    ],
+    "ncii-penetration-testing": [
+      "s22",
+      "s23",
+      "s24"
+    ],
+    "ncii-physical-monitoring": [
+      "s22",
+      "s23"
+    ],
+    "ncii-policy-framework": [
+      "s18",
+      "s22"
+    ],
+    "ncii-privileged-access": [
+      "s22",
+      "s23"
+    ],
+    "ncii-release-management": [
+      "s22",
+      "s23"
+    ],
+    "ncii-remote-access": [
+      "s22",
+      "s23"
+    ],
+    "ncii-risk-assessment-programme": [
+      "s22",
+      "s23"
+    ],
+    "ncii-risk-treatment": [
+      "s22",
+      "s23"
+    ],
+    "ncii-security-awareness": [
+      "s22",
+      "s23"
+    ],
+    "ncii-soc-operations": [
+      "s22",
+      "s24",
+      "s25"
+    ],
+    "ncii-supply-chain-contracts": [
+      "s22",
+      "s47"
+    ],
+    "ncii-supply-chain-monitoring": [
+      "s22",
+      "s23",
+      "s47"
+    ],
+    "ncii-technical-training": [
+      "s22",
+      "s23"
+    ],
+    "ncii-threat-modelling": [
+      "s22",
+      "s24"
+    ],
+    "ncii-vendor-risk-assessment": [
+      "s22",
+      "s23",
+      "s47"
+    ],
+    "ncii-vulnerability-disclosure": [
+      "s22",
+      "s25"
+    ],
+    "ncii-vulnerability-scanning": [
+      "s22",
+      "s23"
+    ]
+  }
+}

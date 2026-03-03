@@ -1,0 +1,272 @@
+[
+  {
+    "id": "s34",
+    "part": "VI",
+    "division": null,
+    "title": "Power of investigation",
+    "sectionNumber": 34,
+    "obligationType": "enabling",
+    "verbatim": "(1) An authorized officer may investigate any offence under this Act.\n(2) For the purpose of any investigation under subsection (1), an authorized officer may exercise the special powers in relation to police investigation in the Criminal Procedure Code.",
+    "translation": "Authorized officers may investigate any offence under the Act and may exercise the special powers of police investigation under the Criminal Procedure Code. This gives NACSA enforcement officers significant investigative authority equivalent to police powers.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "investigation",
+      "authorized officer",
+      "Criminal Procedure Code",
+      "police powers"
+    ]
+  },
+  {
+    "id": "s35",
+    "part": "VI",
+    "division": null,
+    "title": "Search and seizure with warrant",
+    "sectionNumber": 35,
+    "obligationType": "enabling",
+    "verbatim": "(1) If it appears to a Magistrate, upon written information on oath, that there is reasonable cause to believe that any premises are being used, or there is in any premises evidence necessary for the conduct of an investigation under this Act, the Magistrate may issue a warrant authorizing an authorized officer to enter the premises and to search for and seize any computer, computer system, data, document, or other article.\n(2) An authorized officer conducting a search under subsection (1) may—\n(a) break open any outer or inner door or window;\n(b) forcibly enter any premises;\n(c) remove by force any obstruction; and\n(d) detain any person found in the premises until the search is completed.",
+    "translation": "Magistrates may issue search warrants where there is reasonable cause to believe premises contain evidence of Act offences. Authorized officers may enter by force, break open doors/windows, remove obstructions, and detain persons during the search. They may seize computers, systems, data, documents, and other relevant articles.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "search warrant",
+      "Magistrate",
+      "seizure",
+      "premises",
+      "evidence"
+    ]
+  },
+  {
+    "id": "s36",
+    "part": "VI",
+    "division": null,
+    "title": "Search and seizure without warrant",
+    "sectionNumber": 36,
+    "obligationType": "enabling",
+    "verbatim": "(1) An authorized officer may, without a warrant, enter any premises and exercise all the powers referred to in section 35 if he has reasonable cause to believe that by reason of delay in obtaining a search warrant the investigation would be adversely affected, evidence would be tampered with, or the object of the search would be frustrated.",
+    "translation": "Allows warrantless search and seizure where delay in obtaining a warrant would adversely affect the investigation, risk evidence tampering, or frustrate the search objective. The same powers as warrant-based searches apply.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "warrantless search",
+      "exigent circumstances",
+      "evidence tampering",
+      "urgent"
+    ]
+  },
+  {
+    "id": "s37",
+    "part": "VI",
+    "division": null,
+    "title": "Access to computerized data",
+    "sectionNumber": 37,
+    "obligationType": "enabling",
+    "verbatim": "(1) An authorized officer conducting a search under this Act shall be given access to computerized data whether stored in a computer or otherwise.\n(2) For the purposes of this section, an authorized officer shall be provided with the necessary password, encryption code, decryption code, software, or hardware or any other means required to enable comprehension of computerized data.",
+    "translation": "Authorized officers must be given access to computerized data during searches. The entity must provide passwords, encryption/decryption codes, software, hardware, or any other means needed to access and comprehend the data. Failure to provide access could constitute obstruction under s44.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "computerized data",
+      "access",
+      "password",
+      "encryption",
+      "decryption"
+    ]
+  },
+  {
+    "id": "s38",
+    "part": "VI",
+    "division": null,
+    "title": "Power to intercept communications",
+    "sectionNumber": 38,
+    "obligationType": "enabling",
+    "verbatim": "(1) Notwithstanding any other written law, the Chief Executive or any authorized officer authorized in writing by the Chief Executive may, if he considers that it is likely to contain information relevant to the investigation of an offence under this Act, intercept or listen to any communication.\n(2) Any evidence obtained through interception under subsection (1) shall be admissible in any proceedings under this Act.",
+    "translation": "The CE or CE-authorized officers may intercept or listen to communications if likely to contain information relevant to an investigation under the Act. This is a broad surveillance power that overrides other legislation. Intercepted evidence is admissible in proceedings. This power is subject to administrative safeguards (written authorization by the CE) but does not require judicial authorization.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "intercept",
+      "communications",
+      "surveillance",
+      "evidence",
+      "Chief Executive authorization"
+    ]
+  },
+  {
+    "id": "s39",
+    "part": "VI",
+    "division": null,
+    "title": "List of things seized",
+    "sectionNumber": 39,
+    "obligationType": "procedural",
+    "verbatim": "(1) An authorized officer making a search under this Act shall prepare a list of all things seized and of the premises in which they are respectively found.\n(2) The list shall be signed by the authorized officer and by the occupier or his agent.\n(3) A copy of the list shall be delivered to the occupier or his agent.",
+    "translation": "A detailed inventory of all seized items must be prepared, signed by both the authorized officer and the premises occupier (or agent), and a copy delivered to the occupier. This provides accountability and an evidentiary chain of custody for seized items.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "list",
+      "seized items",
+      "inventory",
+      "chain of custody"
+    ]
+  },
+  {
+    "id": "s40",
+    "part": "VI",
+    "division": null,
+    "title": "Power to require attendance of persons",
+    "sectionNumber": 40,
+    "obligationType": "enabling",
+    "verbatim": "(1) An authorized officer making an investigation under this Act may, by notice in writing, require any person who appears to be acquainted with the facts and circumstances of the case to attend before him.\n(2) Such person shall attend as required and shall answer all questions relating to the case truthfully.\n(3) Any person who fails to attend without reasonable excuse commits an offence.",
+    "translation": "Authorized officers may compel any person with knowledge of the case to attend for questioning. The person must attend and answer truthfully. Failure to attend without reasonable excuse is a criminal offence.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "attendance",
+      "examination",
+      "questioning",
+      "witness"
+    ]
+  },
+  {
+    "id": "s41",
+    "part": "VI",
+    "division": null,
+    "title": "Examination of persons",
+    "sectionNumber": 41,
+    "obligationType": "enabling",
+    "verbatim": "(1) An authorized officer may examine orally any person supposed to be acquainted with the facts and circumstances of any offence under this Act.\n(2) Such person shall be legally bound to answer all questions relating to such case put to him by the authorized officer.\n(3) A statement made by any person under this section shall be reduced into writing and signed by the person, and may be used as evidence in any proceedings under this Act.",
+    "translation": "Authorized officers may orally examine any person with knowledge of an offence. The person is legally bound to answer all questions. Statements are reduced to writing, signed, and admissible as evidence. This provides NACSA with powerful investigative tools comparable to those available to other enforcement agencies.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "oral examination",
+      "statement",
+      "evidence",
+      "legally bound"
+    ]
+  },
+  {
+    "id": "s42",
+    "part": "VI",
+    "division": null,
+    "title": "Admissibility of statements",
+    "sectionNumber": 42,
+    "obligationType": "procedural",
+    "verbatim": "(1) In any trial or inquiry by a court into any offence under this Act, any statement made by any person to an authorized officer in the course of an investigation under this Act shall be admissible in evidence.\n(2) Nothing in subsection (1) shall render admissible any statement made by a person under arrest.",
+    "translation": "Statements made during investigations are admissible as evidence in court proceedings, except statements made by persons under arrest (to protect the right against self-incrimination).",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "admissibility",
+      "statements",
+      "evidence",
+      "arrest exception"
+    ]
+  },
+  {
+    "id": "s43",
+    "part": "VI",
+    "division": null,
+    "title": "Power of arrest",
+    "sectionNumber": 43,
+    "obligationType": "enabling",
+    "verbatim": "(1) An authorized officer may arrest without warrant any person whom he reasonably believes has committed or is committing any offence under this Act.\n(2) An authorized officer making an arrest shall, without unnecessary delay, bring the person arrested before the nearest Magistrate.",
+    "translation": "Authorized officers may arrest without warrant any person reasonably believed to have committed or be committing an offence under the Act. Arrested persons must be brought before the nearest Magistrate without unnecessary delay, in accordance with constitutional protections.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "arrest",
+      "without warrant",
+      "Magistrate",
+      "reasonable belief"
+    ]
+  },
+  {
+    "id": "s44",
+    "part": "VI",
+    "division": null,
+    "title": "Obstruction",
+    "sectionNumber": 44,
+    "obligationType": "prohibitive",
+    "verbatim": "Any person who—\n(a) refuses any authorized officer access to any premises;\n(b) assaults, obstructs, hinders or delays any authorized officer in the exercise of his powers under this Act;\n(c) refuses to produce any document, computer, computer system, data or other article when required to do so; or\n(d) refuses to answer any question put to him by an authorized officer,\ncommits an offence and shall, on conviction, be liable to a fine not exceeding three hundred thousand ringgit or to imprisonment for a term not exceeding five years or to both.",
+    "translation": "Criminalises obstruction of authorized officers, including refusing access, assaulting/obstructing/hindering/delaying officers, refusing to produce documents or data, and refusing to answer questions. Penalty: RM300,000/5 years. This is a significant enforcement provision that ensures NACSA officers can effectively exercise their powers.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "obstruction",
+      "refusal",
+      "access",
+      "offence",
+      "authorized officer"
+    ]
+  },
+  {
+    "id": "s45",
+    "part": "VI",
+    "division": null,
+    "title": "Seizure of movable property",
+    "sectionNumber": 45,
+    "obligationType": "enabling",
+    "verbatim": "(1) An authorized officer may seize any movable property which he reasonably suspects to be evidence of or connected with any offence under this Act.\n(2) A list of all property seized shall be prepared and a copy delivered to the person from whom the property was seized.",
+    "translation": "Officers may seize any movable property reasonably suspected to be evidence or connected to an offence. An inventory must be prepared and provided to the person from whom the property was seized.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "seizure",
+      "movable property",
+      "evidence",
+      "inventory"
+    ]
+  },
+  {
+    "id": "s46",
+    "part": "VI",
+    "division": null,
+    "title": "Release of seized property",
+    "sectionNumber": 46,
+    "obligationType": "procedural",
+    "verbatim": "(1) Any property seized under this Act shall be liable to forfeiture.\n(2) Any property seized may be returned to the person from whom it was seized if the Chief Executive is satisfied that it is not required for the purpose of any proceedings under this Act.\n(3) A person aggrieved by the seizure of any property may apply to the court for its release.",
+    "translation": "Seized property is liable to forfeiture but may be returned if the CE determines it is not needed for proceedings. Aggrieved persons may apply to court for release of seized property.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "forfeiture",
+      "release",
+      "seized property",
+      "court application"
+    ]
+  },
+  {
+    "id": "s47",
+    "part": "VI",
+    "division": null,
+    "title": "Cost of holding seized property",
+    "sectionNumber": 47,
+    "obligationType": "procedural",
+    "verbatim": "Where any property seized under this Act is held in the custody of the Government pending the completion of any proceedings in respect of an offence under this Act, the cost of maintaining such property in custody shall be a charge on the property and may be recovered from the person convicted of the offence.",
+    "translation": "The cost of maintaining seized property in government custody is charged to the property and may be recovered from the convicted person. This prevents the government from bearing storage costs for large quantities of seized equipment.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "custody costs",
+      "maintenance",
+      "recovery",
+      "convicted person"
+    ]
+  }
+]

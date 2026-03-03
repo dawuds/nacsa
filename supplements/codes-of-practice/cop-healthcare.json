@@ -1,0 +1,147 @@
+{
+  "id": "cop-healthcare",
+  "title": "Code of Practice for the Healthcare Sector",
+  "type": "code-of-practice",
+  "sectorId": "healthcare",
+  "sectorLead": "Ministry of Health",
+  "approvedUnder": "s22",
+  "gazetteDate": null,
+  "effectiveDate": null,
+  "status": "draft",
+  "version": "0.7-draft",
+  "domains": [
+    {
+      "id": "hc-cop-1",
+      "name": "Governance and Clinical Safety Integration",
+      "description": "Cyber security governance that integrates with clinical safety management and healthcare regulatory obligations",
+      "requirements": [
+        {
+          "id": "hc-cop-1.1",
+          "requirement": "The NCII entity shall establish a Healthcare Cyber Security Committee with membership including the CISO, Chief Medical Officer or equivalent clinical lead, Head of Biomedical Engineering, and Head of IT, ensuring that cyber security decisions are informed by clinical safety considerations.",
+          "rationale": "Healthcare NCII directly supports patient care. Governance structures must integrate clinical, biomedical, and IT perspectives to ensure that cyber security measures protect both information assets and patient safety.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MOH Hospital Accreditation Standards; ISO 27799; ISO 27001 A.5"
+        },
+        {
+          "id": "hc-cop-1.2",
+          "requirement": "The NCII entity shall develop and maintain a cyber security policy that specifically addresses the protection of electronic medical records, medical devices connected to NCII networks, and clinical information systems, with risk assessments considering both confidentiality of patient data and availability of life-critical systems.",
+          "rationale": "Healthcare NCII has unique dual requirements: protecting sensitive patient data (confidentiality) and ensuring continuous availability of systems that support clinical decisions and life-sustaining treatments.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MOH Health Informatics Standards; PDPA 2010; ISO 27799"
+        },
+        {
+          "id": "hc-cop-1.3",
+          "requirement": "All personnel with access to healthcare NCII systems shall complete sector-specific cyber security awareness training annually, covering healthcare-targeted threats including ransomware, medical device vulnerabilities, and social engineering attacks targeting clinical staff.",
+          "rationale": "Healthcare workers are primary targets for social engineering due to the high-pressure clinical environment. Sector-specific training raises awareness of threats tailored to healthcare settings and the severe consequences of NCII compromise for patient safety.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MOH ICT Security Policy; ISO 27001 A.7.2; NIST CSF PR.AT"
+        }
+      ]
+    },
+    {
+      "id": "hc-cop-2",
+      "name": "Medical Device and Clinical System Security",
+      "description": "Security requirements for networked medical devices and clinical information systems integrated with healthcare NCII",
+      "requirements": [
+        {
+          "id": "hc-cop-2.1",
+          "requirement": "The NCII entity shall maintain a comprehensive inventory of all networked medical devices connected to NCII systems, including device type, manufacturer, firmware version, network connectivity, and patient safety classification, updated within 24 hours of any device addition or modification.",
+          "rationale": "Networked medical devices including infusion pumps, patient monitors, and imaging systems are increasingly connected to NCII networks. A current inventory is essential for vulnerability management and incident response involving clinical systems.",
+          "relatedActSection": "s16",
+          "relatedFramework": "MDA Medical Device Act 2012; IEC 80001-1; ISO 27799"
+        },
+        {
+          "id": "hc-cop-2.2",
+          "requirement": "Medical devices connected to healthcare NCII networks shall be segmented into dedicated clinical network zones, isolated from administrative and guest networks, with traffic between zones controlled by application-aware firewalls that understand medical device communication protocols.",
+          "rationale": "Medical devices often run legacy operating systems and cannot be patched promptly. Network segmentation limits the blast radius of compromised devices and prevents lateral movement from less secure network segments to clinical systems.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 80001-1; FDA Premarket Cybersecurity Guidance; ISO 27001 A.13"
+        },
+        {
+          "id": "hc-cop-2.3",
+          "requirement": "The NCII entity shall require medical device vendors to provide a Manufacturer Disclosure Statement for Medical Device Security (MDS2) or equivalent documentation prior to procurement, and shall include cyber security maintenance obligations including timely security patches in all procurement contracts.",
+          "rationale": "Many medical device security issues originate in design and manufacturing. Requiring security documentation during procurement and contractual patch obligations shifts security responsibility upstream to device manufacturers.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MDA Medical Device Act 2012; IEC 62443-4-1; IMDRF Cybersecurity Guidance"
+        }
+      ]
+    },
+    {
+      "id": "hc-cop-3",
+      "name": "Patient Data Protection and Privacy",
+      "description": "Protection of patient health information processed by healthcare NCII in compliance with privacy and data protection laws",
+      "requirements": [
+        {
+          "id": "hc-cop-3.1",
+          "requirement": "All patient health information stored on or transmitted through healthcare NCII systems shall be encrypted using algorithms approved under NACSA cryptographic standards, with encryption at rest using AES-256 or equivalent and encryption in transit using TLS 1.2 or higher.",
+          "rationale": "Patient health information is among the most sensitive categories of personal data. Strong encryption protects against unauthorised disclosure whether from external breach or physical theft of storage media from healthcare NCII systems.",
+          "relatedActSection": "s18",
+          "relatedFramework": "PDPA 2010 Principle 9; ISO 27799; ISO 27001 A.10"
+        },
+        {
+          "id": "hc-cop-3.2",
+          "requirement": "Access to patient records within healthcare NCII systems shall be controlled through role-based access aligned with clinical need-to-know, with break-glass procedures documented for emergency access. All access to patient records shall be logged with tamper-evident audit trails retained for a minimum of seven years.",
+          "rationale": "Clinical staff require timely access to patient information for safe care, but access must be accountable. Role-based access with break-glass procedures balances clinical workflow needs with privacy protection, while audit trails enable detection of unauthorised access.",
+          "relatedActSection": "s18",
+          "relatedFramework": "PDPA 2010; MOH Health Informatics Standards; ISO 27799; HL7 FHIR Security"
+        },
+        {
+          "id": "hc-cop-3.3",
+          "requirement": "Healthcare NCII systems processing patient data shall implement data loss prevention controls to detect and prevent unauthorised bulk extraction or transmission of patient health information, with automated alerts to the CISO and data protection officer.",
+          "rationale": "Bulk extraction of patient records represents a severe privacy breach with potential for identity theft and discrimination. DLP controls provide a technical safeguard against both malicious exfiltration and accidental data exposure.",
+          "relatedActSection": "s18",
+          "relatedFramework": "PDPA 2010 Principle 7; ISO 27799; ISO 27001 A.13.2"
+        }
+      ]
+    },
+    {
+      "id": "hc-cop-4",
+      "name": "Incident Response and Patient Safety",
+      "description": "Cyber incident response with priority on maintaining patient safety and continuity of clinical services",
+      "requirements": [
+        {
+          "id": "hc-cop-4.1",
+          "requirement": "The NCII entity shall maintain a Healthcare Cyber Incident Response Plan that prioritises patient safety above all other response objectives, with pre-defined clinical downtime procedures enabling continuation of critical patient care when NCII systems are unavailable.",
+          "rationale": "During cyber incidents affecting healthcare NCII, patient safety must be the overriding priority. Clinical downtime procedures ensure that healthcare providers can continue delivering safe care using manual processes when digital systems are compromised.",
+          "relatedActSection": "s23",
+          "relatedFramework": "MOH Hospital Crisis Management Guidelines; ISO 27035; ISO 27799"
+        },
+        {
+          "id": "hc-cop-4.2",
+          "requirement": "Cyber security incidents affecting healthcare NCII shall be reported to NACSA and the Ministry of Health within six hours of detection, with immediate escalation required for incidents that impact life-sustaining medical equipment, emergency department systems, or systems supporting active surgical procedures.",
+          "rationale": "Healthcare NCII incidents can have immediate life-threatening consequences. Accelerated reporting for incidents affecting life-critical systems enables rapid coordinated response including potential patient transfer to unaffected facilities.",
+          "relatedActSection": "s23",
+          "relatedFramework": "MOH Incident Reporting Framework; MDA Medical Device Adverse Event Reporting"
+        },
+        {
+          "id": "hc-cop-4.3",
+          "requirement": "The NCII entity shall maintain physical stocks of critical medications, printed reference materials, and paper-based clinical documentation forms sufficient to sustain clinical operations for a minimum of 72 hours without access to electronic NCII systems.",
+          "rationale": "Extended healthcare NCII outages due to cyber attacks such as ransomware may persist for days or weeks. Physical contingency supplies ensure that patient care can continue safely during prolonged digital system unavailability.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MOH Hospital Preparedness Guidelines; ISO 22301; Joint Commission Emergency Management"
+        }
+      ]
+    },
+    {
+      "id": "hc-cop-5",
+      "name": "Business Continuity and Clinical Service Recovery",
+      "description": "Ensuring continuity and prioritised recovery of clinical services dependent on healthcare NCII",
+      "requirements": [
+        {
+          "id": "hc-cop-5.1",
+          "requirement": "The NCII entity shall define a clinical service recovery priority matrix, with Recovery Time Objectives of two hours for life-critical systems (emergency department, ICU monitoring, operating theatre), four hours for urgent clinical systems (laboratory, pharmacy, radiology), and 24 hours for non-urgent clinical and administrative systems.",
+          "rationale": "Healthcare NCII supports a hierarchy of services from immediately life-critical to administrative. A clinical priority matrix ensures that recovery efforts are directed first to systems whose unavailability poses the greatest risk to patient safety.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MOH Hospital Preparedness Guidelines; ISO 22301; ISO 27799"
+        },
+        {
+          "id": "hc-cop-5.2",
+          "requirement": "Backup systems for healthcare NCII shall maintain offline, immutable copies of electronic medical records and clinical system configurations, tested quarterly through restoration exercises that verify both data integrity and clinical system functionality.",
+          "rationale": "Ransomware attacks specifically target backup systems. Offline, immutable backups for healthcare NCII ensure that patient records can be recovered even after destructive attacks, and quarterly testing validates that restored systems are clinically functional.",
+          "relatedActSection": "s18",
+          "relatedFramework": "ISO 22301 Clause 8; ISO 27001 A.12.3; NIST CSF PR.IP-4"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "directive-ncii-registration",
+  "title": "Directive on NCII Entity Registration Procedures",
+  "type": "directive",
+  "issuedBy": "Chief Executive, NACSA",
+  "issuedUnder": "s15",
+  "gazetteDate": "2024-09-15",
+  "effectiveDate": "2024-09-15",
+  "subject": "Procedures for NCII entity registration, designation acknowledgment, and transition requirements for existing operators",
+  "status": "in-force",
+  "applicableTo": "All NCII entities",
+  "provisions": [
+    {
+      "id": "ncii-reg-1",
+      "title": "Purpose",
+      "requirement": "This directive establishes the procedures and requirements for the registration of designated NCII entities under section 17 of the Cyber Security Act 2024, including the process for acknowledging designation, submitting registration particulars, and transitioning existing critical infrastructure operators into the new regulatory framework.",
+      "explanation": "Sets out why this directive exists: to operationalize the designation process in s17 by prescribing the practical steps an entity must follow once it receives a designation notice from the Chief Executive.",
+      "relatedActSection": "s17"
+    },
+    {
+      "id": "ncii-reg-2",
+      "title": "Registration timeline",
+      "requirement": "An entity that receives a designation notice under section 17(4) shall, within fourteen (14) calendar days of receipt, submit the NCII Entity Registration Form (Form NCII-1) to the Chief Executive through the NACSA Cyber Security Portal. The registration form shall include the entity's legal name, registration number, registered address, principal place of business, the identity of its responsible officer, and a preliminary description of its national critical information infrastructure.",
+      "explanation": "Entities have exactly 14 days from receiving their designation notice to formally register with NACSA via the online portal. This is a tight timeline reflecting the urgency of establishing visibility over critical infrastructure. The responsible officer is the individual accountable for the entity's cyber security compliance.",
+      "relatedActSection": "s17"
+    },
+    {
+      "id": "ncii-reg-3",
+      "title": "Designation acknowledgment",
+      "requirement": "Upon receipt of a designation notice, the NCII entity shall issue a written acknowledgment to the Chief Executive within seven (7) calendar days confirming: (a) receipt of the designation notice; (b) the identity and contact details of the responsible officer designated to serve as the primary point of contact for all matters under the Act; and (c) a declaration that the entity understands and accepts the obligations arising from the designation under Part IV of the Act.",
+      "explanation": "Before even completing full registration, entities must quickly acknowledge designation within 7 days and identify their responsible officer. This ensures NACSA has an immediate point of contact and that the entity cannot claim ignorance of its obligations.",
+      "relatedActSection": "s17"
+    },
+    {
+      "id": "ncii-reg-4",
+      "title": "NCII infrastructure inventory",
+      "requirement": "Within thirty (30) calendar days of registration, the NCII entity shall submit a comprehensive NCII Infrastructure Inventory (Form NCII-2) listing all computer systems, networks, and information assets that constitute or support its national critical information infrastructure. The inventory shall specify for each asset: (a) the asset classification and function; (b) the physical and logical location; (c) interconnections with other NCII or public networks; (d) the business or public service supported; and (e) the entity responsible for its operation and maintenance.",
+      "explanation": "Within 30 days after registration, entities must map their critical infrastructure in detail. This inventory forms the baseline for subsequent risk assessments and audits, and helps NACSA understand cross-sector dependencies.",
+      "relatedActSection": "s18"
+    },
+    {
+      "id": "ncii-reg-5",
+      "title": "Transition requirements for existing operators",
+      "requirement": "Any person who, prior to the commencement of this directive, was operating national critical information infrastructure and has been designated as an NCII entity under section 17 shall complete the registration process within sixty (60) calendar days of the effective date of this directive. Such entities shall, in addition to the standard registration particulars, submit documentary evidence of any existing cyber security measures, risk assessments, audits, or certifications held at the time of designation.",
+      "explanation": "Existing operators of critical infrastructure who were designated when the Act commenced get a longer 60-day window to register, recognizing that they need time to compile existing documentation. They must also share their current security posture so NACSA can assess baseline readiness.",
+      "relatedActSection": "s57"
+    },
+    {
+      "id": "ncii-reg-6",
+      "title": "Changes in particulars",
+      "requirement": "An NCII entity shall notify the Chief Executive of any material change in its registration particulars within fourteen (14) calendar days of the change. Material changes include but are not limited to: change of responsible officer, change in legal ownership or corporate structure, material changes to NCII infrastructure, relocation of infrastructure, and changes affecting the entity's ability to comply with obligations under Part IV of the Act.",
+      "explanation": "Registration is not a one-time event. Entities must keep their details current with NACSA, reporting any significant changes within 14 days. This is critical for maintaining accurate contact information, understanding ownership changes, and tracking infrastructure modifications that could affect national security.",
+      "relatedActSection": "s18"
+    },
+    {
+      "id": "ncii-reg-7",
+      "title": "Appeal process",
+      "requirement": "A person aggrieved by a designation under section 17(1) may, in accordance with section 17(5), appeal to the Minister within thirty (30) days of being notified. The appeal shall be submitted in writing using Form NCII-A1 and shall state the grounds of appeal, the facts relied upon, and any supporting evidence. The filing of an appeal shall not suspend the entity's obligations under this directive or Part IV of the Act pending the Minister's decision, unless the Minister directs otherwise.",
+      "explanation": "Entities may appeal their designation, but the appeal does not automatically suspend compliance obligations. This means that while challenging the designation, an entity must still register, acknowledge, and begin meeting its duties unless the Minister grants a stay. This prevents entities from using appeals as a delay tactic.",
+      "relatedActSection": "s17"
+    },
+    {
+      "id": "ncii-reg-8",
+      "title": "Non-compliance consequences",
+      "requirement": "Failure to comply with the registration requirements under this directive within the prescribed timelines shall be treated as a failure to comply with a directive of the Chief Executive under section 15(2) and may result in enforcement action under the Act. The Chief Executive may, in addition to any enforcement action, publish the name of any NCII entity that has failed to complete registration within the prescribed timelines.",
+      "explanation": "Non-compliance with registration is not merely administrative; it is enforceable as a breach of the CE's directive power under s15. NACSA may also publicly name non-compliant entities, creating reputational pressure in addition to legal consequences.",
+      "relatedActSection": "s15"
+    }
+  ]
+}

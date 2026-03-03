@@ -1,0 +1,288 @@
+{
+  "description": "NCII sector regulatory overlap matrix — shows which regulatory frameworks apply to each NCII sector in addition to Act 854",
+  "lastUpdated": "2024-12-31",
+  "sectors": {
+    "government": {
+      "sectorName": "Government",
+      "sectorLead": "MAMPU",
+      "regulatoryOverlaps": [
+        {
+          "framework": "MyDIGITAL / DGSM",
+          "fullName": "Malaysian Digital Government Security Manual",
+          "relevance": "high",
+          "notes": "Government agencies must comply with DGSM requirements in addition to Act 854 for ICT security"
+        },
+        {
+          "framework": "RAKKSSA",
+          "fullName": "Rangka Kerja Keselamatan Siber Sektor Awam",
+          "relevance": "high",
+          "notes": "Public Sector Cybersecurity Framework — pre-existing framework now supplemented by Act 854"
+        },
+        {
+          "framework": "PDPA (Act 709)",
+          "fullName": "Personal Data Protection Act 2010",
+          "relevance": "medium",
+          "notes": "Government agencies were previously exempt from PDPA but 2024 amendments may expand applicability"
+        }
+      ]
+    },
+    "banking-finance": {
+      "sectorName": "Banking and Finance",
+      "sectorLead": "Bank Negara Malaysia",
+      "regulatoryOverlaps": [
+        {
+          "framework": "BNM RMiT",
+          "fullName": "Risk Management in Technology",
+          "relevance": "high",
+          "notes": "BNM-regulated financial institutions must comply with both RMiT and Act 854; RMiT requirements generally align with or exceed Act 854 obligations"
+        },
+        {
+          "framework": "PDPA (Act 709)",
+          "fullName": "Personal Data Protection Act 2010",
+          "relevance": "high",
+          "notes": "Financial data processing triggers PDPA obligations alongside NCII duties; dual breach notification requirements apply"
+        },
+        {
+          "framework": "SC Guidelines",
+          "fullName": "Securities Commission Malaysia Guidelines on Technology Risk Management",
+          "relevance": "high",
+          "notes": "Capital market intermediaries face additional SC technology risk requirements"
+        },
+        {
+          "framework": "PCI DSS",
+          "fullName": "Payment Card Industry Data Security Standard",
+          "relevance": "medium",
+          "notes": "Card processing entities must also maintain PCI DSS compliance"
+        }
+      ]
+    },
+    "transport": {
+      "sectorName": "Transport",
+      "sectorLead": "Ministry of Transport",
+      "regulatoryOverlaps": [
+        {
+          "framework": "ICAO Annex 17",
+          "fullName": "ICAO Aviation Security Standards",
+          "relevance": "high",
+          "notes": "Aviation NCII entities must meet ICAO cybersecurity requirements for air navigation and airport systems"
+        },
+        {
+          "framework": "IMO MSC-FAL.1",
+          "fullName": "IMO Guidelines on Maritime Cyber Risk Management",
+          "relevance": "high",
+          "notes": "Maritime NCII entities must address IMO cyber risk management guidelines for port and vessel systems"
+        },
+        {
+          "framework": "AVSEC",
+          "fullName": "Malaysian Aviation Security Programme",
+          "relevance": "medium",
+          "notes": "Aviation security programme includes cybersecurity elements for critical aviation systems"
+        }
+      ]
+    },
+    "defence-national-security": {
+      "sectorName": "Defence and National Security",
+      "sectorLead": "Ministry of Defence",
+      "regulatoryOverlaps": [
+        {
+          "framework": "OSA 1972",
+          "fullName": "Official Secrets Act 1972",
+          "relevance": "high",
+          "notes": "Defence NCII information may be classified under OSA, creating overlapping secrecy obligations with s49"
+        },
+        {
+          "framework": "NSC Directives",
+          "fullName": "National Security Council Directives",
+          "relevance": "high",
+          "notes": "NSC directives on critical infrastructure protection supplement Act 854 requirements"
+        },
+        {
+          "framework": "ISMS Military",
+          "fullName": "Malaysian Armed Forces ISMS Standards",
+          "relevance": "high",
+          "notes": "Military NCII entities must also comply with defence-specific information security management standards"
+        }
+      ]
+    },
+    "ict": {
+      "sectorName": "Information and Communications Technology",
+      "sectorLead": "MCMC",
+      "regulatoryOverlaps": [
+        {
+          "framework": "CMA 1998",
+          "fullName": "Communications and Multimedia Act 1998",
+          "relevance": "high",
+          "notes": "Telecommunications providers face CMA licence conditions alongside Act 854 NCII obligations"
+        },
+        {
+          "framework": "MCMC MTSFB",
+          "fullName": "MCMC Technical Standards Forum",
+          "relevance": "high",
+          "notes": "ICT infrastructure standards set by MCMC supplement Act 854 security standards"
+        },
+        {
+          "framework": "PDPA (Act 709)",
+          "fullName": "Personal Data Protection Act 2010",
+          "relevance": "high",
+          "notes": "Telcos processing subscriber personal data face dual obligations"
+        },
+        {
+          "framework": "Computer Crimes Act 1997",
+          "fullName": "Computer Crimes Act 1997 (Act 563)",
+          "relevance": "high",
+          "notes": "Enhanced penalties under Part IX amendments apply to offences against ICT NCII"
+        }
+      ]
+    },
+    "healthcare": {
+      "sectorName": "Healthcare",
+      "sectorLead": "Ministry of Health",
+      "regulatoryOverlaps": [
+        {
+          "framework": "PDPA (Act 709)",
+          "fullName": "Personal Data Protection Act 2010",
+          "relevance": "high",
+          "notes": "Healthcare NCII systems processing patient data face dual Act 854 and PDPA obligations; health data is sensitive personal data under PDPA"
+        },
+        {
+          "framework": "MMA Guidelines",
+          "fullName": "Malaysian Medical Association Data Protection Guidelines",
+          "relevance": "medium",
+          "notes": "Professional medical data handling standards supplement regulatory requirements"
+        },
+        {
+          "framework": "Private Healthcare Act 1998",
+          "fullName": "Private Healthcare Facilities and Services Act 1998",
+          "relevance": "medium",
+          "notes": "Private healthcare facilities face additional licensing conditions for IT systems"
+        }
+      ]
+    },
+    "water-sewerage": {
+      "sectorName": "Water and Sewerage",
+      "sectorLead": "SPAN",
+      "regulatoryOverlaps": [
+        {
+          "framework": "Water Services Industry Act 2006",
+          "fullName": "Water Services Industry Act 2006 (Act 655)",
+          "relevance": "high",
+          "notes": "Water operators face SPAN licensing conditions alongside Act 854 NCII obligations"
+        },
+        {
+          "framework": "ICS-CERT Standards",
+          "fullName": "Industrial Control System Cybersecurity Standards",
+          "relevance": "high",
+          "notes": "Water treatment SCADA/ICS systems require specialized OT security standards beyond IT-focused requirements"
+        },
+        {
+          "framework": "Environmental Quality Act 1974",
+          "fullName": "Environmental Quality Act 1974",
+          "relevance": "low",
+          "notes": "Cyber incidents affecting water treatment could have environmental compliance implications"
+        }
+      ]
+    },
+    "energy": {
+      "sectorName": "Energy",
+      "sectorLead": "Energy Commission (Suruhanjaya Tenaga)",
+      "regulatoryOverlaps": [
+        {
+          "framework": "Electricity Supply Act 1990",
+          "fullName": "Electricity Supply Act 1990 (Act 447)",
+          "relevance": "high",
+          "notes": "Energy utilities face Energy Commission licensing conditions alongside Act 854 obligations"
+        },
+        {
+          "framework": "Gas Supply Act 1993",
+          "fullName": "Gas Supply Act 1993 (Act 501)",
+          "relevance": "high",
+          "notes": "Gas infrastructure operators face parallel regulatory requirements"
+        },
+        {
+          "framework": "IEC 62443",
+          "fullName": "IEC 62443 Industrial Cybersecurity Standards",
+          "relevance": "high",
+          "notes": "OT/SCADA systems in energy sector should align with IEC 62443 alongside Act 854 requirements"
+        },
+        {
+          "framework": "NERC CIP",
+          "fullName": "NERC Critical Infrastructure Protection Standards",
+          "relevance": "medium",
+          "notes": "International reference standard for power grid cybersecurity; informs local CoP development"
+        }
+      ]
+    },
+    "agriculture-plantation-commodity-food": {
+      "sectorName": "Agriculture, Plantation, Commodity and Food",
+      "sectorLead": "Ministry of Agriculture and Food Security",
+      "regulatoryOverlaps": [
+        {
+          "framework": "Food Act 1983",
+          "fullName": "Food Act 1983 (Act 281)",
+          "relevance": "low",
+          "notes": "Food safety systems disruption could trigger food safety obligations"
+        },
+        {
+          "framework": "MPOB Regulations",
+          "fullName": "Malaysian Palm Oil Board Regulations",
+          "relevance": "low",
+          "notes": "Commodity trading systems may face MPOB regulatory requirements alongside NCII obligations"
+        },
+        {
+          "framework": "Biosecurity Act 2021",
+          "fullName": "Malaysia Biosecurity Act 2021",
+          "relevance": "low",
+          "notes": "Agricultural biosecurity monitoring systems are potential NCII assets"
+        }
+      ]
+    },
+    "science-technology-innovation": {
+      "sectorName": "Science, Technology and Innovation",
+      "sectorLead": "MOSTI",
+      "regulatoryOverlaps": [
+        {
+          "framework": "Atomic Energy Licensing Act 1984",
+          "fullName": "Atomic Energy Licensing Act 1984 (Act 304)",
+          "relevance": "medium",
+          "notes": "Nuclear research facilities face additional safety and security requirements for control systems"
+        },
+        {
+          "framework": "National Science Council Act",
+          "fullName": "National Science and Research Council Act",
+          "relevance": "low",
+          "notes": "Research infrastructure cybersecurity intersects with research governance requirements"
+        },
+        {
+          "framework": "PDPA (Act 709)",
+          "fullName": "Personal Data Protection Act 2010",
+          "relevance": "medium",
+          "notes": "Research institutions processing personal data face dual obligations for data management systems"
+        }
+      ]
+    },
+    "education": {
+      "sectorName": "Education",
+      "sectorLead": "Ministry of Education",
+      "regulatoryOverlaps": [
+        {
+          "framework": "PDPA (Act 709)",
+          "fullName": "Personal Data Protection Act 2010",
+          "relevance": "high",
+          "notes": "Education systems processing student and staff personal data face dual Act 854 and PDPA obligations"
+        },
+        {
+          "framework": "Education Act 1996",
+          "fullName": "Education Act 1996 (Act 550)",
+          "relevance": "low",
+          "notes": "National education examination and management systems are potential NCII assets"
+        },
+        {
+          "framework": "AUKU",
+          "fullName": "Universities and University Colleges Act 1971",
+          "relevance": "low",
+          "notes": "University IT governance requirements supplement NCII obligations for higher education institutions"
+        }
+      ]
+    }
+  }
+}

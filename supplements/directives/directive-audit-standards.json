@@ -1,0 +1,56 @@
+{
+  "id": "directive-audit-standards",
+  "title": "Directive on Audit Standards and Frequency",
+  "type": "directive",
+  "issuedBy": "Chief Executive, NACSA",
+  "issuedUnder": "s15",
+  "gazetteDate": "2024-09-15",
+  "effectiveDate": "2024-09-15",
+  "subject": "Audit standards, scope requirements, auditor competency criteria, and minimum audit frequency for NCII entities",
+  "status": "in-force",
+  "applicableTo": "All NCII entities",
+  "provisions": [
+    {
+      "id": "audit-std-1",
+      "title": "Purpose and scope",
+      "requirement": "This directive establishes the standards, scope, competency criteria, and frequency requirements for cyber security audits conducted under section 23 of the Act and the Cyber Security (Risk Assessment and Audit) Regulations 2024. The directive applies to all NCII entities and to all persons conducting cyber security audits of national critical information infrastructure.",
+      "explanation": "Supplements the Regulations by specifying in detail how audits must be conducted. Applies both to the NCII entities being audited and to the auditors themselves, creating a dual accountability framework.",
+      "relatedActSection": "s23"
+    },
+    {
+      "id": "audit-std-2",
+      "title": "Audit frequency",
+      "requirement": "Every NCII entity shall conduct or cause to be conducted a comprehensive cyber security audit at intervals not exceeding twelve (12) months. In addition, a targeted audit shall be conducted within sixty (60) calendar days following: (a) a significant cyber security incident affecting the entity's national critical information infrastructure; (b) a material change in the entity's NCII infrastructure, including major system upgrades, migrations, or architectural changes; (c) a direction issued by the Chief Executive under section 23(1)(b); or (d) the identification of Critical-rated risks in a risk assessment that have not been remediated within the prescribed treatment timeline.",
+      "explanation": "Annual comprehensive audits are the baseline. However, triggered audits are also required following significant incidents, major infrastructure changes, CE directions, or unresolved critical risks. This ensures audit coverage is responsive to evolving conditions rather than being purely calendar-driven.",
+      "relatedActSection": "s23"
+    },
+    {
+      "id": "audit-std-3",
+      "title": "Audit scope and standards",
+      "requirement": "A comprehensive cyber security audit shall assess the NCII entity's compliance with: (a) all applicable provisions of the Cyber Security Act 2024; (b) all regulations made under the Act; (c) all directives issued by the Chief Executive under section 15; (d) all applicable codes of practice approved under section 22; (e) all standards determined by the Chief Executive under section 24; and (f) the entity's own cyber security policies and procedures. The audit shall be conducted in accordance with internationally recognized audit standards, including but not limited to ISO/IEC 27001:2022 audit requirements, ISACA COBIT audit frameworks, or other standards approved by the Chief Executive. The audit methodology shall include document review, personnel interviews, technical testing, and evidence verification.",
+      "explanation": "The audit scope is comprehensive: it covers the entire regulatory stack from the Act itself through regulations, directives, codes of practice, and standards, as well as the entity's own policies. Auditors cannot rely solely on document review; they must also interview personnel, perform technical testing, and verify evidence independently.",
+      "relatedActSection": "s23"
+    },
+    {
+      "id": "audit-std-4",
+      "title": "Auditor competency and independence",
+      "requirement": "A cyber security audit under section 23 shall be conducted by a person who: (a) holds a valid licence under Part V of the Act; (b) is approved by the Chief Executive for the purpose of conducting NCII audits; (c) possesses recognized cyber security audit certifications such as CISA, ISO 27001 Lead Auditor, CISSP, or equivalent qualifications approved by the Chief Executive; (d) has a minimum of five (5) years of relevant experience in cyber security auditing or assessment; and (e) has no conflict of interest with the NCII entity being audited, including but not limited to having provided consultancy, implementation, or managed security services to the entity within the preceding twenty-four (24) months.",
+      "explanation": "Auditors must be both technically qualified and independent. The 24-month cooling-off period prevents auditors from auditing their own past work or their ongoing clients' systems, ensuring objectivity. The specific certifications named (CISA, ISO 27001 Lead Auditor, CISSP) set a high professional bar.",
+      "relatedActSection": "s23"
+    },
+    {
+      "id": "audit-std-5",
+      "title": "Audit report requirements",
+      "requirement": "The audit report shall be submitted to the Chief Executive and the relevant NCII sector lead within the period prescribed by the Regulations and shall contain, at a minimum: (a) an executive summary of findings and overall compliance rating; (b) the scope and methodology of the audit; (c) detailed findings for each area assessed, including evidence relied upon; (d) a compliance rating for each assessed area using the scale: Compliant, Partially Compliant, Non-Compliant, or Not Applicable; (e) identified vulnerabilities and weaknesses with severity ratings; (f) recommendations for remediation with prioritization; and (g) a comparison with the previous audit's findings showing remediation progress. The overall compliance rating shall be assigned as: Fully Compliant (no Non-Compliant findings), Substantially Compliant (no more than three Partially Compliant findings and no Non-Compliant findings), Partially Compliant (Non-Compliant findings exist but do not affect Critical assets), or Non-Compliant (Non-Compliant findings affecting Critical assets).",
+      "explanation": "Audit reports follow a standardized structure to allow comparison across entities and sectors. The four-tier overall compliance rating gives NACSA and sector leads a quick view of each entity's posture. Crucially, each audit must track remediation progress from the prior audit, preventing entities from repeatedly acknowledging the same issues without fixing them.",
+      "relatedActSection": "s23"
+    },
+    {
+      "id": "audit-std-6",
+      "title": "Remediation requirements",
+      "requirement": "Following an audit, the NCII entity shall develop and submit a remediation plan within thirty (30) calendar days addressing all Non-Compliant and Partially Compliant findings. The remediation plan shall specify: (a) the corrective actions to be taken; (b) the responsible person for each action; (c) the target completion date for each action, which shall not exceed ninety (90) calendar days for Critical and High severity findings and one hundred and eighty (180) calendar days for Medium and Low severity findings; and (d) the resources allocated for remediation. The Chief Executive may require a follow-up audit to verify remediation of Critical or High severity findings.",
+      "explanation": "The audit is not the end of the process. Entities must produce a remediation plan within 30 days. Critical and High severity issues must be fixed within 90 days; Medium and Low within 180 days. NACSA can order a follow-up audit to verify that critical fixes were actually implemented, closing the loop on audit findings.",
+      "relatedActSection": "s23"
+    }
+  ]
+}

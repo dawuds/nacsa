@@ -1,0 +1,174 @@
+[
+  {
+    "id": "s8",
+    "part": "III",
+    "division": null,
+    "title": "Establishment of the National Cyber Security Committee",
+    "sectionNumber": 8,
+    "obligationType": "administrative",
+    "verbatim": "(1) A committee to be known as the National Cyber Security Committee is established.\n(2) The Committee shall consist of the following members:\n(a) the Prime Minister, who shall be the Chairman;\n(b) the Minister responsible for communications and multimedia;\n(c) the Minister responsible for defence;\n(d) the Minister responsible for home affairs;\n(e) the Chief Secretary to the Government;\n(f) the Secretary General of the National Security Council;\n(g) the Chief Executive; and\n(h) not more than five other members appointed by the Prime Minister.\n(3) The Chief Executive shall be the Secretary to the Committee.",
+    "translation": "Creates the National Cyber Security Committee at the highest level of government, chaired by the Prime Minister. Membership includes key cabinet ministers (communications, defence, home affairs), the Chief Secretary to the Government, the NSC Secretary General, and the NACSA CE as Secretary. Up to five additional members may be appointed by the PM. This composition signals that cyber security is treated as a national security priority at the apex of government.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "committee",
+      "National Cyber Security Committee",
+      "Prime Minister",
+      "governance",
+      "composition"
+    ]
+  },
+  {
+    "id": "s9",
+    "part": "III",
+    "division": null,
+    "title": "Functions of the Committee",
+    "sectionNumber": 9,
+    "obligationType": "administrative",
+    "verbatim": "(1) The Committee shall have the following functions:\n(a) to advise the Government on national cyber security policies, strategies and measures;\n(b) to oversee the implementation of national cyber security policies and strategies;\n(c) to determine the national critical information infrastructure sectors;\n(d) to coordinate responses to cyber security threats and incidents that affect national security;\n(e) to promote cooperation and coordination on cyber security among Government Entities;\n(f) to carry out any other functions as may be prescribed.\n(2) The Committee may establish any sub-committee as it considers necessary to assist in the performance of its functions.",
+    "translation": "The Committee advises the government on cyber security policy, oversees strategy implementation, determines NCII sectors (listed in the Schedule), coordinates national-level incident response, and promotes inter-agency cooperation. It may establish sub-committees for specialized areas. Critically, the power to determine NCII sectors (subsection (c)) means the Committee can expand or modify the Schedule's 11 sectors over time.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "Committee functions",
+      "national policy",
+      "NCII sectors",
+      "incident response",
+      "coordination"
+    ]
+  },
+  {
+    "id": "s10",
+    "part": "III",
+    "division": null,
+    "title": "Delegation of functions",
+    "sectionNumber": 10,
+    "obligationType": "procedural",
+    "verbatim": "(1) The Committee may delegate any of its functions to any sub-committee established under section 9.\n(2) Any delegation under subsection (1) shall not preclude the Committee from performing or exercising the functions so delegated.",
+    "translation": "The Committee may delegate functions to sub-committees while retaining the right to exercise those functions itself. This allows the Committee to distribute operational cyber security oversight while maintaining strategic control and accountability at the Prime Ministerial level.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "delegation",
+      "sub-committee",
+      "Committee"
+    ]
+  },
+  {
+    "id": "s11",
+    "part": "III",
+    "division": null,
+    "title": "Meetings of the Committee",
+    "sectionNumber": 11,
+    "obligationType": "procedural",
+    "verbatim": "(1) The Committee shall meet at such times and places as the Chairman may determine.\n(2) The quorum for a meeting of the Committee shall be a majority of its members including the Chairman.\n(3) Every member of the Committee present at a meeting of the Committee shall be entitled to one vote.\n(4) If on any question to be determined by the Committee there is an equality of votes, the Chairman shall have a casting vote.",
+    "translation": "Establishes procedural rules for Committee meetings. The PM as Chairman determines meeting schedule and venue. A majority of members including the Chairman forms a quorum. Each member has one vote, with the Chairman holding a casting vote in case of a tie.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "meetings",
+      "quorum",
+      "voting",
+      "Chairman",
+      "procedure"
+    ]
+  },
+  {
+    "id": "s12",
+    "part": "III",
+    "division": null,
+    "title": "Minutes of meetings",
+    "sectionNumber": 12,
+    "obligationType": "procedural",
+    "verbatim": "(1) Minutes of each meeting shall be kept and maintained by the Secretary.\n(2) The minutes of meetings shall, if duly confirmed, be admissible in evidence in all legal proceedings without further proof.",
+    "translation": "The CE (as Secretary) must keep meeting minutes, which are admissible as evidence in legal proceedings once confirmed. This creates an authoritative record of the Committee's decisions, particularly regarding NCII sector determinations and policy directions.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "minutes",
+      "records",
+      "evidence",
+      "Secretary"
+    ]
+  },
+  {
+    "id": "s13",
+    "part": "III",
+    "division": null,
+    "title": "Procedure at meetings",
+    "sectionNumber": 13,
+    "obligationType": "procedural",
+    "verbatim": "Subject to this Act, the Committee may regulate its own procedure.",
+    "translation": "Grants the Committee autonomy to determine its own meeting procedures, subject to the Act's provisions.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "procedure",
+      "Committee",
+      "self-regulation"
+    ]
+  },
+  {
+    "id": "s14",
+    "part": "III",
+    "division": null,
+    "title": "Disclosure of interest",
+    "sectionNumber": 14,
+    "obligationType": "mandatory",
+    "verbatim": "(1) A member of the Committee who has or acquires, directly or indirectly, any interest in any matter under discussion by the Committee shall disclose to the Committee the fact of his interest and the nature of that interest.\n(2) A disclosure under subsection (1) shall be recorded in the minutes of the meeting of the Committee.\n(3) After a disclosure under subsection (1), the member shall not be present or take part in any deliberation or decision of the Committee relating to the matter.",
+    "translation": "Mandatory conflict-of-interest provisions for Committee members. Any direct or indirect interest in a matter must be disclosed, recorded in minutes, and the member must then recuse themselves from related deliberations and decisions. This is critical governance safeguard given the Committee's power to designate NCII entities and sectors.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "conflict of interest",
+      "disclosure",
+      "recusal",
+      "governance"
+    ]
+  },
+  {
+    "id": "s15",
+    "part": "III",
+    "division": null,
+    "title": "Chief Executive may issue directives",
+    "sectionNumber": 15,
+    "obligationType": "enabling",
+    "verbatim": "(1) The Chief Executive may, from time to time, issue directives, not inconsistent with the provisions of this Act, as may be necessary or expedient for carrying out the purposes of this Act.\n(2) Every NCII entity and NCII sector lead shall comply with the directives issued under subsection (1).\n(3) A directive issued under subsection (1) shall be published in the Gazette.",
+    "translation": "Empowers the CE to issue directives that have binding force on all NCII entities and sector leads. Directives must be consistent with the Act and published in the Gazette. This is a key regulatory tool — the CE has issued approximately 10 directives covering NCII registration, risk assessment methodology, audit standards, incident notification, and other operational matters. Non-compliance with directives is enforceable under the Act.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "directives",
+      "Chief Executive",
+      "binding",
+      "gazette",
+      "regulatory instrument"
+    ]
+  },
+  {
+    "id": "s16",
+    "part": "III",
+    "division": null,
+    "title": "Secretariat to the Committee",
+    "sectionNumber": 16,
+    "obligationType": "administrative",
+    "verbatim": "The Agency shall provide the secretariat to the Committee and such administrative support as may be necessary for the performance of the Committee's functions.",
+    "translation": "NACSA provides secretariat and administrative support to the National Cyber Security Committee, ensuring the operational linkage between the strategic oversight body and the implementing agency.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "secretariat",
+      "administrative support",
+      "Agency"
+    ]
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+    "id": "s61",
+    "part": "IX",
+    "division": null,
+    "title": "Amendment of section 5 of the Computer Crimes Act 1997",
+    "sectionNumber": 61,
+    "obligationType": "administrative",
+    "verbatim": "The Computer Crimes Act 1997 [Act 563] is amended in section 5 by substituting for subsection (2) the following subsection:\n'(2) If the offence is committed against any national critical information infrastructure as defined in the Cyber Security Act 2024 [Act 854], the offender shall, on conviction, be liable to a fine not exceeding one million ringgit or to imprisonment for a term not exceeding fifteen years or to both.'",
+    "translation": "Amends the Computer Crimes Act 1997 s5 (unauthorized modification of computer contents) to create an enhanced penalty where the offence targets NCII: RM1,000,000 and/or 15 years imprisonment (significantly higher than the standard penalty). This aligns the criminal law framework with NCII protection priorities.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "Computer Crimes Act",
+      "amendment",
+      "enhanced penalty",
+      "NCII",
+      "unauthorized modification"
+    ]
+  },
+  {
+    "id": "s62",
+    "part": "IX",
+    "division": null,
+    "title": "Amendment of section 6 of the Computer Crimes Act 1997",
+    "sectionNumber": 62,
+    "obligationType": "administrative",
+    "verbatim": "The Computer Crimes Act 1997 is amended in section 6 by substituting for subsection (2) the following subsection:\n'(2) If the offence is committed against any national critical information infrastructure as defined in the Cyber Security Act 2024, the offender shall, on conviction, be liable to a fine not exceeding one million ringgit or to imprisonment for a term not exceeding fifteen years or to both.'",
+    "translation": "Amends the Computer Crimes Act 1997 s6 (wrongful communication of access codes) to create enhanced penalties when the offence affects NCII: RM1,000,000 and/or 15 years. Targets insider threats and credential sharing that could compromise critical infrastructure.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "Computer Crimes Act",
+      "amendment",
+      "access codes",
+      "NCII",
+      "enhanced penalty"
+    ]
+  },
+  {
+    "id": "s63",
+    "part": "IX",
+    "division": null,
+    "title": "Amendment of section 7 of the Computer Crimes Act 1997",
+    "sectionNumber": 63,
+    "obligationType": "administrative",
+    "verbatim": "The Computer Crimes Act 1997 is amended in section 7 by substituting for subsection (2) the following subsection:\n'(2) If the offence is committed against any national critical information infrastructure as defined in the Cyber Security Act 2024, the offender shall, on conviction, be liable to a fine not exceeding one million five hundred thousand ringgit or to imprisonment for a term not exceeding twenty years or to both.'",
+    "translation": "Amends the Computer Crimes Act 1997 s7 (unauthorized interception) with the highest enhanced penalty tier for NCII-related offences: RM1,500,000 and/or 20 years imprisonment. Reflects the severity of intercepting communications related to critical national infrastructure.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "Computer Crimes Act",
+      "amendment",
+      "interception",
+      "NCII",
+      "enhanced penalty",
+      "twenty years"
+    ]
+  },
+  {
+    "id": "s64",
+    "part": "IX",
+    "division": null,
+    "title": "New section 8A of the Computer Crimes Act 1997",
+    "sectionNumber": 64,
+    "obligationType": "administrative",
+    "verbatim": "The Computer Crimes Act 1997 is amended by inserting after section 8 the following section:\n'8A. Cyber security offences against national critical information infrastructure\n(1) Any person who knowingly causes or attempts to cause a cyber security incident against any national critical information infrastructure as defined in the Cyber Security Act 2024 commits an offence and shall, on conviction, be liable to a fine not exceeding two million ringgit or to imprisonment for a term not exceeding twenty years or to both.\n(2) For the purposes of this section, national critical information infrastructure has the meaning assigned to it in the Cyber Security Act 2024.'",
+    "translation": "Inserts a new offence (s8A) into the Computer Crimes Act 1997: knowingly causing or attempting to cause a cyber security incident against NCII. This carries the heaviest penalties in the entire framework — RM2,000,000 and/or 20 years imprisonment. This creates a dedicated criminal offence for deliberate attacks on Malaysia's critical infrastructure, separate from general computer crimes.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "Computer Crimes Act",
+      "new offence",
+      "s8A",
+      "deliberate attack",
+      "NCII",
+      "two million",
+      "twenty years"
+    ]
+  }
+]

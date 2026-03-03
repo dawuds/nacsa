@@ -1,0 +1,124 @@
+# NACSA Act 854 Explorer
+
+Interactive structured compliance database for Malaysia's **Cyber Security Act 2024 (Act 854)** — browse provisions, NCII sectors, requirements, evidence guidance, controls, artifacts, penalties, supplements, and cross-references.
+
+> **Disclaimer**: This is an indicative/educational resource. It does not constitute legal advice. Always refer to the official gazette text and seek professional counsel for compliance decisions.
+
+## Live Site
+
+**[Browse the Explorer →](https://dawuds.github.io/nacsa/)**
+
+## About Act 854
+
+The Cyber Security Act 2024 (Act 854) was gazetted on 26 June 2024 and came into force on 26 August 2024. It establishes the National Cyber Security Agency (NACSA) as the lead agency for cybersecurity in Malaysia, defines **National Critical Information Infrastructure (NCII)** across 11 sectors, and mandates cybersecurity risk assessments, audits, incident notification, and licensing of cybersecurity service providers.
+
+### Key Features
+- **11 NCII Sectors**: Government, Banking & Finance, Transport, Defence & National Security, ICT, Healthcare, Water & Sewerage, Energy, Agriculture/Plantation/Commodity/Food, Science/Technology/Innovation, Education
+- **6-hour incident notification** window for reportable cyber security incidents
+- **Mandatory risk assessments** and **cyber security audits** for NCII entities
+- **Licensing regime** for cybersecurity service providers (5 service classes)
+- **Body corporate liability** with 10x fine multiplier (s52)
+
+## Data Architecture
+
+The database follows an 8-layer structured compliance model plus supplements:
+
+```
+nacsa/
+├── provisions/              # Act 854 sections (9 parts, ~64 sections)
+│   ├── parts.json           # Part structure with divisions
+│   ├── index.json           # All sections with verbatim text & translations
+│   └── by-part/             # Per-part section files
+├── sectors/                 # 11 NCII sectors with obligations
+│   └── index.json
+├── requirements/            # Legal/Technical/Governance requirements
+│   ├── index.json           # Keyed by sectionId
+│   └── by-part/             # Per-part requirement files
+├── evidence/                # Auditor focus & evidence guidance
+│   └── index.json
+├── artifacts/               # 120 compliance documents across 6 categories
+│   ├── inventory.json       # Policies, procedures, standards, registers, reports, logs
+│   └── section-map.json     # Bidirectional section ↔ artifact mapping
+├── controls/                # 53 security controls across 15 domains
+│   ├── domains.json         # Control domain definitions
+│   ├── library.json         # Controls with framework mappings
+│   └── section-map.json     # Section ↔ control mapping
+├── penalties/               # 20 penalty provisions
+│   └── index.json
+├── cross-references/        # Framework & regulatory mappings
+│   ├── framework-mappings.json    # NIST CSF 2.0, ISO 27001, RMiT, PDPA, CIS Controls
+│   ├── act-to-regulations.json
+│   ├── act-to-directives.json
+│   └── ncii-sector-mappings.json  # Sector regulatory overlap matrix
+├── supplements/             # Subsidiary instruments
+│   ├── regulations/         # 4 subsidiary regulations (P.U.(A) 291-294/2024)
+│   ├── directives/          # 10 Chief Executive directives
+│   └── codes-of-practice/   # 11 sector-specific codes of practice
+├── index.html               # Static browsing site
+├── style.css
+└── app.js
+```
+
+### File Counts
+
+| Layer | Files | Description |
+|-------|-------|-------------|
+| Provisions | 12 | parts.json + index.json + 9 by-part files + schedule |
+| Sectors | 1 | 11 NCII sectors with obligations |
+| Requirements | 6 | index.json + 5 by-part files |
+| Evidence | 1 | Evidence items keyed by section |
+| Artifacts | 2 | 120 artifacts + section map |
+| Controls | 3 | 15 domains, 53 controls + section map |
+| Penalties | 1 | 20 penalty provisions |
+| Cross-references | 4 | Framework mappings + regulatory mappings |
+| Supplements | 27 | 4 regulations + 10 directives + 11 CoPs + 3 indexes |
+| Static site | 3 | HTML + CSS + JS |
+| **Total** | **60** | |
+
+## Static Site
+
+The Explorer is a vanilla HTML/CSS/JS single-page application with:
+
+- **Hash-based routing**: `#`, `#part/IV`, `#s17`, `#sectors`, `#sector/banking-finance`, `#penalties`, `#controls`, `#control/slug`, `#artifacts`, `#supplements`, `#cross-references`, `#framework/nist-csf`, `#search/keyword`
+- **Lazy-loaded tabs**: Requirements, evidence, controls, artifacts, and cross-references load on demand
+- **Full-text search** across provisions, sectors, penalties, and supplements
+- **Responsive design**: Mobile, tablet, and desktop breakpoints
+- **No build step**: Serve directly with any static file server
+
+### Local Development
+
+```bash
+cd nacsa
+python3 -m http.server 8889
+# Open http://localhost:8889
+```
+
+## Framework Cross-References
+
+The database maps Act 854 provisions to:
+
+| Framework | Mappings | Coverage |
+|-----------|----------|----------|
+| NIST CSF 2.0 | 21 | Govern, Identify, Protect, Detect, Respond, Recover |
+| ISO 27001:2022 | 15 | Annex A controls |
+| BNM RMiT | 7 | Banking sector technology risk |
+| PDPA (Act 709) | 4 | Personal data protection overlap |
+| CIS Controls v8 | 7 | Implementation groups |
+
+## Supplements
+
+### Regulations (4)
+- P.U.(A) 291/2024 — Notification of Cyber Security Incident
+- P.U.(A) 292/2024 — Risk Assessment and Audit
+- P.U.(A) 293/2024 — Licensing of Cyber Security Service Providers
+- P.U.(A) 294/2024 — Compounding of Offences
+
+### Chief Executive Directives (10)
+Issued under s15, covering NCII registration, risk assessment methodology, audit standards, incident notification, information sharing, service provider obligations, CoP development, vulnerability disclosure, threat intelligence sharing, and NCII asset categorization.
+
+### Codes of Practice (11)
+Sector-specific CoPs under s22, with varying status: published (Banking & Finance), template issued (Government, ICT, Energy), draft (Transport, Defence, Healthcare, Water & Sewerage), and pending (Agriculture, Science & Technology, Education).
+
+## License
+
+This repository contains structured compliance data derived from publicly available Malaysian legislation. The data is provided for educational and informational purposes only.

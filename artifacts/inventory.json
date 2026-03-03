@@ -1,0 +1,2718 @@
+{
+  "policies": [
+    {
+      "slug": "ncii-cybersecurity-policy",
+      "name": "NCII Cybersecurity Policy",
+      "category": "policies",
+      "description": "Master cybersecurity policy establishing the entity's commitment to protecting national critical information infrastructure, defining roles, responsibilities, and the overarching security governance framework",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s17",
+        "s18",
+        "s24"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "30-50",
+      "keyContents": [
+        "Policy objectives and scope",
+        "NCII asset classification",
+        "Roles and responsibilities (CISO, security team, asset owners)",
+        "Compliance obligations under Act 854",
+        "Policy exception process",
+        "Review and update cycle"
+      ]
+    },
+    {
+      "slug": "incident-response-policy",
+      "name": "Incident Response Policy",
+      "category": "policies",
+      "description": "Policy governing the entity's approach to detecting, responding to, and recovering from cyber security incidents affecting NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s23",
+        "s26"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "20-30",
+      "keyContents": [
+        "Incident classification framework",
+        "6-hour notification obligation",
+        "Roles and escalation matrix",
+        "Communication protocols",
+        "Evidence preservation requirements",
+        "Post-incident review process"
+      ]
+    },
+    {
+      "slug": "access-control-policy",
+      "name": "Access Control Policy",
+      "category": "policies",
+      "description": "Policy defining access management principles for NCII systems including authentication, authorisation, and privilege management",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s24"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-25",
+      "keyContents": [
+        "Least privilege principle",
+        "MFA requirements for NCII systems",
+        "Account lifecycle management",
+        "Privileged access management",
+        "Remote access controls",
+        "Access review frequency"
+      ]
+    },
+    {
+      "slug": "risk-management-policy",
+      "name": "Risk Management Policy",
+      "category": "policies",
+      "description": "Policy establishing the entity's approach to identifying, assessing, treating, and monitoring cyber security risks to NCII",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s21",
+        "s18"
+      ],
+      "owner": "CRO/CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "20-30",
+      "keyContents": [
+        "Risk appetite statement",
+        "Risk assessment methodology",
+        "Risk treatment options",
+        "Risk acceptance authority levels",
+        "Risk monitoring and reporting",
+        "Integration with enterprise risk management"
+      ]
+    },
+    {
+      "slug": "information-classification-policy",
+      "name": "Information Classification Policy",
+      "category": "policies",
+      "description": "Policy establishing classification levels for information processed, stored, or transmitted by NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s49"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-20",
+      "keyContents": [
+        "Classification levels (Confidential, Restricted, Internal, Public)",
+        "Handling requirements per level",
+        "Labelling standards",
+        "Declassification procedures",
+        "Information sharing restrictions under s49"
+      ]
+    },
+    {
+      "slug": "acceptable-use-policy",
+      "name": "Acceptable Use Policy",
+      "category": "policies",
+      "description": "Policy governing acceptable use of NCII systems, networks, and data by all personnel",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Authorised use of NCII systems",
+        "Prohibited activities",
+        "Personal device restrictions",
+        "Internet and email usage",
+        "Social media guidelines",
+        "Monitoring notice and consent"
+      ]
+    },
+    {
+      "slug": "change-management-policy",
+      "name": "Change Management Policy",
+      "category": "policies",
+      "description": "Policy governing changes to NCII systems, infrastructure, and configurations to ensure stability and security",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s24"
+      ],
+      "owner": "IT Director",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-20",
+      "keyContents": [
+        "Change classification (standard, normal, emergency)",
+        "Change advisory board composition",
+        "Security impact assessment",
+        "Testing and rollback requirements",
+        "Documentation and audit trail",
+        "Emergency change procedures"
+      ]
+    },
+    {
+      "slug": "bcdr-policy",
+      "name": "Business Continuity and Disaster Recovery Policy",
+      "category": "policies",
+      "description": "Policy establishing the entity's approach to ensuring continuity of NCII services during disruptions and recovering from disasters",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s23"
+      ],
+      "owner": "CRO/CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "25-35",
+      "keyContents": [
+        "RTO and RPO for NCII systems",
+        "BIA methodology",
+        "Recovery prioritisation",
+        "Testing frequency and scenarios",
+        "Alternate site arrangements",
+        "Communication and notification"
+      ]
+    },
+    {
+      "slug": "vendor-security-policy",
+      "name": "Vendor and Third-Party Security Policy",
+      "category": "policies",
+      "description": "Policy governing security requirements for third parties with access to or impact on NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s28"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-25",
+      "keyContents": [
+        "Vendor risk assessment requirements",
+        "Security contractual clauses",
+        "Right to audit provisions",
+        "Incident notification obligations for vendors",
+        "Access management for third parties",
+        "Ongoing monitoring and review"
+      ]
+    },
+    {
+      "slug": "vulnerability-management-policy",
+      "name": "Vulnerability Management Policy",
+      "category": "policies",
+      "description": "Policy establishing the entity's approach to identifying, assessing, and remediating vulnerabilities in NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s21"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-20",
+      "keyContents": [
+        "Vulnerability scanning frequency",
+        "Severity-based remediation timelines",
+        "Patch management integration",
+        "Zero-day response procedures",
+        "Vulnerability disclosure coordination",
+        "Exception and risk acceptance process"
+      ]
+    },
+    {
+      "slug": "encryption-policy",
+      "name": "Encryption and Cryptography Policy",
+      "category": "policies",
+      "description": "Policy governing the use of cryptographic controls for protecting NCII data at rest, in transit, and in processing",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s24"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Approved cryptographic algorithms",
+        "Key management responsibilities",
+        "Certificate management requirements",
+        "TLS/SSL standards",
+        "Data-at-rest encryption requirements",
+        "Cryptographic key lifecycle"
+      ]
+    },
+    {
+      "slug": "network-security-policy",
+      "name": "Network Security Policy",
+      "category": "policies",
+      "description": "Policy defining security architecture and controls for networks supporting NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s24"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-25",
+      "keyContents": [
+        "Network segmentation requirements",
+        "Firewall management",
+        "Intrusion detection/prevention",
+        "Remote access controls",
+        "Wireless security",
+        "Network monitoring and logging"
+      ]
+    },
+    {
+      "slug": "physical-security-policy",
+      "name": "Physical Security Policy",
+      "category": "policies",
+      "description": "Policy governing physical access controls and environmental protections for NCII infrastructure",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Facilities Manager/CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-20",
+      "keyContents": [
+        "Data centre access controls",
+        "Visitor management",
+        "Environmental controls (fire, flood, power)",
+        "Equipment disposal procedures",
+        "Physical security monitoring",
+        "Clean desk and clear screen"
+      ]
+    },
+    {
+      "slug": "awareness-training-policy",
+      "name": "Security Awareness and Training Policy",
+      "category": "policies",
+      "description": "Policy establishing mandatory cyber security awareness and training requirements for all personnel with access to NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "CISO/HR Director",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Mandatory training frequency",
+        "Role-based training requirements",
+        "Phishing simulation programme",
+        "Training content requirements",
+        "Competency assessment",
+        "New joiner induction requirements"
+      ]
+    },
+    {
+      "slug": "asset-management-policy",
+      "name": "Asset Management Policy",
+      "category": "policies",
+      "description": "Policy governing the identification, classification, and management of NCII assets throughout their lifecycle",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s17",
+        "s18"
+      ],
+      "owner": "IT Director/CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-20",
+      "keyContents": [
+        "NCII asset identification criteria",
+        "Asset classification methodology",
+        "Asset ownership assignment",
+        "Asset lifecycle management",
+        "Disposal and decommissioning",
+        "Asset inventory maintenance"
+      ]
+    },
+    {
+      "slug": "cloud-security-policy",
+      "name": "Cloud Security Policy",
+      "category": "policies",
+      "description": "Policy governing security requirements for cloud services hosting or processing NCII data",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s24"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-25",
+      "keyContents": [
+        "Cloud service provider assessment",
+        "Data sovereignty requirements",
+        "Shared responsibility model",
+        "Cloud access security",
+        "Data encryption in cloud",
+        "Cloud incident response"
+      ]
+    },
+    {
+      "slug": "data-protection-policy",
+      "name": "Data Protection Policy",
+      "category": "policies",
+      "description": "Policy governing the protection of personal and sensitive data processed by NCII systems, aligned with PDPA and Act 854",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s49"
+      ],
+      "owner": "DPO/CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "20-30",
+      "keyContents": [
+        "Data processing principles",
+        "Lawful basis for processing",
+        "Data subject rights",
+        "Cross-border transfer controls",
+        "Breach notification (dual PDPA/Act 854 obligations)",
+        "Data retention and disposal"
+      ]
+    },
+    {
+      "slug": "supply-chain-security-policy",
+      "name": "Supply Chain Security Policy",
+      "category": "policies",
+      "description": "Policy governing security requirements across the supply chain for components, software, and services used in NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s28"
+      ],
+      "owner": "CISO/Procurement",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-20",
+      "keyContents": [
+        "Supplier risk assessment framework",
+        "Software bill of materials requirements",
+        "Hardware provenance verification",
+        "Supply chain incident notification",
+        "Contractual security obligations",
+        "Ongoing supplier monitoring"
+      ]
+    },
+    {
+      "slug": "audit-compliance-policy",
+      "name": "Audit and Compliance Policy",
+      "category": "policies",
+      "description": "Policy establishing the entity's approach to cyber security audits and regulatory compliance under Act 854",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s22",
+        "s23"
+      ],
+      "owner": "Head of Internal Audit/CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-20",
+      "keyContents": [
+        "Audit frequency and scope",
+        "Auditor independence requirements",
+        "Finding classification and remediation",
+        "Regulatory compliance monitoring",
+        "CE directive tracking",
+        "Sector CoP compliance assessment"
+      ]
+    },
+    {
+      "slug": "remote-access-policy",
+      "name": "Remote Access Policy",
+      "category": "policies",
+      "description": "Policy governing secure remote access to NCII systems by internal and external personnel",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": false,
+      "sections": [
+        "s18",
+        "s24"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "VPN requirements",
+        "Multi-factor authentication",
+        "Endpoint security requirements",
+        "Session management",
+        "Privileged remote access controls",
+        "Third-party remote access restrictions"
+      ]
+    }
+  ],
+  "procedures": [
+    {
+      "slug": "ncii-registration-procedure",
+      "name": "NCII Entity Registration Procedure",
+      "category": "procedures",
+      "description": "Step-by-step procedure for completing NCII entity registration with NACSA and the relevant sector lead",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s17",
+        "s57"
+      ],
+      "owner": "Compliance Officer",
+      "reviewFrequency": "As needed",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Pre-registration checklist",
+        "NACSA portal submission steps",
+        "Required supporting documentation",
+        "NCII asset inventory preparation",
+        "Sector lead coordination",
+        "Transition requirements for existing operators"
+      ]
+    },
+    {
+      "slug": "incident-notification-procedure",
+      "name": "Incident Notification Procedure (6-Hour)",
+      "category": "procedures",
+      "description": "Detailed procedure for notifying NACSA and the sector lead of a cyber security incident within the mandatory 6-hour window",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s26",
+        "s23"
+      ],
+      "owner": "CISO/SOC Lead",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "15-20",
+      "keyContents": [
+        "Incident detection triggers",
+        "6-hour notification timeline",
+        "NACSA notification form completion",
+        "Sector lead parallel notification",
+        "Follow-up reporting at 72 hours",
+        "Final report at 30 days post-resolution"
+      ]
+    },
+    {
+      "slug": "risk-assessment-procedure",
+      "name": "Risk Assessment Procedure",
+      "category": "procedures",
+      "description": "Procedure for conducting mandatory cyber security risk assessments of NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s21"
+      ],
+      "owner": "Risk Manager/CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "20-30",
+      "keyContents": [
+        "Asset identification and valuation",
+        "Threat identification and categorisation",
+        "Vulnerability assessment",
+        "Risk calculation methodology",
+        "Risk treatment plan development",
+        "Report submission to NACSA/sector lead"
+      ]
+    },
+    {
+      "slug": "audit-engagement-procedure",
+      "name": "Audit Engagement Procedure",
+      "category": "procedures",
+      "description": "Procedure for engaging and managing NACSA-approved auditors for mandatory cyber security audits",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s22",
+        "s23"
+      ],
+      "owner": "Head of Internal Audit",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Approved auditor selection criteria",
+        "Engagement letter requirements",
+        "Audit scope agreement",
+        "Auditor access and support",
+        "Finding remediation tracking",
+        "Report submission procedures"
+      ]
+    },
+    {
+      "slug": "cop-compliance-procedure",
+      "name": "CoP Compliance Assessment Procedure",
+      "category": "procedures",
+      "description": "Procedure for assessing and maintaining compliance with the sector-specific code of practice",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s24"
+      ],
+      "owner": "Compliance Officer",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "CoP requirement mapping",
+        "Self-assessment methodology",
+        "Gap identification and scoring",
+        "Remediation prioritisation",
+        "Evidence collection guidance",
+        "Compliance reporting to sector lead"
+      ]
+    },
+    {
+      "slug": "vulnerability-scanning-procedure",
+      "name": "Vulnerability Scanning Procedure",
+      "category": "procedures",
+      "description": "Procedure for conducting regular vulnerability scans of NCII systems and managing scan results",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s21"
+      ],
+      "owner": "Security Operations",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Scan scheduling and frequency",
+        "Authenticated vs unauthenticated scanning",
+        "Scope and asset coverage",
+        "Result triage and false positive handling",
+        "Remediation assignment and tracking",
+        "Trend analysis and reporting"
+      ]
+    },
+    {
+      "slug": "patch-management-procedure",
+      "name": "Patch Management Procedure",
+      "category": "procedures",
+      "description": "Procedure for testing and deploying security patches to NCII systems within defined timelines",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "IT Operations/Security",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Patch classification (Critical, High, Medium, Low)",
+        "Testing requirements per criticality",
+        "Deployment timelines (Critical: 48h, High: 7d, Medium: 30d)",
+        "Rollback procedures",
+        "Emergency patching process",
+        "Exception and deferral process"
+      ]
+    },
+    {
+      "slug": "access-provisioning-procedure",
+      "name": "Access Provisioning and Deprovisioning Procedure",
+      "category": "procedures",
+      "description": "Procedure for granting, modifying, and revoking access to NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Identity & Access Management",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Access request and approval workflow",
+        "Role-based access assignment",
+        "Privileged account provisioning",
+        "Joiner/mover/leaver process",
+        "Access recertification schedule",
+        "Emergency access provisioning"
+      ]
+    },
+    {
+      "slug": "change-management-procedure",
+      "name": "Change Management Procedure",
+      "category": "procedures",
+      "description": "Detailed procedure for requesting, assessing, approving, and implementing changes to NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Change Manager",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-20",
+      "keyContents": [
+        "Change request submission",
+        "Security impact assessment",
+        "CAB review and approval",
+        "Testing and validation",
+        "Implementation and verification",
+        "Emergency change fast-track"
+      ]
+    },
+    {
+      "slug": "backup-recovery-procedure",
+      "name": "Backup and Recovery Procedure",
+      "category": "procedures",
+      "description": "Procedure for performing backups of NCII systems and data, and restoring from backups",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "IT Operations",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "15-20",
+      "keyContents": [
+        "Backup schedule and retention",
+        "Backup types (full, incremental, differential)",
+        "Offsite/offline backup requirements",
+        "Restoration testing frequency",
+        "Recovery point and time objectives",
+        "Backup integrity verification"
+      ]
+    },
+    {
+      "slug": "incident-response-procedure",
+      "name": "Incident Response Procedure",
+      "category": "procedures",
+      "description": "Detailed operational procedure for detecting, containing, eradicating, and recovering from cyber security incidents on NCII",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s23",
+        "s26"
+      ],
+      "owner": "SOC Lead/CISO",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "25-35",
+      "keyContents": [
+        "Incident classification matrix",
+        "Detection and triage workflow",
+        "Containment strategies by incident type",
+        "Eradication procedures",
+        "Recovery and restoration steps",
+        "Evidence collection and chain of custody"
+      ]
+    },
+    {
+      "slug": "forensic-investigation-procedure",
+      "name": "Forensic Investigation Procedure",
+      "category": "procedures",
+      "description": "Procedure for conducting forensic investigations of cyber security incidents on NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s23",
+        "s44"
+      ],
+      "owner": "CISO/Forensics Lead",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-20",
+      "keyContents": [
+        "Evidence preservation and chain of custody",
+        "Forensic image acquisition",
+        "Analysis methodology",
+        "Tool validation requirements",
+        "Report preparation",
+        "Coordination with law enforcement under Part VI"
+      ]
+    },
+    {
+      "slug": "threat-intelligence-procedure",
+      "name": "Threat Intelligence Handling Procedure",
+      "category": "procedures",
+      "description": "Procedure for receiving, processing, and acting on threat intelligence from NACSA, sector leads, and external sources",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s25",
+        "s18"
+      ],
+      "owner": "Threat Intelligence Analyst",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "TISP feed integration",
+        "TLP handling requirements",
+        "IOC ingestion and validation",
+        "Detection rule creation from intelligence",
+        "Sector working group participation",
+        "Intelligence sharing obligations"
+      ]
+    },
+    {
+      "slug": "bc-invocation-procedure",
+      "name": "Business Continuity Invocation Procedure",
+      "category": "procedures",
+      "description": "Procedure for invoking the business continuity plan for NCII systems during a major cyber security incident or disaster",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s23"
+      ],
+      "owner": "BC Manager",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "15-20",
+      "keyContents": [
+        "Invocation criteria and authority",
+        "Communication tree",
+        "Alternate site activation",
+        "System recovery prioritisation",
+        "Staff mobilisation",
+        "Return to normal operations"
+      ]
+    },
+    {
+      "slug": "security-escalation-procedure",
+      "name": "Security Monitoring Escalation Procedure",
+      "category": "procedures",
+      "description": "Procedure for escalating security alerts and events detected during monitoring of NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s23"
+      ],
+      "owner": "SOC Lead",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Alert classification tiers",
+        "Escalation thresholds",
+        "On-call rotation and contacts",
+        "Management notification triggers",
+        "NACSA escalation criteria",
+        "After-hours escalation procedures"
+      ]
+    },
+    {
+      "slug": "vendor-onboarding-procedure",
+      "name": "Vendor Onboarding Security Procedure",
+      "category": "procedures",
+      "description": "Procedure for security assessment and onboarding of vendors who will access or service NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s28"
+      ],
+      "owner": "Procurement/CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Security questionnaire and assessment",
+        "Due diligence checklist",
+        "Licence verification (Act 854 s28)",
+        "Contractual security requirements",
+        "Access provisioning for vendors",
+        "Ongoing monitoring and review schedule"
+      ]
+    },
+    {
+      "slug": "key-management-procedure",
+      "name": "Encryption Key Management Procedure",
+      "category": "procedures",
+      "description": "Procedure for generating, distributing, storing, rotating, and revoking cryptographic keys for NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Security Operations",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Key generation standards",
+        "Key distribution methods",
+        "Key storage (HSM requirements)",
+        "Key rotation schedule",
+        "Key revocation and destruction",
+        "Key recovery procedures"
+      ]
+    },
+    {
+      "slug": "penetration-testing-procedure",
+      "name": "Penetration Testing Procedure",
+      "category": "procedures",
+      "description": "Procedure for conducting penetration tests of NCII systems using licensed service providers",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s21",
+        "s28"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Scope definition and rules of engagement",
+        "Licensed provider engagement (s28)",
+        "Testing methodology",
+        "Finding classification",
+        "Remediation verification",
+        "Report submission and retention"
+      ]
+    },
+    {
+      "slug": "security-baseline-procedure",
+      "name": "Security Configuration Baseline Procedure",
+      "category": "procedures",
+      "description": "Procedure for establishing, applying, and verifying security configuration baselines for NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s24"
+      ],
+      "owner": "Security Operations",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Baseline development from CIS/DISA STIGs",
+        "Baseline approval process",
+        "Automated compliance scanning",
+        "Deviation detection and remediation",
+        "Baseline update triggers",
+        "Evidence for audit"
+      ]
+    },
+    {
+      "slug": "awareness-training-procedure",
+      "name": "User Awareness Training Delivery Procedure",
+      "category": "procedures",
+      "description": "Procedure for planning, delivering, and measuring the effectiveness of cyber security awareness training",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "CISO/HR",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Annual training calendar",
+        "Content development and review",
+        "Delivery methods (online, classroom, exercises)",
+        "Phishing simulation campaigns",
+        "Completion tracking and enforcement",
+        "Effectiveness measurement and reporting"
+      ]
+    }
+  ],
+  "standards": [
+    {
+      "slug": "security-config-baseline",
+      "name": "Security Configuration Baseline Standard",
+      "category": "standards",
+      "description": "Defines minimum security configuration requirements for operating systems, databases, and applications in NCII environments",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s24"
+      ],
+      "owner": "Security Architecture",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "30-50",
+      "keyContents": [
+        "OS hardening requirements (Windows, Linux)",
+        "Database security configurations",
+        "Application server settings",
+        "CIS Benchmark alignment",
+        "Deviation approval process",
+        "Automated compliance checking"
+      ]
+    },
+    {
+      "slug": "network-segmentation-standard",
+      "name": "Network Segmentation Standard",
+      "category": "standards",
+      "description": "Defines network architecture requirements for segmenting NCII systems from other networks",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s24"
+      ],
+      "owner": "Network Architecture",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-25",
+      "keyContents": [
+        "NCII zone definitions",
+        "Firewall rule requirements",
+        "Micro-segmentation guidelines",
+        "DMZ architecture",
+        "IT/OT network separation",
+        "Network access control (NAC)"
+      ]
+    },
+    {
+      "slug": "endpoint-protection-standard",
+      "name": "Endpoint Protection Standard",
+      "category": "standards",
+      "description": "Defines minimum security requirements for endpoints (workstations, servers, mobile devices) accessing NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Security Operations",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "10-20",
+      "keyContents": [
+        "EDR/XDR requirements",
+        "Host-based firewall configuration",
+        "Application whitelisting",
+        "Device encryption",
+        "USB and removable media controls",
+        "Automated patching requirements"
+      ]
+    },
+    {
+      "slug": "logging-monitoring-standard",
+      "name": "Logging and Monitoring Standard",
+      "category": "standards",
+      "description": "Defines log collection, retention, and monitoring requirements for NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s23"
+      ],
+      "owner": "SOC Lead",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "15-25",
+      "keyContents": [
+        "Required log sources",
+        "Log format and content requirements",
+        "Centralised log aggregation (SIEM)",
+        "Log retention periods (minimum 12 months)",
+        "Real-time alerting rules",
+        "Log integrity protection"
+      ]
+    },
+    {
+      "slug": "authentication-standard",
+      "name": "Authentication Standard (MFA)",
+      "category": "standards",
+      "description": "Defines authentication requirements including MFA for access to NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s24"
+      ],
+      "owner": "Identity & Access Management",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Password complexity requirements",
+        "MFA methods and requirements",
+        "Privileged account authentication",
+        "Service account management",
+        "Session timeout settings",
+        "Failed authentication lockout"
+      ]
+    },
+    {
+      "slug": "encryption-standard",
+      "name": "Encryption Standard",
+      "category": "standards",
+      "description": "Defines approved cryptographic algorithms, key lengths, and implementation requirements for NCII data protection",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s24"
+      ],
+      "owner": "Security Architecture",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Approved algorithms (AES-256, RSA-2048+)",
+        "TLS version requirements (1.2+)",
+        "Data-at-rest encryption",
+        "Data-in-transit encryption",
+        "Certificate requirements",
+        "Key length minimums by use case"
+      ]
+    },
+    {
+      "slug": "secure-development-standard",
+      "name": "Secure Development Standard",
+      "category": "standards",
+      "description": "Defines secure coding practices and security testing requirements for applications in the NCII environment",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": false,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Development Lead/CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "20-30",
+      "keyContents": [
+        "OWASP Top 10 prevention",
+        "Input validation requirements",
+        "Authentication and session management",
+        "SAST and DAST integration",
+        "Code review requirements",
+        "Dependency/library management"
+      ]
+    },
+    {
+      "slug": "cloud-security-standard",
+      "name": "Cloud Security Standard",
+      "category": "standards",
+      "description": "Defines security requirements for cloud deployments hosting NCII workloads",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s24"
+      ],
+      "owner": "Cloud Architecture/CISO",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "15-25",
+      "keyContents": [
+        "CSP selection criteria",
+        "Data sovereignty (Malaysian jurisdiction)",
+        "Identity federation requirements",
+        "Cloud security posture management",
+        "Container and serverless security",
+        "Cloud logging and monitoring"
+      ]
+    },
+    {
+      "slug": "mobile-device-standard",
+      "name": "Mobile Device Standard",
+      "category": "standards",
+      "description": "Defines security requirements for mobile devices accessing NCII systems or data",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": false,
+      "sections": [
+        "s18"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "MDM/MAM requirements",
+        "Device encryption",
+        "Application management",
+        "Remote wipe capability",
+        "Jailbreak/root detection",
+        "Approved applications list"
+      ]
+    },
+    {
+      "slug": "wireless-security-standard",
+      "name": "Wireless Security Standard",
+      "category": "standards",
+      "description": "Defines security requirements for wireless networks in NCII environments",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Network Security",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "WPA3/WPA2-Enterprise requirements",
+        "SSID management",
+        "Rogue AP detection",
+        "Guest network isolation",
+        "Wireless monitoring",
+        "RF shielding considerations"
+      ]
+    },
+    {
+      "slug": "email-security-standard",
+      "name": "Email Security Standard",
+      "category": "standards",
+      "description": "Defines security requirements for email systems used by NCII entity personnel",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Messaging/CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "SPF/DKIM/DMARC configuration",
+        "Anti-phishing controls",
+        "Attachment sandboxing",
+        "DLP for email",
+        "Email encryption requirements",
+        "Email archiving and retention"
+      ]
+    },
+    {
+      "slug": "api-security-standard",
+      "name": "API Security Standard",
+      "category": "standards",
+      "description": "Defines security requirements for APIs exposed by or consumed by NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": false,
+      "sections": [
+        "s18",
+        "s24"
+      ],
+      "owner": "Application Security",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "API authentication (OAuth 2.0, API keys)",
+        "Rate limiting and throttling",
+        "Input validation",
+        "API gateway requirements",
+        "API inventory and documentation",
+        "API security testing"
+      ]
+    },
+    {
+      "slug": "database-security-standard",
+      "name": "Database Security Standard",
+      "category": "standards",
+      "description": "Defines security configuration and access control requirements for databases in NCII environments",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "DBA/CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-20",
+      "keyContents": [
+        "Database hardening requirements",
+        "Access control and least privilege",
+        "Encryption (TDE, column-level)",
+        "Audit logging configuration",
+        "Backup encryption",
+        "Database activity monitoring"
+      ]
+    },
+    {
+      "slug": "web-application-standard",
+      "name": "Web Application Security Standard",
+      "category": "standards",
+      "description": "Defines security requirements for web applications in the NCII environment",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": false,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Application Security",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "15-20",
+      "keyContents": [
+        "OWASP ASVS compliance level",
+        "WAF requirements",
+        "Content Security Policy",
+        "Session management",
+        "HTTP security headers",
+        "Secure cookie configuration"
+      ]
+    },
+    {
+      "slug": "dns-security-standard",
+      "name": "DNS Security Standard",
+      "category": "standards",
+      "description": "Defines security requirements for DNS infrastructure supporting NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Network Security",
+      "reviewFrequency": "Annual",
+      "typicalPages": "8-12",
+      "keyContents": [
+        "DNSSEC implementation",
+        "DNS logging requirements",
+        "DNS filtering/sinkholing",
+        "Split DNS architecture",
+        "DNS monitoring for tunnelling",
+        "Redundancy and resilience"
+      ]
+    },
+    {
+      "slug": "certificate-management-standard",
+      "name": "Certificate Management Standard",
+      "category": "standards",
+      "description": "Defines requirements for managing digital certificates used by NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "PKI/Security Operations",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Approved certificate authorities",
+        "Certificate lifecycle management",
+        "Key length and algorithm requirements",
+        "Renewal and expiry monitoring",
+        "Revocation procedures",
+        "Certificate inventory maintenance"
+      ]
+    },
+    {
+      "slug": "iot-ot-security-standard",
+      "name": "IoT/OT Security Standard",
+      "category": "standards",
+      "description": "Defines security requirements for IoT devices and operational technology systems connected to NCII networks",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s24"
+      ],
+      "owner": "OT Security/CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-25",
+      "keyContents": [
+        "Device hardening requirements",
+        "Network segmentation for OT",
+        "Firmware management",
+        "Default credential elimination",
+        "Protocol security (Modbus, OPC UA)",
+        "IEC 62443 alignment"
+      ]
+    },
+    {
+      "slug": "backup-standard",
+      "name": "Backup Standard",
+      "category": "standards",
+      "description": "Defines technical requirements for backup systems protecting NCII data and configurations",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "IT Operations",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "3-2-1 backup rule",
+        "Immutable backup requirements",
+        "Backup encryption standards",
+        "Air-gapped backup copies",
+        "Restoration testing frequency",
+        "Backup monitoring and alerting"
+      ]
+    },
+    {
+      "slug": "physical-security-standard",
+      "name": "Physical Security Standard",
+      "category": "standards",
+      "description": "Defines physical access control and environmental protection requirements for NCII infrastructure",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Facilities/CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-20",
+      "keyContents": [
+        "Access control system requirements",
+        "CCTV coverage and retention",
+        "Environmental monitoring",
+        "Rack-level security",
+        "Visitor escort requirements",
+        "Equipment disposal standards"
+      ]
+    },
+    {
+      "slug": "incident-classification-standard",
+      "name": "Incident Classification Standard",
+      "category": "standards",
+      "description": "Defines the classification taxonomy for cyber security incidents affecting NCII systems",
+      "format": "PDF/DOCX, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s23",
+        "s26"
+      ],
+      "owner": "SOC Lead/CISO",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Severity levels (Critical, High, Medium, Low)",
+        "Impact assessment criteria",
+        "NACSA reportable incident thresholds",
+        "Incident type taxonomy",
+        "Escalation matrix by severity",
+        "Classification review triggers"
+      ]
+    }
+  ],
+  "registers": [
+    {
+      "slug": "ncii-asset-register",
+      "name": "NCII Asset Register",
+      "category": "registers",
+      "description": "Comprehensive inventory of all assets constituting or supporting national critical information infrastructure",
+      "format": "Spreadsheet/CMDB, maintained in GRC tool",
+      "mandatory": true,
+      "sections": [
+        "s17",
+        "s18"
+      ],
+      "owner": "IT Asset Management/CISO",
+      "reviewFrequency": "Continuous (quarterly formal review)",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Asset identifier and description",
+        "Criticality classification",
+        "Asset owner",
+        "Location and network zone",
+        "Dependencies and interconnections",
+        "Last assessment date"
+      ]
+    },
+    {
+      "slug": "risk-register",
+      "name": "Risk Register",
+      "category": "registers",
+      "description": "Register of all identified cyber security risks to NCII systems with current treatment status",
+      "format": "Spreadsheet/GRC tool",
+      "mandatory": true,
+      "sections": [
+        "s21"
+      ],
+      "owner": "Risk Manager/CISO",
+      "reviewFrequency": "Continuous (quarterly formal review)",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Risk identifier and description",
+        "Threat source and vulnerability",
+        "Likelihood and impact ratings",
+        "Current controls",
+        "Residual risk level",
+        "Treatment plan and owner"
+      ]
+    },
+    {
+      "slug": "incident-register",
+      "name": "Incident Register",
+      "category": "registers",
+      "description": "Log of all cyber security incidents affecting NCII systems, including those below the NACSA notification threshold",
+      "format": "ITSM/SIEM tool",
+      "mandatory": true,
+      "sections": [
+        "s23",
+        "s26"
+      ],
+      "owner": "SOC Lead",
+      "reviewFrequency": "Continuous",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Incident ID and classification",
+        "Detection date and method",
+        "Impact assessment",
+        "Response actions taken",
+        "NACSA notification status",
+        "Resolution and lessons learned"
+      ]
+    },
+    {
+      "slug": "audit-findings-register",
+      "name": "Audit Findings Register",
+      "category": "registers",
+      "description": "Register tracking all findings from cyber security audits and assessments, with remediation status",
+      "format": "GRC tool/Spreadsheet",
+      "mandatory": true,
+      "sections": [
+        "s22",
+        "s23"
+      ],
+      "owner": "Head of Internal Audit/CISO",
+      "reviewFrequency": "Continuous (monthly review)",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Finding ID and audit source",
+        "Severity classification",
+        "Description and recommendation",
+        "Remediation owner and deadline",
+        "Current status",
+        "Evidence of closure"
+      ]
+    },
+    {
+      "slug": "cop-compliance-register",
+      "name": "CoP Compliance Register",
+      "category": "registers",
+      "description": "Register tracking compliance status against each requirement in the sector-specific code of practice",
+      "format": "GRC tool/Spreadsheet",
+      "mandatory": true,
+      "sections": [
+        "s24"
+      ],
+      "owner": "Compliance Officer",
+      "reviewFrequency": "Quarterly",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "CoP requirement reference",
+        "Compliance status",
+        "Supporting evidence",
+        "Gap description",
+        "Remediation plan",
+        "Target compliance date"
+      ]
+    },
+    {
+      "slug": "vendor-register",
+      "name": "Vendor and Third-Party Register",
+      "category": "registers",
+      "description": "Register of all vendors and third parties with access to or impact on NCII systems",
+      "format": "Vendor management tool/Spreadsheet",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s28"
+      ],
+      "owner": "Procurement/CISO",
+      "reviewFrequency": "Quarterly",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Vendor name and services",
+        "Act 854 licence status (if applicable)",
+        "Access level and scope",
+        "Contract expiry date",
+        "Last security assessment",
+        "Risk rating"
+      ]
+    },
+    {
+      "slug": "access-rights-register",
+      "name": "Access Rights Register",
+      "category": "registers",
+      "description": "Register of all user access rights to NCII systems, supporting periodic access reviews",
+      "format": "IAM tool/Spreadsheet",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Identity & Access Management",
+      "reviewFrequency": "Quarterly",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "User identity",
+        "System/application access",
+        "Role and permissions",
+        "Access approval reference",
+        "Last review date",
+        "Privileged account flag"
+      ]
+    },
+    {
+      "slug": "change-request-register",
+      "name": "Change Request Register",
+      "category": "registers",
+      "description": "Log of all changes to NCII systems from request through implementation",
+      "format": "ITSM tool",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Change Manager",
+      "reviewFrequency": "Continuous",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Change ID and description",
+        "Change type and priority",
+        "Security impact assessment",
+        "Approval status",
+        "Implementation date",
+        "Post-change verification"
+      ]
+    },
+    {
+      "slug": "vulnerability-register",
+      "name": "Vulnerability Register",
+      "category": "registers",
+      "description": "Register tracking all identified vulnerabilities in NCII systems and their remediation status",
+      "format": "Vulnerability management tool",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s21"
+      ],
+      "owner": "Security Operations",
+      "reviewFrequency": "Continuous (weekly review)",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Vulnerability ID (CVE)",
+        "Affected NCII assets",
+        "CVSS severity score",
+        "Discovery date",
+        "Remediation deadline",
+        "Patch/fix status"
+      ]
+    },
+    {
+      "slug": "licence-register",
+      "name": "Licence Register (Service Providers)",
+      "category": "registers",
+      "description": "Register of licensed cyber security service providers engaged by the entity under Act 854",
+      "format": "Spreadsheet/Procurement system",
+      "mandatory": true,
+      "sections": [
+        "s28",
+        "s32"
+      ],
+      "owner": "Procurement/CISO",
+      "reviewFrequency": "Quarterly",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Service provider name",
+        "NACSA licence number",
+        "Service class(es)",
+        "Licence validity period",
+        "Services engaged",
+        "Contract reference"
+      ]
+    },
+    {
+      "slug": "directive-compliance-tracker",
+      "name": "Directive Compliance Tracker",
+      "category": "registers",
+      "description": "Register tracking compliance with all Chief Executive directives issued under s15",
+      "format": "GRC tool/Spreadsheet",
+      "mandatory": true,
+      "sections": [
+        "s15"
+      ],
+      "owner": "Compliance Officer",
+      "reviewFrequency": "Quarterly",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Directive reference",
+        "Requirement summary",
+        "Compliance status",
+        "Implementation date",
+        "Evidence reference",
+        "Next review date"
+      ]
+    },
+    {
+      "slug": "standards-compliance-tracker",
+      "name": "Standards Compliance Tracker",
+      "category": "registers",
+      "description": "Register tracking compliance with applicable standards (Act 854 s24) including NACSA-specified standards",
+      "format": "GRC tool/Spreadsheet",
+      "mandatory": true,
+      "sections": [
+        "s24"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Quarterly",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Standard reference",
+        "Applicable requirements",
+        "Compliance status",
+        "Gap description",
+        "Remediation plan",
+        "Assessment date"
+      ]
+    },
+    {
+      "slug": "training-records-register",
+      "name": "Training Records Register",
+      "category": "registers",
+      "description": "Register of cyber security training completion and competency assessment for all personnel with NCII access",
+      "format": "LMS/HR system",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "HR/CISO",
+      "reviewFrequency": "Continuous",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Employee ID and name",
+        "Training course completed",
+        "Completion date",
+        "Assessment score",
+        "Compliance status",
+        "Next training due"
+      ]
+    },
+    {
+      "slug": "exception-register",
+      "name": "Exception Register",
+      "category": "registers",
+      "description": "Register of approved deviations from security policies, standards, or controls for NCII systems",
+      "format": "GRC tool/Spreadsheet",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Quarterly",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Exception ID and description",
+        "Policy/standard affected",
+        "Business justification",
+        "Compensating controls",
+        "Risk acceptance authority",
+        "Expiry date and review trigger"
+      ]
+    },
+    {
+      "slug": "bcp-register",
+      "name": "Business Continuity Plan Register",
+      "category": "registers",
+      "description": "Register of all business continuity and disaster recovery plans for NCII systems",
+      "format": "BCP tool/Document management",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "BC Manager",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Plan ID and scope",
+        "NCII systems covered",
+        "RTO/RPO objectives",
+        "Last test date and result",
+        "Plan owner",
+        "Next scheduled test"
+      ]
+    },
+    {
+      "slug": "encryption-key-inventory",
+      "name": "Encryption Key Inventory",
+      "category": "registers",
+      "description": "Inventory of all cryptographic keys used to protect NCII data, with lifecycle tracking",
+      "format": "HSM/Key management system",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Security Operations",
+      "reviewFrequency": "Quarterly",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Key identifier",
+        "Algorithm and key length",
+        "Purpose and scope",
+        "Creation date",
+        "Rotation schedule",
+        "Custodian and backup custodian"
+      ]
+    },
+    {
+      "slug": "certificate-inventory",
+      "name": "Certificate Inventory",
+      "category": "registers",
+      "description": "Inventory of all digital certificates used by NCII systems, with expiry tracking",
+      "format": "Certificate management tool",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "PKI/Security Operations",
+      "reviewFrequency": "Monthly",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Certificate subject and SAN",
+        "Issuing CA",
+        "Issuance and expiry dates",
+        "Key algorithm and length",
+        "Associated NCII system",
+        "Auto-renewal status"
+      ]
+    },
+    {
+      "slug": "network-diagram-register",
+      "name": "Network Diagram Register",
+      "category": "registers",
+      "description": "Register of all network architecture diagrams for NCII environments, maintained as living documents",
+      "format": "Visio/Draw.io, version-controlled",
+      "mandatory": true,
+      "sections": [
+        "s17",
+        "s18"
+      ],
+      "owner": "Network Architecture",
+      "reviewFrequency": "Quarterly",
+      "typicalPages": "N/A (diagrams)",
+      "keyContents": [
+        "Logical network topology",
+        "Physical network layout",
+        "NCII zone boundaries",
+        "Firewall rule summaries",
+        "Interconnection points",
+        "Last update date"
+      ]
+    },
+    {
+      "slug": "data-classification-register",
+      "name": "Data Classification Register",
+      "category": "registers",
+      "description": "Register of data types processed by NCII systems with their classification levels and handling requirements",
+      "format": "GRC tool/Spreadsheet",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s49"
+      ],
+      "owner": "Data Governance/CISO",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Data type description",
+        "Classification level",
+        "Processing systems",
+        "Handling requirements",
+        "Retention period",
+        "Cross-border transfer restrictions"
+      ]
+    },
+    {
+      "slug": "threat-intelligence-log",
+      "name": "Threat Intelligence Log",
+      "category": "registers",
+      "description": "Log of threat intelligence received, processed, and acted upon from NACSA TISP and other sources",
+      "format": "TIP/SIEM tool",
+      "mandatory": true,
+      "sections": [
+        "s25"
+      ],
+      "owner": "Threat Intelligence Analyst",
+      "reviewFrequency": "Continuous",
+      "typicalPages": "N/A (database)",
+      "keyContents": [
+        "Intelligence source and TLP",
+        "Receipt date",
+        "IOC details",
+        "Action taken",
+        "Detection results",
+        "Sharing status"
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "slug": "quarterly-board-report",
+      "name": "Quarterly Board Compliance Report",
+      "category": "reports",
+      "description": "Quarterly report to the board on NCII cyber security posture, compliance status, and key risk indicators",
+      "format": "PDF/PPTX",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Quarterly",
+      "typicalPages": "15-25",
+      "keyContents": [
+        "Compliance dashboard (Act 854, CoP, directives)",
+        "Key risk indicators and trends",
+        "Incident summary",
+        "Audit finding status",
+        "Upcoming regulatory deadlines",
+        "Budget utilisation"
+      ]
+    },
+    {
+      "slug": "annual-ncii-compliance-report",
+      "name": "Annual NCII Compliance Report",
+      "category": "reports",
+      "description": "Annual comprehensive compliance report submitted to NACSA and the sector lead",
+      "format": "PDF, structured per NACSA template",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s22"
+      ],
+      "owner": "CISO/Compliance Officer",
+      "reviewFrequency": "Annual",
+      "typicalPages": "40-60",
+      "keyContents": [
+        "Entity profile and NCII inventory summary",
+        "Compliance status across all obligations",
+        "Risk assessment summary",
+        "Audit outcomes",
+        "Incident statistics",
+        "Improvement roadmap"
+      ]
+    },
+    {
+      "slug": "risk-assessment-report",
+      "name": "Risk Assessment Report",
+      "category": "reports",
+      "description": "Formal report of the annual cyber security risk assessment of NCII systems",
+      "format": "PDF, per NACSA methodology",
+      "mandatory": true,
+      "sections": [
+        "s21"
+      ],
+      "owner": "Risk Manager/Approved Assessor",
+      "reviewFrequency": "Annual",
+      "typicalPages": "50-80",
+      "keyContents": [
+        "Assessment scope and methodology",
+        "Asset inventory and valuation",
+        "Threat landscape analysis",
+        "Vulnerability assessment results",
+        "Risk register with ratings",
+        "Treatment plan recommendations"
+      ]
+    },
+    {
+      "slug": "audit-report",
+      "name": "Cyber Security Audit Report",
+      "category": "reports",
+      "description": "Formal report of the cyber security audit conducted by an approved auditor",
+      "format": "PDF, per NACSA audit standards",
+      "mandatory": true,
+      "sections": [
+        "s22",
+        "s23"
+      ],
+      "owner": "Approved Auditor",
+      "reviewFrequency": "Annual",
+      "typicalPages": "40-70",
+      "keyContents": [
+        "Audit scope and methodology",
+        "Compliance assessment against Act 854",
+        "Control effectiveness evaluation",
+        "Findings classified by severity",
+        "Recommendations and remediation timelines",
+        "Auditor opinion and rating"
+      ]
+    },
+    {
+      "slug": "incident-notification-report",
+      "name": "Incident Notification Report",
+      "category": "reports",
+      "description": "Formal incident notification submitted to NACSA within 6 hours of detecting a reportable cyber security incident",
+      "format": "NACSA INC-1 form",
+      "mandatory": true,
+      "sections": [
+        "s26"
+      ],
+      "owner": "CISO/SOC Lead",
+      "reviewFrequency": "Per incident",
+      "typicalPages": "3-5",
+      "keyContents": [
+        "Entity identification",
+        "Incident description and classification",
+        "Affected NCII systems",
+        "Impact assessment",
+        "Initial response actions",
+        "Contact information"
+      ]
+    },
+    {
+      "slug": "post-incident-report",
+      "name": "Post-Incident Review Report",
+      "category": "reports",
+      "description": "Comprehensive post-incident review submitted to NACSA within 30 days of incident resolution",
+      "format": "NACSA INC-4 form / PDF",
+      "mandatory": true,
+      "sections": [
+        "s26",
+        "s23"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Per incident",
+      "typicalPages": "15-25",
+      "keyContents": [
+        "Incident timeline",
+        "Root cause analysis",
+        "Impact assessment (final)",
+        "Response effectiveness evaluation",
+        "Lessons learned",
+        "Improvement actions and owners"
+      ]
+    },
+    {
+      "slug": "pentest-report",
+      "name": "Penetration Testing Report",
+      "category": "reports",
+      "description": "Report from penetration testing of NCII systems by a licensed service provider",
+      "format": "PDF",
+      "mandatory": true,
+      "sections": [
+        "s21",
+        "s28"
+      ],
+      "owner": "Licensed Pen Test Provider",
+      "reviewFrequency": "Annual",
+      "typicalPages": "30-50",
+      "keyContents": [
+        "Scope and methodology",
+        "Vulnerability findings by severity",
+        "Exploitation evidence",
+        "Risk ratings",
+        "Remediation recommendations",
+        "Retesting verification"
+      ]
+    },
+    {
+      "slug": "vulnerability-assessment-report",
+      "name": "Vulnerability Assessment Report",
+      "category": "reports",
+      "description": "Regular report on vulnerability scan results and remediation progress for NCII systems",
+      "format": "PDF/Dashboard export",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s21"
+      ],
+      "owner": "Security Operations",
+      "reviewFrequency": "Monthly",
+      "typicalPages": "10-20",
+      "keyContents": [
+        "Scan coverage statistics",
+        "New vulnerabilities discovered",
+        "Vulnerability age analysis",
+        "Remediation rate metrics",
+        "SLA compliance",
+        "Trend analysis"
+      ]
+    },
+    {
+      "slug": "security-metrics-dashboard",
+      "name": "Security Metrics Dashboard",
+      "category": "reports",
+      "description": "Dashboard presenting key security metrics and KPIs for NCII system protection",
+      "format": "Dashboard/PDF export",
+      "mandatory": false,
+      "sections": [
+        "s18"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Monthly",
+      "typicalPages": "5-10",
+      "keyContents": [
+        "Mean time to detect/respond/resolve",
+        "Patch compliance percentage",
+        "Training completion rates",
+        "Incident trends",
+        "Vulnerability remediation rates",
+        "Control effectiveness metrics"
+      ]
+    },
+    {
+      "slug": "threat-landscape-report",
+      "name": "Threat Landscape Report",
+      "category": "reports",
+      "description": "Periodic assessment of the threat landscape relevant to the entity's NCII sector",
+      "format": "PDF",
+      "mandatory": false,
+      "sections": [
+        "s25",
+        "s18"
+      ],
+      "owner": "Threat Intelligence Analyst",
+      "reviewFrequency": "Quarterly",
+      "typicalPages": "15-25",
+      "keyContents": [
+        "Sector threat assessment",
+        "Active threat actor profiles",
+        "Emerging attack techniques",
+        "Relevant CVEs and exploits",
+        "Recommendations for defence",
+        "NACSA/sector lead advisories"
+      ]
+    },
+    {
+      "slug": "vendor-risk-report",
+      "name": "Vendor Risk Assessment Report",
+      "category": "reports",
+      "description": "Assessment report of security risks associated with vendors accessing NCII systems",
+      "format": "PDF/Spreadsheet",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s28"
+      ],
+      "owner": "CISO/Procurement",
+      "reviewFrequency": "Annual per vendor",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Vendor security posture assessment",
+        "Licence compliance verification",
+        "Access scope and controls",
+        "Identified risks and mitigations",
+        "Residual risk rating",
+        "Recommendations"
+      ]
+    },
+    {
+      "slug": "bcdr-test-report",
+      "name": "BCDR Test Report",
+      "category": "reports",
+      "description": "Report on business continuity and disaster recovery testing for NCII systems",
+      "format": "PDF",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "BC Manager",
+      "reviewFrequency": "Semi-annual",
+      "typicalPages": "15-25",
+      "keyContents": [
+        "Test scenario and objectives",
+        "Systems and teams tested",
+        "RTO/RPO achievement results",
+        "Issues identified during test",
+        "Lessons learned",
+        "Improvement actions"
+      ]
+    },
+    {
+      "slug": "awareness-effectiveness-report",
+      "name": "Awareness Training Effectiveness Report",
+      "category": "reports",
+      "description": "Report measuring the effectiveness of the cyber security awareness programme",
+      "format": "PDF",
+      "mandatory": false,
+      "sections": [
+        "s18"
+      ],
+      "owner": "CISO/HR",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Training completion rates",
+        "Assessment scores",
+        "Phishing simulation results",
+        "Behavioural change metrics",
+        "Year-on-year comparison",
+        "Recommendations"
+      ]
+    },
+    {
+      "slug": "compliance-gap-report",
+      "name": "Compliance Gap Analysis Report",
+      "category": "reports",
+      "description": "Report identifying gaps between current security posture and Act 854/CoP requirements",
+      "format": "PDF/Spreadsheet",
+      "mandatory": true,
+      "sections": [
+        "s22",
+        "s24"
+      ],
+      "owner": "Compliance Officer",
+      "reviewFrequency": "Annual",
+      "typicalPages": "20-30",
+      "keyContents": [
+        "Requirement-by-requirement assessment",
+        "Gap severity classification",
+        "Current vs required state",
+        "Remediation effort estimates",
+        "Prioritised roadmap",
+        "Resource requirements"
+      ]
+    },
+    {
+      "slug": "security-architecture-report",
+      "name": "Security Architecture Review Report",
+      "category": "reports",
+      "description": "Report documenting the security architecture review of NCII systems",
+      "format": "PDF with diagrams",
+      "mandatory": false,
+      "sections": [
+        "s18",
+        "s21"
+      ],
+      "owner": "Security Architect",
+      "reviewFrequency": "Annual",
+      "typicalPages": "25-40",
+      "keyContents": [
+        "Architecture overview and diagrams",
+        "Security zone assessment",
+        "Control placement analysis",
+        "Identified weaknesses",
+        "Improvement recommendations",
+        "Alignment with standards"
+      ]
+    },
+    {
+      "slug": "ce-submission-package",
+      "name": "CE/Sector Lead Submission Package",
+      "category": "reports",
+      "description": "Consolidated compliance submission package for the Chief Executive and sector lead per statutory requirements",
+      "format": "PDF bundle",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s21",
+        "s22"
+      ],
+      "owner": "Compliance Officer",
+      "reviewFrequency": "Annual",
+      "typicalPages": "50-80",
+      "keyContents": [
+        "Entity compliance declaration",
+        "Risk assessment executive summary",
+        "Audit report executive summary",
+        "Incident statistics",
+        "CoP compliance status",
+        "Improvement plan"
+      ]
+    },
+    {
+      "slug": "annual-awareness-report",
+      "name": "Annual Security Awareness Report",
+      "category": "reports",
+      "description": "Annual report on the security awareness programme covering activities, participation, and outcomes",
+      "format": "PDF",
+      "mandatory": false,
+      "sections": [
+        "s18"
+      ],
+      "owner": "CISO",
+      "reviewFrequency": "Annual",
+      "typicalPages": "10-15",
+      "keyContents": [
+        "Programme overview",
+        "Activities conducted",
+        "Participation statistics",
+        "Assessment results",
+        "Phishing campaign results",
+        "Year-on-year improvement"
+      ]
+    },
+    {
+      "slug": "regulatory-change-report",
+      "name": "Regulatory Change Impact Report",
+      "category": "reports",
+      "description": "Report assessing the impact of new or amended regulations, directives, or standards on NCII compliance",
+      "format": "PDF",
+      "mandatory": false,
+      "sections": [
+        "s15",
+        "s24"
+      ],
+      "owner": "Compliance Officer",
+      "reviewFrequency": "As needed",
+      "typicalPages": "5-15",
+      "keyContents": [
+        "Change description",
+        "Impact assessment",
+        "Affected systems and processes",
+        "Gap analysis",
+        "Implementation roadmap",
+        "Resource requirements"
+      ]
+    },
+    {
+      "slug": "cloud-posture-report",
+      "name": "Cloud Security Posture Report",
+      "category": "reports",
+      "description": "Report on the security posture of cloud environments hosting NCII workloads",
+      "format": "PDF/Dashboard export",
+      "mandatory": false,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Cloud Security",
+      "reviewFrequency": "Quarterly",
+      "typicalPages": "10-20",
+      "keyContents": [
+        "Cloud asset inventory",
+        "Configuration compliance",
+        "Vulnerability findings",
+        "Access anomalies",
+        "Cost and usage analysis",
+        "Improvement recommendations"
+      ]
+    },
+    {
+      "slug": "supply-chain-risk-report",
+      "name": "Supply Chain Risk Report",
+      "category": "reports",
+      "description": "Report assessing supply chain security risks for NCII system components and services",
+      "format": "PDF",
+      "mandatory": false,
+      "sections": [
+        "s18",
+        "s28"
+      ],
+      "owner": "CISO/Procurement",
+      "reviewFrequency": "Annual",
+      "typicalPages": "15-25",
+      "keyContents": [
+        "Supply chain mapping",
+        "Vendor risk ratings",
+        "Component provenance assessment",
+        "Single points of failure",
+        "Geopolitical risk factors",
+        "Mitigation recommendations"
+      ]
+    }
+  ],
+  "logs": [
+    {
+      "slug": "security-event-logs",
+      "name": "Security Event Logs",
+      "category": "logs",
+      "description": "Centralised security event logs from SIEM aggregating events across all NCII systems",
+      "format": "SIEM (Splunk/ELK/Wazuh)",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s23"
+      ],
+      "owner": "SOC Lead",
+      "reviewFrequency": "Continuous (real-time)",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Aggregated security events",
+        "Correlation rules output",
+        "Alert generation",
+        "Threat detection events",
+        "Compliance-relevant events",
+        "Retention: minimum 12 months"
+      ]
+    },
+    {
+      "slug": "access-logs",
+      "name": "Access Logs",
+      "category": "logs",
+      "description": "Logs recording all access attempts (successful and failed) to NCII systems",
+      "format": "SIEM/IAM system logs",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Identity & Access Management",
+      "reviewFrequency": "Continuous (daily review)",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Login/logout events",
+        "Authentication method used",
+        "Source IP and location",
+        "Failed access attempts",
+        "Account lockouts",
+        "Retention: minimum 12 months"
+      ]
+    },
+    {
+      "slug": "change-management-logs",
+      "name": "Change Management Logs",
+      "category": "logs",
+      "description": "Logs recording all changes approved and implemented on NCII systems",
+      "format": "ITSM tool",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Change Manager",
+      "reviewFrequency": "Continuous",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Change request details",
+        "Approval records",
+        "Implementation actions",
+        "Verification results",
+        "Rollback events",
+        "Retention: minimum 7 years"
+      ]
+    },
+    {
+      "slug": "incident-investigation-logs",
+      "name": "Incident Investigation Logs",
+      "category": "logs",
+      "description": "Detailed logs and evidence collected during cyber security incident investigations on NCII",
+      "format": "Forensic tool output/Case management",
+      "mandatory": true,
+      "sections": [
+        "s23",
+        "s44"
+      ],
+      "owner": "CISO/Forensics Lead",
+      "reviewFrequency": "Per incident",
+      "typicalPages": "N/A (case files)",
+      "keyContents": [
+        "Forensic images",
+        "Timeline reconstruction",
+        "IOC evidence",
+        "Chain of custody records",
+        "Analysis notes",
+        "Retention: minimum 7 years"
+      ]
+    },
+    {
+      "slug": "patch-deployment-logs",
+      "name": "Patch Deployment Logs",
+      "category": "logs",
+      "description": "Logs recording the deployment status of security patches across NCII systems",
+      "format": "Patch management tool",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "IT Operations",
+      "reviewFrequency": "Per patch cycle",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Patch identifier (KB/CVE)",
+        "Target systems",
+        "Deployment status",
+        "Success/failure per system",
+        "Reboot compliance",
+        "SLA adherence"
+      ]
+    },
+    {
+      "slug": "backup-verification-logs",
+      "name": "Backup Verification Logs",
+      "category": "logs",
+      "description": "Logs recording backup completion status and integrity verification for NCII data",
+      "format": "Backup tool reports",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "IT Operations",
+      "reviewFrequency": "Daily",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Backup job status",
+        "Data volume backed up",
+        "Integrity check results",
+        "Restoration test results",
+        "Failures and retries",
+        "Offsite copy confirmation"
+      ]
+    },
+    {
+      "slug": "vulnerability-scan-results",
+      "name": "Vulnerability Scan Results",
+      "category": "logs",
+      "description": "Raw results from vulnerability scans of NCII systems",
+      "format": "Vulnerability scanner output (Nessus/Qualys)",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s21"
+      ],
+      "owner": "Security Operations",
+      "reviewFrequency": "Per scan (weekly/monthly)",
+      "typicalPages": "N/A (scan data)",
+      "keyContents": [
+        "Scan scope and coverage",
+        "Vulnerabilities by severity",
+        "Affected hosts and services",
+        "CVSS scores",
+        "Remediation guidance",
+        "Trend comparison"
+      ]
+    },
+    {
+      "slug": "firewall-rule-logs",
+      "name": "Firewall Rule Change Logs",
+      "category": "logs",
+      "description": "Logs recording all changes to firewall rules protecting NCII network zones",
+      "format": "Firewall management tool",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Network Security",
+      "reviewFrequency": "Continuous (weekly review)",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Rule change details",
+        "Requestor and approver",
+        "Before/after comparison",
+        "Security impact assessment",
+        "Effective date",
+        "Retention: minimum 7 years"
+      ]
+    },
+    {
+      "slug": "privilege-escalation-logs",
+      "name": "Privilege Escalation Logs",
+      "category": "logs",
+      "description": "Logs recording all privilege escalation events on NCII systems",
+      "format": "SIEM/PAM tool",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Security Operations",
+      "reviewFrequency": "Continuous (daily review)",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Escalation events (sudo, runas)",
+        "User and target account",
+        "System and command executed",
+        "Justification reference",
+        "Session recording links",
+        "Anomaly alerts"
+      ]
+    },
+    {
+      "slug": "authentication-logs",
+      "name": "Authentication Logs",
+      "category": "logs",
+      "description": "Logs recording all authentication events across NCII systems including MFA",
+      "format": "IAM/SIEM",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Identity & Access Management",
+      "reviewFrequency": "Continuous",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Authentication attempts",
+        "MFA success/failure",
+        "Token/session creation",
+        "Password changes",
+        "Account lockout events",
+        "Impossible travel detection"
+      ]
+    },
+    {
+      "slug": "data-access-audit-trail",
+      "name": "Data Access Audit Trail",
+      "category": "logs",
+      "description": "Audit trail recording access to sensitive and classified data within NCII systems",
+      "format": "DLP/DAM tool",
+      "mandatory": true,
+      "sections": [
+        "s18",
+        "s49"
+      ],
+      "owner": "Data Governance",
+      "reviewFrequency": "Continuous (weekly review)",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Data access events",
+        "User and access type",
+        "Data classification level",
+        "Bulk extraction alerts",
+        "Policy violation events",
+        "Retention: minimum 7 years"
+      ]
+    },
+    {
+      "slug": "network-traffic-logs",
+      "name": "Network Traffic Logs",
+      "category": "logs",
+      "description": "Logs recording network traffic flows to and from NCII network zones",
+      "format": "Netflow/PCAP/NDR tool",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Network Security",
+      "reviewFrequency": "Continuous",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Netflow records",
+        "Connection metadata",
+        "Anomalous traffic detection",
+        "C2 beaconing detection",
+        "Data exfiltration indicators",
+        "East-west traffic monitoring"
+      ]
+    },
+    {
+      "slug": "email-gateway-logs",
+      "name": "Email Gateway Logs",
+      "category": "logs",
+      "description": "Logs recording email security gateway events for NCII entity communications",
+      "format": "Email gateway tool",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Messaging/Security",
+      "reviewFrequency": "Continuous (daily review)",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Inbound/outbound email events",
+        "Spam and phishing detections",
+        "Malware attachment blocks",
+        "DLP policy triggers",
+        "SPF/DKIM/DMARC failures",
+        "Quarantine actions"
+      ]
+    },
+    {
+      "slug": "dns-query-logs",
+      "name": "DNS Query Logs",
+      "category": "logs",
+      "description": "Logs recording DNS queries from NCII systems for security monitoring and threat detection",
+      "format": "DNS server/DNS firewall logs",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Network Security",
+      "reviewFrequency": "Continuous",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "DNS queries and responses",
+        "Blocked domain requests",
+        "DGA detection alerts",
+        "DNS tunnelling detection",
+        "Query volume anomalies",
+        "Sinkhole redirections"
+      ]
+    },
+    {
+      "slug": "application-logs",
+      "name": "Application Logs",
+      "category": "logs",
+      "description": "Security-relevant logs from applications running on NCII systems",
+      "format": "Application logging framework",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Application Owners",
+      "reviewFrequency": "Continuous",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Application authentication events",
+        "Authorisation failures",
+        "Input validation errors",
+        "Application errors and exceptions",
+        "Business logic anomalies",
+        "API call logging"
+      ]
+    },
+    {
+      "slug": "database-activity-logs",
+      "name": "Database Activity Logs",
+      "category": "logs",
+      "description": "Logs recording database operations on NCII data stores",
+      "format": "DAM/native database audit",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "DBA/Security",
+      "reviewFrequency": "Continuous (daily review)",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "DDL/DML operations",
+        "Privileged operations",
+        "Schema changes",
+        "Bulk data operations",
+        "Failed access attempts",
+        "Stored procedure execution"
+      ]
+    },
+    {
+      "slug": "physical-access-logs",
+      "name": "Physical Access Logs",
+      "category": "logs",
+      "description": "Logs recording physical access to facilities housing NCII infrastructure",
+      "format": "Physical access control system",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "Facilities",
+      "reviewFrequency": "Continuous (weekly review)",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Entry/exit events",
+        "Badge/biometric records",
+        "Visitor access records",
+        "After-hours access",
+        "Tailgating detection",
+        "Access denied events"
+      ]
+    },
+    {
+      "slug": "configuration-change-logs",
+      "name": "Configuration Change Logs",
+      "category": "logs",
+      "description": "Logs recording configuration changes to NCII system components",
+      "format": "Configuration management tool",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "IT Operations/Security",
+      "reviewFrequency": "Continuous (daily review)",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Configuration snapshots",
+        "Change detection alerts",
+        "Baseline deviation events",
+        "Before/after comparison",
+        "Unauthorised change detection",
+        "Compliance drift monitoring"
+      ]
+    },
+    {
+      "slug": "certificate-lifecycle-logs",
+      "name": "Certificate Lifecycle Logs",
+      "category": "logs",
+      "description": "Logs recording certificate issuance, renewal, revocation, and expiry events for NCII systems",
+      "format": "Certificate management tool",
+      "mandatory": true,
+      "sections": [
+        "s18"
+      ],
+      "owner": "PKI/Security Operations",
+      "reviewFrequency": "Continuous (weekly review)",
+      "typicalPages": "N/A (log data)",
+      "keyContents": [
+        "Certificate issuance events",
+        "Renewal actions",
+        "Expiry warnings",
+        "Revocation events",
+        "Certificate transparency logs",
+        "Key rotation records"
+      ]
+    },
+    {
+      "slug": "asset-discovery-logs",
+      "name": "Asset Discovery Scan Logs",
+      "category": "logs",
+      "description": "Logs from automated asset discovery scans of NCII network environments",
+      "format": "Asset discovery tool",
+      "mandatory": true,
+      "sections": [
+        "s17",
+        "s18"
+      ],
+      "owner": "IT Asset Management",
+      "reviewFrequency": "Per scan (weekly)",
+      "typicalPages": "N/A (scan data)",
+      "keyContents": [
+        "Discovered devices and services",
+        "New asset detection",
+        "Rogue device alerts",
+        "OS and service fingerprinting",
+        "Network mapping results",
+        "Shadow IT detection"
+      ]
+    }
+  ]
+}

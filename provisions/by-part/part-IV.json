@@ -1,0 +1,254 @@
+[
+  {
+    "id": "s17",
+    "part": "IV",
+    "division": "IV-1",
+    "title": "Designation of NCII entity and NCII sector lead",
+    "sectionNumber": 17,
+    "obligationType": "mandatory",
+    "verbatim": "(1) The Chief Executive may, by written notice, designate any person who owns or operates a national critical information infrastructure as an NCII entity.\n(2) The Chief Executive may designate a Government Entity as an NCII sector lead for an NCII sector.\n(3) Before making a designation under subsection (1), the Chief Executive shall consider—\n(a) the nature and extent of the infrastructure;\n(b) the consequences that may arise if the infrastructure is compromised; and\n(c) any other matter as the Chief Executive considers relevant.\n(4) The Chief Executive shall notify the person designated under subsection (1) of the designation by written notice.\n(5) A person aggrieved by a designation under subsection (1) may appeal to the Minister within thirty days of being notified.",
+    "translation": "The CE may designate any owner or operator of NCII as an NCII entity by written notice, considering the infrastructure's nature, extent, and consequences of compromise. A Government Entity may be designated as the sector lead for each NCII sector. The designated entity must be notified in writing and has 30 days to appeal to the Minister. This is the gateway provision — once designated, an entity becomes subject to all Part IV obligations including risk assessments, audits, standards compliance, and incident notification.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": [
+      "all"
+    ],
+    "keywords": [
+      "designation",
+      "NCII entity",
+      "NCII sector lead",
+      "written notice",
+      "appeal",
+      "critical infrastructure"
+    ]
+  },
+  {
+    "id": "s18",
+    "part": "IV",
+    "division": "IV-1",
+    "title": "Duties of NCII entity",
+    "sectionNumber": 18,
+    "obligationType": "mandatory",
+    "verbatim": "(1) An NCII entity shall—\n(a) implement and maintain cyber security measures to protect the national critical information infrastructure;\n(b) comply with any standards, codes of practice and directives issued under this Act;\n(c) report any cyber security incident to the Chief Executive in accordance with this Act;\n(d) conduct or cause to be conducted cyber security risk assessments in accordance with this Act;\n(e) conduct or cause to be conducted cyber security audits in accordance with this Act;\n(f) provide information as required by the Chief Executive or the NCII sector lead; and\n(g) comply with any other duty as may be prescribed.\n(2) Failure to comply with subsection (1) shall constitute an offence and the NCII entity shall, on conviction, be liable to a fine not exceeding five hundred thousand ringgit or to imprisonment for a term not exceeding ten years or to both.",
+    "translation": "Establishes the comprehensive duty catalogue for designated NCII entities. Entities must: maintain cyber security measures for NCII protection, comply with all Act-related standards/codes/directives, report incidents, conduct risk assessments and audits, and provide information when required. Subsection (2) creates a serious criminal offence for non-compliance — up to RM500,000 fine and/or 10 years imprisonment. This is the most consequential provision for NCII entities as it aggregates all core obligations into a single enforceable duty.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": [
+      "all"
+    ],
+    "keywords": [
+      "duties",
+      "NCII entity",
+      "cyber security measures",
+      "compliance",
+      "risk assessment",
+      "audit",
+      "incident reporting",
+      "offence"
+    ]
+  },
+  {
+    "id": "s19",
+    "part": "IV",
+    "division": "IV-1",
+    "title": "Duties of NCII sector lead",
+    "sectionNumber": 19,
+    "obligationType": "mandatory",
+    "verbatim": "(1) An NCII sector lead shall—\n(a) coordinate and monitor the cyber security of national critical information infrastructure in its sector;\n(b) develop and recommend codes of practice for its sector;\n(c) advise NCII entities in its sector on cyber security matters;\n(d) report to the Chief Executive on the state of cyber security in its sector;\n(e) assist NCII entities in its sector in complying with this Act; and\n(f) comply with any other duty as may be prescribed.\n(2) An NCII sector lead may issue guidelines to NCII entities in its sector on matters relating to cyber security.",
+    "translation": "Sector leads (government entities overseeing each of the 11 NCII sectors) must coordinate and monitor NCII cyber security within their sector, develop sector-specific codes of practice, advise and assist NCII entities, and report to the CE on sectoral cyber security posture. They may also issue sector-specific guidelines. For example, Bank Negara Malaysia as sector lead for Banking and Finance develops CoPs and advises banking NCII entities on their Act obligations.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": [
+      "all"
+    ],
+    "keywords": [
+      "sector lead",
+      "coordination",
+      "codes of practice",
+      "monitoring",
+      "advisory",
+      "reporting"
+    ]
+  },
+  {
+    "id": "s20",
+    "part": "IV",
+    "division": "IV-1",
+    "title": "Provision of information",
+    "sectionNumber": 20,
+    "obligationType": "mandatory",
+    "verbatim": "(1) The Chief Executive may, by written notice, require an NCII entity to provide any information or document relating to the national critical information infrastructure of the NCII entity within a specified period.\n(2) An NCII entity shall comply with a notice under subsection (1).\n(3) Any person who fails to comply with a notice under subsection (1) commits an offence and shall, on conviction, be liable to a fine not exceeding two hundred thousand ringgit or to imprisonment for a term not exceeding three years or to both.\n(4) Any person who, in complying with a notice under subsection (1), provides any information or document that he knows or has reason to believe is false or misleading commits an offence and shall, on conviction, be liable to a fine not exceeding three hundred thousand ringgit or to imprisonment for a term not exceeding five years or to both.",
+    "translation": "The CE may compel NCII entities to provide information or documents about their NCII within a specified timeframe. Non-compliance carries penalties of up to RM200,000 and/or 3 years imprisonment. Providing false or misleading information is a separate, more serious offence (RM300,000 and/or 5 years). This gives NACSA investigative and oversight power to assess the cyber security posture of critical infrastructure without needing to conduct a full audit or investigation.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": [
+      "all"
+    ],
+    "keywords": [
+      "information provision",
+      "written notice",
+      "documents",
+      "offence",
+      "false information"
+    ]
+  },
+  {
+    "id": "s21",
+    "part": "IV",
+    "division": "IV-2",
+    "title": "Cyber security risk assessment",
+    "sectionNumber": 21,
+    "obligationType": "mandatory",
+    "verbatim": "(1) An NCII entity shall conduct or cause to be conducted a cyber security risk assessment of its national critical information infrastructure—\n(a) at intervals of not more than such period as may be prescribed; and\n(b) within such period as may be specified, upon being directed by the Chief Executive to do so.\n(2) A cyber security risk assessment under subsection (1) shall be conducted by a person approved by the Chief Executive.\n(3) The NCII entity shall submit the results of the cyber security risk assessment to the Chief Executive and to its NCII sector lead within such period as may be prescribed.\n(4) An NCII entity that fails to comply with this section commits an offence and shall, on conviction, be liable to a fine not exceeding five hundred thousand ringgit or to imprisonment for a term not exceeding ten years or to both.",
+    "translation": "NCII entities must conduct periodic cyber security risk assessments (frequency prescribed by regulation, typically annually) and also on-demand when directed by the CE. Assessments must be conducted by CE-approved persons (e.g., licensed cyber security service providers). Results must be submitted to both the CE and the relevant sector lead within prescribed timeframes. Non-compliance carries severe penalties (RM500,000/10 years). The Cyber Security (Risk Assessment and Audit) Regulations 2024 provides detailed methodology and frequency requirements.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": [
+      "all"
+    ],
+    "keywords": [
+      "risk assessment",
+      "periodic",
+      "approved person",
+      "submission",
+      "sector lead",
+      "offence"
+    ]
+  },
+  {
+    "id": "s22",
+    "part": "IV",
+    "division": "IV-2",
+    "title": "Codes of practice",
+    "sectionNumber": 22,
+    "obligationType": "mandatory",
+    "verbatim": "(1) The Chief Executive may, on the recommendation of the NCII sector lead, approve codes of practice for any NCII sector on standards of performance, procedures, and best practices in relation to the cyber security of national critical information infrastructure.\n(2) An NCII entity shall comply with any code of practice approved under subsection (1) that applies to it.\n(3) The Chief Executive may vary, revoke, or replace any code of practice approved under subsection (1).\n(4) An NCII entity that fails to comply with any code of practice approved under subsection (1) commits an offence and shall, on conviction, be liable to a fine not exceeding two hundred thousand ringgit or to imprisonment for a term not exceeding three years or to both.",
+    "translation": "The CE approves sector-specific codes of practice (CoPs) on the recommendation of sector leads. CoPs set standards of performance, procedures, and best practices for NCII cyber security. NCII entities must comply with applicable CoPs, and failure to do so is an offence (RM200,000/3 years). The CE may vary or replace CoPs as cyber threats evolve. Each of the 11 NCII sectors is expected to have its own CoP, though development status varies.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": [
+      "all"
+    ],
+    "keywords": [
+      "codes of practice",
+      "CoP",
+      "standards",
+      "best practices",
+      "sector-specific",
+      "offence"
+    ]
+  },
+  {
+    "id": "s23",
+    "part": "IV",
+    "division": "IV-2",
+    "title": "Cyber security audit",
+    "sectionNumber": 23,
+    "obligationType": "mandatory",
+    "verbatim": "(1) An NCII entity shall conduct or cause to be conducted a cyber security audit of its national critical information infrastructure—\n(a) at intervals of not more than such period as may be prescribed; and\n(b) within such period as may be specified, upon being directed by the Chief Executive to do so.\n(2) A cyber security audit under subsection (1) shall be conducted by a person approved by the Chief Executive.\n(3) The NCII entity shall submit the results of the cyber security audit to the Chief Executive and to its NCII sector lead within such period as may be prescribed.\n(4) An NCII entity that fails to comply with this section commits an offence and shall, on conviction, be liable to a fine not exceeding five hundred thousand ringgit or to imprisonment for a term not exceeding ten years or to both.",
+    "translation": "Parallel to s21 (risk assessment), NCII entities must conduct periodic cyber security audits (prescribed frequency) and on-demand audits when directed by the CE. Audits must be performed by CE-approved persons and results submitted to the CE and sector lead within prescribed timeframes. Same penalty regime as risk assessments (RM500,000/10 years). The audit assesses compliance with the Act, regulations, directives, codes of practice, and applicable standards.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": [
+      "all"
+    ],
+    "keywords": [
+      "cyber security audit",
+      "periodic",
+      "approved person",
+      "compliance",
+      "submission",
+      "offence"
+    ]
+  },
+  {
+    "id": "s24",
+    "part": "IV",
+    "division": "IV-2",
+    "title": "Standards of cyber security",
+    "sectionNumber": 24,
+    "obligationType": "mandatory",
+    "verbatim": "(1) The Chief Executive may determine standards of cyber security to be complied with by NCII entities in relation to the protection of national critical information infrastructure.\n(2) An NCII entity shall comply with any standard determined under subsection (1) within such period as may be specified by the Chief Executive.\n(3) An NCII entity that fails to comply with any standard determined under subsection (1) commits an offence and shall, on conviction, be liable to a fine not exceeding two hundred thousand ringgit or to imprisonment for a term not exceeding three years or to both.",
+    "translation": "The CE may set binding cyber security standards for NCII protection. NCII entities must comply within specified timeframes, with non-compliance carrying penalties of up to RM200,000 and/or 3 years imprisonment. Standards may reference or adapt international frameworks (ISO 27001, NIST CSF, etc.) and provide the technical baseline that audits measure against.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": [
+      "all"
+    ],
+    "keywords": [
+      "standards",
+      "cyber security standards",
+      "compliance",
+      "NCII protection",
+      "offence"
+    ]
+  },
+  {
+    "id": "s25",
+    "part": "IV",
+    "division": "IV-3",
+    "title": "Duty to provide information on threats",
+    "sectionNumber": 25,
+    "obligationType": "mandatory",
+    "verbatim": "(1) If an NCII entity has any information relating to a cyber security threat or cyber security incident that may affect any other national critical information infrastructure, the NCII entity shall inform the Chief Executive of such information as soon as practicable.\n(2) An NCII entity that fails to comply with subsection (1) commits an offence and shall, on conviction, be liable to a fine not exceeding two hundred thousand ringgit or to imprisonment for a term not exceeding three years or to both.",
+    "translation": "Creates a mandatory threat intelligence sharing obligation. If an NCII entity has information about a threat or incident that could affect other NCII (not just its own), it must inform the CE as soon as practicable. This enables early warning across sectors and supports NACSA's coordination role. Non-compliance: RM200,000/3 years. The duty extends beyond an entity's own infrastructure to the broader national NCII ecosystem.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": [
+      "all"
+    ],
+    "keywords": [
+      "threat information",
+      "sharing",
+      "early warning",
+      "as soon as practicable",
+      "cross-sector"
+    ]
+  },
+  {
+    "id": "s26",
+    "part": "IV",
+    "division": "IV-3",
+    "title": "Notification of cyber security incident",
+    "sectionNumber": 26,
+    "obligationType": "mandatory",
+    "verbatim": "(1) If an NCII entity becomes aware of a cyber security incident in respect of its national critical information infrastructure, the NCII entity shall notify the Chief Executive of the cyber security incident—\n(a) within six hours after the NCII entity becomes aware of the cyber security incident, where the incident has a significant impact; or\n(b) within such other period as may be prescribed.\n(2) A notification under subsection (1) shall contain such information as may be prescribed.\n(3) An NCII entity that fails to comply with subsection (1) commits an offence and shall, on conviction, be liable to a fine not exceeding five hundred thousand ringgit or to imprisonment for a term not exceeding ten years or to both.\n(4) An NCII entity that provides any false or misleading information in a notification under subsection (1) commits an offence and shall, on conviction, be liable to a fine not exceeding three hundred thousand ringgit or to imprisonment for a term not exceeding five years or to both.\n(5) A continuing offence under subsection (3) shall be liable, in addition, to a daily fine not exceeding five thousand ringgit for each day the offence continues after conviction.",
+    "translation": "The core incident notification provision. NCII entities must notify the CE of cyber security incidents affecting their NCII within 6 hours of awareness (for significant-impact incidents) or other prescribed periods. The notification must contain prescribed information (detailed in the Notification Regulations). Non-notification carries the heaviest penalties in Part IV (RM500,000/10 years), with a continuing daily penalty of RM5,000. Providing false notification information is separately criminalised (RM300,000/5 years). This is analogous to PDPA's breach notification but with a much shorter timeline (6 hours vs 72 hours for PDPA).",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": [
+      "all"
+    ],
+    "keywords": [
+      "incident notification",
+      "6 hours",
+      "significant impact",
+      "offence",
+      "continuing offence",
+      "daily fine",
+      "false information"
+    ]
+  },
+  {
+    "id": "s27",
+    "part": "IV",
+    "division": "IV-3",
+    "title": "Chief Executive may share information",
+    "sectionNumber": 27,
+    "obligationType": "enabling",
+    "verbatim": "(1) The Chief Executive may share any information received under this Part with—\n(a) any NCII sector lead;\n(b) any NCII entity;\n(c) any Government Entity; or\n(d) any foreign country or international organization,\nfor the purpose of protecting the national critical information infrastructure.\n(2) The Chief Executive shall ensure that any information shared under subsection (1) is used only for the purpose for which it is shared.",
+    "translation": "Authorizes the CE to share information received under Part IV (including incident reports, threat intelligence, and risk assessment results) with sector leads, other NCII entities, government entities, and international partners — but only for NCII protection purposes. Includes a purpose limitation safeguard. This enables NACSA's coordination and early-warning functions while protecting information confidentiality.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": [
+      "all"
+    ],
+    "keywords": [
+      "information sharing",
+      "NCII protection",
+      "sector lead",
+      "international cooperation",
+      "purpose limitation"
+    ]
+  }
+]

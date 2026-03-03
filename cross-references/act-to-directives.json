@@ -1,0 +1,95 @@
+{
+  "description": "Mappings from Cyber Security Act 2024 (Act 854) provisions to Chief Executive Directives issued under s15",
+  "enablingSection": "s15",
+  "lastUpdated": "2024-12-31",
+  "mappings": [
+    {
+      "section": "s15",
+      "sectionTitle": "Chief Executive may issue directives",
+      "directive": "All CE Directives",
+      "directiveId": null,
+      "relationship": "enables",
+      "details": "Enabling provision for all CE directives; s15(2) requires NCII entities and sector leads to comply"
+    },
+    {
+      "section": "s17",
+      "sectionTitle": "Designation of NCII entity",
+      "directive": "Directive on NCII Entity Registration Procedures",
+      "directiveId": "directive-ncii-registration",
+      "relationship": "implements",
+      "details": "Prescribes detailed procedures for NCII entity registration, designation acknowledgment, and transition requirements for existing operators under s57"
+    },
+    {
+      "section": "s21",
+      "sectionTitle": "Cyber security risk assessment",
+      "directive": "Directive on Risk Assessment Methodology",
+      "directiveId": "directive-risk-assessment-methodology",
+      "relationship": "supplements",
+      "details": "Provides detailed risk assessment methodology requirements, threat categorization, vulnerability scoring, and risk calculation approaches"
+    },
+    {
+      "section": "s23",
+      "sectionTitle": "Cyber security audit",
+      "directive": "Directive on Audit Standards and Frequency",
+      "directiveId": "directive-audit-standards",
+      "relationship": "supplements",
+      "details": "Specifies audit standards, scope requirements, auditor competency criteria, and minimum audit frequency"
+    },
+    {
+      "section": "s26",
+      "sectionTitle": "Notification of cyber security incident",
+      "directive": "Directive on Incident Notification Timelines and Format",
+      "directiveId": "directive-incident-notification",
+      "relationship": "supplements",
+      "details": "Provides detailed notification format templates, 'significant impact' classification criteria, escalation procedures, and follow-up reporting requirements"
+    },
+    {
+      "section": "s25",
+      "sectionTitle": "Duty to provide information on threats",
+      "directive": "Directive on NCII Information Sharing",
+      "directiveId": "directive-information-sharing",
+      "relationship": "implements",
+      "details": "Establishes information sharing protocols, classification handling, secure channels, and trust frameworks for threat intelligence exchange"
+    },
+    {
+      "section": "s28",
+      "sectionTitle": "Licensing of service providers",
+      "directive": "Directive on Cyber Security Service Provider Obligations",
+      "directiveId": "directive-service-provider-obligations",
+      "relationship": "supplements",
+      "details": "Specifies professional conduct standards, reporting obligations, and operational requirements for licensed service providers"
+    },
+    {
+      "section": "s22",
+      "sectionTitle": "Codes of practice",
+      "directive": "Directive on CoP Development Guidelines",
+      "directiveId": "directive-cop-development",
+      "relationship": "supplements",
+      "details": "Provides guidance to sector leads on developing, structuring, and maintaining sector-specific codes of practice"
+    },
+    {
+      "section": "s18",
+      "sectionTitle": "Duties of NCII entity",
+      "directive": "Directive on Vulnerability Disclosure",
+      "directiveId": "directive-vulnerability-disclosure",
+      "relationship": "supplements",
+      "details": "Establishes coordinated vulnerability disclosure framework for NCII entities, including responsible disclosure timelines and procedures"
+    },
+    {
+      "section": "s25",
+      "sectionTitle": "Threat information sharing",
+      "directive": "Directive on Threat Intelligence Sharing",
+      "directiveId": "directive-threat-intelligence",
+      "relationship": "implements",
+      "details": "Defines threat intelligence sharing formats, platforms, classification levels, and sharing protocols between NCII entities, sector leads, and NACSA"
+    },
+    {
+      "section": "s17",
+      "sectionTitle": "NCII asset categorization",
+      "directive": "Directive on NCII Asset Categorization",
+      "directiveId": "directive-ncii-asset-categorization",
+      "relationship": "supplements",
+      "details": "Provides framework for categorizing NCII assets by criticality, impact level, and dependency relationships"
+    }
+  ]
+}

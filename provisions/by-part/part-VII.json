@@ -1,0 +1,160 @@
+[
+  {
+    "id": "s48",
+    "part": "VII",
+    "division": null,
+    "title": "Appeal to the Minister",
+    "sectionNumber": 48,
+    "obligationType": "procedural",
+    "verbatim": "(1) Any person aggrieved by any decision of the Chief Executive under this Act may appeal to the Minister within thirty days of being notified of the decision.\n(2) The Minister may, after considering the appeal, confirm, vary or reverse the decision of the Chief Executive.\n(3) The decision of the Minister on an appeal under this section shall be final.",
+    "translation": "Creates a general right of appeal to the Minister against any CE decision, with a 30-day filing window. The Minister may confirm, vary, or reverse the CE's decision, and the Minister's decision is final (no further administrative appeal, though judicial review may still be available). This covers appeals against NCII designation, licence refusal/revocation, and other CE decisions.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "appeal",
+      "Minister",
+      "thirty days",
+      "final decision",
+      "review"
+    ]
+  },
+  {
+    "id": "s49",
+    "part": "VII",
+    "division": null,
+    "title": "Obligation of secrecy",
+    "sectionNumber": 49,
+    "obligationType": "mandatory",
+    "verbatim": "(1) Any person who has any information acquired in the course of performing any function or exercising any power under this Act shall not disclose that information to any person except—\n(a) for the purpose of this Act;\n(b) for the purpose of any civil or criminal proceedings under this Act or any other written law; or\n(c) with the written consent of the Chief Executive.\n(2) Any person who contravenes subsection (1) commits an offence and shall, on conviction, be liable to a fine not exceeding five hundred thousand ringgit or to imprisonment for a term not exceeding ten years or to both.",
+    "translation": "Imposes a strict secrecy obligation on anyone who acquires information in the course of performing functions under the Act. Disclosure is permitted only for Act purposes, for legal proceedings, or with the CE's written consent. Breach carries severe penalties (RM500,000/10 years). This protects sensitive NCII information, threat intelligence, and investigation details from unauthorized disclosure.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "secrecy",
+      "confidentiality",
+      "disclosure",
+      "offence",
+      "information protection"
+    ]
+  },
+  {
+    "id": "s50",
+    "part": "VII",
+    "division": null,
+    "title": "Protection of informers",
+    "sectionNumber": 50,
+    "obligationType": "procedural",
+    "verbatim": "(1) Except as provided in subsection (3), no complaint as to an offence under this Act shall be admitted in evidence in any civil or criminal proceedings, and no witness shall be obliged to disclose the name or address of any informer or the substance of the information received from the informer.\n(2) No officer of the Agency shall be compelled to disclose the source of any information.\n(3) If any evidence is given by any person that the informer is a person who has participated in an offence, the court may require full disclosure.",
+    "translation": "Protects the identity of informers who report offences under the Act. No witness or NACSA officer is compelled to disclose informer identity unless the court determines the informer participated in the offence. This encourages reporting of cyber security violations and threats.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "informer protection",
+      "confidentiality",
+      "whistleblower",
+      "witness"
+    ]
+  },
+  {
+    "id": "s51",
+    "part": "VII",
+    "division": null,
+    "title": "Evidence of agent provocateur",
+    "sectionNumber": 51,
+    "obligationType": "procedural",
+    "verbatim": "(1) Notwithstanding any written law or rule of law to the contrary, no agent provocateur shall be presumed to be unworthy of credit by reason only of his having attempted to commit or abet or having abetted or having been engaged in a criminal conspiracy to commit the offence.\n(2) Any statement made by an agent provocateur shall be admissible as evidence.",
+    "translation": "Agent provocateur evidence is admissible and such persons are not presumed unworthy of credit merely because of their involvement in the offence. This supports undercover operations against cyber criminals targeting NCII.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "agent provocateur",
+      "evidence",
+      "credibility",
+      "undercover"
+    ]
+  },
+  {
+    "id": "s52",
+    "part": "VII",
+    "division": null,
+    "title": "Offences by body corporate",
+    "sectionNumber": 52,
+    "obligationType": "mandatory",
+    "verbatim": "(1) If any offence under this Act is committed by a body corporate, any person who at the time of the commission of the offence was a director, chief executive officer, chief operating officer, manager, secretary or other similar officer of the body corporate, or was purporting to act in any such capacity, or was in any manner or to any extent responsible for the management of any of the affairs of the body corporate, or was assisting in such management—\n(a) may be charged severally or jointly in the same proceedings with the body corporate; and\n(b) if the body corporate is found to have committed the offence, shall be deemed to have committed that offence unless he proves that the offence was committed without his knowledge, consent or connivance, and that he had exercised all due diligence to prevent the commission of the offence.\n(2) If the body corporate is convicted of the offence, the court may impose on the body corporate a fine of not more than ten times the maximum fine to which the body corporate would have been liable.",
+    "translation": "When a body corporate commits an offence, directors, CEO, COO, managers, secretaries, and other officers may be personally charged. There is a reverse burden of proof — officers are deemed to have committed the offence unless they prove it occurred without their knowledge/consent/connivance and that they exercised due diligence. Additionally, courts may impose fines up to 10 times the maximum on body corporates. This creates significant personal liability for corporate leadership and dramatically increases the financial exposure for corporate entities.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "body corporate",
+      "director liability",
+      "officer liability",
+      "ten times fine",
+      "due diligence defence",
+      "reverse burden"
+    ]
+  },
+  {
+    "id": "s53",
+    "part": "VII",
+    "division": null,
+    "title": "Prosecution",
+    "sectionNumber": 53,
+    "obligationType": "procedural",
+    "verbatim": "No prosecution for any offence under this Act shall be instituted except with the written consent of the Public Prosecutor.",
+    "translation": "All prosecutions under the Act require written consent of the Public Prosecutor, providing a safeguard against frivolous or politically motivated prosecutions and ensuring consistency in enforcement.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "prosecution",
+      "Public Prosecutor",
+      "consent",
+      "written consent"
+    ]
+  },
+  {
+    "id": "s54",
+    "part": "VII",
+    "division": null,
+    "title": "Compounding of offences",
+    "sectionNumber": 54,
+    "obligationType": "procedural",
+    "verbatim": "(1) The Chief Executive may, with the written consent of the Public Prosecutor, compound any offence under this Act which has been prescribed to be a compoundable offence.\n(2) The amount of compound shall not exceed fifty per centum of the maximum fine for that offence.\n(3) Upon the receipt of the compound, the person shall be released and no further proceedings shall be taken against him in respect of the offence.",
+    "translation": "The CE may compound (settle out of court) prescribed offences with Public Prosecutor consent. The compound amount is capped at 50% of the maximum fine. Once compounded, no further proceedings may be taken. This provides an administrative resolution mechanism that avoids lengthy court proceedings for less serious violations. The Cyber Security (Compounding of Offences) Regulations 2024 specifies which offences are compoundable.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "compounding",
+      "settlement",
+      "fifty percent",
+      "Public Prosecutor",
+      "administrative resolution"
+    ]
+  },
+  {
+    "id": "s55",
+    "part": "VII",
+    "division": null,
+    "title": "Protection against suits and legal proceedings",
+    "sectionNumber": 55,
+    "obligationType": "procedural",
+    "verbatim": "No action, suit, prosecution or other proceedings shall lie or be brought, instituted or maintained in any court against—\n(a) the Chief Executive, any authorized officer or any other person acting under this Act; or\n(b) any person acting in compliance with any directive, notice, order or instruction issued under this Act,\nfor any act or omission done in good faith in the performance of any function or the exercise of any power under this Act.",
+    "translation": "Provides legal immunity to the CE, authorized officers, and any person acting in good faith under the Act. Persons complying with directives, notices, or instructions under the Act are also protected. This shields officials and compliant entities from civil suits arising from good-faith exercise of their duties and powers.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "immunity",
+      "protection",
+      "good faith",
+      "suits",
+      "legal proceedings"
+    ]
+  }
+]

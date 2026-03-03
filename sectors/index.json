@@ -1,0 +1,590 @@
+{
+  "$schema": "nacsa-sectors-v1",
+  "framework": "Cyber Security Act 2024 (Act 854)",
+  "jurisdiction": "MY",
+  "scheduleReference": "Schedule — Section 17(1)",
+  "totalSectors": 11,
+  "lastUpdated": "2026-03-04",
+  "sectors": [
+    {
+      "id": "government",
+      "sectorNumber": 1,
+      "name": "Government",
+      "sectorLead": "MAMPU (Malaysian Administrative Modernisation and Management Planning Unit)",
+      "description": "Encompasses all federal and state government digital infrastructure, citizen-facing services, and administrative systems. Disruption to government NCII can paralyse public service delivery, compromise national sovereignty, and erode public trust in digital governance initiatives under the MyDIGITAL blueprint.",
+      "nciiExamples": [
+        "MyGovernment portal and single sign-on (MyGov SSO) for citizen services",
+        "MyKad National Registration Department identity management system (JPN)",
+        "HRMIS (Human Resource Management Information System) for the federal civil service",
+        "1GovNet secure government backbone network",
+        "GPKI (Government Public Key Infrastructure) certificate authority",
+        "National Data Centre (PDN) hosting classified and sensitive government workloads"
+      ],
+      "obligations": [
+        {
+          "id": "gov-O1",
+          "obligation": "Accept NCII designation issued by the Chief Executive of NACSA and acknowledge in writing within 30 days",
+          "basis": "s17(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "gov-O2",
+          "obligation": "Implement and maintain cyber security measures proportionate to the assessed risk, including access controls, network segmentation, and encryption of data at rest and in transit",
+          "basis": "s18(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "gov-O3",
+          "obligation": "Conduct a comprehensive cyber security risk assessment at least once every 12 months and submit findings to the sector lead",
+          "basis": "s21(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "gov-O4",
+          "obligation": "Engage a NACSA-licensed auditor to perform an independent cyber security audit biennially and remediate findings within the stipulated timeframe",
+          "basis": "s23(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "gov-O5",
+          "obligation": "Notify NACSA of any cyber security incident affecting the NCII within 6 hours of discovery and provide a full incident report within 14 days",
+          "basis": "s26(1)",
+          "type": "mandatory"
+        }
+      ],
+      "regulatoryOverlaps": [
+        "RAKKSSA (Rangka Kerja Keselamatan Siber Sektor Awam) — public sector cyber security framework by MAMPU",
+        "MyDIGITAL / Malaysia Digital Economy Blueprint — digital transformation governance requirements",
+        "ISMS ISO/IEC 27001 certification mandated for select government agencies under MAMPU directives"
+      ],
+      "copStatus": "template_issued"
+    },
+    {
+      "id": "banking-and-finance",
+      "sectorNumber": 2,
+      "name": "Banking and Finance",
+      "sectorLead": "Bank Negara Malaysia (BNM)",
+      "description": "Covers all banking institutions, insurers, takaful operators, payment system operators, capital market intermediaries, and supporting financial market infrastructure. The sector is among the most digitally mature in Malaysia, with BNM's existing Risk Management in Technology (RMiT) framework providing a strong pre-existing compliance baseline that has been harmonised with Act 854 requirements.",
+      "nciiExamples": [
+        "RENTAS (Real-time Electronic Transfer of Funds and Securities) national payment gateway",
+        "FPX (Financial Process Exchange) online banking payment system",
+        "CCRIS (Central Credit Reference Information System) operated by BNM",
+        "Bursa Malaysia trading and clearing engine (including derivatives)",
+        "DuitNow national QR and real-time payment infrastructure operated by PayNet",
+        "Core banking systems of D-SIBs (Domestic Systemically Important Banks)"
+      ],
+      "obligations": [
+        {
+          "id": "bnf-O1",
+          "obligation": "Accept NCII designation and appoint a designated senior officer responsible for NCII cyber security within 30 days of designation notice",
+          "basis": "s17(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "bnf-O2",
+          "obligation": "Implement cyber security measures consistent with BNM RMiT requirements and any additional measures specified by NACSA, including threat intelligence sharing with the Financial ISAC",
+          "basis": "s18(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "bnf-O3",
+          "obligation": "Perform annual cyber security risk assessments encompassing third-party and supply chain risks, and submit consolidated findings to BNM and NACSA",
+          "basis": "s21(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "bnf-O4",
+          "obligation": "Undergo independent cyber security audit annually (stricter than the biennial default) as stipulated by BNM's sector-specific Code of Practice",
+          "basis": "s23(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "bnf-O5",
+          "obligation": "Report cyber security incidents to NACSA within 6 hours and concurrently notify BNM in accordance with existing BNM incident reporting requirements",
+          "basis": "s26(1)",
+          "type": "mandatory"
+        }
+      ],
+      "regulatoryOverlaps": [
+        "BNM RMiT (Risk Management in Technology) — BNM/RH/PD 028-100",
+        "BNM MCRF (Management of Cyber Risk Framework) for technology risk governance",
+        "Securities Commission Malaysia Guidelines on Technology Risk Management",
+        "PCI DSS for card payment processing entities within the sector"
+      ],
+      "copStatus": "published"
+    },
+    {
+      "id": "transport",
+      "sectorNumber": 3,
+      "name": "Transport",
+      "sectorLead": "Ministry of Transport",
+      "description": "Covers aviation, maritime, rail, and road transport systems whose disruption could imperil passenger safety, disrupt supply chains, and compromise border security. Malaysia's position as a major maritime and aviation hub in Southeast Asia makes transport NCII among the highest-priority designations.",
+      "nciiExamples": [
+        "Malaysia Airports KLIA integrated airport management system (AIMS) and air traffic management systems",
+        "CAAM (Civil Aviation Authority of Malaysia) flight information region (FIR) surveillance and radar network",
+        "Port Klang Authority vessel traffic management system (VTMS)",
+        "Prasarana/Rapid Rail signalling and SCADA systems for KL MRT and LRT networks",
+        "MyShipTracking AIS (Automatic Identification System) coastal monitoring network"
+      ],
+      "obligations": [
+        {
+          "id": "trn-O1",
+          "obligation": "Acknowledge NCII designation and provide NACSA with a complete inventory of designated critical information infrastructure assets within 60 days",
+          "basis": "s17(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "trn-O2",
+          "obligation": "Implement cyber security measures addressing both IT and OT (operational technology) environments, with network segregation between safety-critical OT systems and corporate IT",
+          "basis": "s18(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "trn-O3",
+          "obligation": "Conduct cyber security risk assessments covering IT/OT convergence risks at least annually, including penetration testing of internet-facing transport systems",
+          "basis": "s21(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "trn-O4",
+          "obligation": "Submit to a NACSA-licensed cyber security audit biennially, with specific attention to SCADA, ICS, and safety-instrumented systems",
+          "basis": "s23(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "trn-O5",
+          "obligation": "Notify NACSA of cyber security incidents within 6 hours; incidents affecting passenger safety systems must additionally be reported to the relevant transport safety authority immediately",
+          "basis": "s26(1)",
+          "type": "mandatory"
+        }
+      ],
+      "regulatoryOverlaps": [
+        "ICAO Annex 17 and ICAO Aviation Security Manual (Doc 8973) for aviation cyber security",
+        "IMO MSC-FAL.1/Circ.3 — Guidelines on Maritime Cyber Risk Management",
+        "Malaysia Airports Holdings Berhad (MAHB) internal ICT security standards"
+      ],
+      "copStatus": "draft"
+    },
+    {
+      "id": "defence-and-national-security",
+      "sectorNumber": 4,
+      "name": "Defence and National Security",
+      "sectorLead": "Ministry of Defence",
+      "description": "Encompasses the Malaysian Armed Forces (ATM), intelligence agencies, border security systems, and defence industrial base. This sector handles the most sensitive national security information and is subject to the highest classification and security clearance requirements. Cyber operations against defence NCII are treated as matters of national sovereignty.",
+      "nciiExamples": [
+        "Malaysian Armed Forces integrated command and control (C2) network",
+        "ESSCOM (Eastern Sabah Security Command) maritime surveillance and sensor network",
+        "National defence radar and air surveillance system",
+        "STRIDE (Science and Technology Research Institute for Defence) classified research network",
+        "Military satellite communications (SATCOM) infrastructure"
+      ],
+      "obligations": [
+        {
+          "id": "dns-O1",
+          "obligation": "Accept NCII designation with additional vetting requirements; all personnel with access to designated NCII must hold appropriate security clearance",
+          "basis": "s17(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "dns-O2",
+          "obligation": "Implement defence-grade cyber security measures including multi-level security (MLS) architecture, air-gapped networks for classified systems, and national cryptographic standards",
+          "basis": "s18(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "dns-O3",
+          "obligation": "Conduct classified cyber security risk assessments annually; assessments must be performed by security-cleared auditors approved by the Ministry of Defence",
+          "basis": "s21(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "dns-O4",
+          "obligation": "Undergo cyber security audit by Ministry of Defence-approved auditors with appropriate security clearance; audit reports are classified",
+          "basis": "s23(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "dns-O5",
+          "obligation": "Notify NACSA and the National Security Council (MKN) of cyber security incidents affecting defence NCII within 2 hours via secure classified channels",
+          "basis": "s26(1)",
+          "type": "mandatory"
+        }
+      ],
+      "regulatoryOverlaps": [
+        "Official Secrets Act 1972 (Act 88) — classification and handling of defence information",
+        "Arahan Keselamatan (Government Security Directives) — physical and personnel security requirements",
+        "National Cyber Security Policy (NCSP) — defence sector-specific annexes"
+      ],
+      "copStatus": "draft"
+    },
+    {
+      "id": "information-and-communications-technology",
+      "sectorNumber": 5,
+      "name": "Information and Communications Technology",
+      "sectorLead": "MCMC (Malaysian Communications and Multimedia Commission)",
+      "description": "Covers telecommunications networks, internet infrastructure, data centres, DNS infrastructure, and digital service providers that form the digital backbone of Malaysia. This sector is foundational — disruption cascades into every other NCII sector. The JENDELA (Jalinan Digital Negara) national digital connectivity plan increases the surface area and criticality of ICT NCII.",
+      "nciiExamples": [
+        "TM (Telekom Malaysia) national backbone fibre network and HSBB infrastructure",
+        "Maxis, CelcomDigi, and U Mobile core mobile network elements (EPC, IMS, SS7/Diameter)",
+        "MyNIC (.my) domain name system infrastructure and DNSSEC signing systems",
+        "MYIX (Malaysia Internet Exchange) peering fabric",
+        "National 5G infrastructure operated by Digital Nasional Berhad (DNB)",
+        "Tier III/IV commercial data centres hosting government and financial sector workloads"
+      ],
+      "obligations": [
+        {
+          "id": "ict-O1",
+          "obligation": "Accept NCII designation and maintain an up-to-date asset register of all designated infrastructure components, notifying NACSA of material changes within 14 days",
+          "basis": "s17(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "ict-O2",
+          "obligation": "Implement cyber security measures meeting or exceeding the MCMC-specified baseline, including redundancy, DDoS mitigation, BGP route security, and supply chain integrity controls",
+          "basis": "s18(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "ict-O3",
+          "obligation": "Perform cyber security risk assessments at least annually, with specific focus on third-party vendor risk, cross-border data flow risks, and infrastructure interdependencies",
+          "basis": "s21(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "ict-O4",
+          "obligation": "Submit to independent cyber security audit biennially; licensees under CMA 1998 must additionally comply with MCMC audit requirements",
+          "basis": "s23(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "ict-O5",
+          "obligation": "Notify NACSA and MyCERT of cyber security incidents within 6 hours; incidents causing widespread service disruption must be reported within 2 hours",
+          "basis": "s26(1)",
+          "type": "mandatory"
+        }
+      ],
+      "regulatoryOverlaps": [
+        "Communications and Multimedia Act 1998 (CMA 1998) — MCMC licensing and network security conditions",
+        "MCMC MTSFB Technical Codes and Standards for network security",
+        "Personal Data Protection Act 2010 (PDPA) — for subscriber and traffic data handling",
+        "MSC Malaysia Cyberlaw framework (Digital Signature Act 1997, Computer Crimes Act 1997)"
+      ],
+      "copStatus": "template_issued"
+    },
+    {
+      "id": "healthcare",
+      "sectorNumber": 6,
+      "name": "Healthcare",
+      "sectorLead": "Ministry of Health",
+      "description": "Covers public and private hospital information systems, national health databases, pharmaceutical supply chain systems, and telehealth infrastructure. The COVID-19 pandemic underscored the critical dependence on digital health systems, and ransomware attacks on healthcare globally have demonstrated the life-safety implications of cyber incidents in this sector.",
+      "nciiExamples": [
+        "HIS (Hospital Information System) deployed across MOH public hospitals",
+        "MyHIX (Malaysia Health Information Exchange) for inter-facility clinical data sharing",
+        "PhIS (Pharmacy Information System) for national pharmaceutical inventory and dispensing",
+        "MySejahtera / national public health surveillance and disease outbreak management platform",
+        "National Blood Centre (PDN) blood supply management and tracking system",
+        "PHIS (Public Health Information System) for epidemiological surveillance"
+      ],
+      "obligations": [
+        {
+          "id": "hc-O1",
+          "obligation": "Accept NCII designation and appoint a Chief Information Security Officer (CISO) or equivalent responsible for NCII cyber security governance",
+          "basis": "s17(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "hc-O2",
+          "obligation": "Implement cyber security measures that ensure confidentiality of patient health information, integrity of clinical decision support systems, and availability of life-critical systems with defined RTO/RPO",
+          "basis": "s18(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "hc-O3",
+          "obligation": "Conduct annual cyber security risk assessments covering medical IoT devices, legacy clinical systems, and third-party integrations",
+          "basis": "s21(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "hc-O4",
+          "obligation": "Undergo independent cyber security audit biennially with specific focus on patient data protection and clinical system integrity",
+          "basis": "s23(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "hc-O5",
+          "obligation": "Notify NACSA of cyber security incidents within 6 hours; incidents affecting patient safety or clinical systems must trigger immediate activation of clinical continuity procedures",
+          "basis": "s26(1)",
+          "type": "mandatory"
+        }
+      ],
+      "regulatoryOverlaps": [
+        "Personal Data Protection Act 2010 (PDPA) — sensitive personal data (health data) processing requirements",
+        "Private Healthcare Facilities and Services Act 1998 (Act 586) — facility operation standards",
+        "MOH Hospital Accreditation Standards (MSQH) — including IT governance criteria"
+      ],
+      "copStatus": "draft"
+    },
+    {
+      "id": "water-and-sewerage",
+      "sectorNumber": 7,
+      "name": "Water and Sewerage",
+      "sectorLead": "SPAN (National Water Services Commission / Suruhanjaya Perkhidmatan Air Negara)",
+      "description": "Encompasses water treatment plants, distribution networks, dam management systems, sewerage treatment facilities, and their associated SCADA/ICS systems. Water is a fundamental necessity, and cyber attacks on water treatment systems can have immediate public health consequences through contamination or supply disruption.",
+      "nciiExamples": [
+        "SCADA systems controlling water treatment plants operated by state water concessionaires (e.g., Air Selangor, SAJ, SAINS)",
+        "National dam monitoring and telemetry systems under JPS (Department of Irrigation and Drainage)",
+        "IWK (Indah Water Konsortium) centralised sewerage treatment plant control systems",
+        "Water quality monitoring sensor networks across distribution pipelines",
+        "SPAN national water supply monitoring and reporting platform"
+      ],
+      "obligations": [
+        {
+          "id": "ws-O1",
+          "obligation": "Accept NCII designation and provide NACSA with network architecture diagrams of all designated OT and IT systems within 60 days",
+          "basis": "s17(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "ws-O2",
+          "obligation": "Implement cyber security measures with strict IT/OT network segregation, secure remote access controls, and fail-safe mechanisms for water treatment chemical dosing systems",
+          "basis": "s18(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "ws-O3",
+          "obligation": "Conduct annual cyber security risk assessments with particular attention to SCADA system vulnerabilities, remote terminal unit (RTU) security, and vendor maintenance access",
+          "basis": "s21(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "ws-O4",
+          "obligation": "Undergo biennial cyber security audit by a NACSA-licensed auditor with OT/ICS security expertise",
+          "basis": "s23(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "ws-O5",
+          "obligation": "Notify NACSA of cyber security incidents within 6 hours; incidents that may affect water quality or supply must also be reported to SPAN and the Ministry of Health immediately",
+          "basis": "s26(1)",
+          "type": "mandatory"
+        }
+      ],
+      "regulatoryOverlaps": [
+        "Water Services Industry Act 2006 (Act 655) — SPAN regulatory and licensing framework",
+        "Environmental Quality Act 1974 — effluent and water quality discharge standards",
+        "NIST SP 800-82 Guide to ICS Security — referenced by SPAN for OT security baselines"
+      ],
+      "copStatus": "draft"
+    },
+    {
+      "id": "energy",
+      "sectorNumber": 8,
+      "name": "Energy",
+      "sectorLead": "Energy Commission (Suruhanjaya Tenaga)",
+      "description": "Covers electricity generation, transmission, and distribution systems; natural gas pipeline networks; petroleum refining infrastructure; and renewable energy management systems. Tenaga Nasional Berhad (TNB) operates one of the largest power grids in Southeast Asia, and cyber attacks on energy SCADA/ICS systems pose severe cascading risks to all other NCII sectors.",
+      "nciiExamples": [
+        "TNB Grid System Operator (GSO) national load dispatch and energy management system (NLDC)",
+        "PETRONAS upstream oil and gas SCADA and process control systems",
+        "Peninsular Gas Utilisation (PGU) pipeline SCADA network operated by PETRONAS Gas",
+        "TNB high-voltage transmission substation protection and relay systems",
+        "Single Buyer metering and settlement system for the electricity market",
+        "Large-scale solar (LSS) and wind farm grid integration management systems"
+      ],
+      "obligations": [
+        {
+          "id": "eng-O1",
+          "obligation": "Accept NCII designation and register all designated generation, transmission, and distribution infrastructure assets with NACSA",
+          "basis": "s17(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "eng-O2",
+          "obligation": "Implement defence-in-depth cyber security measures for IT and OT environments, including unidirectional security gateways between control and corporate networks, and secure firmware update processes for ICS devices",
+          "basis": "s18(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "eng-O3",
+          "obligation": "Perform annual cyber security risk assessments covering generation, transmission, and distribution control systems, including supply chain risks from equipment vendors",
+          "basis": "s21(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "eng-O4",
+          "obligation": "Undergo independent cyber security audit biennially; critical generation and transmission licensees may be required to undergo annual audits as directed by the Energy Commission",
+          "basis": "s23(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "eng-O5",
+          "obligation": "Notify NACSA and the Energy Commission of cyber security incidents within 6 hours; incidents affecting grid stability or causing load shedding require immediate notification",
+          "basis": "s26(1)",
+          "type": "mandatory"
+        }
+      ],
+      "regulatoryOverlaps": [
+        "Electricity Supply Act 1990 (Act 447) — Energy Commission regulatory requirements",
+        "Gas Supply Act 1993 (Act 501) — gas pipeline safety and operational standards",
+        "IEC 62351 and IEC 62443 — international standards for power system and industrial automation security",
+        "PETRONAS internal Technical Standards (PTS) for cybersecurity in upstream operations"
+      ],
+      "copStatus": "template_issued"
+    },
+    {
+      "id": "agriculture-plantation-commodity-and-food",
+      "sectorNumber": 9,
+      "name": "Agriculture, Plantation, Commodity and Food",
+      "sectorLead": "Ministry of Agriculture and Food Security",
+      "description": "Covers food supply chain management systems, commodity trading platforms, agricultural subsidy and licensing systems, and food safety tracking infrastructure. Malaysia's food security depends on the integrity of these systems, particularly given the nation's reliance on imports for staple commodities and the strategic importance of palm oil and rubber exports.",
+      "nciiExamples": [
+        "FAMA (Federal Agricultural Marketing Authority) national agricultural produce pricing and distribution system",
+        "MyProcurement agricultural subsidy disbursement and farmer registration database",
+        "MPOB (Malaysian Palm Oil Board) palm oil supply chain traceability and licensing system",
+        "MAQIS (Malaysian Quarantine and Inspection Services) import/export food safety clearance system",
+        "Bursa Malaysia Derivatives palm oil futures trading engine (FCPO)"
+      ],
+      "obligations": [
+        {
+          "id": "agr-O1",
+          "obligation": "Accept NCII designation and identify a responsible person for cyber security governance of designated agricultural information systems",
+          "basis": "s17(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "agr-O2",
+          "obligation": "Implement cyber security measures to protect the integrity of food supply chain data, commodity pricing systems, and subsidy distribution platforms against manipulation",
+          "basis": "s18(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "agr-O3",
+          "obligation": "Conduct annual cyber security risk assessments with focus on data integrity risks, supply chain partner connectivity, and agricultural IoT sensor networks",
+          "basis": "s21(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "agr-O4",
+          "obligation": "Undergo biennial cyber security audit by a NACSA-licensed auditor",
+          "basis": "s23(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "agr-O5",
+          "obligation": "Notify NACSA of cyber security incidents within 6 hours; incidents affecting food supply chain integrity must also be reported to the Ministry of Agriculture and Food Security",
+          "basis": "s26(1)",
+          "type": "mandatory"
+        }
+      ],
+      "regulatoryOverlaps": [
+        "Food Act 1983 (Act 281) — food safety and quality regulations",
+        "Malaysian Sustainable Palm Oil (MSPO) certification — supply chain traceability requirements",
+        "Commodity Trading Act 1985 — commodity market integrity and supervision"
+      ],
+      "copStatus": "pending"
+    },
+    {
+      "id": "science-technology-and-innovation",
+      "sectorNumber": 10,
+      "name": "Science, Technology and Innovation",
+      "sectorLead": "MOSTI (Ministry of Science, Technology and Innovation)",
+      "description": "Covers national research institutions, space agency systems, nuclear facilities, biotechnology research infrastructure, and innovation ecosystem platforms. This sector protects Malaysia's intellectual property, sensitive research data, and emerging technology capabilities, including the Malaysian Space Agency (MYSA) and the Malaysian Nuclear Agency.",
+      "nciiExamples": [
+        "MYSA (Malaysian Space Agency) satellite ground station control and telemetry systems",
+        "Malaysian Nuclear Agency TRIGA research reactor monitoring and safety systems",
+        "MIMOS (Malaysian Institute of Microelectronic Systems) semiconductor R&D design network",
+        "National Nanotechnology Centre research data repository and laboratory management system",
+        "MyIPO (Intellectual Property Corporation of Malaysia) patent and trade secret filing system"
+      ],
+      "obligations": [
+        {
+          "id": "sti-O1",
+          "obligation": "Accept NCII designation and implement classification-appropriate access controls based on the sensitivity of research data and systems",
+          "basis": "s17(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "sti-O2",
+          "obligation": "Implement cyber security measures protecting intellectual property and sensitive research data, including data loss prevention, encrypted storage, and controlled collaboration platforms",
+          "basis": "s18(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "sti-O3",
+          "obligation": "Conduct annual cyber security risk assessments with specific attention to advanced persistent threat (APT) risks, foreign state-sponsored espionage, and insider threats in research environments",
+          "basis": "s21(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "sti-O4",
+          "obligation": "Undergo biennial cyber security audit; facilities handling nuclear or dual-use technology must undergo annual audit as directed by MOSTI",
+          "basis": "s23(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "sti-O5",
+          "obligation": "Notify NACSA of cyber security incidents within 6 hours; incidents at nuclear or radiological facilities must additionally be reported to AELB (Atomic Energy Licensing Board) immediately",
+          "basis": "s26(1)",
+          "type": "mandatory"
+        }
+      ],
+      "regulatoryOverlaps": [
+        "Atomic Energy Licensing Act 1984 (Act 304) — nuclear facility safety and security requirements",
+        "Strategic Trade Act 2010 (Act 708) — controls on dual-use technology and sensitive research materials",
+        "Official Secrets Act 1972 (Act 88) — for classified government-funded research"
+      ],
+      "copStatus": "pending"
+    },
+    {
+      "id": "education",
+      "sectorNumber": 11,
+      "name": "Education",
+      "sectorLead": "Ministry of Education",
+      "description": "Covers public and private education institution management systems, national examination platforms, student data repositories, e-learning infrastructure, and education credential verification systems. The sector holds sensitive personal data on millions of students and educators, and disruption to examination systems can have nationwide impact on academic progression.",
+      "nciiExamples": [
+        "APDM (Aplikasi Pangkalan Data Murid) national student database for primary and secondary education",
+        "SPM/STPM (national examination) digital examination management and results processing system operated by the Malaysian Examinations Syndicate (LPM)",
+        "DELIMa (Digital Educational Learning Initiative Malaysia) national e-learning platform",
+        "MOHE SETARA (university rating) and MyMoheS higher education management information system",
+        "UPUOnline (centralised public university admissions and placement system)"
+      ],
+      "obligations": [
+        {
+          "id": "edu-O1",
+          "obligation": "Accept NCII designation and ensure institutional leadership acknowledges accountability for cyber security of designated education information systems",
+          "basis": "s17(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "edu-O2",
+          "obligation": "Implement cyber security measures to protect student personal data, ensure integrity of examination results, and maintain availability of e-learning platforms during critical academic periods",
+          "basis": "s18(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "edu-O3",
+          "obligation": "Conduct annual cyber security risk assessments covering student data privacy risks, examination system integrity, and vulnerability of distributed campus networks",
+          "basis": "s21(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "edu-O4",
+          "obligation": "Undergo biennial cyber security audit by a NACSA-licensed auditor, with priority on examination and admissions systems",
+          "basis": "s23(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "edu-O5",
+          "obligation": "Notify NACSA of cyber security incidents within 6 hours; incidents affecting national examination systems during examination periods must be reported immediately and trigger contingency examination procedures",
+          "basis": "s26(1)",
+          "type": "mandatory"
+        }
+      ],
+      "regulatoryOverlaps": [
+        "Personal Data Protection Act 2010 (PDPA) — processing of student and minor personal data",
+        "Education Act 1996 (Act 550) — institutional governance and regulatory compliance",
+        "Malaysian Qualifications Agency Act 2007 (Act 679) — credential integrity and accreditation standards"
+      ],
+      "copStatus": "pending"
+    }
+  ]
+}

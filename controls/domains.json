@@ -1,0 +1,92 @@
+{
+  "ncii-governance": {
+    "name": "NCII Governance",
+    "description": "Controls for NCII entity governance, designation management, compliance oversight, and regulatory engagement under the Cyber Security Act 2024. Covers entity registration with NACSA, board-level accountability for cyber security, establishment of governance structures, and ongoing compliance with directives issued under Sections 17-18.",
+    "relatedSections": ["s17", "s18", "s52", "s53"],
+    "relatedSectors": ["all"]
+  },
+  "asset-management": {
+    "name": "Asset Management",
+    "description": "Controls for identification, classification, and lifecycle management of national critical information infrastructure assets. Encompasses hardware, software, data, and service inventories required under NCII designation, including dependency mapping and criticality assessment aligned with NACSA classification criteria.",
+    "relatedSections": ["s17", "s22", "s23"],
+    "relatedSectors": ["all"]
+  },
+  "risk-assessment": {
+    "name": "Risk Assessment",
+    "description": "Controls for systematic identification, analysis, evaluation, and treatment of cyber security risks to NCII systems. Includes threat modelling, vulnerability assessment, impact analysis, risk appetite definition, and periodic reassessment obligations mandated by NACSA directives and sector-specific requirements.",
+    "relatedSections": ["s22", "s23", "s24"],
+    "relatedSectors": ["all"]
+  },
+  "access-control": {
+    "name": "Access Control",
+    "description": "Controls governing identity management, authentication, authorization, and access provisioning for NCII systems. Covers privileged access management, multi-factor authentication, role-based access control, access reviews, and remote access security in accordance with NACSA standards for critical infrastructure protection.",
+    "relatedSections": ["s22", "s23"],
+    "relatedSectors": ["all"]
+  },
+  "network-security": {
+    "name": "Network Security",
+    "description": "Controls for securing network infrastructure supporting NCII operations. Includes network segmentation, perimeter defense, intrusion detection and prevention, traffic monitoring, secure architecture design, and protection of inter-entity communication channels as required for critical infrastructure resilience.",
+    "relatedSections": ["s22", "s23", "s24"],
+    "relatedSectors": ["all"]
+  },
+  "incident-response": {
+    "name": "Incident Response",
+    "description": "Controls for detecting, reporting, containing, eradicating, and recovering from cyber security incidents affecting NCII. Implements mandatory incident notification to NACSA under Section 25, establishes incident response teams, defines escalation procedures, and ensures coordination with the National Cyber Coordination and Command Centre (NC4).",
+    "relatedSections": ["s25", "s26", "s27", "s28"],
+    "relatedSectors": ["all"]
+  },
+  "bcdr": {
+    "name": "Business Continuity & Disaster Recovery",
+    "description": "Controls for maintaining continuity of NCII operations during and after cyber security incidents or disruptions. Covers business impact analysis, continuity planning, disaster recovery procedures, backup management, failover testing, and restoration objectives aligned with the national critical infrastructure protection mandate.",
+    "relatedSections": ["s22", "s23", "s24"],
+    "relatedSectors": ["all"]
+  },
+  "audit-compliance": {
+    "name": "Audit & Compliance",
+    "description": "Controls for verifying and demonstrating compliance with the Cyber Security Act 2024, NACSA directives, and sector-specific regulations. Encompasses internal audit programmes, external assessments by NACSA-authorized auditors under Section 30, compliance monitoring, evidence management, and regulatory reporting obligations.",
+    "relatedSections": ["s29", "s30", "s31", "s32", "s52"],
+    "relatedSectors": ["all"]
+  },
+  "supply-chain": {
+    "name": "Supply Chain Security",
+    "description": "Controls for managing cyber security risks in the supply chain of NCII entities. Addresses vendor risk assessment, third-party access governance, supply chain integrity verification, contractual security requirements, and oversight of managed service providers and technology suppliers with access to or impact on critical infrastructure.",
+    "relatedSections": ["s22", "s23", "s47"],
+    "relatedSectors": ["all"]
+  },
+  "awareness-training": {
+    "name": "Security Awareness & Training",
+    "description": "Controls for developing and maintaining cyber security competencies across NCII entity personnel. Covers role-based training programmes, board-level cyber awareness, security culture development, phishing simulation, and specialized training for NCII system administrators and incident responders as required by NACSA directives.",
+    "relatedSections": ["s22", "s23"],
+    "relatedSectors": ["all"]
+  },
+  "vulnerability-management": {
+    "name": "Vulnerability Management",
+    "description": "Controls for identifying, assessing, prioritizing, and remediating vulnerabilities in NCII systems. Includes vulnerability scanning, penetration testing, patch management, threat intelligence consumption, coordination with NACSA on vulnerability disclosures, and compliance with mandated remediation timelines for critical infrastructure.",
+    "relatedSections": ["s22", "s23", "s24", "s25"],
+    "relatedSectors": ["all"]
+  },
+  "cryptography": {
+    "name": "Cryptography",
+    "description": "Controls for the use of cryptographic techniques to protect the confidentiality, integrity, and authenticity of data within NCII systems. Covers encryption standards, key management, certificate lifecycle management, cryptographic protocol selection, and compliance with national cryptographic policies for sensitive government and critical infrastructure data.",
+    "relatedSections": ["s22", "s23"],
+    "relatedSectors": ["all"]
+  },
+  "physical-security": {
+    "name": "Physical Security",
+    "description": "Controls for protecting the physical environments housing NCII systems and infrastructure. Addresses facility access controls, environmental protections, physical monitoring, secure areas for critical equipment, data centre security, and coordination between physical and logical security measures for holistic infrastructure protection.",
+    "relatedSections": ["s22", "s23"],
+    "relatedSectors": ["all"]
+  },
+  "cloud-security": {
+    "name": "Cloud Security",
+    "description": "Controls for securing cloud-hosted NCII systems and data. Covers cloud service provider assessment, data sovereignty and residency requirements, shared responsibility model governance, cloud-specific access controls, workload protection, and compliance with NACSA directives on the use of cloud services for critical information infrastructure.",
+    "relatedSections": ["s22", "s23", "s47"],
+    "relatedSectors": ["all"]
+  },
+  "change-management": {
+    "name": "Change Management",
+    "description": "Controls for governing modifications to NCII systems, configurations, and processes. Ensures that changes are assessed for security impact, approved through formal processes, tested prior to deployment, documented, and reversible. Includes emergency change procedures and notification requirements for significant changes to NCII infrastructure.",
+    "relatedSections": ["s22", "s23", "s24"],
+    "relatedSectors": ["all"]
+  }
+}

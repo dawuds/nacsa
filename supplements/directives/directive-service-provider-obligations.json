@@ -1,0 +1,70 @@
+{
+  "id": "directive-service-provider-obligations",
+  "title": "Directive on Cyber Security Service Provider Obligations",
+  "type": "directive",
+  "issuedBy": "Chief Executive, NACSA",
+  "issuedUnder": "s15",
+  "gazetteDate": "2024-09-15",
+  "effectiveDate": "2024-09-15",
+  "subject": "Professional conduct standards, reporting obligations, and operational requirements for licensed cyber security service providers",
+  "status": "in-force",
+  "applicableTo": "All licensed cyber security service providers under Part V of the Act",
+  "provisions": [
+    {
+      "id": "sp-oblig-1",
+      "title": "Purpose and scope",
+      "requirement": "This directive establishes the professional conduct standards, reporting obligations, and operational requirements for all persons holding a valid licence under Part V of the Cyber Security Act 2024. It supplements the Cyber Security (Licensing of Cyber Security Service Providers) Regulations 2024 and the obligations imposed by section 32 of the Act.",
+      "explanation": "Provides the detailed operational rules that licensed service providers (SOC operators, penetration testers, incident responders) must follow. These build on the high-level obligations in s32 and the Licensing Regulations, creating a comprehensive code of professional practice for the cyber security services industry.",
+      "relatedActSection": "s28"
+    },
+    {
+      "id": "sp-oblig-2",
+      "title": "Professional standards and competency",
+      "requirement": "A licensed cyber security service provider shall: (a) ensure that all personnel engaged in the provision of cyber security services hold relevant professional qualifications recognized by the Chief Executive, which shall include at a minimum one of: CISSP, CISM, CEH, OSCP, GIAC certifications, or equivalent qualifications approved by the Chief Executive; (b) maintain a continuing professional development (CPD) program requiring a minimum of forty (40) hours of relevant training or professional development per person per year; (c) maintain documented competency frameworks and ensure personnel competency is assessed and recorded at least annually; and (d) ensure that personnel providing services to NCII entities have received specific training on the requirements of the Cyber Security Act 2024 and its subsidiary instruments.",
+      "explanation": "The licensing regime depends on service quality. This provision ensures licensed providers employ qualified professionals who stay current through mandatory continuing education. Personnel serving NCII entities must specifically understand the Act's requirements, not just general cyber security principles. The 40-hour annual CPD requirement is in line with international professional standards.",
+      "relatedActSection": "s32"
+    },
+    {
+      "id": "sp-oblig-3",
+      "title": "Confidentiality and data handling",
+      "requirement": "A licensed service provider shall: (a) maintain the confidentiality of all information obtained in the course of providing cyber security services, in accordance with section 32(1)(c) of the Act; (b) implement appropriate technical and organizational measures to protect client information, including encryption in transit and at rest, access controls, and audit logging; (c) not retain client data, including vulnerability scan results, penetration test findings, incident response artifacts, and system configuration information, for a period exceeding twenty-four (24) months after the completion of the engagement, unless otherwise required by law or the client's written instructions; (d) securely destroy all client data upon the expiry of the retention period using methods that render the data irrecoverable; and (e) immediately notify the client and the Chief Executive if the service provider suffers a data breach affecting client information.",
+      "explanation": "Service providers have access to extremely sensitive information about NCII entities' vulnerabilities, configurations, and incidents. This provision mandates robust data protection measures, limits data retention to 24 months, requires secure deletion, and creates a reciprocal breach notification obligation for the service provider itself.",
+      "relatedActSection": "s32"
+    },
+    {
+      "id": "sp-oblig-4",
+      "title": "Conflict of interest management",
+      "requirement": "A licensed service provider shall: (a) maintain and enforce a documented conflict of interest policy; (b) not provide audit services under section 23 to an NCII entity for which it has provided implementation, consultancy, or managed security services within the preceding twenty-four (24) months; (c) disclose to the Chief Executive and the client any actual or potential conflict of interest that may affect the independence or objectivity of services provided to an NCII entity; and (d) not simultaneously provide competing NCII entities with services where the provider's access to one client's information could advantage the other, unless both entities provide informed written consent.",
+      "explanation": "Independence and objectivity are critical, especially for audit and assessment services. The 24-month cooling-off period between consulting and auditing prevents providers from marking their own homework. The restriction on serving competing NCII entities without disclosure prevents knowledge conflicts that could compromise security or competitive fairness.",
+      "relatedActSection": "s32"
+    },
+    {
+      "id": "sp-oblig-5",
+      "title": "Incident and vulnerability reporting to NACSA",
+      "requirement": "Where a licensed service provider, in the course of providing cyber security services, discovers: (a) a cyber security incident or active compromise affecting a client's national critical information infrastructure; (b) a previously unknown vulnerability (zero-day) in any system, software, or component used in national critical information infrastructure; or (c) evidence of threat actor activity that may affect national critical information infrastructure beyond the immediate client, the service provider shall notify the Chief Executive within twenty-four (24) hours of discovery. The service provider shall also inform the affected client and assist the client in meeting its own notification obligations under section 26 of the Act.",
+      "explanation": "Licensed providers working on NCII are an additional detection layer for national security threats. When they discover incidents, zero-days, or cross-entity threats, they must report to NACSA within 24 hours independently of the client's own notification obligations. The provider must also help the client meet its own s26 obligations, creating a belt-and-suspenders notification system.",
+      "relatedActSection": "s26"
+    },
+    {
+      "id": "sp-oblig-6",
+      "title": "Record keeping and audit trail",
+      "requirement": "A licensed service provider shall: (a) maintain comprehensive records of all cyber security services provided, including engagement agreements, scope of work, methodologies used, findings, recommendations, and client communications; (b) maintain records of all personnel involved in each engagement, their qualifications, and the roles performed; (c) retain all records for a minimum of seven (7) years from the completion of each engagement; and (d) make all records available for inspection by the Chief Executive or authorized officers upon request. Records shall be maintained in a manner that preserves their integrity and authenticity.",
+      "explanation": "Comprehensive record keeping serves multiple purposes: it enables NACSA to verify the quality and scope of services provided, supports investigations if disputes arise, and creates an audit trail for enforcement purposes. The 7-year retention period aligns with Malaysian financial record-keeping norms and exceeds the 24-month data retention limit, which applies to client technical data, not engagement records.",
+      "relatedActSection": "s32"
+    },
+    {
+      "id": "sp-oblig-7",
+      "title": "Reporting changes in circumstances",
+      "requirement": "A licensed service provider shall notify the Chief Executive within fourteen (14) calendar days of: (a) any change in the provider's ownership, directorship, or key management personnel; (b) any change in the provider's business address or principal place of operations; (c) the commencement of any investigation, prosecution, or disciplinary proceedings against the provider or its key personnel relating to cyber security, fraud, or professional misconduct; (d) any insolvency, receivership, or winding-up proceedings; or (e) any material change affecting the provider's ability to comply with its licence conditions or obligations under the Act. Failure to report a material change may be grounds for suspension or revocation of the licence under section 30.",
+      "explanation": "Licensees must keep NACSA informed of any changes that could affect their fitness to provide cyber security services. Ownership changes, legal proceedings, and financial difficulties all have potential implications for service quality and security. The 14-day notification window ensures NACSA can assess risks to NCII entities currently served by the provider.",
+      "relatedActSection": "s30"
+    },
+    {
+      "id": "sp-oblig-8",
+      "title": "Restrictions on subcontracting",
+      "requirement": "A licensed service provider shall not subcontract any material part of a cyber security service engagement involving national critical information infrastructure without: (a) the prior written consent of the NCII entity client; and (b) notification to the Chief Executive. Any subcontractor engaged in the provision of cyber security services to NCII entities must itself hold a valid licence under Part V of the Act. The primary licensee shall remain fully responsible for the quality, confidentiality, and compliance of all services provided by its subcontractors.",
+      "explanation": "Subcontracting is common in the cyber security industry but poses risks when applied to NCII work. This provision ensures clients know who is actually performing the work, that all parties are licensed, and that the primary provider cannot avoid responsibility by delegating to subcontractors. This protects NCII entities from unauthorized access by unknown third parties.",
+      "relatedActSection": "s28"
+    }
+  ]
+}

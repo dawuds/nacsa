@@ -1,0 +1,56 @@
+{
+  "id": "directive-cop-development",
+  "title": "Directive on CoP Development Guidelines",
+  "type": "directive",
+  "issuedBy": "Chief Executive, NACSA",
+  "issuedUnder": "s15",
+  "gazetteDate": "2024-10-01",
+  "effectiveDate": "2024-10-01",
+  "subject": "Guidance to NCII sector leads on developing, structuring, and maintaining sector-specific codes of practice for cyber security",
+  "status": "in-force",
+  "applicableTo": "All NCII sector leads",
+  "provisions": [
+    {
+      "id": "cop-dev-1",
+      "title": "Purpose and scope",
+      "requirement": "This directive provides guidance and requirements for NCII sector leads in developing, structuring, consulting on, and maintaining sector-specific codes of practice (CoPs) under section 22 of the Act. Each NCII sector lead shall develop and recommend to the Chief Executive a CoP for its NCII sector within twelve (12) months of this directive's effective date, or within such other period as may be specified by the Chief Executive.",
+      "explanation": "Sector leads have a 12-month deadline to produce their sector's code of practice. This directive tells them how to do it. CoPs are the primary mechanism for translating the Act's general requirements into sector-specific standards that account for the unique operational characteristics and risk profiles of each of the 11 NCII sectors.",
+      "relatedActSection": "s22"
+    },
+    {
+      "id": "cop-dev-2",
+      "title": "CoP structure and minimum content",
+      "requirement": "Each code of practice shall contain, at a minimum, the following components: (a) an introduction stating the CoP's purpose, scope, and applicability within the sector; (b) sector-specific risk context, including a description of the sector's cyber threat landscape and critical dependencies; (c) mandatory security controls, organized by control domains aligned with NACSA's Control Domain Framework; (d) sector-specific technical standards for systems constituting NCII, including network architecture, access control, encryption, monitoring, and resilience requirements; (e) incident management procedures tailored to the sector's operational context; (f) supply chain security requirements relevant to the sector; (g) personnel security and awareness training requirements; and (h) compliance measurement criteria and self-assessment guidance.",
+      "explanation": "CoPs follow a standardized structure to ensure consistency across sectors while allowing sector-specific content. The eight mandatory components cover the full lifecycle of cyber security from governance and risk through technical controls to incident response and compliance measurement. Alignment with NACSA's Control Domain Framework enables cross-sector comparison.",
+      "relatedActSection": "s22"
+    },
+    {
+      "id": "cop-dev-3",
+      "title": "Stakeholder consultation",
+      "requirement": "Before recommending a CoP to the Chief Executive for approval under section 22(1), the NCII sector lead shall: (a) consult with all designated NCII entities within its sector; (b) consider input from relevant industry associations and professional bodies; (c) consult with NACSA on alignment with the Act, regulations, directives, and cross-sector consistency; (d) publish a draft CoP for a consultation period of not less than thirty (30) calendar days, during which any affected party may submit written comments; and (e) prepare a consultation response document summarizing the comments received and the sector lead's response to each material comment. The consultation response document shall be submitted to the Chief Executive together with the final recommended CoP.",
+      "explanation": "CoPs must be developed through genuine consultation, not imposed unilaterally. NCII entities get input into the standards they will be measured against, ensuring practicality. The 30-day public consultation and formal response document mirror good regulatory practice and help build sector buy-in for the resulting standards.",
+      "relatedActSection": "s22"
+    },
+    {
+      "id": "cop-dev-4",
+      "title": "Alignment with international standards",
+      "requirement": "Each CoP shall, to the extent practicable, be aligned with relevant international standards, frameworks, and best practices, including but not limited to: (a) ISO/IEC 27001:2022 and the ISO 27000 family of standards; (b) the NIST Cybersecurity Framework (CSF); (c) sector-specific international standards such as IEC 62443 for industrial control systems, PCI DSS for payment systems, and SWIFT CSCF for financial messaging; and (d) any regional standards or frameworks endorsed by ASEAN or other international bodies of which Malaysia is a member. Where a CoP departs from or exceeds an international standard, the departure shall be clearly documented with justification.",
+      "explanation": "CoPs should not reinvent the wheel. They should build on established international frameworks, adapting them to the Malaysian context and the Act's specific requirements. This reduces the compliance burden on multinational NCII entities already following international standards and ensures Malaysia's requirements are internationally credible.",
+      "relatedActSection": "s22"
+    },
+    {
+      "id": "cop-dev-5",
+      "title": "Tiered compliance approach",
+      "requirement": "Each CoP shall adopt a tiered compliance approach that distinguishes between: (a) Tier 1 (Baseline) — mandatory minimum controls applicable to all NCII entities in the sector regardless of size or criticality; (b) Tier 2 (Enhanced) — additional controls applicable to NCII entities whose infrastructure is classified as High criticality under the NCII Asset Categorization directive; and (c) Tier 3 (Advanced) — the most stringent controls applicable to NCII entities whose infrastructure is classified as Critical under the NCII Asset Categorization directive. The tiered approach shall ensure that the compliance burden is proportionate to the criticality of the entity's national critical information infrastructure and the potential impact of its compromise.",
+      "explanation": "Not all NCII entities face the same risk or have the same resources. The three-tier structure ensures baseline security across the board while imposing progressively stricter requirements on entities operating the most critical infrastructure. This proportionality principle prevents over-burdening smaller entities while ensuring the most critical systems receive the highest protection.",
+      "relatedActSection": "s22"
+    },
+    {
+      "id": "cop-dev-6",
+      "title": "Review and update cycle",
+      "requirement": "Each CoP shall be reviewed and, where necessary, updated by the NCII sector lead at intervals not exceeding twenty-four (24) months. In addition, an interim review shall be conducted and amendments recommended to the Chief Executive where: (a) a significant cyber security incident within the sector reveals inadequacies in the existing CoP; (b) new cyber security threats or vulnerabilities emerge that are not addressed by the existing CoP; (c) international standards referenced by the CoP are materially updated; or (d) the Chief Executive directs a review. All updates shall follow the same stakeholder consultation process prescribed in this directive.",
+      "explanation": "CoPs must remain current. The 24-month review cycle keeps standards aligned with the evolving threat landscape. Event-triggered reviews ensure CoPs are updated promptly when significant incidents or new threats reveal gaps. Maintaining the consultation process for updates ensures continued stakeholder input and prevents ad hoc changes without sector engagement.",
+      "relatedActSection": "s22"
+    }
+  ]
+}

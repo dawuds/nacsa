@@ -1,0 +1,85 @@
+[
+  {
+    "id": "s1",
+    "part": "I",
+    "division": null,
+    "title": "Short title and commencement",
+    "sectionNumber": 1,
+    "obligationType": "administrative",
+    "verbatim": "(1) This Act may be cited as the Cyber Security Act 2024.\n(2) This Act comes into operation on a date to be appointed by the Prime Minister by notification in the Gazette.",
+    "translation": "Names the legislation as the Cyber Security Act 2024. The Prime Minister determines the commencement date by Gazette notification. The Act was gazetted on 26 June 2024 and came into force on 26 August 2024.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "short title",
+      "commencement",
+      "gazette",
+      "prime minister"
+    ]
+  },
+  {
+    "id": "s2",
+    "part": "I",
+    "division": null,
+    "title": "Interpretation",
+    "sectionNumber": 2,
+    "obligationType": "definitional",
+    "verbatim": "In this Act, unless the context otherwise requires—\n'authorized officer' means any officer of the Agency authorized in writing by the Chief Executive under section 7;\n'Chief Executive' means the Chief Executive of the National Cyber Security Agency appointed under section 6;\n'Committee' means the National Cyber Security Committee established under section 8;\n'computer' means an electronic, magnetic, optical, electrochemical, or other data processing device, or a group of such interconnected or related devices, performing logical, arithmetic, storage and display functions, and includes any data storage facility or communications facility directly related to or operating in conjunction with such device or group of such interconnected or related devices;\n'cyber security' means the state in which a computer, computer system, network, data, software application, computer program or other configurable computing resource is protected from cyber security threats;\n'cyber security incident' means any act or activity carried out without authorization on a computer, computer system, network, data, software application, computer program or other configurable computing resource that jeopardizes or adversely affects its cyber security, including unauthorized access, interference, interception, denial of service, data breach, system compromise or exploitation of vulnerability;\n'cyber security risk assessment' means a systematic process for identifying, analyzing and evaluating cyber security risks;\n'cyber security service' means a service that is provided for the purpose of protecting or responding to a cyber security threat to a computer, computer system, network, data, software application, computer program or other configurable computing resource, and includes managed security operations centre monitoring service, penetration testing service, cyber security incident response service, and any other service as may be prescribed;\n'cyber security service provider' means any person who provides a cyber security service;\n'cyber security threat' means any act, omission, activity, or state of affairs that may jeopardize or adversely affect the cyber security of a computer, computer system, network, data, software application, computer program or other configurable computing resource;\n'data' means representations of information or concepts that are being prepared or have been prepared in a form suitable for use in a computer;\n'national critical information infrastructure' means any computer or computer system, which the disruption, destruction, degradation or compromise of, or unauthorized access to, would have a debilitating impact on the delivery of a service essential to the security, defence, foreign relations, economy, public health, public safety, or public order of Malaysia, or on the ability of the Federal Government or any State Government to carry out its functions effectively;\n'NCII entity' means an entity designated as an NCII entity under section 17;\n'NCII sector' means any sector specified in the Schedule;\n'NCII sector lead' means a Government Entity designated as an NCII sector lead under section 17;\n'network' means a system of two or more computers that are interconnected by telecommunications links;\n'prescribed' means prescribed by the Minister by regulations made under this Act.",
+    "translation": "Defines all key terms used throughout the Act. Critical definitions include: 'national critical information infrastructure' (NCII — systems whose disruption would have debilitating impact on essential services), 'cyber security incident' (unauthorized activities jeopardizing cyber security), 'cyber security service' (protective or responsive services including SOC monitoring, penetration testing, and incident response), 'NCII entity' (designated entity under s17), and 'NCII sector lead' (government body overseeing a sector). The definition of NCII is deliberately broad and functional rather than prescriptive.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "definitions",
+      "interpretation",
+      "NCII",
+      "cyber security",
+      "cyber security incident",
+      "cyber security service",
+      "computer",
+      "network",
+      "NCII entity",
+      "NCII sector lead"
+    ]
+  },
+  {
+    "id": "s3",
+    "part": "I",
+    "division": null,
+    "title": "Application of Act",
+    "sectionNumber": 3,
+    "obligationType": "administrative",
+    "verbatim": "(1) This Act applies throughout Malaysia.\n(2) This Act applies to any person in respect of any national critical information infrastructure whether located in or outside Malaysia.\n(3) Where any act or omission constituting an offence under this Act is committed outside Malaysia by any person, that person may be dealt with as if the offence had been committed in Malaysia.",
+    "translation": "The Act has nationwide application and extends extraterritorially to any person in relation to NCII, whether the infrastructure is located in or outside Malaysia. Offences committed outside Malaysia can be prosecuted as if committed domestically, giving the Act broad jurisdictional reach to protect Malaysia's critical infrastructure regardless of where threats originate.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "application",
+      "scope",
+      "jurisdiction",
+      "extraterritorial",
+      "Malaysia"
+    ]
+  },
+  {
+    "id": "s4",
+    "part": "I",
+    "division": null,
+    "title": "Prevailing law",
+    "sectionNumber": 4,
+    "obligationType": "administrative",
+    "verbatim": "The provisions of this Act shall be in addition to, and not in derogation of, the provisions of any other written law.",
+    "translation": "The Cyber Security Act 2024 operates alongside and supplements all existing legislation. It does not override or diminish the effect of other laws such as the Computer Crimes Act 1997, PDPA 2010, or sector-specific regulations. Entities must comply with both this Act and any other applicable written law simultaneously.",
+    "amendedBy": null,
+    "effectiveDate": "2024-08-26",
+    "relatedSector": null,
+    "keywords": [
+      "prevailing law",
+      "supplementary",
+      "coexistence",
+      "other legislation"
+    ]
+  }
+]

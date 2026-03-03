@@ -1,0 +1,127 @@
+{
+  "s14": {
+    "sectionId": "s14",
+    "part": "III",
+    "title": "Disclosure of interest",
+    "obligationType": "mandatory",
+    "legal": {
+      "summary": "Committee members must disclose conflicts of interest and recuse themselves from affected deliberations.",
+      "requirements": [
+        {
+          "id": "s14-L1",
+          "requirement": "Any Committee member with a direct or indirect interest in a matter under discussion must disclose the fact and nature of the interest to the Committee",
+          "rationale": "Ensures governance integrity of NCII designation and policy decisions at the highest level",
+          "owner": "Committee Member",
+          "frequency": "Per-meeting",
+          "priority": "High",
+          "source": "s14",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s14-L2",
+          "requirement": "Disclosed interests must be recorded in the minutes of the Committee meeting",
+          "rationale": "Creates auditable record of governance compliance",
+          "owner": "Secretary (Chief Executive)",
+          "frequency": "Per-meeting",
+          "priority": "Medium",
+          "source": "s14",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No technical requirements for this governance provision.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Conflict-of-interest management framework for the national cyber security governance body.",
+      "requirements": [
+        {
+          "id": "s14-G1",
+          "requirement": "Member must recuse from all deliberation and decision-making on the disclosed matter after making the disclosure",
+          "rationale": "Prevents conflicted decision-making on NCII designations and sector determinations",
+          "owner": "Committee Chairman (Prime Minister)",
+          "frequency": "Per-meeting",
+          "priority": "High",
+          "source": "s14",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s15": {
+    "sectionId": "s15",
+    "part": "III",
+    "title": "Chief Executive may issue directives",
+    "obligationType": "enabling",
+    "legal": {
+      "summary": "CE directives are binding instruments that NCII entities and sector leads must comply with.",
+      "requirements": [
+        {
+          "id": "s15-L1",
+          "requirement": "Monitor, identify and maintain a register of all CE directives issued under the Act, ensuring awareness of each directive's requirements and effective date",
+          "rationale": "CE directives form a critical layer of the regulatory framework — non-compliance with any directive constitutes an offence under s18",
+          "owner": "Compliance Officer",
+          "frequency": "Ongoing",
+          "priority": "Critical",
+          "source": "s15",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s15-L2",
+          "requirement": "Ensure organizational compliance with each directive within specified implementation timelines",
+          "rationale": "Directives published in Gazette have binding legal force on all NCII entities",
+          "owner": "CISO",
+          "frequency": "Per-directive",
+          "priority": "Critical",
+          "source": "s15",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical compliance with the specific requirements of each CE directive.",
+      "requirements": [
+        {
+          "id": "s15-T1",
+          "requirement": "Implement technical controls and configurations specified in each applicable CE directive",
+          "rationale": "Directives may mandate specific technical measures such as incident reporting formats, risk assessment methodologies, or security configurations",
+          "owner": "IT Security Team",
+          "frequency": "Per-directive",
+          "priority": "Critical",
+          "source": "s15",
+          "sourceType": "directive",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance framework for tracking and implementing CE directives.",
+      "requirements": [
+        {
+          "id": "s15-G1",
+          "requirement": "Establish a directive tracking and compliance monitoring process, including gap analysis for each new directive and remediation planning",
+          "rationale": "Systematic approach needed given approximately 10 directives already published with more expected",
+          "owner": "Compliance Officer",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s15",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  }
+}
