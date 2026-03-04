@@ -2,7 +2,7 @@
 
 Interactive structured compliance database for Malaysia's **Cyber Security Act 2024 (Act 854)** — browse provisions, NCII sectors, requirements, evidence guidance, controls, artifacts, penalties, supplements, and cross-references.
 
-> **Disclaimer**: This is an indicative/educational resource. It does not constitute legal advice. Always refer to the official gazette text and seek professional counsel for compliance decisions.
+> **Disclaimer**: This is an indicative/educational resource. It does not constitute legal advice. Always refer to the official gazette text and seek professional counsel for compliance decisions. See [LEARNINGS.md](LEARNINGS.md) for data quality audit history.
 
 > **⚠ Data Reliability Notice — Read Before Using for Compliance Purposes**
 >
@@ -35,6 +35,7 @@ The database follows an 8-layer structured compliance model plus supplements:
 
 ```
 nacsa/
+├── LEARNINGS.md             # Data quality audit findings and lessons
 ├── provisions/              # Act 854 sections (9 parts, ~64 sections)
 │   ├── parts.json           # Part structure with divisions
 │   ├── index.json           # All sections with verbatim text & translations
