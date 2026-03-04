@@ -26,7 +26,7 @@
         }
       ]
     },
-    "banking-finance": {
+    "banking-and-finance": {
       "sectorName": "Banking and Finance",
       "sectorLead": "Bank Negara Malaysia",
       "regulatoryOverlaps": [
@@ -80,7 +80,7 @@
         }
       ]
     },
-    "defence-national-security": {
+    "defence-and-national-security": {
       "sectorName": "Defence and National Security",
       "sectorLead": "Ministry of Defence",
       "regulatoryOverlaps": [
@@ -104,7 +104,7 @@
         }
       ]
     },
-    "ict": {
+    "information-and-communications-technology": {
       "sectorName": "Information and Communications Technology",
       "sectorLead": "MCMC",
       "regulatoryOverlaps": [
@@ -158,7 +158,7 @@
         }
       ]
     },
-    "water-sewerage": {
+    "water-and-sewerage": {
       "sectorName": "Water and Sewerage",
       "sectorLead": "SPAN",
       "regulatoryOverlaps": [
@@ -212,8 +212,8 @@
         }
       ]
     },
-    "agriculture-plantation-commodity-food": {
-      "sectorName": "Agriculture, Plantation, Commodity and Food",
+    "agriculture-and-plantation": {
+      "sectorName": "Agriculture and plantation",
       "sectorLead": "Ministry of Agriculture and Food Security",
       "regulatoryOverlaps": [
         {
@@ -236,7 +236,7 @@
         }
       ]
     },
-    "science-technology-innovation": {
+    "science-technology-and-innovation": {
       "sectorName": "Science, Technology and Innovation",
       "sectorLead": "MOSTI",
       "regulatoryOverlaps": [
@@ -281,6 +281,31 @@
           "fullName": "Universities and University Colleges Act 1971",
           "relevance": "low",
           "notes": "University IT governance requirements supplement NCII obligations for higher education institutions"
+        }
+      ],
+      "sectorWarning": "Education is NOT listed as an NCII sector in the Schedule to Act 854. This entry is retained for reference only."
+    },
+    "trade-industry-and-economy": {
+      "sectorName": "Trade, industry and economy",
+      "sectorLead": "Ministry of Investment, Trade and Industry (MITI)",
+      "regulatoryOverlaps": [
+        {
+          "framework": "Customs Act 1967",
+          "fullName": "Customs Act 1967 (Act 235)",
+          "relevance": "high",
+          "notes": "Trade facilitation systems (MyTrade, customs portals) face customs regulatory requirements alongside NCII obligations"
+        },
+        {
+          "framework": "MIDA Act",
+          "fullName": "Malaysian Investment Development Authority Act 2006",
+          "relevance": "medium",
+          "notes": "Investment processing systems are potential NCII assets under trade and economic infrastructure"
+        },
+        {
+          "framework": "PDPA (Act 709)",
+          "fullName": "Personal Data Protection Act 2010",
+          "relevance": "medium",
+          "notes": "Trade systems processing business and personal data face dual Act 854 and PDPA obligations"
         }
       ]
     }

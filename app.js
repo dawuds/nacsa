@@ -449,7 +449,7 @@ async function renderSectors(el) {
     state.sectors = (data && data.sectors) || (Array.isArray(data) ? data : []);
   }
   el.innerHTML = `
-    <div class="page-title">11 NCII Sectors</div>
+    <div class="page-title">${state.sectors.filter(s => s.sectorNumber).length} NCII Sectors</div>
     <div class="page-subtitle">Schedule to the Cyber Security Act 2024 — National Critical Information Infrastructure sectors</div>
     <div class="part-grid" style="grid-template-columns:repeat(2,1fr);">
       ${state.sectors.map(s => `
