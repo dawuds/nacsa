@@ -8,7 +8,7 @@ Interactive structured compliance database for Malaysia's **Cyber Security Act 2
 >
 > This database contains two categories of data with materially different reliability:
 >
-> **Verified data** (provisions, penalties, sector definitions): Derived from Act 854 (gazetted 26 June 2024) and the four subsidiary regulations P.U.(A) 291–294/2024. Section numbers, penalty amounts, and statutory thresholds in these files are cross-referenced against the official gazette text. Specific penalty figures or section references flagged with `verificationStatus` fields require further gazette verification before being relied upon.
+> **Verified data** (provisions, penalties, sector definitions): Derived from Act 854 (gazetted 26 June 2024) and the four subsidiary regulations P.U.(A) 219–222/2024. Section numbers, penalty amounts, and statutory thresholds in these files are cross-referenced against the official gazette text. Specific penalty figures or section references flagged with `verificationStatus` fields require further gazette verification before being relied upon.
 >
 > **Constructed-indicative data** (Chief Executive Directives and Codes of Practice in `supplements/directives/` and `supplements/codes-of-practice/`): These instruments are constructed representations of what such instruments might contain based on the powers in Act 854. They have **not** been verified against any officially published gazette or NACSA instrument. Specific figures, thresholds, timelines, and procedural requirements within these files **must not** be relied upon for compliance without independent verification against official NACSA publications. All files in these directories carry `"sourceType": "constructed-indicative"` and a `verificationStatus` warning.
 >
@@ -23,8 +23,8 @@ Interactive structured compliance database for Malaysia's **Cyber Security Act 2
 The Cyber Security Act 2024 (Act 854) was gazetted on 26 June 2024 and came into force on 26 August 2024. It establishes the National Cyber Security Agency (NACSA) as the lead agency for cybersecurity in Malaysia, defines **National Critical Information Infrastructure (NCII)** across 11 sectors, and mandates cybersecurity risk assessments, audits, incident notification, and licensing of cybersecurity service providers.
 
 ### Key Features
-- **11 NCII Sectors**: Government, Banking & Finance, Transport, Defence & National Security, ICT, Healthcare, Water & Sewerage, Energy, Agriculture/Plantation/Commodity/Food, Science/Technology/Innovation, Education
-- **6-hour incident notification** window for cyber security incidents with **significant impact** (as defined in P.U.(A) 291/2024, reg 3); not all incidents trigger the 6-hour obligation
+- **11 NCII Sectors**: Government, Banking & Finance, Transport, Defence & National Security, ICT, Healthcare, Water & Sewerage, Energy, Agriculture & Plantation, Trade/Industry/Economy, Science/Technology/Innovation
+- **6-hour incident notification** window for cyber security incidents with **significant impact** (as defined in P.U.(A) 220/2024, reg 3); not all incidents trigger the 6-hour obligation
 - **Mandatory risk assessments** and **cyber security audits** for NCII entities
 - **Licensing regime** for cybersecurity service providers (5 service classes)
 - **Body corporate liability** with 10x fine multiplier (s52)
@@ -61,9 +61,9 @@ nacsa/
 │   ├── act-to-directives.json
 │   └── ncii-sector-mappings.json  # Sector regulatory overlap matrix
 ├── supplements/             # Subsidiary instruments
-│   ├── regulations/         # 4 subsidiary regulations (P.U.(A) 291-294/2024)
+│   ├── regulations/         # 4 subsidiary regulations (P.U.(A) 219-222/2024)
 │   ├── directives/          # 10 Chief Executive directives
-│   └── codes-of-practice/   # 11 sector-specific codes of practice
+│   └── codes-of-practice/   # 12 sector-specific codes of practice
 ├── index.html               # Static browsing site
 ├── style.css
 └── app.js
@@ -73,7 +73,7 @@ nacsa/
 
 | Layer | Files | Description |
 |-------|-------|-------------|
-| Provisions | 12 | parts.json + index.json + 9 by-part files + schedule |
+| Provisions | 11 | parts.json + index.json + 9 by-part files |
 | Sectors | 1 | 11 NCII sectors with obligations |
 | Requirements | 6 | index.json + 5 by-part files |
 | Evidence | 1 | Evidence items keyed by section |
@@ -81,9 +81,9 @@ nacsa/
 | Controls | 3 | 15 domains, 53 controls + section map |
 | Penalties | 1 | 20 penalty provisions |
 | Cross-references | 4 | Framework mappings + regulatory mappings |
-| Supplements | 27 | 4 regulations + 10 directives + 11 CoPs + 3 indexes |
+| Supplements | 29 | 4 regulations + 10 directives + 12 CoPs + 3 indexes |
 | Static site | 3 | HTML + CSS + JS |
-| **Total** | **60** | |
+| **Total** | **61** | |
 
 ## Static Site
 
@@ -118,16 +118,16 @@ The database maps Act 854 provisions to:
 ## Supplements
 
 ### Regulations (4)
-- P.U.(A) 291/2024 — Notification of Cyber Security Incident
-- P.U.(A) 292/2024 — Risk Assessment and Audit
-- P.U.(A) 293/2024 — Licensing of Cyber Security Service Providers
-- P.U.(A) 294/2024 — Compounding of Offences
+- P.U.(A) 219/2024 — Risk Assessment and Audit
+- P.U.(A) 220/2024 — Notification of Cyber Security Incident
+- P.U.(A) 221/2024 — Licensing of Cyber Security Service Providers
+- P.U.(A) 222/2024 — Compounding of Offences
 
 ### Chief Executive Directives (10)
 Issued under s15, covering NCII registration, risk assessment methodology, audit standards, incident notification, information sharing, service provider obligations, CoP development, vulnerability disclosure, threat intelligence sharing, and NCII asset categorization.
 
-### Codes of Practice (11)
-Sector-specific CoPs under s22, with varying status: published (Banking & Finance), template issued (Government, ICT, Energy), draft (Transport, Defence, Healthcare, Water & Sewerage), and pending (Agriculture, Science & Technology, Education).
+### Codes of Practice (12)
+Sector-specific CoPs under s22, with varying status: indicative (Banking & Finance, Trade/Industry/Economy), template issued (Government, ICT, Energy), draft (Transport, Defence, Healthcare, Water & Sewerage), pending (Agriculture, Science & Technology), and not-applicable (Education — not an official NCII sector).
 
 ## License
 

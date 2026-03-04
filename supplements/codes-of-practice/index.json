@@ -25,7 +25,7 @@
       "effectiveDate": "2025-06-01",
       "subject": "Standards and best practices for cyber security of banking and financial services NCII including core banking, payment systems, and financial market infrastructure",
       "filePath": "supplements/codes-of-practice/cop-banking-finance.json",
-      "status": "published",
+      "status": "indicative",
       "version": "1.0"
     },
     {
@@ -127,6 +127,20 @@
       "version": "0.1-placeholder"
     },
     {
+      "id": "cop-trade-industry-economy",
+      "title": "Code of Practice for the Trade, Industry and Economy Sector",
+      "type": "code-of-practice",
+      "sectorId": "trade-industry-and-economy",
+      "sectorLead": "Ministry of Investment, Trade and Industry (MITI)",
+      "approvedUnder": "s22",
+      "gazetteDate": null,
+      "effectiveDate": null,
+      "subject": "Standards and best practices for cyber security of trade, industry and economy NCII including trade facilitation platforms, customs management systems, commodity exchanges, free trade zone infrastructure, and economic planning systems",
+      "filePath": "supplements/codes-of-practice/cop-trade-industry-economy.json",
+      "status": "indicative",
+      "version": "0.1-placeholder"
+    },
+    {
       "id": "cop-science-technology",
       "title": "Code of Practice for the Science and Technology Sector",
       "type": "code-of-practice",
@@ -141,8 +155,9 @@
       "version": "0.1-placeholder"
     },
     {
+      "sectorWarning": "FABRICATED SECTOR — Education is NOT listed as an NCII sector in the Schedule to Act 854",
       "id": "cop-education",
-      "title": "Code of Practice for the Education Sector",
+      "title": "Code of Practice for the Education Sector (FABRICATED — NOT AN OFFICIAL NCII SECTOR)",
       "type": "code-of-practice",
       "sectorId": "education",
       "sectorLead": "Ministry of Education / Ministry of Higher Education",
@@ -151,7 +166,7 @@
       "effectiveDate": null,
       "subject": "Standards and best practices for cyber security of education NCII including national examination systems, student information systems, and education management platforms",
       "filePath": "supplements/codes-of-practice/cop-education.json",
-      "status": "pending",
+      "status": "not-applicable",
       "version": "0.1-placeholder"
     }
   ]

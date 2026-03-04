@@ -91,7 +91,7 @@
           "id": "st-cop-4.1",
           "requirement": "Cyber security incidents affecting science and technology NCII shall be reported to NACSA and MOSTI within six hours of detection, with immediate escalation for incidents involving suspected foreign intelligence activity, compromise of dual-use technology research, or disruption of nationally significant computational programmes.",
           "rationale": "Science NCII may be targeted by sophisticated state-sponsored actors seeking strategic technology. Accelerated reporting for espionage-related incidents enables national security coordination beyond standard cyber incident response.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "MOSTI Incident Reporting Framework; ISO 27035; NIST SP 800-61"
         },
         {

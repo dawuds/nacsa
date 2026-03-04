@@ -133,21 +133,21 @@
           "id": "gov-cop-5.1",
           "requirement": "The agency shall establish a Cyber Security Incident Response Team (CSIRT) or designate responsibility to an existing team, with documented procedures for detecting, containing, eradicating, and recovering from cyber security incidents affecting NCII.",
           "rationale": "A prepared incident response capability minimises the impact and duration of cyber security incidents on government NCII, ensuring continuity of essential government services.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "RAKKSSA 3.0 Domain 7; ISO 27035"
         },
         {
           "id": "gov-cop-5.2",
           "requirement": "Cyber security incidents affecting NCII shall be reported to NACSA within six hours of detection for critical incidents and within 24 hours for non-critical incidents, using the prescribed national incident reporting format.",
           "rationale": "Timely incident reporting enables NACSA to coordinate national response efforts, issue warnings to other agencies, and maintain situational awareness of threats to government NCII.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "RAKKSSA 3.0 Domain 7; Pekeliling Am Bil. 1 Tahun 2001"
         },
         {
           "id": "gov-cop-5.3",
           "requirement": "The agency shall conduct a post-incident review within 30 days of incident closure, documenting root cause analysis, lessons learned, and corrective actions, with a summary report submitted to NACSA.",
           "rationale": "Post-incident reviews strengthen future defences by identifying systemic weaknesses exposed during the incident and ensuring corrective measures prevent recurrence.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "RAKKSSA 3.0 Domain 7; ISO 27035-2"
         }
       ]

@@ -684,7 +684,7 @@
       "toolExamples": ["Zerto", "VMware Site Recovery", "AWS Elastic Disaster Recovery", "Azure Site Recovery"],
       "nistCsf": ["RC.RP-01", "RC.RP-04", "RC.RP-05"],
       "iso27001": ["A.5.29", "A.5.30", "A.8.14"],
-      "rmit": ["10.54", "10.55", "10.58"],
+      "rmit": ["10.54", "10.55"],
       "cisControls": ["11.1", "11.4"],
       "relatedDirectives": ["directive-bcdr", "directive-disaster-recovery"]
     }
@@ -712,7 +712,7 @@
       "toolExamples": ["AuditBoard", "TeamMate+", "Galvanize", "ServiceNow Audit Management"],
       "nistCsf": ["GV.OC-03", "ID.IM-01", "ID.IM-02"],
       "iso27001": ["A.5.35", "A.5.36"],
-      "rmit": ["10.59", "10.60"],
+      "rmit": ["10.4", "10.5"],
       "cisControls": ["17.1", "17.5"],
       "relatedDirectives": ["directive-audit-compliance", "directive-ncii-standards"]
     },
@@ -738,7 +738,7 @@
       "toolExamples": ["Hyperproof", "Drata", "Vanta", "Anecdotes"],
       "nistCsf": ["GV.OC-03", "ID.IM-01", "ID.IM-04"],
       "iso27001": ["A.5.35", "A.5.36"],
-      "rmit": ["10.60", "10.61"],
+      "rmit": ["10.4", "10.5"],
       "cisControls": ["17.1", "17.5", "17.6"],
       "relatedDirectives": ["directive-audit-compliance", "directive-external-audit"]
     },
@@ -764,7 +764,7 @@
       "toolExamples": ["Qualys Policy Compliance", "Tenable.sc", "Prisma Cloud", "AWS Config", "Chef InSpec"],
       "nistCsf": ["GV.OC-03", "DE.CM-09", "ID.IM-02"],
       "iso27001": ["A.5.36", "A.8.9"],
-      "rmit": ["10.59", "10.62"],
+      "rmit": ["10.4", "10.6"],
       "cisControls": ["4.1", "4.2"],
       "relatedDirectives": ["directive-audit-compliance", "directive-continuous-monitoring"]
     },
@@ -790,7 +790,7 @@
       "toolExamples": ["Hyperproof", "Drata", "Vanta", "ZenGRC", "AuditBoard"],
       "nistCsf": ["GV.OC-03", "ID.IM-01"],
       "iso27001": ["A.5.35", "A.5.36", "A.5.37"],
-      "rmit": ["10.60", "10.63"],
+      "rmit": ["10.4", "10.5"],
       "cisControls": ["17.5"],
       "relatedDirectives": ["directive-audit-compliance", "directive-evidence-management"]
     }

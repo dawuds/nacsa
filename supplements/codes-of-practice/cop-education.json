@@ -1,15 +1,16 @@
 {
+  "sectorWarning": "FABRICATED SECTOR — Education is NOT listed as an NCII sector in the Schedule to Act 854. This entire Code of Practice is for a non-existent sector and must not be relied upon for any purpose.",
   "id": "cop-education",
-  "title": "Code of Practice for the Education Sector",
+  "title": "Code of Practice for the Education Sector (FABRICATED — NOT AN OFFICIAL NCII SECTOR)",
   "type": "code-of-practice",
   "sectorId": "education",
   "sectorLead": "Ministry of Education / Ministry of Higher Education",
   "approvedUnder": "s22",
   "gazetteDate": null,
   "effectiveDate": null,
-  "status": "pending",
+  "status": "not-applicable",
   "sourceType": "constructed-indicative",
-  "verificationStatus": "not-verified-against-gazette — this instrument is a constructed representation of what such a code of practice might contain; it has not been verified against any officially published gazette instrument",
+  "verificationStatus": "INVALID — Education is not an NCII sector under the Schedule to Act 854. This file is entirely fabricated and has no basis in gazetted legislation.",
   "version": "0.1-placeholder",
   "domains": [
     {
@@ -91,7 +92,7 @@
           "id": "ed-cop-4.1",
           "requirement": "Cyber security incidents affecting education NCII shall be reported to NACSA and the relevant Ministry (Education or Higher Education) within six hours of detection, with immediate escalation for incidents affecting active national examination processes, university admission systems during intake periods, or systems holding student financial aid data.",
           "rationale": "Education NCII incidents during time-critical periods such as examinations and admissions can affect millions of students. Immediate escalation enables national coordination to protect academic calendar integrity and student welfare.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "MOE ICT Incident Procedures; ISO 27035"
         },
         {

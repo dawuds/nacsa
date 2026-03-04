@@ -48,7 +48,7 @@
         {
           "id": "gov-O5",
           "obligation": "Where a cyber security incident has or may have a significant impact (as defined in the Notification Regulations, reg 3), notify NACSA within 6 hours of becoming aware. Submit follow-up notifications every 72 hours until NACSA confirms closure in writing. Submit a final incident report within 30 days of full resolution. Separately, maintain a register of ALL detected cyber security incidents regardless of whether they meet the significant impact threshold, and retain records for 7 years.",
-          "basis": "s26(1), s26(2); Cyber Security (Notification of Cyber Security Incident) Regulations 2024 (P.U.(A) 291/2024), reg 4, 5, 6, 9",
+          "basis": "s26(1), s26(2); Cyber Security (Notification of Cyber Security Incident) Regulations 2024 (P.U.(A) 220/2024), reg 4, 5, 6, 9",
           "type": "mandatory"
         }
       ],
@@ -431,9 +431,9 @@
       "copStatus": "template_issued"
     },
     {
-      "id": "agriculture-plantation-commodity-and-food",
+      "id": "agriculture-and-plantation",
       "sectorNumber": 9,
-      "name": "Agriculture, Plantation, Commodity and Food",
+      "name": "Agriculture and plantation",
       "sectorLead": "Ministry of Agriculture and Food Security",
       "description": "Covers food supply chain management systems, commodity trading platforms, agricultural subsidy and licensing systems, and food safety tracking infrastructure. Malaysia's food security depends on the integrity of these systems, particularly given the nation's reliance on imports for staple commodities and the strategic importance of palm oil and rubber exports.",
       "nciiExamples": [
@@ -483,8 +483,60 @@
       "copStatus": "pending"
     },
     {
-      "id": "science-technology-and-innovation",
+      "id": "trade-industry-and-economy",
       "sectorNumber": 10,
+      "name": "Trade, industry and economy",
+      "sectorLead": "Ministry of Investment, Trade and Industry (MITI)",
+      "description": "Covers trade facilitation systems, industrial control platforms, customs and import/export infrastructure, commodity exchanges, free trade zone management, and economic planning systems. Malaysia's position as a major trading nation and manufacturing hub makes these systems critical to economic stability and supply chain continuity.",
+      "nciiExamples": [
+        "MyTrade (Malaysia National Single Window) integrated trade facilitation platform for customs declarations and permits",
+        "Royal Malaysian Customs Department (JKDM) customs management system",
+        "MIDA (Malaysian Investment Development Authority) investment approval and tracking platform",
+        "Malaysia External Trade Development Corporation (MATRADE) export facilitation system",
+        "Bursa Malaysia trading engine and market surveillance systems for securities and commodities"
+      ],
+      "obligations": [
+        {
+          "id": "tie-O1",
+          "obligation": "Accept NCII designation and appoint a responsible officer for cyber security of designated trade and economic infrastructure systems",
+          "basis": "s17(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "tie-O2",
+          "obligation": "Implement cyber security measures to protect the integrity of trade data, economic planning systems, and customs processing infrastructure against manipulation and disruption",
+          "basis": "s18(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "tie-O3",
+          "obligation": "Conduct annual cyber security risk assessments covering trade system integrity risks, supply chain partner connectivity, and cross-border data exchange vulnerabilities",
+          "basis": "s21(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "tie-O4",
+          "obligation": "Undergo biennial cyber security audit by a NACSA-licensed auditor",
+          "basis": "s23(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "tie-O5",
+          "obligation": "Where a cyber security incident has or may have a significant impact, notify NACSA within 6 hours of becoming aware; incidents affecting customs clearance or trade facilitation systems must also be reported to MITI. Submit follow-up notifications to NACSA every 72 hours until closure confirmed in writing. Submit a final incident report within 30 days of full resolution. Maintain a register of ALL detected incidents regardless of significance threshold, and retain records for 7 years.",
+          "basis": "s26(1)",
+          "type": "mandatory"
+        }
+      ],
+      "regulatoryOverlaps": [
+        "Customs Act 1967 (Act 235) — customs administration and trade facilitation requirements",
+        "Strategic Trade Act 2010 (Act 708) — controls on strategic items and dual-use goods",
+        "Competition Act 2010 (Act 712) — market integrity and fair competition"
+      ],
+      "copStatus": "pending"
+    },
+    {
+      "id": "science-technology-and-innovation",
+      "sectorNumber": 11,
       "name": "Science, Technology and Innovation",
       "sectorLead": "MOSTI (Ministry of Science, Technology and Innovation)",
       "description": "Covers national research institutions, space agency systems, nuclear facilities, biotechnology research infrastructure, and innovation ecosystem platforms. This sector protects Malaysia's intellectual property, sensitive research data, and emerging technology capabilities, including the Malaysian Space Agency (MYSA) and the Malaysian Nuclear Agency.",
@@ -535,11 +587,12 @@
       "copStatus": "pending"
     },
     {
+      "sectorWarning": "FABRICATED SECTOR — Education is NOT listed as an NCII sector in the Schedule to Act 854. This entry is a constructed example and must not be relied upon for compliance purposes. The 11 official NCII sectors end at 'Science, Technology and Innovation' (sector 11).",
       "id": "education",
-      "sectorNumber": 11,
-      "name": "Education",
+      "sectorNumber": null,
+      "name": "Education (NOT AN OFFICIAL NCII SECTOR)",
       "sectorLead": "Ministry of Education",
-      "description": "Covers public and private education institution management systems, national examination platforms, student data repositories, e-learning infrastructure, and education credential verification systems. The sector holds sensitive personal data on millions of students and educators, and disruption to examination systems can have nationwide impact on academic progression.",
+      "description": "WARNING: Education is not listed in the Schedule to the Cyber Security Act 2024 (Act 854) as an NCII sector. This entry is entirely constructed and speculative. The content below represents what such a sector might look like IF it were designated, but it has no basis in the gazetted legislation. Covers public and private education institution management systems, national examination platforms, student data repositories, e-learning infrastructure, and education credential verification systems.",
       "nciiExamples": [
         "APDM (Aplikasi Pangkalan Data Murid) national student database for primary and secondary education",
         "SPM/STPM (national examination) digital examination management and results processing system operated by the Malaysian Examinations Syndicate (LPM)",
@@ -584,7 +637,7 @@
         "Education Act 1996 (Act 550) — institutional governance and regulatory compliance",
         "Malaysian Qualifications Agency Act 2007 (Act 679) — credential integrity and accreditation standards"
       ],
-      "copStatus": "pending"
+      "copStatus": "not-applicable"
     }
   ]
 }

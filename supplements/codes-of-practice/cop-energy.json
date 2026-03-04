@@ -105,21 +105,21 @@
           "id": "en-cop-4.1",
           "requirement": "The NCII entity shall establish a Cyber Security Incident Response Team with members qualified in both cyber security and power system operations, capable of making real-time decisions that balance incident containment with grid stability requirements.",
           "rationale": "Cyber incident response in energy NCII requires understanding of power system dynamics. Isolating a compromised SCADA system may trigger load imbalances or cascading failures if not coordinated with grid operations.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "Energy Commission Grid Code; IEC 62443-2-1; ISO 27035"
         },
         {
           "id": "en-cop-4.2",
           "requirement": "Cyber security incidents affecting energy NCII shall be reported to NACSA and the Energy Commission within two hours of detection, with immediate notification required for incidents that impact generation capacity exceeding 100MW, transmission system stability, or load shedding capability.",
           "rationale": "Energy NCII incidents can cascade rapidly to affect national grid stability and all electricity-dependent sectors. Rapid reporting enables coordination between the national grid operator, NACSA, and the Energy Commission to prevent systemic power failures.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "Energy Commission Incident Reporting; Grid System Operator Procedures; ISO 27035"
         },
         {
           "id": "en-cop-4.3",
           "requirement": "The NCII entity shall participate in annual sector-wide cyber resilience exercises coordinated by the Energy Commission, NACSA, and the Grid System Operator, simulating coordinated cyber attacks on multiple energy NCII operators with cascading grid impacts.",
           "rationale": "The interconnected nature of the energy grid means that attacks on one operator can cascade to others. Sector-wide exercises test the collective ability to maintain grid stability during coordinated cyber attacks on multiple NCII entities.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "Energy Commission Emergency Response Framework; NERC GridEx; ISO 22301"
         }
       ]

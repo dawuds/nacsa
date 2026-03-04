@@ -105,14 +105,14 @@
           "id": "hc-cop-4.1",
           "requirement": "The NCII entity shall maintain a Healthcare Cyber Incident Response Plan that prioritises patient safety above all other response objectives, with pre-defined clinical downtime procedures enabling continuation of critical patient care when NCII systems are unavailable.",
           "rationale": "During cyber incidents affecting healthcare NCII, patient safety must be the overriding priority. Clinical downtime procedures ensure that healthcare providers can continue delivering safe care using manual processes when digital systems are compromised.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "MOH Hospital Crisis Management Guidelines; ISO 27035; ISO 27799"
         },
         {
           "id": "hc-cop-4.2",
           "requirement": "Cyber security incidents affecting healthcare NCII shall be reported to NACSA and the Ministry of Health within six hours of detection, with immediate escalation required for incidents that impact life-sustaining medical equipment, emergency department systems, or systems supporting active surgical procedures.",
           "rationale": "Healthcare NCII incidents can have immediate life-threatening consequences. Accelerated reporting for incidents affecting life-critical systems enables rapid coordinated response including potential patient transfer to unaffected facilities.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "MOH Incident Reporting Framework; MDA Medical Device Adverse Event Reporting"
         },
         {

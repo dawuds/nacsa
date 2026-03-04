@@ -105,14 +105,14 @@
           "id": "ict-cop-4.1",
           "requirement": "The NCII entity shall operate a Security Operations Centre providing 24/7 monitoring of all NCII systems with automated correlation of events, with the capability to detect and triage potential security incidents within 15 minutes of alert generation.",
           "rationale": "ICT NCII operates continuously and serves as the foundation for other critical sectors. Round-the-clock monitoring with rapid triage ensures that attacks on telecommunications and internet infrastructure are detected before they cascade to dependent sectors.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "MCMC MTSFB TC G015; ISO 27001 A.12.4; NIST CSF DE"
         },
         {
           "id": "ict-cop-4.2",
           "requirement": "The NCII entity shall participate in the NACSA ICT Sector Threat Intelligence Sharing Platform, contributing indicators of compromise, threat observations, and vulnerability information, and consuming shared intelligence for proactive defence of NCII systems.",
           "rationale": "ICT NCII operators collectively observe the majority of national cyber traffic. Structured intelligence sharing across the sector multiplies each operator's visibility and enables coordinated defence against threats that target multiple operators simultaneously.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "MyCERT Threat Intelligence Framework; STIX/TAXII; ISO 27001 A.6.1"
         },
         {
@@ -133,14 +133,14 @@
           "id": "ict-cop-5.1",
           "requirement": "Cyber security incidents affecting ICT NCII shall be reported to NACSA and MCMC within two hours of confirmation, with immediate notification required for incidents affecting inter-operator interconnection, international gateway capacity, or DNS resolution services.",
           "rationale": "Incidents affecting ICT NCII can rapidly cascade to all sectors that depend on telecommunications and internet connectivity. Rapid reporting enables NACSA and MCMC to coordinate national response and warn other NCII operators of potential downstream impacts.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "MCMC Incident Reporting Requirements; MyCERT Incident Handling Framework"
         },
         {
           "id": "ict-cop-5.2",
           "requirement": "The NCII entity shall maintain documented mutual aid agreements with other ICT NCII operators for cyber security incident response, enabling sharing of technical resources, capacity, and expertise during incidents that exceed individual operator response capability.",
           "rationale": "Major cyber incidents may overwhelm individual operator response capacity. Mutual aid agreements ensure that the sector can collectively respond to large-scale events through pooled resources and coordinated action.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "MCMC Industry Cooperation Framework; ISO 27035-3"
         }
       ]

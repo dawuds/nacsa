@@ -95,7 +95,7 @@
       {
         "nacsaSection": "s18",
         "nacsaName": "Cyber security measures",
-        "nistSubcategory": "PR.AC-01",
+        "nistSubcategory": "PR.AA-01",
         "nistName": "Identities and credentials for authorized users, services, and hardware are managed",
         "similarity": "high",
         "notes": "Access control is a core component of the s18 duty to maintain cyber security measures"
@@ -333,7 +333,7 @@
       {
         "nacsaSection": "s23",
         "nacsaName": "Audit",
-        "rmitClause": "10.67",
+        "rmitClause": "13.1",
         "rmitName": "Technology audit",
         "similarity": "high",
         "notes": "Both mandate periodic audits by qualified auditors; RMiT specifies audit scope and frequency"
@@ -341,7 +341,7 @@
       {
         "nacsaSection": "s26",
         "nacsaName": "Incident notification",
-        "rmitClause": "10.65",
+        "rmitClause": "11.18",
         "rmitName": "Incident reporting to BNM",
         "similarity": "high",
         "notes": "Both mandate incident notification; Act 854 adds 6-hour requirement on top of RMiT's existing BNM reporting"

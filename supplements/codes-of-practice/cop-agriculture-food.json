@@ -84,14 +84,14 @@
           "id": "af-cop-4.1",
           "requirement": "Cyber security incidents affecting agriculture and food NCII shall be reported to NACSA and the Ministry of Agriculture and Food Security within six hours of detection, with immediate escalation if the incident may affect national food reserve integrity, food safety monitoring capability, or strategic commodity trading systems.",
           "rationale": "Disruption of agriculture NCII can affect national food security. Timely reporting enables coordinated response to protect food supplies and activate contingency measures for affected supply chains.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "National Food Security Policy; ISO 27035; FAO Early Warning Systems"
         },
         {
           "id": "af-cop-4.2",
           "requirement": "The NCII entity shall develop incident response procedures that include coordination with food safety authorities for incidents that may compromise food quality monitoring, contamination detection, or product recall systems.",
           "rationale": "Cyber attacks on food safety NCII may have direct public health consequences if contamination detection or recall capabilities are degraded. Cross-agency coordination ensures public health response is activated in parallel with cyber incident response.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "Food Act 1983; MOH Food Safety Response Framework; ISO 27035"
         }
       ]

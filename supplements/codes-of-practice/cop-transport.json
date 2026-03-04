@@ -105,14 +105,14 @@
           "id": "tr-cop-4.1",
           "requirement": "The NCII entity shall establish incident response procedures that integrate cyber security response with transport safety management, ensuring that safety-critical decisions during a cyber incident are made by qualified transport safety personnel with real-time input from cyber security responders.",
           "rationale": "During a cyber attack on transport NCII, safety and security responses must be coordinated. Cyber security actions such as system isolation must be balanced against potential safety impacts like loss of signalling or communications.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "IEC 62443-4-2; ICAO Annex 17; ISO 27035"
         },
         {
           "id": "tr-cop-4.2",
           "requirement": "Cyber security incidents affecting transport NCII shall be reported to NACSA and the Ministry of Transport within six hours of detection, with immediate notification required if the incident has potential to cause physical harm, transport service disruption exceeding one hour, or cascading effects on other NCII sectors.",
           "rationale": "Transport disruptions can have immediate physical safety consequences and cascading economic impacts. Accelerated reporting for high-impact incidents enables rapid national coordination and public safety response.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "IMO MSC-FAL.1/Circ.3; ICAO AVSEC Reporting; ISO 27035"
         },
         {
@@ -140,7 +140,7 @@
           "id": "tr-cop-5.2",
           "requirement": "The NCII entity shall participate in annual inter-agency transport sector cyber resilience exercises coordinated by the Ministry of Transport and NACSA, testing coordination between transport operators, regulators, emergency services, and other NCII sectors.",
           "rationale": "Transport disruptions cascade across sectors including supply chains, healthcare, and energy. Cross-sector exercises validate that coordination mechanisms work effectively during events that transcend individual organisational boundaries.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "ISO 22301; Arahan MKN No. 20; NACSA Exercise Framework"
         }
       ]

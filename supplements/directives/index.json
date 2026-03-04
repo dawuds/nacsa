@@ -10,7 +10,7 @@
       "effectiveDate": "2024-09-15",
       "subject": "Procedures for NCII entity registration, designation acknowledgment, and transition requirements for existing operators",
       "filePath": "supplements/directives/directive-ncii-registration.json",
-      "status": "in-force",
+      "status": "indicative",
       "applicableTo": "All NCII entities"
     },
     {
@@ -23,7 +23,7 @@
       "effectiveDate": "2024-09-15",
       "subject": "Detailed risk assessment methodology requirements, threat categorization, vulnerability scoring, and risk calculation approaches for NCII entities",
       "filePath": "supplements/directives/directive-risk-assessment-methodology.json",
-      "status": "in-force",
+      "status": "indicative",
       "applicableTo": "All NCII entities"
     },
     {
@@ -36,7 +36,7 @@
       "effectiveDate": "2024-09-15",
       "subject": "Audit standards, scope requirements, auditor competency criteria, and minimum audit frequency for NCII entities",
       "filePath": "supplements/directives/directive-audit-standards.json",
-      "status": "in-force",
+      "status": "indicative",
       "applicableTo": "All NCII entities"
     },
     {
@@ -49,7 +49,7 @@
       "effectiveDate": "2024-09-15",
       "subject": "Detailed notification format templates, significant impact classification criteria, escalation procedures, and follow-up reporting requirements for cyber security incidents",
       "filePath": "supplements/directives/directive-incident-notification.json",
-      "status": "in-force",
+      "status": "indicative",
       "applicableTo": "All NCII entities"
     },
     {
@@ -62,7 +62,7 @@
       "effectiveDate": "2024-09-15",
       "subject": "Information sharing protocols, classification handling, secure channels, and trust frameworks for threat intelligence exchange among NCII entities, sector leads, and NACSA",
       "filePath": "supplements/directives/directive-information-sharing.json",
-      "status": "in-force",
+      "status": "indicative",
       "applicableTo": "All NCII entities and NCII sector leads"
     },
     {
@@ -75,7 +75,7 @@
       "effectiveDate": "2024-09-15",
       "subject": "Professional conduct standards, reporting obligations, and operational requirements for licensed cyber security service providers",
       "filePath": "supplements/directives/directive-service-provider-obligations.json",
-      "status": "in-force",
+      "status": "indicative",
       "applicableTo": "All licensed cyber security service providers under Part V of the Act"
     },
     {
@@ -88,7 +88,7 @@
       "effectiveDate": "2024-10-01",
       "subject": "Guidance to NCII sector leads on developing, structuring, and maintaining sector-specific codes of practice for cyber security",
       "filePath": "supplements/directives/directive-cop-development.json",
-      "status": "in-force",
+      "status": "indicative",
       "applicableTo": "All NCII sector leads"
     },
     {
@@ -101,7 +101,7 @@
       "effectiveDate": "2024-10-01",
       "subject": "Coordinated vulnerability disclosure framework for NCII entities, including responsible disclosure timelines, researcher engagement protocols, and remediation requirements",
       "filePath": "supplements/directives/directive-vulnerability-disclosure.json",
-      "status": "in-force",
+      "status": "indicative",
       "applicableTo": "All NCII entities"
     },
     {
@@ -114,7 +114,7 @@
       "effectiveDate": "2024-10-01",
       "subject": "Threat intelligence sharing formats, platforms, classification levels, and sharing protocols between NCII entities, sector leads, and NACSA",
       "filePath": "supplements/directives/directive-threat-intelligence.json",
-      "status": "in-force",
+      "status": "indicative",
       "applicableTo": "All NCII entities and NCII sector leads"
     },
     {
@@ -127,7 +127,7 @@
       "effectiveDate": "2024-09-15",
       "subject": "Framework for categorizing NCII assets by criticality, impact level, and dependency relationships",
       "filePath": "supplements/directives/directive-ncii-asset-categorization.json",
-      "status": "in-force",
+      "status": "indicative",
       "applicableTo": "All NCII entities"
     }
   ]

@@ -98,21 +98,21 @@
           "id": "ws-cop-4.1",
           "requirement": "Cyber security incidents affecting water treatment or distribution NCII shall be reported to NACSA, SPAN, and the Ministry of Health within four hours of detection, with immediate escalation if there is any indication that water quality may have been compromised or that service disruption affects healthcare facilities or other dependent NCII.",
           "rationale": "Water system cyber incidents have potential public health consequences. Rapid multi-agency reporting enables coordinated response including water quality testing, public health advisories, and protection of dependent critical infrastructure such as hospitals.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "SPAN Incident Reporting Standards; MOH Water Quality Incident Response; ISO 27035"
         },
         {
           "id": "ws-cop-4.2",
           "requirement": "The NCII entity shall maintain a pre-defined communication protocol for public notification of water service disruptions caused by cyber incidents, coordinated with SPAN and local authorities, ensuring clear and timely information to affected populations.",
           "rationale": "Public trust in water safety is paramount. Coordinated communication protocols ensure that populations are informed of service disruptions and any precautionary measures without causing unnecessary panic or inconsistent messaging from multiple agencies.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "SPAN Customer Communication Standards; Arahan MKN Crisis Communication"
         },
         {
           "id": "ws-cop-4.3",
           "requirement": "The NCII entity shall conduct annual cyber incident response exercises that simulate attacks on water treatment SCADA systems, with participation from operations, IT security, public health, and emergency management functions.",
           "rationale": "Cross-functional exercises ensure that response procedures work when cyber incidents on water NCII have operational, public health, and communication dimensions that require coordinated action across traditionally separate teams.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "SPAN Emergency Response Standards; ISO 22301; ISO 27035"
         }
       ]

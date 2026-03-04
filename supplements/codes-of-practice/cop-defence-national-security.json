@@ -77,7 +77,7 @@
           "id": "dns-cop-3.1",
           "requirement": "The NCII entity shall operate or have access to a dedicated Defence Cyber Operations Centre (DCOC) providing 24/7 monitoring, threat hunting, and incident response capability for all defence NCII, staffed by security-cleared personnel with military cyber operations training.",
           "rationale": "Defence NCII is subject to persistent targeting by nation-state actors. Dedicated cyber operations capability with cleared military personnel ensures that detection and response activities maintain the security standards required for classified environments.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "Malaysian Armed Forces Cyber Command; NATO CCDCOE"
         },
         {
@@ -126,14 +126,14 @@
           "id": "dns-cop-5.1",
           "requirement": "Cyber security incidents on defence NCII shall be reported to the Defence Cyber Operations Centre immediately upon detection, with escalation to NACSA and the National Security Council within two hours if the incident involves suspected nation-state activity, data exfiltration of classified material, or compromise of weapons systems or command and control infrastructure.",
           "rationale": "Attacks on defence NCII may constitute acts of cyber warfare or espionage requiring national-level response. Immediate internal reporting with rapid escalation ensures that national security decision-makers are informed of threats with strategic implications.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "Arahan MKN; Malaysian Armed Forces Standing Orders"
         },
         {
           "id": "dns-cop-5.2",
           "requirement": "Incident response and forensic investigation on defence NCII shall be conducted by security-cleared personnel using accredited tools and procedures, with all forensic evidence handled in accordance with chain-of-custody requirements and national security classification protocols.",
           "rationale": "Forensic investigation of defence NCII may uncover classified information and intelligence about adversary capabilities. Security-cleared investigators using accredited procedures ensure that evidence integrity and national security are maintained throughout the investigation.",
-          "relatedActSection": "s23",
+          "relatedActSection": "s26",
           "relatedFramework": "ISO 27037; Official Secrets Act 1972; NIST SP 800-86"
         },
         {
