@@ -61,5 +61,6 @@
       "explanation": "Receiving threat intelligence is only useful if entities actually act on it. This provision mandates that entities integrate TISP feeds into their security tools, create detection rules from shared IOCs, and report on how effectively they are using the intelligence. Annual exercises test the threat intelligence consumption chain from receipt to detection, ensuring it works under pressure.",
       "relatedActSection": "s18"
     }
-  ]
+  ],
+  "notes": "This content is indicative and does not reproduce the official directive text. Specific figures (e.g. timelines, thresholds, scoring criteria) are examples reflecting common regulatory practice and may differ from the actual CE directive. Always refer to the official NACSA-issued directive for authoritative requirements."
 }

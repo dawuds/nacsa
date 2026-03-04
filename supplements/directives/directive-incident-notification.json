@@ -62,5 +62,6 @@
       "explanation": "Entities must log all incidents, not just those that trigger the notification obligation. This creates a complete incident history that auditors and NACSA can review to assess the entity's security posture and incident management maturity. The 7-year retention period ensures historical data is available for trend analysis and investigations.",
       "relatedActSection": "s26"
     }
-  ]
+  ],
+  "notes": "This content is indicative and does not reproduce the official directive text. Specific figures (e.g. timelines, thresholds, scoring criteria) are examples reflecting common regulatory practice and may differ from the actual CE directive. Always refer to the official NACSA-issued directive for authoritative requirements."
 }

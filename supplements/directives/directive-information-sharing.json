@@ -22,7 +22,7 @@
     {
       "id": "info-share-2",
       "title": "Traffic Light Protocol adoption",
-      "requirement": "All cyber security information shared under this directive shall be classified using the Traffic Light Protocol (TLP) version 2.0 as published by FIRST (Forum of Incident Response and Security Teams). The following classifications shall apply: (a) TLP:RED — for information restricted to specific named recipients only, not to be shared further; (b) TLP:AMBER+STRICT — for information limited to the recipient organization only; (c) TLP:AMBER — for information shareable within the recipient's sector community on a need-to-know basis; (d) TLP:GREEN — for information shareable within the NCII community but not publicly; and (e) TLP:CLEAR — for information with no sharing restrictions. Where information is received from the Chief Executive under section 27, the TLP classification assigned by NACSA shall be observed by all recipients.",
+      "requirement": "All cyber security information shared under this directive shall be classified using the Traffic Light Protocol (TLP) version 2.0 as published by FIRST (Forum of Incident Response and Security Teams). The following classifications shall apply: (a) TLP:RED \u2014 for information restricted to specific named recipients only, not to be shared further; (b) TLP:AMBER+STRICT \u2014 for information limited to the recipient organization only; (c) TLP:AMBER \u2014 for information shareable within the recipient's sector community on a need-to-know basis; (d) TLP:GREEN \u2014 for information shareable within the NCII community but not publicly; and (e) TLP:CLEAR \u2014 for information with no sharing restrictions. Where information is received from the Chief Executive under section 27, the TLP classification assigned by NACSA shall be observed by all recipients.",
       "explanation": "Adopts the internationally recognized TLP framework to control how shared information can be further distributed. This gives entities confidence that sensitive threat data they share will not be inappropriately disseminated. NACSA sets the TLP level when it distributes information, ensuring consistent handling across all recipients.",
       "relatedActSection": "s25"
     },
@@ -54,5 +54,6 @@
       "explanation": "A major barrier to information sharing is fear of legal liability. This provision creates a safe harbor for entities that share threat information in good faith through proper channels. Entities cannot be sued for sharing IOCs or threat data that help protect others, unless they act maliciously or share irrelevant personal or commercial data.",
       "relatedActSection": "s25"
     }
-  ]
+  ],
+  "notes": "This content is indicative and does not reproduce the official directive text. Specific figures (e.g. timelines, thresholds, scoring criteria) are examples reflecting common regulatory practice and may differ from the actual CE directive. Always refer to the official NACSA-issued directive for authoritative requirements."
 }

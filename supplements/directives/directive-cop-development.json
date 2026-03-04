@@ -43,7 +43,7 @@
     {
       "id": "cop-dev-5",
       "title": "Tiered compliance approach",
-      "requirement": "Each CoP shall adopt a tiered compliance approach that distinguishes between: (a) Tier 1 (Baseline) — mandatory minimum controls applicable to all NCII entities in the sector regardless of size or criticality; (b) Tier 2 (Enhanced) — additional controls applicable to NCII entities whose infrastructure is classified as High criticality under the NCII Asset Categorization directive; and (c) Tier 3 (Advanced) — the most stringent controls applicable to NCII entities whose infrastructure is classified as Critical under the NCII Asset Categorization directive. The tiered approach shall ensure that the compliance burden is proportionate to the criticality of the entity's national critical information infrastructure and the potential impact of its compromise.",
+      "requirement": "Each CoP shall adopt a tiered compliance approach that distinguishes between: (a) Tier 1 (Baseline) \u2014 mandatory minimum controls applicable to all NCII entities in the sector regardless of size or criticality; (b) Tier 2 (Enhanced) \u2014 additional controls applicable to NCII entities whose infrastructure is classified as High criticality under the NCII Asset Categorization directive; and (c) Tier 3 (Advanced) \u2014 the most stringent controls applicable to NCII entities whose infrastructure is classified as Critical under the NCII Asset Categorization directive. The tiered approach shall ensure that the compliance burden is proportionate to the criticality of the entity's national critical information infrastructure and the potential impact of its compromise.",
       "explanation": "Not all NCII entities face the same risk or have the same resources. The three-tier structure ensures baseline security across the board while imposing progressively stricter requirements on entities operating the most critical infrastructure. This proportionality principle prevents over-burdening smaller entities while ensuring the most critical systems receive the highest protection.",
       "relatedActSection": "s22"
     },
@@ -54,5 +54,6 @@
       "explanation": "CoPs must remain current. The 24-month review cycle keeps standards aligned with the evolving threat landscape. Event-triggered reviews ensure CoPs are updated promptly when significant incidents or new threats reveal gaps. Maintaining the consultation process for updates ensures continued stakeholder input and prevents ad hoc changes without sector engagement.",
       "relatedActSection": "s22"
     }
-  ]
+  ],
+  "notes": "This content is indicative and does not reproduce the official directive text. Specific figures (e.g. timelines, thresholds, scoring criteria) are examples reflecting common regulatory practice and may differ from the actual CE directive. Always refer to the official NACSA-issued directive for authoritative requirements."
 }
