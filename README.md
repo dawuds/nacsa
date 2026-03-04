@@ -4,6 +4,16 @@ Interactive structured compliance database for Malaysia's **Cyber Security Act 2
 
 > **Disclaimer**: This is an indicative/educational resource. It does not constitute legal advice. Always refer to the official gazette text and seek professional counsel for compliance decisions.
 
+> **⚠ Data Reliability Notice — Read Before Using for Compliance Purposes**
+>
+> This database contains two categories of data with materially different reliability:
+>
+> **Verified data** (provisions, penalties, sector definitions): Derived from Act 854 (gazetted 26 June 2024) and the four subsidiary regulations P.U.(A) 291–294/2024. Section numbers, penalty amounts, and statutory thresholds in these files are cross-referenced against the official gazette text. Specific penalty figures or section references flagged with `verificationStatus` fields require further gazette verification before being relied upon.
+>
+> **Constructed-indicative data** (Chief Executive Directives and Codes of Practice in `supplements/directives/` and `supplements/codes-of-practice/`): These instruments are constructed representations of what such instruments might contain based on the powers in Act 854. They have **not** been verified against any officially published gazette or NACSA instrument. Specific figures, thresholds, timelines, and procedural requirements within these files **must not** be relied upon for compliance without independent verification against official NACSA publications. All files in these directories carry `"sourceType": "constructed-indicative"` and a `verificationStatus` warning.
+>
+> Where conflicts exist between a constructed directive and a verified regulation, the regulation prevails. Known conflicts are documented in `verificationStatus` and `auditNote` fields within the affected files.
+
 ## Live Site
 
 **[Browse the Explorer →](https://dawuds.github.io/nacsa/)**
@@ -14,7 +24,7 @@ The Cyber Security Act 2024 (Act 854) was gazetted on 26 June 2024 and came into
 
 ### Key Features
 - **11 NCII Sectors**: Government, Banking & Finance, Transport, Defence & National Security, ICT, Healthcare, Water & Sewerage, Energy, Agriculture/Plantation/Commodity/Food, Science/Technology/Innovation, Education
-- **6-hour incident notification** window for reportable cyber security incidents
+- **6-hour incident notification** window for cyber security incidents with **significant impact** (as defined in P.U.(A) 291/2024, reg 3); not all incidents trigger the 6-hour obligation
 - **Mandatory risk assessments** and **cyber security audits** for NCII entities
 - **Licensing regime** for cybersecurity service providers (5 service classes)
 - **Body corporate liability** with 10x fine multiplier (s52)

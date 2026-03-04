@@ -8,6 +8,8 @@
   "gazetteDate": null,
   "effectiveDate": null,
   "status": "draft",
+  "sourceType": "constructed-indicative",
+  "verificationStatus": "not-verified-against-gazette — this instrument is a constructed representation of what such a code of practice might contain; it has not been verified against any officially published gazette instrument",
   "version": "0.9-draft",
   "domains": [
     {

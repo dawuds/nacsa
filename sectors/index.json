@@ -47,8 +47,8 @@
         },
         {
           "id": "gov-O5",
-          "obligation": "Notify NACSA of any cyber security incident affecting the NCII within 6 hours of discovery and provide a full incident report within 14 days",
-          "basis": "s26(1)",
+          "obligation": "Where a cyber security incident has or may have a significant impact (as defined in the Notification Regulations, reg 3), notify NACSA within 6 hours of becoming aware. Submit follow-up notifications every 72 hours until NACSA confirms closure in writing. Submit a final incident report within 30 days of full resolution. Separately, maintain a register of ALL detected cyber security incidents regardless of whether they meet the significant impact threshold, and retain records for 7 years.",
+          "basis": "s26(1), s26(2); Cyber Security (Notification of Cyber Security Incident) Regulations 2024 (P.U.(A) 291/2024), reg 4, 5, 6, 9",
           "type": "mandatory"
         }
       ],
@@ -100,7 +100,7 @@
         },
         {
           "id": "bnf-O5",
-          "obligation": "Report cyber security incidents to NACSA within 6 hours and concurrently notify BNM in accordance with existing BNM incident reporting requirements",
+          "obligation": "Where a cyber security incident has or may have a significant impact (as defined in the Notification Regulations, reg 3), notify NACSA within 6 hours and concurrently notify BNM in accordance with BNM incident reporting requirements. Submit follow-up notifications to NACSA every 72 hours until closure confirmed in writing. Submit a final incident report within 30 days of full resolution. Maintain a register of ALL detected incidents regardless of significance threshold, and retain records for 7 years.",
           "basis": "s26(1)",
           "type": "mandatory"
         }
@@ -153,7 +153,7 @@
         },
         {
           "id": "trn-O5",
-          "obligation": "Notify NACSA of cyber security incidents within 6 hours; incidents affecting passenger safety systems must additionally be reported to the relevant transport safety authority immediately",
+          "obligation": "Where a cyber security incident has or may have a significant impact, notify NACSA within 6 hours of becoming aware; incidents affecting passenger safety systems must additionally be reported to the relevant transport safety authority immediately. Submit follow-up notifications to NACSA every 72 hours until closure confirmed in writing. Submit a final incident report within 30 days of full resolution. Maintain a register of ALL detected incidents regardless of significance threshold, and retain records for 7 years.",
           "basis": "s26(1)",
           "type": "mandatory"
         }
@@ -205,7 +205,7 @@
         },
         {
           "id": "dns-O5",
-          "obligation": "Notify NACSA and the National Security Council (MKN) of cyber security incidents affecting defence NCII within 2 hours via secure classified channels",
+          "obligation": "Where a cyber security incident has or may have a significant impact, notify NACSA and the National Security Council (MKN) within 2 hours via secure classified channels (note: the Act requires 6 hours but sector-specific protocols may impose a stricter 2-hour requirement — verify with the Ministry of Defence). Submit follow-up notifications to NACSA every 72 hours until closure confirmed in writing. Submit a final incident report within 30 days of full resolution. Maintain a classified register of ALL detected incidents regardless of significance threshold, and retain records for 7 years.",
           "basis": "s26(1)",
           "type": "mandatory"
         }
@@ -258,7 +258,7 @@
         },
         {
           "id": "ict-O5",
-          "obligation": "Notify NACSA and MyCERT of cyber security incidents within 6 hours; incidents causing widespread service disruption must be reported within 2 hours",
+          "obligation": "Where a cyber security incident has or may have a significant impact, notify NACSA and MyCERT within 6 hours of becoming aware; incidents causing widespread service disruption should be escalated immediately. Submit follow-up notifications to NACSA every 72 hours until closure confirmed in writing. Submit a final incident report within 30 days of full resolution. Maintain a register of ALL detected incidents regardless of significance threshold, and retain records for 7 years.",
           "basis": "s26(1)",
           "type": "mandatory"
         }
@@ -312,7 +312,7 @@
         },
         {
           "id": "hc-O5",
-          "obligation": "Notify NACSA of cyber security incidents within 6 hours; incidents affecting patient safety or clinical systems must trigger immediate activation of clinical continuity procedures",
+          "obligation": "Where a cyber security incident has or may have a significant impact, notify NACSA within 6 hours of becoming aware; incidents affecting patient safety or clinical systems must also trigger immediate activation of clinical continuity procedures. Submit follow-up notifications to NACSA every 72 hours until closure confirmed in writing. Submit a final incident report within 30 days of full resolution. Maintain a register of ALL detected incidents regardless of significance threshold, and retain records for 7 years.",
           "basis": "s26(1)",
           "type": "mandatory"
         }
@@ -364,7 +364,7 @@
         },
         {
           "id": "ws-O5",
-          "obligation": "Notify NACSA of cyber security incidents within 6 hours; incidents that may affect water quality or supply must also be reported to SPAN and the Ministry of Health immediately",
+          "obligation": "Where a cyber security incident has or may have a significant impact, notify NACSA within 6 hours of becoming aware; incidents that may affect water quality or supply must also be reported to SPAN and the Ministry of Health immediately. Submit follow-up notifications to NACSA every 72 hours until closure confirmed in writing. Submit a final incident report within 30 days of full resolution. Maintain a register of ALL detected incidents regardless of significance threshold, and retain records for 7 years.",
           "basis": "s26(1)",
           "type": "mandatory"
         }
@@ -417,7 +417,7 @@
         },
         {
           "id": "eng-O5",
-          "obligation": "Notify NACSA and the Energy Commission of cyber security incidents within 6 hours; incidents affecting grid stability or causing load shedding require immediate notification",
+          "obligation": "Where a cyber security incident has or may have a significant impact, notify NACSA and the Energy Commission within 6 hours of becoming aware; incidents affecting grid stability or causing load shedding require escalation without delay. Submit follow-up notifications to NACSA every 72 hours until closure confirmed in writing. Submit a final incident report within 30 days of full resolution. Maintain a register of ALL detected incidents regardless of significance threshold, and retain records for 7 years.",
           "basis": "s26(1)",
           "type": "mandatory"
         }
@@ -470,7 +470,7 @@
         },
         {
           "id": "agr-O5",
-          "obligation": "Notify NACSA of cyber security incidents within 6 hours; incidents affecting food supply chain integrity must also be reported to the Ministry of Agriculture and Food Security",
+          "obligation": "Where a cyber security incident has or may have a significant impact, notify NACSA within 6 hours of becoming aware; incidents affecting food supply chain integrity must also be reported to the Ministry of Agriculture and Food Security. Submit follow-up notifications to NACSA every 72 hours until closure confirmed in writing. Submit a final incident report within 30 days of full resolution. Maintain a register of ALL detected incidents regardless of significance threshold, and retain records for 7 years.",
           "basis": "s26(1)",
           "type": "mandatory"
         }
@@ -522,7 +522,7 @@
         },
         {
           "id": "sti-O5",
-          "obligation": "Notify NACSA of cyber security incidents within 6 hours; incidents at nuclear or radiological facilities must additionally be reported to AELB (Atomic Energy Licensing Board) immediately",
+          "obligation": "Where a cyber security incident has or may have a significant impact, notify NACSA within 6 hours of becoming aware; incidents at nuclear or radiological facilities must additionally be reported to AELB (Atomic Energy Licensing Board) immediately. Submit follow-up notifications to NACSA every 72 hours until closure confirmed in writing. Submit a final incident report within 30 days of full resolution. Maintain a register of ALL detected incidents regardless of significance threshold, and retain records for 7 years.",
           "basis": "s26(1)",
           "type": "mandatory"
         }
@@ -574,7 +574,7 @@
         },
         {
           "id": "edu-O5",
-          "obligation": "Notify NACSA of cyber security incidents within 6 hours; incidents affecting national examination systems during examination periods must be reported immediately and trigger contingency examination procedures",
+          "obligation": "Where a cyber security incident has or may have a significant impact, notify NACSA within 6 hours of becoming aware; incidents affecting national examination systems during examination periods must also trigger contingency examination procedures immediately. Submit follow-up notifications to NACSA every 72 hours until closure confirmed in writing. Submit a final incident report within 30 days of full resolution. Maintain a register of ALL detected incidents regardless of significance threshold, and retain records for 7 years.",
           "basis": "s26(1)",
           "type": "mandatory"
         }

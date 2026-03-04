@@ -107,7 +107,7 @@
       "directorLiability": true
     },
     "compoundable": true,
-    "notes": "Codes of practice may be issued or approved by the Chief Executive to provide practical guidance on compliance with the Act. Non-compliance may be used as evidence in proceedings but a code of practice does not itself have the force of law unless adopted under this section."
+    "notes": "Codes of practice under s22 are issued by the Chief Executive and have binding legal effect — a licensed entity's non-compliance constitutes a criminal offence under s22(4) with the penalties stated here. The phrase 'does not itself have the force of law' that appeared in earlier versions of this entry was incorrect and has been removed. Section 22 CoPs are mandatory compliance instruments for NCII entities, not merely best-practice guidance."
   },
   {
     "id": "pen-s23-4",
@@ -198,7 +198,8 @@
       "directorLiability": true
     },
     "compoundable": true,
-    "notes": "This is the only offence in Part IV that carries a continuing daily penalty of RM5,000 for each day the offence continues after conviction. The continuing offence provision reflects the critical importance of timely incident notification. Notification must include the nature of the incident, systems affected, and measures taken or proposed."
+    "notes": "This is the only offence in Part IV that carries a continuing daily penalty. NOTE — UNRESOLVED CONFLICT: This entry states RM5,000 daily, but the Cyber Security (Notification of Cyber Security Incident) Regulations 2024 (P.U.(A) 291/2024), regulation 11 states RM10,000 daily for the same offence. These figures cannot both be correct. The official gazette text of the Act (s26 penalty sub-section) and regulation 11 must be verified to determine the correct figure before either amount is relied upon. Additionally, this entry cites s26(3) as the offence provision while regulation 11 cites s26(5) — the correct sub-section also requires gazette verification. Notification must include the nature of the incident, systems affected, and measures taken or proposed.",
+    "verificationStatus": "daily-fine-conflict: RM5,000 here vs RM10,000 in noi-r11 — must verify against gazette; sub-section conflict: s26(3) here vs s26(5) in noi-r11"
   },
   {
     "id": "pen-s26-4",
@@ -348,7 +349,7 @@
     "category": "corporate-liability",
     "bodyCorporate": null,
     "compoundable": false,
-    "notes": "Section 52 is a general provision that applies to all offences under the Act when committed by a body corporate. It establishes two principles: (1) the body corporate faces up to 10x the individual fine; (2) individual directors and officers face personal criminal liability if they consented, connived, or were negligent. This section does not create a standalone offence but modifies penalties for all other offences. The body corporate multiplier is the basis for all bodyCorporate fine calculations in this dataset."
+    "notes": "Section 52 is a general provision that applies to all offences under the Act when committed by a body corporate. It establishes two principles: (1) the body corporate faces up to 10x the individual fine; (2) individual directors and officers face personal criminal liability if they consented, connived, or were negligent. This section does not create a standalone offence but modifies penalties for all other offences. The body corporate multiplier is the basis for all bodyCorporate fine calculations in this dataset. IMPORTANT — NEGLECT STANDARD: The third limb of personal liability ('neglect') does not require proof of intent or awareness. A director or officer may be personally criminally liable simply because a cyber security failing occurred on their watch and they failed to exercise adequate oversight. This has material implications for NEDs (non-executive directors) and board-level governance: board members who do not actively engage with cyber security risk management may be exposed under the neglect limb even if they had no knowledge of the specific contravention. Organisations should ensure that board-level cyber security governance processes and documentation are maintained to demonstrate active oversight."
   },
   {
     "id": "pen-s61",

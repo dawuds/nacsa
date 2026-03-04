@@ -51,7 +51,7 @@
     "sectionNumber": 3,
     "obligationType": "administrative",
     "verbatim": "(1) This Act applies throughout Malaysia.\n(2) This Act applies to any person in respect of any national critical information infrastructure whether located in or outside Malaysia.\n(3) Where any act or omission constituting an offence under this Act is committed outside Malaysia by any person, that person may be dealt with as if the offence had been committed in Malaysia.",
-    "translation": "The Act has nationwide application and extends extraterritorially to any person in relation to NCII, whether the infrastructure is located in or outside Malaysia. Offences committed outside Malaysia can be prosecuted as if committed domestically, giving the Act broad jurisdictional reach to protect Malaysia's critical infrastructure regardless of where threats originate.",
+    "translation": "The Act has nationwide application and extends extraterritorially based on NCII nexus rather than geographic origin of a threat. Section 3(2) applies the Act to any person who has a nexus to Malaysian NCII — the decisive connection is the person's relationship to the NCII, not where the person is located or where an attack originates from. Section 3(3) means that a person who commits an offence against Malaysian NCII from outside Malaysia may be prosecuted in Malaysia as if the offence were committed here. The Act does not apply simply because a cyber threat 'originates from' Malaysia — the trigger is the connection to Malaysian NCII assets.",
     "amendedBy": null,
     "effectiveDate": "2024-08-26",
     "relatedSector": null,

@@ -6,6 +6,9 @@
   "gazetteDate": "2024-08-26",
   "effectiveDate": "2024-08-26",
   "enablingSection": "s26, s60",
+  "sourceType": "official-gazette",
+  "verificationStatus": "penalty-sub-section-unverified-2026-03-04",
+  "auditNote": "Penalty sub-section in noi-r11 references s26(5) while penalties/index.json references s26(3) for the same conduct — exact sub-section requires gazette verification. Daily continuing fine conflict: this regulation states RM10,000 daily; penalties/index.json states RM5,000 daily — must be verified against official text.",
   "subject": "Prescribes incident notification procedures, timelines, and required information for national critical information infrastructure entities reporting cyber security incidents to the Chief Executive of NACSA",
   "status": "in-force",
   "provisions": [
@@ -94,8 +97,9 @@
       "regulationNumber": 11,
       "title": "Penalty for Non-Compliance",
       "requirement": "Any national critical information infrastructure entity that fails to comply with regulation 4, 5, or 6 commits an offence and shall, on conviction, be liable to a fine not exceeding five hundred thousand ringgit or, in the case of a continuing offence, to a further fine not exceeding ten thousand ringgit for every day during which the offence continues after conviction.",
-      "explanation": "Non-compliance with notification requirements carries significant financial penalties. The RM500,000 maximum fine for a single offence and RM10,000 daily continuing penalty create strong incentives for timely compliance. These penalties apply to the entity itself; individual liability for officers of the entity is addressed separately under the parent Act.",
-      "relatedActSection": "s26(5), s56"
+      "explanation": "Non-compliance with notification requirements carries significant financial penalties. The RM500,000 maximum fine for a single offence and a daily continuing fine create strong incentives for timely compliance. CAUTION: Two unresolved conflicts require gazette verification before these figures can be relied upon for compliance purposes. First, the daily continuing fine stated here is RM10,000, but penalties/index.json records RM5,000 for the same offence — these figures cannot both be correct and the official gazette text must be checked. Second, this provision cites s26(5) as the enabling sub-section for this penalty but penalties/index.json cites s26(3) for notification-related offences — the correct sub-section reference must be verified. These penalties apply to the entity itself; individual liability for officers of the entity is addressed separately under the Act.",
+      "relatedActSection": "s26 [sub-section reference unverified: this provision cites s26(5); penalties/index.json cites s26(3) for notification offences — verify against gazette], s60",
+      "verificationStatus": "penalty-figures-unverified: daily continuing fine stated as RM10,000 here but RM5,000 in penalties/index.json — must verify against official gazette; enabling sub-section s26(5) vs s26(3) also requires verification"
     }
   ]
 }
