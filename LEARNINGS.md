@@ -95,3 +95,5 @@ For any future AI-generated compliance data in this repo:
 - [ ] Validate closed enumerations: if the Act says "10 sectors," assert exactly 10 in data
 - [ ] Add contradiction detection: `sourceType: "constructed"` must not have `status: "in-force"`
 - [ ] Standardize ID formats across all files — validate all lookups resolve to non-empty results
+- [ ] Never symlink to files outside the repo — GitHub Pages (Jekyll) fails on broken symlinks with `No such file or directory @ rb_check_realpath_internal`
+- [ ] Keep shared tooling (e.g., cross-repo validation scripts) in a parent directory or separate repo, not symlinked into each sub-repo
