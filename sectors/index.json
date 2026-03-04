@@ -116,7 +116,7 @@
     {
       "id": "transport",
       "sectorNumber": 3,
-      "name": "Transport",
+      "name": "Transportation",
       "sectorLead": "Ministry of Transport",
       "description": "Covers aviation, maritime, rail, and road transport systems whose disruption could imperil passenger safety, disrupt supply chains, and compromise border security. Malaysia's position as a major maritime and aviation hub in Southeast Asia makes transport NCII among the highest-priority designations.",
       "nciiExamples": [
@@ -220,7 +220,7 @@
     {
       "id": "information-and-communications-technology",
       "sectorNumber": 5,
-      "name": "Information and Communications Technology",
+      "name": "Information, Communication and Digital",
       "sectorLead": "MCMC (Malaysian Communications and Multimedia Commission)",
       "description": "Covers telecommunications networks, internet infrastructure, data centres, DNS infrastructure, and digital service providers that form the digital backbone of Malaysia. This sector is foundational — disruption cascades into every other NCII sector. The JENDELA (Jalinan Digital Negara) national digital connectivity plan increases the surface area and criticality of ICT NCII.",
       "nciiExamples": [
@@ -274,7 +274,7 @@
     {
       "id": "healthcare",
       "sectorNumber": 6,
-      "name": "Healthcare",
+      "name": "Healthcare Services",
       "sectorLead": "Ministry of Health",
       "description": "Covers public and private hospital information systems, national health databases, pharmaceutical supply chain systems, and telehealth infrastructure. The COVID-19 pandemic underscored the critical dependence on digital health systems, and ransomware attacks on healthcare globally have demonstrated the life-safety implications of cyber incidents in this sector.",
       "nciiExamples": [
@@ -327,7 +327,7 @@
     {
       "id": "water-and-sewerage",
       "sectorNumber": 7,
-      "name": "Water and Sewerage",
+      "name": "Water, Sewerage and Waste Management",
       "sectorLead": "SPAN (National Water Services Commission / Suruhanjaya Perkhidmatan Air Negara)",
       "description": "Encompasses water treatment plants, distribution networks, dam management systems, sewerage treatment facilities, and their associated SCADA/ICS systems. Water is a fundamental necessity, and cyber attacks on water treatment systems can have immediate public health consequences through contamination or supply disruption.",
       "nciiExamples": [
@@ -483,8 +483,62 @@
       "copStatus": "pending"
     },
     {
-      "id": "science-technology-and-innovation",
+      "id": "trade-industry-and-economy",
       "sectorNumber": 10,
+      "name": "Trade, Industry and Economy",
+      "sectorLead": "Ministry of Investment, Trade and Industry (MITI)",
+      "description": "Covers industrial production systems, trade facilitation platforms, customs and import/export clearance systems, investment promotion infrastructure, and economic statistics platforms. Disruption to trade and industrial systems can have cascading effects on Malaysia's export-driven economy, supply chains, and the nation's position as a major global trading hub.",
+      "nciiExamples": [
+        "uCustoms (Customs Management System) — national import/export and trade facilitation platform operated by Royal Malaysian Customs Department",
+        "MITI investment licensing and industrial coordination system",
+        "Malaysia External Trade Development Corporation (MATRADE) trade promotion and export portal",
+        "DOSM (Department of Statistics Malaysia) national economic statistics data collection and dissemination platform",
+        "SME Corporation Malaysia SME development and financing programme management system",
+        "Malaysia Digital Economy Corporation (MDEC) digital economy initiative management systems"
+      ],
+      "obligations": [
+        {
+          "id": "tie-O1",
+          "obligation": "Accept NCII designation and identify a responsible senior officer accountable for cyber security governance of designated trade and industrial information systems",
+          "basis": "s17(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "tie-O2",
+          "obligation": "Implement cyber security measures to protect the integrity of trade data, customs declarations, economic statistics, and industrial licensing systems against manipulation or unauthorised access",
+          "basis": "s18(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "tie-O3",
+          "obligation": "Conduct annual cyber security risk assessments covering cross-border data flows, trade portal availability, and supply chain partner connectivity risks",
+          "basis": "s21(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "tie-O4",
+          "obligation": "Undergo biennial cyber security audit by a NACSA-licensed auditor covering all designated trade and industrial information systems",
+          "basis": "s23(1)",
+          "type": "mandatory"
+        },
+        {
+          "id": "tie-O5",
+          "obligation": "Where a cyber security incident has or may have a significant impact, notify NACSA within 6 hours of becoming aware; incidents affecting customs clearance or trade facilitation systems must also be reported to the Royal Malaysian Customs Department immediately. Submit follow-up notifications to NACSA every 72 hours until closure confirmed in writing. Submit a final incident report within 30 days of full resolution. Maintain a register of ALL detected incidents regardless of significance threshold, and retain records for 7 years.",
+          "basis": "s26(1)",
+          "type": "mandatory"
+        }
+      ],
+      "regulatoryOverlaps": [
+        "Customs Act 1967 (Act 235) — customs procedure and trade compliance requirements",
+        "Industrial Co-ordination Act 1975 (Act 156) — manufacturing and industrial licensing",
+        "Strategic Trade Act 2010 (Act 708) — controls on strategic goods and technology exports",
+        "Statistics Act 1965 (Act 321) — confidentiality and integrity of national economic statistics"
+      ],
+      "copStatus": "pending"
+    },
+    {
+      "id": "science-technology-and-innovation",
+      "sectorNumber": 11,
       "name": "Science, Technology and Innovation",
       "sectorLead": "MOSTI (Ministry of Science, Technology and Innovation)",
       "description": "Covers national research institutions, space agency systems, nuclear facilities, biotechnology research infrastructure, and innovation ecosystem platforms. This sector protects Malaysia's intellectual property, sensitive research data, and emerging technology capabilities, including the Malaysian Space Agency (MYSA) and the Malaysian Nuclear Agency.",
@@ -531,58 +585,6 @@
         "Atomic Energy Licensing Act 1984 (Act 304) — nuclear facility safety and security requirements",
         "Strategic Trade Act 2010 (Act 708) — controls on dual-use technology and sensitive research materials",
         "Official Secrets Act 1972 (Act 88) — for classified government-funded research"
-      ],
-      "copStatus": "pending"
-    },
-    {
-      "id": "education",
-      "sectorNumber": 11,
-      "name": "Education",
-      "sectorLead": "Ministry of Education",
-      "description": "Covers public and private education institution management systems, national examination platforms, student data repositories, e-learning infrastructure, and education credential verification systems. The sector holds sensitive personal data on millions of students and educators, and disruption to examination systems can have nationwide impact on academic progression.",
-      "nciiExamples": [
-        "APDM (Aplikasi Pangkalan Data Murid) national student database for primary and secondary education",
-        "SPM/STPM (national examination) digital examination management and results processing system operated by the Malaysian Examinations Syndicate (LPM)",
-        "DELIMa (Digital Educational Learning Initiative Malaysia) national e-learning platform",
-        "MOHE SETARA (university rating) and MyMoheS higher education management information system",
-        "UPUOnline (centralised public university admissions and placement system)"
-      ],
-      "obligations": [
-        {
-          "id": "edu-O1",
-          "obligation": "Accept NCII designation and ensure institutional leadership acknowledges accountability for cyber security of designated education information systems",
-          "basis": "s17(1)",
-          "type": "mandatory"
-        },
-        {
-          "id": "edu-O2",
-          "obligation": "Implement cyber security measures to protect student personal data, ensure integrity of examination results, and maintain availability of e-learning platforms during critical academic periods",
-          "basis": "s18(1)",
-          "type": "mandatory"
-        },
-        {
-          "id": "edu-O3",
-          "obligation": "Conduct annual cyber security risk assessments covering student data privacy risks, examination system integrity, and vulnerability of distributed campus networks",
-          "basis": "s21(1)",
-          "type": "mandatory"
-        },
-        {
-          "id": "edu-O4",
-          "obligation": "Undergo biennial cyber security audit by a NACSA-licensed auditor, with priority on examination and admissions systems",
-          "basis": "s23(1)",
-          "type": "mandatory"
-        },
-        {
-          "id": "edu-O5",
-          "obligation": "Where a cyber security incident has or may have a significant impact, notify NACSA within 6 hours of becoming aware; incidents affecting national examination systems during examination periods must also trigger contingency examination procedures immediately. Submit follow-up notifications to NACSA every 72 hours until closure confirmed in writing. Submit a final incident report within 30 days of full resolution. Maintain a register of ALL detected incidents regardless of significance threshold, and retain records for 7 years.",
-          "basis": "s26(1)",
-          "type": "mandatory"
-        }
-      ],
-      "regulatoryOverlaps": [
-        "Personal Data Protection Act 2010 (PDPA) — processing of student and minor personal data",
-        "Education Act 1996 (Act 550) — institutional governance and regulatory compliance",
-        "Malaysian Qualifications Agency Act 2007 (Act 679) — credential integrity and accreditation standards"
       ],
       "copStatus": "pending"
     }

@@ -321,6 +321,10 @@ body {
 .badge-source-directive { background: #FEF3C7; color: #92400E; }
 .badge-source-code-of-practice { background: #EDE9FE; color: #5B21B6; }
 
+/* AI / Example inline badges */
+.badge-ai { background: #EFF6FF; color: #1D4ED8; font-size: 0.6rem; font-weight: 600; font-style: italic; padding: 1px 6px; border-radius: 999px; margin-left: 6px; cursor: help; vertical-align: middle; }
+.badge-example { background: #F0FDF4; color: #15803D; font-size: 0.6rem; font-weight: 600; font-style: italic; padding: 1px 6px; border-radius: 999px; margin-left: 6px; cursor: help; vertical-align: middle; }
+
 /* ===== PAGE TITLE ===== */
 .page-title {
   font-size: 1.5rem;

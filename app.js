@@ -231,7 +231,7 @@ function renderSection(el, sectionId) {
     <div class="tab-panel active" id="tab-overview">
       <div class="block-label">Verbatim Text</div>
       <div class="verbatim-block">${esc(s.verbatim)}</div>
-      <div class="block-label">Plain-Language Translation</div>
+      <div class="block-label">Plain-Language Translation <span class="badge badge-ai" title="AI-generated interpretation — verify against official gazette text and qualified legal counsel">AI Generated</span></div>
       <div class="translation-block">${esc(s.translation)}</div>
       ${s.keywords && s.keywords.length ? `
         <div style="margin-top:1rem;">
@@ -322,7 +322,7 @@ function renderRequirementsPanel(req) {
           <div class="req-column">
             <div class="req-column-header ${col}">${colLabels[col]}</div>
             <div class="req-column-body">
-              <p style="font-size:0.8125rem;color:var(--text-secondary);margin-bottom:0.75rem;">${esc(data.summary)}</p>
+              <p style="font-size:0.8125rem;color:var(--text-secondary);margin-bottom:0.75rem;">${esc(data.summary)}<span class="badge badge-ai" title="AI-generated interpretation — verify against official gazette text and qualified legal counsel">AI Generated</span></p>
               ${(data.requirements || []).map(r => `
                 <div class="req-item">
                   <div style="display:flex;align-items:center;gap:0.375rem;flex-wrap:wrap;">
@@ -351,7 +351,7 @@ function renderEvidencePanel(ev) {
   return `
     ${ev.auditorFocus ? `
       <div class="auditor-focus">
-        <div class="block-label">NACSA Assessor Focus</div>
+        <div class="block-label">NACSA Assessor Focus <span class="badge badge-ai" title="AI-generated interpretation — verify against official gazette text and qualified legal counsel">AI Generated</span></div>
         ${esc(ev.auditorFocus)}
       </div>
     ` : ''}
@@ -364,11 +364,11 @@ function renderEvidencePanel(ev) {
         </div>
         <div class="card-body">${esc(item.description || '')}</div>
         ${item.whatGoodLooksLike && item.whatGoodLooksLike.length ? `
-          <div class="block-label" style="margin-top:0.75rem;">What Good Looks Like</div>
+          <div class="block-label" style="margin-top:0.75rem;">What Good Looks Like <span class="badge badge-example" title="AI-generated illustrative examples — not exhaustive or prescriptive">Example</span></div>
           <ul class="good-list">${item.whatGoodLooksLike.map(g => `<li><span>${esc(g)}</span></li>`).join('')}</ul>
         ` : ''}
         ${item.commonGaps && item.commonGaps.length ? `
-          <div class="block-label" style="margin-top:0.5rem;">Common Gaps</div>
+          <div class="block-label" style="margin-top:0.5rem;">Common Gaps <span class="badge badge-example" title="AI-generated illustrative examples — not exhaustive or prescriptive">Example</span></div>
           <ul class="gap-list">${item.commonGaps.map(g => `<li><span>${esc(g)}</span></li>`).join('')}</ul>
         ` : ''}
         ${item.suggestedSources && item.suggestedSources.length ? `
@@ -379,7 +379,7 @@ function renderEvidencePanel(ev) {
     `).join('')}
     ${ev.auditTips && ev.auditTips.length ? `
       <div class="card">
-        <div class="card-title">Audit Preparation Tips</div>
+        <div class="card-title">Audit Preparation Tips <span class="badge badge-ai" title="AI-generated interpretation — verify against official gazette text and qualified legal counsel">AI Generated</span></div>
         <ul style="padding-left:1.25rem;font-size:0.8125rem;color:var(--text-secondary);">
           ${ev.auditTips.map(t => `<li style="margin-bottom:0.25rem;">${esc(t)}</li>`).join('')}
         </ul>
