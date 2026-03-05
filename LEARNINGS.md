@@ -112,9 +112,23 @@ Section-based joins (via provision maps) explode on broad provisions. In the PDP
 - **Evidence sub-accordions collapsed by default:** "What Good Looks Like" and "Common Gaps" are verbose — show on demand.
 - **Checkbox-styled artifact contents:** Makes artifact cards feel like an auditor's checklist.
 
+### Current State (NACSA)
+
+The Audit Package pattern is **documented but not yet implemented** in this repo:
+
+- `artifacts/inventory.json`: 120 artifacts exist but use `sections[]` join — **`controlSlugs[]` not yet added**
+- `evidence/index.json`: 26 evidence items across 9 sections — **`artifactSlugs[]` not yet added**
+- `controls/library.json`: 53 controls across 15 domains — structure ready
+- `app.js`: No Audit Package rendering code yet
+
+**Known issues to fix before implementing:**
+- Fabricated "Education" sector (11th) still present in `sectors/index.json` — Act 854 defines exactly 10 NCII sectors
+- 48 of 51 directive cross-references in controls point to non-existent files
+- Evidence covers only 9 of the sections referenced by controls
+
 ### Reference Implementation
 
-See `dawuds/pdpa-my` repo — `app.js` lines 664-870 (`renderControlDetail()`) and `style.css` Audit Package section. Pattern is designed for copy-adapt across all compliance repos.
+See `dawuds/pdpa-my` repo — `app.js` `renderControlDetail()` and `style.css` Audit Package section. Pattern is designed for copy-adapt across all compliance repos.
 
 ---
 
