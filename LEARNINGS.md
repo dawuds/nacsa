@@ -119,7 +119,7 @@ The Audit Package pattern is **documented with data linkages in place**:
 - `artifacts/inventory.json`: 120 artifacts with `controlSlugs[]` added — median 2 slugs per artifact, curated semantic mappings
 - `evidence/index.json`: 26 evidence items across 9 sections — `artifactSlugs[]` added, 1-2 artifact links per item
 - `controls/library.json`: 53 controls across 15 domains — broken directive references cleaned (100 removed, 5 valid kept)
-- `app.js`: No Audit Package rendering code yet
+- `app.js`: Audit Package UI implemented in `renderControlDetail()` with accordion-based artifact cards and evidence checklist
 
 **Fixed issues:**
 - Fabricated "Education" sector removed from `sectors/index.json`, `cross-references/ncii-sector-mappings.json`, `supplements/codes-of-practice/index.json`; `cop-education.json` deleted; `totalSectors` corrected to 11; README CoP count updated from 12 to 11
