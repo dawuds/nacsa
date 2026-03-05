@@ -71,6 +71,13 @@ nacsa/
 │   ├── regulations/         # 4 subsidiary regulations (P.U.(A) 219-222/2024)
 │   ├── directives/          # 10 Chief Executive directives
 │   └── codes-of-practice/   # 11 sector-specific codes of practice
+├── templates/               # 121 document templates across 6 categories
+│   ├── policies/            # 20 policy templates
+│   ├── procedures/          # 20 procedure templates
+│   ├── standards/           # 20 standards templates
+│   ├── registers/           # 20 register templates
+│   ├── reports/             # 20 report templates
+│   └── logs/                # 21 log templates
 ├── index.html               # Static browsing site
 ├── style.css
 └── app.js
@@ -146,7 +153,7 @@ The Risk Management section provides NCII operators with a structured risk asses
 Issued under s15, covering NCII registration, risk assessment methodology, audit standards, incident notification, information sharing, service provider obligations, CoP development, vulnerability disclosure, threat intelligence sharing, and NCII asset categorization.
 
 ### Codes of Practice (11)
-Sector-specific CoPs under s22, with varying status: indicative (Banking & Finance, Trade/Industry/Economy), template issued (Government, ICT, Energy), draft (Transport, Defence, Healthcare, Water & Sewerage), pending (Agriculture, Science & Technology).
+Sector-specific CoPs under s22, with varying status: published (Banking & Finance), template issued (Government, ICT, Energy), draft (Transport, Defence, Healthcare, Water & Sewerage), pending (Trade/Industry/Economy, Agriculture, Science & Technology).
 
 ## License
 

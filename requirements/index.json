@@ -34,8 +34,45 @@
       ]
     },
     "technical": {
-      "summary": "No technical requirements for this governance provision.",
-      "requirements": []
+      "summary": "Technical controls to support disclosure-of-interest governance and auditability.",
+      "requirements": [
+        {
+          "id": "s14-T1",
+          "requirement": "Implement third-party security assessment framework with standardized questionnaires",
+          "rationale": "Systematic assessment ensures consistent evaluation of external party interests and security posture",
+          "owner": "IT Governance Lead",
+          "frequency": "Per-engagement",
+          "priority": "Medium",
+          "source": "s14",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s14-T2",
+          "requirement": "Deploy continuous monitoring of third-party network connections and data flows",
+          "rationale": "Real-time visibility into external party access supports governance oversight and conflict detection",
+          "owner": "Network Security Team",
+          "frequency": "Continuous",
+          "priority": "Medium",
+          "source": "s14",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s14-T3",
+          "requirement": "Maintain automated vendor risk scoring system with real-time threat intelligence feeds",
+          "rationale": "Automated scoring provides objective, data-driven input for disclosure and recusal decisions",
+          "owner": "CISO / Procurement",
+          "frequency": "Continuous",
+          "priority": "Medium",
+          "source": "s14",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
     },
     "governance": {
       "summary": "Conflict-of-interest management framework for the national cyber security governance body.",
@@ -1401,8 +1438,45 @@
       ]
     },
     "technical": {
-      "summary": "No direct technical requirements; s52 is a liability provision.",
-      "requirements": []
+      "summary": "Technical controls enabling board-level visibility and due diligence evidence for corporate officer liability.",
+      "requirements": [
+        {
+          "id": "s52-T1",
+          "requirement": "Implement board-level cybersecurity dashboard with real-time compliance metrics",
+          "rationale": "Directors need continuous visibility into NCII compliance posture to demonstrate active oversight and due diligence",
+          "owner": "CISO",
+          "frequency": "Continuous (dashboard), Quarterly (board review)",
+          "priority": "Critical",
+          "source": "s52",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s52-T2",
+          "requirement": "Deploy automated compliance monitoring for all NCII systems with alerting",
+          "rationale": "Automated monitoring provides evidence that the body corporate maintained continuous compliance oversight, supporting due diligence defence",
+          "owner": "IT Operations / CISO",
+          "frequency": "Continuous",
+          "priority": "High",
+          "source": "s52",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s52-T3",
+          "requirement": "Maintain audit trail of all corporate officer access to NCII management systems",
+          "rationale": "Demonstrates that officers actively engaged with compliance systems, supporting their due diligence defence under s52",
+          "owner": "IT Security / Identity & Access Management",
+          "frequency": "Continuous",
+          "priority": "High",
+          "source": "s52",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
     },
     "governance": {
       "summary": "Board governance framework to support due diligence defence.",

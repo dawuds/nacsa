@@ -1029,6 +1029,41 @@ body {
   .treatment-grid { grid-template-columns: 1fr; }
 }
 
+/* ===== RISK CHECKLIST & REGISTER ===== */
+.risk-check {
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+.risk-checklist-bar {
+  width: 0%;
+  height: 100%;
+  background: var(--accent);
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+.risk-checklist-count {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  min-width: 3rem;
+}
+.risk-checklist-item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-light);
+  cursor: pointer;
+  align-items: flex-start;
+}
+.risk-register-sort {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+}
+.artifact-item {
+  margin-bottom: 0;
+}
+
 /* ===== PRINT ===== */
 @media print {
   .header, .nav, .header-search, .tabs { display: none; }

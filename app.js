@@ -53,20 +53,27 @@ function parseRoute() {
 
 /* ===== INIT ===== */
 async function init() {
-  const [parts, provisionsArr] = await Promise.all([
-    fetchJSON('provisions/parts.json'),
-    fetchJSON('provisions/index.json'),
-  ]);
-  state.parts = parts || [];
-  state.provisions = {};
-  if (provisionsArr) {
-    for (const s of provisionsArr) state.provisions[s.id] = s;
+  try {
+    const [parts, provisionsArr, sectorsData] = await Promise.all([
+      fetchJSON('provisions/parts.json'),
+      fetchJSON('provisions/index.json'),
+      fetchJSON('sectors/index.json'),
+    ]);
+    state.parts = parts || [];
+    state.provisions = {};
+    if (provisionsArr) {
+      for (const s of provisionsArr) state.provisions[s.id] = s;
+    }
+    state.sectors = (sectorsData && sectorsData.sectors) || (Array.isArray(sectorsData) ? sectorsData : []);
+    window.addEventListener('hashchange', render);
+    document.addEventListener('click', handleClick);
+    document.addEventListener('change', handleChange);
+    document.getElementById('search-input').addEventListener('input', debounce(handleSearch, 300));
+    render();
+  } catch (err) {
+    console.error('Init failed:', err);
+    document.getElementById('app').innerHTML = '<div class="error-state"><h2>Failed to load data</h2><p>Please try refreshing the page.</p></div>';
   }
-  window.addEventListener('hashchange', render);
-  document.addEventListener('click', handleClick);
-  document.addEventListener('change', handleChange);
-  document.getElementById('search-input').addEventListener('input', debounce(handleSearch, 300));
-  render();
 }
 
 function debounce(fn, ms) {
@@ -144,8 +151,8 @@ function renderOverview(el) {
     </div>
     <div class="stats-banner">
       <div class="stat-card"><div class="stat-number">${totalSections}</div><div class="stat-label">Sections</div></div>
-      <div class="stat-card"><div class="stat-number">9</div><div class="stat-label">Parts</div></div>
-      <div class="stat-card"><div class="stat-number">11</div><div class="stat-label">NCII Sectors</div></div>
+      <div class="stat-card"><div class="stat-number">${state.parts.length}</div><div class="stat-label">Parts</div></div>
+      <div class="stat-card"><div class="stat-number">${state.sectors ? state.sectors.length : '—'}</div><div class="stat-label">NCII Sectors</div></div>
       <div class="stat-card"><div class="stat-number">6h</div><div class="stat-label">Incident Notification</div></div>
     </div>
     <h2 style="font-size:1.125rem;font-weight:600;margin-bottom:1rem;">Browse by Part</h2>

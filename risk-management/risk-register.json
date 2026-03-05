@@ -55,9 +55,9 @@
       "residualLikelihood": 3,
       "residualImpact": 4,
       "residualRisk": 12,
-      "treatment": "mitigate",
-      "treatmentPlan": "Implement immutable backup solutions for NCII systems; deploy application whitelisting on critical servers; conduct quarterly ransomware recovery drills; establish cryptocurrency and ransom payment decision framework with board and legal counsel.",
-      "owner": "Head of IT Operations",
+      "treatment": "transfer",
+      "treatmentPlan": "Transfer residual financial impact through comprehensive cyber insurance policy covering ransomware incidents, business interruption, data recovery costs, and regulatory fines. Policy must explicitly cover NCII systems and Act 854 notification obligations. Retain technical mitigation controls (immutable backups, application whitelisting) as insurance prerequisite. Insurance broker to confirm coverage for 6-hour incident notification penalties. Annual policy review aligned with risk reassessment cycle.",
+      "owner": "Head of IT Operations / CFO",
       "reviewDate": "2025-03-01"
     },
     {
@@ -165,9 +165,9 @@
       "residualLikelihood": 2,
       "residualImpact": 4,
       "residualRisk": 8,
-      "treatment": "mitigate",
-      "treatmentPlan": "Migrate to zero-trust network access (ZTNA) replacing traditional VPN; implement just-in-time access provisioning for NCII remote sessions; deploy continuous authentication during remote sessions; conduct quarterly review of all remote access accounts and permissions.",
-      "owner": "Head of Network Security",
+      "treatment": "avoid",
+      "treatmentPlan": "Eliminate remote access to NCII systems entirely. All NCII administration and operations to be performed on-site from physically secured facilities only. Disable all VPN, RDP, and remote management interfaces on NCII network segments. Vendor maintenance requiring system access must be conducted on-premises with escort. Emergency out-of-hours access provided via on-call personnel physically attending the NCII facility. This eliminates the remote access attack vector at the cost of operational flexibility.",
+      "owner": "Head of Network Security / CISO",
       "reviewDate": "2025-03-01"
     },
     {
@@ -297,8 +297,8 @@
       "residualLikelihood": 1,
       "residualImpact": 4,
       "residualRisk": 4,
-      "treatment": "mitigate",
-      "treatmentPlan": "Implement tamper detection on critical hardware; deploy environmental monitoring (temperature, humidity, water leak) with alerting; conduct annual physical penetration testing of NCII facilities; integrate physical access logs with SIEM for correlation.",
+      "treatment": "accept",
+      "treatmentPlan": "Residual risk of 4 (Low band) is within organizational risk appetite given existing multi-layer physical controls (card, biometric, mantrap, CCTV, visitor management). Existing controls reduce likelihood to 1 (Rare). Cost of further mitigation (e.g., armed guards, Faraday caging) exceeds the expected loss. Risk accepted by CISO with annual review. Acceptance documented in board risk report.",
       "owner": "Facilities Manager / CISO",
       "reviewDate": "2025-06-01"
     },
