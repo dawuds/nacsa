@@ -114,17 +114,19 @@ Section-based joins (via provision maps) explode on broad provisions. In the PDP
 
 ### Current State (NACSA)
 
-The Audit Package pattern is **documented but not yet implemented** in this repo:
+The Audit Package pattern is **documented with data linkages in place**:
 
-- `artifacts/inventory.json`: 120 artifacts exist but use `sections[]` join — **`controlSlugs[]` not yet added**
-- `evidence/index.json`: 26 evidence items across 9 sections — **`artifactSlugs[]` not yet added**
-- `controls/library.json`: 53 controls across 15 domains — structure ready
+- `artifacts/inventory.json`: 120 artifacts with `controlSlugs[]` added — median 2 slugs per artifact, curated semantic mappings
+- `evidence/index.json`: 26 evidence items across 9 sections — `artifactSlugs[]` added, 1-2 artifact links per item
+- `controls/library.json`: 53 controls across 15 domains — broken directive references cleaned (100 removed, 5 valid kept)
 - `app.js`: No Audit Package rendering code yet
 
-**Known issues to fix before implementing:**
-- Fabricated "Education" sector (11th) still present in `sectors/index.json` — Act 854 defines exactly 10 NCII sectors
-- 48 of 51 directive cross-references in controls point to non-existent files
-- Evidence covers only 9 of the sections referenced by controls
+**Fixed issues:**
+- Fabricated "Education" sector removed from `sectors/index.json`, `cross-references/ncii-sector-mappings.json`, `supplements/codes-of-practice/index.json`; `cop-education.json` deleted; `totalSectors` corrected to 11; README CoP count updated from 12 to 11
+- `controlSlugs[]` added to all 120 artifacts with curated 1-4 control slugs (median 2)
+- `artifactSlugs[]` added to all 26 evidence items with 1-2 artifact links each
+- 100 broken directive references removed from controls; only 5 references to actually existing directive files retained
+- Evidence covers 9 of the sections referenced by controls (unchanged — this is a data coverage gap, not a bug)
 
 ### Reference Implementation
 

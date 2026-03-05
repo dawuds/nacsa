@@ -260,31 +260,6 @@
         }
       ]
     },
-    "education": {
-      "sectorName": "Education",
-      "sectorLead": "Ministry of Education",
-      "regulatoryOverlaps": [
-        {
-          "framework": "PDPA (Act 709)",
-          "fullName": "Personal Data Protection Act 2010",
-          "relevance": "high",
-          "notes": "Education systems processing student and staff personal data face dual Act 854 and PDPA obligations"
-        },
-        {
-          "framework": "Education Act 1996",
-          "fullName": "Education Act 1996 (Act 550)",
-          "relevance": "low",
-          "notes": "National education examination and management systems are potential NCII assets"
-        },
-        {
-          "framework": "AUKU",
-          "fullName": "Universities and University Colleges Act 1971",
-          "relevance": "low",
-          "notes": "University IT governance requirements supplement NCII obligations for higher education institutions"
-        }
-      ],
-      "sectorWarning": "Education is NOT listed as an NCII sector in the Schedule to Act 854. This entry is retained for reference only."
-    },
     "trade-industry-and-economy": {
       "sectorName": "Trade, industry and economy",
       "sectorLead": "Ministry of Investment, Trade and Industry (MITI)",

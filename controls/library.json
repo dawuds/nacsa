@@ -7,7 +7,10 @@
       "type": "preventive",
       "layer": "governance",
       "description": "Ensure the organization is properly registered as an NCII entity with NACSA upon designation under Section 17. Maintain up-to-date registration details, designated contact persons, and respond to designation notices within the prescribed timeframe. Establish internal processes to track designation status and obligations arising from the Cyber Security Act 2024.",
-      "sections": ["s17", "s18"],
+      "sections": [
+        "s17",
+        "s18"
+      ],
       "keyActivities": [
         "Respond to NCII designation notice within the statutory period specified under Section 17",
         "Appoint and register a primary and alternate NCII liaison officer with NACSA",
@@ -19,12 +22,28 @@
         "mature": "Registration is actively maintained with primary and alternate liaison officers. Internal processes track designation changes, and registration updates are submitted proactively when entity structure changes.",
         "advanced": "Fully automated registration lifecycle management integrated with enterprise GRC platform. Proactive engagement with NACSA on designation scope reviews. Cross-functional governance committee oversees NCII obligations."
       },
-      "toolExamples": ["ServiceNow GRC", "RSA Archer"],
-      "nistCsf": ["GV.OC-01", "GV.OC-03"],
-      "iso27001": ["A.5.1", "A.5.2"],
-      "rmit": ["10.1", "10.2"],
-      "cisControls": ["17.1"],
-      "relatedDirectives": ["directive-ncii-registration", "directive-ncii-designation"]
+      "toolExamples": [
+        "ServiceNow GRC",
+        "RSA Archer"
+      ],
+      "nistCsf": [
+        "GV.OC-01",
+        "GV.OC-03"
+      ],
+      "iso27001": [
+        "A.5.1",
+        "A.5.2"
+      ],
+      "rmit": [
+        "10.1",
+        "10.2"
+      ],
+      "cisControls": [
+        "17.1"
+      ],
+      "relatedDirectives": [
+        "directive-ncii-registration"
+      ]
     },
     {
       "slug": "ncii-governance-structure",
@@ -33,7 +52,10 @@
       "type": "preventive",
       "layer": "governance",
       "description": "Establish a board-level governance structure with clear accountability for cyber security of NCII systems. Define roles and responsibilities including a Chief Information Security Officer or equivalent, a cyber security steering committee, and reporting lines to the board. Ensure compliance with NACSA directives on governance accountability under Section 18.",
-      "sections": ["s18", "s52"],
+      "sections": [
+        "s18",
+        "s52"
+      ],
       "keyActivities": [
         "Establish a cyber security steering committee with board-level representation and defined terms of reference",
         "Appoint a CISO or equivalent officer with direct reporting line to the board for NCII matters",
@@ -45,12 +67,30 @@
         "mature": "Formal steering committee meets quarterly with documented terms of reference. CISO has dedicated resources and direct board access. Clear RACI matrix for NCII security responsibilities.",
         "advanced": "Integrated governance framework with real-time board dashboards on NCII risk posture. Independent cyber security advisory function. Governance effectiveness assessed annually with external benchmarking."
       },
-      "toolExamples": ["Diligent Boards", "ServiceNow GRC", "OneTrust"],
-      "nistCsf": ["GV.OC-02", "GV.RR-01", "GV.RR-02"],
-      "iso27001": ["A.5.1", "A.5.2", "A.5.4"],
-      "rmit": ["10.1", "10.3"],
-      "cisControls": ["17.1", "17.6"],
-      "relatedDirectives": ["directive-ncii-governance", "directive-board-accountability"]
+      "toolExamples": [
+        "Diligent Boards",
+        "ServiceNow GRC",
+        "OneTrust"
+      ],
+      "nistCsf": [
+        "GV.OC-02",
+        "GV.RR-01",
+        "GV.RR-02"
+      ],
+      "iso27001": [
+        "A.5.1",
+        "A.5.2",
+        "A.5.4"
+      ],
+      "rmit": [
+        "10.1",
+        "10.3"
+      ],
+      "cisControls": [
+        "17.1",
+        "17.6"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-compliance-programme",
@@ -59,7 +99,10 @@
       "type": "preventive",
       "layer": "governance",
       "description": "Develop and maintain a comprehensive compliance programme to meet obligations under the Cyber Security Act 2024, NACSA directives, and sector-specific regulations. Include compliance monitoring, gap analysis, remediation tracking, and periodic self-assessments against the Act's requirements.",
-      "sections": ["s52", "s53"],
+      "sections": [
+        "s52",
+        "s53"
+      ],
       "keyActivities": [
         "Maintain a compliance obligations register mapping each requirement of the Act and NACSA directives to internal controls",
         "Conduct semi-annual self-assessments against the Cyber Security Act 2024 requirements",
@@ -71,12 +114,31 @@
         "mature": "Structured compliance programme with dedicated resources, formal gap analysis methodology, and quarterly compliance reporting to steering committee.",
         "advanced": "Continuous compliance monitoring with automated control testing. Predictive analytics on compliance risk areas. Active participation in NACSA consultation processes for new directives."
       },
-      "toolExamples": ["OneTrust", "ServiceNow GRC", "Hyperproof", "Drata"],
-      "nistCsf": ["GV.OC-03", "GV.OC-05", "GV.SC-01"],
-      "iso27001": ["A.5.31", "A.5.35", "A.5.36"],
-      "rmit": ["10.4", "10.5"],
-      "cisControls": ["17.2", "17.3"],
-      "relatedDirectives": ["directive-compliance-reporting", "directive-ncii-standards"]
+      "toolExamples": [
+        "OneTrust",
+        "ServiceNow GRC",
+        "Hyperproof",
+        "Drata"
+      ],
+      "nistCsf": [
+        "GV.OC-03",
+        "GV.OC-05",
+        "GV.SC-01"
+      ],
+      "iso27001": [
+        "A.5.31",
+        "A.5.35",
+        "A.5.36"
+      ],
+      "rmit": [
+        "10.4",
+        "10.5"
+      ],
+      "cisControls": [
+        "17.2",
+        "17.3"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-policy-framework",
@@ -85,7 +147,10 @@
       "type": "preventive",
       "layer": "governance",
       "description": "Establish, maintain, and communicate a suite of cyber security policies specifically addressing NCII obligations. Policies must align with NACSA directives and cover all control domains. Include a policy lifecycle process with regular reviews, version control, and formal approval by senior management.",
-      "sections": ["s18", "s22"],
+      "sections": [
+        "s18",
+        "s22"
+      ],
       "keyActivities": [
         "Develop and publish an NCII-specific cyber security policy approved by the board or senior management",
         "Create domain-specific policies aligned with each NACSA directive and the 15 control domains",
@@ -97,12 +162,29 @@
         "mature": "Comprehensive policy suite mapped to NACSA directives with annual review cycles. Policy acknowledgement tracked for all personnel with NCII system access.",
         "advanced": "Dynamic policy framework with automated distribution, acknowledgement tracking, and policy effectiveness metrics. Policies continuously updated based on threat landscape and regulatory changes."
       },
-      "toolExamples": ["PolicyHub", "PowerDMS", "ConvergePoint", "SharePoint"],
-      "nistCsf": ["GV.PO-01", "GV.PO-02"],
-      "iso27001": ["A.5.1", "A.5.2", "A.5.3"],
-      "rmit": ["10.2", "10.6"],
-      "cisControls": ["17.1"],
-      "relatedDirectives": ["directive-ncii-standards", "directive-policy-requirements"]
+      "toolExamples": [
+        "PolicyHub",
+        "PowerDMS",
+        "ConvergePoint",
+        "SharePoint"
+      ],
+      "nistCsf": [
+        "GV.PO-01",
+        "GV.PO-02"
+      ],
+      "iso27001": [
+        "A.5.1",
+        "A.5.2",
+        "A.5.3"
+      ],
+      "rmit": [
+        "10.2",
+        "10.6"
+      ],
+      "cisControls": [
+        "17.1"
+      ],
+      "relatedDirectives": []
     }
   ],
   "asset-management": [
@@ -113,7 +195,10 @@
       "type": "preventive",
       "layer": "process",
       "description": "Maintain a comprehensive, accurate, and current inventory of all assets comprising or supporting designated NCII systems. Include hardware, software, data repositories, network components, and supporting services. Assets must be classified according to their criticality to national critical information infrastructure operations.",
-      "sections": ["s17", "s22"],
+      "sections": [
+        "s17",
+        "s22"
+      ],
       "keyActivities": [
         "Deploy automated asset discovery tools to maintain real-time inventory of all NCII system components",
         "Classify each asset by criticality level, data sensitivity, and NCII designation relevance",
@@ -125,12 +210,33 @@
         "mature": "Automated discovery integrated with CMDB. Assets classified and tagged with NCII designation metadata. Quarterly reconciliation and accuracy reviews.",
         "advanced": "Real-time asset intelligence platform with continuous discovery, automatic classification, dependency mapping, and integration with vulnerability and risk management systems."
       },
-      "toolExamples": ["ServiceNow CMDB", "Qualys Asset Inventory", "Axonius", "Tanium"],
-      "nistCsf": ["ID.AM-01", "ID.AM-02", "ID.AM-03"],
-      "iso27001": ["A.5.9", "A.5.10", "A.8.9"],
-      "rmit": ["10.8", "10.9"],
-      "cisControls": ["1.1", "1.2", "2.1", "2.2"],
-      "relatedDirectives": ["directive-ncii-designation", "directive-asset-classification"]
+      "toolExamples": [
+        "ServiceNow CMDB",
+        "Qualys Asset Inventory",
+        "Axonius",
+        "Tanium"
+      ],
+      "nistCsf": [
+        "ID.AM-01",
+        "ID.AM-02",
+        "ID.AM-03"
+      ],
+      "iso27001": [
+        "A.5.9",
+        "A.5.10",
+        "A.8.9"
+      ],
+      "rmit": [
+        "10.8",
+        "10.9"
+      ],
+      "cisControls": [
+        "1.1",
+        "1.2",
+        "2.1",
+        "2.2"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-asset-classification",
@@ -139,7 +245,10 @@
       "type": "preventive",
       "layer": "process",
       "description": "Implement a classification scheme for NCII assets and associated data that aligns with NACSA classification criteria and the Government's data classification framework. Apply consistent labelling to physical and digital assets, and enforce handling procedures commensurate with classification levels.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Define an asset classification scheme aligned with NACSA criteria and national data classification standards",
         "Label all NCII system assets and data repositories with their classification level",
@@ -151,12 +260,31 @@
         "mature": "Comprehensive classification taxonomy applied consistently across all NCII assets. Automated labelling for digital assets. Documented handling procedures enforced through technical controls.",
         "advanced": "Dynamic classification with data loss prevention integration. Automated reclassification based on content analysis and context. Classification effectiveness measured through compliance metrics."
       },
-      "toolExamples": ["Microsoft Purview", "Boldon James", "Titus Classification", "Varonis"],
-      "nistCsf": ["ID.AM-03", "ID.AM-05"],
-      "iso27001": ["A.5.10", "A.5.12", "A.5.13"],
-      "rmit": ["10.9", "10.10"],
-      "cisControls": ["3.1", "3.2", "3.7"],
-      "relatedDirectives": ["directive-asset-classification", "directive-data-handling"]
+      "toolExamples": [
+        "Microsoft Purview",
+        "Boldon James",
+        "Titus Classification",
+        "Varonis"
+      ],
+      "nistCsf": [
+        "ID.AM-03",
+        "ID.AM-05"
+      ],
+      "iso27001": [
+        "A.5.10",
+        "A.5.12",
+        "A.5.13"
+      ],
+      "rmit": [
+        "10.9",
+        "10.10"
+      ],
+      "cisControls": [
+        "3.1",
+        "3.2",
+        "3.7"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-asset-lifecycle",
@@ -165,7 +293,10 @@
       "type": "preventive",
       "layer": "process",
       "description": "Govern the full lifecycle of NCII system assets from acquisition through disposal. Ensure secure procurement, configuration hardening before deployment, ongoing maintenance, and secure decommissioning with data sanitization. Track asset age and end-of-life status to prevent unsupported components in critical infrastructure.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Define secure procurement requirements for assets destined for NCII system use",
         "Implement asset hardening standards applied before deployment into NCII environments",
@@ -177,12 +308,32 @@
         "mature": "Formal lifecycle management integrated with CMDB and procurement. Automated end-of-life notifications. Certified disposal with auditable records.",
         "advanced": "Predictive lifecycle management with proactive refresh planning. Full chain-of-custody documentation from procurement to disposal. Automated compliance verification at each lifecycle stage."
       },
-      "toolExamples": ["ServiceNow ITAM", "Flexera", "Snow Software", "Ivanti"],
-      "nistCsf": ["ID.AM-01", "ID.AM-02", "PR.DS-03"],
-      "iso27001": ["A.5.9", "A.5.11", "A.7.14"],
-      "rmit": ["10.8", "10.11"],
-      "cisControls": ["1.1", "1.2", "2.3"],
-      "relatedDirectives": ["directive-asset-classification", "directive-secure-disposal"]
+      "toolExamples": [
+        "ServiceNow ITAM",
+        "Flexera",
+        "Snow Software",
+        "Ivanti"
+      ],
+      "nistCsf": [
+        "ID.AM-01",
+        "ID.AM-02",
+        "PR.DS-03"
+      ],
+      "iso27001": [
+        "A.5.9",
+        "A.5.11",
+        "A.7.14"
+      ],
+      "rmit": [
+        "10.8",
+        "10.11"
+      ],
+      "cisControls": [
+        "1.1",
+        "1.2",
+        "2.3"
+      ],
+      "relatedDirectives": []
     }
   ],
   "risk-assessment": [
@@ -193,7 +344,10 @@
       "type": "preventive",
       "layer": "governance",
       "description": "Implement a structured, repeatable cyber security risk assessment programme for all NCII systems. Conduct assessments at least annually and upon significant changes to NCII systems, threat landscape, or designation scope. Apply a risk methodology acceptable to NACSA and produce risk treatment plans with defined remediation timelines.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Adopt a risk assessment methodology aligned with ISO 31000 and acceptable to NACSA sector leads",
         "Conduct comprehensive risk assessments of all NCII systems at least annually",
@@ -205,12 +359,31 @@
         "mature": "Semi-annual risk assessments using a hybrid qualitative-quantitative methodology. Integrated risk register with automated remediation tracking and board reporting.",
         "advanced": "Continuous risk assessment with real-time threat intelligence feeds, quantitative risk modelling (e.g., FAIR), and automated risk treatment orchestration. Risk appetite dynamically adjusted based on threat context."
       },
-      "toolExamples": ["RiskLens", "Archer IRM", "ServiceNow IRM", "LogicGate"],
-      "nistCsf": ["GV.RM-01", "GV.RM-02", "GV.RM-03", "ID.RA-01"],
-      "iso27001": ["A.5.7", "A.8.8"],
-      "rmit": ["10.12", "10.13"],
-      "cisControls": ["17.4", "17.5"],
-      "relatedDirectives": ["directive-risk-assessment", "directive-ncii-standards"]
+      "toolExamples": [
+        "RiskLens",
+        "Archer IRM",
+        "ServiceNow IRM",
+        "LogicGate"
+      ],
+      "nistCsf": [
+        "GV.RM-01",
+        "GV.RM-02",
+        "GV.RM-03",
+        "ID.RA-01"
+      ],
+      "iso27001": [
+        "A.5.7",
+        "A.8.8"
+      ],
+      "rmit": [
+        "10.12",
+        "10.13"
+      ],
+      "cisControls": [
+        "17.4",
+        "17.5"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-threat-modelling",
@@ -219,7 +392,10 @@
       "type": "preventive",
       "layer": "process",
       "description": "Conduct threat modelling exercises for NCII systems to identify potential threat actors, attack vectors, and attack scenarios relevant to national critical infrastructure. Incorporate intelligence from NACSA, NC4, and sector-specific threat advisories. Update threat models when systems change or new threats emerge.",
-      "sections": ["s22", "s24"],
+      "sections": [
+        "s22",
+        "s24"
+      ],
       "keyActivities": [
         "Develop threat models for each designated NCII system using STRIDE, MITRE ATT&CK, or equivalent frameworks",
         "Identify and profile threat actors relevant to the sector and NCII system type",
@@ -231,12 +407,31 @@
         "mature": "Structured threat modelling using established frameworks for all NCII systems. Regular updates based on NACSA threat advisories and sector intelligence sharing.",
         "advanced": "Continuous threat modelling integrated with threat intelligence platforms. Automated mapping of emerging threats to NCII system attack surfaces. Red team exercises validate threat model assumptions."
       },
-      "toolExamples": ["MITRE ATT&CK Navigator", "Microsoft Threat Modeling Tool", "IriusRisk", "ThreatModeler"],
-      "nistCsf": ["ID.RA-01", "ID.RA-02", "ID.RA-03"],
-      "iso27001": ["A.5.7"],
-      "rmit": ["10.12", "10.14"],
-      "cisControls": ["17.4", "17.6"],
-      "relatedDirectives": ["directive-risk-assessment", "directive-threat-intelligence"]
+      "toolExamples": [
+        "MITRE ATT&CK Navigator",
+        "Microsoft Threat Modeling Tool",
+        "IriusRisk",
+        "ThreatModeler"
+      ],
+      "nistCsf": [
+        "ID.RA-01",
+        "ID.RA-02",
+        "ID.RA-03"
+      ],
+      "iso27001": [
+        "A.5.7"
+      ],
+      "rmit": [
+        "10.12",
+        "10.14"
+      ],
+      "cisControls": [
+        "17.4",
+        "17.6"
+      ],
+      "relatedDirectives": [
+        "directive-threat-intelligence"
+      ]
     },
     {
       "slug": "ncii-risk-treatment",
@@ -245,7 +440,10 @@
       "type": "corrective",
       "layer": "governance",
       "description": "Implement a formal risk treatment process for identified NCII cyber security risks. Define criteria for risk acceptance, mitigation, transfer, and avoidance. Risk acceptance decisions for NCII systems must be approved by senior management and documented. Residual risks exceeding defined thresholds must be reported to NACSA.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Define risk treatment criteria and risk appetite thresholds approved by the board for NCII systems",
         "Implement risk treatment plans with measurable milestones and completion tracking",
@@ -257,12 +455,29 @@
         "mature": "Formal risk treatment framework with board-approved risk appetite. All risk acceptances documented with senior management approval and periodic revalidation.",
         "advanced": "Dynamic risk treatment optimization using cost-benefit analysis and quantitative modelling. Automated escalation of risks exceeding thresholds. Continuous monitoring of risk treatment effectiveness."
       },
-      "toolExamples": ["ServiceNow IRM", "RSA Archer", "MetricStream", "Resolver"],
-      "nistCsf": ["GV.RM-03", "GV.RM-04", "ID.RA-05", "ID.RA-06"],
-      "iso27001": ["A.5.7"],
-      "rmit": ["10.13", "10.15"],
-      "cisControls": ["17.4"],
-      "relatedDirectives": ["directive-risk-assessment", "directive-risk-reporting"]
+      "toolExamples": [
+        "ServiceNow IRM",
+        "RSA Archer",
+        "MetricStream",
+        "Resolver"
+      ],
+      "nistCsf": [
+        "GV.RM-03",
+        "GV.RM-04",
+        "ID.RA-05",
+        "ID.RA-06"
+      ],
+      "iso27001": [
+        "A.5.7"
+      ],
+      "rmit": [
+        "10.13",
+        "10.15"
+      ],
+      "cisControls": [
+        "17.4"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-bia",
@@ -271,7 +486,11 @@
       "type": "preventive",
       "layer": "process",
       "description": "Conduct business impact analyses for all NCII systems to determine the consequences of disruption, degradation, or compromise. Quantify impacts in terms of national security, public safety, economic stability, and essential service delivery. Use BIA outputs to inform risk treatment priorities and continuity planning.",
-      "sections": ["s22", "s23", "s24"],
+      "sections": [
+        "s22",
+        "s23",
+        "s24"
+      ],
       "keyActivities": [
         "Identify and quantify impact categories relevant to NCII designation including national security and public safety dimensions",
         "Determine maximum tolerable downtime and recovery objectives for each NCII system",
@@ -283,12 +502,28 @@
         "mature": "Comprehensive BIA covering all NCII systems with quantified impact metrics. Recovery objectives validated through testing. BIA outputs integrated with risk and continuity management.",
         "advanced": "Dynamic BIA with real-time dependency mapping and automated impact recalculation. Scenario-based impact modelling for multiple disruption types. BIA feeds directly into automated continuity orchestration."
       },
-      "toolExamples": ["Fusion Risk Management", "Castellan", "ServiceNow BCM", "Archer BCM"],
-      "nistCsf": ["ID.RA-04", "ID.RA-05"],
-      "iso27001": ["A.5.29", "A.5.30"],
-      "rmit": ["10.53", "10.54"],
-      "cisControls": ["17.7"],
-      "relatedDirectives": ["directive-bcdr", "directive-risk-assessment"]
+      "toolExamples": [
+        "Fusion Risk Management",
+        "Castellan",
+        "ServiceNow BCM",
+        "Archer BCM"
+      ],
+      "nistCsf": [
+        "ID.RA-04",
+        "ID.RA-05"
+      ],
+      "iso27001": [
+        "A.5.29",
+        "A.5.30"
+      ],
+      "rmit": [
+        "10.53",
+        "10.54"
+      ],
+      "cisControls": [
+        "17.7"
+      ],
+      "relatedDirectives": []
     }
   ],
   "access-control": [
@@ -299,7 +534,10 @@
       "type": "preventive",
       "layer": "technology",
       "description": "Implement comprehensive identity and access management controls for all NCII systems. Maintain a centralized identity repository, enforce role-based access control, and implement the principle of least privilege. All access to NCII systems must be individually accountable and traceable.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Maintain a centralized identity directory for all users with access to NCII systems",
         "Implement role-based access control with access profiles mapped to job functions and NCII system requirements",
@@ -311,12 +549,36 @@
         "mature": "Unified IAM platform covering all NCII systems with automated provisioning and deprovisioning. Quarterly access certification with manager attestation. Segregation of duties enforced.",
         "advanced": "Identity governance platform with AI-driven access recommendations, continuous access risk scoring, and automated remediation of excessive privileges. Just-in-time access provisioning for sensitive NCII resources."
       },
-      "toolExamples": ["SailPoint IdentityNow", "CyberArk Identity", "Microsoft Entra ID", "Okta"],
-      "nistCsf": ["PR.AA-01", "PR.AA-02", "PR.AA-03"],
-      "iso27001": ["A.5.15", "A.5.16", "A.5.18", "A.8.2"],
-      "rmit": ["10.16", "10.17"],
-      "cisControls": ["5.1", "5.2", "5.3", "5.4", "6.1", "6.2"],
-      "relatedDirectives": ["directive-access-control", "directive-ncii-standards"]
+      "toolExamples": [
+        "SailPoint IdentityNow",
+        "CyberArk Identity",
+        "Microsoft Entra ID",
+        "Okta"
+      ],
+      "nistCsf": [
+        "PR.AA-01",
+        "PR.AA-02",
+        "PR.AA-03"
+      ],
+      "iso27001": [
+        "A.5.15",
+        "A.5.16",
+        "A.5.18",
+        "A.8.2"
+      ],
+      "rmit": [
+        "10.16",
+        "10.17"
+      ],
+      "cisControls": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "6.1",
+        "6.2"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-privileged-access",
@@ -325,7 +587,10 @@
       "type": "preventive",
       "layer": "technology",
       "description": "Implement enhanced controls for privileged accounts on NCII systems including system administrators, database administrators, and network engineers. Enforce privileged access workstations, session recording, credential vaulting, and just-in-time access elevation to minimize the risk and impact of privileged credential compromise.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Deploy a privileged access management solution with credential vaulting and automated rotation for all NCII system privileged accounts",
         "Implement just-in-time privileged access elevation with time-limited sessions and approval workflows",
@@ -337,12 +602,32 @@
         "mature": "PAM solution deployed with credential vaulting and rotation. Session recording for critical NCII systems. Just-in-time access for most privileged operations.",
         "advanced": "Zero standing privileges model with all privileged access granted just-in-time. Behavioral analytics on privileged sessions with automated anomaly detection. Privileged access threat modelling informs PAM policy."
       },
-      "toolExamples": ["CyberArk PAM", "BeyondTrust", "Delinea Secret Server", "HashiCorp Vault"],
-      "nistCsf": ["PR.AA-03", "PR.AA-05"],
-      "iso27001": ["A.8.2", "A.8.3", "A.8.18"],
-      "rmit": ["10.18", "10.19"],
-      "cisControls": ["5.4", "5.5", "6.4", "6.5"],
-      "relatedDirectives": ["directive-access-control", "directive-privileged-access"]
+      "toolExamples": [
+        "CyberArk PAM",
+        "BeyondTrust",
+        "Delinea Secret Server",
+        "HashiCorp Vault"
+      ],
+      "nistCsf": [
+        "PR.AA-03",
+        "PR.AA-05"
+      ],
+      "iso27001": [
+        "A.8.2",
+        "A.8.3",
+        "A.8.18"
+      ],
+      "rmit": [
+        "10.18",
+        "10.19"
+      ],
+      "cisControls": [
+        "5.4",
+        "5.5",
+        "6.4",
+        "6.5"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-mfa",
@@ -351,7 +636,10 @@
       "type": "preventive",
       "layer": "technology",
       "description": "Enforce multi-factor authentication for all access to NCII systems, with phishing-resistant MFA methods for privileged and remote access. MFA must be applied to all interactive logons, VPN connections, cloud management portals, and API access to critical NCII system components.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Deploy multi-factor authentication across all NCII system access points including local, remote, and cloud",
         "Implement phishing-resistant MFA methods (FIDO2, hardware tokens) for privileged access and critical systems",
@@ -363,12 +651,28 @@
         "mature": "MFA enforced across all NCII system access points. Phishing-resistant methods deployed for privileged users. MFA events monitored in SIEM.",
         "advanced": "Adaptive MFA with risk-based authentication policies. Passwordless authentication for standard users. Continuous authentication using behavioral biometrics for high-security NCII system access."
       },
-      "toolExamples": ["YubiKey", "Microsoft Authenticator", "Duo Security", "RSA SecurID"],
-      "nistCsf": ["PR.AA-03"],
-      "iso27001": ["A.8.5"],
-      "rmit": ["10.18", "10.20"],
-      "cisControls": ["6.3", "6.4", "6.5"],
-      "relatedDirectives": ["directive-access-control", "directive-authentication"]
+      "toolExamples": [
+        "YubiKey",
+        "Microsoft Authenticator",
+        "Duo Security",
+        "RSA SecurID"
+      ],
+      "nistCsf": [
+        "PR.AA-03"
+      ],
+      "iso27001": [
+        "A.8.5"
+      ],
+      "rmit": [
+        "10.18",
+        "10.20"
+      ],
+      "cisControls": [
+        "6.3",
+        "6.4",
+        "6.5"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-remote-access",
@@ -377,7 +681,10 @@
       "type": "preventive",
       "layer": "technology",
       "description": "Secure all remote access to NCII systems through encrypted tunnels, endpoint compliance verification, and granular access policies. Implement network-level and application-level access controls for remote workers and third parties. Remote access to the most critical NCII systems should employ zero trust network access principles.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Implement encrypted VPN or ZTNA solutions for all remote access to NCII systems",
         "Enforce endpoint compliance checks (patching, antimalware, encryption) before granting remote NCII access",
@@ -389,12 +696,32 @@
         "mature": "ZTNA architecture for sensitive NCII systems. Comprehensive endpoint compliance enforcement. Real-time monitoring of remote access with alerting on anomalies.",
         "advanced": "Full zero trust architecture with continuous device and user trust evaluation. Micro-segmented access to individual NCII applications. AI-driven session risk scoring with automated session termination."
       },
-      "toolExamples": ["Zscaler Private Access", "Palo Alto Prisma Access", "Cloudflare Access", "Cisco AnyConnect"],
-      "nistCsf": ["PR.AA-03", "PR.AA-05", "PR.DS-01"],
-      "iso27001": ["A.6.7", "A.8.1", "A.8.20"],
-      "rmit": ["10.17", "10.21"],
-      "cisControls": ["6.3", "6.7", "12.7"],
-      "relatedDirectives": ["directive-access-control", "directive-remote-access"]
+      "toolExamples": [
+        "Zscaler Private Access",
+        "Palo Alto Prisma Access",
+        "Cloudflare Access",
+        "Cisco AnyConnect"
+      ],
+      "nistCsf": [
+        "PR.AA-03",
+        "PR.AA-05",
+        "PR.DS-01"
+      ],
+      "iso27001": [
+        "A.6.7",
+        "A.8.1",
+        "A.8.20"
+      ],
+      "rmit": [
+        "10.17",
+        "10.21"
+      ],
+      "cisControls": [
+        "6.3",
+        "6.7",
+        "12.7"
+      ],
+      "relatedDirectives": []
     }
   ],
   "network-security": [
@@ -405,7 +732,10 @@
       "type": "preventive",
       "layer": "technology",
       "description": "Design and maintain a secure network architecture for NCII systems incorporating defense-in-depth principles. Implement network segmentation to isolate NCII systems from general enterprise networks, define security zones, and enforce traffic controls at zone boundaries. Architecture must be documented and reviewed annually.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Define network security zones separating NCII systems from corporate, public, and management networks",
         "Implement micro-segmentation for the most critical NCII system components",
@@ -417,12 +747,31 @@
         "mature": "Defense-in-depth architecture with defined security zones. Next-generation firewalls with application-aware policies. Network architecture reviewed and updated annually.",
         "advanced": "Software-defined micro-segmentation with zero trust network principles. Automated network policy enforcement. Continuous architecture compliance verification against security design patterns."
       },
-      "toolExamples": ["Palo Alto Networks NGFW", "Illumio", "Cisco ACI", "VMware NSX"],
-      "nistCsf": ["PR.IR-01", "PR.IR-02"],
-      "iso27001": ["A.8.20", "A.8.21", "A.8.22"],
-      "rmit": ["10.22", "10.23"],
-      "cisControls": ["12.1", "12.2", "12.3"],
-      "relatedDirectives": ["directive-network-security", "directive-ncii-standards"]
+      "toolExamples": [
+        "Palo Alto Networks NGFW",
+        "Illumio",
+        "Cisco ACI",
+        "VMware NSX"
+      ],
+      "nistCsf": [
+        "PR.IR-01",
+        "PR.IR-02"
+      ],
+      "iso27001": [
+        "A.8.20",
+        "A.8.21",
+        "A.8.22"
+      ],
+      "rmit": [
+        "10.22",
+        "10.23"
+      ],
+      "cisControls": [
+        "12.1",
+        "12.2",
+        "12.3"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-network-monitoring",
@@ -431,7 +780,10 @@
       "type": "detective",
       "layer": "technology",
       "description": "Implement continuous network monitoring for all NCII system environments to detect malicious activity, unauthorized access, and anomalous traffic patterns. Deploy intrusion detection and prevention systems, network traffic analysis, and integrate network telemetry with the security operations centre for correlation and response.",
-      "sections": ["s22", "s24"],
+      "sections": [
+        "s22",
+        "s24"
+      ],
       "keyActivities": [
         "Deploy IDS/IPS at NCII network boundaries and critical internal segments with regularly updated signatures",
         "Implement network traffic analysis with baseline profiling and anomaly detection for NCII segments",
@@ -443,12 +795,32 @@
         "mature": "Comprehensive network monitoring across all NCII segments with IDS/IPS, NDR, and flow analysis. 24/7 SOC monitoring with SIEM correlation. Threat intelligence-driven detection rules.",
         "advanced": "AI-powered network detection and response with automated threat hunting. Full packet capture for critical segments. Automated containment actions triggered by high-confidence detections."
       },
-      "toolExamples": ["Darktrace", "Vectra AI", "Suricata", "Zeek", "ExtraHop"],
-      "nistCsf": ["DE.CM-01", "DE.CM-06", "DE.AE-02"],
-      "iso27001": ["A.8.16", "A.8.20"],
-      "rmit": ["10.24", "10.25"],
-      "cisControls": ["13.1", "13.3", "13.6"],
-      "relatedDirectives": ["directive-network-security", "directive-monitoring"]
+      "toolExamples": [
+        "Darktrace",
+        "Vectra AI",
+        "Suricata",
+        "Zeek",
+        "ExtraHop"
+      ],
+      "nistCsf": [
+        "DE.CM-01",
+        "DE.CM-06",
+        "DE.AE-02"
+      ],
+      "iso27001": [
+        "A.8.16",
+        "A.8.20"
+      ],
+      "rmit": [
+        "10.24",
+        "10.25"
+      ],
+      "cisControls": [
+        "13.1",
+        "13.3",
+        "13.6"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-dns-security",
@@ -457,7 +829,10 @@
       "type": "preventive",
       "layer": "technology",
       "description": "Secure DNS infrastructure supporting NCII systems against manipulation, tunnelling, and abuse. Implement DNS filtering, DNSSEC validation, encrypted DNS protocols, and DNS query logging. DNS is a critical attack vector and requires dedicated security controls for national critical infrastructure environments.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Deploy protective DNS filtering to block access to known malicious domains from NCII networks",
         "Implement DNSSEC validation on all DNS resolvers serving NCII systems",
@@ -469,12 +844,29 @@
         "mature": "Protective DNS with threat intelligence integration. DNSSEC validation enforced. DNS-over-HTTPS/TLS for external queries. DNS analytics for anomaly detection.",
         "advanced": "Real-time DNS threat intelligence with automated response. Machine learning-based DNS anomaly detection. DNS security integrated with broader network security orchestration."
       },
-      "toolExamples": ["Infoblox BloxOne", "Cisco Umbrella", "PDNS by CISA", "Cloudflare Gateway"],
-      "nistCsf": ["PR.IR-01", "DE.CM-01"],
-      "iso27001": ["A.8.20", "A.8.23"],
-      "rmit": ["10.23", "10.25"],
-      "cisControls": ["9.2", "9.3"],
-      "relatedDirectives": ["directive-network-security"]
+      "toolExamples": [
+        "Infoblox BloxOne",
+        "Cisco Umbrella",
+        "PDNS by CISA",
+        "Cloudflare Gateway"
+      ],
+      "nistCsf": [
+        "PR.IR-01",
+        "DE.CM-01"
+      ],
+      "iso27001": [
+        "A.8.20",
+        "A.8.23"
+      ],
+      "rmit": [
+        "10.23",
+        "10.25"
+      ],
+      "cisControls": [
+        "9.2",
+        "9.3"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-network-access-control",
@@ -483,7 +875,10 @@
       "type": "preventive",
       "layer": "technology",
       "description": "Implement network access control mechanisms to ensure only authorized and compliant devices can connect to NCII network segments. Enforce device authentication, posture assessment, and network quarantine for non-compliant endpoints. Prevent rogue device connections to critical infrastructure networks.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Deploy 802.1X or equivalent network access control on all NCII network switch ports and wireless access points",
         "Enforce device posture checks including patch level, antimalware status, and encryption verification before network admission",
@@ -495,12 +890,30 @@
         "mature": "802.1X network access control with certificate-based device authentication. Automated posture assessment and quarantine. Integration with asset inventory for device validation.",
         "advanced": "Continuous network access evaluation with real-time device trust scoring. Automated remediation workflows for non-compliant devices. IoT/OT device profiling and segmentation."
       },
-      "toolExamples": ["Cisco ISE", "Aruba ClearPass", "Forescout", "Portnox"],
-      "nistCsf": ["PR.AA-05", "PR.IR-01"],
-      "iso27001": ["A.8.20", "A.8.21"],
-      "rmit": ["10.22", "10.24"],
-      "cisControls": ["1.4", "1.5", "12.5"],
-      "relatedDirectives": ["directive-network-security", "directive-access-control"]
+      "toolExamples": [
+        "Cisco ISE",
+        "Aruba ClearPass",
+        "Forescout",
+        "Portnox"
+      ],
+      "nistCsf": [
+        "PR.AA-05",
+        "PR.IR-01"
+      ],
+      "iso27001": [
+        "A.8.20",
+        "A.8.21"
+      ],
+      "rmit": [
+        "10.22",
+        "10.24"
+      ],
+      "cisControls": [
+        "1.4",
+        "1.5",
+        "12.5"
+      ],
+      "relatedDirectives": []
     }
   ],
   "incident-response": [
@@ -511,7 +924,11 @@
       "type": "corrective",
       "layer": "process",
       "description": "Develop, maintain, and regularly test an incident response plan specifically addressing cyber security incidents affecting NCII systems. The plan must comply with NACSA incident notification requirements under Section 25, define severity classification aligned with national incident categories, and establish coordination procedures with NC4 and sector CERTs.",
-      "sections": ["s25", "s26", "s27"],
+      "sections": [
+        "s25",
+        "s26",
+        "s27"
+      ],
       "keyActivities": [
         "Develop and maintain an NCII-specific incident response plan with defined roles, procedures, and escalation paths",
         "Classify incident severity using a scheme aligned with NACSA national incident categories",
@@ -523,12 +940,35 @@
         "mature": "Comprehensive IR plan with defined playbooks for common NCII incident scenarios. Semi-annual exercises including NACSA notification simulation. Lessons learned systematically captured and applied.",
         "advanced": "Continuously refined IR plan with automated playbook execution. Regular joint exercises with NACSA and sector peers. Real-time incident coordination platform integrated with NC4."
       },
-      "toolExamples": ["PagerDuty", "Splunk SOAR", "IBM Resilient", "TheHive"],
-      "nistCsf": ["RS.MA-01", "RS.MA-02", "RS.MA-03"],
-      "iso27001": ["A.5.24", "A.5.25", "A.5.26"],
-      "rmit": ["10.42", "10.43"],
-      "cisControls": ["17.1", "17.2", "17.3", "17.4"],
-      "relatedDirectives": ["directive-incident-response", "directive-incident-notification"]
+      "toolExamples": [
+        "PagerDuty",
+        "Splunk SOAR",
+        "IBM Resilient",
+        "TheHive"
+      ],
+      "nistCsf": [
+        "RS.MA-01",
+        "RS.MA-02",
+        "RS.MA-03"
+      ],
+      "iso27001": [
+        "A.5.24",
+        "A.5.25",
+        "A.5.26"
+      ],
+      "rmit": [
+        "10.42",
+        "10.43"
+      ],
+      "cisControls": [
+        "17.1",
+        "17.2",
+        "17.3",
+        "17.4"
+      ],
+      "relatedDirectives": [
+        "directive-incident-notification"
+      ]
     },
     {
       "slug": "ncii-incident-notification",
@@ -537,7 +977,12 @@
       "type": "corrective",
       "layer": "process",
       "description": "Implement procedures to comply with the mandatory cyber security incident notification requirements under Section 25 of the Cyber Security Act 2024. NCII entities must notify NACSA of prescribed incidents within the timeframes specified in the Act. Notifications must include required information and follow the format prescribed by the Chief Executive of NACSA.",
-      "sections": ["s25", "s26", "s27", "s28"],
+      "sections": [
+        "s25",
+        "s26",
+        "s27",
+        "s28"
+      ],
       "keyActivities": [
         "Implement incident classification criteria that identify which incidents trigger mandatory NACSA notification under Section 25",
         "Establish a notification workflow ensuring initial notification to NACSA within the prescribed 6-hour window for significant incidents",
@@ -549,12 +994,32 @@
         "mature": "Structured notification workflow integrated with incident management system. Automated severity classification triggers notification procedures. Pre-populated templates ensure information completeness.",
         "advanced": "Automated incident notification via NACSA API integration. Real-time incident information sharing with NC4. Automated initial classification with human review before notification submission."
       },
-      "toolExamples": ["Splunk SOAR", "IBM Resilient", "ServiceNow SecOps", "TheHive"],
-      "nistCsf": ["RS.CO-02", "RS.CO-03"],
-      "iso27001": ["A.5.24", "A.5.26", "A.6.8"],
-      "rmit": ["10.44", "10.45"],
-      "cisControls": ["17.2", "17.3"],
-      "relatedDirectives": ["directive-incident-notification", "directive-incident-reporting"]
+      "toolExamples": [
+        "Splunk SOAR",
+        "IBM Resilient",
+        "ServiceNow SecOps",
+        "TheHive"
+      ],
+      "nistCsf": [
+        "RS.CO-02",
+        "RS.CO-03"
+      ],
+      "iso27001": [
+        "A.5.24",
+        "A.5.26",
+        "A.6.8"
+      ],
+      "rmit": [
+        "10.44",
+        "10.45"
+      ],
+      "cisControls": [
+        "17.2",
+        "17.3"
+      ],
+      "relatedDirectives": [
+        "directive-incident-notification"
+      ]
     },
     {
       "slug": "ncii-soc-operations",
@@ -563,7 +1028,11 @@
       "type": "detective",
       "layer": "technology",
       "description": "Establish or engage a Security Operations Centre with adequate capabilities to monitor, detect, and respond to threats against NCII systems. The SOC must provide continuous monitoring coverage, maintain detection rules aligned with threats to critical infrastructure, and have the capability to investigate and contain incidents affecting NCII systems.",
-      "sections": ["s22", "s24", "s25"],
+      "sections": [
+        "s22",
+        "s24",
+        "s25"
+      ],
       "keyActivities": [
         "Establish 24/7 security monitoring coverage for all NCII systems through internal SOC or managed security service",
         "Develop and maintain detection rules and use cases specific to NCII system threats and attack patterns",
@@ -575,12 +1044,34 @@
         "mature": "Dedicated SOC with 24/7 coverage and NCII-specific monitoring. Comprehensive SIEM with advanced correlation, UEBA, and threat intelligence integration. Regular detection engineering and rule tuning.",
         "advanced": "Next-generation SOC with AI-augmented detection, automated investigation, and orchestrated response. Proactive threat hunting programme targeting NCII-relevant threat actors. Purple team exercises validate detection coverage."
       },
-      "toolExamples": ["Splunk Enterprise Security", "Microsoft Sentinel", "Elastic Security", "Wazuh", "QRadar"],
-      "nistCsf": ["DE.CM-01", "DE.AE-02", "DE.AE-06"],
-      "iso27001": ["A.5.24", "A.8.15", "A.8.16"],
-      "rmit": ["10.42", "10.46"],
-      "cisControls": ["8.1", "8.2", "8.5", "8.11"],
-      "relatedDirectives": ["directive-monitoring", "directive-incident-response"]
+      "toolExamples": [
+        "Splunk Enterprise Security",
+        "Microsoft Sentinel",
+        "Elastic Security",
+        "Wazuh",
+        "QRadar"
+      ],
+      "nistCsf": [
+        "DE.CM-01",
+        "DE.AE-02",
+        "DE.AE-06"
+      ],
+      "iso27001": [
+        "A.5.24",
+        "A.8.15",
+        "A.8.16"
+      ],
+      "rmit": [
+        "10.42",
+        "10.46"
+      ],
+      "cisControls": [
+        "8.1",
+        "8.2",
+        "8.5",
+        "8.11"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-digital-forensics",
@@ -589,7 +1080,11 @@
       "type": "detective",
       "layer": "process",
       "description": "Maintain or have access to digital forensics capabilities for investigating cyber security incidents affecting NCII systems. Ensure forensic readiness through proactive evidence preservation, chain-of-custody procedures, and coordination protocols with NACSA and law enforcement as required under the Cyber Security Act 2024.",
-      "sections": ["s26", "s27", "s28"],
+      "sections": [
+        "s26",
+        "s27",
+        "s28"
+      ],
       "keyActivities": [
         "Establish forensic readiness procedures including evidence preservation, chain-of-custody documentation, and forensic imaging protocols",
         "Maintain or contract access to certified digital forensics investigators with experience in critical infrastructure incidents",
@@ -601,12 +1096,31 @@
         "mature": "Internal forensic readiness programme with trained staff and forensic toolkits. Documented chain-of-custody procedures. Pre-established relationships with NACSA-authorized forensic investigators.",
         "advanced": "Enterprise forensic capability with remote collection, cloud forensics, and memory forensics. Automated evidence collection and preservation triggered during incident response. Forensic-grade logging across all NCII systems."
       },
-      "toolExamples": ["EnCase", "FTK", "Velociraptor", "AXIOM Cyber", "Autopsy"],
-      "nistCsf": ["RS.AN-03", "RS.AN-06"],
-      "iso27001": ["A.5.24", "A.5.28"],
-      "rmit": ["10.43", "10.47"],
-      "cisControls": ["17.5", "17.6", "17.9"],
-      "relatedDirectives": ["directive-incident-investigation", "directive-incident-reporting"]
+      "toolExamples": [
+        "EnCase",
+        "FTK",
+        "Velociraptor",
+        "AXIOM Cyber",
+        "Autopsy"
+      ],
+      "nistCsf": [
+        "RS.AN-03",
+        "RS.AN-06"
+      ],
+      "iso27001": [
+        "A.5.24",
+        "A.5.28"
+      ],
+      "rmit": [
+        "10.43",
+        "10.47"
+      ],
+      "cisControls": [
+        "17.5",
+        "17.6",
+        "17.9"
+      ],
+      "relatedDirectives": []
     }
   ],
   "bcdr": [
@@ -617,7 +1131,10 @@
       "type": "corrective",
       "layer": "process",
       "description": "Develop and maintain business continuity plans for all NCII systems ensuring the continued availability of critical national infrastructure services during and after cyber security incidents or disruptions. Plans must define recovery time objectives and recovery point objectives aligned with national critical infrastructure availability requirements.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Develop business continuity plans for each designated NCII system based on BIA outputs",
         "Define and validate recovery time objectives (RTO) and recovery point objectives (RPO) appropriate for NCII criticality",
@@ -629,12 +1146,30 @@
         "mature": "Comprehensive continuity plans with validated RTOs and RPOs. Semi-annual testing including failover exercises. Plans updated based on exercise findings and system changes.",
         "advanced": "Automated failover and recovery orchestration for critical NCII systems. Continuous readiness validation. Chaos engineering practices applied to verify resilience assumptions."
       },
-      "toolExamples": ["Fusion Risk Management", "Castellan", "ServiceNow BCM", "Zerto"],
-      "nistCsf": ["RC.RP-01", "RC.RP-02", "RC.RP-03"],
-      "iso27001": ["A.5.29", "A.5.30"],
-      "rmit": ["10.53", "10.54", "10.55"],
-      "cisControls": ["17.7"],
-      "relatedDirectives": ["directive-bcdr", "directive-ncii-standards"]
+      "toolExamples": [
+        "Fusion Risk Management",
+        "Castellan",
+        "ServiceNow BCM",
+        "Zerto"
+      ],
+      "nistCsf": [
+        "RC.RP-01",
+        "RC.RP-02",
+        "RC.RP-03"
+      ],
+      "iso27001": [
+        "A.5.29",
+        "A.5.30"
+      ],
+      "rmit": [
+        "10.53",
+        "10.54",
+        "10.55"
+      ],
+      "cisControls": [
+        "17.7"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-backup-recovery",
@@ -643,7 +1178,10 @@
       "type": "corrective",
       "layer": "technology",
       "description": "Implement robust backup and recovery capabilities for all NCII systems and data. Backups must be protected against ransomware through immutability, air-gapping, or offline storage. Recovery procedures must be regularly tested to validate that RPOs and RTOs can be achieved.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Implement automated backup schedules for all NCII systems aligned with defined RPOs",
         "Maintain at least one immutable or air-gapped backup copy protected from ransomware and insider threats",
@@ -655,12 +1193,34 @@
         "mature": "Comprehensive backup strategy with 3-2-1-1 rule (3 copies, 2 media, 1 offsite, 1 immutable). Quarterly restoration testing. Backup monitoring with alerting on failures.",
         "advanced": "Automated backup validation with continuous integrity checking. Instant recovery capabilities for critical NCII systems. Backup infrastructure isolated in separate security domain with independent authentication."
       },
-      "toolExamples": ["Veeam", "Commvault", "Rubrik", "Cohesity", "Dell PowerProtect"],
-      "nistCsf": ["PR.DS-01", "PR.DS-02", "RC.RP-03"],
-      "iso27001": ["A.8.13", "A.8.14"],
-      "rmit": ["10.56", "10.57"],
-      "cisControls": ["11.1", "11.2", "11.3", "11.4", "11.5"],
-      "relatedDirectives": ["directive-bcdr", "directive-data-protection"]
+      "toolExamples": [
+        "Veeam",
+        "Commvault",
+        "Rubrik",
+        "Cohesity",
+        "Dell PowerProtect"
+      ],
+      "nistCsf": [
+        "PR.DS-01",
+        "PR.DS-02",
+        "RC.RP-03"
+      ],
+      "iso27001": [
+        "A.8.13",
+        "A.8.14"
+      ],
+      "rmit": [
+        "10.56",
+        "10.57"
+      ],
+      "cisControls": [
+        "11.1",
+        "11.2",
+        "11.3",
+        "11.4",
+        "11.5"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-disaster-recovery",
@@ -669,7 +1229,11 @@
       "type": "corrective",
       "layer": "process",
       "description": "Establish disaster recovery capabilities for NCII systems to restore operations following catastrophic failures or large-scale cyber attacks. Include provisions for alternate processing sites, infrastructure rebuilding, and coordination with NACSA and sector partners during national-level cyber incidents.",
-      "sections": ["s22", "s23", "s24"],
+      "sections": [
+        "s22",
+        "s23",
+        "s24"
+      ],
       "keyActivities": [
         "Maintain an alternate processing site or cloud-based DR environment capable of running critical NCII workloads",
         "Develop and document DR runbooks with step-by-step recovery procedures for each NCII system",
@@ -681,12 +1245,31 @@
         "mature": "Active-passive DR configuration with regular replication validation. Annual full failover exercises. DR procedures integrated with incident response and NACSA coordination.",
         "advanced": "Active-active or hot-standby DR with automated failover. Continuous DR readiness validation. Multi-region DR capability with geographic diversity for national-level resilience."
       },
-      "toolExamples": ["Zerto", "VMware Site Recovery", "AWS Elastic Disaster Recovery", "Azure Site Recovery"],
-      "nistCsf": ["RC.RP-01", "RC.RP-04", "RC.RP-05"],
-      "iso27001": ["A.5.29", "A.5.30", "A.8.14"],
-      "rmit": ["10.54", "10.55"],
-      "cisControls": ["11.1", "11.4"],
-      "relatedDirectives": ["directive-bcdr", "directive-disaster-recovery"]
+      "toolExamples": [
+        "Zerto",
+        "VMware Site Recovery",
+        "AWS Elastic Disaster Recovery",
+        "Azure Site Recovery"
+      ],
+      "nistCsf": [
+        "RC.RP-01",
+        "RC.RP-04",
+        "RC.RP-05"
+      ],
+      "iso27001": [
+        "A.5.29",
+        "A.5.30",
+        "A.8.14"
+      ],
+      "rmit": [
+        "10.54",
+        "10.55"
+      ],
+      "cisControls": [
+        "11.1",
+        "11.4"
+      ],
+      "relatedDirectives": []
     }
   ],
   "audit-compliance": [
@@ -697,7 +1280,10 @@
       "type": "detective",
       "layer": "governance",
       "description": "Establish an internal audit programme to independently assess the effectiveness of cyber security controls protecting NCII systems. Internal audits must cover all control domains on a risk-based cycle and provide assurance to the board and NACSA on the entity's compliance posture.",
-      "sections": ["s29", "s30"],
+      "sections": [
+        "s29",
+        "s30"
+      ],
       "keyActivities": [
         "Develop a risk-based internal audit plan covering all NCII control domains on a rolling cycle",
         "Conduct internal audits using auditors with independence from the functions being assessed",
@@ -709,12 +1295,30 @@
         "mature": "Risk-based audit programme with dedicated cyber security audit capability. Automated finding tracking with remediation workflows. Quarterly reporting to governance committees.",
         "advanced": "Continuous auditing using automated control testing and monitoring. Real-time assurance dashboards. Audit analytics applied to identify systemic control weaknesses across NCII environments."
       },
-      "toolExamples": ["AuditBoard", "TeamMate+", "Galvanize", "ServiceNow Audit Management"],
-      "nistCsf": ["GV.OC-03", "ID.IM-01", "ID.IM-02"],
-      "iso27001": ["A.5.35", "A.5.36"],
-      "rmit": ["10.4", "10.5"],
-      "cisControls": ["17.1", "17.5"],
-      "relatedDirectives": ["directive-audit-compliance", "directive-ncii-standards"]
+      "toolExamples": [
+        "AuditBoard",
+        "TeamMate+",
+        "Galvanize",
+        "ServiceNow Audit Management"
+      ],
+      "nistCsf": [
+        "GV.OC-03",
+        "ID.IM-01",
+        "ID.IM-02"
+      ],
+      "iso27001": [
+        "A.5.35",
+        "A.5.36"
+      ],
+      "rmit": [
+        "10.4",
+        "10.5"
+      ],
+      "cisControls": [
+        "17.1",
+        "17.5"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-external-audit",
@@ -723,7 +1327,12 @@
       "type": "detective",
       "layer": "governance",
       "description": "Facilitate external audits and assessments of NCII systems as required under Sections 30-32 of the Cyber Security Act 2024. NACSA may direct NCII entities to engage authorized auditors for compliance assessments. Entities must cooperate fully and provide access to systems, records, and personnel as required.",
-      "sections": ["s29", "s30", "s31", "s32"],
+      "sections": [
+        "s29",
+        "s30",
+        "s31",
+        "s32"
+      ],
       "keyActivities": [
         "Maintain audit readiness with current documentation and evidence for all NCII controls",
         "Facilitate NACSA-directed audits by authorized auditors under Section 30 with full cooperation",
@@ -735,12 +1344,31 @@
         "mature": "Audit-ready posture with organized evidence repositories. External assessments scheduled proactively. Findings addressed within prescribed timelines with formal remediation plans.",
         "advanced": "Continuous compliance evidence collection with automated control attestation. Pre-audit self-assessments identify and remediate gaps proactively. External audit results benchmarked against sector peers."
       },
-      "toolExamples": ["Hyperproof", "Drata", "Vanta", "Anecdotes"],
-      "nistCsf": ["GV.OC-03", "ID.IM-01", "ID.IM-04"],
-      "iso27001": ["A.5.35", "A.5.36"],
-      "rmit": ["10.4", "10.5"],
-      "cisControls": ["17.1", "17.5", "17.6"],
-      "relatedDirectives": ["directive-audit-compliance", "directive-external-audit"]
+      "toolExamples": [
+        "Hyperproof",
+        "Drata",
+        "Vanta",
+        "Anecdotes"
+      ],
+      "nistCsf": [
+        "GV.OC-03",
+        "ID.IM-01",
+        "ID.IM-04"
+      ],
+      "iso27001": [
+        "A.5.35",
+        "A.5.36"
+      ],
+      "rmit": [
+        "10.4",
+        "10.5"
+      ],
+      "cisControls": [
+        "17.1",
+        "17.5",
+        "17.6"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-compliance-monitoring",
@@ -749,7 +1377,10 @@
       "type": "detective",
       "layer": "technology",
       "description": "Implement continuous compliance monitoring capabilities to track the NCII entity's adherence to the Cyber Security Act 2024, NACSA directives, and internal policies in near real-time. Automated compliance checks reduce reliance on periodic assessments and enable rapid identification and remediation of compliance drift.",
-      "sections": ["s52", "s30"],
+      "sections": [
+        "s52",
+        "s30"
+      ],
       "keyActivities": [
         "Deploy automated compliance monitoring tools that continuously assess NCII system configurations against security baselines",
         "Map automated checks to specific requirements of the Cyber Security Act 2024 and NACSA directives",
@@ -761,12 +1392,31 @@
         "mature": "Automated compliance monitoring for technical controls with mapped regulatory requirements. Dashboard reporting with deviation alerts. Integration with ticketing for remediation.",
         "advanced": "Comprehensive continuous compliance platform covering technical and process controls. Predictive compliance analytics. Automated remediation for common deviations. Real-time regulatory reporting capability."
       },
-      "toolExamples": ["Qualys Policy Compliance", "Tenable.sc", "Prisma Cloud", "AWS Config", "Chef InSpec"],
-      "nistCsf": ["GV.OC-03", "DE.CM-09", "ID.IM-02"],
-      "iso27001": ["A.5.36", "A.8.9"],
-      "rmit": ["10.4", "10.6"],
-      "cisControls": ["4.1", "4.2"],
-      "relatedDirectives": ["directive-audit-compliance", "directive-continuous-monitoring"]
+      "toolExamples": [
+        "Qualys Policy Compliance",
+        "Tenable.sc",
+        "Prisma Cloud",
+        "AWS Config",
+        "Chef InSpec"
+      ],
+      "nistCsf": [
+        "GV.OC-03",
+        "DE.CM-09",
+        "ID.IM-02"
+      ],
+      "iso27001": [
+        "A.5.36",
+        "A.8.9"
+      ],
+      "rmit": [
+        "10.4",
+        "10.6"
+      ],
+      "cisControls": [
+        "4.1",
+        "4.2"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-evidence-management",
@@ -775,7 +1425,11 @@
       "type": "detective",
       "layer": "process",
       "description": "Establish systematic processes for collecting, organizing, and maintaining evidence of compliance with the Cyber Security Act 2024 and NACSA directives. Evidence must be sufficient to demonstrate control effectiveness to authorized auditors and NACSA during assessments under Sections 30-32.",
-      "sections": ["s30", "s31", "s32"],
+      "sections": [
+        "s30",
+        "s31",
+        "s32"
+      ],
       "keyActivities": [
         "Define evidence requirements for each NCII control mapped to Cyber Security Act sections and NACSA directives",
         "Implement a centralized evidence repository with version control and access restrictions",
@@ -787,12 +1441,30 @@
         "mature": "Centralized evidence management system with defined collection schedules and responsibilities. Evidence mapped to controls with version history.",
         "advanced": "Automated evidence collection platform with continuous harvesting from systems. Evidence integrity verified through hashing. Machine-readable evidence enables automated audit support."
       },
-      "toolExamples": ["Hyperproof", "Drata", "Vanta", "ZenGRC", "AuditBoard"],
-      "nistCsf": ["GV.OC-03", "ID.IM-01"],
-      "iso27001": ["A.5.35", "A.5.36", "A.5.37"],
-      "rmit": ["10.4", "10.5"],
-      "cisControls": ["17.5"],
-      "relatedDirectives": ["directive-audit-compliance", "directive-evidence-management"]
+      "toolExamples": [
+        "Hyperproof",
+        "Drata",
+        "Vanta",
+        "ZenGRC",
+        "AuditBoard"
+      ],
+      "nistCsf": [
+        "GV.OC-03",
+        "ID.IM-01"
+      ],
+      "iso27001": [
+        "A.5.35",
+        "A.5.36",
+        "A.5.37"
+      ],
+      "rmit": [
+        "10.4",
+        "10.5"
+      ],
+      "cisControls": [
+        "17.5"
+      ],
+      "relatedDirectives": []
     }
   ],
   "supply-chain": [
@@ -803,7 +1475,11 @@
       "type": "preventive",
       "layer": "process",
       "description": "Conduct cyber security risk assessments of all vendors, suppliers, and service providers with access to or impact on NCII systems. Assessments must evaluate the vendor's security posture, data handling practices, and potential to introduce risk to critical infrastructure. High-risk vendors require enhanced due diligence and ongoing monitoring.",
-      "sections": ["s22", "s23", "s47"],
+      "sections": [
+        "s22",
+        "s23",
+        "s47"
+      ],
       "keyActivities": [
         "Classify vendors by risk tier based on their level of access to or impact on NCII systems",
         "Conduct security assessments of high and critical-risk vendors using standardized questionnaires and evidence review",
@@ -815,12 +1491,33 @@
         "mature": "Tiered vendor risk assessment programme with standardized methodology. Evidence-based assessments for high-risk vendors. Annual reassessments with defined triggers for event-driven reviews.",
         "advanced": "Continuous vendor risk monitoring with automated security rating integration. Real-time threat intelligence on vendor ecosystem. Vendor risk quantification integrated with enterprise risk management."
       },
-      "toolExamples": ["BitSight", "SecurityScorecard", "OneTrust Vendorpedia", "ProcessUnity", "Prevalent"],
-      "nistCsf": ["GV.SC-03", "GV.SC-04", "GV.SC-05"],
-      "iso27001": ["A.5.19", "A.5.20", "A.5.21"],
-      "rmit": ["10.48", "10.49"],
-      "cisControls": ["15.1", "15.2", "15.3"],
-      "relatedDirectives": ["directive-supply-chain", "directive-vendor-management"]
+      "toolExamples": [
+        "BitSight",
+        "SecurityScorecard",
+        "OneTrust Vendorpedia",
+        "ProcessUnity",
+        "Prevalent"
+      ],
+      "nistCsf": [
+        "GV.SC-03",
+        "GV.SC-04",
+        "GV.SC-05"
+      ],
+      "iso27001": [
+        "A.5.19",
+        "A.5.20",
+        "A.5.21"
+      ],
+      "rmit": [
+        "10.48",
+        "10.49"
+      ],
+      "cisControls": [
+        "15.1",
+        "15.2",
+        "15.3"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-supply-chain-contracts",
@@ -829,7 +1526,10 @@
       "type": "preventive",
       "layer": "governance",
       "description": "Incorporate cyber security requirements into contracts with vendors and service providers involved in NCII systems. Contractual provisions must address security standards, incident notification obligations, audit rights, data protection, and compliance with the Cyber Security Act 2024 where applicable.",
-      "sections": ["s22", "s47"],
+      "sections": [
+        "s22",
+        "s47"
+      ],
       "keyActivities": [
         "Include mandatory cyber security clauses in all contracts involving NCII system access or data",
         "Require vendors to notify the NCII entity of security incidents that may affect NCII systems within defined timeframes",
@@ -841,12 +1541,30 @@
         "mature": "Comprehensive security schedules in all NCII-related contracts. Incident notification, audit rights, and data handling requirements consistently applied. Contract compliance tracked.",
         "advanced": "Dynamic contract management with automated compliance tracking against security provisions. Vendor security SLAs with performance penalties. Contract terms updated proactively based on evolving threats and regulations."
       },
-      "toolExamples": ["Icertis", "Agiloft", "ServiceNow VRM", "ContractPodAi"],
-      "nistCsf": ["GV.SC-06", "GV.SC-07"],
-      "iso27001": ["A.5.19", "A.5.20", "A.5.22"],
-      "rmit": ["10.49", "10.50"],
-      "cisControls": ["15.4", "15.5"],
-      "relatedDirectives": ["directive-supply-chain", "directive-vendor-contracts"]
+      "toolExamples": [
+        "Icertis",
+        "Agiloft",
+        "ServiceNow VRM",
+        "ContractPodAi"
+      ],
+      "nistCsf": [
+        "GV.SC-06",
+        "GV.SC-07"
+      ],
+      "iso27001": [
+        "A.5.19",
+        "A.5.20",
+        "A.5.22"
+      ],
+      "rmit": [
+        "10.49",
+        "10.50"
+      ],
+      "cisControls": [
+        "15.4",
+        "15.5"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-supply-chain-monitoring",
@@ -855,7 +1573,11 @@
       "type": "detective",
       "layer": "process",
       "description": "Implement ongoing monitoring of the cyber security posture and risk profile of vendors and service providers in the NCII supply chain. Monitor for vendor security incidents, financial instability, geopolitical risk, and changes in vendor security certifications that could impact NCII system security.",
-      "sections": ["s22", "s23", "s47"],
+      "sections": [
+        "s22",
+        "s23",
+        "s47"
+      ],
       "keyActivities": [
         "Subscribe to security rating services for continuous monitoring of critical NCII vendor security posture",
         "Monitor threat intelligence feeds for breaches or vulnerabilities affecting NCII supply chain vendors",
@@ -867,12 +1589,30 @@
         "mature": "Continuous security rating monitoring for critical vendors. Automated alerts on significant vendor security events. Periodic on-site reviews for highest-risk vendors.",
         "advanced": "Real-time supply chain risk intelligence with automated risk recalculation. Vendor security telemetry integration where feasible. Supply chain attack simulation exercises."
       },
-      "toolExamples": ["BitSight", "SecurityScorecard", "RiskRecon", "UpGuard", "Black Kite"],
-      "nistCsf": ["GV.SC-09", "GV.SC-10"],
-      "iso27001": ["A.5.22", "A.5.23"],
-      "rmit": ["10.49", "10.51"],
-      "cisControls": ["15.2", "15.4"],
-      "relatedDirectives": ["directive-supply-chain", "directive-continuous-monitoring"]
+      "toolExamples": [
+        "BitSight",
+        "SecurityScorecard",
+        "RiskRecon",
+        "UpGuard",
+        "Black Kite"
+      ],
+      "nistCsf": [
+        "GV.SC-09",
+        "GV.SC-10"
+      ],
+      "iso27001": [
+        "A.5.22",
+        "A.5.23"
+      ],
+      "rmit": [
+        "10.49",
+        "10.51"
+      ],
+      "cisControls": [
+        "15.2",
+        "15.4"
+      ],
+      "relatedDirectives": []
     }
   ],
   "awareness-training": [
@@ -883,7 +1623,10 @@
       "type": "preventive",
       "layer": "process",
       "description": "Implement a comprehensive security awareness programme for all personnel with access to NCII systems. The programme must cover the Cyber Security Act 2024 obligations, threat landscape relevant to critical infrastructure, social engineering awareness, and individual responsibilities for protecting NCII systems and data.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Deliver mandatory security awareness training to all personnel with NCII system access upon joining and annually",
         "Include NCII-specific content covering the Cyber Security Act 2024, incident reporting obligations, and data handling requirements",
@@ -895,12 +1638,30 @@
         "mature": "Role-based awareness programme with NCII-specific modules. Monthly phishing simulations with progressive difficulty. Training effectiveness measured and reported to governance.",
         "advanced": "Adaptive awareness platform with personalized learning paths based on individual risk profile and behavior. Continuous micro-learning integrated into daily workflows. Culture measurement and behavioral analytics."
       },
-      "toolExamples": ["KnowBe4", "Proofpoint Security Awareness", "SANS Security Awareness", "Cofense"],
-      "nistCsf": ["PR.AT-01", "PR.AT-02"],
-      "iso27001": ["A.6.3", "A.6.6"],
-      "rmit": ["10.38", "10.39"],
-      "cisControls": ["14.1", "14.2", "14.3"],
-      "relatedDirectives": ["directive-awareness-training", "directive-ncii-standards"]
+      "toolExamples": [
+        "KnowBe4",
+        "Proofpoint Security Awareness",
+        "SANS Security Awareness",
+        "Cofense"
+      ],
+      "nistCsf": [
+        "PR.AT-01",
+        "PR.AT-02"
+      ],
+      "iso27001": [
+        "A.6.3",
+        "A.6.6"
+      ],
+      "rmit": [
+        "10.38",
+        "10.39"
+      ],
+      "cisControls": [
+        "14.1",
+        "14.2",
+        "14.3"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-technical-training",
@@ -909,7 +1670,10 @@
       "type": "preventive",
       "layer": "process",
       "description": "Provide specialized technical security training for personnel responsible for operating, maintaining, and securing NCII systems. Training must cover secure administration practices, incident detection and response, and the specific technologies and architectures deployed in NCII environments.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Identify role-specific technical training requirements for NCII system administrators, security analysts, and incident responders",
         "Provide specialized training on NCII system technologies, security tools, and secure configuration standards",
@@ -921,12 +1685,29 @@
         "mature": "Structured technical training programme with defined requirements by role. Training tracked in HR system. Annual training plans aligned with skill gap assessments.",
         "advanced": "Continuous skills development with hands-on labs, cyber ranges, and capture-the-flag exercises. Training effectiveness validated through practical assessments. Career development pathways for NCII security specialists."
       },
-      "toolExamples": ["SANS Institute", "Offensive Security", "Immersive Labs", "Hack The Box", "RangeForce"],
-      "nistCsf": ["PR.AT-01", "PR.AT-02"],
-      "iso27001": ["A.6.3"],
-      "rmit": ["10.39", "10.40"],
-      "cisControls": ["14.4", "14.9"],
-      "relatedDirectives": ["directive-awareness-training", "directive-competency"]
+      "toolExamples": [
+        "SANS Institute",
+        "Offensive Security",
+        "Immersive Labs",
+        "Hack The Box",
+        "RangeForce"
+      ],
+      "nistCsf": [
+        "PR.AT-01",
+        "PR.AT-02"
+      ],
+      "iso27001": [
+        "A.6.3"
+      ],
+      "rmit": [
+        "10.39",
+        "10.40"
+      ],
+      "cisControls": [
+        "14.4",
+        "14.9"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-board-awareness",
@@ -935,7 +1716,10 @@
       "type": "preventive",
       "layer": "governance",
       "description": "Ensure board members and senior management of NCII entities have adequate cyber security awareness to fulfil their governance responsibilities under the Cyber Security Act 2024. Board-level briefings must cover the entity's NCII risk posture, regulatory obligations, incident trends, and strategic cyber security investment requirements.",
-      "sections": ["s18", "s52"],
+      "sections": [
+        "s18",
+        "s52"
+      ],
       "keyActivities": [
         "Deliver annual cyber security briefings to the board covering NCII risk posture and regulatory obligations",
         "Provide board members with relevant threat intelligence briefings on threats to the entity's critical infrastructure sector",
@@ -947,12 +1731,27 @@
         "mature": "Quarterly board briefings with NCII risk dashboards. Board members participate in tabletop exercises. Board-level cyber security committee established.",
         "advanced": "Board has real-time access to cyber security posture dashboards. External expert briefings on sector threats. Board cyber security competency assessment and development programme."
       },
-      "toolExamples": ["Diligent Boards", "NIST CSF Assessment Tools", "Board-level simulation providers"],
-      "nistCsf": ["GV.RR-01", "GV.OC-02"],
-      "iso27001": ["A.5.1", "A.5.4"],
-      "rmit": ["10.3", "10.38"],
-      "cisControls": ["14.1"],
-      "relatedDirectives": ["directive-board-accountability", "directive-ncii-governance"]
+      "toolExamples": [
+        "Diligent Boards",
+        "NIST CSF Assessment Tools",
+        "Board-level simulation providers"
+      ],
+      "nistCsf": [
+        "GV.RR-01",
+        "GV.OC-02"
+      ],
+      "iso27001": [
+        "A.5.1",
+        "A.5.4"
+      ],
+      "rmit": [
+        "10.3",
+        "10.38"
+      ],
+      "cisControls": [
+        "14.1"
+      ],
+      "relatedDirectives": []
     }
   ],
   "vulnerability-management": [
@@ -963,7 +1762,10 @@
       "type": "detective",
       "layer": "technology",
       "description": "Implement regular vulnerability scanning of all NCII systems to identify known security weaknesses. Scanning must cover network infrastructure, operating systems, applications, and databases. Critical and high-severity vulnerabilities on NCII systems must be remediated within timeframes prescribed by NACSA directives.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Conduct authenticated vulnerability scans of all NCII systems at least monthly",
         "Scan for vulnerabilities across infrastructure, operating systems, applications, databases, and container images",
@@ -975,12 +1777,31 @@
         "mature": "Monthly authenticated scans across all NCII assets. Risk-based prioritization with automated ticket creation. Remediation tracked against SLA targets.",
         "advanced": "Continuous vulnerability assessment with agent-based scanning. Vulnerability intelligence enrichment with exploit prediction and threat context. Automated patching for routine vulnerabilities."
       },
-      "toolExamples": ["Tenable Nessus/IO", "Qualys VMDR", "Rapid7 InsightVM", "Microsoft Defender Vulnerability Management"],
-      "nistCsf": ["ID.RA-01", "DE.CM-08"],
-      "iso27001": ["A.8.8", "A.8.34"],
-      "rmit": ["10.26", "10.27"],
-      "cisControls": ["7.1", "7.2", "7.3", "7.4"],
-      "relatedDirectives": ["directive-vulnerability-management", "directive-ncii-standards"]
+      "toolExamples": [
+        "Tenable Nessus/IO",
+        "Qualys VMDR",
+        "Rapid7 InsightVM",
+        "Microsoft Defender Vulnerability Management"
+      ],
+      "nistCsf": [
+        "ID.RA-01",
+        "DE.CM-08"
+      ],
+      "iso27001": [
+        "A.8.8",
+        "A.8.34"
+      ],
+      "rmit": [
+        "10.26",
+        "10.27"
+      ],
+      "cisControls": [
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-patch-management",
@@ -989,7 +1810,11 @@
       "type": "corrective",
       "layer": "technology",
       "description": "Implement a structured patch management process for all NCII systems ensuring timely application of security patches. Patch deployment must balance the urgency of vulnerability remediation against the stability requirements of critical infrastructure systems. Emergency patching procedures must exist for actively exploited vulnerabilities.",
-      "sections": ["s22", "s23", "s24"],
+      "sections": [
+        "s22",
+        "s23",
+        "s24"
+      ],
       "keyActivities": [
         "Maintain a patch management policy defining timelines for patch deployment based on severity and NCII system criticality",
         "Test patches in a staging environment representative of NCII production systems before deployment",
@@ -1001,12 +1826,31 @@
         "mature": "Automated patch management with staging environment validation. Defined SLAs by severity. Emergency patching process with accelerated approval workflow.",
         "advanced": "Continuous patching with automated testing, canary deployments, and automated rollback. Virtual patching for systems requiring extended patch windows. Patch intelligence predicting patch stability."
       },
-      "toolExamples": ["Microsoft SCCM/Intune", "Ivanti Patch", "ManageEngine Patch Manager", "Automox"],
-      "nistCsf": ["PR.PS-02", "ID.RA-01"],
-      "iso27001": ["A.8.8", "A.8.19"],
-      "rmit": ["10.27", "10.28"],
-      "cisControls": ["7.3", "7.4", "7.5", "7.7"],
-      "relatedDirectives": ["directive-vulnerability-management", "directive-patch-management"]
+      "toolExamples": [
+        "Microsoft SCCM/Intune",
+        "Ivanti Patch",
+        "ManageEngine Patch Manager",
+        "Automox"
+      ],
+      "nistCsf": [
+        "PR.PS-02",
+        "ID.RA-01"
+      ],
+      "iso27001": [
+        "A.8.8",
+        "A.8.19"
+      ],
+      "rmit": [
+        "10.27",
+        "10.28"
+      ],
+      "cisControls": [
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.7"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-penetration-testing",
@@ -1015,7 +1859,11 @@
       "type": "detective",
       "layer": "process",
       "description": "Conduct regular penetration testing of NCII systems to identify exploitable vulnerabilities and test the effectiveness of security controls. Penetration tests must be performed by qualified professionals and cover external, internal, application, and social engineering attack vectors relevant to critical infrastructure threats.",
-      "sections": ["s22", "s23", "s24"],
+      "sections": [
+        "s22",
+        "s23",
+        "s24"
+      ],
       "keyActivities": [
         "Conduct annual penetration tests of all NCII systems covering external perimeter, internal network, and application layers",
         "Engage CREST, OSCP, or equivalent-certified penetration testers with critical infrastructure experience",
@@ -1027,12 +1875,33 @@
         "mature": "Semi-annual penetration testing covering external, internal, and application layers. Scenario-based tests aligned with sector threat profile. Findings tracked with retesting validation.",
         "advanced": "Continuous penetration testing programme with red team exercises simulating advanced persistent threats. Purple team exercises optimize detection capabilities. Attack surface management integrated with pen test findings."
       },
-      "toolExamples": ["Cobalt Strike", "Burp Suite Pro", "Pentera", "Synack"],
-      "nistCsf": ["ID.RA-01", "DE.CM-08", "ID.IM-03"],
-      "iso27001": ["A.8.8", "A.8.34"],
-      "rmit": ["10.26", "10.29"],
-      "cisControls": ["18.1", "18.2", "18.3", "18.4", "18.5"],
-      "relatedDirectives": ["directive-vulnerability-management", "directive-penetration-testing"]
+      "toolExamples": [
+        "Cobalt Strike",
+        "Burp Suite Pro",
+        "Pentera",
+        "Synack"
+      ],
+      "nistCsf": [
+        "ID.RA-01",
+        "DE.CM-08",
+        "ID.IM-03"
+      ],
+      "iso27001": [
+        "A.8.8",
+        "A.8.34"
+      ],
+      "rmit": [
+        "10.26",
+        "10.29"
+      ],
+      "cisControls": [
+        "18.1",
+        "18.2",
+        "18.3",
+        "18.4",
+        "18.5"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-vulnerability-disclosure",
@@ -1041,7 +1910,10 @@
       "type": "corrective",
       "layer": "process",
       "description": "Establish processes for coordinated vulnerability disclosure related to NCII systems. Define procedures for receiving vulnerability reports from external researchers, coordinating disclosure with NACSA and vendors, and managing the remediation of disclosed vulnerabilities within appropriate timelines.",
-      "sections": ["s22", "s25"],
+      "sections": [
+        "s22",
+        "s25"
+      ],
       "keyActivities": [
         "Publish a vulnerability disclosure policy defining how external researchers can report vulnerabilities in NCII-related systems",
         "Establish a coordination process with NACSA for vulnerabilities discovered in widely-used NCII system components",
@@ -1053,12 +1925,31 @@
         "mature": "Formal vulnerability disclosure policy with defined intake, triage, and coordination procedures. Bug bounty or VDP programme for public-facing NCII systems. Coordinated disclosure with NACSA.",
         "advanced": "Mature VDP integrated with vulnerability management platform. Automated triage and routing. Active researcher community engagement. Sector-level vulnerability coordination leadership."
       },
-      "toolExamples": ["HackerOne", "Bugcrowd", "Intigriti", "CERT/CC VINCE"],
-      "nistCsf": ["ID.RA-01", "RS.CO-02"],
-      "iso27001": ["A.5.7", "A.8.8"],
-      "rmit": ["10.27", "10.30"],
-      "cisControls": ["7.5", "17.3"],
-      "relatedDirectives": ["directive-vulnerability-management", "directive-vulnerability-disclosure"]
+      "toolExamples": [
+        "HackerOne",
+        "Bugcrowd",
+        "Intigriti",
+        "CERT/CC VINCE"
+      ],
+      "nistCsf": [
+        "ID.RA-01",
+        "RS.CO-02"
+      ],
+      "iso27001": [
+        "A.5.7",
+        "A.8.8"
+      ],
+      "rmit": [
+        "10.27",
+        "10.30"
+      ],
+      "cisControls": [
+        "7.5",
+        "17.3"
+      ],
+      "relatedDirectives": [
+        "directive-vulnerability-disclosure"
+      ]
     }
   ],
   "cryptography": [
@@ -1069,7 +1960,10 @@
       "type": "preventive",
       "layer": "technology",
       "description": "Define and enforce encryption standards for protecting data within NCII systems at rest, in transit, and in use. Encryption algorithms and key lengths must meet or exceed NACSA and national cryptographic standards. Legacy or deprecated cryptographic protocols must be identified and migrated to approved alternatives.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Define approved cryptographic algorithms and minimum key lengths for NCII data classification levels",
         "Enforce TLS 1.2 or higher for all data in transit across NCII networks with forward secrecy cipher suites",
@@ -1081,12 +1975,30 @@
         "mature": "Comprehensive encryption standards enforced across all NCII systems. Legacy cryptography identified with migration plans. Automated scanning for non-compliant cryptographic configurations.",
         "advanced": "Cryptographic agility with ability to rapidly rotate algorithms. Post-quantum cryptography readiness assessment. Hardware security modules for high-assurance NCII applications. Automated cryptographic compliance verification."
       },
-      "toolExamples": ["Venafi", "KeyFactor", "Thales CipherTrust", "AWS KMS", "Azure Key Vault"],
-      "nistCsf": ["PR.DS-01", "PR.DS-02"],
-      "iso27001": ["A.8.24"],
-      "rmit": ["10.31", "10.32"],
-      "cisControls": ["3.6", "3.9", "3.10"],
-      "relatedDirectives": ["directive-cryptography", "directive-data-protection"]
+      "toolExamples": [
+        "Venafi",
+        "KeyFactor",
+        "Thales CipherTrust",
+        "AWS KMS",
+        "Azure Key Vault"
+      ],
+      "nistCsf": [
+        "PR.DS-01",
+        "PR.DS-02"
+      ],
+      "iso27001": [
+        "A.8.24"
+      ],
+      "rmit": [
+        "10.31",
+        "10.32"
+      ],
+      "cisControls": [
+        "3.6",
+        "3.9",
+        "3.10"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-key-management",
@@ -1095,7 +2007,10 @@
       "type": "preventive",
       "layer": "technology",
       "description": "Implement comprehensive cryptographic key management for all encryption used in NCII systems. Cover the full key lifecycle including generation, distribution, storage, rotation, revocation, and destruction. Keys must be protected commensurate with the sensitivity of the data they protect.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Implement key management procedures covering generation, distribution, storage, rotation, and destruction of cryptographic keys",
         "Deploy hardware security modules (HSMs) for key protection in the most critical NCII system applications",
@@ -1107,12 +2022,29 @@
         "mature": "Centralized key management platform with automated rotation. HSMs deployed for critical applications. Key lifecycle tracking with audit trails.",
         "advanced": "Enterprise key management with full lifecycle automation. HSM-backed key storage for all NCII encryption. Crypto-agile architecture supporting rapid algorithm migration."
       },
-      "toolExamples": ["Thales Luna HSM", "AWS CloudHSM", "HashiCorp Vault", "Venafi", "KeyFactor"],
-      "nistCsf": ["PR.DS-01", "PR.DS-02"],
-      "iso27001": ["A.8.24"],
-      "rmit": ["10.32", "10.33"],
-      "cisControls": ["3.6", "3.11"],
-      "relatedDirectives": ["directive-cryptography", "directive-key-management"]
+      "toolExamples": [
+        "Thales Luna HSM",
+        "AWS CloudHSM",
+        "HashiCorp Vault",
+        "Venafi",
+        "KeyFactor"
+      ],
+      "nistCsf": [
+        "PR.DS-01",
+        "PR.DS-02"
+      ],
+      "iso27001": [
+        "A.8.24"
+      ],
+      "rmit": [
+        "10.32",
+        "10.33"
+      ],
+      "cisControls": [
+        "3.6",
+        "3.11"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-certificate-management",
@@ -1121,7 +2053,10 @@
       "type": "preventive",
       "layer": "technology",
       "description": "Manage the lifecycle of digital certificates used in NCII systems including SSL/TLS certificates, code signing certificates, and machine identity certificates. Prevent service outages and security incidents caused by certificate expiration, misconfiguration, or compromise. Maintain a complete certificate inventory with automated monitoring.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Maintain a comprehensive inventory of all digital certificates deployed across NCII systems",
         "Implement automated certificate expiration monitoring with alerts at 90, 60, and 30 days before expiry",
@@ -1133,12 +2068,29 @@
         "mature": "Automated certificate lifecycle management covering discovery, monitoring, and renewal. Centralized certificate inventory. Certificate pinning for critical NCII connections.",
         "advanced": "Full certificate automation with auto-enrollment, auto-renewal, and auto-deployment. Short-lived certificates where feasible. Machine identity management integrated with zero trust architecture."
       },
-      "toolExamples": ["Venafi", "DigiCert CertCentral", "Sectigo", "Let's Encrypt", "AppViewX"],
-      "nistCsf": ["PR.DS-01", "PR.DS-02", "PR.AA-03"],
-      "iso27001": ["A.8.24"],
-      "rmit": ["10.32"],
-      "cisControls": ["3.10", "12.1"],
-      "relatedDirectives": ["directive-cryptography", "directive-certificate-management"]
+      "toolExamples": [
+        "Venafi",
+        "DigiCert CertCentral",
+        "Sectigo",
+        "Let's Encrypt",
+        "AppViewX"
+      ],
+      "nistCsf": [
+        "PR.DS-01",
+        "PR.DS-02",
+        "PR.AA-03"
+      ],
+      "iso27001": [
+        "A.8.24"
+      ],
+      "rmit": [
+        "10.32"
+      ],
+      "cisControls": [
+        "3.10",
+        "12.1"
+      ],
+      "relatedDirectives": []
     }
   ],
   "physical-security": [
@@ -1149,7 +2101,10 @@
       "type": "preventive",
       "layer": "process",
       "description": "Implement physical access controls for facilities housing NCII systems. Restrict access to authorized personnel through multi-layer access control, visitor management, and monitoring. Critical NCII infrastructure areas must have enhanced physical security measures commensurate with their designation level.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Implement multi-layer physical access control with increasing security for zones closer to critical NCII infrastructure",
         "Deploy electronic access control systems with individual authentication for all NCII facility entry points",
@@ -1161,12 +2116,31 @@
         "mature": "Multi-factor physical access control for critical NCII areas (card plus biometric). Electronic visitor management with pre-registration. Access logs reviewed monthly.",
         "advanced": "Integrated physical and logical access management. Real-time occupancy monitoring. AI-powered surveillance analytics. Automated correlation of physical and cyber access anomalies."
       },
-      "toolExamples": ["HID Global", "Lenel/S2", "Genetec", "Honeywell Pro-Watch"],
-      "nistCsf": ["PR.AA-01", "PR.AA-02", "PR.IR-04"],
-      "iso27001": ["A.7.1", "A.7.2", "A.7.3", "A.7.4"],
-      "rmit": ["10.34", "10.35"],
-      "cisControls": ["4.8"],
-      "relatedDirectives": ["directive-physical-security", "directive-ncii-standards"]
+      "toolExamples": [
+        "HID Global",
+        "Lenel/S2",
+        "Genetec",
+        "Honeywell Pro-Watch"
+      ],
+      "nistCsf": [
+        "PR.AA-01",
+        "PR.AA-02",
+        "PR.IR-04"
+      ],
+      "iso27001": [
+        "A.7.1",
+        "A.7.2",
+        "A.7.3",
+        "A.7.4"
+      ],
+      "rmit": [
+        "10.34",
+        "10.35"
+      ],
+      "cisControls": [
+        "4.8"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-environmental-protection",
@@ -1175,7 +2149,10 @@
       "type": "preventive",
       "layer": "technology",
       "description": "Protect NCII infrastructure against environmental threats including power failures, fire, flooding, temperature extremes, and natural disasters. Implement redundant environmental controls and monitoring systems to maintain NCII system availability and prevent physical damage to critical infrastructure equipment.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Deploy uninterruptible power supplies and backup generators with sufficient capacity for NCII system graceful shutdown or sustained operation",
         "Implement fire detection and suppression systems appropriate for data centre and equipment room environments",
@@ -1187,12 +2164,29 @@
         "mature": "Redundant power and cooling in NCII infrastructure locations. Environmental monitoring with automated alerting. Annual testing of all environmental systems. Documented procedures for environmental incidents.",
         "advanced": "Fully redundant N+1 or 2N environmental infrastructure. Predictive maintenance using IoT sensors. Integrated building management system with automated environmental response. Regular disaster scenario testing."
       },
-      "toolExamples": ["Schneider Electric EcoStruxure", "Vertiv Liebert", "Nlyte", "Sunbird DCIM"],
-      "nistCsf": ["PR.IR-04"],
-      "iso27001": ["A.7.5", "A.7.8", "A.7.11", "A.7.12"],
-      "rmit": ["10.35", "10.36"],
-      "cisControls": ["4.8"],
-      "relatedDirectives": ["directive-physical-security", "directive-environmental-protection"]
+      "toolExamples": [
+        "Schneider Electric EcoStruxure",
+        "Vertiv Liebert",
+        "Nlyte",
+        "Sunbird DCIM"
+      ],
+      "nistCsf": [
+        "PR.IR-04"
+      ],
+      "iso27001": [
+        "A.7.5",
+        "A.7.8",
+        "A.7.11",
+        "A.7.12"
+      ],
+      "rmit": [
+        "10.35",
+        "10.36"
+      ],
+      "cisControls": [
+        "4.8"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-physical-monitoring",
@@ -1201,7 +2195,10 @@
       "type": "detective",
       "layer": "technology",
       "description": "Implement surveillance and monitoring systems for facilities housing NCII infrastructure. Continuous monitoring deters unauthorized physical access and provides evidence for security investigations. Surveillance coverage must include all perimeter entry points, critical infrastructure areas, and server rooms.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Deploy CCTV surveillance covering all entry points, perimeters, and critical infrastructure areas housing NCII systems",
         "Implement intrusion detection systems (motion sensors, door contacts) for after-hours monitoring of NCII areas",
@@ -1213,12 +2210,29 @@
         "mature": "Comprehensive CCTV coverage with analytics (motion detection, tailgating). 90-day retention. Integrated alarm monitoring with 24/7 response capability.",
         "advanced": "AI-powered video analytics with real-time anomaly detection. Integration with cyber SOC for physical-logical correlation. Automated incident alerting and response procedures."
       },
-      "toolExamples": ["Milestone XProtect", "Avigilon", "Genetec Security Center", "Verkada"],
-      "nistCsf": ["DE.CM-02", "PR.IR-04"],
-      "iso27001": ["A.7.1", "A.7.2", "A.7.4"],
-      "rmit": ["10.34", "10.37"],
-      "cisControls": ["4.8"],
-      "relatedDirectives": ["directive-physical-security", "directive-surveillance"]
+      "toolExamples": [
+        "Milestone XProtect",
+        "Avigilon",
+        "Genetec Security Center",
+        "Verkada"
+      ],
+      "nistCsf": [
+        "DE.CM-02",
+        "PR.IR-04"
+      ],
+      "iso27001": [
+        "A.7.1",
+        "A.7.2",
+        "A.7.4"
+      ],
+      "rmit": [
+        "10.34",
+        "10.37"
+      ],
+      "cisControls": [
+        "4.8"
+      ],
+      "relatedDirectives": []
     }
   ],
   "cloud-security": [
@@ -1229,7 +2243,11 @@
       "type": "preventive",
       "layer": "governance",
       "description": "Establish a governance framework for the use of cloud services hosting or processing NCII system workloads and data. Define approved cloud service providers, assess data sovereignty and residency requirements, and implement the shared responsibility model with clear accountability for security controls across cloud and on-premises boundaries.",
-      "sections": ["s22", "s23", "s47"],
+      "sections": [
+        "s22",
+        "s23",
+        "s47"
+      ],
       "keyActivities": [
         "Define a cloud security policy specifying requirements for NCII workload deployment including approved providers and service models",
         "Assess data sovereignty and residency requirements to ensure NCII data remains within jurisdictional boundaries as required",
@@ -1241,12 +2259,32 @@
         "mature": "Formal cloud security policy with approved providers and service models. Shared responsibility model documented. Cloud security posture management deployed.",
         "advanced": "Comprehensive cloud governance programme with automated policy enforcement. Multi-cloud security orchestration. Cloud-native security architecture patterns for NCII workloads."
       },
-      "toolExamples": ["Prisma Cloud", "Wiz", "Microsoft Defender for Cloud", "Orca Security"],
-      "nistCsf": ["GV.SC-07", "PR.DS-01", "PR.IR-01"],
-      "iso27001": ["A.5.23", "A.8.25", "A.8.26"],
-      "rmit": ["10.48", "10.52"],
-      "cisControls": ["3.3", "6.7", "15.4"],
-      "relatedDirectives": ["directive-cloud-security", "directive-data-sovereignty"]
+      "toolExamples": [
+        "Prisma Cloud",
+        "Wiz",
+        "Microsoft Defender for Cloud",
+        "Orca Security"
+      ],
+      "nistCsf": [
+        "GV.SC-07",
+        "PR.DS-01",
+        "PR.IR-01"
+      ],
+      "iso27001": [
+        "A.5.23",
+        "A.8.25",
+        "A.8.26"
+      ],
+      "rmit": [
+        "10.48",
+        "10.52"
+      ],
+      "cisControls": [
+        "3.3",
+        "6.7",
+        "15.4"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-cloud-workload-protection",
@@ -1255,7 +2293,10 @@
       "type": "preventive",
       "layer": "technology",
       "description": "Implement security controls to protect NCII workloads running in cloud environments. Cover compute instances, containers, serverless functions, and managed services. Apply security hardening, runtime protection, and continuous monitoring specific to cloud-native deployment models.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Deploy cloud workload protection platforms covering VMs, containers, and serverless functions hosting NCII workloads",
         "Implement cloud-native security hardening based on CIS benchmarks for the relevant cloud platform",
@@ -1267,12 +2308,32 @@
         "mature": "CWPP deployed across all NCII cloud workloads. CIS benchmark compliance enforced. Cloud audit logs integrated with SIEM. Regular cloud-specific penetration testing.",
         "advanced": "Runtime protection with behavioral analysis for cloud workloads. Infrastructure-as-code security scanning in CI/CD pipelines. Automated remediation of cloud misconfigurations."
       },
-      "toolExamples": ["Wiz", "Prisma Cloud", "Aqua Security", "Lacework", "CrowdStrike Falcon Cloud"],
-      "nistCsf": ["PR.PS-01", "PR.DS-01", "DE.CM-09"],
-      "iso27001": ["A.8.25", "A.8.26"],
-      "rmit": ["10.52", "10.22"],
-      "cisControls": ["4.4", "4.6", "16.1"],
-      "relatedDirectives": ["directive-cloud-security", "directive-workload-protection"]
+      "toolExamples": [
+        "Wiz",
+        "Prisma Cloud",
+        "Aqua Security",
+        "Lacework",
+        "CrowdStrike Falcon Cloud"
+      ],
+      "nistCsf": [
+        "PR.PS-01",
+        "PR.DS-01",
+        "DE.CM-09"
+      ],
+      "iso27001": [
+        "A.8.25",
+        "A.8.26"
+      ],
+      "rmit": [
+        "10.52",
+        "10.22"
+      ],
+      "cisControls": [
+        "4.4",
+        "4.6",
+        "16.1"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-cloud-identity",
@@ -1281,7 +2342,10 @@
       "type": "preventive",
       "layer": "technology",
       "description": "Implement cloud-specific identity and access management controls for NCII workloads. Address cloud IAM policy management, service account security, cross-account access governance, and entitlement management. Cloud IAM misconfigurations are a leading cause of cloud security incidents and require dedicated attention for critical infrastructure.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Implement cloud IAM policies enforcing least-privilege access for all NCII cloud resources and services",
         "Secure service accounts and machine identities with credential rotation and usage monitoring",
@@ -1293,12 +2357,33 @@
         "mature": "CIEM solution monitoring cloud entitlements. Service account credentials rotated automatically. Cross-account access governed through centralized policies. Federated identity with on-premises directory.",
         "advanced": "Just-in-time cloud access with automated provisioning and deprovisioning. Machine learning-based entitlement optimization. Zero standing privileges in cloud environments for NCII workloads."
       },
-      "toolExamples": ["Ermetic", "CloudKnox/Microsoft Entra Permissions Management", "CrowdStrike CIEM", "Sonrai"],
-      "nistCsf": ["PR.AA-01", "PR.AA-03", "PR.AA-05"],
-      "iso27001": ["A.5.15", "A.5.18", "A.8.2"],
-      "rmit": ["10.16", "10.52"],
-      "cisControls": ["5.4", "6.1", "6.2", "6.8"],
-      "relatedDirectives": ["directive-cloud-security", "directive-access-control"]
+      "toolExamples": [
+        "Ermetic",
+        "CloudKnox/Microsoft Entra Permissions Management",
+        "CrowdStrike CIEM",
+        "Sonrai"
+      ],
+      "nistCsf": [
+        "PR.AA-01",
+        "PR.AA-03",
+        "PR.AA-05"
+      ],
+      "iso27001": [
+        "A.5.15",
+        "A.5.18",
+        "A.8.2"
+      ],
+      "rmit": [
+        "10.16",
+        "10.52"
+      ],
+      "cisControls": [
+        "5.4",
+        "6.1",
+        "6.2",
+        "6.8"
+      ],
+      "relatedDirectives": []
     }
   ],
   "change-management": [
@@ -1309,7 +2394,10 @@
       "type": "preventive",
       "layer": "process",
       "description": "Implement a formal change control process for all modifications to NCII systems including infrastructure, applications, configurations, and data. Changes must be assessed for security impact, approved through defined authority levels, tested before deployment, and documented with rollback procedures.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Establish a Change Advisory Board or equivalent authority for approving changes to NCII systems",
         "Require security impact assessments for all changes to NCII system components and configurations",
@@ -1321,12 +2409,28 @@
         "mature": "Formal CAB process with security representation for NCII changes. Mandatory security impact assessment. Testing gates before production deployment. Automated change tracking.",
         "advanced": "Automated change risk assessment and approval workflows. CI/CD integration with security gates for NCII application changes. Change analytics identifying patterns and predicting change risk."
       },
-      "toolExamples": ["ServiceNow ITSM", "BMC Helix", "Jira Service Management", "Freshservice"],
-      "nistCsf": ["PR.PS-02", "PR.PS-05"],
-      "iso27001": ["A.8.32"],
-      "rmit": ["10.41", "10.42"],
-      "cisControls": ["4.1", "4.2"],
-      "relatedDirectives": ["directive-change-management", "directive-ncii-standards"]
+      "toolExamples": [
+        "ServiceNow ITSM",
+        "BMC Helix",
+        "Jira Service Management",
+        "Freshservice"
+      ],
+      "nistCsf": [
+        "PR.PS-02",
+        "PR.PS-05"
+      ],
+      "iso27001": [
+        "A.8.32"
+      ],
+      "rmit": [
+        "10.41",
+        "10.42"
+      ],
+      "cisControls": [
+        "4.1",
+        "4.2"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-configuration-management",
@@ -1335,7 +2439,10 @@
       "type": "preventive",
       "layer": "technology",
       "description": "Maintain secure baseline configurations for all NCII system components and enforce configuration compliance through automated monitoring. Configuration baselines must align with vendor hardening guides, CIS benchmarks, or NACSA-prescribed standards. Unauthorized configuration changes must be detected and remediated.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Define and document secure configuration baselines for all NCII system component types",
         "Apply CIS benchmarks or vendor hardening guides as the foundation for NCII configuration standards",
@@ -1347,12 +2454,33 @@
         "mature": "Comprehensive configuration baselines with automated compliance monitoring. Configuration drift detection with alerting. Infrastructure-as-code for repeatable NCII deployments.",
         "advanced": "Continuous configuration compliance with automated remediation. Immutable infrastructure patterns for NCII workloads. Configuration security integrated into CI/CD pipelines."
       },
-      "toolExamples": ["Chef InSpec", "Ansible", "Puppet", "Microsoft Intune", "Qualys Policy Compliance"],
-      "nistCsf": ["PR.PS-01", "DE.CM-09"],
-      "iso27001": ["A.8.9", "A.8.19"],
-      "rmit": ["10.28", "10.41"],
-      "cisControls": ["4.1", "4.2", "4.3", "4.4", "4.5"],
-      "relatedDirectives": ["directive-change-management", "directive-configuration-standards"]
+      "toolExamples": [
+        "Chef InSpec",
+        "Ansible",
+        "Puppet",
+        "Microsoft Intune",
+        "Qualys Policy Compliance"
+      ],
+      "nistCsf": [
+        "PR.PS-01",
+        "DE.CM-09"
+      ],
+      "iso27001": [
+        "A.8.9",
+        "A.8.19"
+      ],
+      "rmit": [
+        "10.28",
+        "10.41"
+      ],
+      "cisControls": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-emergency-change",
@@ -1361,7 +2489,11 @@
       "type": "corrective",
       "layer": "process",
       "description": "Define expedited change procedures for emergency situations requiring immediate modifications to NCII systems. Emergency changes may be needed during active incident response, critical vulnerability remediation, or imminent threat mitigation. Procedures must maintain accountability while enabling rapid response to protect critical infrastructure.",
-      "sections": ["s22", "s24", "s25"],
+      "sections": [
+        "s22",
+        "s24",
+        "s25"
+      ],
       "keyActivities": [
         "Define criteria for invoking emergency change procedures tied to incident severity and threat urgency",
         "Establish delegated approval authority for emergency changes with post-implementation CAB review",
@@ -1373,12 +2505,26 @@
         "mature": "Defined emergency change criteria and approval authority. Automated emergency change ticket creation. Mandatory post-implementation review within 48 hours.",
         "advanced": "Pre-approved emergency change playbooks for common NCII threat scenarios. Automated documentation capture during emergency changes. Analytics on emergency change frequency and root causes driving process improvement."
       },
-      "toolExamples": ["ServiceNow ITSM", "BMC Helix", "PagerDuty", "Jira Service Management"],
-      "nistCsf": ["RS.MA-02", "PR.PS-02"],
-      "iso27001": ["A.8.32"],
-      "rmit": ["10.42"],
-      "cisControls": ["4.1"],
-      "relatedDirectives": ["directive-change-management", "directive-incident-response"]
+      "toolExamples": [
+        "ServiceNow ITSM",
+        "BMC Helix",
+        "PagerDuty",
+        "Jira Service Management"
+      ],
+      "nistCsf": [
+        "RS.MA-02",
+        "PR.PS-02"
+      ],
+      "iso27001": [
+        "A.8.32"
+      ],
+      "rmit": [
+        "10.42"
+      ],
+      "cisControls": [
+        "4.1"
+      ],
+      "relatedDirectives": []
     },
     {
       "slug": "ncii-release-management",
@@ -1387,7 +2533,10 @@
       "type": "preventive",
       "layer": "process",
       "description": "Implement secure release management practices for software deployments to NCII systems. Ensure that releases undergo security testing, code review, and integrity verification before deployment. Apply software supply chain security measures including dependency scanning and build pipeline hardening.",
-      "sections": ["s22", "s23"],
+      "sections": [
+        "s22",
+        "s23"
+      ],
       "keyActivities": [
         "Integrate static and dynamic application security testing (SAST/DAST) into the release pipeline for NCII applications",
         "Implement software composition analysis to identify vulnerable dependencies in NCII application releases",
@@ -1399,12 +2548,34 @@
         "mature": "Automated SAST/DAST in CI/CD pipeline. SCA integrated with vulnerability management. Code signing enforced for NCII application deployments. Release approvals gated on security scan results.",
         "advanced": "Comprehensive software supply chain security with SBOM generation. Signed build attestations. Automated policy enforcement across the entire release pipeline. Runtime application self-protection for critical NCII applications."
       },
-      "toolExamples": ["SonarQube", "Snyk", "Checkmarx", "GitHub Advanced Security", "JFrog Xray"],
-      "nistCsf": ["PR.PS-02", "PR.DS-06", "GV.SC-08"],
-      "iso27001": ["A.8.25", "A.8.28", "A.8.31"],
-      "rmit": ["10.41", "10.28"],
-      "cisControls": ["16.1", "16.3", "16.4", "16.12"],
-      "relatedDirectives": ["directive-change-management", "directive-secure-development"]
+      "toolExamples": [
+        "SonarQube",
+        "Snyk",
+        "Checkmarx",
+        "GitHub Advanced Security",
+        "JFrog Xray"
+      ],
+      "nistCsf": [
+        "PR.PS-02",
+        "PR.DS-06",
+        "GV.SC-08"
+      ],
+      "iso27001": [
+        "A.8.25",
+        "A.8.28",
+        "A.8.31"
+      ],
+      "rmit": [
+        "10.41",
+        "10.28"
+      ],
+      "cisControls": [
+        "16.1",
+        "16.3",
+        "16.4",
+        "16.12"
+      ],
+      "relatedDirectives": []
     }
   ]
 }

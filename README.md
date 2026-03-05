@@ -127,8 +127,8 @@ The database maps Act 854 provisions to:
 ### Chief Executive Directives (10)
 Issued under s15, covering NCII registration, risk assessment methodology, audit standards, incident notification, information sharing, service provider obligations, CoP development, vulnerability disclosure, threat intelligence sharing, and NCII asset categorization.
 
-### Codes of Practice (12)
-Sector-specific CoPs under s22, with varying status: indicative (Banking & Finance, Trade/Industry/Economy), template issued (Government, ICT, Energy), draft (Transport, Defence, Healthcare, Water & Sewerage), pending (Agriculture, Science & Technology), and not-applicable (Education — not an official NCII sector).
+### Codes of Practice (11)
+Sector-specific CoPs under s22, with varying status: indicative (Banking & Finance, Trade/Industry/Economy), template issued (Government, ICT, Energy), draft (Transport, Defence, Healthcare, Water & Sewerage), pending (Agriculture, Science & Technology).
 
 ## License
 

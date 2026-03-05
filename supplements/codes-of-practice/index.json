@@ -153,21 +153,6 @@
       "filePath": "supplements/codes-of-practice/cop-science-technology.json",
       "status": "pending",
       "version": "0.1-placeholder"
-    },
-    {
-      "sectorWarning": "FABRICATED SECTOR — Education is NOT listed as an NCII sector in the Schedule to Act 854",
-      "id": "cop-education",
-      "title": "Code of Practice for the Education Sector (FABRICATED — NOT AN OFFICIAL NCII SECTOR)",
-      "type": "code-of-practice",
-      "sectorId": "education",
-      "sectorLead": "Ministry of Education / Ministry of Higher Education",
-      "approvedUnder": "s22",
-      "gazetteDate": null,
-      "effectiveDate": null,
-      "subject": "Standards and best practices for cyber security of education NCII including national examination systems, student information systems, and education management platforms",
-      "filePath": "supplements/codes-of-practice/cop-education.json",
-      "status": "not-applicable",
-      "version": "0.1-placeholder"
     }
   ]
 }

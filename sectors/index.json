@@ -585,59 +585,6 @@
         "Official Secrets Act 1972 (Act 88) — for classified government-funded research"
       ],
       "copStatus": "pending"
-    },
-    {
-      "sectorWarning": "FABRICATED SECTOR — Education is NOT listed as an NCII sector in the Schedule to Act 854. This entry is a constructed example and must not be relied upon for compliance purposes. The 11 official NCII sectors end at 'Science, Technology and Innovation' (sector 11).",
-      "id": "education",
-      "sectorNumber": null,
-      "name": "Education (NOT AN OFFICIAL NCII SECTOR)",
-      "sectorLead": "Ministry of Education",
-      "description": "WARNING: Education is not listed in the Schedule to the Cyber Security Act 2024 (Act 854) as an NCII sector. This entry is entirely constructed and speculative. The content below represents what such a sector might look like IF it were designated, but it has no basis in the gazetted legislation. Covers public and private education institution management systems, national examination platforms, student data repositories, e-learning infrastructure, and education credential verification systems.",
-      "nciiExamples": [
-        "APDM (Aplikasi Pangkalan Data Murid) national student database for primary and secondary education",
-        "SPM/STPM (national examination) digital examination management and results processing system operated by the Malaysian Examinations Syndicate (LPM)",
-        "DELIMa (Digital Educational Learning Initiative Malaysia) national e-learning platform",
-        "MOHE SETARA (university rating) and MyMoheS higher education management information system",
-        "UPUOnline (centralised public university admissions and placement system)"
-      ],
-      "obligations": [
-        {
-          "id": "edu-O1",
-          "obligation": "Accept NCII designation and ensure institutional leadership acknowledges accountability for cyber security of designated education information systems",
-          "basis": "s17(1)",
-          "type": "mandatory"
-        },
-        {
-          "id": "edu-O2",
-          "obligation": "Implement cyber security measures to protect student personal data, ensure integrity of examination results, and maintain availability of e-learning platforms during critical academic periods",
-          "basis": "s18(1)",
-          "type": "mandatory"
-        },
-        {
-          "id": "edu-O3",
-          "obligation": "Conduct annual cyber security risk assessments covering student data privacy risks, examination system integrity, and vulnerability of distributed campus networks",
-          "basis": "s21(1)",
-          "type": "mandatory"
-        },
-        {
-          "id": "edu-O4",
-          "obligation": "Undergo biennial cyber security audit by a NACSA-licensed auditor, with priority on examination and admissions systems",
-          "basis": "s23(1)",
-          "type": "mandatory"
-        },
-        {
-          "id": "edu-O5",
-          "obligation": "Where a cyber security incident has or may have a significant impact, notify NACSA within 6 hours of becoming aware; incidents affecting national examination systems during examination periods must also trigger contingency examination procedures immediately. Submit follow-up notifications to NACSA every 72 hours until closure confirmed in writing. Submit a final incident report within 30 days of full resolution. Maintain a register of ALL detected incidents regardless of significance threshold, and retain records for 7 years.",
-          "basis": "s26(1)",
-          "type": "mandatory"
-        }
-      ],
-      "regulatoryOverlaps": [
-        "Personal Data Protection Act 2010 (PDPA) — processing of student and minor personal data",
-        "Education Act 1996 (Act 550) — institutional governance and regulatory compliance",
-        "Malaysian Qualifications Agency Act 2007 (Act 679) — credential integrity and accreditation standards"
-      ],
-      "copStatus": "not-applicable"
     }
   ]
 }

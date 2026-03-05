@@ -22,6 +22,10 @@
         "Compliance obligations under Act 854",
         "Policy exception process",
         "Review and update cycle"
+      ],
+      "controlSlugs": [
+        "ncii-policy-framework",
+        "ncii-governance-structure"
       ]
     },
     {
@@ -45,6 +49,10 @@
         "Communication protocols",
         "Evidence preservation requirements",
         "Post-incident review process"
+      ],
+      "controlSlugs": [
+        "ncii-incident-response-plan",
+        "ncii-incident-notification"
       ]
     },
     {
@@ -68,6 +76,10 @@
         "Privileged access management",
         "Remote access controls",
         "Access review frequency"
+      ],
+      "controlSlugs": [
+        "ncii-identity-management",
+        "ncii-privileged-access"
       ]
     },
     {
@@ -91,6 +103,10 @@
         "Risk acceptance authority levels",
         "Risk monitoring and reporting",
         "Integration with enterprise risk management"
+      ],
+      "controlSlugs": [
+        "ncii-risk-assessment-programme",
+        "ncii-risk-treatment"
       ]
     },
     {
@@ -113,6 +129,10 @@
         "Labelling standards",
         "Declassification procedures",
         "Information sharing restrictions under s49"
+      ],
+      "controlSlugs": [
+        "ncii-asset-classification",
+        "ncii-asset-inventory"
       ]
     },
     {
@@ -135,6 +155,10 @@
         "Internet and email usage",
         "Social media guidelines",
         "Monitoring notice and consent"
+      ],
+      "controlSlugs": [
+        "ncii-security-awareness",
+        "ncii-board-awareness"
       ]
     },
     {
@@ -158,6 +182,10 @@
         "Testing and rollback requirements",
         "Documentation and audit trail",
         "Emergency change procedures"
+      ],
+      "controlSlugs": [
+        "ncii-change-control",
+        "ncii-emergency-change"
       ]
     },
     {
@@ -181,6 +209,10 @@
         "Testing frequency and scenarios",
         "Alternate site arrangements",
         "Communication and notification"
+      ],
+      "controlSlugs": [
+        "ncii-continuity-plan",
+        "ncii-disaster-recovery"
       ]
     },
     {
@@ -204,6 +236,10 @@
         "Incident notification obligations for vendors",
         "Access management for third parties",
         "Ongoing monitoring and review"
+      ],
+      "controlSlugs": [
+        "ncii-vendor-risk-assessment",
+        "ncii-supply-chain-contracts"
       ]
     },
     {
@@ -227,6 +263,10 @@
         "Zero-day response procedures",
         "Vulnerability disclosure coordination",
         "Exception and risk acceptance process"
+      ],
+      "controlSlugs": [
+        "ncii-vulnerability-scanning",
+        "ncii-patch-management"
       ]
     },
     {
@@ -250,6 +290,10 @@
         "TLS/SSL standards",
         "Data-at-rest encryption requirements",
         "Cryptographic key lifecycle"
+      ],
+      "controlSlugs": [
+        "ncii-encryption-standards",
+        "ncii-key-management"
       ]
     },
     {
@@ -273,6 +317,10 @@
         "Remote access controls",
         "Wireless security",
         "Network monitoring and logging"
+      ],
+      "controlSlugs": [
+        "ncii-network-architecture",
+        "ncii-network-monitoring"
       ]
     },
     {
@@ -295,6 +343,10 @@
         "Equipment disposal procedures",
         "Physical security monitoring",
         "Clean desk and clear screen"
+      ],
+      "controlSlugs": [
+        "ncii-facility-access",
+        "ncii-physical-monitoring"
       ]
     },
     {
@@ -317,6 +369,10 @@
         "Training content requirements",
         "Competency assessment",
         "New joiner induction requirements"
+      ],
+      "controlSlugs": [
+        "ncii-security-awareness",
+        "ncii-technical-training"
       ]
     },
     {
@@ -340,6 +396,10 @@
         "Asset lifecycle management",
         "Disposal and decommissioning",
         "Asset inventory maintenance"
+      ],
+      "controlSlugs": [
+        "ncii-asset-inventory",
+        "ncii-asset-lifecycle"
       ]
     },
     {
@@ -363,6 +423,10 @@
         "Cloud access security",
         "Data encryption in cloud",
         "Cloud incident response"
+      ],
+      "controlSlugs": [
+        "ncii-cloud-governance",
+        "ncii-cloud-workload-protection"
       ]
     },
     {
@@ -386,6 +450,10 @@
         "Cross-border transfer controls",
         "Breach notification (dual PDPA/Act 854 obligations)",
         "Data retention and disposal"
+      ],
+      "controlSlugs": [
+        "ncii-encryption-standards",
+        "ncii-asset-classification"
       ]
     },
     {
@@ -409,6 +477,10 @@
         "Supply chain incident notification",
         "Contractual security obligations",
         "Ongoing supplier monitoring"
+      ],
+      "controlSlugs": [
+        "ncii-vendor-risk-assessment",
+        "ncii-supply-chain-contracts"
       ]
     },
     {
@@ -432,6 +504,10 @@
         "Regulatory compliance monitoring",
         "CE directive tracking",
         "Sector CoP compliance assessment"
+      ],
+      "controlSlugs": [
+        "ncii-internal-audit",
+        "ncii-external-audit"
       ]
     },
     {
@@ -455,6 +531,10 @@
         "Session management",
         "Privileged remote access controls",
         "Third-party remote access restrictions"
+      ],
+      "controlSlugs": [
+        "ncii-remote-access",
+        "ncii-mfa"
       ]
     }
   ],
@@ -480,6 +560,10 @@
         "NCII asset inventory preparation",
         "Sector lead coordination",
         "Transition requirements for existing operators"
+      ],
+      "controlSlugs": [
+        "ncii-entity-registration",
+        "ncii-governance-structure"
       ]
     },
     {
@@ -503,6 +587,10 @@
         "Sector lead parallel notification",
         "Follow-up reporting at 72 hours",
         "Final report at 30 days post-resolution"
+      ],
+      "controlSlugs": [
+        "ncii-incident-notification",
+        "ncii-incident-response-plan"
       ]
     },
     {
@@ -525,6 +613,10 @@
         "Risk calculation methodology",
         "Risk treatment plan development",
         "Report submission to NACSA/sector lead"
+      ],
+      "controlSlugs": [
+        "ncii-risk-assessment-programme",
+        "ncii-risk-treatment"
       ]
     },
     {
@@ -548,6 +640,10 @@
         "Auditor access and support",
         "Finding remediation tracking",
         "Report submission procedures"
+      ],
+      "controlSlugs": [
+        "ncii-external-audit",
+        "ncii-internal-audit"
       ]
     },
     {
@@ -570,6 +666,10 @@
         "Remediation prioritisation",
         "Evidence collection guidance",
         "Compliance reporting to sector lead"
+      ],
+      "controlSlugs": [
+        "ncii-compliance-programme",
+        "ncii-entity-registration"
       ]
     },
     {
@@ -593,6 +693,10 @@
         "Result triage and false positive handling",
         "Remediation assignment and tracking",
         "Trend analysis and reporting"
+      ],
+      "controlSlugs": [
+        "ncii-vulnerability-scanning",
+        "ncii-patch-management"
       ]
     },
     {
@@ -615,6 +719,10 @@
         "Rollback procedures",
         "Emergency patching process",
         "Exception and deferral process"
+      ],
+      "controlSlugs": [
+        "ncii-patch-management",
+        "ncii-vulnerability-scanning"
       ]
     },
     {
@@ -637,6 +745,10 @@
         "Joiner/mover/leaver process",
         "Access recertification schedule",
         "Emergency access provisioning"
+      ],
+      "controlSlugs": [
+        "ncii-identity-management",
+        "ncii-privileged-access"
       ]
     },
     {
@@ -659,6 +771,10 @@
         "Testing and validation",
         "Implementation and verification",
         "Emergency change fast-track"
+      ],
+      "controlSlugs": [
+        "ncii-change-control",
+        "ncii-configuration-management"
       ]
     },
     {
@@ -681,6 +797,10 @@
         "Restoration testing frequency",
         "Recovery point and time objectives",
         "Backup integrity verification"
+      ],
+      "controlSlugs": [
+        "ncii-backup-recovery",
+        "ncii-continuity-plan"
       ]
     },
     {
@@ -704,6 +824,10 @@
         "Eradication procedures",
         "Recovery and restoration steps",
         "Evidence collection and chain of custody"
+      ],
+      "controlSlugs": [
+        "ncii-incident-response-plan",
+        "ncii-digital-forensics"
       ]
     },
     {
@@ -727,6 +851,10 @@
         "Tool validation requirements",
         "Report preparation",
         "Coordination with law enforcement under Part VI"
+      ],
+      "controlSlugs": [
+        "ncii-digital-forensics",
+        "ncii-incident-response-plan"
       ]
     },
     {
@@ -750,6 +878,10 @@
         "Detection rule creation from intelligence",
         "Sector working group participation",
         "Intelligence sharing obligations"
+      ],
+      "controlSlugs": [
+        "ncii-threat-modelling",
+        "ncii-risk-assessment-programme"
       ]
     },
     {
@@ -773,6 +905,10 @@
         "System recovery prioritisation",
         "Staff mobilisation",
         "Return to normal operations"
+      ],
+      "controlSlugs": [
+        "ncii-continuity-plan",
+        "ncii-disaster-recovery"
       ]
     },
     {
@@ -796,6 +932,10 @@
         "Management notification triggers",
         "NACSA escalation criteria",
         "After-hours escalation procedures"
+      ],
+      "controlSlugs": [
+        "ncii-incident-response-plan",
+        "ncii-soc-operations"
       ]
     },
     {
@@ -819,6 +959,10 @@
         "Contractual security requirements",
         "Access provisioning for vendors",
         "Ongoing monitoring and review schedule"
+      ],
+      "controlSlugs": [
+        "ncii-vendor-risk-assessment",
+        "ncii-supply-chain-contracts"
       ]
     },
     {
@@ -841,6 +985,10 @@
         "Key rotation schedule",
         "Key revocation and destruction",
         "Key recovery procedures"
+      ],
+      "controlSlugs": [
+        "ncii-key-management",
+        "ncii-encryption-standards"
       ]
     },
     {
@@ -864,6 +1012,10 @@
         "Finding classification",
         "Remediation verification",
         "Report submission and retention"
+      ],
+      "controlSlugs": [
+        "ncii-penetration-testing",
+        "ncii-vulnerability-scanning"
       ]
     },
     {
@@ -887,6 +1039,10 @@
         "Deviation detection and remediation",
         "Baseline update triggers",
         "Evidence for audit"
+      ],
+      "controlSlugs": [
+        "ncii-configuration-management",
+        "ncii-emergency-change"
       ]
     },
     {
@@ -909,6 +1065,10 @@
         "Phishing simulation campaigns",
         "Completion tracking and enforcement",
         "Effectiveness measurement and reporting"
+      ],
+      "controlSlugs": [
+        "ncii-security-awareness",
+        "ncii-technical-training"
       ]
     }
   ],
@@ -934,6 +1094,10 @@
         "CIS Benchmark alignment",
         "Deviation approval process",
         "Automated compliance checking"
+      ],
+      "controlSlugs": [
+        "ncii-configuration-management",
+        "ncii-emergency-change"
       ]
     },
     {
@@ -957,6 +1121,10 @@
         "DMZ architecture",
         "IT/OT network separation",
         "Network access control (NAC)"
+      ],
+      "controlSlugs": [
+        "ncii-network-architecture",
+        "ncii-network-monitoring"
       ]
     },
     {
@@ -979,6 +1147,10 @@
         "Device encryption",
         "USB and removable media controls",
         "Automated patching requirements"
+      ],
+      "controlSlugs": [
+        "ncii-vulnerability-scanning",
+        "ncii-patch-management"
       ]
     },
     {
@@ -1002,6 +1174,10 @@
         "Log retention periods (minimum 12 months)",
         "Real-time alerting rules",
         "Log integrity protection"
+      ],
+      "controlSlugs": [
+        "ncii-soc-operations",
+        "ncii-network-monitoring"
       ]
     },
     {
@@ -1025,6 +1201,10 @@
         "Service account management",
         "Session timeout settings",
         "Failed authentication lockout"
+      ],
+      "controlSlugs": [
+        "ncii-mfa",
+        "ncii-identity-management"
       ]
     },
     {
@@ -1048,6 +1228,10 @@
         "Data-in-transit encryption",
         "Certificate requirements",
         "Key length minimums by use case"
+      ],
+      "controlSlugs": [
+        "ncii-encryption-standards",
+        "ncii-key-management"
       ]
     },
     {
@@ -1070,6 +1254,10 @@
         "SAST and DAST integration",
         "Code review requirements",
         "Dependency/library management"
+      ],
+      "controlSlugs": [
+        "ncii-release-management",
+        "ncii-change-control"
       ]
     },
     {
@@ -1093,6 +1281,10 @@
         "Cloud security posture management",
         "Container and serverless security",
         "Cloud logging and monitoring"
+      ],
+      "controlSlugs": [
+        "ncii-cloud-governance",
+        "ncii-cloud-workload-protection"
       ]
     },
     {
@@ -1115,6 +1307,10 @@
         "Remote wipe capability",
         "Jailbreak/root detection",
         "Approved applications list"
+      ],
+      "controlSlugs": [
+        "ncii-remote-access",
+        "ncii-identity-management"
       ]
     },
     {
@@ -1137,6 +1333,10 @@
         "Guest network isolation",
         "Wireless monitoring",
         "RF shielding considerations"
+      ],
+      "controlSlugs": [
+        "ncii-network-access-control",
+        "ncii-network-architecture"
       ]
     },
     {
@@ -1159,6 +1359,10 @@
         "DLP for email",
         "Email encryption requirements",
         "Email archiving and retention"
+      ],
+      "controlSlugs": [
+        "ncii-security-awareness",
+        "ncii-board-awareness"
       ]
     },
     {
@@ -1182,6 +1386,10 @@
         "API gateway requirements",
         "API inventory and documentation",
         "API security testing"
+      ],
+      "controlSlugs": [
+        "ncii-release-management",
+        "ncii-emergency-change"
       ]
     },
     {
@@ -1204,6 +1412,10 @@
         "Audit logging configuration",
         "Backup encryption",
         "Database activity monitoring"
+      ],
+      "controlSlugs": [
+        "ncii-encryption-standards",
+        "ncii-key-management"
       ]
     },
     {
@@ -1226,6 +1438,10 @@
         "Session management",
         "HTTP security headers",
         "Secure cookie configuration"
+      ],
+      "controlSlugs": [
+        "ncii-release-management",
+        "ncii-change-control"
       ]
     },
     {
@@ -1248,6 +1464,10 @@
         "Split DNS architecture",
         "DNS monitoring for tunnelling",
         "Redundancy and resilience"
+      ],
+      "controlSlugs": [
+        "ncii-dns-security",
+        "ncii-network-architecture"
       ]
     },
     {
@@ -1270,6 +1490,10 @@
         "Renewal and expiry monitoring",
         "Revocation procedures",
         "Certificate inventory maintenance"
+      ],
+      "controlSlugs": [
+        "ncii-certificate-management",
+        "ncii-encryption-standards"
       ]
     },
     {
@@ -1293,6 +1517,10 @@
         "Default credential elimination",
         "Protocol security (Modbus, OPC UA)",
         "IEC 62443 alignment"
+      ],
+      "controlSlugs": [
+        "ncii-network-architecture",
+        "ncii-vulnerability-scanning"
       ]
     },
     {
@@ -1315,6 +1543,10 @@
         "Air-gapped backup copies",
         "Restoration testing frequency",
         "Backup monitoring and alerting"
+      ],
+      "controlSlugs": [
+        "ncii-backup-recovery",
+        "ncii-continuity-plan"
       ]
     },
     {
@@ -1337,6 +1569,10 @@
         "Rack-level security",
         "Visitor escort requirements",
         "Equipment disposal standards"
+      ],
+      "controlSlugs": [
+        "ncii-facility-access",
+        "ncii-environmental-protection"
       ]
     },
     {
@@ -1360,6 +1596,10 @@
         "Incident type taxonomy",
         "Escalation matrix by severity",
         "Classification review triggers"
+      ],
+      "controlSlugs": [
+        "ncii-incident-response-plan",
+        "ncii-incident-notification"
       ]
     }
   ],
@@ -1385,6 +1625,10 @@
         "Location and network zone",
         "Dependencies and interconnections",
         "Last assessment date"
+      ],
+      "controlSlugs": [
+        "ncii-asset-inventory",
+        "ncii-entity-registration"
       ]
     },
     {
@@ -1407,6 +1651,10 @@
         "Current controls",
         "Residual risk level",
         "Treatment plan and owner"
+      ],
+      "controlSlugs": [
+        "ncii-risk-assessment-programme",
+        "ncii-risk-treatment"
       ]
     },
     {
@@ -1430,6 +1678,10 @@
         "Response actions taken",
         "NACSA notification status",
         "Resolution and lessons learned"
+      ],
+      "controlSlugs": [
+        "ncii-incident-response-plan",
+        "ncii-incident-notification"
       ]
     },
     {
@@ -1453,6 +1705,10 @@
         "Remediation owner and deadline",
         "Current status",
         "Evidence of closure"
+      ],
+      "controlSlugs": [
+        "ncii-internal-audit",
+        "ncii-external-audit"
       ]
     },
     {
@@ -1475,6 +1731,10 @@
         "Gap description",
         "Remediation plan",
         "Target compliance date"
+      ],
+      "controlSlugs": [
+        "ncii-compliance-programme",
+        "ncii-entity-registration"
       ]
     },
     {
@@ -1498,6 +1758,10 @@
         "Contract expiry date",
         "Last security assessment",
         "Risk rating"
+      ],
+      "controlSlugs": [
+        "ncii-vendor-risk-assessment",
+        "ncii-supply-chain-monitoring"
       ]
     },
     {
@@ -1520,6 +1784,10 @@
         "Access approval reference",
         "Last review date",
         "Privileged account flag"
+      ],
+      "controlSlugs": [
+        "ncii-identity-management",
+        "ncii-privileged-access"
       ]
     },
     {
@@ -1542,6 +1810,10 @@
         "Approval status",
         "Implementation date",
         "Post-change verification"
+      ],
+      "controlSlugs": [
+        "ncii-change-control",
+        "ncii-configuration-management"
       ]
     },
     {
@@ -1565,6 +1837,10 @@
         "Discovery date",
         "Remediation deadline",
         "Patch/fix status"
+      ],
+      "controlSlugs": [
+        "ncii-vulnerability-scanning",
+        "ncii-patch-management"
       ]
     },
     {
@@ -1588,6 +1864,10 @@
         "Licence validity period",
         "Services engaged",
         "Contract reference"
+      ],
+      "controlSlugs": [
+        "ncii-external-audit",
+        "ncii-evidence-management"
       ]
     },
     {
@@ -1610,6 +1890,10 @@
         "Implementation date",
         "Evidence reference",
         "Next review date"
+      ],
+      "controlSlugs": [
+        "ncii-compliance-programme",
+        "ncii-entity-registration"
       ]
     },
     {
@@ -1632,6 +1916,10 @@
         "Gap description",
         "Remediation plan",
         "Assessment date"
+      ],
+      "controlSlugs": [
+        "ncii-compliance-programme",
+        "ncii-entity-registration"
       ]
     },
     {
@@ -1654,6 +1942,10 @@
         "Assessment score",
         "Compliance status",
         "Next training due"
+      ],
+      "controlSlugs": [
+        "ncii-security-awareness",
+        "ncii-technical-training"
       ]
     },
     {
@@ -1676,6 +1968,10 @@
         "Compensating controls",
         "Risk acceptance authority",
         "Expiry date and review trigger"
+      ],
+      "controlSlugs": [
+        "ncii-risk-treatment",
+        "ncii-risk-assessment-programme"
       ]
     },
     {
@@ -1698,6 +1994,10 @@
         "Last test date and result",
         "Plan owner",
         "Next scheduled test"
+      ],
+      "controlSlugs": [
+        "ncii-continuity-plan",
+        "ncii-backup-recovery"
       ]
     },
     {
@@ -1720,6 +2020,10 @@
         "Creation date",
         "Rotation schedule",
         "Custodian and backup custodian"
+      ],
+      "controlSlugs": [
+        "ncii-key-management",
+        "ncii-encryption-standards"
       ]
     },
     {
@@ -1742,6 +2046,10 @@
         "Key algorithm and length",
         "Associated NCII system",
         "Auto-renewal status"
+      ],
+      "controlSlugs": [
+        "ncii-certificate-management",
+        "ncii-encryption-standards"
       ]
     },
     {
@@ -1765,6 +2073,10 @@
         "Firewall rule summaries",
         "Interconnection points",
         "Last update date"
+      ],
+      "controlSlugs": [
+        "ncii-network-architecture",
+        "ncii-network-monitoring"
       ]
     },
     {
@@ -1788,6 +2100,10 @@
         "Handling requirements",
         "Retention period",
         "Cross-border transfer restrictions"
+      ],
+      "controlSlugs": [
+        "ncii-asset-classification",
+        "ncii-asset-inventory"
       ]
     },
     {
@@ -1810,6 +2126,10 @@
         "Action taken",
         "Detection results",
         "Sharing status"
+      ],
+      "controlSlugs": [
+        "ncii-threat-modelling",
+        "ncii-risk-assessment-programme"
       ]
     }
   ],
@@ -1834,6 +2154,10 @@
         "Audit finding status",
         "Upcoming regulatory deadlines",
         "Budget utilisation"
+      ],
+      "controlSlugs": [
+        "ncii-governance-structure",
+        "ncii-board-awareness"
       ]
     },
     {
@@ -1857,6 +2181,10 @@
         "Audit outcomes",
         "Incident statistics",
         "Improvement roadmap"
+      ],
+      "controlSlugs": [
+        "ncii-compliance-programme",
+        "ncii-compliance-monitoring"
       ]
     },
     {
@@ -1879,6 +2207,10 @@
         "Vulnerability assessment results",
         "Risk register with ratings",
         "Treatment plan recommendations"
+      ],
+      "controlSlugs": [
+        "ncii-risk-assessment-programme",
+        "ncii-threat-modelling"
       ]
     },
     {
@@ -1902,6 +2234,10 @@
         "Findings classified by severity",
         "Recommendations and remediation timelines",
         "Auditor opinion and rating"
+      ],
+      "controlSlugs": [
+        "ncii-external-audit",
+        "ncii-internal-audit"
       ]
     },
     {
@@ -1924,6 +2260,10 @@
         "Impact assessment",
         "Initial response actions",
         "Contact information"
+      ],
+      "controlSlugs": [
+        "ncii-incident-notification",
+        "ncii-incident-response-plan"
       ]
     },
     {
@@ -1947,6 +2287,10 @@
         "Response effectiveness evaluation",
         "Lessons learned",
         "Improvement actions and owners"
+      ],
+      "controlSlugs": [
+        "ncii-incident-response-plan",
+        "ncii-digital-forensics"
       ]
     },
     {
@@ -1970,6 +2314,10 @@
         "Risk ratings",
         "Remediation recommendations",
         "Retesting verification"
+      ],
+      "controlSlugs": [
+        "ncii-penetration-testing",
+        "ncii-vulnerability-scanning"
       ]
     },
     {
@@ -1993,6 +2341,10 @@
         "Remediation rate metrics",
         "SLA compliance",
         "Trend analysis"
+      ],
+      "controlSlugs": [
+        "ncii-vulnerability-scanning",
+        "ncii-patch-management"
       ]
     },
     {
@@ -2015,6 +2367,10 @@
         "Incident trends",
         "Vulnerability remediation rates",
         "Control effectiveness metrics"
+      ],
+      "controlSlugs": [
+        "ncii-compliance-monitoring",
+        "ncii-soc-operations"
       ]
     },
     {
@@ -2038,6 +2394,10 @@
         "Relevant CVEs and exploits",
         "Recommendations for defence",
         "NACSA/sector lead advisories"
+      ],
+      "controlSlugs": [
+        "ncii-threat-modelling",
+        "ncii-risk-assessment-programme"
       ]
     },
     {
@@ -2061,6 +2421,10 @@
         "Identified risks and mitigations",
         "Residual risk rating",
         "Recommendations"
+      ],
+      "controlSlugs": [
+        "ncii-vendor-risk-assessment",
+        "ncii-supply-chain-contracts"
       ]
     },
     {
@@ -2083,6 +2447,10 @@
         "Issues identified during test",
         "Lessons learned",
         "Improvement actions"
+      ],
+      "controlSlugs": [
+        "ncii-continuity-plan",
+        "ncii-disaster-recovery"
       ]
     },
     {
@@ -2105,6 +2473,10 @@
         "Behavioural change metrics",
         "Year-on-year comparison",
         "Recommendations"
+      ],
+      "controlSlugs": [
+        "ncii-security-awareness",
+        "ncii-board-awareness"
       ]
     },
     {
@@ -2128,6 +2500,10 @@
         "Remediation effort estimates",
         "Prioritised roadmap",
         "Resource requirements"
+      ],
+      "controlSlugs": [
+        "ncii-compliance-programme",
+        "ncii-policy-framework"
       ]
     },
     {
@@ -2151,6 +2527,10 @@
         "Identified weaknesses",
         "Improvement recommendations",
         "Alignment with standards"
+      ],
+      "controlSlugs": [
+        "ncii-network-architecture",
+        "ncii-network-monitoring"
       ]
     },
     {
@@ -2175,6 +2555,10 @@
         "Incident statistics",
         "CoP compliance status",
         "Improvement plan"
+      ],
+      "controlSlugs": [
+        "ncii-compliance-programme",
+        "ncii-external-audit"
       ]
     },
     {
@@ -2197,6 +2581,10 @@
         "Assessment results",
         "Phishing campaign results",
         "Year-on-year improvement"
+      ],
+      "controlSlugs": [
+        "ncii-security-awareness",
+        "ncii-board-awareness"
       ]
     },
     {
@@ -2220,6 +2608,10 @@
         "Gap analysis",
         "Implementation roadmap",
         "Resource requirements"
+      ],
+      "controlSlugs": [
+        "ncii-compliance-programme",
+        "ncii-entity-registration"
       ]
     },
     {
@@ -2242,6 +2634,10 @@
         "Access anomalies",
         "Cost and usage analysis",
         "Improvement recommendations"
+      ],
+      "controlSlugs": [
+        "ncii-cloud-governance",
+        "ncii-cloud-workload-protection"
       ]
     },
     {
@@ -2265,6 +2661,10 @@
         "Single points of failure",
         "Geopolitical risk factors",
         "Mitigation recommendations"
+      ],
+      "controlSlugs": [
+        "ncii-supply-chain-monitoring",
+        "ncii-vendor-risk-assessment"
       ]
     }
   ],
@@ -2290,6 +2690,10 @@
         "Threat detection events",
         "Compliance-relevant events",
         "Retention: minimum 12 months"
+      ],
+      "controlSlugs": [
+        "ncii-soc-operations",
+        "ncii-network-monitoring"
       ]
     },
     {
@@ -2312,6 +2716,10 @@
         "Failed access attempts",
         "Account lockouts",
         "Retention: minimum 12 months"
+      ],
+      "controlSlugs": [
+        "ncii-identity-management",
+        "ncii-privileged-access"
       ]
     },
     {
@@ -2334,6 +2742,10 @@
         "Verification results",
         "Rollback events",
         "Retention: minimum 7 years"
+      ],
+      "controlSlugs": [
+        "ncii-change-control",
+        "ncii-configuration-management"
       ]
     },
     {
@@ -2357,6 +2769,10 @@
         "Chain of custody records",
         "Analysis notes",
         "Retention: minimum 7 years"
+      ],
+      "controlSlugs": [
+        "ncii-digital-forensics",
+        "ncii-incident-response-plan"
       ]
     },
     {
@@ -2379,6 +2795,10 @@
         "Success/failure per system",
         "Reboot compliance",
         "SLA adherence"
+      ],
+      "controlSlugs": [
+        "ncii-patch-management",
+        "ncii-vulnerability-scanning"
       ]
     },
     {
@@ -2401,6 +2821,10 @@
         "Restoration test results",
         "Failures and retries",
         "Offsite copy confirmation"
+      ],
+      "controlSlugs": [
+        "ncii-backup-recovery",
+        "ncii-continuity-plan"
       ]
     },
     {
@@ -2424,6 +2848,10 @@
         "CVSS scores",
         "Remediation guidance",
         "Trend comparison"
+      ],
+      "controlSlugs": [
+        "ncii-vulnerability-scanning",
+        "ncii-patch-management"
       ]
     },
     {
@@ -2446,6 +2874,10 @@
         "Security impact assessment",
         "Effective date",
         "Retention: minimum 7 years"
+      ],
+      "controlSlugs": [
+        "ncii-network-architecture",
+        "ncii-network-monitoring"
       ]
     },
     {
@@ -2468,6 +2900,10 @@
         "Justification reference",
         "Session recording links",
         "Anomaly alerts"
+      ],
+      "controlSlugs": [
+        "ncii-privileged-access",
+        "ncii-identity-management"
       ]
     },
     {
@@ -2490,6 +2926,10 @@
         "Password changes",
         "Account lockout events",
         "Impossible travel detection"
+      ],
+      "controlSlugs": [
+        "ncii-mfa",
+        "ncii-identity-management"
       ]
     },
     {
@@ -2513,6 +2953,10 @@
         "Bulk extraction alerts",
         "Policy violation events",
         "Retention: minimum 7 years"
+      ],
+      "controlSlugs": [
+        "ncii-identity-management",
+        "ncii-asset-classification"
       ]
     },
     {
@@ -2535,6 +2979,10 @@
         "C2 beaconing detection",
         "Data exfiltration indicators",
         "East-west traffic monitoring"
+      ],
+      "controlSlugs": [
+        "ncii-network-monitoring",
+        "ncii-network-architecture"
       ]
     },
     {
@@ -2557,6 +3005,10 @@
         "DLP policy triggers",
         "SPF/DKIM/DMARC failures",
         "Quarantine actions"
+      ],
+      "controlSlugs": [
+        "ncii-soc-operations",
+        "ncii-incident-response-plan"
       ]
     },
     {
@@ -2579,6 +3031,10 @@
         "DNS tunnelling detection",
         "Query volume anomalies",
         "Sinkhole redirections"
+      ],
+      "controlSlugs": [
+        "ncii-dns-security",
+        "ncii-network-architecture"
       ]
     },
     {
@@ -2601,6 +3057,10 @@
         "Application errors and exceptions",
         "Business logic anomalies",
         "API call logging"
+      ],
+      "controlSlugs": [
+        "ncii-soc-operations",
+        "ncii-incident-response-plan"
       ]
     },
     {
@@ -2623,6 +3083,10 @@
         "Bulk data operations",
         "Failed access attempts",
         "Stored procedure execution"
+      ],
+      "controlSlugs": [
+        "ncii-soc-operations",
+        "ncii-incident-response-plan"
       ]
     },
     {
@@ -2645,6 +3109,10 @@
         "After-hours access",
         "Tailgating detection",
         "Access denied events"
+      ],
+      "controlSlugs": [
+        "ncii-facility-access",
+        "ncii-environmental-protection"
       ]
     },
     {
@@ -2667,6 +3135,10 @@
         "Before/after comparison",
         "Unauthorised change detection",
         "Compliance drift monitoring"
+      ],
+      "controlSlugs": [
+        "ncii-configuration-management",
+        "ncii-change-control"
       ]
     },
     {
@@ -2689,6 +3161,10 @@
         "Revocation events",
         "Certificate transparency logs",
         "Key rotation records"
+      ],
+      "controlSlugs": [
+        "ncii-certificate-management",
+        "ncii-encryption-standards"
       ]
     },
     {
@@ -2712,6 +3188,10 @@
         "OS and service fingerprinting",
         "Network mapping results",
         "Shadow IT detection"
+      ],
+      "controlSlugs": [
+        "ncii-asset-inventory",
+        "ncii-asset-classification"
       ]
     }
   ]
