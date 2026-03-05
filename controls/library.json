@@ -90,7 +90,9 @@
         "17.1",
         "17.6"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-compliance-programme",
@@ -138,7 +140,10 @@
         "17.2",
         "17.3"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-audit-standards",
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-policy-framework",
@@ -184,7 +189,9 @@
       "cisControls": [
         "17.1"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     }
   ],
   "asset-management": [
@@ -236,7 +243,9 @@
         "2.1",
         "2.2"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-ncii-asset-categorization"
+      ]
     },
     {
       "slug": "ncii-asset-classification",
@@ -284,7 +293,9 @@
         "3.2",
         "3.7"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-ncii-asset-categorization"
+      ]
     },
     {
       "slug": "ncii-asset-lifecycle",
@@ -333,7 +344,9 @@
         "1.2",
         "2.3"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-ncii-asset-categorization"
+      ]
     }
   ],
   "risk-assessment": [
@@ -383,7 +396,9 @@
         "17.4",
         "17.5"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-risk-assessment-methodology"
+      ]
     },
     {
       "slug": "ncii-threat-modelling",
@@ -477,7 +492,9 @@
       "cisControls": [
         "17.4"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-risk-assessment-methodology"
+      ]
     },
     {
       "slug": "ncii-bia",
@@ -523,7 +540,10 @@
       "cisControls": [
         "17.7"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-risk-assessment-methodology",
+        "directive-ncii-asset-categorization"
+      ]
     }
   ],
   "access-control": [
@@ -578,7 +598,9 @@
         "6.1",
         "6.2"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-privileged-access",
@@ -627,7 +649,9 @@
         "6.4",
         "6.5"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-mfa",
@@ -672,7 +696,9 @@
         "6.4",
         "6.5"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-remote-access",
@@ -721,7 +747,9 @@
         "6.7",
         "12.7"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     }
   ],
   "network-security": [
@@ -771,7 +799,9 @@
         "12.2",
         "12.3"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-network-monitoring",
@@ -820,7 +850,10 @@
         "13.3",
         "13.6"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-threat-intelligence",
+        "directive-information-sharing"
+      ]
     },
     {
       "slug": "ncii-dns-security",
@@ -866,7 +899,9 @@
         "9.2",
         "9.3"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-network-access-control",
@@ -913,7 +948,9 @@
         "1.5",
         "12.5"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     }
   ],
   "incident-response": [
@@ -1071,7 +1108,11 @@
         "8.5",
         "8.11"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-incident-notification",
+        "directive-threat-intelligence",
+        "directive-information-sharing"
+      ]
     },
     {
       "slug": "ncii-digital-forensics",
@@ -1120,7 +1161,9 @@
         "17.6",
         "17.9"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-incident-notification"
+      ]
     }
   ],
   "bcdr": [
@@ -1169,7 +1212,10 @@
       "cisControls": [
         "17.7"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-risk-assessment-methodology",
+        "directive-ncii-asset-categorization"
+      ]
     },
     {
       "slug": "ncii-backup-recovery",
@@ -1220,7 +1266,9 @@
         "11.4",
         "11.5"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-ncii-asset-categorization"
+      ]
     },
     {
       "slug": "ncii-disaster-recovery",
@@ -1269,7 +1317,10 @@
         "11.1",
         "11.4"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-risk-assessment-methodology",
+        "directive-ncii-asset-categorization"
+      ]
     }
   ],
   "audit-compliance": [
@@ -1318,7 +1369,9 @@
         "17.1",
         "17.5"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-audit-standards"
+      ]
     },
     {
       "slug": "ncii-external-audit",
@@ -1368,7 +1421,9 @@
         "17.5",
         "17.6"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-audit-standards"
+      ]
     },
     {
       "slug": "ncii-compliance-monitoring",
@@ -1416,7 +1471,10 @@
         "4.1",
         "4.2"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-audit-standards",
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-evidence-management",
@@ -1464,7 +1522,9 @@
       "cisControls": [
         "17.5"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-audit-standards"
+      ]
     }
   ],
   "supply-chain": [
@@ -1517,7 +1577,10 @@
         "15.2",
         "15.3"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-service-provider-obligations",
+        "directive-risk-assessment-methodology"
+      ]
     },
     {
       "slug": "ncii-supply-chain-contracts",
@@ -1564,7 +1627,9 @@
         "15.4",
         "15.5"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-service-provider-obligations"
+      ]
     },
     {
       "slug": "ncii-supply-chain-monitoring",
@@ -1612,7 +1677,10 @@
         "15.2",
         "15.4"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-service-provider-obligations",
+        "directive-information-sharing"
+      ]
     }
   ],
   "awareness-training": [
@@ -1661,7 +1729,9 @@
         "14.2",
         "14.3"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-technical-training",
@@ -1707,7 +1777,9 @@
         "14.4",
         "14.9"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-board-awareness",
@@ -1751,7 +1823,9 @@
       "cisControls": [
         "14.1"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     }
   ],
   "vulnerability-management": [
@@ -1801,7 +1875,10 @@
         "7.3",
         "7.4"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-vulnerability-disclosure",
+        "directive-risk-assessment-methodology"
+      ]
     },
     {
       "slug": "ncii-patch-management",
@@ -1850,7 +1927,9 @@
         "7.5",
         "7.7"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-vulnerability-disclosure"
+      ]
     },
     {
       "slug": "ncii-penetration-testing",
@@ -1901,7 +1980,10 @@
         "18.4",
         "18.5"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-vulnerability-disclosure",
+        "directive-audit-standards"
+      ]
     },
     {
       "slug": "ncii-vulnerability-disclosure",
@@ -1998,7 +2080,9 @@
         "3.9",
         "3.10"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-key-management",
@@ -2044,7 +2128,9 @@
         "3.6",
         "3.11"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-certificate-management",
@@ -2090,7 +2176,9 @@
         "3.10",
         "12.1"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     }
   ],
   "physical-security": [
@@ -2140,7 +2228,9 @@
       "cisControls": [
         "4.8"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-ncii-asset-categorization"
+      ]
     },
     {
       "slug": "ncii-environmental-protection",
@@ -2186,7 +2276,9 @@
       "cisControls": [
         "4.8"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-ncii-asset-categorization"
+      ]
     },
     {
       "slug": "ncii-physical-monitoring",
@@ -2232,7 +2324,9 @@
       "cisControls": [
         "4.8"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-ncii-asset-categorization"
+      ]
     }
   ],
   "cloud-security": [
@@ -2284,7 +2378,10 @@
         "6.7",
         "15.4"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-service-provider-obligations",
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-cloud-workload-protection",
@@ -2333,7 +2430,9 @@
         "4.6",
         "16.1"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-cloud-identity",
@@ -2383,7 +2482,9 @@
         "6.2",
         "6.8"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     }
   ],
   "change-management": [
@@ -2430,7 +2531,9 @@
         "4.1",
         "4.2"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-configuration-management",
@@ -2480,7 +2583,9 @@
         "4.4",
         "4.5"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-emergency-change",
@@ -2524,7 +2629,10 @@
       "cisControls": [
         "4.1"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-incident-notification",
+        "directive-cop-development"
+      ]
     },
     {
       "slug": "ncii-release-management",
@@ -2575,7 +2683,9 @@
         "16.4",
         "16.12"
       ],
-      "relatedDirectives": []
+      "relatedDirectives": [
+        "directive-cop-development"
+      ]
     }
   ]
 }
