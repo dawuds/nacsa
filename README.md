@@ -64,7 +64,7 @@ nacsa/
 ├── supplements/             # Subsidiary instruments
 │   ├── regulations/         # 4 subsidiary regulations (P.U.(A) 219-222/2024)
 │   ├── directives/          # 10 Chief Executive directives
-│   └── codes-of-practice/   # 12 sector-specific codes of practice
+│   └── codes-of-practice/   # 11 sector-specific codes of practice
 ├── index.html               # Static browsing site
 ├── style.css
 └── app.js
@@ -82,9 +82,9 @@ nacsa/
 | Controls | 3 | 15 domains, 53 controls + section map |
 | Penalties | 1 | 20 penalty provisions |
 | Cross-references | 4 | Framework mappings + regulatory mappings |
-| Supplements | 29 | 4 regulations + 10 directives + 12 CoPs + 3 indexes |
+| Supplements | 28 | 4 regulations + 10 directives + 11 CoPs + 3 indexes |
 | Static site | 3 | HTML + CSS + JS |
-| **Total** | **61** | |
+| **Total** | **60** | |
 
 ## Static Site
 
@@ -101,7 +101,6 @@ The Explorer is a vanilla HTML/CSS/JS single-page application with:
 ```bash
 cd nacsa
 python3 -m http.server 8889
-# Open http://localhost:8889
 ```
 
 ## Framework Cross-References
