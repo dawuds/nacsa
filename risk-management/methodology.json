@@ -1,0 +1,168 @@
+{
+  "sourceType": "constructed-indicative",
+  "verificationStatus": "not-verified-against-gazette — this risk management methodology is a constructed representation based on Act 854 requirements and international standards; it has not been verified against any officially published NACSA instrument",
+  "title": "NCII Cyber Security Risk Assessment Methodology",
+  "description": "Risk assessment methodology for NCII operators under the Cyber Security Act 2024 (Act 854), aligned with ISO 31000:2018, ISO 27005:2022, and the NACSA Directive on Risk Assessment Methodology. Designed for entities designated under s17 fulfilling obligations under s21.",
+  "applicableTo": "All NCII entities designated under s17 of Act 854",
+  "relatedActSections": ["s17", "s18", "s21", "s22", "s23", "s24", "s25", "s26"],
+  "relatedRegulations": ["P.U.(A) 219/2024 — Risk Assessment and Audit"],
+  "relatedDirectives": ["directive-risk-assessment-methodology", "directive-ncii-asset-categorization"],
+  "approvalAuthority": "CISO or NCII Compliance Officer (with board endorsement for Critical/High residual risk acceptance)",
+  "reviewCycle": {
+    "frequency": "Annual mandatory review, plus triggered review after significant changes",
+    "triggers": [
+      "Major cyber security incident affecting NCII systems",
+      "Significant change to NCII infrastructure or architecture",
+      "New NACSA directive, regulation, or code of practice",
+      "Material change in threat landscape (e.g., new APT campaign targeting Malaysian NCII)",
+      "Organizational restructure affecting NCII governance",
+      "Change of NCII designation scope by the Chief Executive",
+      "Post-audit findings requiring methodology revision",
+      "Introduction of new technology or OT/IoT systems into NCII scope"
+    ],
+    "actBasis": "s21 read with P.U.(A) 219/2024 reg 4"
+  },
+  "likelihoodScale": {
+    "description": "Five-level likelihood scale for assessing the probability of a threat event exploiting a vulnerability in NCII systems",
+    "levels": [
+      {
+        "level": 1,
+        "label": "Rare",
+        "description": "The event is highly unlikely to occur within the assessment period. No known threat actors targeting this vector in Malaysia or the region.",
+        "frequency": "Less than once in 10 years",
+        "criteria": "No historical precedent; theoretical threat only; no active campaigns observed"
+      },
+      {
+        "level": 2,
+        "label": "Unlikely",
+        "description": "The event could occur but is not expected. Limited threat actor interest or capability observed.",
+        "frequency": "Once in 5-10 years",
+        "criteria": "Isolated historical incidents globally; no specific targeting of Malaysian NCII; basic controls would prevent exploitation"
+      },
+      {
+        "level": 3,
+        "label": "Possible",
+        "description": "The event may occur during the assessment period. Threat actors with relevant capability exist and the sector is a plausible target.",
+        "frequency": "Once in 2-5 years",
+        "criteria": "Comparable incidents in the region; threat intelligence indicates sector targeting; controls may not fully address the vector"
+      },
+      {
+        "level": 4,
+        "label": "Likely",
+        "description": "The event is expected to occur during the assessment period. Active threat campaigns targeting this sector or technology stack observed.",
+        "frequency": "Once or twice per year",
+        "criteria": "Recent incidents in Malaysia or ASEAN; active exploitation of the vulnerability class; existing controls insufficient"
+      },
+      {
+        "level": 5,
+        "label": "Almost Certain",
+        "description": "The event is expected to occur frequently or is already occurring. Confirmed targeting of Malaysian NCII or active exploitation observed.",
+        "frequency": "Multiple times per year",
+        "criteria": "Ongoing campaigns; confirmed compromise attempts; known vulnerability with public exploit; controls absent or ineffective"
+      }
+    ]
+  },
+  "impactScale": {
+    "description": "Five-level impact scale specific to NCII consequences, considering national security, essential service disruption, data compromise, and regulatory consequences under Act 854",
+    "levels": [
+      {
+        "level": 1,
+        "label": "Negligible",
+        "description": "Minimal impact to NCII operations. No disruption to essential services. No data compromise. No regulatory consequence.",
+        "nationalSecurity": "No national security implication",
+        "serviceDisruption": "No disruption to essential services; fully contained within non-critical systems",
+        "dataCompromise": "No sensitive data exposed; no NCII system data affected",
+        "regulatoryConsequence": "No NACSA reporting obligation triggered; internal remediation sufficient"
+      },
+      {
+        "level": 2,
+        "label": "Minor",
+        "description": "Limited impact to NCII operations. Brief disruption recoverable within normal operations. Minor data exposure affecting non-critical systems.",
+        "nationalSecurity": "No direct national security impact; localized to single system or component",
+        "serviceDisruption": "Essential service degraded for less than 1 hour; no public impact; redundancy covers the gap",
+        "dataCompromise": "Limited non-sensitive data exposure; no personal data of critical infrastructure personnel",
+        "regulatoryConsequence": "Incident may require internal logging but unlikely to trigger s26 mandatory notification threshold"
+      },
+      {
+        "level": 3,
+        "label": "Moderate",
+        "description": "Noticeable impact to NCII operations. Service disruption affecting internal users or limited external users. Potential personal data exposure.",
+        "nationalSecurity": "Indirect national security concern; may affect confidence in critical infrastructure",
+        "serviceDisruption": "Essential service disrupted for 1-24 hours; limited public impact; manual workarounds available",
+        "dataCompromise": "Moderate data exposure including potentially sensitive operational data; personal data of limited scope",
+        "regulatoryConsequence": "Likely triggers s26 notification obligation (6-hour window); NACSA and sector lead reporting required; potential for CE inquiry"
+      },
+      {
+        "level": 4,
+        "label": "Major",
+        "description": "Significant impact to NCII operations. Prolonged service disruption affecting public or multiple stakeholders. Significant data compromise including sensitive NCII operational data.",
+        "nationalSecurity": "Direct national security concern; cross-sector dependencies may be affected; intelligence value for adversaries",
+        "serviceDisruption": "Essential service disrupted for 24 hours to 7 days; public impact requiring crisis communication; cascading effects to dependent services",
+        "dataCompromise": "Significant data compromise including NCII architecture details, security configurations, or large-scale personal data breach",
+        "regulatoryConsequence": "Mandatory s26 notification; CE may exercise s28 powers (access to information); potential audit/investigation under s23; media and public attention likely"
+      },
+      {
+        "level": 5,
+        "label": "Catastrophic",
+        "description": "Severe impact to NCII operations with potential for national-level consequences. Prolonged outage of essential services affecting national security or public safety. Massive data breach with strategic implications.",
+        "nationalSecurity": "Severe national security impact; compromise of defence, intelligence, or government NCII; potential for cascading multi-sector failure",
+        "serviceDisruption": "Essential service disrupted for more than 7 days; widespread public impact; threat to public safety or economic stability; manual operations infeasible",
+        "dataCompromise": "Catastrophic data breach exposing national security information, critical infrastructure blueprints, or mass personal data affecting millions",
+        "regulatoryConsequence": "Immediate s26 notification; CE may exercise all Part IV enforcement powers; potential prosecution under s50-51; ministerial involvement under s11; cross-sector coordination activated"
+      }
+    ]
+  },
+  "riskCalculation": {
+    "formula": "Inherent Risk = Likelihood x Impact",
+    "residualFormula": "Residual Risk = Residual Likelihood x Residual Impact (after existing controls)",
+    "minimumScore": 1,
+    "maximumScore": 25,
+    "note": "Risk scores drive treatment priority and NACSA reporting obligations. Risks scoring 16-25 (Critical) must be reported to the CE and sector lead within 14 days per the Directive on Risk Assessment Methodology."
+  },
+  "assessmentProcess": {
+    "phases": [
+      {
+        "phase": 1,
+        "name": "Preparation",
+        "description": "Establish assessment scope, team, and methodology. Confirm NCII asset inventory is current. Engage CE-approved assessor if required.",
+        "actReference": "s21, P.U.(A) 219/2024 reg 3"
+      },
+      {
+        "phase": 2,
+        "name": "Asset Identification & Valuation",
+        "description": "Identify and classify all NCII assets using the NACSA Asset Criticality Matrix. Map interdependencies and data flows.",
+        "actReference": "s21, directive-ncii-asset-categorization"
+      },
+      {
+        "phase": 3,
+        "name": "Threat Identification",
+        "description": "Identify applicable threats across all mandatory categories: APTs, cybercriminals, hacktivists, insiders, supply chain, natural disasters, technical failures.",
+        "actReference": "s21, directive-risk-assessment-methodology"
+      },
+      {
+        "phase": 4,
+        "name": "Vulnerability Assessment",
+        "description": "Conduct technical vulnerability assessment of all Critical and High criticality assets. Score using CVSS 3.1+.",
+        "actReference": "s21, directive-risk-assessment-methodology"
+      },
+      {
+        "phase": 5,
+        "name": "Risk Analysis & Evaluation",
+        "description": "Calculate risk levels using the 5x5 matrix. Determine inherent and residual risk ratings for each identified risk.",
+        "actReference": "s21"
+      },
+      {
+        "phase": 6,
+        "name": "Risk Treatment Planning",
+        "description": "Develop treatment plans for all risks rated Medium or above. Obtain board approval for acceptance of Critical/High risks.",
+        "actReference": "s21, directive-risk-assessment-methodology"
+      },
+      {
+        "phase": 7,
+        "name": "Reporting & Submission",
+        "description": "Submit risk assessment report to CE and sector lead. Fast-track Critical/High risks within 14 days. Full report per regulatory timeline.",
+        "actReference": "s21, P.U.(A) 219/2024 reg 5"
+      }
+    ]
+  }
+}

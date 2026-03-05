@@ -11,6 +11,7 @@ const state = {
   penalties: null,
   crossRefs: null,
   supplements: null,
+  riskManagement: null,
   route: { view: 'overview' },
 };
 
@@ -46,6 +47,7 @@ function parseRoute() {
   if (hash.startsWith('supplement/')) return { view: 'supplement-detail', id: hash.slice(11) };
   if (hash === 'cross-references') return { view: 'cross-references' };
   if (hash === 'framework') return { view: 'framework' };
+  if (hash === 'risk-management') return { view: 'risk-management' };
   return { view: 'overview' };
 }
 
@@ -62,6 +64,7 @@ async function init() {
   }
   window.addEventListener('hashchange', render);
   document.addEventListener('click', handleClick);
+  document.addEventListener('change', handleChange);
   document.getElementById('search-input').addEventListener('input', debounce(handleSearch, 300));
   render();
 }
@@ -90,6 +93,7 @@ function render() {
     case 'supplement-detail': renderSupplementDetail(app, state.route.id); break;
     case 'cross-references': renderCrossReferences(app); break;
     case 'framework': renderFramework(app); break;
+    case 'risk-management': renderRiskManagement(app); break;
     case 'search': renderSearch(app, state.route.query); break;
     default: renderOverview(app);
   }
@@ -105,7 +109,8 @@ function updateNav() {
       (view === 'sectors' && state.route.view === 'sector') ||
       (view === 'controls' && state.route.view === 'control-detail') ||
       (view === 'supplements' && state.route.view === 'supplement-detail') ||
-      (view === 'framework' && state.route.view === 'framework')
+      (view === 'framework' && state.route.view === 'framework') ||
+      (view === 'risk-management' && state.route.view === 'risk-management')
     );
   });
 }
@@ -1111,6 +1116,362 @@ async function renderFramework(el) {
   `;
 }
 
+/* ===== RISK MANAGEMENT ===== */
+async function renderRiskManagement(el) {
+  if (!state.riskManagement) {
+    const [methodology, riskMatrix, riskRegister, checklist, treatmentOptions] = await Promise.all([
+      fetchJSON('risk-management/methodology.json'),
+      fetchJSON('risk-management/risk-matrix.json'),
+      fetchJSON('risk-management/risk-register.json'),
+      fetchJSON('risk-management/checklist.json'),
+      fetchJSON('risk-management/treatment-options.json'),
+    ]);
+    state.riskManagement = { methodology, riskMatrix, riskRegister, checklist, treatmentOptions };
+  }
+  const rm = state.riskManagement;
+  const risks = (rm.riskRegister && rm.riskRegister.risks) || [];
+  const bands = (rm.riskMatrix && rm.riskMatrix.bands) || [];
+  const phases = (rm.checklist && rm.checklist.phases) || [];
+  const strategies = (rm.treatmentOptions && rm.treatmentOptions.strategies) || [];
+
+  el.innerHTML = `
+    <div class="disclaimer">
+      This risk management section is constructed-indicative. Risk ratings, controls, and treatment plans are illustrative examples for NCII operators and must be tailored to each entity's specific context. Always consult CE-approved assessors and qualified legal counsel.
+    </div>
+    <div class="page-title">Risk Management</div>
+    <div class="page-subtitle">NCII Cyber Security Risk Assessment under Act 854 &mdash; methodology, risk register, assessment checklist, and treatment options</div>
+
+    <div class="stats-banner">
+      <div class="stat-card"><div class="stat-number">${risks.length}</div><div class="stat-label">Risks Identified</div></div>
+      <div class="stat-card"><div class="stat-number">${risks.filter(r => r.inherentRisk >= 16).length}</div><div class="stat-label">Critical (Inherent)</div></div>
+      <div class="stat-card"><div class="stat-number">${risks.filter(r => r.residualRisk >= 10).length}</div><div class="stat-label">High+ (Residual)</div></div>
+      <div class="stat-card"><div class="stat-number">5&times;5</div><div class="stat-label">Risk Matrix</div></div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="rm-methodology">Methodology</button>
+      <button class="tab-btn" data-tab="rm-register">Risk Register</button>
+      <button class="tab-btn" data-tab="rm-checklist">Checklist</button>
+      <button class="tab-btn" data-tab="rm-treatment">Treatment Options</button>
+    </div>
+
+    <div class="tab-panel active" id="tab-rm-methodology">
+      ${renderRiskMethodology(rm)}
+    </div>
+    <div class="tab-panel" id="tab-rm-register">
+      ${renderRiskRegister(rm)}
+    </div>
+    <div class="tab-panel" id="tab-rm-checklist">
+      ${renderRiskChecklist(rm)}
+    </div>
+    <div class="tab-panel" id="tab-rm-treatment">
+      ${renderRiskTreatment(rm)}
+    </div>
+  `;
+}
+
+function riskBandColor(score) {
+  if (score >= 16) return { band: 'Critical', color: '#DC2626', bg: '#FEE2E2' };
+  if (score >= 10) return { band: 'High', color: '#EA580C', bg: '#FFF7ED' };
+  if (score >= 5) return { band: 'Medium', color: '#D97706', bg: '#FEF3C7' };
+  return { band: 'Low', color: '#16A34A', bg: '#DCFCE7' };
+}
+
+function riskBadge(score) {
+  const b = riskBandColor(score);
+  return `<span class="badge" style="background:${b.bg};color:${b.color};font-weight:600;">${b.band} (${score})</span>`;
+}
+
+function renderRiskMethodology(rm) {
+  const meth = rm.methodology;
+  const matrix = rm.riskMatrix;
+  if (!meth || !matrix) return '<div class="empty-state"><div class="empty-state-text">Methodology data not available.</div></div>';
+
+  const likelihoods = matrix.likelihoodAxis.levels;
+  const impacts = matrix.impactAxis.levels;
+  const matrixData = matrix.matrix;
+  const bands = matrix.bands;
+
+  /* Build 5x5 grid: rows = likelihood (5 at top, 1 at bottom), cols = impact (1 at left, 5 at right) */
+  let matrixHTML = '<div class="risk-matrix-container"><table class="risk-matrix-table"><thead><tr><th class="risk-matrix-corner"></th>';
+  for (const imp of impacts) {
+    matrixHTML += `<th class="risk-matrix-col-header">${esc(imp.label)}<br><span class="risk-matrix-level">${imp.level}</span></th>`;
+  }
+  matrixHTML += '</tr></thead><tbody>';
+  for (let l = 5; l >= 1; l--) {
+    const lLabel = likelihoods.find(x => x.level === l);
+    matrixHTML += `<tr><th class="risk-matrix-row-header">${esc(lLabel ? lLabel.label : '')} <span class="risk-matrix-level">${l}</span></th>`;
+    for (let i = 1; i <= 5; i++) {
+      const cell = matrixData.find(m => m.likelihood === l && m.impact === i);
+      const b = cell ? riskBandColor(cell.score) : { band: '?', color: '#94A3B8', bg: '#F1F5F9' };
+      matrixHTML += `<td class="risk-matrix-cell" style="background:${b.bg};color:${b.color};"><div class="risk-matrix-score">${cell ? cell.score : ''}</div><div class="risk-matrix-band">${b.band}</div></td>`;
+    }
+    matrixHTML += '</tr>';
+  }
+  matrixHTML += '</tbody></table>';
+  matrixHTML += `<div class="risk-matrix-legend">${bands.map(b => `<span class="risk-matrix-legend-item"><span class="risk-matrix-legend-swatch" style="background:${b.color};"></span>${esc(b.band)} (${esc(b.scoreRange)})</span>`).join('')}</div>`;
+  matrixHTML += '</div>';
+
+  return `
+    <h3 style="font-size:1rem;font-weight:600;margin:0 0 0.75rem;">${esc(meth.title)}</h3>
+    <div class="card">
+      <div class="card-body" style="font-size:0.8125rem;color:var(--text-secondary);">${esc(meth.description)}</div>
+      <div class="card-meta" style="margin-top:0.75rem;">
+        <span>Review: ${esc(meth.reviewCycle.frequency)}</span>
+        <span>Approval: ${esc(meth.approvalAuthority)}</span>
+      </div>
+    </div>
+
+    <h3 style="font-size:1rem;font-weight:600;margin:1.5rem 0 0.75rem;">5&times;5 Risk Matrix</h3>
+    ${matrixHTML}
+
+    <h3 style="font-size:1rem;font-weight:600;margin:1.5rem 0 0.75rem;">Risk Bands &amp; Required Actions</h3>
+    ${bands.map(b => `
+      <div class="card" style="border-left:4px solid ${b.color};margin-bottom:0.75rem;">
+        <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
+          <span class="badge" style="background:${b.colorLight};color:${b.color};font-weight:600;">${esc(b.band)}</span>
+          <span style="font-size:0.8125rem;color:var(--text-muted);">Score ${esc(b.scoreRange)}</span>
+        </div>
+        <div style="font-size:0.8125rem;color:var(--text-secondary);margin-bottom:0.25rem;">${esc(b.actionRequired)}</div>
+        <div style="font-size:0.75rem;color:var(--text-muted);"><strong>NACSA:</strong> ${esc(b.nacsaObligation)}</div>
+        <div style="font-size:0.75rem;color:var(--text-muted);"><strong>Timeframe:</strong> ${esc(b.responseTimeframe)}</div>
+      </div>
+    `).join('')}
+
+    <h3 style="font-size:1rem;font-weight:600;margin:1.5rem 0 0.75rem;">Likelihood Scale</h3>
+    <div class="accordion">
+      ${meth.likelihoodScale.levels.map(l => `
+        <div class="accordion-item">
+          <div class="accordion-header" data-accordion>
+            <span><strong>${l.level} — ${esc(l.label)}</strong> &middot; ${esc(l.frequency)}</span>
+            <span class="accordion-arrow">&#9654;</span>
+          </div>
+          <div class="accordion-body">
+            <p style="font-size:0.8125rem;color:var(--text-secondary);margin-bottom:0.25rem;">${esc(l.description)}</p>
+            <p style="font-size:0.75rem;color:var(--text-muted);"><strong>Criteria:</strong> ${esc(l.criteria)}</p>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+
+    <h3 style="font-size:1rem;font-weight:600;margin:1.5rem 0 0.75rem;">Impact Scale (NCII-Specific)</h3>
+    <div class="accordion">
+      ${meth.impactScale.levels.map(l => `
+        <div class="accordion-item">
+          <div class="accordion-header" data-accordion>
+            <span><strong>${l.level} — ${esc(l.label)}</strong></span>
+            <span class="accordion-arrow">&#9654;</span>
+          </div>
+          <div class="accordion-body">
+            <p style="font-size:0.8125rem;color:var(--text-secondary);margin-bottom:0.5rem;">${esc(l.description)}</p>
+            <div style="display:grid;grid-template-columns:auto 1fr;gap:0.25rem 0.75rem;font-size:0.75rem;color:var(--text-muted);">
+              <strong>National Security:</strong><span>${esc(l.nationalSecurity)}</span>
+              <strong>Service Disruption:</strong><span>${esc(l.serviceDisruption)}</span>
+              <strong>Data Compromise:</strong><span>${esc(l.dataCompromise)}</span>
+              <strong>Regulatory:</strong><span>${esc(l.regulatoryConsequence)}</span>
+            </div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+
+    <h3 style="font-size:1rem;font-weight:600;margin:1.5rem 0 0.75rem;">Assessment Process</h3>
+    <div class="card">
+      <div class="card-body">
+        <ol style="padding-left:1.25rem;">
+          ${meth.assessmentProcess.phases.map(p => `
+            <li style="margin-bottom:0.5rem;"><strong>Phase ${p.phase}: ${esc(p.name)}</strong> — ${esc(p.description)} <span style="font-size:0.75rem;color:var(--text-muted);">(${esc(p.actReference)})</span></li>
+          `).join('')}
+        </ol>
+      </div>
+    </div>
+  `;
+}
+
+function renderRiskRegister(rm) {
+  const reg = rm.riskRegister;
+  if (!reg || !reg.risks || !reg.risks.length) return '<div class="empty-state"><div class="empty-state-text">Risk register data not available.</div></div>';
+
+  const risks = reg.risks;
+  const categories = reg.categories || [];
+
+  return `
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;margin-bottom:1rem;">
+      <div>
+        <span style="font-size:0.8125rem;color:var(--text-muted);">Last updated: ${esc(reg.lastUpdated)} &middot; Next review: ${esc(reg.nextReview)} &middot; Approved by: ${esc(reg.approvedBy)}</span>
+      </div>
+      <div class="filter-bar" style="margin-bottom:0;">
+        <span class="filter-chip active" data-filter="all">All (${risks.length})</span>
+        ${categories.map(cat => {
+          const count = risks.filter(r => r.category === cat).length;
+          return `<span class="filter-chip" data-filter="${esc(cat)}">${esc(cat)} (${count})</span>`;
+        }).join('')}
+      </div>
+    </div>
+
+    <div class="risk-register-sort" style="display:flex;gap:0.5rem;margin-bottom:0.75rem;font-size:0.75rem;">
+      <span style="color:var(--text-muted);">Sort by:</span>
+      <button class="risk-sort-btn active" data-sort="id">ID</button>
+      <button class="risk-sort-btn" data-sort="inherent-desc">Inherent Risk &#9660;</button>
+      <button class="risk-sort-btn" data-sort="residual-desc">Residual Risk &#9660;</button>
+    </div>
+
+    <div id="risk-register-list">
+      ${risks.map(r => renderRiskCard(r)).join('')}
+    </div>
+  `;
+}
+
+function renderRiskCard(r) {
+  const inherent = riskBandColor(r.inherentRisk);
+  const residual = riskBandColor(r.residualRisk);
+  const treatMap = { mitigate: 'Mitigate', transfer: 'Transfer', accept: 'Accept', avoid: 'Avoid' };
+  return `
+    <div class="risk-card" data-category="${esc(r.category)}" data-inherent="${r.inherentRisk}" data-residual="${r.residualRisk}" data-id="${esc(r.id)}">
+      <div class="risk-card-header">
+        <div>
+          <span style="font-family:var(--mono);font-size:0.875rem;color:var(--accent);font-weight:600;">${esc(r.id)}</span>
+          <span class="badge badge-category">${esc(r.category)}</span>
+        </div>
+        <div style="display:flex;gap:0.375rem;">
+          ${riskBadge(r.inherentRisk)}
+          <span style="font-size:0.75rem;color:var(--text-muted);align-self:center;">&#8594;</span>
+          ${riskBadge(r.residualRisk)}
+        </div>
+      </div>
+      <div class="risk-card-title">${esc(r.title)}</div>
+      <div class="risk-card-desc">${esc(r.description)}</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-top:0.75rem;">
+        <div>
+          <div class="block-label" style="margin-bottom:0.25rem;">Existing Controls</div>
+          <ul style="padding-left:1.125rem;font-size:0.75rem;color:var(--text-secondary);">
+            ${r.existingControls.map(c => `<li style="margin-bottom:0.125rem;">${esc(c)}</li>`).join('')}
+          </ul>
+        </div>
+        <div>
+          <div class="block-label" style="margin-bottom:0.25rem;">Treatment Plan (${esc(treatMap[r.treatment] || r.treatment)})</div>
+          <div style="font-size:0.75rem;color:var(--text-secondary);">${esc(r.treatmentPlan)}</div>
+        </div>
+      </div>
+      <div class="card-meta" style="margin-top:0.75rem;">
+        <span>Act: ${esc(r.actReference)}</span>
+        <span>Owner: ${esc(r.owner)}</span>
+        <span>Review: ${esc(r.reviewDate)}</span>
+        <span>L:${r.likelihood}&times;I:${r.impact}=${r.inherentRisk} &#8594; L:${r.residualLikelihood}&times;I:${r.residualImpact}=${r.residualRisk}</span>
+      </div>
+    </div>
+  `;
+}
+
+function renderRiskChecklist(rm) {
+  const cl = rm.checklist;
+  if (!cl || !cl.phases || !cl.phases.length) return '<div class="empty-state"><div class="empty-state-text">Checklist data not available.</div></div>';
+
+  const totalItems = cl.phases.reduce((sum, p) => sum + p.items.length, 0);
+
+  return `
+    <div style="margin-bottom:1rem;">
+      <span style="font-size:0.8125rem;color:var(--text-muted);">${totalItems} items across ${cl.phases.length} phases &middot; Check items as you complete them (state is not persisted)</span>
+    </div>
+    <div id="risk-checklist-progress" style="margin-bottom:1rem;">
+      <div style="display:flex;align-items:center;gap:0.5rem;">
+        <div style="flex:1;height:8px;background:var(--border);border-radius:4px;overflow:hidden;">
+          <div class="risk-checklist-bar" style="width:0%;height:100%;background:var(--accent);border-radius:4px;transition:width 0.3s;"></div>
+        </div>
+        <span class="risk-checklist-count" style="font-size:0.75rem;color:var(--text-muted);min-width:3rem;">0/${totalItems}</span>
+      </div>
+    </div>
+    ${cl.phases.map(phase => `
+      <div class="accordion-item open" style="margin-bottom:0.5rem;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);">
+        <div class="accordion-header" data-accordion style="padding:0.75rem 1rem;">
+          <span style="font-weight:600;">${esc(phase.phase)} (${phase.items.length} items)</span>
+          <span class="accordion-arrow">&#9654;</span>
+        </div>
+        <div class="accordion-body" style="padding:0 1rem 0.75rem;">
+          ${phase.items.map(item => `
+            <label class="risk-checklist-item" style="display:flex;gap:0.75rem;padding:0.5rem 0;border-bottom:1px solid var(--border-light);cursor:pointer;align-items:flex-start;">
+              <input type="checkbox" class="risk-check" style="margin-top:0.25rem;flex-shrink:0;">
+              <div style="flex:1;">
+                <div style="display:flex;align-items:center;gap:0.375rem;flex-wrap:wrap;">
+                  <span style="font-family:var(--mono);font-size:0.8125rem;color:var(--accent);font-weight:500;">${esc(item.id)}</span>
+                  <span class="req-item-priority priority-${(item.priority || '').toLowerCase()}">${esc(item.priority)}</span>
+                  <span style="font-size:0.75rem;color:var(--text-muted);">${esc(item.actReference)}</span>
+                </div>
+                <div style="font-size:0.8125rem;color:var(--text-primary);margin-top:0.25rem;">${esc(item.item)}</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.25rem;">${esc(item.guidance)}</div>
+              </div>
+            </label>
+          `).join('')}
+        </div>
+      </div>
+    `).join('')}
+  `;
+}
+
+function renderRiskTreatment(rm) {
+  const opts = rm.treatmentOptions;
+  if (!opts || !opts.strategies || !opts.strategies.length) return '<div class="empty-state"><div class="empty-state-text">Treatment options data not available.</div></div>';
+
+  return `
+    <div style="margin-bottom:1rem;">
+      <span style="font-size:0.8125rem;color:var(--text-secondary);">Four treatment strategies for NCII risks under Act 854. Note that some NCII risks cannot be accepted without NACSA approval.</span>
+    </div>
+    <div class="treatment-grid">
+      ${opts.strategies.map(s => `
+        <div class="treatment-card" style="border-top:4px solid ${s.color};">
+          <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
+            <span class="badge" style="background:${s.color};color:#fff;font-weight:600;font-size:0.8125rem;">${esc(s.strategy)}</span>
+            <span style="font-size:0.875rem;font-weight:600;color:var(--text-primary);">${esc(s.label)}</span>
+          </div>
+          <div style="font-size:0.8125rem;color:var(--text-secondary);margin-bottom:0.75rem;">${esc(s.description)}</div>
+
+          <div class="block-label" style="margin-bottom:0.25rem;">When to Use</div>
+          <ul style="padding-left:1.125rem;font-size:0.75rem;color:var(--text-secondary);margin-bottom:0.75rem;">
+            ${s.whenToUse.map(w => `<li style="margin-bottom:0.125rem;">${esc(w)}</li>`).join('')}
+          </ul>
+
+          <div class="block-label" style="margin-bottom:0.25rem;">NCII Examples</div>
+          ${s.nciiExamples.map(ex => `
+            <div style="background:var(--bg);border-radius:var(--radius);padding:0.5rem 0.75rem;margin-bottom:0.5rem;">
+              <div style="font-size:0.75rem;font-weight:600;color:var(--text-primary);margin-bottom:0.25rem;">${esc(ex.risk)}</div>
+              <div style="font-size:0.75rem;color:var(--text-secondary);">${esc(ex.treatment)}</div>
+            </div>
+          `).join('')}
+
+          <div style="background:var(--amber-light);border-radius:var(--radius);padding:0.5rem 0.75rem;margin-top:0.75rem;font-size:0.75rem;color:var(--amber);">
+            <strong>Regulatory Note:</strong> ${esc(s.regulatoryNote)}
+          </div>
+
+          ${s.limitations ? `
+            <div style="margin-top:0.5rem;">
+              <div class="block-label" style="margin-bottom:0.25rem;">Limitations</div>
+              <ul style="padding-left:1.125rem;font-size:0.75rem;color:var(--text-muted);">
+                ${s.limitations.map(l => `<li style="margin-bottom:0.125rem;">${esc(l)}</li>`).join('')}
+              </ul>
+            </div>
+          ` : ''}
+
+          ${s.approvalRequirements ? `
+            <div style="margin-top:0.75rem;">
+              <div class="block-label" style="margin-bottom:0.25rem;">Approval Requirements</div>
+              <div style="font-size:0.75rem;">
+                ${s.approvalRequirements.map(a => `
+                  <div style="display:grid;grid-template-columns:auto 1fr;gap:0.125rem 0.5rem;padding:0.25rem 0;border-bottom:1px solid var(--border-light);">
+                    <span style="font-weight:500;color:var(--text-primary);">${esc(a.riskBand)}</span>
+                    <span style="color:var(--text-secondary);">${esc(a.approvalAuthority)}</span>
+                    <span></span>
+                    <span style="color:var(--text-muted);font-size:0.6875rem;">${esc(a.nacsaNotification)}</span>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          ` : ''}
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
 /* ===== SEARCH ===== */
 function renderSearch(el, query) {
   if (!query) return renderOverview(el);
@@ -1189,7 +1550,53 @@ function handleClick(e) {
         item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
       });
     }
+
+    // Risk register filtering
+    const riskList = document.getElementById('risk-register-list');
+    if (riskList) {
+      riskList.querySelectorAll('.risk-card').forEach(card => {
+        card.style.display = (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
+      });
+    }
     return;
+  }
+
+  // Risk register sort buttons
+  const sortBtn = e.target.closest('.risk-sort-btn');
+  if (sortBtn) {
+    sortBtn.closest('.risk-register-sort').querySelectorAll('.risk-sort-btn').forEach(b => b.classList.remove('active'));
+    sortBtn.classList.add('active');
+    const sortKey = sortBtn.dataset.sort;
+    const list = document.getElementById('risk-register-list');
+    if (list) {
+      const cards = Array.from(list.querySelectorAll('.risk-card'));
+      cards.sort((a, b) => {
+        if (sortKey === 'inherent-desc') return parseInt(b.dataset.inherent) - parseInt(a.dataset.inherent);
+        if (sortKey === 'residual-desc') return parseInt(b.dataset.residual) - parseInt(a.dataset.residual);
+        return a.dataset.id.localeCompare(b.dataset.id);
+      });
+      cards.forEach(c => list.appendChild(c));
+    }
+    return;
+  }
+}
+
+function handleChange(e) {
+  // Risk checklist checkbox
+  if (e.target.classList.contains('risk-check')) {
+    const allChecks = document.querySelectorAll('.risk-check');
+    const checked = document.querySelectorAll('.risk-check:checked').length;
+    const total = allChecks.length;
+    const bar = document.querySelector('.risk-checklist-bar');
+    const count = document.querySelector('.risk-checklist-count');
+    if (bar) bar.style.width = total ? ((checked / total) * 100) + '%' : '0%';
+    if (count) count.textContent = checked + '/' + total;
+    // Style checked items
+    const label = e.target.closest('.risk-checklist-item');
+    if (label) {
+      label.style.opacity = e.target.checked ? '0.5' : '1';
+      label.style.textDecoration = e.target.checked ? 'line-through' : 'none';
+    }
   }
 }
 

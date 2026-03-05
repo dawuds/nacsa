@@ -31,7 +31,7 @@ The Cyber Security Act 2024 (Act 854) was gazetted on 26 June 2024 and came into
 
 ## Data Architecture
 
-The database follows an 8-layer structured compliance model plus supplements:
+The database follows a 9-layer structured compliance model plus supplements:
 
 ```
 nacsa/
@@ -61,6 +61,12 @@ nacsa/
 │   ├── act-to-regulations.json
 │   ├── act-to-directives.json
 │   └── ncii-sector-mappings.json  # Sector regulatory overlap matrix
+├── risk-management/         # NCII risk assessment methodology & register
+│   ├── methodology.json     # 5x5 matrix methodology, scales, assessment process
+│   ├── risk-matrix.json     # Risk matrix with bands & required actions
+│   ├── risk-register.json   # 20 NCII-specific risks with controls & treatment
+│   ├── checklist.json       # 18-item assessment checklist across 5 phases
+│   └── treatment-options.json # 4 treatment strategies with NCII examples
 ├── supplements/             # Subsidiary instruments
 │   ├── regulations/         # 4 subsidiary regulations (P.U.(A) 219-222/2024)
 │   ├── directives/          # 10 Chief Executive directives
@@ -82,15 +88,16 @@ nacsa/
 | Controls | 3 | 15 domains, 53 controls + section map |
 | Penalties | 1 | 20 penalty provisions |
 | Cross-references | 4 | Framework mappings + regulatory mappings |
+| Risk Management | 5 | Methodology, risk matrix, 20-risk register, checklist, treatment options |
 | Supplements | 28 | 4 regulations + 10 directives + 11 CoPs + 3 indexes |
 | Static site | 3 | HTML + CSS + JS |
-| **Total** | **60** | |
+| **Total** | **65** | |
 
 ## Static Site
 
 The Explorer is a vanilla HTML/CSS/JS single-page application with:
 
-- **Hash-based routing**: `#`, `#part/IV`, `#s17`, `#sectors`, `#sector/banking-finance`, `#penalties`, `#controls`, `#control/slug`, `#artifacts`, `#supplements`, `#cross-references`, `#framework/nist-csf`, `#search/keyword`
+- **Hash-based routing**: `#`, `#part/IV`, `#s17`, `#sectors`, `#sector/banking-finance`, `#penalties`, `#controls`, `#control/slug`, `#artifacts`, `#supplements`, `#cross-references`, `#framework/nist-csf`, `#risk-management`, `#search/keyword`
 - **Lazy-loaded tabs**: Requirements, evidence, controls, artifacts, and cross-references load on demand
 - **Full-text search** across provisions, sectors, penalties, and supplements
 - **Responsive design**: Mobile, tablet, and desktop breakpoints
@@ -114,6 +121,18 @@ The database maps Act 854 provisions to:
 | BNM RMiT | 7 | Banking sector technology risk |
 | PDPA (Act 709) | 4 | Personal data protection overlap |
 | CIS Controls v8 | 7 | Implementation groups |
+
+## Risk Management
+
+The Risk Management section provides NCII operators with a structured risk assessment framework under Act 854:
+
+- **Methodology**: 5x5 likelihood-impact risk assessment methodology with NCII-specific scales (national security impact, essential service disruption, data compromise, NACSA regulatory consequences), 7-phase assessment process, and annual review cycle with triggered reassessment
+- **Risk Matrix**: Color-coded 5x5 matrix with four risk bands (Low/Medium/High/Critical), each with required actions, NACSA reporting obligations, and response timeframes
+- **Risk Register**: 20 illustrative risks across 7 categories (NCII Threat, Compliance, Supply Chain, Insider Threat, Operational, Sector-Specific, Incident Response) with inherent/residual ratings, existing controls, and treatment plans
+- **Assessment Checklist**: 18 items across 5 phases (Preparation, Risk Identification, Risk Analysis, Risk Treatment, Reporting & Monitoring) with Act 854 section references
+- **Treatment Options**: Four strategies (Mitigate, Transfer, Accept, Avoid) with NCII-specific examples and regulatory constraints (e.g., Critical risk acceptance requires NACSA acknowledgement)
+
+> All risk management data carries `sourceType: "constructed-indicative"` and must be tailored to each entity's specific context.
 
 ## Supplements
 

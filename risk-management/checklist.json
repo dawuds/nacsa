@@ -1,0 +1,159 @@
+{
+  "sourceType": "constructed-indicative",
+  "verificationStatus": "not-verified-against-gazette — this checklist is a constructed representation of risk assessment activities based on Act 854 requirements; it has not been verified against any officially published NACSA instrument",
+  "title": "NCII Risk Assessment Checklist",
+  "description": "Step-by-step checklist for conducting a cyber security risk assessment as an NCII operator under Act 854. Organized by assessment phase with references to relevant Act sections, regulations, and directives.",
+  "phases": [
+    {
+      "phase": "Preparation",
+      "items": [
+        {
+          "id": "RC-001",
+          "item": "Confirm NCII designation scope is current and reflects any changes notified by the Chief Executive",
+          "actReference": "s17",
+          "priority": "Critical",
+          "guidance": "Review the original CE designation notice and any subsequent amendments. Ensure the scope of designated NCII assets matches the entity's current infrastructure."
+        },
+        {
+          "id": "RC-002",
+          "item": "Verify that the risk assessment will be conducted or supervised by a CE-approved assessor holding a valid Part V licence",
+          "actReference": "s21, P.U.(A) 219/2024 reg 3",
+          "priority": "Critical",
+          "guidance": "Check the assessor's licence validity on the NACSA Cyber Security Portal. Confirm the assessor is specifically approved for NCII risk assessments, not just general cybersecurity services."
+        },
+        {
+          "id": "RC-003",
+          "item": "Ensure the NCII asset register is complete, current, and includes all assets designated or supporting NCII systems",
+          "actReference": "s21, directive-ncii-asset-categorization",
+          "priority": "High",
+          "guidance": "Reconcile the asset register against network discovery scans, cloud inventories, and OT asset lists. Include supporting infrastructure (DNS, authentication, backup) that NCII depends on."
+        },
+        {
+          "id": "RC-004",
+          "item": "Review previous risk assessment findings, audit results, and any outstanding NACSA directives or recommendations",
+          "actReference": "s23, P.U.(A) 219/2024",
+          "priority": "High",
+          "guidance": "Carry forward unresolved risks from previous assessments. Review compliance status with any CE directives issued since the last assessment."
+        }
+      ]
+    },
+    {
+      "phase": "Risk Identification",
+      "items": [
+        {
+          "id": "RC-005",
+          "item": "Identify threats across all mandatory categories: nation-state/APT, cybercriminal, hacktivist, insider, supply chain, natural disaster, and technical failure",
+          "actReference": "s21, directive-risk-assessment-methodology",
+          "priority": "Critical",
+          "guidance": "Do not omit any mandatory threat category. Use NACSA threat intelligence reports, sector ISAC feeds, and global threat reports (MITRE ATT&CK, ENISA Threat Landscape) to inform threat identification."
+        },
+        {
+          "id": "RC-006",
+          "item": "Map threats to specific NCII assets and identify plausible attack scenarios including cross-sector cascade scenarios",
+          "actReference": "s21, s25",
+          "priority": "High",
+          "guidance": "For each threat-asset pairing, describe a realistic attack scenario. Consider interdependencies with other NCII sectors and upstream service providers."
+        },
+        {
+          "id": "RC-007",
+          "item": "Identify vulnerabilities through technical scanning (CVSS-scored) and process/governance gap analysis",
+          "actReference": "s21, directive-risk-assessment-methodology",
+          "priority": "Critical",
+          "guidance": "All Critical and High criticality NCII assets must undergo automated vulnerability scanning. Score findings using CVSS 3.1+. Include configuration review, access control assessment, and network architecture analysis."
+        },
+        {
+          "id": "RC-008",
+          "item": "Assess supply chain and third-party risks for all vendors with access to or impact on NCII systems",
+          "actReference": "s21, s49, directive-service-provider-obligations",
+          "priority": "High",
+          "guidance": "Identify all third parties with access to NCII systems, data, or facilities. Assess their security posture and validate that managed service providers hold valid Part V licences where required."
+        }
+      ]
+    },
+    {
+      "phase": "Risk Analysis",
+      "items": [
+        {
+          "id": "RC-009",
+          "item": "Rate each risk using the 5x5 likelihood-impact matrix to determine inherent risk score",
+          "actReference": "s21, directive-risk-assessment-methodology",
+          "priority": "Critical",
+          "guidance": "Use the methodology's likelihood scale (Rare to Almost Certain) and NCII-specific impact scale (Negligible to Catastrophic). Consider national security, essential service disruption, data compromise, and regulatory consequences."
+        },
+        {
+          "id": "RC-010",
+          "item": "Evaluate existing controls for effectiveness and determine residual risk ratings",
+          "actReference": "s21",
+          "priority": "High",
+          "guidance": "Assess whether existing controls are implemented, operating effectively, and sufficient to reduce risk. Controls that exist in policy but are not operational should not reduce the risk rating."
+        },
+        {
+          "id": "RC-011",
+          "item": "Validate that all risks rated Critical (16-25) and High (10-15) are flagged for expedited reporting to CE and sector lead",
+          "actReference": "s21, directive-risk-assessment-methodology",
+          "priority": "Critical",
+          "guidance": "Critical and High risks must be reported to the CE and sector lead within 14 days of assessment completion, per the Directive. Do not wait for the full risk assessment report submission."
+        }
+      ]
+    },
+    {
+      "phase": "Risk Treatment",
+      "items": [
+        {
+          "id": "RC-012",
+          "item": "Develop treatment plans for all risks rated Medium (5-9) or above, specifying treatment option, controls, owner, timeline, and target residual risk",
+          "actReference": "s21, directive-risk-assessment-methodology",
+          "priority": "Critical",
+          "guidance": "Each treatment plan must specify mitigate, transfer, accept, or avoid. Include specific security controls, responsible person, target date, and expected residual risk level."
+        },
+        {
+          "id": "RC-013",
+          "item": "Obtain board-level written approval for acceptance of any Critical or High residual risks, and notify NACSA within 30 days",
+          "actReference": "s21, directive-risk-assessment-methodology",
+          "priority": "Critical",
+          "guidance": "Risk acceptance at Critical or High levels cannot be delegated below board/CEO level. The acceptance decision, rationale, and compensating measures must be documented and submitted to NACSA."
+        },
+        {
+          "id": "RC-014",
+          "item": "Verify that risk treatment plans align with applicable sector Code of Practice and CE-determined standards",
+          "actReference": "s22, s24",
+          "priority": "High",
+          "guidance": "Treatment plans must not conflict with sector-specific CoP requirements. Where the CoP mandates specific controls (e.g., encryption standards, access control requirements), treatment plans must implement at least those controls."
+        }
+      ]
+    },
+    {
+      "phase": "Reporting & Monitoring",
+      "items": [
+        {
+          "id": "RC-015",
+          "item": "Submit the complete risk assessment report to the Chief Executive and relevant sector lead within the regulatory timeframe",
+          "actReference": "s21, P.U.(A) 219/2024 reg 5",
+          "priority": "Critical",
+          "guidance": "Ensure the report meets the format and content requirements specified in the Regulations. Include executive summary, methodology, findings, risk register, treatment plans, and assessor attestation."
+        },
+        {
+          "id": "RC-016",
+          "item": "Establish ongoing risk monitoring with defined review triggers and periodic reassessment schedule",
+          "actReference": "s21, s18",
+          "priority": "High",
+          "guidance": "Risk assessment is not a one-time exercise. Define triggers for reassessment (major incident, significant infrastructure change, new NACSA directive) and schedule periodic reviews at least annually."
+        },
+        {
+          "id": "RC-017",
+          "item": "Report risk assessment outcomes to the board of directors and ensure adequate resource allocation for treatment plans",
+          "actReference": "s52, s18",
+          "priority": "High",
+          "guidance": "Directors have due diligence obligations under s52. Board reporting should include risk heat map, Critical/High risks, treatment plan status, and resource requirements."
+        },
+        {
+          "id": "RC-018",
+          "item": "Verify that the incident response plan is updated to reflect newly identified risks and threat scenarios from the assessment",
+          "actReference": "s26, P.U.(A) 220/2024",
+          "priority": "High",
+          "guidance": "New risk scenarios identified during assessment should be incorporated into incident response playbooks. Ensure the 6-hour notification procedure accounts for all identified incident types."
+        }
+      ]
+    }
+  ]
+}

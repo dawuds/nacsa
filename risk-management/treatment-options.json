@@ -1,0 +1,139 @@
+{
+  "sourceType": "constructed-indicative",
+  "verificationStatus": "not-verified-against-gazette — this treatment options guidance is a constructed representation based on ISO 27005 and Act 854 requirements; it has not been verified against any officially published NACSA instrument",
+  "title": "NCII Risk Treatment Options",
+  "description": "Risk treatment strategies for NCII operators under Act 854, aligned with ISO 27005:2022. Note that certain NCII risks carry regulatory constraints on treatment options, particularly risk acceptance for Critical and High rated risks.",
+  "relatedActSections": ["s21", "s22", "s15", "s52"],
+  "strategies": [
+    {
+      "id": "treat-mitigate",
+      "strategy": "Mitigate",
+      "label": "Risk Mitigation (Reduce)",
+      "description": "Implement security controls to reduce the likelihood or impact of the risk to an acceptable level. This is the most common treatment for NCII risks and is the default expectation of NACSA for Critical and High rated risks.",
+      "color": "#0E7490",
+      "whenToUse": [
+        "Risk can be reduced to acceptable levels through technical, administrative, or physical controls",
+        "Cost of mitigation is proportionate to the risk exposure",
+        "NACSA directives or sector CoP mandate specific controls for the risk scenario",
+        "Risk acceptance is not available (Critical risks without NACSA acknowledgement)"
+      ],
+      "nciiExamples": [
+        {
+          "risk": "APT targeting NCII systems",
+          "treatment": "Deploy advanced threat detection (EDR, NDR), implement network micro-segmentation, conduct regular threat hunting exercises, participate in NACSA threat intelligence sharing under s25"
+        },
+        {
+          "risk": "Ransomware on critical systems",
+          "treatment": "Implement immutable backups with air-gapped copies, deploy application whitelisting, establish rapid recovery procedures with tested RTO targets, enforce email gateway with sandboxing"
+        },
+        {
+          "risk": "Unpatched NCII systems",
+          "treatment": "Automate patch deployment pipeline, implement virtual patching for OT systems with extended patch cycles, establish emergency patching procedure for CVSS 9.0+ vulnerabilities"
+        },
+        {
+          "risk": "Social engineering of NCII personnel",
+          "treatment": "Deploy FIDO2 hardware tokens for privileged accounts, conduct targeted phishing simulations, implement out-of-band verification for high-risk actions (e.g., configuration changes, data transfers)"
+        }
+      ],
+      "regulatoryNote": "Mitigation is the preferred treatment under Act 854. The CE may direct specific mitigation measures under s15. Sector CoPs under s22 may mandate particular controls that constrain mitigation options."
+    },
+    {
+      "id": "treat-transfer",
+      "strategy": "Transfer",
+      "label": "Risk Transfer (Share)",
+      "description": "Transfer the risk exposure to a third party through insurance, outsourcing, or contractual arrangements. Note that operational responsibility for NCII security cannot be transferred — the designated entity remains accountable under Act 854 regardless of outsourcing arrangements.",
+      "color": "#7C3AED",
+      "whenToUse": [
+        "Financial impact can be offset through cyber insurance",
+        "Specialist capability is required that the entity cannot maintain internally",
+        "Risk is shared with a partner or vendor under contractual security requirements",
+        "Entity wants to transfer financial exposure while retaining operational controls"
+      ],
+      "nciiExamples": [
+        {
+          "risk": "Third-party managed service compromise",
+          "treatment": "Transfer financial risk through cyber insurance; transfer operational risk through contractual SLAs requiring SOC 2 attestation, incident notification within 2 hours, and annual penetration testing at provider's expense"
+        },
+        {
+          "risk": "Cross-sector cascade failure",
+          "treatment": "Share risk through mutual aid agreements with peer NCII entities; transfer financial impact through business interruption insurance covering cyber-induced supply chain disruption"
+        },
+        {
+          "risk": "Physical security breach at NCII facilities",
+          "treatment": "Transfer physical security operations to a licensed security provider while retaining monitoring and audit oversight; insure against theft, damage, and business interruption"
+        }
+      ],
+      "regulatoryNote": "Under s49, the NCII entity remains responsible for compliance regardless of outsourcing. Risk transfer through insurance does not discharge the entity's s21 obligation to mitigate risks. Managed service providers handling NCII must hold valid Part V licences. Transfer does not eliminate the obligation to report incidents under s26.",
+      "limitations": [
+        "Legal compliance obligations under Act 854 cannot be transferred",
+        "s26 incident notification responsibility remains with the designated NCII entity",
+        "NACSA may not accept 'transferred' as the sole treatment for Critical risks",
+        "Cyber insurance policies may exclude nation-state attacks or acts of war"
+      ]
+    },
+    {
+      "id": "treat-accept",
+      "strategy": "Accept",
+      "label": "Risk Acceptance (Retain)",
+      "description": "Acknowledge the risk and choose to retain it without additional treatment, accepting the potential consequences. For NCII risks, acceptance at Critical or High levels requires board-level approval and NACSA notification.",
+      "color": "#D97706",
+      "whenToUse": [
+        "Residual risk after mitigation is within the entity's risk appetite",
+        "Cost of further mitigation significantly exceeds the potential impact",
+        "Risk is Low rated and within normal operational tolerance",
+        "Temporary acceptance pending implementation of planned treatment controls"
+      ],
+      "nciiExamples": [
+        {
+          "risk": "NCII system misconfiguration (residual)",
+          "treatment": "Accept residual risk of minor misconfigurations on Low criticality NCII supporting systems where automated configuration monitoring is in place and deviations are remediated within 30 days"
+        },
+        {
+          "risk": "Physical security of NCII facilities (residual)",
+          "treatment": "Accept residual risk of tailgating at outer facility perimeter where multi-layer access controls protect the NCII-specific restricted zones and CCTV provides compensating detection"
+        }
+      ],
+      "regulatoryNote": "Risk acceptance for NCII is subject to strict constraints under Act 854. The Directive on Risk Assessment Methodology requires: (1) risks rated Critical or High cannot be accepted without written board/CEO approval; (2) accepted Critical/High risks must be reported to the CE within 30 days; (3) the CE may reject risk acceptance and direct mitigation under s15. Some NCII risks may be deemed unacceptable by NACSA regardless of entity risk appetite.",
+      "approvalRequirements": [
+        { "riskBand": "Low (1-4)", "approvalAuthority": "Risk owner or department head", "nacsaNotification": "Not required; include in annual risk assessment" },
+        { "riskBand": "Medium (5-9)", "approvalAuthority": "CISO or NCII Compliance Officer", "nacsaNotification": "Include in risk assessment report with justification" },
+        { "riskBand": "High (10-15)", "approvalAuthority": "Board of Directors or CEO", "nacsaNotification": "Written notification to CE within 30 days with justification and compensating measures" },
+        { "riskBand": "Critical (16-25)", "approvalAuthority": "Board of Directors with explicit resolution", "nacsaNotification": "Immediate notification to CE; requires NACSA acknowledgement; CE may direct remediation under s15" }
+      ]
+    },
+    {
+      "id": "treat-avoid",
+      "strategy": "Avoid",
+      "label": "Risk Avoidance (Eliminate)",
+      "description": "Eliminate the risk entirely by removing the source of risk, discontinuing the risky activity, or redesigning the process or system to eliminate the threat vector. This may involve decommissioning systems, withdrawing from services, or fundamentally changing architecture.",
+      "color": "#DC2626",
+      "whenToUse": [
+        "The risk is unacceptable and cannot be adequately mitigated or transferred",
+        "The cost or complexity of mitigation exceeds the value of the activity",
+        "The risky system or process can be replaced with a fundamentally different approach",
+        "Regulatory requirement makes the current approach non-viable"
+      ],
+      "nciiExamples": [
+        {
+          "risk": "IoT/OT convergence risk",
+          "treatment": "Avoid by maintaining complete air-gap between OT network and corporate IT/internet; replace IoT devices requiring cloud connectivity with locally managed alternatives"
+        },
+        {
+          "risk": "Unauthorized remote access",
+          "treatment": "Avoid by eliminating direct remote access to NCII control systems entirely; require on-site presence for all NCII system administration; implement local console-only management for highest-criticality assets"
+        },
+        {
+          "risk": "Cryptographic key compromise via legacy algorithms",
+          "treatment": "Avoid by decommissioning all systems using deprecated cryptographic algorithms; migrate to quantum-resistant algorithms per NACSA guidance"
+        }
+      ],
+      "regulatoryNote": "Risk avoidance may not always be feasible for NCII entities, as the underlying service (e.g., power generation, banking transactions) cannot simply be discontinued. Where avoidance involves significant service changes, the entity should consult with the sector lead and NACSA to ensure continued compliance with NCII obligations.",
+      "limitations": [
+        "Essential services mandated by law or regulation cannot typically be avoided",
+        "Avoidance of one risk may introduce new risks that require separate assessment",
+        "NCII designation may constrain the entity's ability to discontinue designated services",
+        "Decommissioning NCII systems requires CE notification and may need approval"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "sourceType": "constructed-indicative",
+  "verificationStatus": "not-verified-against-gazette — this risk matrix is a constructed representation based on standard risk management practices adapted for Act 854 NCII requirements; it has not been verified against any officially published NACSA instrument",
+  "title": "NCII Cyber Security Risk Matrix (5x5)",
+  "description": "Standard 5x5 likelihood-impact risk matrix for NCII cyber security risk assessment under Act 854. Aligned with ISO 31000:2018 and the NACSA Directive on Risk Assessment Methodology.",
+  "likelihoodAxis": {
+    "label": "Likelihood",
+    "levels": [
+      { "level": 1, "label": "Rare" },
+      { "level": 2, "label": "Unlikely" },
+      { "level": 3, "label": "Possible" },
+      { "level": 4, "label": "Likely" },
+      { "level": 5, "label": "Almost Certain" }
+    ]
+  },
+  "impactAxis": {
+    "label": "Impact",
+    "levels": [
+      { "level": 1, "label": "Negligible" },
+      { "level": 2, "label": "Minor" },
+      { "level": 3, "label": "Moderate" },
+      { "level": 4, "label": "Major" },
+      { "level": 5, "label": "Catastrophic" }
+    ]
+  },
+  "matrix": [
+    { "likelihood": 1, "impact": 1, "score": 1, "band": "Low" },
+    { "likelihood": 1, "impact": 2, "score": 2, "band": "Low" },
+    { "likelihood": 1, "impact": 3, "score": 3, "band": "Low" },
+    { "likelihood": 1, "impact": 4, "score": 4, "band": "Low" },
+    { "likelihood": 1, "impact": 5, "score": 5, "band": "Medium" },
+    { "likelihood": 2, "impact": 1, "score": 2, "band": "Low" },
+    { "likelihood": 2, "impact": 2, "score": 4, "band": "Low" },
+    { "likelihood": 2, "impact": 3, "score": 6, "band": "Medium" },
+    { "likelihood": 2, "impact": 4, "score": 8, "band": "Medium" },
+    { "likelihood": 2, "impact": 5, "score": 10, "band": "High" },
+    { "likelihood": 3, "impact": 1, "score": 3, "band": "Low" },
+    { "likelihood": 3, "impact": 2, "score": 6, "band": "Medium" },
+    { "likelihood": 3, "impact": 3, "score": 9, "band": "Medium" },
+    { "likelihood": 3, "impact": 4, "score": 12, "band": "High" },
+    { "likelihood": 3, "impact": 5, "score": 15, "band": "High" },
+    { "likelihood": 4, "impact": 1, "score": 4, "band": "Low" },
+    { "likelihood": 4, "impact": 2, "score": 8, "band": "Medium" },
+    { "likelihood": 4, "impact": 3, "score": 12, "band": "High" },
+    { "likelihood": 4, "impact": 4, "score": 16, "band": "Critical" },
+    { "likelihood": 4, "impact": 5, "score": 20, "band": "Critical" },
+    { "likelihood": 5, "impact": 1, "score": 5, "band": "Medium" },
+    { "likelihood": 5, "impact": 2, "score": 10, "band": "High" },
+    { "likelihood": 5, "impact": 3, "score": 15, "band": "High" },
+    { "likelihood": 5, "impact": 4, "score": 20, "band": "Critical" },
+    { "likelihood": 5, "impact": 5, "score": 25, "band": "Critical" }
+  ],
+  "bands": [
+    {
+      "band": "Low",
+      "color": "#16A34A",
+      "colorLight": "#DCFCE7",
+      "scoreRange": "1-4",
+      "actionRequired": "Accept and monitor. Record in risk register with annual review. No escalation required. Manage within existing operational procedures.",
+      "nacsaObligation": "No specific NACSA reporting obligation. Include in annual risk assessment submission.",
+      "responseTimeframe": "Address within normal operational cycle"
+    },
+    {
+      "band": "Medium",
+      "color": "#D97706",
+      "colorLight": "#FEF3C7",
+      "scoreRange": "5-9",
+      "actionRequired": "Treat within defined timeframe. Develop treatment plan with assigned owner and target date. Monitor monthly. Escalate to CISO/NCII Compliance Officer.",
+      "nacsaObligation": "Include in risk assessment report to CE and sector lead. Treatment plan required.",
+      "responseTimeframe": "Treatment plan within 90 days; implementation within 6 months"
+    },
+    {
+      "band": "High",
+      "color": "#EA580C",
+      "colorLight": "#FFF7ED",
+      "scoreRange": "10-15",
+      "actionRequired": "Treat as priority. Immediate treatment plan with executive ownership. Report to CE and sector lead within 14 days. Weekly monitoring until residual risk is reduced. Board reporting required.",
+      "nacsaObligation": "Fast-track reporting to CE and sector lead within 14 days. Risk acceptance requires board-level approval and NACSA notification within 30 days.",
+      "responseTimeframe": "Treatment plan within 30 days; critical controls within 60 days"
+    },
+    {
+      "band": "Critical",
+      "color": "#DC2626",
+      "colorLight": "#FEE2E2",
+      "scoreRange": "16-25",
+      "actionRequired": "Immediate action required. Emergency treatment plan with CEO/board ownership. Immediate reporting to CE and sector lead. Daily monitoring. Consider temporary service restrictions or compensating controls.",
+      "nacsaObligation": "Immediate reporting to CE and sector lead. Risk acceptance at Critical level requires explicit NACSA acknowledgement. CE may exercise s28 powers to direct remediation. Non-remediation may trigger enforcement under s50-51.",
+      "responseTimeframe": "Emergency response within 48 hours; treatment plan within 14 days"
+    }
+  ]
+}
