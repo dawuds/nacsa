@@ -1070,3 +1070,139 @@ body {
   #app { max-width: 100%; padding: 0; }
   .part-card, .card, .control-card, .artifact-card, .penalty-card, .risk-card { break-inside: avoid; }
 }
+
+/* ===== DARK MODE (system preference) ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111827;
+    --card: #1F2937;
+    --border: #374151;
+    --border-light: #283548;
+    --accent: #22D3EE;
+    --accent-light: #153038;
+    --accent-dark: #0E7490;
+    --text-primary: #F1F5F9;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+    --red: #F87171;
+    --red-light: #3B1C1C;
+    --green: #4ADE80;
+    --green-light: #1A3326;
+    --amber: #FBBF24;
+    --amber-light: #3A2E10;
+    --purple: #A78BFA;
+    --purple-light: #2E2750;
+    --cyan: #22D3EE;
+    --cyan-light: #153038;
+    --teal: #2DD4BF;
+    --teal-light: #14322C;
+    --radius: 8px;
+    --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.4), 0 2px 4px -2px rgba(0,0,0,0.2);
+  }
+
+  body { background: var(--bg); color: var(--text-primary); }
+
+  a { color: var(--accent); }
+
+  /* Header */
+  .header { background: #164E63; }
+
+  /* Nav */
+  .nav { background: var(--card); border-bottom-color: var(--border); }
+
+  /* Accordion hover */
+  .accordion-header:hover { background: #283548; }
+
+  /* Section link hover */
+  .section-link:hover { background: #283548; }
+
+  /* Part card data-part colors — keep them vivid */
+  .part-card[data-part="I"]    { border-left-color: #A78BFA; }
+  .part-card[data-part="II"]   { border-left-color: #22D3EE; }
+  .part-card[data-part="III"]  { border-left-color: #22D3EE; }
+  .part-card[data-part="IV"]   { border-left-color: #F87171; }
+  .part-card[data-part="V"]    { border-left-color: #FBBF24; }
+  .part-card[data-part="VI"]   { border-left-color: #4ADE80; }
+  .part-card[data-part="VII"]  { border-left-color: #FB923C; }
+  .part-card[data-part="VIII"] { border-left-color: #818CF8; }
+  .part-card[data-part="IX"]   { border-left-color: #94A3B8; }
+
+  /* Verbatim / Translation blocks */
+  .verbatim-block { background: #153038; border-left-color: var(--accent); }
+  .translation-block { background: #1A3326; border-left-color: var(--green); }
+  .block-label { color: var(--text-muted); }
+
+  /* Auditor focus */
+  .auditor-focus { background: #3A2E10; border-left-color: var(--amber); }
+  .auditor-focus .block-label { color: #FBBF24; }
+
+  /* Disclaimer */
+  .disclaimer { background: #3A2E10; border-color: #5C4A1E; color: #FBBF24; }
+
+  /* Table hover */
+  .data-table th { background: #283548; }
+  .data-table tr:hover td { background: #283548; }
+
+  /* Source badges */
+  .badge-source-act { background: #1E2D4A; color: #93C5FD; }
+  .badge-source-regulation { background: #1A3326; color: #6EE7B7; }
+  .badge-source-directive { background: #3A2E10; color: #FDE68A; }
+  .badge-source-code-of-practice { background: #2E2750; color: #C4B5FD; }
+
+  /* AI / Example badges */
+  .badge-ai { background: #1E2D4A; color: #93C5FD; }
+  .badge-example { background: #1A3326; color: #6EE7B7; }
+
+  /* Requirement column headers */
+  .req-column-header.legal { background: #1E2D4A; color: #93C5FD; }
+  .req-column-header.technical { background: #1A3326; color: #6EE7B7; }
+  .req-column-header.governance { background: #2E2750; color: #C4B5FD; }
+
+  /* Filter chips */
+  .filter-chip { background: var(--card); border-color: var(--border); color: var(--text-secondary); }
+  .filter-chip:hover { border-color: var(--accent); color: var(--accent); }
+  .filter-chip.active { background: var(--accent); color: #111827; border-color: var(--accent); }
+
+  /* Maturity levels */
+  .maturity-level.basic { background: #3B1C1C; }
+  .maturity-level.mature { background: #3A2E10; }
+  .maturity-level.advanced { background: #1A3326; }
+
+  /* Penalty card */
+  .penalty-amount { background: #3B1C1C; color: var(--red); }
+  .penalty-corporate { background: #3A2E10; color: #FBBF24; }
+
+  /* Similarity badges */
+  .similarity-high { background: #1A3326; color: var(--green); }
+  .similarity-medium { background: #3A2E10; color: var(--amber); }
+  .similarity-low { background: #283548; color: var(--text-secondary); }
+
+  /* Cross-ref tags */
+  .xref-tag { background: #283548; }
+  .xref-tag:hover { background: var(--accent-light); color: var(--accent); }
+
+  /* Search highlight */
+  .search-highlight { background: #3A2E10; color: #FBBF24; }
+
+  /* Risk matrix */
+  .risk-matrix-corner { background: var(--card); }
+  .risk-matrix-cell { border-color: var(--card); }
+
+  /* Risk sort buttons */
+  .risk-sort-btn { border-color: var(--border); color: var(--text-secondary); }
+  .risk-sort-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .risk-sort-btn.active { background: var(--accent); color: #111827; border-color: var(--accent); }
+
+  /* Evidence good/gap */
+  .evidence-good { background: #1A3326; border-left-color: var(--green); }
+  .evidence-gap { background: #3B1C1C; border-left-color: var(--red); }
+
+  /* Audit package */
+  .audit-package { background: #1A2332; border-top-color: var(--accent); }
+  .artifact-link-card:hover { border-color: var(--accent); }
+
+  /* Framework step arrow */
+  .framework-step:not(:last-child)::after { color: var(--text-muted); }
+  .framework-step:hover { border-color: var(--accent); }
+}
