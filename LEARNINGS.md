@@ -117,7 +117,7 @@ Section-based joins (via provision maps) explode on broad provisions. In the PDP
 The Audit Package pattern is **documented with data linkages in place**:
 
 - `artifacts/inventory.json`: 120 artifacts with `controlSlugs[]` added — median 2 slugs per artifact, curated semantic mappings
-- `evidence/index.json`: 26 evidence items across 9 sections — `artifactSlugs[]` added, 1-2 artifact links per item
+- `evidence/index.json`: 71 evidence items across 28 sections — `artifactSlugs[]` added, 1-2 artifact links per item (expanded from 9/64 to 28/64 section coverage)
 - `controls/library.json`: 53 controls across 15 domains — broken directive references cleaned (100 removed, 5 valid kept)
 - `app.js`: Audit Package UI implemented in `renderControlDetail()` with accordion-based artifact cards and evidence checklist
 
@@ -126,7 +126,7 @@ The Audit Package pattern is **documented with data linkages in place**:
 - `controlSlugs[]` added to all 120 artifacts with curated 1-4 control slugs (median 2)
 - `artifactSlugs[]` added to all 26 evidence items with 1-2 artifact links each
 - 100 broken directive references removed from controls; only 5 references to actually existing directive files retained
-- Evidence covers 9 of the sections referenced by controls (unchanged — this is a data coverage gap, not a bug)
+- Evidence expanded from 9 to 28 sections (28/64 coverage — remaining 36 sections are a data coverage gap, not a bug)
 
 ### Reference Implementation
 

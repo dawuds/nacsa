@@ -1,6 +1,6 @@
 # NACSA Act 854 Explorer
 
-Interactive structured compliance database for Malaysia's **Cyber Security Act 2024 (Act 854)** — browse provisions, NCII sectors, requirements, evidence guidance, controls, artifacts, penalties, supplements, and cross-references.
+Interactive structured compliance database for Malaysia's **Cyber Security Act 2024 (Act 854)** — browse provisions, NCII sectors, requirements, evidence guidance, controls, artifacts, penalties, supplements, and cross-references. Features dark mode (automatic via `prefers-color-scheme`), favicon, 120 document templates, risk management framework, and an **Audit Package** on each control detail view linking controls to their required artifacts and evidence items.
 
 > **Disclaimer**: This is an indicative/educational resource. It does not constitute legal advice. Always refer to the official gazette text and seek professional counsel for compliance decisions. See [LEARNINGS.md](LEARNINGS.md) for data quality audit history.
 
@@ -36,6 +36,7 @@ The database follows a 9-layer structured compliance model plus supplements:
 ```
 nacsa/
 ├── LEARNINGS.md             # Data quality audit findings and lessons
+├── TODO.md                  # Completed and pending feature tracking
 ├── provisions/              # Act 854 sections (9 parts, ~64 sections)
 │   ├── parts.json           # Part structure with divisions
 │   ├── index.json           # All sections with verbatim text & translations
@@ -71,13 +72,13 @@ nacsa/
 │   ├── regulations/         # 4 subsidiary regulations (P.U.(A) 219-222/2024)
 │   ├── directives/          # 10 Chief Executive directives
 │   └── codes-of-practice/   # 11 sector-specific codes of practice
-├── templates/               # 121 document templates across 6 categories
+├── templates/               # 120 document templates across 6 categories
 │   ├── policies/            # 20 policy templates
 │   ├── procedures/          # 20 procedure templates
 │   ├── standards/           # 20 standards templates
 │   ├── registers/           # 20 register templates
 │   ├── reports/             # 20 report templates
-│   └── logs/                # 21 log templates
+│   └── logs/                # 20 log templates
 ├── index.html               # Static browsing site
 ├── style.css
 └── app.js
@@ -97,8 +98,9 @@ nacsa/
 | Cross-references | 4 | Framework mappings + regulatory mappings |
 | Risk Management | 5 | Methodology, risk matrix, 20-risk register, checklist, treatment options |
 | Supplements | 28 | 4 regulations + 10 directives + 11 CoPs + 3 indexes |
+| Templates | 120 | 20 each: policies, procedures, standards, registers, reports, logs |
 | Static site | 3 | HTML + CSS + JS |
-| **Total** | **65** | |
+| **Total** | **185** | |
 
 ## Static Site
 
@@ -107,7 +109,10 @@ The Explorer is a vanilla HTML/CSS/JS single-page application with:
 - **Hash-based routing**: `#`, `#part/IV`, `#s17`, `#sectors`, `#sector/banking-finance`, `#penalties`, `#controls`, `#control/slug`, `#artifacts`, `#supplements`, `#cross-references`, `#framework/nist-csf`, `#risk-management`, `#search/keyword`
 - **Lazy-loaded tabs**: Requirements, evidence, controls, artifacts, and cross-references load on demand
 - **Full-text search** across provisions, sectors, penalties, and supplements
+- **Dark mode**: Automatic via `prefers-color-scheme` media query
 - **Responsive design**: Mobile, tablet, and desktop breakpoints
+- **Templates browser**: 120 document templates across 6 categories with search and category filtering
+- **Audit Package**: Control detail views show linked artifacts and evidence items
 - **No build step**: Serve directly with any static file server
 
 ### Local Development
