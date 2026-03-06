@@ -2359,5 +2359,1643 @@
       "Check whether interim compliance measures were genuine or token efforts",
       "For entities designated after the transitional period: this section may still provide due diligence evidence for s52 defence"
     ]
+  },
+  "s5": {
+    "sectionId": "s5",
+    "part": "II",
+    "title": "Functions of the Agency",
+    "obligationType": "administrative",
+    "auditorFocus": "Assessors will verify that the entity understands NACSA's functions and has established communication channels with the Agency for cyber security matters, policy implementation, and threat coordination.",
+    "evidenceItems": [
+      {
+        "id": "s5-E1",
+        "name": "NACSA Liaison and Communication Records",
+        "description": "Records of formal communication channels established with NACSA, including designated contact points and correspondence history",
+        "whatGoodLooksLike": [
+          "Designated NACSA liaison officer appointed within the entity",
+          "Communication channel documented (email, portal, hotline)",
+          "Correspondence log maintained with dates and topics",
+          "Escalation path to NACSA defined in incident response procedures"
+        ],
+        "commonGaps": [
+          "No designated NACSA liaison within the organisation",
+          "Communication with NACSA is ad hoc with no records",
+          "Staff unaware of how to contact NACSA",
+          "No integration of NACSA guidance into internal processes"
+        ],
+        "suggestedSources": [
+          "CISO office",
+          "Compliance team",
+          "Corporate communications"
+        ],
+        "format": "Communication logs, email records",
+        "retentionPeriod": "3 years",
+        "artifactSlugs": [
+          "ncii-cybersecurity-policy",
+          "annual-ncii-compliance-report"
+        ]
+      },
+      {
+        "id": "s5-E2",
+        "name": "NACSA Directive and Guidance Tracking Register",
+        "description": "Register tracking NACSA-issued strategies, standards, guidelines, codes of practice, and directives, with implementation status for each",
+        "whatGoodLooksLike": [
+          "All NACSA publications tracked with receipt date",
+          "Implementation status recorded per directive",
+          "Gap analysis performed for each new issuance",
+          "Board or management briefed on new obligations"
+        ],
+        "commonGaps": [
+          "No systematic tracking of NACSA publications",
+          "Directives received but not assessed for applicability",
+          "No gap analysis between current state and directive requirements",
+          "Delayed implementation with no tracking"
+        ],
+        "suggestedSources": [
+          "Compliance team",
+          "Legal department",
+          "CISO office"
+        ],
+        "format": "Register / tracker spreadsheet",
+        "retentionPeriod": "Current + 2 years",
+        "artifactSlugs": [
+          "directive-compliance-tracker",
+          "standards-compliance-tracker"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the CISO how the entity stays informed of new NACSA directives and guidelines",
+      "Verify that NACSA communication channels are documented in the incident response plan",
+      "Check if the entity has participated in any NACSA-coordinated exercises or briefings"
+    ]
+  },
+  "s6": {
+    "sectionId": "s6",
+    "part": "II",
+    "title": "Appointment and powers of Chief Executive",
+    "obligationType": "administrative",
+    "auditorFocus": "Assessors will verify that the entity is aware of the Chief Executive's powers under Act 854, including delegation authorities, and has processes to respond to Chief Executive directives.",
+    "evidenceItems": [
+      {
+        "id": "s6-E1",
+        "name": "Chief Executive Authority Awareness Documentation",
+        "description": "Internal briefing materials or policy references documenting the Chief Executive's powers under Act 854 and the entity's obligation to comply with directives and orders",
+        "whatGoodLooksLike": [
+          "Key CE powers documented in compliance framework",
+          "Staff briefed on CE authority over NCII entities",
+          "Response procedures for CE directives established",
+          "Legal review process for incoming CE orders"
+        ],
+        "commonGaps": [
+          "No awareness of CE's statutory powers",
+          "No process for receiving and acting on CE directives",
+          "Compliance team unfamiliar with delegation provisions",
+          "No legal review step for CE-issued orders"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "Compliance team",
+          "CISO office"
+        ],
+        "format": "Briefing documents, policy references",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "ncii-cybersecurity-policy",
+          "directive-compliance-tracker"
+        ]
+      },
+      {
+        "id": "s6-E2",
+        "name": "Regulatory Response Protocol",
+        "description": "Protocol for receiving, assessing, and implementing directives or orders from the Chief Executive or delegated officers",
+        "whatGoodLooksLike": [
+          "Documented protocol for handling CE communications",
+          "Triage process for urgency classification of directives",
+          "Assigned responsibility for directive implementation",
+          "Tracking mechanism for compliance deadlines"
+        ],
+        "commonGaps": [
+          "No formal protocol for regulatory directives",
+          "Directives handled reactively with no systematic process",
+          "No deadline tracking for directive compliance",
+          "Unclear ownership for directive implementation"
+        ],
+        "suggestedSources": [
+          "Compliance team",
+          "Legal department",
+          "Project management office"
+        ],
+        "format": "Protocol document",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "directive-compliance-tracker",
+          "audit-compliance-policy"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the compliance team what would happen if a directive arrived from the CE today \u2014 walk through the response",
+      "Verify that CE powers are referenced in the entity's compliance framework documentation",
+      "Check whether the entity distinguishes between CE directives and delegated officer directives"
+    ]
+  },
+  "s7": {
+    "sectionId": "s7",
+    "part": "II",
+    "title": "Appointment of officers and servants",
+    "obligationType": "administrative",
+    "auditorFocus": "Assessors will verify that the entity can identify and cooperate with authorized officers of NACSA exercising enforcement powers, and has procedures for verifying officer credentials.",
+    "evidenceItems": [
+      {
+        "id": "s7-E1",
+        "name": "Authorized Officer Verification Procedure",
+        "description": "Procedure for verifying the identity and authorization of NACSA officers presenting at entity premises for enforcement or inspection purposes",
+        "whatGoodLooksLike": [
+          "Procedure documents how to verify officer credentials",
+          "Reception and security staff trained on verification process",
+          "Escalation to legal counsel triggered upon officer arrival",
+          "Record-keeping requirements for officer visits documented"
+        ],
+        "commonGaps": [
+          "No procedure for verifying NACSA officer identity",
+          "Security staff untrained on handling regulatory visits",
+          "No escalation process when officers arrive",
+          "No records kept of officer visits"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "Facilities/security team",
+          "CISO office"
+        ],
+        "format": "Procedure document",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "forensic-investigation-procedure",
+          "audit-compliance-policy"
+        ]
+      },
+      {
+        "id": "s7-E2",
+        "name": "Enforcement Visit Log",
+        "description": "Log of all visits by NACSA authorized officers, including date, officer details, purpose, areas accessed, and documents provided",
+        "whatGoodLooksLike": [
+          "Chronological log of all enforcement visits",
+          "Officer identity and authorization reference recorded",
+          "Purpose and scope of each visit documented",
+          "Follow-up actions tracked to completion"
+        ],
+        "commonGaps": [
+          "No log of enforcement visits maintained",
+          "Visits handled informally with no records",
+          "Follow-up actions not tracked",
+          "No distinction between different types of regulatory visits"
+        ],
+        "suggestedSources": [
+          "Facilities/security team",
+          "Legal department",
+          "Compliance team"
+        ],
+        "format": "Visit log / register",
+        "retentionPeriod": "5 years",
+        "artifactSlugs": [
+          "physical-access-logs",
+          "audit-findings-register"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask reception and security staff what they would do if a NACSA officer arrived unannounced",
+      "Check whether the entity maintains a log of all regulatory visits",
+      "Verify that legal counsel is notified when authorized officers exercise enforcement powers"
+    ]
+  },
+  "s8": {
+    "sectionId": "s8",
+    "part": "III",
+    "title": "Establishment of the National Cyber Security Committee",
+    "obligationType": "administrative",
+    "auditorFocus": "Assessors will verify that the entity understands the Committee's composition and role in national cyber security governance, and has processes to respond to Committee decisions affecting NCII sectors.",
+    "evidenceItems": [
+      {
+        "id": "s8-E1",
+        "name": "National Cyber Security Committee Awareness Brief",
+        "description": "Internal briefing or reference material documenting the Committee's role, composition, and how its decisions affect the entity's compliance obligations",
+        "whatGoodLooksLike": [
+          "Committee role and composition documented for internal reference",
+          "Impact of Committee decisions on the entity's sector understood",
+          "Process to monitor and implement Committee directives established",
+          "Board-level awareness of Committee's authority"
+        ],
+        "commonGaps": [
+          "No awareness of the Committee's existence or role",
+          "No process to track Committee decisions",
+          "Disconnect between Committee directives and internal compliance",
+          "Board not briefed on national governance structure"
+        ],
+        "suggestedSources": [
+          "Compliance team",
+          "Legal department",
+          "Government relations"
+        ],
+        "format": "Briefing document / reference material",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "ncii-cybersecurity-policy",
+          "quarterly-board-report"
+        ]
+      },
+      {
+        "id": "s8-E2",
+        "name": "Committee Decision Tracking Register",
+        "description": "Register tracking relevant decisions made by the National Cyber Security Committee that affect the entity's NCII sector or compliance obligations",
+        "whatGoodLooksLike": [
+          "Relevant Committee decisions tracked with dates",
+          "Impact assessment performed for each decision",
+          "Implementation actions assigned and tracked",
+          "Regular updates to board on Committee developments"
+        ],
+        "commonGaps": [
+          "No tracking of Committee decisions",
+          "No impact assessment of national-level decisions",
+          "Sector-specific implications not analysed",
+          "Board uninformed of Committee activities"
+        ],
+        "suggestedSources": [
+          "Compliance team",
+          "Legal department",
+          "NCII sector lead communications"
+        ],
+        "format": "Register / tracker",
+        "retentionPeriod": "Current + 3 years",
+        "artifactSlugs": [
+          "directive-compliance-tracker",
+          "regulatory-change-report"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the compliance team how Committee decisions are communicated to the entity",
+      "Check whether the board has been briefed on the national cyber security governance structure",
+      "Verify that sector-relevant Committee decisions have been assessed for compliance impact"
+    ]
+  },
+  "s9": {
+    "sectionId": "s9",
+    "part": "III",
+    "title": "Functions of the Committee",
+    "obligationType": "administrative",
+    "auditorFocus": "Assessors will verify that the entity understands the Committee's functions \u2014 particularly sector determination, emergency coordination, and cross-agency coordination \u2014 and has processes to respond to Committee-driven requirements.",
+    "evidenceItems": [
+      {
+        "id": "s9-E1",
+        "name": "Sector Designation Awareness and Response Records",
+        "description": "Evidence that the entity monitors and responds to the Committee's sector determination functions, including designation of NCII sectors and coordination of national responses",
+        "whatGoodLooksLike": [
+          "Entity's NCII sector designation documented and understood",
+          "Implications of sector designation analysed and documented",
+          "Entity participates in sector-level coordination mechanisms",
+          "Emergency response procedures aligned with national coordination"
+        ],
+        "commonGaps": [
+          "Entity unsure of its NCII sector classification",
+          "No awareness of Committee's coordination role in emergencies",
+          "No participation in sector-level coordination activities",
+          "Emergency procedures not aligned with national framework"
+        ],
+        "suggestedSources": [
+          "Compliance team",
+          "CISO office",
+          "Government relations"
+        ],
+        "format": "Awareness records / correspondence",
+        "retentionPeriod": "Current + 2 years",
+        "artifactSlugs": [
+          "ncii-cybersecurity-policy",
+          "ncii-asset-register"
+        ]
+      },
+      {
+        "id": "s9-E2",
+        "name": "National Emergency Coordination Readiness",
+        "description": "Evidence of readiness to participate in Committee-coordinated emergency responses to national cyber security threats",
+        "whatGoodLooksLike": [
+          "Emergency contact details registered with sector lead",
+          "Participation in national cyber exercises documented",
+          "Communication protocols for national emergencies established",
+          "Staff trained on coordination procedures"
+        ],
+        "commonGaps": [
+          "No emergency contact registered with sector lead",
+          "Never participated in national exercises",
+          "No communication protocol for national incidents",
+          "Staff unaware of national coordination mechanisms"
+        ],
+        "suggestedSources": [
+          "CISO office",
+          "SOC / incident response team",
+          "Government relations"
+        ],
+        "format": "Exercise records, communication plans",
+        "retentionPeriod": "3 years",
+        "artifactSlugs": [
+          "incident-response-procedure",
+          "bcdr-policy"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask whether the entity has participated in any national or sector-level cyber security exercises",
+      "Verify that the entity's NCII sector designation is documented and understood at board level",
+      "Check whether emergency response procedures reference national coordination mechanisms"
+    ]
+  },
+  "s10": {
+    "sectionId": "s10",
+    "part": "III",
+    "title": "Delegation of functions",
+    "obligationType": "procedural",
+    "auditorFocus": "Assessors will verify that the entity understands delegation provisions and can identify whether directives originate from the Committee or a delegated sub-committee, with appropriate response processes for both.",
+    "evidenceItems": [
+      {
+        "id": "s10-E1",
+        "name": "Delegation Awareness and Sub-Committee Tracking",
+        "description": "Evidence that the entity tracks whether regulatory directives originate from the Committee directly or from a delegated sub-committee, with clarity on the authority chain",
+        "whatGoodLooksLike": [
+          "Source of directives (Committee vs sub-committee) recorded",
+          "Authority chain for delegated directives understood",
+          "Response process identical regardless of delegation source",
+          "Legal counsel aware of delegation provisions"
+        ],
+        "commonGaps": [
+          "No distinction made between Committee and sub-committee directives",
+          "Authority chain for delegated functions unclear",
+          "Legal counsel unfamiliar with delegation provisions",
+          "Risk of challenging delegated authority inappropriately"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "Compliance team"
+        ],
+        "format": "Reference documentation",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "directive-compliance-tracker",
+          "ncii-cybersecurity-policy"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the legal team whether they distinguish between Committee and sub-committee directives",
+      "Verify that delegation provisions are referenced in the compliance framework"
+    ]
+  },
+  "s11": {
+    "sectionId": "s11",
+    "part": "III",
+    "title": "Meetings of the Committee",
+    "obligationType": "procedural",
+    "auditorFocus": "Assessors will verify that the entity understands Committee meeting procedures and quorum requirements, relevant when Committee decisions affecting the entity's sector may be challenged.",
+    "evidenceItems": [
+      {
+        "id": "s11-E1",
+        "name": "Committee Governance Awareness Records",
+        "description": "Evidence that the entity's legal and compliance teams understand Committee meeting procedures, quorum requirements, and voting rules for the purpose of validating Committee decisions",
+        "whatGoodLooksLike": [
+          "Committee governance procedures documented for reference",
+          "Legal team aware of quorum and voting requirements",
+          "Process to verify validity of Committee decisions if challenged",
+          "Records of Committee decisions affecting the entity maintained"
+        ],
+        "commonGaps": [
+          "No awareness of Committee meeting procedures",
+          "Legal team cannot verify Committee decision validity",
+          "No records of Committee decisions relevant to the entity",
+          "Procedural defects in Committee decisions not identifiable"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "Compliance team"
+        ],
+        "format": "Reference documentation",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "ncii-cybersecurity-policy",
+          "regulatory-change-report"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the legal team whether they have considered procedural grounds for challenging a Committee decision",
+      "Verify that the entity maintains records of Committee decisions affecting its sector"
+    ]
+  },
+  "s12": {
+    "sectionId": "s12",
+    "part": "III",
+    "title": "Minutes of meetings",
+    "obligationType": "procedural",
+    "auditorFocus": "Assessors will verify that the entity understands that confirmed Committee minutes are admissible as evidence, and has processes to request minutes when needed for compliance verification.",
+    "evidenceItems": [
+      {
+        "id": "s12-E1",
+        "name": "Committee Minutes Request and Reference Process",
+        "description": "Evidence of a process for requesting and referencing Committee meeting minutes when needed to verify the basis or scope of regulatory decisions",
+        "whatGoodLooksLike": [
+          "Process to request Committee minutes documented",
+          "Legal team aware that confirmed minutes are admissible evidence",
+          "Minutes referenced when compliance obligations are ambiguous",
+          "Archive of relevant minutes or excerpts maintained"
+        ],
+        "commonGaps": [
+          "No process for requesting Committee minutes",
+          "Legal team unaware of evidentiary value of confirmed minutes",
+          "Compliance obligations interpreted without reference to source decisions",
+          "No archive of relevant Committee decisions"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "Compliance team"
+        ],
+        "format": "Process documentation",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "audit-compliance-policy",
+          "regulatory-change-report"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the legal team whether they have ever requested Committee minutes",
+      "Verify that the entity understands the evidentiary weight of confirmed Committee minutes"
+    ]
+  },
+  "s13": {
+    "sectionId": "s13",
+    "part": "III",
+    "title": "Procedure at meetings",
+    "obligationType": "procedural",
+    "auditorFocus": "Assessors will verify awareness that the Committee may regulate its own procedure, meaning procedural rules may evolve and entities must stay informed of changes to engagement protocols.",
+    "evidenceItems": [
+      {
+        "id": "s13-E1",
+        "name": "Committee Procedural Updates Monitoring",
+        "description": "Evidence that the entity monitors changes to Committee procedures that may affect how the entity engages with or responds to Committee processes",
+        "whatGoodLooksLike": [
+          "Monitoring process for Committee procedural changes established",
+          "Sector lead communications reviewed for procedural updates",
+          "Internal procedures updated when Committee procedures change",
+          "Legal team advised of procedural evolution"
+        ],
+        "commonGaps": [
+          "No monitoring of Committee procedural changes",
+          "Assumed Committee procedures are static",
+          "Internal engagement procedures outdated",
+          "Sector lead communications not systematically reviewed"
+        ],
+        "suggestedSources": [
+          "Compliance team",
+          "Legal department",
+          "Sector lead communications"
+        ],
+        "format": "Monitoring records",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "regulatory-change-report",
+          "directive-compliance-tracker"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the compliance team how they learn about changes to Committee engagement procedures",
+      "Verify that internal processes reference the latest known Committee procedures"
+    ]
+  },
+  "s31": {
+    "sectionId": "s31",
+    "part": "V",
+    "title": "Register of licensees",
+    "obligationType": "administrative",
+    "auditorFocus": "Assessors will verify that the entity (if a cyber security service provider) has confirmed its listing on the Chief Executive's register, and (if an NCII entity) uses the register to verify that engaged service providers are licensed.",
+    "evidenceItems": [
+      {
+        "id": "s31-E1",
+        "name": "Licensee Register Verification Records",
+        "description": "Records demonstrating that the entity verifies its cyber security service providers against the Chief Executive's register of licensees before engagement",
+        "whatGoodLooksLike": [
+          "Register verification performed before vendor onboarding",
+          "Verification records maintained with date and result",
+          "Periodic re-verification during engagement",
+          "Unlicensed provider identified triggers halt and escalation"
+        ],
+        "commonGaps": [
+          "No verification against the licensee register",
+          "Verification performed at onboarding but never refreshed",
+          "No records of verification checks",
+          "No process if a provider's licence is subsequently revoked"
+        ],
+        "suggestedSources": [
+          "Procurement team",
+          "Vendor management",
+          "CISO office"
+        ],
+        "format": "Verification records / register extracts",
+        "retentionPeriod": "Duration of engagement + 2 years",
+        "artifactSlugs": [
+          "vendor-register",
+          "vendor-onboarding-procedure"
+        ]
+      },
+      {
+        "id": "s31-E2",
+        "name": "Own Licence Registration Confirmation",
+        "description": "For entities that are cyber security service providers: confirmation of listing on the register with accurate particulars",
+        "whatGoodLooksLike": [
+          "Registration confirmation from Chief Executive on file",
+          "Registered particulars verified for accuracy",
+          "Process to update register when particulars change",
+          "Registration status displayed to clients as required"
+        ],
+        "commonGaps": [
+          "No confirmation of register listing on file",
+          "Registered particulars outdated or inaccurate",
+          "No process to update register on changes",
+          "Clients unable to verify provider's registration"
+        ],
+        "suggestedSources": [
+          "Compliance team",
+          "Legal department",
+          "Business operations"
+        ],
+        "format": "Registration certificate / confirmation letter",
+        "retentionPeriod": "Duration of licence",
+        "artifactSlugs": [
+          "licence-register",
+          "annual-ncii-compliance-report"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask procurement whether they verify service provider licences against the Chief Executive's register",
+      "For service providers: request the registration confirmation letter",
+      "Verify that there is a process to handle discovery that an engaged provider is unlicensed"
+    ]
+  },
+  "s35": {
+    "sectionId": "s35",
+    "part": "VI",
+    "title": "Search and seizure with warrant",
+    "obligationType": "enabling",
+    "auditorFocus": "Assessors will verify that the entity has procedures to cooperate with warrant-based searches, including premises access protocols, data access procedures, and evidence preservation during search operations.",
+    "evidenceItems": [
+      {
+        "id": "s35-E1",
+        "name": "Warrant-Based Search Cooperation Procedure",
+        "description": "Documented procedure for cooperating with authorized officers executing search warrants, including premises access, system access, and staff conduct protocols",
+        "whatGoodLooksLike": [
+          "Procedure covers warrant verification steps",
+          "Designated staff to accompany officers during search",
+          "Legal counsel notification triggered immediately",
+          "Staff trained on rights and obligations during warrant execution"
+        ],
+        "commonGaps": [
+          "No procedure for handling search warrants",
+          "Staff would not know how to verify warrant validity",
+          "No designated escort or liaison for search operations",
+          "Legal counsel not notified until after search concludes"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "Facilities/security team",
+          "CISO office"
+        ],
+        "format": "Procedure document",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "forensic-investigation-procedure",
+          "audit-compliance-policy"
+        ]
+      },
+      {
+        "id": "s35-E2",
+        "name": "Seized Item Documentation and Tracking",
+        "description": "Template and process for documenting items seized during warrant execution, including computers, data, documents, and other materials",
+        "whatGoodLooksLike": [
+          "Seizure documentation template ready for use",
+          "Process to verify and countersign officer's list of seized items",
+          "Copy of seizure list retained by entity",
+          "Tracking of seized items through to return or forfeiture"
+        ],
+        "commonGaps": [
+          "No template for documenting seized items",
+          "Entity does not retain copy of seizure list",
+          "No tracking of seized items post-search",
+          "No process to request return of seized items"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "IT operations",
+          "Compliance team"
+        ],
+        "format": "Template / register",
+        "retentionPeriod": "Until resolution of proceedings + 2 years",
+        "artifactSlugs": [
+          "forensic-investigation-procedure",
+          "incident-register"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the legal team what would happen if a Magistrate's warrant were presented at reception today",
+      "Verify that the entity has a process to verify warrant validity before granting access",
+      "Check whether seized item documentation templates are available and staff know how to use them"
+    ]
+  },
+  "s36": {
+    "sectionId": "s36",
+    "part": "VI",
+    "title": "Search and seizure without warrant",
+    "obligationType": "enabling",
+    "auditorFocus": "Assessors will verify that the entity has procedures for warrantless search scenarios, understanding that authorized officers may enter premises without prior notice in urgent circumstances.",
+    "evidenceItems": [
+      {
+        "id": "s36-E1",
+        "name": "Emergency Search Cooperation Procedure",
+        "description": "Procedure for cooperating with warrantless searches by authorized officers exercising emergency powers under s36, including immediate legal notification",
+        "whatGoodLooksLike": [
+          "Emergency search scenario addressed in cooperation procedures",
+          "Staff trained that warrantless entry is lawful in specified circumstances",
+          "Immediate legal counsel notification triggered",
+          "Same cooperation obligations apply as for warrant-based searches"
+        ],
+        "commonGaps": [
+          "Procedures only cover warrant-based searches",
+          "Staff may attempt to refuse entry without warrant",
+          "No awareness that warrantless search is lawful under s36",
+          "Delayed legal notification in emergency scenarios"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "Facilities/security team",
+          "CISO office"
+        ],
+        "format": "Procedure document",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "forensic-investigation-procedure",
+          "audit-compliance-policy"
+        ]
+      },
+      {
+        "id": "s36-E2",
+        "name": "Emergency Search Event Records",
+        "description": "Records maintained after any warrantless search, documenting the circumstances, officer identity, areas accessed, and items seized",
+        "whatGoodLooksLike": [
+          "Post-search record completed within 24 hours",
+          "Circumstances of the emergency entry documented",
+          "All areas accessed and items seized recorded",
+          "Legal review of search lawfulness performed"
+        ],
+        "commonGaps": [
+          "No post-search record-keeping process",
+          "Warrantless searches not documented differently from warrant-based",
+          "No legal review of search lawfulness",
+          "Records insufficient for subsequent legal challenge"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "Facilities/security team",
+          "Compliance team"
+        ],
+        "format": "Event records / incident log",
+        "retentionPeriod": "Until resolution + 2 years",
+        "artifactSlugs": [
+          "incident-register",
+          "physical-access-logs"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask whether the entity's search cooperation procedures distinguish between warrant and warrantless scenarios",
+      "Verify that staff understand warrantless entry is lawful under specified circumstances",
+      "Check whether post-search documentation captures the basis for the emergency entry"
+    ]
+  },
+  "s38": {
+    "sectionId": "s38",
+    "part": "VI",
+    "title": "Power to intercept communications",
+    "obligationType": "enabling",
+    "auditorFocus": "Assessors will verify that the entity has procedures to cooperate with lawful interception orders, including providing technical access to communication systems and preserving communication logs.",
+    "evidenceItems": [
+      {
+        "id": "s38-E1",
+        "name": "Lawful Interception Cooperation Procedure",
+        "description": "Procedure for cooperating with communication interception orders from the Chief Executive or authorized officers, including technical facilitation",
+        "whatGoodLooksLike": [
+          "Lawful interception procedure documented",
+          "Technical capability to provide access to communication systems",
+          "Legal counsel reviews interception orders before compliance",
+          "Confidentiality of interception maintained"
+        ],
+        "commonGaps": [
+          "No lawful interception cooperation procedure",
+          "Technical inability to provide requested communication access",
+          "No legal review of interception orders",
+          "Staff unaware of obligations under s38"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "IT operations",
+          "Network security team"
+        ],
+        "format": "Procedure document",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "forensic-investigation-procedure",
+          "network-security-policy"
+        ]
+      },
+      {
+        "id": "s38-E2",
+        "name": "Communication System Access Capability Assessment",
+        "description": "Assessment documenting the entity's technical capability to provide access to communication systems when required by lawful interception orders",
+        "whatGoodLooksLike": [
+          "Communication system inventory maintained",
+          "Technical ability to provide lawful access assessed",
+          "Gaps in interception capability identified and documented",
+          "Third-party communication providers' interception capabilities understood"
+        ],
+        "commonGaps": [
+          "No assessment of lawful interception capability",
+          "Communication systems cannot be technically accessed for interception",
+          "Cloud/SaaS communication systems not considered",
+          "Third-party provider cooperation obligations not addressed"
+        ],
+        "suggestedSources": [
+          "IT operations",
+          "Network security team",
+          "Telecommunications team"
+        ],
+        "format": "Assessment report",
+        "retentionPeriod": "Current + 1 prior version",
+        "artifactSlugs": [
+          "security-architecture-report",
+          "network-diagram-register"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the IT team whether they could technically facilitate a lawful interception order today",
+      "Verify that cloud and third-party communication systems are included in interception planning",
+      "Check whether legal counsel reviews interception orders before technical compliance"
+    ]
+  },
+  "s39": {
+    "sectionId": "s39",
+    "part": "VI",
+    "title": "List of things seized",
+    "obligationType": "procedural",
+    "auditorFocus": "Assessors will verify that the entity has a process to ensure the list of seized items is accurate, countersigned, and retained, and that a copy is obtained from the authorized officer.",
+    "evidenceItems": [
+      {
+        "id": "s39-E1",
+        "name": "Seizure List Verification and Retention Process",
+        "description": "Process for verifying the accuracy of the authorized officer's seizure list, countersigning it, and retaining a copy for the entity's records",
+        "whatGoodLooksLike": [
+          "Designated staff member reviews and countersigns seizure list",
+          "Copy of signed seizure list retained in compliance records",
+          "Discrepancies in the list raised and documented at the time",
+          "Seized items cross-referenced against entity asset inventory"
+        ],
+        "commonGaps": [
+          "No process for reviewing seizure lists",
+          "Entity does not retain a copy of the seizure list",
+          "Inaccuracies in seizure lists not challenged at time of seizure",
+          "No cross-reference to asset inventory for seized items"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "IT operations",
+          "Compliance team"
+        ],
+        "format": "Process document / template",
+        "retentionPeriod": "Until resolution + 2 years",
+        "artifactSlugs": [
+          "forensic-investigation-procedure",
+          "ncii-asset-register"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask who would countersign a seizure list on behalf of the entity",
+      "Verify that a template or process exists for reviewing and retaining seizure lists",
+      "Check whether seizure list items would be cross-referenced against the entity's asset register"
+    ]
+  },
+  "s40": {
+    "sectionId": "s40",
+    "part": "VI",
+    "title": "Power to require attendance of persons",
+    "obligationType": "enabling",
+    "auditorFocus": "Assessors will verify that the entity has procedures to ensure staff comply with attendance notices from authorized officers, including legal support and preparation guidance.",
+    "evidenceItems": [
+      {
+        "id": "s40-E1",
+        "name": "Staff Attendance Notice Response Procedure",
+        "description": "Procedure for responding to written notices requiring staff attendance before authorized officers, including legal support and preparation guidance",
+        "whatGoodLooksLike": [
+          "Attendance notice response procedure documented",
+          "Legal counsel involvement triggered upon receipt of notice",
+          "Staff briefed on obligations and rights when attending",
+          "Record of attendance notices and responses maintained"
+        ],
+        "commonGaps": [
+          "No procedure for handling attendance notices",
+          "Staff attend without legal preparation",
+          "No record of attendance notices received",
+          "Staff unaware that failure to attend is an offence"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "HR department",
+          "Compliance team"
+        ],
+        "format": "Procedure document",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "forensic-investigation-procedure",
+          "audit-compliance-policy"
+        ]
+      },
+      {
+        "id": "s40-E2",
+        "name": "Attendance Notice Register",
+        "description": "Register tracking all attendance notices received, the staff member required to attend, the subject matter, and the outcome",
+        "whatGoodLooksLike": [
+          "All attendance notices logged with receipt date",
+          "Staff member and subject matter recorded",
+          "Legal support provided documented",
+          "Outcome and follow-up actions tracked"
+        ],
+        "commonGaps": [
+          "No register of attendance notices",
+          "Notices handled informally with no tracking",
+          "Legal support provided not documented",
+          "No follow-up on outcomes"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "HR department"
+        ],
+        "format": "Register",
+        "retentionPeriod": "5 years",
+        "artifactSlugs": [
+          "incident-register",
+          "audit-findings-register"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the legal team what would happen if a staff member received an attendance notice tomorrow",
+      "Verify that staff understand that failure to attend without reasonable excuse is an offence",
+      "Check whether attendance notices are tracked and outcomes recorded"
+    ]
+  },
+  "s41": {
+    "sectionId": "s41",
+    "part": "VI",
+    "title": "Examination of persons",
+    "obligationType": "enabling",
+    "auditorFocus": "Assessors will verify that the entity has procedures to support staff being examined by authorized officers, including understanding that statements may be used as evidence.",
+    "evidenceItems": [
+      {
+        "id": "s41-E1",
+        "name": "Staff Examination Support Procedure",
+        "description": "Procedure for supporting staff who are examined by authorized officers, including legal representation, statement review, and understanding of evidentiary implications",
+        "whatGoodLooksLike": [
+          "Examination support procedure documented",
+          "Legal counsel present during examinations where possible",
+          "Staff aware that statements are legally binding and may be used as evidence",
+          "Statement copies obtained and retained"
+        ],
+        "commonGaps": [
+          "No support procedure for staff examinations",
+          "Staff examined without legal support",
+          "Staff unaware statements can be used as evidence",
+          "No copies of statements retained by entity"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "HR department",
+          "Compliance team"
+        ],
+        "format": "Procedure document",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "forensic-investigation-procedure",
+          "audit-compliance-policy"
+        ]
+      },
+      {
+        "id": "s41-E2",
+        "name": "Examination Records and Statement Copies",
+        "description": "Records of staff examinations conducted by authorized officers, including copies of signed statements and any follow-up actions",
+        "whatGoodLooksLike": [
+          "Examination date, officer identity, and staff member recorded",
+          "Copies of signed statements obtained and filed",
+          "Follow-up actions from examinations tracked",
+          "Patterns across examinations analysed for systemic issues"
+        ],
+        "commonGaps": [
+          "No records of staff examinations maintained",
+          "Statement copies not obtained",
+          "Follow-up actions not tracked",
+          "No analysis of examination patterns"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "HR department"
+        ],
+        "format": "Records / register",
+        "retentionPeriod": "Until resolution + 5 years",
+        "artifactSlugs": [
+          "incident-register",
+          "audit-findings-register"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the legal team whether staff are briefed that examination statements are legally binding",
+      "Verify that the entity obtains copies of signed statements",
+      "Check whether legal counsel attends or is available for staff examinations"
+    ]
+  },
+  "s42": {
+    "sectionId": "s42",
+    "part": "VI",
+    "title": "Admissibility of statements",
+    "obligationType": "procedural",
+    "auditorFocus": "Assessors will verify that the entity understands the evidentiary implications of statements made during investigations, including the distinction between voluntary and custodial statements.",
+    "evidenceItems": [
+      {
+        "id": "s42-E1",
+        "name": "Statement Admissibility Awareness Training",
+        "description": "Evidence that staff and legal counsel understand the admissibility rules for statements made during investigations, including the protection for statements made under arrest",
+        "whatGoodLooksLike": [
+          "Legal briefing on statement admissibility provided to relevant staff",
+          "Distinction between voluntary and custodial statements understood",
+          "Staff aware that pre-arrest statements are admissible as evidence",
+          "Training incorporated into investigation readiness programme"
+        ],
+        "commonGaps": [
+          "No training on statement admissibility rules",
+          "Staff unaware of the distinction between voluntary and custodial statements",
+          "Legal counsel unfamiliar with Act 854 evidence provisions",
+          "Investigation readiness programme does not cover evidentiary issues"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "HR department",
+          "Compliance team"
+        ],
+        "format": "Training records / briefing materials",
+        "retentionPeriod": "Current + 1 year",
+        "artifactSlugs": [
+          "awareness-training-policy",
+          "forensic-investigation-procedure"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the legal team to explain the admissibility distinction between voluntary and custodial statements under Act 854",
+      "Verify that investigation readiness training covers statement admissibility",
+      "Check whether staff know to request legal counsel before making statements"
+    ]
+  },
+  "s43": {
+    "sectionId": "s43",
+    "part": "VI",
+    "title": "Power of arrest",
+    "obligationType": "enabling",
+    "auditorFocus": "Assessors will verify that the entity has procedures for scenarios where staff may be arrested by authorized officers, including legal support, HR notification, and business continuity.",
+    "evidenceItems": [
+      {
+        "id": "s43-E1",
+        "name": "Staff Arrest Response Procedure",
+        "description": "Procedure for responding when a staff member is arrested by an authorized officer during the course of enforcement activities, including legal representation and business continuity",
+        "whatGoodLooksLike": [
+          "Arrest response procedure documented",
+          "Immediate legal representation arranged",
+          "HR and management notification triggered",
+          "Business continuity plan activated for arrested staff's functions"
+        ],
+        "commonGaps": [
+          "No arrest response procedure exists",
+          "No legal representation pre-arranged",
+          "HR notification not integrated into response",
+          "No business continuity consideration for arrested staff's role"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "HR department",
+          "Business continuity team"
+        ],
+        "format": "Procedure document",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "forensic-investigation-procedure",
+          "bcdr-policy"
+        ]
+      },
+      {
+        "id": "s43-E2",
+        "name": "Staff Arrest Incident Records",
+        "description": "Records of any staff arrests by authorized officers, including circumstances, legal actions taken, and resolution",
+        "whatGoodLooksLike": [
+          "Arrest circumstances documented",
+          "Legal representation provided recorded",
+          "HR actions taken documented",
+          "Resolution and lessons learned captured"
+        ],
+        "commonGaps": [
+          "No records maintained for arrest incidents",
+          "Arrests not treated as reportable incidents",
+          "No post-incident analysis conducted",
+          "Lessons learned not fed back into procedures"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "HR department"
+        ],
+        "format": "Incident records",
+        "retentionPeriod": "Until resolution + 7 years",
+        "artifactSlugs": [
+          "incident-register",
+          "post-incident-report"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the legal team what would happen if a staff member were arrested by a NACSA officer on entity premises",
+      "Verify that business continuity plans account for sudden unavailability of key personnel due to arrest",
+      "Check whether the HR team is integrated into the arrest response procedure"
+    ]
+  },
+  "s45": {
+    "sectionId": "s45",
+    "part": "VI",
+    "title": "Seizure of movable property",
+    "obligationType": "enabling",
+    "auditorFocus": "Assessors will verify that the entity has procedures for cooperating with seizure of movable property, including asset identification support and operational continuity when equipment is seized.",
+    "evidenceItems": [
+      {
+        "id": "s45-E1",
+        "name": "Movable Property Seizure Cooperation Procedure",
+        "description": "Procedure for cooperating with the seizure of movable property by authorized officers, including asset identification, documentation, and operational continuity",
+        "whatGoodLooksLike": [
+          "Seizure cooperation procedure documented",
+          "Asset inventory available for cross-referencing seized items",
+          "Business continuity plan for critical equipment seizure",
+          "Seizure documentation retained with asset records"
+        ],
+        "commonGaps": [
+          "No seizure cooperation procedure",
+          "Asset inventory not readily available during seizure",
+          "No contingency for critical equipment being seized",
+          "Seizure documentation not cross-referenced with asset register"
+        ],
+        "suggestedSources": [
+          "IT operations",
+          "Legal department",
+          "Facilities team"
+        ],
+        "format": "Procedure document",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "forensic-investigation-procedure",
+          "ncii-asset-register"
+        ]
+      },
+      {
+        "id": "s45-E2",
+        "name": "Seized Property Impact Assessment",
+        "description": "Assessment framework for evaluating the operational impact of property seizure and activating contingency measures",
+        "whatGoodLooksLike": [
+          "Impact assessment template ready for use",
+          "Critical equipment identified with backup or alternative arrangements",
+          "Seizure of NCII-classified assets triggers enhanced response",
+          "Recovery plan for when seized property is returned"
+        ],
+        "commonGaps": [
+          "No impact assessment framework for seizures",
+          "No backup arrangements for critical equipment",
+          "NCII asset seizure not treated differently from other assets",
+          "No recovery plan for returned property"
+        ],
+        "suggestedSources": [
+          "IT operations",
+          "Business continuity team",
+          "CISO office"
+        ],
+        "format": "Assessment template / BCP section",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "bcdr-policy",
+          "ncii-asset-register"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the IT team what would happen if critical NCII equipment were seized \u2014 walk through the continuity plan",
+      "Verify that the asset register can quickly identify seized items and their NCII classification",
+      "Check whether backup arrangements exist for equipment that could be seized"
+    ]
+  },
+  "s46": {
+    "sectionId": "s46",
+    "part": "VI",
+    "title": "Release of seized property",
+    "obligationType": "procedural",
+    "auditorFocus": "Assessors will verify that the entity understands the process for requesting release of seized property and has procedures to apply to court when needed.",
+    "evidenceItems": [
+      {
+        "id": "s46-E1",
+        "name": "Seized Property Release Tracking and Application Procedure",
+        "description": "Procedure for tracking seized property, applying for its release when appropriate, and managing the return of released property",
+        "whatGoodLooksLike": [
+          "Seized property tracked in a register with status updates",
+          "Legal counsel assesses release eligibility",
+          "Court application process documented and ready",
+          "Property return procedures include verification and re-integration"
+        ],
+        "commonGaps": [
+          "No tracking of seized property status",
+          "No process to apply for release of seized property",
+          "Legal team unfamiliar with court application process under s46",
+          "No procedure for re-integrating returned property"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "IT operations",
+          "Compliance team"
+        ],
+        "format": "Procedure document / register",
+        "retentionPeriod": "Until return/forfeiture + 2 years",
+        "artifactSlugs": [
+          "forensic-investigation-procedure",
+          "ncii-asset-register"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the legal team whether they know the process for applying to court for release of seized property",
+      "Verify that seized property is tracked with regular status updates",
+      "Check whether property return procedures include security verification before re-integration into NCII systems"
+    ]
+  },
+  "s47": {
+    "sectionId": "s47",
+    "part": "VI",
+    "title": "Cost of holding seized property",
+    "obligationType": "procedural",
+    "auditorFocus": "Assessors will verify that the entity understands that custody costs for seized property may be charged back upon conviction, and has budgeted or provisioned for this contingency.",
+    "evidenceItems": [
+      {
+        "id": "s47-E1",
+        "name": "Seized Property Custody Cost Provisioning",
+        "description": "Evidence of awareness and financial provisioning for potential custody costs charged against seized property upon conviction",
+        "whatGoodLooksLike": [
+          "Legal briefing on custody cost liability documented",
+          "Financial provision or contingency budget identified",
+          "Risk register includes seized property custody cost exposure",
+          "Insurance coverage for enforcement-related costs assessed"
+        ],
+        "commonGaps": [
+          "No awareness of custody cost charge-back provisions",
+          "No financial provisioning for enforcement-related costs",
+          "Risk register does not cover enforcement cost exposure",
+          "Insurance coverage not assessed for this scenario"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "Finance department",
+          "Risk management"
+        ],
+        "format": "Risk assessment / financial provision records",
+        "retentionPeriod": "Current financial year + 1",
+        "artifactSlugs": [
+          "risk-register",
+          "annual-ncii-compliance-report"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the finance team whether enforcement-related cost contingencies are budgeted",
+      "Verify that the risk register covers potential costs associated with property seizure",
+      "Check whether insurance policies cover enforcement-related financial liabilities"
+    ]
+  },
+  "s50": {
+    "sectionId": "s50",
+    "part": "VII",
+    "title": "Protection of informers",
+    "obligationType": "procedural",
+    "auditorFocus": "Assessors will verify that the entity has a whistleblower or informer protection framework that aligns with s50's protections, and that staff are aware they can report offences with identity protection.",
+    "evidenceItems": [
+      {
+        "id": "s50-E1",
+        "name": "Whistleblower and Informer Protection Policy",
+        "description": "Policy providing protection for persons who report cyber security offences or concerns, aligned with the informer protection provisions of s50",
+        "whatGoodLooksLike": [
+          "Whistleblower policy explicitly references Act 854 protections",
+          "Anonymous reporting channels available",
+          "Retaliation protections documented and enforced",
+          "Staff awareness programme covers informer protections"
+        ],
+        "commonGaps": [
+          "No whistleblower policy or it does not reference Act 854",
+          "No anonymous reporting channel",
+          "Retaliation protections not documented",
+          "Staff unaware of informer protection provisions"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "HR department",
+          "Compliance team"
+        ],
+        "format": "Policy document",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "ncii-cybersecurity-policy",
+          "audit-compliance-policy"
+        ]
+      },
+      {
+        "id": "s50-E2",
+        "name": "Confidential Reporting Channel Evidence",
+        "description": "Evidence that confidential reporting channels exist and are operational, allowing staff to report cyber security concerns with identity protection",
+        "whatGoodLooksLike": [
+          "Reporting channel operational and tested",
+          "Channel identity-protection mechanisms verified",
+          "Staff awareness of reporting channels measured",
+          "Reports received and actioned with identity protection maintained"
+        ],
+        "commonGaps": [
+          "No confidential reporting channel exists",
+          "Channel exists but identity protection is inadequate",
+          "Low staff awareness of reporting channels",
+          "Reports not actioned or identity protection breached"
+        ],
+        "suggestedSources": [
+          "HR department",
+          "Internal audit",
+          "Ethics/compliance team"
+        ],
+        "format": "Channel documentation, testing records",
+        "retentionPeriod": "Current + 2 years",
+        "artifactSlugs": [
+          "awareness-training-policy",
+          "incident-register"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask staff how they would report a suspected cyber security offence confidentially",
+      "Verify that the whistleblower policy references Act 854 informer protections",
+      "Test whether anonymous reporting channels are operational and identity-protected"
+    ]
+  },
+  "s51": {
+    "sectionId": "s51",
+    "part": "VII",
+    "title": "Evidence of agent provocateur",
+    "obligationType": "procedural",
+    "auditorFocus": "Assessors will verify that the entity's legal team understands the agent provocateur evidence provisions, relevant if the entity becomes involved in proceedings where agent provocateur evidence is used.",
+    "evidenceItems": [
+      {
+        "id": "s51-E1",
+        "name": "Agent Provocateur Evidence Awareness",
+        "description": "Evidence that the entity's legal team understands the admissibility of agent provocateur evidence under Act 854 and its implications for potential proceedings",
+        "whatGoodLooksLike": [
+          "Legal briefing on agent provocateur provisions documented",
+          "Defence strategy considerations include agent provocateur scenarios",
+          "Legal counsel familiar with s51's departure from common law rules",
+          "Training for legal team includes Act 854 evidence provisions"
+        ],
+        "commonGaps": [
+          "Legal team unaware of s51 provisions",
+          "No consideration of agent provocateur scenarios in legal planning",
+          "Assumption that common law agent provocateur rules apply",
+          "No training on Act 854-specific evidence provisions"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "External legal counsel"
+        ],
+        "format": "Legal briefing / training records",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "audit-compliance-policy",
+          "awareness-training-policy"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the legal team whether they are aware that s51 modifies common law rules on agent provocateur credibility",
+      "Verify that legal training covers Act 854-specific evidence provisions"
+    ]
+  },
+  "s55": {
+    "sectionId": "s55",
+    "part": "VII",
+    "title": "Protection against suits and legal proceedings",
+    "obligationType": "procedural",
+    "auditorFocus": "Assessors will verify that the entity understands the statutory immunity provisions and how they affect the entity's ability to seek legal remedies against regulatory actions taken in good faith.",
+    "evidenceItems": [
+      {
+        "id": "s55-E1",
+        "name": "Statutory Immunity Awareness and Legal Strategy",
+        "description": "Evidence that the entity's legal team understands the statutory immunity afforded to the CE, authorized officers, and persons acting under the Act, and how this affects legal remedies",
+        "whatGoodLooksLike": [
+          "Legal briefing on s55 immunity documented",
+          "Implications for dispute resolution strategy understood",
+          "Good faith limitation understood and factored into legal planning",
+          "Alternative remedies (e.g., s48 appeal) identified"
+        ],
+        "commonGaps": [
+          "Legal team unaware of statutory immunity provisions",
+          "Assumed that ordinary tort or judicial review remedies apply",
+          "Good faith limitation not understood",
+          "No alternative remedy strategy developed"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "External legal counsel"
+        ],
+        "format": "Legal briefing / strategy document",
+        "retentionPeriod": "Current version",
+        "artifactSlugs": [
+          "audit-compliance-policy",
+          "ncii-cybersecurity-policy"
+        ]
+      },
+      {
+        "id": "s55-E2",
+        "name": "Compliance with Directives as Legal Shield Records",
+        "description": "Records demonstrating that the entity's compliance with directives, notices, and orders was in good faith, providing potential protection under s55(b)",
+        "whatGoodLooksLike": [
+          "Compliance decisions documented with rationale",
+          "Good faith efforts to comply recorded",
+          "Legal advice obtained and documented for ambiguous directives",
+          "Compliance records sufficient to demonstrate good faith if challenged"
+        ],
+        "commonGaps": [
+          "Compliance decisions not documented",
+          "No record of good faith efforts",
+          "Legal advice not obtained for ambiguous directives",
+          "Insufficient records to demonstrate good faith compliance"
+        ],
+        "suggestedSources": [
+          "Compliance team",
+          "Legal department",
+          "CISO office"
+        ],
+        "format": "Decision records / compliance logs",
+        "retentionPeriod": "7 years",
+        "artifactSlugs": [
+          "directive-compliance-tracker",
+          "annual-ncii-compliance-report"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the legal team what remedies are available if the entity disagrees with a regulatory action",
+      "Verify that compliance decisions are documented to demonstrate good faith",
+      "Check whether the entity has identified the appeal mechanism under s48 as the primary remedy"
+    ]
+  },
+  "s56": {
+    "sectionId": "s56",
+    "part": "VIII",
+    "title": "Saving provisions",
+    "obligationType": "administrative",
+    "auditorFocus": "Assessors will verify that the entity has identified any pre-existing acts, decisions, licences, or authorities under prior cyber security laws that continue in force under s56, and has mapped them to Act 854 obligations.",
+    "evidenceItems": [
+      {
+        "id": "s56-E1",
+        "name": "Pre-Existing Obligation Mapping",
+        "description": "Mapping of any acts, decisions, licences, or authorities made under prior cyber security law that continue in force under s56, with assessment of consistency with Act 854",
+        "whatGoodLooksLike": [
+          "Pre-existing obligations identified and listed",
+          "Consistency with Act 854 assessed for each",
+          "Transition plan for replacing pre-existing obligations with Act 854 equivalents",
+          "Legal counsel confirmed which pre-existing items are saved"
+        ],
+        "commonGaps": [
+          "No mapping of pre-existing obligations",
+          "Assumed all prior obligations automatically replaced by Act 854",
+          "No consistency assessment performed",
+          "Pre-existing licences or authorities not tracked"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "Compliance team",
+          "Regulatory affairs"
+        ],
+        "format": "Mapping document / register",
+        "retentionPeriod": "Until full transition + 2 years",
+        "artifactSlugs": [
+          "regulatory-change-report",
+          "standards-compliance-tracker"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the legal team whether any pre-existing cyber security obligations continue in force",
+      "Verify that pre-existing licences or authorities have been mapped to Act 854 equivalents",
+      "Check whether the entity has a transition plan for replacing saved obligations"
+    ]
+  },
+  "s58": {
+    "sectionId": "s58",
+    "part": "VIII",
+    "title": "Transitional provision for cyber security service providers",
+    "obligationType": "procedural",
+    "auditorFocus": "Assessors will verify that entities providing cyber security services before commencement have applied for a licence within the prescribed period and are operating under deemed licence provisions pending determination.",
+    "evidenceItems": [
+      {
+        "id": "s58-E1",
+        "name": "Pre-Commencement Service Provider Licence Application",
+        "description": "Evidence that a pre-existing cyber security service provider has applied for a licence under s28 within the prescribed period, and is operating under deemed licence provisions",
+        "whatGoodLooksLike": [
+          "Licence application submitted within prescribed period",
+          "Application receipt or acknowledgement on file",
+          "Deemed licence status documented",
+          "Full compliance obligations observed during deemed licence period"
+        ],
+        "commonGaps": [
+          "Licence application not submitted or submitted late",
+          "No documentation of deemed licence status",
+          "Reduced compliance during deemed licence period",
+          "No tracking of application determination timeline"
+        ],
+        "suggestedSources": [
+          "Compliance team",
+          "Legal department",
+          "Business operations"
+        ],
+        "format": "Application records / acknowledgement letter",
+        "retentionPeriod": "Until licence determination + 2 years",
+        "artifactSlugs": [
+          "licence-register",
+          "annual-ncii-compliance-report"
+        ]
+      },
+      {
+        "id": "s58-E2",
+        "name": "Transitional Compliance Plan for Service Providers",
+        "description": "Plan for achieving full compliance with Act 854 licensing requirements during the transition period, including timeline and milestones",
+        "whatGoodLooksLike": [
+          "Compliance gap assessment against s28 requirements completed",
+          "Transition milestones defined with target dates",
+          "Resources allocated for transition activities",
+          "Regular progress reporting to management"
+        ],
+        "commonGaps": [
+          "No transitional compliance plan developed",
+          "Gap assessment not performed against licensing requirements",
+          "No milestones or target dates for transition",
+          "Management uninformed of transition progress"
+        ],
+        "suggestedSources": [
+          "Compliance team",
+          "Project management office",
+          "CISO office"
+        ],
+        "format": "Plan document with milestones",
+        "retentionPeriod": "Until full licence + 1 year",
+        "artifactSlugs": [
+          "compliance-gap-report",
+          "licence-register"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the compliance team whether the entity was providing cyber security services before 26 August 2024",
+      "If yes, verify that a licence application was submitted within the prescribed period",
+      "Check whether full compliance obligations are being observed during the deemed licence period"
+    ]
+  },
+  "s59": {
+    "sectionId": "s59",
+    "part": "VIII",
+    "title": "Transitional \u2014 pending proceedings",
+    "obligationType": "procedural",
+    "auditorFocus": "Assessors will verify that any pre-commencement investigations or proceedings are being handled under the correct legal regime, and that the entity has not assumed Act 854 supersedes pre-existing proceedings.",
+    "evidenceItems": [
+      {
+        "id": "s59-E1",
+        "name": "Pre-Commencement Proceedings Tracking",
+        "description": "Register tracking any investigations, inquiries, trials, or proceedings commenced before Act 854 commencement that continue under prior law",
+        "whatGoodLooksLike": [
+          "All pre-commencement proceedings identified and listed",
+          "Applicable legal regime for each proceeding confirmed",
+          "Legal counsel managing proceedings under correct law",
+          "Outcomes tracked and lessons applied to Act 854 compliance"
+        ],
+        "commonGaps": [
+          "Pre-commencement proceedings not tracked separately",
+          "Incorrect assumption that Act 854 applies retroactively",
+          "Legal counsel applying wrong legal framework",
+          "No tracking of pending proceeding outcomes"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "Compliance team"
+        ],
+        "format": "Register / legal tracking document",
+        "retentionPeriod": "Until resolution + 5 years",
+        "artifactSlugs": [
+          "incident-register",
+          "audit-findings-register"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the legal team whether any cyber security proceedings were pending at the time Act 854 commenced",
+      "Verify that pre-commencement proceedings are being handled under the correct legal regime",
+      "Check whether the entity has assumed Act 854 applies to pre-existing investigations"
+    ]
+  },
+  "s60": {
+    "sectionId": "s60",
+    "part": "VIII",
+    "title": "Power to make regulations",
+    "obligationType": "enabling",
+    "auditorFocus": "Assessors will verify that the entity monitors for new regulations made under s60, including regulations on risk assessment procedures, audit requirements, licensing fees, incident notification, and compounding of offences.",
+    "evidenceItems": [
+      {
+        "id": "s60-E1",
+        "name": "Subsidiary Legislation Monitoring Process",
+        "description": "Process for monitoring the Gazette for new regulations made under s60, assessing their applicability, and implementing compliance requirements",
+        "whatGoodLooksLike": [
+          "Gazette monitoring process documented and active",
+          "New regulations assessed for applicability within 30 days",
+          "Implementation plan developed for applicable regulations",
+          "Legal and compliance teams briefed on new regulations"
+        ],
+        "commonGaps": [
+          "No Gazette monitoring process",
+          "New regulations discovered late or by accident",
+          "No impact assessment process for new regulations",
+          "Implementation delayed due to late awareness"
+        ],
+        "suggestedSources": [
+          "Legal department",
+          "Compliance team",
+          "Regulatory affairs"
+        ],
+        "format": "Process document / monitoring log",
+        "retentionPeriod": "Current + 3 years",
+        "artifactSlugs": [
+          "regulatory-change-report",
+          "standards-compliance-tracker"
+        ]
+      },
+      {
+        "id": "s60-E2",
+        "name": "Regulation Implementation Tracker",
+        "description": "Tracker documenting the implementation status of all subsidiary regulations made under s60, with gap analysis and compliance milestones",
+        "whatGoodLooksLike": [
+          "All 4 current regulations (P.U.(A) 219-222) tracked",
+          "Implementation status recorded per regulation",
+          "Gap analysis completed for each regulation",
+          "Compliance milestones met within prescribed periods"
+        ],
+        "commonGaps": [
+          "Not all regulations tracked",
+          "Implementation status unknown or undocumented",
+          "No gap analysis performed",
+          "Compliance milestones missed without tracking"
+        ],
+        "suggestedSources": [
+          "Compliance team",
+          "CISO office",
+          "Legal department"
+        ],
+        "format": "Tracker / register",
+        "retentionPeriod": "Current + 2 years",
+        "artifactSlugs": [
+          "standards-compliance-tracker",
+          "compliance-gap-report"
+        ]
+      }
+    ],
+    "auditTips": [
+      "Ask the compliance team how they learn about new regulations under Act 854",
+      "Verify that all 4 current regulations (P.U.(A) 219-222) have been assessed and implemented",
+      "Check whether there is a proactive Gazette monitoring process in place"
+    ]
   }
 }

@@ -51,7 +51,7 @@
         {
           "id": "s17-T1",
           "requirement": "Maintain a comprehensive asset inventory identifying all systems that may qualify as NCII, including their criticality assessment and interdependencies",
-          "rationale": "CE considers the nature, extent, and consequences of compromise — organizations need to understand their own NCII landscape",
+          "rationale": "CE considers the nature, extent, and consequences of compromise \u2014 organizations need to understand their own NCII landscape",
           "owner": "IT Asset Management",
           "frequency": "Continuous",
           "priority": "Critical",
@@ -418,7 +418,7 @@
         {
           "id": "s21-L1",
           "requirement": "Conduct cyber security risk assessments at intervals not exceeding the prescribed period (typically annually) for all designated NCII",
-          "rationale": "Non-compliance carries RM500,000/10 years — one of the highest penalty tiers under the Act",
+          "rationale": "Non-compliance carries RM500,000/10 years \u2014 one of the highest penalty tiers under the Act",
           "owner": "CISO",
           "frequency": "Annual (or as prescribed)",
           "priority": "Critical",
@@ -442,7 +442,7 @@
         {
           "id": "s21-L3",
           "requirement": "Engage only CE-approved persons to conduct the risk assessment",
-          "rationale": "Assessment quality assurance — approved persons are typically licensed cyber security service providers under Part V",
+          "rationale": "Assessment quality assurance \u2014 approved persons are typically licensed cyber security service providers under Part V",
           "owner": "Procurement / CISO",
           "frequency": "Per-assessment",
           "priority": "Critical",
@@ -616,7 +616,7 @@
         {
           "id": "s23-L1",
           "requirement": "Conduct cyber security audits at intervals not exceeding the prescribed period (typically annually) for all designated NCII",
-          "rationale": "Non-compliance carries RM500,000/10 years — same penalty tier as risk assessment failure",
+          "rationale": "Non-compliance carries RM500,000/10 years \u2014 same penalty tier as risk assessment failure",
           "owner": "CISO",
           "frequency": "Annual (or as prescribed)",
           "priority": "Critical",
@@ -640,7 +640,7 @@
         {
           "id": "s23-L3",
           "requirement": "Engage only CE-approved persons to conduct the audit",
-          "rationale": "Audit quality assurance — approved auditors must hold valid licences under Part V",
+          "rationale": "Audit quality assurance \u2014 approved auditors must hold valid licences under Part V",
           "owner": "Procurement / CISO",
           "frequency": "Per-audit",
           "priority": "Critical",
@@ -807,7 +807,7 @@
         {
           "id": "s25-T1",
           "requirement": "Establish processes and channels to identify, assess and rapidly share threat intelligence relevant to other NCII with the CE, including indicators of compromise, attack patterns, and vulnerability disclosures",
-          "rationale": "Sharing must be timely ('as soon as practicable') — requires automation and pre-established communication channels",
+          "rationale": "Sharing must be timely ('as soon as practicable') \u2014 requires automation and pre-established communication channels",
           "owner": "SOC Manager",
           "frequency": "Continuous",
           "priority": "High",
@@ -888,7 +888,7 @@
         {
           "id": "s26-T1",
           "requirement": "Deploy SIEM, IDS/IPS, EDR, and other detection technologies capable of identifying cyber security incidents affecting NCII in near-real-time",
-          "rationale": "6-hour clock starts at 'becoming aware' — organizations must have capability to detect incidents rapidly",
+          "rationale": "6-hour clock starts at 'becoming aware' \u2014 organizations must have capability to detect incidents rapidly",
           "owner": "SOC Manager",
           "frequency": "Continuous",
           "priority": "Critical",
@@ -912,7 +912,7 @@
         {
           "id": "s26-T3",
           "requirement": "Implement incident classification framework with clear criteria for determining 'significant impact' triggering the 6-hour notification window",
-          "rationale": "Rapid triage is essential — the clock starts at awareness, not at classification",
+          "rationale": "Rapid triage is essential \u2014 the clock starts at awareness, not at classification",
           "owner": "SOC Manager",
           "frequency": "Annual review",
           "priority": "Critical",
@@ -929,7 +929,7 @@
         {
           "id": "s26-G1",
           "requirement": "Maintain a documented, tested incident response plan (IRP) with clear roles, escalation procedures, and notification workflows aligned with the 6-hour timeline",
-          "rationale": "IRP must be operationally ready — not just documented — with regular tabletop exercises and drills",
+          "rationale": "IRP must be operationally ready \u2014 not just documented \u2014 with regular tabletop exercises and drills",
           "owner": "CISO",
           "frequency": "Annual review, semi-annual testing",
           "priority": "Critical",
@@ -959,6 +959,75 @@
           "priority": "High",
           "source": "s26",
           "sourceType": "directive",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s27": {
+    "sectionId": "s27",
+    "part": "IV",
+    "title": "Chief Executive may share information",
+    "obligationType": "enabling",
+    "legal": {
+      "summary": "The Chief Executive may share information received under Part IV with sector leads, NCII entities, government entities, and foreign countries or international organizations for NCII protection.",
+      "requirements": [
+        {
+          "id": "s27-L1",
+          "requirement": "Accept and act upon threat intelligence or other information shared by the Chief Executive under s27 for NCII protection purposes",
+          "rationale": "Information sharing is a key mechanism for cross-sector and international NCII protection coordination",
+          "owner": "CISO",
+          "frequency": "On receipt",
+          "priority": "High",
+          "source": "s27",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s27-L2",
+          "requirement": "Use information shared by the Chief Executive only for the purpose of protecting the national critical information infrastructure, as required by s27(2)",
+          "rationale": "Shared information is purpose-limited; misuse may breach the Act and undermine trust in the sharing framework",
+          "owner": "CISO",
+          "frequency": "Ongoing",
+          "priority": "Critical",
+          "source": "s27",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical controls for receiving and protecting shared threat intelligence.",
+      "requirements": [
+        {
+          "id": "s27-T1",
+          "requirement": "Implement secure channels for receiving information shared by the Chief Executive, with access controls limiting use to authorised NCII protection personnel",
+          "rationale": "Shared intelligence must be protected from unauthorised access and limited to NCII protection purposes",
+          "owner": "IT Security Team",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s27",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for managing shared information from the Chief Executive.",
+      "requirements": [
+        {
+          "id": "s27-G1",
+          "requirement": "Establish a process for receiving, classifying, disseminating, and actioning information shared by the Chief Executive, with audit trail and purpose-limitation controls",
+          "rationale": "Structured handling ensures shared intelligence is used effectively while complying with purpose-limitation requirements",
+          "owner": "CISO",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s27",
+          "sourceType": "act",
           "sector": null,
           "tightens": null
         }

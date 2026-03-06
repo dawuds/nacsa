@@ -34,8 +34,45 @@
       ]
     },
     "technical": {
-      "summary": "No technical requirements for this governance provision.",
-      "requirements": []
+      "summary": "Technical controls to support disclosure-of-interest governance and auditability.",
+      "requirements": [
+        {
+          "id": "s14-T1",
+          "requirement": "Implement third-party security assessment framework with standardized questionnaires",
+          "rationale": "Systematic assessment ensures consistent evaluation of external party interests and security posture",
+          "owner": "IT Governance Lead",
+          "frequency": "Per-engagement",
+          "priority": "Medium",
+          "source": "s14",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s14-T2",
+          "requirement": "Deploy continuous monitoring of third-party network connections and data flows",
+          "rationale": "Real-time visibility into external party access supports governance oversight and conflict detection",
+          "owner": "Network Security Team",
+          "frequency": "Continuous",
+          "priority": "Medium",
+          "source": "s14",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s14-T3",
+          "requirement": "Maintain automated vendor risk scoring system with real-time threat intelligence feeds",
+          "rationale": "Automated scoring provides objective, data-driven input for disclosure and recusal decisions",
+          "owner": "CISO / Procurement",
+          "frequency": "Continuous",
+          "priority": "Medium",
+          "source": "s14",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
     },
     "governance": {
       "summary": "Conflict-of-interest management framework for the national cyber security governance body.",
@@ -66,7 +103,7 @@
         {
           "id": "s15-L1",
           "requirement": "Monitor, identify and maintain a register of all CE directives issued under the Act, ensuring awareness of each directive's requirements and effective date",
-          "rationale": "CE directives form a critical layer of the regulatory framework — non-compliance with any directive constitutes an offence under s18",
+          "rationale": "CE directives form a critical layer of the regulatory framework \u2014 non-compliance with any directive constitutes an offence under s18",
           "owner": "Compliance Officer",
           "frequency": "Ongoing",
           "priority": "Critical",
@@ -117,6 +154,63 @@
           "frequency": "Ongoing",
           "priority": "High",
           "source": "s15",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s16": {
+    "sectionId": "s16",
+    "part": "III",
+    "title": "Secretariat to the Committee",
+    "obligationType": "administrative",
+    "legal": {
+      "summary": "The Agency provides secretariat and administrative support to the Committee.",
+      "requirements": [
+        {
+          "id": "s16-L1",
+          "requirement": "Ensure the entity cooperates with and responds to communications from the Agency in its capacity as secretariat to the Committee",
+          "rationale": "The Agency acts as the conduit for Committee decisions and requirements; unresponsive entities risk non-compliance",
+          "owner": "Compliance Officer",
+          "frequency": "Ongoing",
+          "priority": "Medium",
+          "source": "s16",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical support for Agency/Committee communication channels.",
+      "requirements": [
+        {
+          "id": "s16-T1",
+          "requirement": "Maintain secure and reliable communication channels with the Agency for receiving Committee-originated directives, notices, and requests",
+          "rationale": "Ensures timely receipt of Committee decisions transmitted through the Agency secretariat",
+          "owner": "IT Operations",
+          "frequency": "Ongoing",
+          "priority": "Medium",
+          "source": "s16",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for handling Committee communications via the Agency.",
+      "requirements": [
+        {
+          "id": "s16-G1",
+          "requirement": "Assign a designated point of contact for receiving and actioning communications from the Agency in its secretariat capacity",
+          "rationale": "Prevents Committee-originated communications from being misdirected or delayed",
+          "owner": "Compliance Officer",
+          "frequency": "Annual review",
+          "priority": "Medium",
+          "source": "s16",
           "sourceType": "act",
           "sector": null,
           "tightens": null

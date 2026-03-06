@@ -117,7 +117,7 @@ Section-based joins (via provision maps) explode on broad provisions. In the PDP
 The Audit Package pattern is **documented with data linkages in place**:
 
 - `artifacts/inventory.json`: 120 artifacts with `controlSlugs[]` added — median 2 slugs per artifact, curated semantic mappings
-- `evidence/index.json`: 71 evidence items across 28 sections — `artifactSlugs[]` added, 1-2 artifact links per item (expanded from 9/64 to 28/64 section coverage)
+- `evidence/index.json`: 116 evidence items across 56 sections — `artifactSlugs[]` added, 1-2 artifact links per item (expanded from 9/64 to 56/64 section coverage)
 - `controls/library.json`: 53 controls across 15 domains — broken directive references cleaned (100 removed, 5 valid kept)
 - `app.js`: Audit Package UI implemented in `renderControlDetail()` with accordion-based artifact cards and evidence checklist
 
@@ -183,3 +183,33 @@ For any future AI-generated compliance data in this repo:
 - [ ] Standardize ID formats across all files — validate all lookups resolve to non-empty results
 - [ ] Never symlink to files outside the repo — GitHub Pages (Jekyll) fails on broken symlinks with `No such file or directory @ rb_check_realpath_internal`
 - [ ] Keep shared tooling (e.g., cross-repo validation scripts) in a parent directory or separate repo, not symlinked into each sub-repo
+
+---
+
+## Evidence and Requirements Expansion (2026-03-06)
+
+Expanded evidence from 28/64 to 56/64 sections (116 evidence items) and requirements from 17/64 to 46/64 sections. Key patterns found:
+
+### Coverage Strategy
+
+Not all 64 sections warrant evidence or requirements entries. The remaining 8 uncovered sections are:
+- **Part I (s1-s4)**: Short title, interpretation, application, prevailing law -- purely definitional/administrative with no entity compliance obligations
+- **Part IX (s61-s64)**: Amendments to Computer Crimes Act 1997 -- amend a separate Act and do not create direct obligations for NCII entities
+
+### Evidence Patterns by Part
+
+- **Part II-III (Agency, Committee)**: Evidence focuses on awareness of regulatory authority, communication channels, and response procedures. Even "administrative" sections create implied obligations for entities to understand the governance framework.
+- **Part V (Licensing)**: Evidence covers both sides -- service providers verifying their own registration, and NCII entities verifying their providers' licences.
+- **Part VI (Enforcement)**: Evidence is heavily focused on investigation readiness -- cooperation procedures, evidence preservation, staff support during examinations. Every "enabling" section in Part VI creates an implied cooperation obligation for entities.
+- **Part VII (General)**: Evidence includes legal strategy awareness (appeals, immunity, compounding) and whistleblower protections.
+- **Part VIII (Transitional)**: Evidence covers transition planning, deemed status compliance, and pre-commencement obligation mapping.
+
+### Artifact Reuse Patterns
+
+Most enforcement-related evidence items map to the same core artifacts:
+- `forensic-investigation-procedure` -- referenced by 14 evidence items (search, seizure, examination, arrest scenarios)
+- `audit-compliance-policy` -- referenced by 12 evidence items (general compliance readiness)
+- `incident-register` -- referenced by 8 evidence items (tracking enforcement events)
+- `directive-compliance-tracker` -- referenced by 7 evidence items (regulatory directive management)
+
+This concentration is appropriate -- investigation readiness is a cross-cutting concern that surfaces across all Part VI sections.

@@ -10,7 +10,7 @@
         {
           "id": "s49-L1",
           "requirement": "Ensure all persons performing functions under the Act maintain strict confidentiality of information acquired in the course of those functions",
-          "rationale": "Breach of secrecy carries RM500,000/10 years — one of the highest penalties under the Act",
+          "rationale": "Breach of secrecy carries RM500,000/10 years \u2014 one of the highest penalties under the Act",
           "owner": "All Staff with Act-related functions",
           "frequency": "Continuous",
           "priority": "Critical",
@@ -79,7 +79,7 @@
         {
           "id": "s52-L1",
           "requirement": "Directors, CEO, COO, managers and officers must be able to demonstrate that they exercised all due diligence to prevent the commission of any offence by the body corporate",
-          "rationale": "Reverse burden of proof — officers are deemed to have committed the offence unless they can prove due diligence and lack of knowledge/consent/connivance",
+          "rationale": "Reverse burden of proof \u2014 officers are deemed to have committed the offence unless they can prove due diligence and lack of knowledge/consent/connivance",
           "owner": "Board / C-Suite",
           "frequency": "Continuous",
           "priority": "Critical",
@@ -103,8 +103,45 @@
       ]
     },
     "technical": {
-      "summary": "No direct technical requirements; s52 is a liability provision.",
-      "requirements": []
+      "summary": "Technical controls enabling board-level visibility and due diligence evidence for corporate officer liability.",
+      "requirements": [
+        {
+          "id": "s52-T1",
+          "requirement": "Implement board-level cybersecurity dashboard with real-time compliance metrics",
+          "rationale": "Directors need continuous visibility into NCII compliance posture to demonstrate active oversight and due diligence",
+          "owner": "CISO",
+          "frequency": "Continuous (dashboard), Quarterly (board review)",
+          "priority": "Critical",
+          "source": "s52",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s52-T2",
+          "requirement": "Deploy automated compliance monitoring for all NCII systems with alerting",
+          "rationale": "Automated monitoring provides evidence that the body corporate maintained continuous compliance oversight, supporting due diligence defence",
+          "owner": "IT Operations / CISO",
+          "frequency": "Continuous",
+          "priority": "High",
+          "source": "s52",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s52-T3",
+          "requirement": "Maintain audit trail of all corporate officer access to NCII management systems",
+          "rationale": "Demonstrates that officers actively engaged with compliance systems, supporting their due diligence defence under s52",
+          "owner": "IT Security / Identity & Access Management",
+          "frequency": "Continuous",
+          "priority": "High",
+          "source": "s52",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
     },
     "governance": {
       "summary": "Board governance framework to support due diligence defence.",
@@ -129,6 +166,319 @@
           "frequency": "Annual (budget cycle)",
           "priority": "Critical",
           "source": "s52",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s48": {
+    "sectionId": "s48",
+    "part": "VII",
+    "title": "Appeal to the Minister",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "Persons aggrieved by Chief Executive decisions may appeal to the Minister within 30 days; the Minister's decision is final.",
+      "requirements": [
+        {
+          "id": "s48-L1",
+          "requirement": "File any appeal to the Minister within 30 days of being notified of the Chief Executive's decision",
+          "rationale": "The 30-day appeal window is a strict deadline; failure to appeal within the period extinguishes the right of appeal",
+          "owner": "Legal Counsel",
+          "frequency": "On adverse CE decision",
+          "priority": "Critical",
+          "source": "s48",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s48-L2",
+          "requirement": "Accept that the Minister's decision on appeal is final and not subject to further administrative appeal",
+          "rationale": "Understanding finality provisions enables proper legal strategy, including consideration of judicial review as an alternative remedy",
+          "owner": "Legal Counsel",
+          "frequency": "On appeal outcome",
+          "priority": "High",
+          "source": "s48",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No specific technical requirements for this section.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Governance for managing appeals.",
+      "requirements": [
+        {
+          "id": "s48-G1",
+          "requirement": "Establish an appeal management procedure including deadline tracking, legal counsel engagement, evidence compilation, and board notification for material appeals",
+          "rationale": "Structured appeal management prevents deadline misses and ensures the strongest case is presented",
+          "owner": "Legal Counsel",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s48",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s50": {
+    "sectionId": "s50",
+    "part": "VII",
+    "title": "Protection of informers",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "Informer identity and information are protected; no witness may be compelled to disclose informer identity except where the court determines it is necessary for justice.",
+      "requirements": [
+        {
+          "id": "s50-L1",
+          "requirement": "Protect the identity of any person who reports cyber security offences or provides information to NACSA, in alignment with s50 informer protections",
+          "rationale": "Informer protection encourages reporting and is a statutory obligation; breaching protection may deter future reporting",
+          "owner": "Legal Counsel / HR",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s50",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical controls for informer protection.",
+      "requirements": [
+        {
+          "id": "s50-T1",
+          "requirement": "Implement anonymous or confidential reporting channels with technical controls that protect informer identity, including encrypted communication and restricted access to report details",
+          "rationale": "Technical identity protection makes the statutory protection effective in practice",
+          "owner": "IT Security Team",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s50",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for whistleblower and informer protection.",
+      "requirements": [
+        {
+          "id": "s50-G1",
+          "requirement": "Establish a whistleblower protection policy referencing Act 854 s50 provisions, with anti-retaliation measures and regular staff awareness activities",
+          "rationale": "Formal policy and awareness promote a culture of reporting while protecting informers",
+          "owner": "HR / Ethics Officer",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s50",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s51": {
+    "sectionId": "s51",
+    "part": "VII",
+    "title": "Evidence of agent provocateur",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "Agent provocateur evidence is admissible and the agent is not presumed unworthy of credit merely for involvement in the offence.",
+      "requirements": [
+        {
+          "id": "s51-L1",
+          "requirement": "Ensure the legal team understands that s51 modifies common law rules on agent provocateur credibility, making such evidence admissible without the usual credibility presumption",
+          "rationale": "Defence strategy must account for the enhanced admissibility of agent provocateur evidence under Act 854",
+          "owner": "Legal Counsel",
+          "frequency": "As needed",
+          "priority": "Medium",
+          "source": "s51",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No specific technical requirements for this section.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Governance for legal preparedness.",
+      "requirements": [
+        {
+          "id": "s51-G1",
+          "requirement": "Include Act 854 evidence provisions (s41, s42, s51) in the legal team's knowledge base and continuing education programme",
+          "rationale": "Awareness of non-standard evidence rules prevents tactical legal errors in enforcement proceedings",
+          "owner": "Legal Counsel",
+          "frequency": "Annual training",
+          "priority": "Medium",
+          "source": "s51",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s53": {
+    "sectionId": "s53",
+    "part": "VII",
+    "title": "Prosecution",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "No prosecution under the Act may be instituted without the written consent of the Public Prosecutor.",
+      "requirements": [
+        {
+          "id": "s53-L1",
+          "requirement": "Understand that prosecution under Act 854 requires the Public Prosecutor's written consent, which may affect pre-trial negotiation strategy",
+          "rationale": "The Public Prosecutor's consent requirement provides a checkpoint that may be relevant to defence strategy and compounding negotiations",
+          "owner": "Legal Counsel",
+          "frequency": "On prosecution",
+          "priority": "High",
+          "source": "s53",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No specific technical requirements for this section.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Governance for prosecution response.",
+      "requirements": [
+        {
+          "id": "s53-G1",
+          "requirement": "Establish a prosecution response protocol including immediate legal counsel engagement, evidence preservation, board notification, and communication strategy",
+          "rationale": "Structured prosecution response prevents evidence spoliation and ensures coordinated defence",
+          "owner": "Legal Counsel",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s53",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s54": {
+    "sectionId": "s54",
+    "part": "VII",
+    "title": "Compounding of offences",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "The Chief Executive may compound prescribed offences with Public Prosecutor consent; compound amount shall not exceed 50% of the maximum fine.",
+      "requirements": [
+        {
+          "id": "s54-L1",
+          "requirement": "Understand compounding options and that compound amounts cannot exceed 50% of the maximum fine for the offence",
+          "rationale": "Compounding offers an alternative to prosecution that may be more cost-effective and less disruptive than trial",
+          "owner": "Legal Counsel",
+          "frequency": "On offence",
+          "priority": "High",
+          "source": "s54",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s54-L2",
+          "requirement": "Accept that payment of compound releases the entity from further proceedings for the compounded offence",
+          "rationale": "Understanding the finality of compounding helps in decision-making between compounding and contesting prosecution",
+          "owner": "Legal Counsel",
+          "frequency": "On compounding offer",
+          "priority": "Medium",
+          "source": "s54",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No specific technical requirements for this section.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Governance for compounding decisions.",
+      "requirements": [
+        {
+          "id": "s54-G1",
+          "requirement": "Establish a decision framework for evaluating compounding offers versus contesting prosecution, with board approval for material amounts",
+          "rationale": "Compounding decisions involve significant financial and reputational implications requiring governance oversight",
+          "owner": "Legal Counsel / Board",
+          "frequency": "On compounding offer",
+          "priority": "High",
+          "source": "s54",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s55": {
+    "sectionId": "s55",
+    "part": "VII",
+    "title": "Protection against suits and legal proceedings",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "No action or suit may be brought against the CE, authorized officers, or persons acting in good faith under the Act.",
+      "requirements": [
+        {
+          "id": "s55-L1",
+          "requirement": "Understand that the Chief Executive, authorized officers, and persons acting under the Act in good faith have statutory immunity from suits",
+          "rationale": "Statutory immunity limits the entity's legal remedies against regulatory actions; alternative remedies such as s48 appeal must be pursued",
+          "owner": "Legal Counsel",
+          "frequency": "As needed",
+          "priority": "High",
+          "source": "s55",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s55-L2",
+          "requirement": "Document compliance with directives and orders in good faith to benefit from the protection under s55(b) for persons acting in compliance",
+          "rationale": "Documented good faith compliance may provide protection if the entity faces suit for actions taken in compliance with regulatory directives",
+          "owner": "Compliance Officer",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s55",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No specific technical requirements for this section.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Governance for managing statutory immunity implications.",
+      "requirements": [
+        {
+          "id": "s55-G1",
+          "requirement": "Maintain an audit trail of compliance decisions and good faith efforts, documenting rationale, legal advice obtained, and actions taken under regulatory direction",
+          "rationale": "Audit trail of good faith compliance supports both the entity's protection under s55(b) and its position in any subsequent proceedings",
+          "owner": "Compliance Officer",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s55",
           "sourceType": "act",
           "sector": null,
           "tightens": null

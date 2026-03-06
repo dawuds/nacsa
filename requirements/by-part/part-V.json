@@ -39,7 +39,7 @@
         {
           "id": "s28-T1",
           "requirement": "Maintain the technical competencies, certifications, tools, and infrastructure required by licence conditions for each licensed service category",
-          "rationale": "Licensed services include SOC monitoring, penetration testing, and incident response — each requiring specific technical capabilities",
+          "rationale": "Licensed services include SOC monitoring, penetration testing, and incident response \u2014 each requiring specific technical capabilities",
           "owner": "Technical Director",
           "frequency": "Continuous",
           "priority": "Critical",
@@ -142,6 +142,282 @@
           "frequency": "Annual review",
           "priority": "High",
           "source": "s32",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s29": {
+    "sectionId": "s29",
+    "part": "V",
+    "title": "Duration and renewal of licence",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "Licences are valid for 3 years and must be renewed by application not less than 30 days before expiry.",
+      "requirements": [
+        {
+          "id": "s29-L1",
+          "requirement": "Submit licence renewal application to the Chief Executive not less than 30 days before the licence expiry date",
+          "rationale": "Late renewal application may result in lapse of licence, making continued service provision unlawful under s28",
+          "owner": "Compliance Officer",
+          "frequency": "Every 3 years",
+          "priority": "Critical",
+          "source": "s29",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s29-L2",
+          "requirement": "Comply with all requirements of s28 for licence renewal as they apply to renewal applications",
+          "rationale": "Renewal is subject to the same requirements as initial grant; non-compliance may result in renewal refusal",
+          "owner": "Compliance Officer",
+          "frequency": "Every 3 years",
+          "priority": "High",
+          "source": "s29",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical controls to support licence renewal compliance.",
+      "requirements": [
+        {
+          "id": "s29-T1",
+          "requirement": "Implement automated reminders for licence expiry at 90, 60, and 30 days before expiry to ensure timely renewal application",
+          "rationale": "Automated reminders prevent inadvertent licence lapse due to administrative oversight",
+          "owner": "IT Operations / Compliance",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s29",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for licence lifecycle management.",
+      "requirements": [
+        {
+          "id": "s29-G1",
+          "requirement": "Maintain a licence lifecycle register tracking grant date, expiry date, renewal deadlines, and renewal application status",
+          "rationale": "Structured licence tracking prevents lapse and provides evidence of compliance for auditors",
+          "owner": "Compliance Officer",
+          "frequency": "Continuous",
+          "priority": "High",
+          "source": "s29",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s30": {
+    "sectionId": "s30",
+    "part": "V",
+    "title": "Suspension and revocation of licence",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "The Chief Executive may suspend or revoke a licence for contravention, fraud, cessation of business, or public interest reasons.",
+      "requirements": [
+        {
+          "id": "s30-L1",
+          "requirement": "Maintain continuous compliance with all Act 854 provisions and licence conditions to avoid suspension or revocation grounds under s30(1)(a)",
+          "rationale": "Any contravention of the Act or licence conditions is a ground for suspension or revocation",
+          "owner": "Compliance Officer",
+          "frequency": "Ongoing",
+          "priority": "Critical",
+          "source": "s30",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s30-L2",
+          "requirement": "Ensure all representations made in licence applications and renewals are truthful and complete, with no fraud, misrepresentation, or concealment of material facts",
+          "rationale": "Fraud or misrepresentation in obtaining a licence is a ground for revocation under s30(1)(c)",
+          "owner": "Legal Counsel",
+          "frequency": "Per application/renewal",
+          "priority": "Critical",
+          "source": "s30",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical controls supporting ongoing licence compliance.",
+      "requirements": [
+        {
+          "id": "s30-T1",
+          "requirement": "Implement compliance monitoring dashboards tracking adherence to all licence conditions and Act 854 obligations in near real-time",
+          "rationale": "Proactive compliance monitoring prevents inadvertent contravention that could trigger suspension or revocation",
+          "owner": "CISO",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s30",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for managing suspension and revocation risk.",
+      "requirements": [
+        {
+          "id": "s30-G1",
+          "requirement": "Establish a licence risk register identifying and mitigating risks of suspension or revocation, with escalation to the board for high-risk items",
+          "rationale": "Proactive risk management prevents licence loss, which would halt all cyber security service provision",
+          "owner": "Compliance Officer",
+          "frequency": "Quarterly review",
+          "priority": "High",
+          "source": "s30",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s31": {
+    "sectionId": "s31",
+    "part": "V",
+    "title": "Register of licensees",
+    "obligationType": "administrative",
+    "legal": {
+      "summary": "The Chief Executive maintains a register of licensees with prescribed particulars; register extracts are prima facie evidence.",
+      "requirements": [
+        {
+          "id": "s31-L1",
+          "requirement": "Verify that engaged cyber security service providers hold valid licences by checking the Chief Executive's register of licensees",
+          "rationale": "Engaging unlicensed providers may expose the entity to liability and compliance risk",
+          "owner": "Procurement / Compliance",
+          "frequency": "Before engagement and annually",
+          "priority": "High",
+          "source": "s31",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s31-L2",
+          "requirement": "For entities that are licensees: ensure registered particulars are current and accurate, notifying the Chief Executive of any changes",
+          "rationale": "Inaccurate register particulars may constitute a licence condition breach",
+          "owner": "Compliance Officer",
+          "frequency": "On change",
+          "priority": "Medium",
+          "source": "s31",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical controls for licensee verification.",
+      "requirements": [
+        {
+          "id": "s31-T1",
+          "requirement": "Integrate licensee register verification into vendor onboarding and periodic review workflows",
+          "rationale": "Automated verification prevents engagement of unlicensed providers",
+          "owner": "IT Operations / Procurement",
+          "frequency": "Per engagement and annually",
+          "priority": "Medium",
+          "source": "s31",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for licensee register usage.",
+      "requirements": [
+        {
+          "id": "s31-G1",
+          "requirement": "Include licensee register verification as a mandatory step in vendor onboarding procedures for all cyber security service providers",
+          "rationale": "Procedural requirement ensures consistent verification across all procurements",
+          "owner": "Procurement Manager",
+          "frequency": "Per engagement",
+          "priority": "Medium",
+          "source": "s31",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s33": {
+    "sectionId": "s33",
+    "part": "V",
+    "title": "Effect of suspension or revocation",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "Upon suspension or revocation, the licensee must immediately cease providing cyber security services; prior liabilities remain.",
+      "requirements": [
+        {
+          "id": "s33-L1",
+          "requirement": "Immediately cease all cyber security service provision upon suspension or revocation of licence",
+          "rationale": "Continuing to provide services after suspension or revocation constitutes an offence under s28",
+          "owner": "CEO / Managing Director",
+          "frequency": "On suspension/revocation",
+          "priority": "Critical",
+          "source": "s33",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s33-L2",
+          "requirement": "Continue to honour all liabilities incurred before the date of suspension or revocation",
+          "rationale": "Suspension or revocation does not release the entity from pre-existing contractual or statutory obligations",
+          "owner": "Legal Counsel",
+          "frequency": "On suspension/revocation",
+          "priority": "High",
+          "source": "s33",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical procedures for service cessation upon licence suspension/revocation.",
+      "requirements": [
+        {
+          "id": "s33-T1",
+          "requirement": "Maintain a documented service cessation procedure that can be activated immediately upon licence suspension or revocation, including client notification, access revocation, and data handling",
+          "rationale": "Orderly cessation prevents further offences and protects client data and systems",
+          "owner": "IT Operations / CISO",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s33",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for licence loss contingency planning.",
+      "requirements": [
+        {
+          "id": "s33-G1",
+          "requirement": "Include licence loss as a scenario in business continuity planning, with pre-identified alternative service arrangements for clients",
+          "rationale": "Licence suspension or revocation requires immediate service cessation; planning prevents chaos and additional liability",
+          "owner": "Business Continuity Manager",
+          "frequency": "Annual review",
+          "priority": "Medium",
+          "source": "s33",
           "sourceType": "act",
           "sector": null,
           "tightens": null

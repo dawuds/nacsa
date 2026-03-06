@@ -55,5 +55,692 @@
         }
       ]
     }
+  },
+  "s34": {
+    "sectionId": "s34",
+    "part": "VI",
+    "title": "Power of investigation",
+    "obligationType": "enabling",
+    "legal": {
+      "summary": "Authorized officers may investigate any offence under the Act.",
+      "requirements": [
+        {
+          "id": "s34-L1",
+          "requirement": "Cooperate fully with authorized officers conducting investigations under the Act, providing access to premises, systems, documents, and personnel as required",
+          "rationale": "Non-cooperation may constitute obstruction under s44, carrying penalties of RM300,000/5 years",
+          "owner": "All Staff",
+          "frequency": "On investigation",
+          "priority": "Critical",
+          "source": "s34",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical readiness for investigation cooperation.",
+      "requirements": [
+        {
+          "id": "s34-T1",
+          "requirement": "Maintain forensic readiness including tamper-evident logging, evidence preservation capability, and chain of custody procedures for digital evidence",
+          "rationale": "Forensic readiness supports effective investigation cooperation and protects the entity's interests",
+          "owner": "CISO / SOC",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s34",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s34-T2",
+          "requirement": "Ensure log retention periods and integrity controls are sufficient to support investigation requirements",
+          "rationale": "Investigations may require access to historical logs; insufficient retention undermines cooperation capability",
+          "owner": "IT Operations",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s34",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for investigation readiness.",
+      "requirements": [
+        {
+          "id": "s34-G1",
+          "requirement": "Establish an investigation cooperation protocol with designated liaison officers, legal counsel notification triggers, and staff briefing procedures",
+          "rationale": "Structured response prevents accidental obstruction while protecting the entity's rights",
+          "owner": "Legal Counsel / CISO",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s34",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s35": {
+    "sectionId": "s35",
+    "part": "VI",
+    "title": "Search and seizure with warrant",
+    "obligationType": "enabling",
+    "legal": {
+      "summary": "Magistrate may issue warrants for search and seizure of computers, data, documents, and other materials.",
+      "requirements": [
+        {
+          "id": "s35-L1",
+          "requirement": "Permit authorized officers executing a valid search warrant to enter premises and search for and seize computers, computer systems, data, documents, and other materials",
+          "rationale": "Obstruction of warrant execution constitutes an offence under s44",
+          "owner": "All Staff",
+          "frequency": "On warrant execution",
+          "priority": "Critical",
+          "source": "s35",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical readiness for warrant-based search cooperation.",
+      "requirements": [
+        {
+          "id": "s35-T1",
+          "requirement": "Be prepared to provide technical access to computer systems, networks, and data storage during warrant execution, including passwords, decryption keys, and access credentials",
+          "rationale": "Technical access is required for effective warrant execution; refusal constitutes obstruction",
+          "owner": "IT Security Team",
+          "frequency": "On warrant execution",
+          "priority": "Critical",
+          "source": "s35",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for search warrant response.",
+      "requirements": [
+        {
+          "id": "s35-G1",
+          "requirement": "Establish a documented search warrant response procedure covering warrant verification, designated escort, legal counsel notification, and documentation of seized items",
+          "rationale": "Structured response ensures cooperation while protecting the entity's rights and recording seized assets",
+          "owner": "Legal Counsel",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s35",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s36": {
+    "sectionId": "s36",
+    "part": "VI",
+    "title": "Search and seizure without warrant",
+    "obligationType": "enabling",
+    "legal": {
+      "summary": "Authorized officers may enter premises and exercise search and seizure powers without a warrant in urgent circumstances.",
+      "requirements": [
+        {
+          "id": "s36-L1",
+          "requirement": "Permit authorized officers to enter premises without a warrant when they have reasonable cause to believe delay would adversely affect the investigation, or evidence would be tampered with",
+          "rationale": "Warrantless entry is lawful under s36; refusing entry constitutes obstruction under s44",
+          "owner": "All Staff",
+          "frequency": "On enforcement action",
+          "priority": "Critical",
+          "source": "s36",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical readiness for warrantless search cooperation.",
+      "requirements": [
+        {
+          "id": "s36-T1",
+          "requirement": "Ensure the same technical cooperation capabilities are available for warrantless searches as for warrant-based searches, including immediate system access and data production",
+          "rationale": "The urgency of warrantless searches makes delayed technical cooperation more likely to constitute obstruction",
+          "owner": "IT Security Team",
+          "frequency": "On enforcement action",
+          "priority": "Critical",
+          "source": "s36",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for warrantless search scenarios.",
+      "requirements": [
+        {
+          "id": "s36-G1",
+          "requirement": "Ensure the search response procedure distinguishes between warrant-based and warrantless searches, with staff trained that both require full cooperation",
+          "rationale": "Staff may incorrectly refuse entry without a warrant; training prevents inadvertent obstruction",
+          "owner": "Legal Counsel",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s36",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s37": {
+    "sectionId": "s37",
+    "part": "VI",
+    "title": "Access to computerized data",
+    "obligationType": "enabling",
+    "legal": {
+      "summary": "Authorized officers may access computerized data and require provision of passwords, encryption keys, and decryption assistance.",
+      "requirements": [
+        {
+          "id": "s37-L1",
+          "requirement": "Provide authorized officers with passwords, encryption keys, decryption codes, and any other means required to access computerized data during investigations",
+          "rationale": "Refusal to provide access constitutes obstruction under s44; penalty RM300,000/5 years",
+          "owner": "IT Security Team",
+          "frequency": "On enforcement action",
+          "priority": "Critical",
+          "source": "s37",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical capability to provide computerized data access.",
+      "requirements": [
+        {
+          "id": "s37-T1",
+          "requirement": "Maintain a secure process for emergency disclosure of passwords, encryption keys, and decryption codes to authorized officers, including break-glass procedures for key management systems",
+          "rationale": "Technical inability to provide access does not excuse non-compliance; break-glass procedures ensure capability",
+          "owner": "IT Security Team",
+          "frequency": "Ongoing",
+          "priority": "Critical",
+          "source": "s37",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s37-T2",
+          "requirement": "Ensure encryption key management systems allow authorized emergency access and that key escrow or recovery mechanisms are in place for NCII systems",
+          "rationale": "Lost or irrecoverable encryption keys would make compliance with s37 impossible",
+          "owner": "IT Security Team",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s37",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for computerized data access during enforcement.",
+      "requirements": [
+        {
+          "id": "s37-G1",
+          "requirement": "Document a clear chain of authority for authorizing emergency disclosure of credentials and encryption keys, with legal counsel review and audit trail",
+          "rationale": "Emergency credential disclosure requires governance controls to prevent unauthorized use while ensuring compliance",
+          "owner": "CISO",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s37",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s38": {
+    "sectionId": "s38",
+    "part": "VI",
+    "title": "Power to intercept communications",
+    "obligationType": "enabling",
+    "legal": {
+      "summary": "The Chief Executive or authorized officers may intercept communications relevant to an investigation under the Act.",
+      "requirements": [
+        {
+          "id": "s38-L1",
+          "requirement": "Cooperate with lawful interception orders from the Chief Executive or authorized officers, providing access to communication systems as required",
+          "rationale": "Communication interception under s38 overrides other written laws; non-cooperation constitutes obstruction",
+          "owner": "IT Operations / Network Security",
+          "frequency": "On interception order",
+          "priority": "Critical",
+          "source": "s38",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical capability to support lawful interception.",
+      "requirements": [
+        {
+          "id": "s38-T1",
+          "requirement": "Assess and document the entity's technical capability to facilitate lawful interception of communications across all communication platforms, including email, messaging, VoIP, and cloud services",
+          "rationale": "Technical capability assessment identifies gaps that must be addressed before an interception order is received",
+          "owner": "Network Security Team",
+          "frequency": "Annual assessment",
+          "priority": "High",
+          "source": "s38",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for lawful interception compliance.",
+      "requirements": [
+        {
+          "id": "s38-G1",
+          "requirement": "Establish a lawful interception cooperation procedure that includes legal verification of the interception authorization, technical facilitation, and confidentiality requirements",
+          "rationale": "Structured procedure ensures compliance while maintaining confidentiality of interception activities",
+          "owner": "Legal Counsel / CISO",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s38",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s39": {
+    "sectionId": "s39",
+    "part": "VI",
+    "title": "List of things seized",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "Authorized officers must prepare a signed list of all seized items; a copy is provided to the occupier.",
+      "requirements": [
+        {
+          "id": "s39-L1",
+          "requirement": "Ensure a designated representative is available to review, verify, and countersign the list of seized items prepared by the authorized officer",
+          "rationale": "The occupier's signature confirms the accuracy of the seizure list; failure to verify may result in disputes",
+          "owner": "Legal Counsel / Compliance",
+          "frequency": "On seizure event",
+          "priority": "High",
+          "source": "s39",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical support for seizure documentation.",
+      "requirements": [
+        {
+          "id": "s39-T1",
+          "requirement": "Maintain an accessible and current asset register that can be cross-referenced against seizure lists to verify the identity and classification of seized items",
+          "rationale": "Asset register cross-referencing ensures seized items are correctly identified, particularly for NCII-classified assets",
+          "owner": "IT Operations",
+          "frequency": "Ongoing",
+          "priority": "Medium",
+          "source": "s39",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for seizure list management.",
+      "requirements": [
+        {
+          "id": "s39-G1",
+          "requirement": "Retain copies of all seizure lists in compliance records with cross-references to the entity's asset register and any related proceedings",
+          "rationale": "Seizure list copies are essential evidence for subsequent proceedings, release applications, and insurance claims",
+          "owner": "Legal Counsel",
+          "frequency": "On seizure event",
+          "priority": "High",
+          "source": "s39",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s40": {
+    "sectionId": "s40",
+    "part": "VI",
+    "title": "Power to require attendance of persons",
+    "obligationType": "enabling",
+    "legal": {
+      "summary": "Authorized officers may require any person acquainted with the facts to attend and answer questions; failure to attend without reasonable excuse is an offence.",
+      "requirements": [
+        {
+          "id": "s40-L1",
+          "requirement": "Ensure staff comply with written notices requiring attendance before authorized officers, attending as required and answering questions truthfully",
+          "rationale": "Failure to attend without reasonable excuse is a criminal offence under s40(3)",
+          "owner": "All Staff",
+          "frequency": "On notice",
+          "priority": "Critical",
+          "source": "s40",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No specific technical requirements for this section.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Governance for staff attendance at enforcement proceedings.",
+      "requirements": [
+        {
+          "id": "s40-G1",
+          "requirement": "Establish a procedure for responding to attendance notices, including legal counsel notification, staff preparation, and record-keeping of notices received and attendance provided",
+          "rationale": "Structured response ensures staff attend with appropriate preparation and legal support",
+          "owner": "Legal Counsel / HR",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s40",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s41": {
+    "sectionId": "s41",
+    "part": "VI",
+    "title": "Examination of persons",
+    "obligationType": "enabling",
+    "legal": {
+      "summary": "Authorized officers may orally examine persons acquainted with case facts; persons are legally bound to answer truthfully and statements may be used as evidence.",
+      "requirements": [
+        {
+          "id": "s41-L1",
+          "requirement": "Staff under examination must answer all questions relating to the case truthfully; statements will be reduced to writing, signed, and may be used as evidence",
+          "rationale": "Persons are legally bound to answer under s41(2); false statements may constitute obstruction or a separate offence",
+          "owner": "All Staff",
+          "frequency": "On examination",
+          "priority": "Critical",
+          "source": "s41",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No specific technical requirements for this section.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Governance for staff examination by authorized officers.",
+      "requirements": [
+        {
+          "id": "s41-G1",
+          "requirement": "Provide legal support to staff being examined, including legal briefing on rights and obligations, and obtain copies of signed statements for entity records",
+          "rationale": "Legal support protects both the staff member and the entity; statement copies are essential for defence preparation",
+          "owner": "Legal Counsel",
+          "frequency": "On examination",
+          "priority": "High",
+          "source": "s41",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s42": {
+    "sectionId": "s42",
+    "part": "VI",
+    "title": "Admissibility of statements",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "Statements made to authorized officers during investigations are admissible in evidence, except statements made under arrest.",
+      "requirements": [
+        {
+          "id": "s42-L1",
+          "requirement": "Ensure staff and legal counsel understand that statements made during investigations (not under arrest) are admissible as evidence in court proceedings",
+          "rationale": "Awareness of admissibility ensures staff give careful, accurate statements and understand their evidentiary weight",
+          "owner": "Legal Counsel",
+          "frequency": "Annual training",
+          "priority": "High",
+          "source": "s42",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No specific technical requirements for this section.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Governance for managing statement admissibility awareness.",
+      "requirements": [
+        {
+          "id": "s42-G1",
+          "requirement": "Include statement admissibility rules in investigation readiness training, emphasizing the distinction between voluntary and custodial statements",
+          "rationale": "Understanding the admissibility distinction helps staff and legal counsel prepare appropriate responses",
+          "owner": "Legal Counsel / HR",
+          "frequency": "Annual review",
+          "priority": "Medium",
+          "source": "s42",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s43": {
+    "sectionId": "s43",
+    "part": "VI",
+    "title": "Power of arrest",
+    "obligationType": "enabling",
+    "legal": {
+      "summary": "Authorized officers may arrest without warrant any person reasonably believed to have committed an offence under the Act; arrested persons must be brought before a Magistrate without unnecessary delay.",
+      "requirements": [
+        {
+          "id": "s43-L1",
+          "requirement": "Do not obstruct the arrest of any person by an authorized officer exercising powers under s43",
+          "rationale": "Obstruction of arrest constitutes an offence under s44",
+          "owner": "All Staff",
+          "frequency": "On arrest event",
+          "priority": "Critical",
+          "source": "s43",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No specific technical requirements for this section.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Governance for arrest scenarios.",
+      "requirements": [
+        {
+          "id": "s43-G1",
+          "requirement": "Establish an arrest response protocol covering legal representation, HR notification, management escalation, and business continuity for affected functions",
+          "rationale": "Structured response ensures the entity meets its duty of care to the staff member while maintaining operations",
+          "owner": "Legal Counsel / HR",
+          "frequency": "Annual review",
+          "priority": "High",
+          "source": "s43",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s45": {
+    "sectionId": "s45",
+    "part": "VI",
+    "title": "Seizure of movable property",
+    "obligationType": "enabling",
+    "legal": {
+      "summary": "Authorized officers may seize movable property suspected to be evidence of or connected with an offence.",
+      "requirements": [
+        {
+          "id": "s45-L1",
+          "requirement": "Cooperate with seizure of movable property by authorized officers and ensure a list of seized property is prepared and a copy delivered to the entity",
+          "rationale": "Non-cooperation constitutes obstruction; proper documentation protects both parties",
+          "owner": "Legal Counsel / IT Operations",
+          "frequency": "On seizure event",
+          "priority": "High",
+          "source": "s45",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical readiness for property seizure cooperation.",
+      "requirements": [
+        {
+          "id": "s45-T1",
+          "requirement": "Maintain up-to-date asset registers that can quickly identify seized equipment, including serial numbers, NCII classification, and data contents, to support seizure documentation and business continuity",
+          "rationale": "Rapid identification of seized assets enables accurate documentation and activation of contingency plans",
+          "owner": "IT Operations",
+          "frequency": "Ongoing",
+          "priority": "Medium",
+          "source": "s45",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for property seizure scenarios.",
+      "requirements": [
+        {
+          "id": "s45-G1",
+          "requirement": "Include critical equipment seizure as a business continuity scenario with pre-identified alternative arrangements and recovery procedures",
+          "rationale": "Seizure of critical NCII equipment may disrupt essential services; contingency planning ensures continuity",
+          "owner": "Business Continuity Manager",
+          "frequency": "Annual review",
+          "priority": "Medium",
+          "source": "s45",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s46": {
+    "sectionId": "s46",
+    "part": "VI",
+    "title": "Release of seized property",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "Seized property is liable to forfeiture but may be returned if not required for proceedings; aggrieved persons may apply to court.",
+      "requirements": [
+        {
+          "id": "s46-L1",
+          "requirement": "Apply to the Chief Executive for release of seized property when it is no longer required for proceedings, or to the court if the Chief Executive refuses release",
+          "rationale": "Timely release applications recover seized assets and reduce operational disruption",
+          "owner": "Legal Counsel",
+          "frequency": "On seizure event",
+          "priority": "High",
+          "source": "s46",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No specific technical requirements for this section.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Governance for seized property release management.",
+      "requirements": [
+        {
+          "id": "s46-G1",
+          "requirement": "Track all seized property with regular status reviews and proactive release applications, including security verification procedures before re-integrating returned property into NCII systems",
+          "rationale": "Returned property may have been compromised during custody; security verification before re-integration protects NCII systems",
+          "owner": "Legal Counsel / CISO",
+          "frequency": "Monthly review during seizure",
+          "priority": "High",
+          "source": "s46",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s47": {
+    "sectionId": "s47",
+    "part": "VI",
+    "title": "Cost of holding seized property",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "Custody costs for seized property are a charge on the property and recoverable from the convicted person.",
+      "requirements": [
+        {
+          "id": "s47-L1",
+          "requirement": "Be aware that custody costs for seized property may be charged against the property and recovered from the entity upon conviction",
+          "rationale": "Custody costs represent an additional financial liability upon conviction that should be factored into risk assessments and legal strategy",
+          "owner": "Legal Counsel / Finance",
+          "frequency": "On seizure event",
+          "priority": "Medium",
+          "source": "s47",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No specific technical requirements for this section.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Governance for custody cost provisioning.",
+      "requirements": [
+        {
+          "id": "s47-G1",
+          "requirement": "Include potential custody costs as a line item in enforcement risk assessments and ensure financial provisioning or insurance coverage is assessed",
+          "rationale": "Unbudgeted custody costs upon conviction represent an additional financial exposure that should be managed",
+          "owner": "Finance / Risk Management",
+          "frequency": "Annual review",
+          "priority": "Low",
+          "source": "s47",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
   }
 }

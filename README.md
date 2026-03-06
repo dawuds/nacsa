@@ -92,8 +92,8 @@ nacsa/
 |-------|-------|-------------|
 | Provisions | 11 | parts.json + index.json + 9 by-part files |
 | Sectors | 1 | 11 NCII sectors with obligations |
-| Requirements | 6 | index.json + 5 by-part files |
-| Evidence | 1 | Evidence items keyed by section |
+| Requirements | 7 | index.json + 6 by-part files (46 sections) |
+| Evidence | 1 | 116 evidence items across 56 sections |
 | Artifacts | 2 | 120 artifacts + section map |
 | Controls | 3 | 15 domains, 53 controls + section map |
 | Penalties | 1 | 20 penalty provisions |

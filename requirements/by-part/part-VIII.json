@@ -1,0 +1,240 @@
+{
+  "s57": {
+    "sectionId": "s57",
+    "part": "VIII",
+    "title": "Transitional provision for NCII entities",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "Pre-existing NCII operators must register with the Chief Executive within the prescribed period and are deemed NCII entities until formally designated.",
+      "requirements": [
+        {
+          "id": "s57-L1",
+          "requirement": "If operating or managing NCII before commencement, register with the Chief Executive within the prescribed period",
+          "rationale": "Failure to register within the prescribed period may result in enforcement action for non-compliance",
+          "owner": "Compliance Officer",
+          "frequency": "One-time",
+          "priority": "Critical",
+          "source": "s57",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s57-L2",
+          "requirement": "Comply with all NCII entity duties under the Act during the deemed status period, pending formal designation under s17",
+          "rationale": "Deemed entities have the same obligations as formally designated entities; non-compliance during transition is not excused",
+          "owner": "CISO",
+          "frequency": "Ongoing during transition",
+          "priority": "Critical",
+          "source": "s57",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical readiness during transition period.",
+      "requirements": [
+        {
+          "id": "s57-T1",
+          "requirement": "Implement all technical security controls required of NCII entities during the deemed status period, not waiting for formal designation",
+          "rationale": "Deemed entities must meet the same technical standards; delaying implementation creates compliance gaps",
+          "owner": "CISO",
+          "frequency": "Ongoing during transition",
+          "priority": "High",
+          "source": "s57",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for managing transitional NCII entity status.",
+      "requirements": [
+        {
+          "id": "s57-G1",
+          "requirement": "Develop a transition plan with milestones for achieving full NCII entity compliance, including registration, gap assessment, and remediation",
+          "rationale": "Structured transition planning ensures compliance obligations are met within prescribed periods",
+          "owner": "Compliance Officer",
+          "frequency": "One-time with regular reviews",
+          "priority": "High",
+          "source": "s57",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s58": {
+    "sectionId": "s58",
+    "part": "VIII",
+    "title": "Transitional provision for cyber security service providers",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "Pre-existing cyber security service providers must apply for a licence within the prescribed period and hold deemed licence status until the application is determined.",
+      "requirements": [
+        {
+          "id": "s58-L1",
+          "requirement": "If providing cyber security services before commencement, apply for a licence under s28 within the prescribed period",
+          "rationale": "Failure to apply within the prescribed period may result in loss of deemed licence status and unlawful service provision",
+          "owner": "Compliance Officer",
+          "frequency": "One-time",
+          "priority": "Critical",
+          "source": "s58",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s58-L2",
+          "requirement": "Comply with all licensee obligations during the deemed licence period while the application is being determined",
+          "rationale": "Deemed licence holders have the same obligations as fully licensed providers",
+          "owner": "Compliance Officer",
+          "frequency": "Ongoing during transition",
+          "priority": "High",
+          "source": "s58",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No specific technical requirements beyond s28 and s32 obligations.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Governance for managing transitional licensing.",
+      "requirements": [
+        {
+          "id": "s58-G1",
+          "requirement": "Track the licence application status and maintain evidence of deemed licence compliance throughout the determination period",
+          "rationale": "Evidence of compliance during the deemed licence period protects against enforcement action if determination is delayed",
+          "owner": "Compliance Officer",
+          "frequency": "Monthly during transition",
+          "priority": "High",
+          "source": "s58",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s59": {
+    "sectionId": "s59",
+    "part": "VIII",
+    "title": "Transitional \u2014 pending proceedings",
+    "obligationType": "procedural",
+    "legal": {
+      "summary": "Pre-commencement investigations and proceedings continue under the prior written law as if Act 854 had not been enacted.",
+      "requirements": [
+        {
+          "id": "s59-L1",
+          "requirement": "Identify any pre-commencement investigations or proceedings and ensure they are being managed under the correct prior legal framework, not under Act 854",
+          "rationale": "Applying Act 854 retrospectively to pre-commencement proceedings would be legally incorrect under s59",
+          "owner": "Legal Counsel",
+          "frequency": "One-time assessment",
+          "priority": "High",
+          "source": "s59",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "No specific technical requirements for this section.",
+      "requirements": []
+    },
+    "governance": {
+      "summary": "Governance for managing transitional proceedings.",
+      "requirements": [
+        {
+          "id": "s59-G1",
+          "requirement": "Maintain a register distinguishing between pre-commencement and post-commencement proceedings, with the applicable legal framework identified for each",
+          "rationale": "Clear distinction prevents legal errors in managing ongoing proceedings during the transition period",
+          "owner": "Legal Counsel",
+          "frequency": "Until all pre-commencement proceedings resolved",
+          "priority": "Medium",
+          "source": "s59",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  },
+  "s60": {
+    "sectionId": "s60",
+    "part": "VIII",
+    "title": "Power to make regulations",
+    "obligationType": "enabling",
+    "legal": {
+      "summary": "The Minister may make regulations for risk assessments, audits, licensing, incident notification, compounding, and other Act 854 purposes.",
+      "requirements": [
+        {
+          "id": "s60-L1",
+          "requirement": "Monitor the Gazette for new regulations made under s60 and implement compliance requirements within prescribed timeframes",
+          "rationale": "Regulations carry the force of law; non-compliance with regulations is equivalent to non-compliance with the Act",
+          "owner": "Compliance Officer",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s60",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        },
+        {
+          "id": "s60-L2",
+          "requirement": "Comply with all existing regulations (P.U.(A) 219-222/2024) covering risk assessment, incident notification, licensing, and compounding",
+          "rationale": "These four regulations are in force and create binding compliance obligations",
+          "owner": "CISO / Compliance Officer",
+          "frequency": "Ongoing",
+          "priority": "Critical",
+          "source": "s60",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "technical": {
+      "summary": "Technical compliance with subsidiary regulations.",
+      "requirements": [
+        {
+          "id": "s60-T1",
+          "requirement": "Implement technical controls required by subsidiary regulations, including automated incident notification (P.U.(A) 220), risk assessment tooling (P.U.(A) 219), and licensing compliance systems (P.U.(A) 221)",
+          "rationale": "Subsidiary regulations prescribe specific technical requirements that supplement the Act's general obligations",
+          "owner": "CISO",
+          "frequency": "Per regulation",
+          "priority": "High",
+          "source": "s60",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    },
+    "governance": {
+      "summary": "Governance for regulatory monitoring and implementation.",
+      "requirements": [
+        {
+          "id": "s60-G1",
+          "requirement": "Establish a regulatory monitoring process that systematically identifies new regulations under s60, assesses applicability, and tracks implementation to completion",
+          "rationale": "Proactive regulatory monitoring prevents compliance gaps arising from undetected new regulations",
+          "owner": "Compliance Officer",
+          "frequency": "Ongoing",
+          "priority": "High",
+          "source": "s60",
+          "sourceType": "act",
+          "sector": null,
+          "tightens": null
+        }
+      ]
+    }
+  }
+}
