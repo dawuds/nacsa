@@ -26,6 +26,8 @@
 - [x] Expand evidence coverage from 9 to 28 sections
 - [x] Populate `relatedDirectives` arrays for 48 controls
 - [x] Deploy via GitHub Actions (GitHub Pages)
+- [x] Add `validate.js` for data integrity checks (JSON parsing, cross-reference resolution, risk math, directive resolution, duplicate detection)
+- [x] Add LICENSE file (CC-BY-4.0)
 
 ## Pending
 
@@ -38,8 +40,6 @@
 - [ ] Compliance chain visualization — graph view showing provision-to-control-to-artifact-to-evidence relationships
 - [ ] Expand evidence coverage from 28/64 to full 64/64 sections
 - [ ] Expand requirements coverage from 17 entries to full provision set
-- [ ] Add `validate.js` for client-side data integrity checks (cross-reference resolution, count verification)
-- [ ] Add LICENSE file
 
 ### Low Priority
 - [ ] Verify remaining `verificationStatus` fields in penalty data against gazette

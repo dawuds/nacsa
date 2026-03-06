@@ -35,8 +35,10 @@ The database follows a 9-layer structured compliance model plus supplements:
 
 ```
 nacsa/
+├── LICENSE                  # CC-BY-4.0 license
 ├── LEARNINGS.md             # Data quality audit findings and lessons
 ├── TODO.md                  # Completed and pending feature tracking
+├── validate.js              # Data integrity checks (run: node validate.js)
 ├── provisions/              # Act 854 sections (9 parts, ~64 sections)
 │   ├── parts.json           # Part structure with divisions
 │   ├── index.json           # All sections with verbatim text & translations
