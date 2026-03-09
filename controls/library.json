@@ -1,5 +1,87 @@
 {
-  "ncii-governance": [
+  "_meta": {
+    "version": "2.0.0",
+    "lastUpdated": "2026-03-09",
+    "alignment": "Act 854 / P.U.(A) 220/2024"
+  },
+  "domains": [
+    {
+      "slug": "ncii-governance",
+      "name": "Ncii Governance",
+      "description": "Governance structure and accountability for NCII."
+    },
+    {
+      "slug": "asset-management",
+      "name": "Asset Management",
+      "description": "Inventory and classification of critical assets."
+    },
+    {
+      "slug": "risk-assessment",
+      "name": "Risk Assessment",
+      "description": "NCII risk assessment and security level setting."
+    },
+    {
+      "slug": "access-control",
+      "name": "Access Control",
+      "description": "Identity and access management for critical systems."
+    },
+    {
+      "slug": "network-security",
+      "name": "Network Security",
+      "description": "Segmentation and boundary protection."
+    },
+    {
+      "slug": "incident-response",
+      "name": "Incident Response",
+      "description": "Mandatory notification and response procedures."
+    },
+    {
+      "slug": "bcdr",
+      "name": "Bcdr",
+      "description": "Resilience and recovery for critical services."
+    },
+    {
+      "slug": "audit-compliance",
+      "name": "Audit Compliance",
+      "description": "Licensed audits and regulatory inspections."
+    },
+    {
+      "slug": "supply-chain",
+      "name": "Supply Chain",
+      "description": "Management of third-party dependencies."
+    },
+    {
+      "slug": "awareness-training",
+      "name": "Awareness Training",
+      "description": "Security training for authorized persons."
+    },
+    {
+      "slug": "vulnerability-management",
+      "name": "Vulnerability Management",
+      "description": "Scanning and patch management."
+    },
+    {
+      "slug": "cryptography",
+      "name": "Cryptography",
+      "description": "Data-at-rest and in-transit protection."
+    },
+    {
+      "slug": "physical-security",
+      "name": "Physical Security",
+      "description": "Protection of NCII premises."
+    },
+    {
+      "slug": "cloud-security",
+      "name": "Cloud Security",
+      "description": "Controls for cloud-hosted NCII."
+    },
+    {
+      "slug": "change-management",
+      "name": "Change Management",
+      "description": "Controlled updates to critical configurations."
+    }
+  ],
+  "controls": [
     {
       "slug": "ncii-entity-registration",
       "name": "NCII Entity Registration",
@@ -192,9 +274,7 @@
       "relatedDirectives": [
         "directive-cop-development"
       ]
-    }
-  ],
-  "asset-management": [
+    },
     {
       "slug": "ncii-asset-inventory",
       "name": "NCII Asset Inventory",
@@ -347,9 +427,7 @@
       "relatedDirectives": [
         "directive-ncii-asset-categorization"
       ]
-    }
-  ],
-  "risk-assessment": [
+    },
     {
       "slug": "ncii-risk-assessment-programme",
       "name": "NCII Risk Assessment Programme",
@@ -544,9 +622,7 @@
         "directive-risk-assessment-methodology",
         "directive-ncii-asset-categorization"
       ]
-    }
-  ],
-  "access-control": [
+    },
     {
       "slug": "ncii-identity-management",
       "name": "NCII Identity & Access Management",
@@ -750,9 +826,7 @@
       "relatedDirectives": [
         "directive-cop-development"
       ]
-    }
-  ],
-  "network-security": [
+    },
     {
       "slug": "ncii-network-architecture",
       "name": "NCII Secure Network Architecture",
@@ -951,9 +1025,7 @@
       "relatedDirectives": [
         "directive-cop-development"
       ]
-    }
-  ],
-  "incident-response": [
+    },
     {
       "slug": "ncii-incident-response-plan",
       "name": "NCII Incident Response Plan",
@@ -1164,9 +1236,7 @@
       "relatedDirectives": [
         "directive-incident-notification"
       ]
-    }
-  ],
-  "bcdr": [
+    },
     {
       "slug": "ncii-continuity-plan",
       "name": "NCII Business Continuity Plan",
@@ -1321,9 +1391,7 @@
         "directive-risk-assessment-methodology",
         "directive-ncii-asset-categorization"
       ]
-    }
-  ],
-  "audit-compliance": [
+    },
     {
       "slug": "ncii-internal-audit",
       "name": "NCII Internal Audit Programme",
@@ -1525,9 +1593,7 @@
       "relatedDirectives": [
         "directive-audit-standards"
       ]
-    }
-  ],
-  "supply-chain": [
+    },
     {
       "slug": "ncii-vendor-risk-assessment",
       "name": "NCII Vendor Risk Assessment",
@@ -1681,9 +1747,7 @@
         "directive-service-provider-obligations",
         "directive-information-sharing"
       ]
-    }
-  ],
-  "awareness-training": [
+    },
     {
       "slug": "ncii-security-awareness",
       "name": "NCII Security Awareness Programme",
@@ -1826,9 +1890,7 @@
       "relatedDirectives": [
         "directive-cop-development"
       ]
-    }
-  ],
-  "vulnerability-management": [
+    },
     {
       "slug": "ncii-vulnerability-scanning",
       "name": "NCII Vulnerability Scanning",
@@ -2032,9 +2094,7 @@
       "relatedDirectives": [
         "directive-vulnerability-disclosure"
       ]
-    }
-  ],
-  "cryptography": [
+    },
     {
       "slug": "ncii-encryption-standards",
       "name": "NCII Encryption Standards",
@@ -2179,9 +2239,7 @@
       "relatedDirectives": [
         "directive-cop-development"
       ]
-    }
-  ],
-  "physical-security": [
+    },
     {
       "slug": "ncii-facility-access",
       "name": "NCII Facility Access Control",
@@ -2327,9 +2385,7 @@
       "relatedDirectives": [
         "directive-ncii-asset-categorization"
       ]
-    }
-  ],
-  "cloud-security": [
+    },
     {
       "slug": "ncii-cloud-governance",
       "name": "NCII Cloud Security Governance",
@@ -2485,9 +2541,7 @@
       "relatedDirectives": [
         "directive-cop-development"
       ]
-    }
-  ],
-  "change-management": [
+    },
     {
       "slug": "ncii-change-control",
       "name": "NCII Change Control Process",
