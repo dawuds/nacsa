@@ -37,7 +37,12 @@
       <a href="#supplements" class="nav-link" data-view="supplements">Supplements</a>
       <a href="#cross-references" class="nav-link" data-view="cross-references">Cross-Refs</a>
       <a href="#risk-management" class="nav-link" data-view="risk-management">Risk Mgmt</a>
-    </div>
+    
+      <div class="nav-actions" style="display: flex; gap: 0.5rem; margin-left: auto;">
+        <button onclick="exportToPDF()" class="btn-export">PDF</button>
+        <button onclick="exportToCSV()" class="btn-export">CSV</button>
+      </div>
+</div>
   </nav>
   <div id="app">
     <div class="loading">
