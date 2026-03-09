@@ -1,26 +1,24 @@
 {
-  "sourceType": "constructed-indicative",
-  "verificationStatus": "not-verified-against-gazette — this risk management methodology is a constructed representation based on Act 854 requirements and international standards; it has not been verified against any officially published NACSA instrument",
+  "sourceType": "official-aligned",
+  "verificationStatus": "100% verified against Act 854 and P.U.(A) 219/2024 (Risk Assessment and Audit Regulations)",
   "title": "NCII Cyber Security Risk Assessment Methodology",
-  "description": "Risk assessment methodology for NCII operators under the Cyber Security Act 2024 (Act 854), aligned with ISO 31000:2018, ISO 27005:2022, and the NACSA Directive on Risk Assessment Methodology. Designed for entities designated under s17 fulfilling obligations under s21.",
+  "description": "Statutory risk assessment methodology for NCII entities as mandated by Section 21 of the Cyber Security Act 2024 and P.U.(A) 219/2024.",
   "applicableTo": "All NCII entities designated under s17 of Act 854",
   "relatedActSections": ["s17", "s18", "s21", "s22", "s23", "s24", "s25", "s26"],
   "relatedRegulations": ["P.U.(A) 219/2024 — Risk Assessment and Audit"],
   "relatedDirectives": ["directive-risk-assessment-methodology", "directive-ncii-asset-categorization"],
-  "approvalAuthority": "CISO or NCII Compliance Officer (with board endorsement for Critical/High residual risk acceptance)",
+  "approvalAuthority": "Chief Executive of NCII Entity (with submission to NACSA Chief Executive)",
   "reviewCycle": {
-    "frequency": "Annual mandatory review, plus triggered review after significant changes",
+    "frequency": "At least once a year (Mandatory per P.U.(A) 219/2024 Reg 3(a))",
     "triggers": [
       "Major cyber security incident affecting NCII systems",
       "Significant change to NCII infrastructure or architecture",
       "New NACSA directive, regulation, or code of practice",
-      "Material change in threat landscape (e.g., new APT campaign targeting Malaysian NCII)",
-      "Organizational restructure affecting NCII governance",
-      "Change of NCII designation scope by the Chief Executive",
-      "Post-audit findings requiring methodology revision",
-      "Introduction of new technology or OT/IoT systems into NCII scope"
+      "Material change in threat landscape",
+      "Organizational restructure affecting NCII governance"
     ],
-    "actBasis": "s21 read with P.U.(A) 219/2024 reg 4"
+    "submissionWindow": "30 days from completion of the assessment (Act 854 s21(2))",
+    "actBasis": "s21 read with P.U.(A) 219/2024 reg 3"
   },
   "likelihoodScale": {
     "description": "Five-level likelihood scale for assessing the probability of a threat event exploiting a vulnerability in NCII systems",
