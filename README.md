@@ -1,9 +1,27 @@
 # NACSA Act 854 Explorer
 
 Interactive structured compliance database for Malaysia's **Cyber Security Act 2024 (Act 854)** — browse provisions, NCII sectors, requirements, evidence guidance, controls, artifacts, penalties, supplements, and cross-references. Features dark mode (automatic via `prefers-color-scheme`), favicon, 120 document templates, risk management framework, and an **Audit Package** on each control detail view linking controls to their required artifacts and evidence items.
-
 > **Disclaimer**: This is an indicative/educational resource. It does not constitute legal advice. Always refer to the official gazette text and seek professional counsel for compliance decisions. See [LEARNINGS.md](LEARNINGS.md) for data quality audit history.
 
+## Technical Architecture
+
+This repository follows the **GRC Portfolio v2.0 Standardized Schema**, optimized for machine-readability and dynamic SPA rendering.
+
+### The Compliance Chain
+Data is structured to maintain a strict bidirectional mapping:
+`Cyber Security Act (Act 854) Section` $\leftrightarrow$ `NCII Global Control` $\leftrightarrow$ `Audit Evidence` $\leftrightarrow$ `Artifact Template`
+
+### Data Layers
+- **Controls (`/controls/library.json`):** 53 controls re-aligned to Act 854 (specifically s26 incident notification) using the unified schema.
+- **Evidence (`/evidence/index.json`):** 116 items mapped across 56 sections, bound to 11 sectoral Codes of Practice (COP).
+- **Templates (`/templates/`):** 120 Markdown artifacts including NCII-specific reporting forms.
+
+### Consistency & Style
+- **Naming:** Kebab-case slugs; verified 11 NCII sectors (STI replaces Education).
+- **Scoring:** Standardized 5x5 Likelihood/Impact risk matrix.
+- **Audit Ready:** Penalty mapping verified against the 2024 Compounding Regulations.
+
+## About Act 854
 > **⚠ Data Reliability Notice — Read Before Using for Compliance Purposes**
 >
 > This database contains two categories of data with materially different reliability:
