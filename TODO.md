@@ -32,6 +32,7 @@
 ## Pending
 
 ### High Priority
+- [ ] **Factual Accuracy Check** — Conduct a thorough mapping and verification of the JSON data against official source documents to ensure zero hallucinated clauses/sections.
 - [ ] Export functionality — PDF and CSV export for provisions, controls, evidence, and audit packages
 - [ ] Compliance gap tracker with localStorage — track implementation status per provision/control
 - [ ] ARIA accessibility audit — ensure all interactive elements are keyboard-navigable and screen-reader friendly

@@ -960,7 +960,7 @@
       "domain": "incident-response",
       "type": "corrective",
       "layer": "process",
-      "description": "Develop, maintain, and regularly test an incident response plan specifically addressing cyber security incidents affecting NCII systems. The plan must comply with NACSA incident notification requirements under Section 25, define severity classification aligned with national incident categories, and establish coordination procedures with NC4 and sector CERTs.",
+      "description": "Develop, maintain, and regularly test an incident response plan specifically addressing cyber security incidents affecting NCII systems. The plan must comply with NACSA incident notification requirements under Section 26, define severity classification aligned with national incident categories, and establish coordination procedures with NC4 and sector CERTs.",
       "sections": [
         "s25",
         "s26",
@@ -1013,7 +1013,7 @@
       "domain": "incident-response",
       "type": "corrective",
       "layer": "process",
-      "description": "Implement procedures to comply with the mandatory cyber security incident notification requirements under Section 25 of the Cyber Security Act 2024. NCII entities must notify NACSA of prescribed incidents within the timeframes specified in the Act. Notifications must include required information and follow the format prescribed by the Chief Executive of NACSA.",
+      "description": "Implement procedures to comply with the mandatory cyber security incident notification requirements under Section 26 of the Cyber Security Act 2024. NCII entities must notify NACSA of prescribed incidents within the timeframes specified in the Act. Notifications must include required information and follow the format prescribed by the Chief Executive of NACSA.",
       "sections": [
         "s25",
         "s26",
@@ -1021,7 +1021,7 @@
         "s28"
       ],
       "keyActivities": [
-        "Implement incident classification criteria that identify which incidents trigger mandatory NACSA notification under Section 25",
+        "Implement incident classification criteria that identify which incidents trigger mandatory NACSA notification under Section 26",
         "Establish a notification workflow ensuring initial notification to NACSA within the prescribed 6-hour window for significant incidents",
         "Prepare notification templates containing all information fields required by NACSA prescribed formats",
         "Submit follow-up and final incident reports to NACSA within required timeframes with root cause analysis"
