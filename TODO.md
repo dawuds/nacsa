@@ -38,7 +38,7 @@
 - [ ] ARIA accessibility audit — ensure all interactive elements are keyboard-navigable and screen-reader friendly
 
 ### Medium Priority
-- [ ] Compliance chain visualization — graph view showing provision-to-control-to-artifact-to-evidence relationships
+- [x] Compliance chain visualization — graph view showing provision-to-control-to-artifact-to-evidence relationships
 - [x] Expand evidence coverage from 28/64 to 56/64 sections (remaining 8 are Part I/IX definitional/administrative sections with no compliance obligations)
 - [x] Expand requirements coverage from 17 to 46 sections (remaining sections are Part I/IX definitional/administrative with no compliance obligations)
 
