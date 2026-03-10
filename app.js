@@ -238,11 +238,11 @@ function renderPartDetail(el, partId) {
     <div class="accordion">
       ${Object.entries(divisions).map(([div, secs]) => `
         <div class="accordion-item open">
-          <div class="accordion-header" data-accordion>
+          <button class="accordion-trigger" data-accordion>
             <span>${esc(div)} (${secs.length} sections)</span>
-            <span class="accordion-arrow">&#9654;</span>
+            <span class="chevron">&#9654;</span>
           </div>
-          <div class="accordion-body">
+          <div class="accordion-content">
             ${secs.map(s => `
               <a href="#framework/${s.id}" class="section-link">
                 <span class="section-link-id">${s.id}</span>
@@ -655,11 +655,11 @@ async function renderControls(el) {
         const controls = state.controls.library[key] || [];
         return `
           <div class="accordion-item">
-            <div class="accordion-header" data-accordion>
+            <button class="accordion-trigger" data-accordion>
               <span>${esc(domain.name)} (${controls.length})</span>
-              <span class="accordion-arrow">&#9654;</span>
+              <span class="chevron">&#9654;</span>
             </div>
-            <div class="accordion-body">
+            <div class="accordion-content">
               <p style="font-size:0.8125rem;color:var(--text-secondary);margin-bottom:0.75rem;">${esc(domain.description)}</p>
               ${controls.map(c => `
                 <a href="#control/${c.slug}" class="section-link">
@@ -1061,11 +1061,11 @@ function renderSupplementContent(el, data, id) {
       <div class="accordion">
         ${data.provisions.map(p => `
           <div class="accordion-item">
-            <div class="accordion-header" data-accordion>
+            <button class="accordion-trigger" data-accordion>
               <span><span style="font-family:var(--mono);color:var(--accent);margin-right:0.5rem;">${esc(p.id)}</span>${esc(p.title)}</span>
-              <span class="accordion-arrow">&#9654;</span>
+              <span class="chevron">&#9654;</span>
             </div>
-            <div class="accordion-body">
+            <div class="accordion-content">
               <p style="font-size:0.8125rem;color:var(--text-secondary);margin-bottom:0.5rem;">${esc(p.requirement || p.content || '')}</p>
               ${p.explanation ? `<p style="font-size:0.8125rem;color:var(--text-muted);font-style:italic;">${esc(p.explanation)}</p>` : ''}
             </div>
@@ -1079,11 +1079,11 @@ function renderSupplementContent(el, data, id) {
       <div class="accordion">
         ${data.domains.map(d => `
           <div class="accordion-item">
-            <div class="accordion-header" data-accordion>
+            <button class="accordion-trigger" data-accordion>
               <span>${esc(d.name)} (${(d.requirements || []).length} requirements)</span>
-              <span class="accordion-arrow">&#9654;</span>
+              <span class="chevron">&#9654;</span>
             </div>
-            <div class="accordion-body">
+            <div class="accordion-content">
               <p style="font-size:0.8125rem;color:var(--text-secondary);margin-bottom:0.5rem;">${esc(d.description || '')}</p>
               ${(d.requirements || []).map(r => `
                 <div class="req-item">
@@ -1301,15 +1301,15 @@ async function renderRiskManagement(el) {
 }
 
 function riskBandColor(score) {
-  if (score >= 16) return { band: 'Critical', color: '#DC2626', bg: '#FEE2E2' };
-  if (score >= 10) return { band: 'High', color: '#EA580C', bg: '#FFF7ED' };
-  if (score >= 5) return { band: 'Medium', color: '#D97706', bg: '#FEF3C7' };
-  return { band: 'Low', color: '#16A34A', bg: '#DCFCE7' };
+  if (score >= 16) return { band: 'Critical', cls: 'risk-critical', color: '#DC2626', bg: '#FEE2E2' };
+  if (score >= 10) return { band: 'High', cls: 'risk-high', color: '#EA580C', bg: '#FFF7ED' };
+  if (score >= 5) return { band: 'Medium', cls: 'risk-medium', color: '#D97706', bg: '#FEF3C7' };
+  return { band: 'Low', cls: 'risk-low', color: '#16A34A', bg: '#DCFCE7' };
 }
 
 function riskBadge(score) {
   const b = riskBandColor(score);
-  return `<span class="badge" style="background:${b.bg};color:${b.color};font-weight:600;">${b.band} (${score})</span>`;
+  return `<span class="badge ${b.cls}" style="font-weight:600;">${b.band} (${score})</span>`;
 }
 
 function renderRiskMethodology(rm) {
@@ -1334,7 +1334,7 @@ function renderRiskMethodology(rm) {
     for (let i = 1; i <= 5; i++) {
       const cell = matrixData.find(m => m.likelihood === l && m.impact === i);
       const b = cell ? riskBandColor(cell.score) : { band: '?', color: '#94A3B8', bg: '#F1F5F9' };
-      matrixHTML += `<td class="risk-matrix-cell" style="background:${b.bg};color:${b.color};"><div class="risk-matrix-score">${cell ? cell.score : ''}</div><div class="risk-matrix-band">${b.band}</div></td>`;
+      matrixHTML += `<td class="risk-matrix-cell ${b.cls}"><div class="risk-matrix-score">${cell ? cell.score : ''}</div><div class="risk-matrix-band">${b.band}</div></td>`;
     }
     matrixHTML += '</tr>';
   }
@@ -1372,11 +1372,11 @@ function renderRiskMethodology(rm) {
     <div class="accordion">
       ${meth.likelihoodScale.levels.map(l => `
         <div class="accordion-item">
-          <div class="accordion-header" data-accordion>
+          <button class="accordion-trigger" data-accordion>
             <span><strong>${l.level} — ${esc(l.label)}</strong> &middot; ${esc(l.frequency)}</span>
-            <span class="accordion-arrow">&#9654;</span>
+            <span class="chevron">&#9654;</span>
           </div>
-          <div class="accordion-body">
+          <div class="accordion-content">
             <p style="font-size:0.8125rem;color:var(--text-secondary);margin-bottom:0.25rem;">${esc(l.description)}</p>
             <p style="font-size:0.75rem;color:var(--text-muted);"><strong>Criteria:</strong> ${esc(l.criteria)}</p>
           </div>
@@ -1388,11 +1388,11 @@ function renderRiskMethodology(rm) {
     <div class="accordion">
       ${meth.impactScale.levels.map(l => `
         <div class="accordion-item">
-          <div class="accordion-header" data-accordion>
+          <button class="accordion-trigger" data-accordion>
             <span><strong>${l.level} — ${esc(l.label)}</strong></span>
-            <span class="accordion-arrow">&#9654;</span>
+            <span class="chevron">&#9654;</span>
           </div>
-          <div class="accordion-body">
+          <div class="accordion-content">
             <p style="font-size:0.8125rem;color:var(--text-secondary);margin-bottom:0.5rem;">${esc(l.description)}</p>
             <div style="display:grid;grid-template-columns:auto 1fr;gap:0.25rem 0.75rem;font-size:0.75rem;color:var(--text-muted);">
               <strong>National Security:</strong><span>${esc(l.nationalSecurity)}</span>
@@ -1513,11 +1513,11 @@ function renderRiskChecklist(rm) {
     </div>
     ${cl.phases.map(phase => `
       <div class="accordion-item open" style="margin-bottom:0.5rem;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);">
-        <div class="accordion-header" data-accordion style="padding:0.75rem 1rem;">
+        <button class="accordion-trigger" data-accordion style="padding:0.75rem 1rem;">
           <span style="font-weight:600;">${esc(phase.phase)} (${phase.items.length} items)</span>
-          <span class="accordion-arrow">&#9654;</span>
+          <span class="chevron">&#9654;</span>
         </div>
-        <div class="accordion-body" style="padding:0 1rem 0.75rem;">
+        <div class="accordion-content" style="padding:0 1rem 0.75rem;">
           ${phase.items.map(item => `
             <label class="risk-checklist-item" style="display:flex;gap:0.75rem;padding:0.5rem 0;border-bottom:1px solid var(--border-light);cursor:pointer;align-items:flex-start;">
               <input type="checkbox" class="risk-check" style="margin-top:0.25rem;flex-shrink:0;">

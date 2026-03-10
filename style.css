@@ -622,7 +622,7 @@
 }
 
 /* ===== LEGACY ACCORDION (nacsa-specific) ===== */
-.accordion-header {
+.accordion-trigger {
   padding: 0.75rem 1rem;
   font-size: var(--font-size-base);
   font-weight: 600;
@@ -633,18 +633,18 @@
   user-select: none;
   transition: background 0.15s;
 }
-.accordion-header:hover { background: var(--surface-hover); }
-.accordion-arrow {
+.accordion-trigger:hover { background: var(--surface-hover); }
+.chevron {
   font-size: var(--font-size-xs);
   transition: transform 0.2s;
   color: var(--text-muted);
 }
-.accordion-item.open .accordion-arrow { transform: rotate(90deg); }
-.accordion-body {
+.accordion-item.open .chevron { transform: rotate(90deg); }
+.accordion-content {
   display: none;
   padding: 0 1rem 0.75rem;
 }
-.accordion-item.open .accordion-body { display: block; }
+.accordion-item.open .accordion-content { display: block; }
 
 /* ===== RISK MANAGEMENT ===== */
 .risk-matrix-container {
@@ -714,6 +714,12 @@
   border-radius: 3px;
 }
 
+/* Risk level colors */
+.risk-critical { background: #dc2626; color: #fff; }
+.risk-high { background: #f97316; color: #fff; }
+.risk-medium { background: #eab308; color: #000; }
+.risk-low { background: #22c55e; color: #fff; }
+
 /* Risk card */
 .risk-card {
   background: var(--surface);
@@ -778,7 +784,7 @@
 /* Legacy audit package overrides */
 .audit-package .accordion { margin-bottom: 0.5rem; }
 .audit-package .accordion-item { border-color: var(--border); }
-.audit-package .accordion-header { font-size: var(--font-size-sm); }
+.audit-package .accordion-trigger { font-size: var(--font-size-sm); }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
