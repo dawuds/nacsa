@@ -30,24 +30,43 @@ async function fetchJSON(path) {
   }
 }
 
+function renderFetchError(container, path, message) {
+  const msg = message || `Failed to load data from ${path}.`;
+  container.innerHTML = `<div class="error-state"><h2>Data Load Error</h2><p>${msg}</p><p>Please check your connection and try refreshing the page.</p></div>`;
+}
+
+async function fetchJSONOrError(path, container) {
+  const data = await fetchJSON(path);
+  if (data === null && container) {
+    renderFetchError(container, path);
+  }
+  return data;
+}
+
 /* ===== ROUTING ===== */
 function parseRoute() {
   const hash = location.hash.slice(1) || '';
-  if (!hash) return { view: 'overview' };
+  if (!hash || hash === 'overview') return { view: 'overview' };
   if (hash.startsWith('search/')) return { view: 'search', query: decodeURIComponent(hash.slice(7)) };
-  if (hash.startsWith('part/')) return { view: 'part', id: hash.slice(5) };
-  if (hash.startsWith('section/')) return { view: 'section', id: hash.slice(8) };
-  if (hash.startsWith('sector/')) return { view: 'sector', id: hash.slice(7) };
-  if (hash === 'sectors') return { view: 'sectors' };
-  if (hash === 'penalties') return { view: 'penalties' };
+  if (hash === 'framework') return { view: 'framework' };
+  if (hash.startsWith('framework/')) return { view: 'framework-detail', id: hash.slice(10) };
   if (hash === 'controls') return { view: 'controls' };
   if (hash.startsWith('control/')) return { view: 'control-detail', slug: hash.slice(8) };
-  if (hash === 'artifacts') return { view: 'artifacts' };
+  if (hash === 'risk') return { view: 'risk' };
+  if (hash.startsWith('risk/')) return { view: 'risk', sub: hash.slice(5) };
+  if (hash === 'sectors') return { view: 'sectors' };
+  if (hash.startsWith('sector/')) return { view: 'sector', id: hash.slice(7) };
+  if (hash === 'penalties') return { view: 'penalties' };
   if (hash === 'supplements') return { view: 'supplements' };
   if (hash.startsWith('supplement/')) return { view: 'supplement-detail', id: hash.slice(11) };
-  if (hash === 'cross-references') return { view: 'cross-references' };
-  if (hash === 'framework') return { view: 'framework' };
-  if (hash === 'risk-management') return { view: 'risk-management' };
+  if (hash === 'reference') return { view: 'reference' };
+  if (hash.startsWith('reference/')) return { view: 'reference', sub: hash.slice(10) };
+  // Legacy routes — redirect gracefully
+  if (hash.startsWith('part/')) return { view: 'framework-detail', id: hash.slice(5) };
+  if (hash.startsWith('section/')) return { view: 'framework-detail', id: hash.slice(8) };
+  if (hash === 'artifacts') return { view: 'controls' };
+  if (hash === 'cross-references') return { view: 'reference' };
+  if (hash === 'risk-management') return { view: 'risk' };
   return { view: 'overview' };
 }
 
@@ -88,19 +107,17 @@ function render() {
   updateNav();
   switch (state.route.view) {
     case 'overview': renderOverview(app); break;
-    case 'part': renderPart(app, state.route.id); break;
-    case 'section': renderSection(app, state.route.id); break;
+    case 'framework': renderFramework(app); break;
+    case 'framework-detail': renderFrameworkDetail(app, state.route.id); break;
+    case 'controls': renderControls(app); break;
+    case 'control-detail': renderControlDetail(app, state.route.slug); break;
+    case 'risk': renderRiskManagement(app); break;
     case 'sectors': renderSectors(app); break;
     case 'sector': renderSector(app, state.route.id); break;
     case 'penalties': renderPenalties(app); break;
-    case 'controls': renderControls(app); break;
-    case 'control-detail': renderControlDetail(app, state.route.slug); break;
-    case 'artifacts': renderArtifacts(app); break;
     case 'supplements': renderSupplements(app); break;
     case 'supplement-detail': renderSupplementDetail(app, state.route.id); break;
-    case 'cross-references': renderCrossReferences(app); break;
-    case 'framework': renderFramework(app); break;
-    case 'risk-management': renderRiskManagement(app); break;
+    case 'reference': renderReference(app); break;
     case 'search': renderSearch(app, state.route.query); break;
     default: renderOverview(app);
   }
@@ -111,13 +128,11 @@ function updateNav() {
   document.querySelectorAll('.nav-link').forEach(el => {
     const view = el.dataset.view;
     el.classList.toggle('active', view === state.route.view ||
-      (view === 'overview' && state.route.view === 'part') ||
-      (view === 'overview' && state.route.view === 'section') ||
-      (view === 'sectors' && state.route.view === 'sector') ||
+      (view === 'overview' && state.route.view === 'overview') ||
+      (view === 'framework' && state.route.view === 'framework-detail') ||
       (view === 'controls' && state.route.view === 'control-detail') ||
-      (view === 'supplements' && state.route.view === 'supplement-detail') ||
-      (view === 'framework' && state.route.view === 'framework') ||
-      (view === 'risk-management' && state.route.view === 'risk-management')
+      (view === 'sectors' && state.route.view === 'sector') ||
+      (view === 'supplements' && state.route.view === 'supplement-detail')
     );
   });
 }
@@ -142,6 +157,20 @@ function renderNotFound(el) {
   el.innerHTML = '<div class="empty-state"><div class="empty-state-text">Page not found.</div><a href="#" style="color:var(--accent);">Return to overview</a></div>';
 }
 
+/* Normalize controls library: convert flat {controls:[...]} to domain-keyed {domainSlug: [ctrl,...]} */
+function normalizeLibrary(raw) {
+  if (!raw) return {};
+  // If already domain-keyed (no "controls" array), return as-is
+  if (!Array.isArray(raw.controls)) return raw;
+  const grouped = {};
+  for (const c of raw.controls) {
+    const d = c.domain || 'uncategorized';
+    if (!grouped[d]) grouped[d] = [];
+    grouped[d].push(c);
+  }
+  return grouped;
+}
+
 /* ===== OVERVIEW ===== */
 function renderOverview(el) {
   const totalSections = Object.keys(state.provisions).length;
@@ -156,21 +185,36 @@ function renderOverview(el) {
       <div class="stat-card"><div class="stat-number">6h</div><div class="stat-label">Incident Notification</div></div>
     </div>
     <h2 style="font-size:1.125rem;font-weight:600;margin-bottom:1rem;">Browse by Part</h2>
-    <div class="part-grid">
+    <div class="control-grid">
       ${state.parts.map(p => {
         const sections = Object.values(state.provisions).filter(s => s.part === p.id);
-        return `<a href="#part/${p.id}" class="part-card" data-part="${p.id}">
-          <div class="part-card-id">Part ${p.id}</div>
-          <div class="part-card-name">${esc(p.name)}</div>
-          <div class="part-card-meta">${sections.length} sections &middot; ${p.sections}</div>
-        </a>`;
+        return `<div class="control-card" onclick="location.hash='#framework/part-${p.id}'" data-part="${p.id}" style="border-left: 4px solid var(--accent); cursor:pointer;">
+          <div class="control-id">Part ${p.id}</div>
+          <h3 class="control-card-title">${esc(p.name)}</h3>
+          <p class="control-card-desc">${sections.length} sections &middot; ${p.sections}</p>
+        </div>`;
       }).join('')}
     </div>
   `;
 }
 
-/* ===== PART VIEW ===== */
-function renderPart(el, partId) {
+/* ===== FRAMEWORK DETAIL (Part or Section) ===== */
+function renderFrameworkDetail(el, id) {
+  // Try as part first (e.g., #framework/part-IV)
+  if (id.startsWith('part-')) {
+    const partId = id.slice(5);
+    return renderPartDetail(el, partId);
+  }
+  // Try as section (e.g., #framework/s17)
+  const s = state.provisions[id];
+  if (s) return renderSectionDetail(el, s);
+  // Try matching by part ID directly
+  const part = state.parts.find(p => p.id === id);
+  if (part) return renderPartDetail(el, id);
+  return renderNotFound(el);
+}
+
+function renderPartDetail(el, partId) {
   const part = state.parts.find(p => p.id === partId);
   if (!part) return renderNotFound(el);
   const sections = Object.values(state.provisions)
@@ -185,7 +229,10 @@ function renderPart(el, partId) {
   }
 
   el.innerHTML = `
-    <div class="breadcrumbs"><a href="#">Overview</a><span class="sep">/</span>Part ${partId}</div>
+    <nav class="breadcrumbs">
+      <a href="#framework">Framework</a><span class="sep">/</span>
+      <span class="current">Part ${partId}</span>
+    </nav>
     <div class="page-title">Part ${partId}: ${esc(part.name)}</div>
     <div class="page-subtitle">${esc(part.description)} &middot; ${sections.length} sections</div>
     <div class="accordion">
@@ -197,7 +244,7 @@ function renderPart(el, partId) {
           </div>
           <div class="accordion-body">
             ${secs.map(s => `
-              <a href="#section/${s.id}" class="section-link">
+              <a href="#framework/${s.id}" class="section-link">
                 <span class="section-link-id">${s.id}</span>
                 <span class="section-link-title">${esc(s.title)}</span>
                 <span class="section-link-badges">
@@ -212,20 +259,17 @@ function renderPart(el, partId) {
   `;
 }
 
-/* ===== SECTION DETAIL ===== */
-function renderSection(el, sectionId) {
-  const s = state.provisions[sectionId];
-  if (!s) return renderNotFound(el);
+function renderSectionDetail(el, s) {
   const part = state.parts.find(p => p.id === s.part);
 
   el.innerHTML = `
-    <div class="breadcrumbs">
-      <a href="#">Overview</a><span class="sep">/</span>
-      <a href="#part/${s.part}">Part ${s.part}${part ? ': ' + esc(part.name) : ''}</a><span class="sep">/</span>
-      ${s.id}
-    </div>
+    <nav class="breadcrumbs">
+      <a href="#framework">Framework</a><span class="sep">/</span>
+      <a href="#framework/part-${s.part}">Part ${s.part}${part ? ': ' + esc(part.name) : ''}</a><span class="sep">/</span>
+      <span class="current">${s.id}</span>
+    </nav>
     <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.25rem;">
-      <span style="font-family:var(--mono);font-size:1rem;color:var(--accent);font-weight:600;">${s.id}</span>
+      <span style="font-family:var(--font-mono);font-size:1rem;color:var(--accent);font-weight:600;">${s.id}</span>
       ${badgeFor(s.obligationType)}
       ${s.relatedSector ? `<span class="badge badge-sector">NCII: ${esc(Array.isArray(s.relatedSector) ? s.relatedSector.join(', ') : s.relatedSector)}</span>` : ''}
     </div>
@@ -283,7 +327,7 @@ async function activateTab(tabName, sectionId) {
         fetchJSON('controls/library.json'),
         fetchJSON('controls/section-map.json'),
       ]);
-      state.controls = { domains: domains || {}, library: library || {}, sectionMap: sectionMap || { sectionToControls: {}, controlToSections: {} } };
+      state.controls = { domains: domains || {}, library: normalizeLibrary(library), sectionMap: sectionMap || { sectionToControls: {}, controlToSections: {} } };
     }
     const slugs = state.controls.sectionMap.sectionToControls?.[sectionId] || [];
     if (!slugs.length) { panel.innerHTML = '<div class="empty-state"><div class="empty-state-text">No controls mapped to this section.</div></div>'; }
@@ -417,9 +461,9 @@ function renderControlCard(c) {
       ` : ''}
       ${c.maturity ? `
         <div class="maturity-grid">
-          <div class="maturity-level basic"><div class="maturity-label">Basic</div>${esc(c.maturity.basic || '')}</div>
-          <div class="maturity-level mature"><div class="maturity-label">Mature</div>${esc(c.maturity.mature || '')}</div>
-          <div class="maturity-level advanced"><div class="maturity-label">Advanced</div>${esc(c.maturity.advanced || '')}</div>
+          <div class="maturity-card maturity-basic"><div class="maturity-label">Basic</div><p>${esc(c.maturity.basic || '')}</p></div>
+          <div class="maturity-card maturity-mature"><div class="maturity-label">Mature</div><p>${esc(c.maturity.mature || '')}</p></div>
+          <div class="maturity-card maturity-advanced"><div class="maturity-label">Advanced</div><p>${esc(c.maturity.advanced || '')}</p></div>
         </div>
       ` : ''}
       <div class="control-frameworks">
@@ -463,7 +507,7 @@ async function renderSectors(el) {
   el.innerHTML = `
     <div class="page-title">${state.sectors.filter(s => s.sectorNumber).length} NCII Sectors</div>
     <div class="page-subtitle">Schedule to the Cyber Security Act 2024 — National Critical Information Infrastructure sectors</div>
-    <div class="part-grid" style="grid-template-columns:repeat(2,1fr);">
+    <div class="control-grid">
       ${state.sectors.map(s => `
         <a href="#sector/${s.id}" class="sector-card">
           <div class="sector-card-name">${esc(s.name)}</div>
@@ -598,7 +642,7 @@ async function renderControls(el) {
       fetchJSON('controls/library.json'),
       fetchJSON('controls/section-map.json'),
     ]);
-    state.controls = { domains: domains || {}, library: library || {}, sectionMap: sectionMap || {} };
+    state.controls = { domains: domains || {}, library: normalizeLibrary(library), sectionMap: sectionMap || {} };
   }
   const totalControls = Object.values(state.controls.library).reduce((sum, arr) => sum + arr.length, 0);
   const domainEntries = Object.entries(state.controls.domains);
@@ -640,7 +684,7 @@ async function renderControlDetail(el, slug) {
     const [domains, library, sectionMap] = await Promise.all([
       fetchJSON('controls/domains.json'), fetchJSON('controls/library.json'), fetchJSON('controls/section-map.json'),
     ]);
-    state.controls = { domains: domains || {}, library: library || {}, sectionMap: sectionMap || {} };
+    state.controls = { domains: domains || {}, library: normalizeLibrary(library), sectionMap: sectionMap || {} };
   }
   let control = null;
   for (const [, ctrls] of Object.entries(state.controls.library)) {
@@ -689,33 +733,98 @@ async function renderControlDetail(el, slug) {
     }
   });
 
-  /* --- Audit Package: build HTML --- */
+  /* --- Build requirements from sections --- */
+  let requirementsHTML = '';
+  if (!state.requirements) state.requirements = await fetchJSON('requirements/index.json') || {};
+  const legalReqs = [], technicalReqs = [], governanceReqs = [];
+  sections.forEach(sid => {
+    const req = state.requirements[sid];
+    if (!req) return;
+    if (req.legal && req.legal.requirements) req.legal.requirements.forEach(r => legalReqs.push(r));
+    if (req.technical && req.technical.requirements) req.technical.requirements.forEach(r => technicalReqs.push(r));
+    if (req.governance && req.governance.requirements) req.governance.requirements.forEach(r => governanceReqs.push(r));
+  });
+  if (legalReqs.length || technicalReqs.length || governanceReqs.length) {
+    requirementsHTML = `
+      <section class="detail-section">
+        <h2 class="detail-section-title">Requirements</h2>
+        <div class="requirements-grid">
+          <div class="requirement-block requirement-legal">
+            <div class="requirement-block-label">Legal / Regulatory</div>
+            ${legalReqs.length ? `<ul>${legalReqs.map(r => `<li>${esc(r.requirement)}</li>`).join('')}</ul>` : '<p style="font-size:var(--font-size-sm);color:var(--text-muted);">No legal requirements.</p>'}
+          </div>
+          <div class="requirement-block requirement-technical">
+            <div class="requirement-block-label">Technical</div>
+            ${technicalReqs.length ? `<ul>${technicalReqs.map(r => `<li>${esc(r.requirement)}</li>`).join('')}</ul>` : '<p style="font-size:var(--font-size-sm);color:var(--text-muted);">No technical requirements.</p>'}
+          </div>
+          <div class="requirement-block requirement-governance">
+            <div class="requirement-block-label">Governance</div>
+            ${governanceReqs.length ? `<ul>${governanceReqs.map(r => `<li>${esc(r.requirement)}</li>`).join('')}</ul>` : '<p style="font-size:var(--font-size-sm);color:var(--text-muted);">No governance requirements.</p>'}
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  /* --- Key Activities --- */
+  const activitiesHTML = control.keyActivities && control.keyActivities.length ? `
+    <section class="detail-section">
+      <h2 class="detail-section-title">Key Activities</h2>
+      <ul class="activity-list">${control.keyActivities.map(a => `<li>${esc(a)}</li>`).join('')}</ul>
+    </section>
+  ` : '';
+
+  /* --- Maturity Levels --- */
+  const maturityHTML = control.maturity ? `
+    <section class="detail-section">
+      <h2 class="detail-section-title">Maturity Levels</h2>
+      <div class="maturity-grid">
+        <div class="maturity-card maturity-basic"><div class="maturity-label">Basic</div><p>${esc(control.maturity.basic || '')}</p></div>
+        <div class="maturity-card maturity-mature"><div class="maturity-label">Mature</div><p>${esc(control.maturity.mature || '')}</p></div>
+        <div class="maturity-card maturity-advanced"><div class="maturity-label">Advanced</div><p>${esc(control.maturity.advanced || '')}</p></div>
+      </div>
+    </section>
+  ` : '';
+
+  /* --- Audit Package (Evidence Checklist first, then Artifacts) --- */
   let auditPackageHTML = '';
-  if (linkedArtifacts.length || linkedEvidence.length) {
-    const artifactsAccordion = linkedArtifacts.length ? `
+  if (linkedEvidence.length || linkedArtifacts.length) {
+    const evidenceAccordion = linkedEvidence.length ? `
       <div class="accordion">
         <div class="accordion-item">
-          <div class="accordion-header" data-accordion>
-            <span>Required Artifacts (${linkedArtifacts.length})</span>
-            <span class="accordion-arrow">&#9654;</span>
-          </div>
-          <div class="accordion-body">
-            ${linkedArtifacts.map(a => `
-              <div class="artifact-link-card">
-                <div class="artifact-link-card-header">
-                  <span class="artifact-link-card-name">${esc(a.name)}</span>
-                  ${a.mandatory ? '<span class="badge badge-mandatory">Mandatory</span>' : ''}
-                  ${a.category ? '<span class="badge badge-domain">' + esc(a.category) + '</span>' : ''}
+          <button class="accordion-trigger" aria-expanded="true">
+            <span>Evidence Checklist (${linkedEvidence.length})</span>
+            <span class="accordion-icon">&#9660;</span>
+          </button>
+          <div class="accordion-content" role="region">
+            ${linkedEvidence.map(item => `
+              <div class="evidence-item">
+                <div class="evidence-item-header">
+                  ${item.id ? '<span class="evidence-id">' + esc(item.id) + '</span>' : ''}
+                  <span class="evidence-item-name">${esc(item.name)}</span>
                 </div>
-                <div class="artifact-link-card-meta">
-                  ${a.owner ? '<span>Owner: ' + esc(a.owner) + '</span>' : ''}
-                  ${a.reviewFrequency ? '<span>Review: ' + esc(a.reviewFrequency) + '</span>' : ''}
-                </div>
-                ${a.keyContents && a.keyContents.length ? `
-                  <ul class="artifact-link-card-checklist">
-                    ${a.keyContents.map(k => '<li>' + esc(k) + '</li>').join('')}
-                  </ul>
+                ${item.description ? '<p class="evidence-item-desc">' + esc(item.description) + '</p>' : ''}
+                ${(item.whatGoodLooksLike && item.whatGoodLooksLike.length) || (item.commonGaps && item.commonGaps.length) ? `
+                  <div class="evidence-detail-grid">
+                    ${item.whatGoodLooksLike && item.whatGoodLooksLike.length ? `
+                      <div class="evidence-block evidence-good">
+                        <div class="evidence-block-label">What Good Looks Like</div>
+                        <ul>${item.whatGoodLooksLike.map(g => '<li>' + esc(g) + '</li>').join('')}</ul>
+                      </div>
+                    ` : ''}
+                    ${item.commonGaps && item.commonGaps.length ? `
+                      <div class="evidence-block evidence-gap">
+                        <div class="evidence-block-label">Common Gaps</div>
+                        <ul>${item.commonGaps.map(g => '<li>' + esc(g) + '</li>').join('')}</ul>
+                      </div>
+                    ` : ''}
+                  </div>
                 ` : ''}
+                <div class="evidence-item-meta">
+                  ${item.format ? '<span class="meta-item"><strong>Format:</strong> ' + esc(item.format) + '</span>' : ''}
+                  ${item.retentionPeriod ? '<span class="meta-item"><strong>Retention:</strong> ' + esc(item.retentionPeriod) + '</span>' : ''}
+                  ${item.suggestedSources && item.suggestedSources.length ? '<span class="meta-item"><strong>Source:</strong> ' + item.suggestedSources.map(s => esc(s)).join(', ') + '</span>' : ''}
+                </div>
               </div>
             `).join('')}
           </div>
@@ -723,55 +832,33 @@ async function renderControlDetail(el, slug) {
       </div>
     ` : '';
 
-    const evidenceAccordion = linkedEvidence.length ? `
+    const artifactsAccordion = linkedArtifacts.length ? `
       <div class="accordion">
         <div class="accordion-item">
-          <div class="accordion-header" data-accordion>
-            <span>Evidence Checklist (${linkedEvidence.length})</span>
-            <span class="accordion-arrow">&#9654;</span>
-          </div>
-          <div class="accordion-body">
-            ${linkedEvidence.map(item => `
-              <div class="evidence-checklist-item">
-                <div class="evidence-checklist-item-header">
-                  <span class="evidence-checklist-item-name">${esc(item.name)}</span>
-                  ${item.format ? '<span class="badge badge-administrative">' + esc(item.format) + '</span>' : ''}
-                  ${item.retentionPeriod ? '<span class="badge badge-domain">' + esc(item.retentionPeriod) + '</span>' : ''}
+          <button class="accordion-trigger" aria-expanded="true">
+            <span>Required Artifacts (${linkedArtifacts.length})</span>
+            <span class="accordion-icon">&#9660;</span>
+          </button>
+          <div class="accordion-content" role="region">
+            ${linkedArtifacts.map(a => `
+              <div class="artifact-card">
+                <div class="artifact-card-header">
+                  <span class="artifact-card-name">${esc(a.name)}</span>
+                  <div class="artifact-card-badges">
+                    ${a.mandatory ? '<span class="badge badge-mandatory">Mandatory</span>' : '<span class="badge badge-optional">Optional</span>'}
+                    ${a.category ? '<span class="badge badge-category">' + esc(a.category) + '</span>' : ''}
+                  </div>
                 </div>
-                ${item.description ? '<div class="evidence-checklist-item-desc">' + esc(item.description) + '</div>' : ''}
-                ${item.suggestedSources && item.suggestedSources.length ? `
-                  <div class="evidence-checklist-item-sources">
-                    <strong>Sources:</strong> ${item.suggestedSources.map(s => esc(s)).join(', ')}
-                  </div>
-                ` : ''}
-                ${item.whatGoodLooksLike && item.whatGoodLooksLike.length ? `
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <div class="accordion-header" data-accordion>
-                        <span>What Good Looks Like</span>
-                        <span class="accordion-arrow">&#9654;</span>
-                      </div>
-                      <div class="accordion-body">
-                        <ul class="evidence-good">
-                          ${item.whatGoodLooksLike.map(g => '<li><span>' + esc(g) + '</span></li>').join('')}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                ` : ''}
-                ${item.commonGaps && item.commonGaps.length ? `
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <div class="accordion-header" data-accordion>
-                        <span>Common Gaps</span>
-                        <span class="accordion-arrow">&#9654;</span>
-                      </div>
-                      <div class="accordion-body">
-                        <ul class="evidence-gap">
-                          ${item.commonGaps.map(g => '<li><span>' + esc(g) + '</span></li>').join('')}
-                        </ul>
-                      </div>
-                    </div>
+                ${a.description ? '<p class="artifact-card-desc">' + esc(a.description) + '</p>' : ''}
+                <div class="artifact-card-meta">
+                  ${a.owner ? '<span class="meta-item"><strong>Owner:</strong> ' + esc(a.owner) + '</span>' : ''}
+                  ${a.reviewFrequency ? '<span class="meta-item"><strong>Review:</strong> ' + esc(a.reviewFrequency) + '</span>' : ''}
+                  ${a.format ? '<span class="meta-item"><strong>Format:</strong> ' + esc(a.format) + '</span>' : ''}
+                </div>
+                ${a.keyContents && a.keyContents.length ? `
+                  <div class="artifact-card-contents">
+                    <strong>Key Contents:</strong>
+                    <ul>${a.keyContents.map(k => '<li>' + esc(k) + '</li>').join('')}</ul>
                   </div>
                 ` : ''}
               </div>
@@ -782,35 +869,77 @@ async function renderControlDetail(el, slug) {
     ` : '';
 
     auditPackageHTML = `
-      <div class="audit-package">
-        <div class="audit-package-title">Audit Package</div>
-        <div class="audit-package-summary">${linkedArtifacts.length} artifact${linkedArtifacts.length !== 1 ? 's' : ''} &middot; ${linkedEvidence.length} evidence item${linkedEvidence.length !== 1 ? 's' : ''}</div>
-        ${artifactsAccordion}
+      <section class="audit-package">
+        <h2 class="audit-package-title">
+          Audit Package
+          <span class="audit-package-counts">
+            <span class="badge badge-evidence">${linkedEvidence.length} evidence item${linkedEvidence.length !== 1 ? 's' : ''}</span>
+            <span class="badge badge-artifacts">${linkedArtifacts.length} artifact${linkedArtifacts.length !== 1 ? 's' : ''}</span>
+          </span>
+        </h2>
         ${evidenceAccordion}
-      </div>
+        ${artifactsAccordion}
+      </section>
     `;
   }
 
-  el.innerHTML = `
-    <div class="breadcrumbs"><a href="#">Overview</a><span class="sep">/</span><a href="#controls">Controls</a><span class="sep">/</span>${esc(control.name)}</div>
-    ${renderComplianceToggle(slug)}
-    <div style="display:flex;gap:0.375rem;margin-bottom:0.25rem;">
-      <span class="badge badge-domain">${esc(domain.name || control.domain)}</span>
-      <span class="badge badge-type">${esc(control.type)}</span>
-      <span class="badge badge-layer">${esc(control.layer || '')}</span>
-    </div>
-    <div class="page-title">${esc(control.name)}</div>
-    <div class="page-subtitle">${esc(control.description)}</div>
-    ${renderControlCard(control)}
-    ${control.sections && control.sections.length ? `
-      <div class="card">
-        <div class="card-title">Mapped Sections</div>
-        <div style="display:flex;gap:0.375rem;flex-wrap:wrap;">
-          ${control.sections.map(s => `<a href="#section/${s}" class="badge badge-domain">${esc(s)}</a>`).join('')}
-        </div>
+  /* --- Framework Mappings --- */
+  const hasMappings = (control.nistCsf && control.nistCsf.length) || (control.iso27001 && control.iso27001.length) || (control.rmit && control.rmit.length);
+  const mappingsHTML = hasMappings ? `
+    <section class="detail-section">
+      <h2 class="detail-section-title">Framework Mappings</h2>
+      <div class="fw-mappings">
+        ${(control.nistCsf && control.nistCsf.length) ? `<div class="fw-mapping-row"><span class="fw-label">NIST CSF 2.0</span><span class="fw-codes">${control.nistCsf.map(r => esc(r)).join(', ')}</span></div>` : ''}
+        ${(control.iso27001 && control.iso27001.length) ? `<div class="fw-mapping-row"><span class="fw-label">ISO 27001</span><span class="fw-codes">${control.iso27001.map(r => esc(r)).join(', ')}</span></div>` : ''}
+        ${(control.rmit && control.rmit.length) ? `<div class="fw-mapping-row"><span class="fw-label">BNM RMiT</span><span class="fw-codes">${control.rmit.map(r => esc(r)).join(', ')}</span></div>` : ''}
+        ${(control.cisControls && control.cisControls.length) ? `<div class="fw-mapping-row"><span class="fw-label">CIS Controls</span><span class="fw-codes">${control.cisControls.map(r => esc(r)).join(', ')}</span></div>` : ''}
       </div>
-    ` : ''}
-    ${auditPackageHTML}
+    </section>
+  ` : '';
+
+  /* --- Source Provisions (back-links to Act 854 sections) --- */
+  const provisionsHTML = sections.length ? `
+    <section class="detail-section">
+      <h2 class="detail-section-title">Source Provisions</h2>
+      <div class="provision-links">
+        ${sections.map(sid => {
+          const prov = state.provisions[sid];
+          return `<a href="#framework/${sid}" class="provision-link">
+            <span class="provision-id">${esc(sid)}</span>
+            <span class="provision-title">${prov ? esc(prov.title) : esc(sid)}</span>
+          </a>`;
+        }).join('')}
+      </div>
+    </section>
+  ` : '';
+
+  el.innerHTML = `
+    <article class="control-detail">
+      <nav class="breadcrumbs">
+        <a href="#controls">Controls</a>
+        <span class="sep">/</span>
+        <span class="current">${esc(control.name)}</span>
+      </nav>
+
+      ${renderComplianceToggle(slug)}
+
+      <header class="control-detail-header">
+        <div class="control-detail-id-row">
+          <span class="badge badge-domain">${esc(domain.name || control.domain)}</span>
+          <span class="badge badge-type-${(control.type || '').toLowerCase() === 'preventive' ? 'preventive' : (control.type || '').toLowerCase() === 'detective' ? 'detective' : 'corrective'}">${esc(control.type)}</span>
+          ${control.layer ? `<span class="badge badge-category">${esc(control.layer)}</span>` : ''}
+        </div>
+        <h1 class="control-detail-title">${esc(control.name)}</h1>
+        <p class="control-detail-desc">${esc(control.description)}</p>
+      </header>
+
+      ${requirementsHTML}
+      ${activitiesHTML}
+      ${maturityHTML}
+      ${auditPackageHTML}
+      ${mappingsHTML}
+      ${provisionsHTML}
+    </article>
   `;
 }
 
@@ -871,7 +1000,7 @@ async function renderSupplements(el) {
       if (!items.length) return '';
       return `
         <h3 style="font-size:1rem;font-weight:600;margin:1.5rem 0 0.75rem;color:${g.color};">${g.label}</h3>
-        <div class="part-grid" style="grid-template-columns:repeat(2,1fr);">
+        <div class="control-grid">
           ${items.map(item => `
             <div class="supplement-card" onclick="location.hash='#supplement/${item.id}'">
               <div class="supplement-type" style="color:${g.color};">${esc(item.type || g.key)}</div>
@@ -974,8 +1103,8 @@ function renderSupplementContent(el, data, id) {
   `;
 }
 
-/* ===== CROSS-REFERENCES ===== */
-async function renderCrossReferences(el) {
+/* ===== REFERENCE (Cross-References) ===== */
+async function renderReference(el) {
   if (!state.crossRefs) {
     const [actToRegs, actToDirectives, frameworkMappings, nciiSectorMappings] = await Promise.all([
       fetchJSON('cross-references/act-to-regulations.json'),
@@ -1014,7 +1143,7 @@ function renderActXrefs(data) {
   if (!data || !data.mappings || !data.mappings.length) return '<div class="empty-state"><div class="empty-state-text">No mappings available.</div></div>';
   return data.mappings.map(m => `
     <div class="xref-row">
-      <span class="xref-section" onclick="location.hash='#section/${m.section}'">${esc(m.section)}</span>
+      <span class="xref-section" onclick="location.hash='#framework/${m.section}'">${esc(m.section)}</span>
       <div class="xref-targets">
         <div style="font-size:0.8125rem;font-weight:500;margin-bottom:0.25rem;">${esc(m.sectionTitle || '')}</div>
         <div style="font-size:0.8125rem;color:var(--text-secondary);">${esc(m.details || '')}</div>
@@ -1066,45 +1195,38 @@ function renderSectorXrefs(data) {
   `).join('');
 }
 
-/* ===== FRAMEWORK VIEW ===== */
-async function renderFramework(el) {
-  if (!state.requirements) state.requirements = await fetchJSON('requirements/index.json') || {};
-  if (!state.controls) {
-    const [domains, library, sectionMap] = await Promise.all([
-      fetchJSON('controls/domains.json'), fetchJSON('controls/library.json'), fetchJSON('controls/section-map.json'),
-    ]);
-    state.controls = { domains: domains || {}, library: library || {}, sectionMap: sectionMap || {} };
-  }
-
-  let totalReqs = 0;
-  for (const sec of Object.values(state.requirements)) {
-    for (const p of ['legal', 'technical', 'governance']) {
-      totalReqs += (sec[p]?.requirements || []).length;
-    }
-  }
-  const totalControls = Object.values(state.controls.library).reduce((sum, arr) => sum + arr.length, 0);
+/* ===== FRAMEWORK VIEW — Act 854 Parts listing ===== */
+function renderFramework(el) {
+  const totalSections = Object.keys(state.provisions).length;
 
   el.innerHTML = `
-    <div class="page-title">Compliance Framework Architecture</div>
-    <div class="page-subtitle">How the Act 854 ecosystem connects: from provisions through requirements to controls, evidence, and artifacts</div>
-
-    <div class="framework-flow">
-      <div class="framework-step"><div class="framework-step-label">Provisions</div><div class="framework-step-count">${Object.keys(state.provisions).length} sections</div></div>
-      <div class="framework-step"><div class="framework-step-label">Requirements</div><div class="framework-step-count">${totalReqs} obligations</div></div>
-      <div class="framework-step" onclick="location.hash='#controls'"><div class="framework-step-label">Controls</div><div class="framework-step-count">${totalControls} controls</div></div>
-      <div class="framework-step"><div class="framework-step-label">Evidence</div><div class="framework-step-count">${Object.keys(state.evidence || {}).length || '~30'} items</div></div>
-      <div class="framework-step" onclick="location.hash='#artifacts'"><div class="framework-step-label">Artifacts</div><div class="framework-step-count">~120 documents</div></div>
-    </div>
+    <div class="page-title">Act 854 Framework</div>
+    <div class="page-subtitle">Cyber Security Act 2024 — ${state.parts.length} parts, ${totalSections} sections</div>
 
     <h3 style="font-size:1rem;font-weight:600;margin:1.5rem 0 0.75rem;">Source Hierarchy</h3>
     <div class="card">
       <div style="display:grid;grid-template-columns:auto 1fr;gap:0.5rem 1rem;font-size:0.8125rem;">
         <span style="font-weight:600;color:var(--accent);">Tier 1</span><span>Cyber Security Act 2024 (Act 854) — Primary legislation</span>
-        <span style="font-weight:600;color:var(--amber);">Tier 2</span><span>Subsidiary Regulations — Risk assessment, audit, licensing, compounding</span>
-        <span style="font-weight:600;color:#D97706;">Tier 3</span><span>Chief Executive Directives — Binding operational instructions</span>
-        <span style="font-weight:600;color:var(--purple);">Tier 4</span><span>Codes of Practice — Sector-specific standards and best practices</span>
-        <span style="font-weight:600;color:var(--green);">Tier 5</span><span>Standards — CE-determined cyber security technical standards</span>
+        <span style="font-weight:600;color:var(--warning);">Tier 2</span><span>Subsidiary Regulations — Risk assessment, audit, licensing, compounding</span>
+        <span style="font-weight:600;color:var(--warning);">Tier 3</span><span>Chief Executive Directives — Binding operational instructions</span>
+        <span style="font-weight:600;color:var(--type-preventive);">Tier 4</span><span>Codes of Practice — Sector-specific standards and best practices</span>
+        <span style="font-weight:600;color:var(--success);">Tier 5</span><span>Standards — CE-determined cyber security technical standards</span>
       </div>
+    </div>
+
+    <h3 style="font-size:1rem;font-weight:600;margin:1.5rem 0 0.75rem;">Parts</h3>
+    <div class="control-grid">
+      ${state.parts.map(p => {
+        const secs = Object.values(state.provisions).filter(s => s.part === p.id);
+        return `<div class="control-card" onclick="location.hash='#framework/part-${p.id}'" data-part="${p.id}" style="border-left: 4px solid var(--accent); cursor:pointer;">
+          <div class="control-id">Part ${p.id}</div>
+          <h3 class="control-card-title">${esc(p.name)}</h3>
+          <p class="control-card-desc">${esc(p.description || '')}</p>
+          <div class="control-card-meta">
+            <span class="badge badge-category">${secs.length} sections</span>
+          </div>
+        </div>`;
+      }).join('')}
     </div>
 
     <h3 style="font-size:1rem;font-weight:600;margin:1.5rem 0 0.75rem;">NCII Compliance Lifecycle</h3>
@@ -1496,7 +1618,7 @@ function renderSearch(el, query) {
     <div class="page-subtitle">${results.length} result${results.length !== 1 ? 's' : ''} found</div>
     ${results.length === 0 ? '<div class="empty-state"><div class="empty-state-text">No matching provisions found.</div></div>' :
       results.map(s => `
-        <a href="#section/${s.id}" class="search-result">
+        <a href="#framework/${s.id}" class="search-result">
           <div class="search-result-id">${s.id} &middot; Part ${s.part}</div>
           <div class="search-result-title">${esc(s.title)}</div>
           <div class="search-result-snippet">${esc(s.translation.substring(0, 200))}${s.translation.length > 200 ? '…' : ''}</div>
@@ -1508,7 +1630,17 @@ function renderSearch(el, query) {
 
 /* ===== EVENT HANDLERS ===== */
 function handleClick(e) {
-  // Accordion toggle
+  // Standard accordion toggle (GRC standard)
+  const accTrigger = e.target.closest('.accordion-trigger');
+  if (accTrigger) {
+    const content = accTrigger.nextElementSibling;
+    const expanded = accTrigger.getAttribute('aria-expanded') === 'true';
+    accTrigger.setAttribute('aria-expanded', !expanded);
+    if (content) content.hidden = expanded;
+    return;
+  }
+
+  // Legacy accordion toggle
   const accHeader = e.target.closest('[data-accordion]');
   if (accHeader) {
     accHeader.closest('.accordion-item').classList.toggle('open');
@@ -1526,9 +1658,9 @@ function handleClick(e) {
     const panel = parent.querySelector(`#tab-${tabName}`);
     if (panel) {
       panel.classList.add('active');
-      // Lazy-load section tabs
+      // Lazy-load section tabs (framework-detail sections)
       const sectionId = state.route.id;
-      if (sectionId && ['requirements', 'evidence', 'controls', 'artifacts'].includes(tabName)) {
+      if (sectionId && state.provisions[sectionId] && ['requirements', 'evidence', 'controls', 'artifacts'].includes(tabName)) {
         activateTab(tabName, sectionId);
       }
     }
@@ -1632,21 +1764,24 @@ function exportToCSV() {
   let filename = `export-${view}-${new Date().toISOString().slice(0,10)}.csv`;
 
   if (view === 'controls') {
-    const list = state.controls.library || state.controls;
+    const lib = state.controls ? state.controls.library : {};
+    const list = Object.values(lib).flat();
     data = list.map(c => ({
-      ID: c.id || '',
+      ID: c.id || c.slug || '',
       Name: c.name,
       Domain: c.domain,
-      Description: c.description.replace(/\n/g, ' ')
+      Description: (c.description || '').replace(/\n/g, ' ')
     }));
-  } else if (view === 'risk-management') {
-    const list = state.riskManagement?.register || [];
+  } else if (view === 'risk') {
+    const list = (state.riskManagement && state.riskManagement.riskRegister && state.riskManagement.riskRegister.risks) || [];
     data = list.map(r => ({
       ID: r.id,
-      Risk: r.risk,
+      Risk: r.title || '',
       Impact: r.impact,
       Likelihood: r.likelihood,
-      Level: r.inherentRiskLevel
+      InherentRisk: r.inherentRisk,
+      ResidualRisk: r.residualRisk,
+      Treatment: r.treatment || ''
     }));
   } else {
     alert('CSV export only supported for Controls and Risk Register views.');
@@ -1684,7 +1819,7 @@ function setComplianceStatus(slug, status) {
   const data = JSON.parse(localStorage.getItem('nacsa_compliance_status') || '{}');
   data[slug] = status;
   localStorage.setItem('nacsa_compliance_status', JSON.stringify(data));
-  router(); // Refresh UI
+  render(); // Refresh UI
 }
 
 function renderComplianceToggle(slug) {
