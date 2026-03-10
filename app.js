@@ -56,8 +56,8 @@ function parseRoute() {
   if (hash.startsWith('risk/')) return { view: 'risk', sub: hash.slice(5) };
   if (hash === 'sectors') return { view: 'sectors' };
   if (hash.startsWith('sector/')) return { view: 'sector', id: hash.slice(7) };
-  if (hash === 'penalties') return { view: 'penalties' };
-  if (hash === 'supplements') return { view: 'supplements' };
+  if (hash === 'penalties') return { view: 'reference', subtab: 'penalties' };
+  if (hash === 'supplements') return { view: 'reference', subtab: 'supplements' };
   if (hash.startsWith('supplement/')) return { view: 'supplement-detail', id: hash.slice(11) };
   if (hash === 'reference') return { view: 'reference' };
   if (hash.startsWith('reference/')) return { view: 'reference', sub: hash.slice(10) };
@@ -114,8 +114,6 @@ function render() {
     case 'risk': renderRiskManagement(app); break;
     case 'sectors': renderSectors(app); break;
     case 'sector': renderSector(app, state.route.id); break;
-    case 'penalties': renderPenalties(app); break;
-    case 'supplements': renderSupplements(app); break;
     case 'supplement-detail': renderSupplementDetail(app, state.route.id); break;
     case 'reference': renderReference(app); break;
     case 'search': renderSearch(app, state.route.query); break;
@@ -132,7 +130,7 @@ function updateNav() {
       (view === 'framework' && state.route.view === 'framework-detail') ||
       (view === 'controls' && state.route.view === 'control-detail') ||
       (view === 'sectors' && state.route.view === 'sector') ||
-      (view === 'supplements' && state.route.view === 'supplement-detail')
+      (view === 'reference' && state.route.view === 'supplement-detail')
     );
   });
 }
@@ -1115,28 +1113,119 @@ async function renderReference(el) {
     state.crossRefs = { actToRegs, actToDirectives, frameworkMappings, nciiSectorMappings };
   }
 
+  // Load penalties and supplements data for sub-tabs
+  if (!state.penalties) state.penalties = await fetchJSON('penalties/index.json') || [];
+  if (!state.supplements) {
+    const [regs, directives, codes] = await Promise.all([
+      fetchJSON('supplements/regulations/index.json'),
+      fetchJSON('supplements/directives/index.json'),
+      fetchJSON('supplements/codes-of-practice/index.json'),
+    ]);
+    state.supplements = {
+      regulations: (regs && regs.regulations) || [],
+      directives: (directives && directives.directives) || [],
+      codesOfPractice: (codes && codes.codesOfPractice) || [],
+    };
+  }
+
+  const subtab = state.route.subtab || 'cross-references';
+
   el.innerHTML = `
-    <div class="page-title">Cross-References</div>
-    <div class="page-subtitle">Mappings between Act 854 sections, subsidiary instruments, and international frameworks</div>
-    <div class="tabs">
-      <button class="tab-btn active" data-tab="xref-regulations">Regulations</button>
-      <button class="tab-btn" data-tab="xref-directives">Directives</button>
-      <button class="tab-btn" data-tab="xref-frameworks">International Frameworks</button>
-      <button class="tab-btn" data-tab="xref-sectors">Sector Overlaps</button>
+    <div class="page-title">Reference</div>
+    <div class="page-subtitle">Cross-references, penalties, and subsidiary instruments for Act 854</div>
+
+    <div class="sub-tabs">
+      <button class="sub-tab${subtab === 'cross-references' ? ' active' : ''}" data-subpanel="cross-references">Cross-References</button>
+      <button class="sub-tab${subtab === 'penalties' ? ' active' : ''}" data-subpanel="penalties">Penalties</button>
+      <button class="sub-tab${subtab === 'supplements' ? ' active' : ''}" data-subpanel="supplements">Supplements</button>
     </div>
-    <div class="tab-panel active" id="tab-xref-regulations">
-      ${renderActXrefs(state.crossRefs.actToRegs)}
+
+    <div class="sub-panel${subtab === 'cross-references' ? ' active' : ''}" data-subpanel="cross-references">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="xref-regulations">Regulations</button>
+        <button class="tab-btn" data-tab="xref-directives">Directives</button>
+        <button class="tab-btn" data-tab="xref-frameworks">International Frameworks</button>
+        <button class="tab-btn" data-tab="xref-sectors">Sector Overlaps</button>
+      </div>
+      <div class="tab-panel active" id="tab-xref-regulations">
+        ${renderActXrefs(state.crossRefs.actToRegs)}
+      </div>
+      <div class="tab-panel" id="tab-xref-directives">
+        ${renderActXrefs(state.crossRefs.actToDirectives)}
+      </div>
+      <div class="tab-panel" id="tab-xref-frameworks">
+        ${renderFrameworkXrefs(state.crossRefs.frameworkMappings)}
+      </div>
+      <div class="tab-panel" id="tab-xref-sectors">
+        ${renderSectorXrefs(state.crossRefs.nciiSectorMappings)}
+      </div>
     </div>
-    <div class="tab-panel" id="tab-xref-directives">
-      ${renderActXrefs(state.crossRefs.actToDirectives)}
+
+    <div class="sub-panel${subtab === 'penalties' ? ' active' : ''}" data-subpanel="penalties">
+      ${renderPenaltiesContent()}
     </div>
-    <div class="tab-panel" id="tab-xref-frameworks">
-      ${renderFrameworkXrefs(state.crossRefs.frameworkMappings)}
-    </div>
-    <div class="tab-panel" id="tab-xref-sectors">
-      ${renderSectorXrefs(state.crossRefs.nciiSectorMappings)}
+
+    <div class="sub-panel${subtab === 'supplements' ? ' active' : ''}" data-subpanel="supplements">
+      ${renderSupplementsContent()}
     </div>
   `;
+}
+
+function renderPenaltiesContent() {
+  const categories = {};
+  for (const p of state.penalties) {
+    const cat = p.category || 'general';
+    if (!categories[cat]) categories[cat] = [];
+    categories[cat].push(p);
+  }
+  const maxFine = Math.max(...state.penalties.map(p => (p.penalty && p.penalty.fineNumeric) || 0));
+  const maxImprisonment = state.penalties.reduce((max, p) => {
+    const yrs = parseInt(p.penalty && p.penalty.imprisonment) || 0;
+    return yrs > max ? yrs : max;
+  }, 0);
+
+  return `
+    <div class="stats-banner">
+      <div class="stat-card"><div class="stat-number">${state.penalties.length}</div><div class="stat-label">Offences</div></div>
+      <div class="stat-card"><div class="stat-number">RM${(maxFine/1000000).toFixed(0)}M</div><div class="stat-label">Max Fine</div></div>
+      <div class="stat-card"><div class="stat-number">${maxImprisonment} yrs</div><div class="stat-label">Max Imprisonment</div></div>
+      <div class="stat-card"><div class="stat-number">10x</div><div class="stat-label">Corporate Multiplier</div></div>
+    </div>
+    <div class="filter-bar">
+      <span class="filter-chip active" data-filter="all">All</span>
+      ${Object.keys(categories).map(cat => `<span class="filter-chip" data-filter="${esc(cat)}">${esc(cat)}</span>`).join('')}
+    </div>
+    <div id="penalty-list">
+      ${state.penalties.map(p => renderPenaltyCard(p)).join('')}
+    </div>
+  `;
+}
+
+function renderSupplementsContent() {
+  const groups = [
+    { key: 'regulations', label: 'Regulations', color: '#0E7490' },
+    { key: 'directives', label: 'Chief Executive Directives', color: '#D97706' },
+    { key: 'codesOfPractice', label: 'Codes of Practice', color: '#7C3AED' },
+  ];
+  return groups.map(g => {
+    const items = state.supplements[g.key] || [];
+    if (!items.length) return '';
+    return `
+      <h3 style="font-size:1rem;font-weight:600;margin:1.5rem 0 0.75rem;color:${g.color};">${g.label}</h3>
+      <div class="control-grid">
+        ${items.map(item => `
+          <div class="supplement-card" onclick="location.hash='#supplement/${item.id}'">
+            <div class="supplement-type" style="color:${g.color};">${esc(item.type || g.key)}</div>
+            <div class="supplement-title">${esc(item.title)}</div>
+            <div class="supplement-meta">
+              ${item.effectiveDate ? 'Effective: ' + esc(item.effectiveDate) : ''}
+              ${item.status ? ' &middot; ' + esc(item.status) : ''}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }).join('');
 }
 
 function renderActXrefs(data) {
@@ -1645,6 +1734,17 @@ function handleClick(e) {
     ariaTrigger.setAttribute('aria-expanded', !expanded);
     const content = ariaTrigger.nextElementSibling;
     if (content) content.hidden = expanded;
+    return;
+  }
+
+  // Sub-tab switching
+  const subTab = e.target.closest('.sub-tab');
+  if (subTab) {
+    const subName = subTab.dataset.subpanel;
+    const container = subTab.closest('.sub-tabs')?.parentElement;
+    if (!container) return;
+    container.querySelectorAll('.sub-tab').forEach(b => b.classList.toggle('active', b === subTab));
+    container.querySelectorAll('.sub-panel').forEach(p => p.classList.toggle('active', p.dataset.subpanel === subName));
     return;
   }
 
