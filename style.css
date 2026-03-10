@@ -639,12 +639,14 @@
   transition: transform 0.2s;
   color: var(--text-muted);
 }
-.accordion-item.open .chevron { transform: rotate(90deg); }
+.accordion-item.open > .accordion-trigger .chevron { transform: rotate(90deg); }
 .accordion-content {
   display: none;
   padding: 0 1rem 0.75rem;
 }
-.accordion-item.open .accordion-content { display: block; }
+.accordion-item.open > .accordion-content { display: block; }
+.accordion-content[role="region"] { display: block; }
+.accordion-trigger[aria-expanded="false"] + .accordion-content[role="region"] { display: none; }
 
 /* ===== RISK MANAGEMENT ===== */
 .risk-matrix-container {
