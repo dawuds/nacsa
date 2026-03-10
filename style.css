@@ -813,6 +813,77 @@
   .control-card, .card, .artifact-card, .penalty-card, .risk-card { break-inside: avoid; }
 }
 
+/* ===== COMPLIANCE CHAIN VISUALIZATION ===== */
+.compliance-chain { margin-top: 1rem; }
+.compliance-chain-select { margin-bottom: 1.25rem; }
+.compliance-chain-select select {
+  width: 100%; max-width: 480px; padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  font-size: 0.875rem; background: var(--bg); color: var(--text-primary);
+}
+.compliance-chain-select select:focus { outline: none; border-color: var(--accent); }
+.chain-flow {
+  display: flex; align-items: flex-start; gap: 0; flex-wrap: nowrap;
+  overflow-x: auto; padding: 0.5rem 0 1rem;
+}
+.chain-step { display: flex; align-items: flex-start; }
+.chain-node {
+  min-width: 200px; max-width: 260px; border-radius: var(--radius);
+  border: 2px solid var(--border); background: var(--card);
+  padding: 0.875rem 1rem; cursor: pointer; transition: box-shadow 0.15s, border-color 0.15s;
+  position: relative;
+}
+.chain-node:hover { box-shadow: var(--shadow-md); }
+.chain-node-framework {
+  font-size: 0.6875rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.05em; margin-bottom: 0.375rem; padding: 0.125rem 0.5rem;
+  border-radius: 3px; display: inline-block; color: #fff;
+}
+.chain-node-id { font-size: 0.9375rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem; font-family: var(--mono); }
+.chain-node-title { font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.4; }
+.chain-node-detail {
+  display: none; margin-top: 0.75rem; padding-top: 0.625rem; border-top: 1px solid var(--border);
+  font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;
+}
+.chain-node.expanded .chain-node-detail { display: block; }
+.chain-arrow {
+  display: flex; align-items: center; padding: 0 0.375rem; color: var(--text-muted);
+  font-size: 1.5rem; flex-shrink: 0; min-height: 60px;
+}
+.chain-arrow::after { content: '\2192'; }
+
+/* Framework-specific node colors */
+.chain-node.fw-nacsa { border-color: #155E75; }
+.chain-node.fw-nacsa .chain-node-framework { background: #155E75; }
+.chain-node.fw-rmit { border-color: #1E40AF; }
+.chain-node.fw-rmit .chain-node-framework { background: #1E40AF; }
+.chain-node.fw-nist { border-color: #0E7490; }
+.chain-node.fw-nist .chain-node-framework { background: #0E7490; }
+.chain-node.fw-iso { border-color: #7C3AED; }
+.chain-node.fw-iso .chain-node-framework { background: #7C3AED; }
+.chain-node.fw-pdpa { border-color: #D97706; }
+.chain-node.fw-pdpa .chain-node-framework { background: #D97706; }
+.chain-node.fw-cis { border-color: #16A34A; }
+.chain-node.fw-cis .chain-node-framework { background: #16A34A; }
+.chain-node.fw-other { border-color: #D97706; }
+.chain-node.fw-other .chain-node-framework { background: #D97706; }
+
+.chain-empty { font-size: 0.875rem; color: var(--text-muted); padding: 1rem 0; }
+.chain-legend {
+  display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; padding-top: 0.75rem;
+  border-top: 1px solid var(--border); font-size: 0.75rem; color: var(--text-secondary);
+}
+.chain-legend-item { display: flex; align-items: center; gap: 0.375rem; }
+.chain-legend-swatch { width: 12px; height: 12px; border-radius: 2px; }
+
+@media (max-width: 640px) {
+  .chain-flow { flex-direction: column; align-items: stretch; }
+  .chain-step { flex-direction: column; align-items: stretch; }
+  .chain-node { max-width: 100%; min-width: 0; }
+  .chain-arrow { justify-content: center; min-height: auto; padding: 0.25rem 0; font-size: 1.25rem; }
+  .chain-arrow::after { content: '\2193'; }
+}
+
 /* ===== DARK MODE ===== */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -911,4 +982,8 @@
   /* Framework step arrow */
   .framework-step:not(:last-child)::after { color: var(--text-muted); }
   .framework-step:hover { border-color: var(--accent); }
+
+  /* Compliance chain dark mode */
+  .compliance-chain-select select { background: var(--surface); border-color: var(--border); color: var(--text-primary); }
+  .chain-node { background: var(--surface); }
 }

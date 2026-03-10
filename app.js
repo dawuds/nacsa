@@ -1136,6 +1136,7 @@ async function renderReference(el) {
 
     <div class="sub-tabs">
       <button class="sub-tab${subtab === 'cross-references' ? ' active' : ''}" data-subpanel="cross-references">Cross-References</button>
+      <button class="sub-tab${subtab === 'compliance-chain' ? ' active' : ''}" data-subpanel="compliance-chain">Compliance Chain</button>
       <button class="sub-tab${subtab === 'penalties' ? ' active' : ''}" data-subpanel="penalties">Penalties</button>
       <button class="sub-tab${subtab === 'supplements' ? ' active' : ''}" data-subpanel="supplements">Supplements</button>
     </div>
@@ -1159,6 +1160,10 @@ async function renderReference(el) {
       <div class="tab-panel" id="tab-xref-sectors">
         ${renderSectorXrefs(state.crossRefs.nciiSectorMappings)}
       </div>
+    </div>
+
+    <div class="sub-panel${subtab === 'compliance-chain' ? ' active' : ''}" data-subpanel="compliance-chain">
+      ${renderComplianceChain()}
     </div>
 
     <div class="sub-panel${subtab === 'penalties' ? ' active' : ''}" data-subpanel="penalties">
@@ -1282,6 +1287,163 @@ function renderSectorXrefs(data) {
       `).join('')}
     </div>
   `).join('');
+}
+
+/* ===== COMPLIANCE CHAIN VISUALIZATION ===== */
+function renderComplianceChain() {
+  if (!state.crossRefs || !state.crossRefs.frameworkMappings) {
+    return '<p class="empty-state">Cross-reference data not loaded yet.</p>';
+  }
+  const fm = state.crossRefs.frameworkMappings;
+
+  // Build unique NACSA sections from all framework mappings
+  const sectionSet = new Map();
+  for (const fwKey of Object.keys(fm)) {
+    const fwData = fm[fwKey];
+    if (!fwData || !fwData.mappings) continue;
+    for (const m of fwData.mappings) {
+      if (m.nacsaSection && !sectionSet.has(m.nacsaSection)) {
+        sectionSet.set(m.nacsaSection, m.nacsaName || m.nacsaSection);
+      }
+    }
+  }
+
+  if (!sectionSet.size) return '<p class="empty-state">No sections with cross-framework mappings found.</p>';
+
+  const options = Array.from(sectionSet.entries()).map(([id, name]) =>
+    '<option value="' + esc(id) + '">' + esc(id) + ' — ' + esc(name) + '</option>'
+  ).join('');
+
+  return '<div class="compliance-chain">' +
+    '<p style="font-size:0.875rem;color:var(--text-secondary);margin-bottom:0.75rem">' +
+      'Select a NACSA section to see how it maps across compliance frameworks: NACSA, BNM RMiT, NIST CSF 2.0, ISO 27001, PDPA, and CIS Controls.' +
+    '</p>' +
+    '<div class="compliance-chain-select">' +
+      '<select id="chain-section-select" onchange="updateComplianceChain()">' +
+        '<option value="">-- Select a section --</option>' +
+        options +
+      '</select>' +
+    '</div>' +
+    '<div id="chain-visualization"></div>' +
+    '<div class="chain-legend">' +
+      '<div class="chain-legend-item"><div class="chain-legend-swatch" style="background:#155E75"></div>NACSA Act 854</div>' +
+      '<div class="chain-legend-item"><div class="chain-legend-swatch" style="background:#1E40AF"></div>BNM RMiT</div>' +
+      '<div class="chain-legend-item"><div class="chain-legend-swatch" style="background:#0E7490"></div>NIST CSF 2.0</div>' +
+      '<div class="chain-legend-item"><div class="chain-legend-swatch" style="background:#7C3AED"></div>ISO 27001</div>' +
+      '<div class="chain-legend-item"><div class="chain-legend-swatch" style="background:#D97706"></div>PDPA</div>' +
+      '<div class="chain-legend-item"><div class="chain-legend-swatch" style="background:#16A34A"></div>CIS Controls</div>' +
+    '</div>' +
+  '</div>';
+}
+
+function updateComplianceChain() {
+  const select = document.getElementById('chain-section-select');
+  const viz = document.getElementById('chain-visualization');
+  if (!select || !viz) return;
+  const sectionId = select.value;
+  if (!sectionId) { viz.innerHTML = '<p class="chain-empty">Select a section above to view its compliance chain.</p>'; return; }
+
+  const fm = state.crossRefs.frameworkMappings;
+  const nodes = [];
+
+  // Find NACSA section name
+  let nacsaName = sectionId;
+  for (const fwKey of Object.keys(fm)) {
+    const fwData = fm[fwKey];
+    if (!fwData || !fwData.mappings) continue;
+    const match = fwData.mappings.find(m => m.nacsaSection === sectionId);
+    if (match && match.nacsaName) { nacsaName = match.nacsaName; break; }
+  }
+
+  // Source node: NACSA section
+  const provision = state.provisions[sectionId];
+  nodes.push({
+    fw: 'nacsa', fwLabel: 'NACSA Act 854', id: sectionId,
+    title: nacsaName,
+    detail: provision ? (provision.text || '').slice(0, 150) : 'Cyber Security Act 2024 provision',
+  });
+
+  // RMiT mappings
+  if (fm.rmit && fm.rmit.mappings) {
+    for (const m of fm.rmit.mappings) {
+      if (m.nacsaSection === sectionId) {
+        nodes.push({
+          fw: 'rmit', fwLabel: 'BNM RMiT', id: m.rmitClause || '',
+          title: m.rmitName || '',
+          detail: m.notes || '',
+        });
+      }
+    }
+  }
+
+  // NIST CSF mappings
+  if (fm.nistCsf && fm.nistCsf.mappings) {
+    for (const m of fm.nistCsf.mappings) {
+      if (m.nacsaSection === sectionId) {
+        nodes.push({
+          fw: 'nist', fwLabel: 'NIST CSF 2.0', id: m.nistSubcategory || '',
+          title: m.nistName || '',
+          detail: m.notes || '',
+        });
+      }
+    }
+  }
+
+  // ISO 27001 mappings
+  if (fm.iso27001 && fm.iso27001.mappings) {
+    for (const m of fm.iso27001.mappings) {
+      if (m.nacsaSection === sectionId) {
+        nodes.push({
+          fw: 'iso', fwLabel: 'ISO 27001', id: m.isoClause || '',
+          title: m.isoName || '',
+          detail: m.notes || '',
+        });
+      }
+    }
+  }
+
+  // PDPA mappings
+  if (fm.pdpa && fm.pdpa.mappings) {
+    for (const m of fm.pdpa.mappings) {
+      if (m.nacsaSection === sectionId) {
+        nodes.push({
+          fw: 'pdpa', fwLabel: 'PDPA', id: m.pdpaSection || '',
+          title: m.pdpaName || '',
+          detail: m.notes || '',
+        });
+      }
+    }
+  }
+
+  // CIS Controls mappings
+  if (fm.cisControls && fm.cisControls.mappings) {
+    for (const m of fm.cisControls.mappings) {
+      if (m.nacsaSection === sectionId) {
+        nodes.push({
+          fw: 'cis', fwLabel: 'CIS Controls', id: 'CIS ' + (m.cisControl || ''),
+          title: m.cisName || '',
+          detail: m.notes || '',
+        });
+      }
+    }
+  }
+
+  if (nodes.length <= 1) {
+    viz.innerHTML = '<p class="chain-empty">This section has no cross-framework mappings.</p>';
+    return;
+  }
+
+  viz.innerHTML = '<div class="chain-flow">' + nodes.map(function(n, i) {
+    return '<div class="chain-step">' +
+      (i > 0 ? '<div class="chain-arrow"></div>' : '') +
+      '<div class="chain-node fw-' + n.fw + '" onclick="this.classList.toggle(\'expanded\')">' +
+        '<div class="chain-node-framework">' + esc(n.fwLabel) + '</div>' +
+        '<div class="chain-node-id">' + esc(n.id) + '</div>' +
+        '<div class="chain-node-title">' + esc(n.title) + '</div>' +
+        '<div class="chain-node-detail">' + esc(n.detail) + '</div>' +
+      '</div>' +
+    '</div>';
+  }).join('') + '</div>';
 }
 
 /* ===== FRAMEWORK VIEW — Act 854 Parts listing ===== */
