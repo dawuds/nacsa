@@ -7,7 +7,7 @@
   "domains": [
     {
       "slug": "ncii-governance",
-      "name": "Ncii Governance",
+      "name": "NCII Governance",
       "description": "Governance structure and accountability for NCII."
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "slug": "bcdr",
-      "name": "Bcdr",
+      "name": "BCDR",
       "description": "Resilience and recovery for critical services."
     },
     {
