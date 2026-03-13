@@ -1,0 +1,621 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-13",
+    "description": "Audit report structure template aligned with NACSA Direction No. 8 requirements for Act 854 CoP compliance audits"
+  },
+  "reportStructure": {
+    "reportHeader": {
+      "auditTitle": "[NCII Cyber Security Compliance Audit Report]",
+      "entityName": "[Full legal name of NCII entity]",
+      "entityRegistrationRef": "[NACSA entity registration reference]",
+      "nciiDesignation": {
+        "designationDate": "[Date of NCII designation]",
+        "designatingAuthority": "[Chief Executive who designated]",
+        "designationReference": "[Designation notice reference number]",
+        "nciiSystemsInScope": ["[List of designated NCII systems]"]
+      },
+      "sector": "[Government | Defence | Banking & Finance | Transportation | Healthcare | Water & Sewerage | Communication | Energy | Information & Communication Technology | Agriculture & Food]",
+      "sectorLead": "[Name of sector lead agency]",
+      "auditPeriod": {
+        "startDate": "[YYYY-MM-DD]",
+        "endDate": "[YYYY-MM-DD]"
+      },
+      "auditType": "[Initial | Periodic | Follow-up | Directed]",
+      "applicableCoP": "[gov-cop-1 | sector-specific CoP reference]",
+      "auditorDetails": {
+        "auditFirm": "[Registered audit firm name]",
+        "nacsaRegistrationNumber": "[Auditor registration with NACSA]",
+        "leadAuditor": {
+          "name": "[Full name]",
+          "qualification": "[Professional certification(s)]",
+          "registrationNumber": "[Individual registration number]"
+        },
+        "auditTeamMembers": [
+          {
+            "name": "[Full name]",
+            "role": "[Role in audit engagement]",
+            "qualification": "[Professional certification(s)]"
+          }
+        ]
+      },
+      "reportDate": "[YYYY-MM-DD]",
+      "reportVersion": "[e.g., 1.0]",
+      "reportClassification": "[CONFIDENTIAL - NCII]",
+      "distributionList": [
+        {
+          "recipient": "[Name and title]",
+          "organization": "[Organization name]",
+          "copyType": "[Original | Copy]"
+        }
+      ]
+    },
+    "tableOfContents": {
+      "guidance": "Auto-generated from section headings. Include page numbers for all sections and subsections.",
+      "sections": [
+        "1. Executive Summary",
+        "2. Scope and Methodology",
+        "3. Entity Profile and NCII Context",
+        "4. Domain Compliance Ratings",
+        "5. Detailed Findings",
+        "6. Vulnerability and Weakness Summary",
+        "7. Recommendations Summary",
+        "8. Prior Audit Comparison",
+        "9. Overall Compliance Opinion",
+        "Appendix A: Prepared by Client (PBC) List",
+        "Appendix B: Sampling Methodology and Details",
+        "Appendix C: Glossary of Terms and Abbreviations",
+        "Appendix D: Auditor Qualifications",
+        "Appendix E: Independence Declaration",
+        "Appendix F: Entity Management Sign-Off"
+      ]
+    },
+    "executiveSummary": {
+      "sectionNumber": "1",
+      "title": "Executive Summary",
+      "overallComplianceRating": {
+        "rating": "[Compliant | Substantially Compliant | Partially Compliant | Non-Compliant]",
+        "ratingDefinitions": {
+          "Compliant": "The entity meets all material requirements of the applicable Code of Practice. No critical or high-severity findings identified. Any medium or low findings are minor in nature.",
+          "SubstantiallyCompliant": "The entity meets most requirements of the applicable Code of Practice. No critical findings identified. A limited number of high-severity findings exist, but compensating controls are in place to mitigate immediate risk.",
+          "PartiallyCompliant": "The entity has notable gaps in meeting the applicable Code of Practice. Critical or multiple high-severity findings have been identified that require prompt remediation.",
+          "NonCompliant": "The entity fails to meet fundamental requirements of the applicable Code of Practice. Multiple critical findings exist that pose an immediate risk to the security of NCII systems."
+        }
+      },
+      "keyFindingsSummary": {
+        "guidance": "Summarize the most significant findings. Focus on critical and high-severity items. Limit to 5-7 key findings.",
+        "totalFindings": {
+          "critical": "[Count]",
+          "high": "[Count]",
+          "medium": "[Count]",
+          "low": "[Count]",
+          "total": "[Count]"
+        },
+        "keyFindings": [
+          {
+            "findingRef": "[Finding ID]",
+            "title": "[Finding title]",
+            "severity": "[Severity level]",
+            "domainAffected": "[Domain name]",
+            "briefDescription": "[One-sentence summary]"
+          }
+        ]
+      },
+      "priorAuditComparison": {
+        "guidance": "If this is a follow-up or periodic audit, compare against prior audit results.",
+        "priorAuditDate": "[YYYY-MM-DD or N/A for initial audit]",
+        "priorOverallRating": "[Prior rating or N/A]",
+        "ratingTrend": "[Improved | Unchanged | Deteriorated | N/A]",
+        "priorFindingsResolved": "[Count of prior findings now remediated]",
+        "priorFindingsOutstanding": "[Count of prior findings still open]",
+        "newFindingsIdentified": "[Count of new findings in current audit]",
+        "comparisonNarrative": "[Brief narrative on compliance trajectory]"
+      },
+      "positiveObservations": [
+        "[Notable areas of strong compliance or good practice observed]"
+      ],
+      "areasRequiringAttention": [
+        "[Summary of domains or areas needing immediate focus]"
+      ]
+    },
+    "scopeAndMethodology": {
+      "sectionNumber": "2",
+      "title": "Scope and Methodology",
+      "auditObjective": "[State the objective of the audit in accordance with Direction No. 8]",
+      "auditScope": {
+        "description": "[Narrative description of scope boundaries]",
+        "nciiSystemsCovered": [
+          {
+            "systemName": "[System name]",
+            "systemDescription": "[Brief description]",
+            "nciiClassification": "[Classification level]"
+          }
+        ],
+        "domainsInScope": ["[List of control domains assessed]"],
+        "exclusions": [
+          {
+            "item": "[Excluded item]",
+            "justification": "[Reason for exclusion]"
+          }
+        ]
+      },
+      "auditMethodology": {
+        "approach": "[Description of audit approach - risk-based, controls-based, or hybrid]",
+        "standardsFollowed": [
+          "NACSA Direction No. 8 - Audit and Compliance Standards",
+          "Act 854 - National Cyber Security Act 2024",
+          "[Applicable Code of Practice]",
+          "[Other relevant standards or frameworks referenced]"
+        ],
+        "proceduresPerformed": [
+          "Document and policy review",
+          "Stakeholder interviews",
+          "Technical configuration review",
+          "System access and log analysis",
+          "Process observation and walkthrough",
+          "Sample-based testing of controls",
+          "Vulnerability assessment review",
+          "Evidence corroboration"
+        ],
+        "samplingApproach": "[Description of sampling methodology - see Appendix B for details]"
+      },
+      "auditTimeline": {
+        "planningPhase": "[Start date - End date]",
+        "fieldworkPhase": "[Start date - End date]",
+        "reportingPhase": "[Start date - End date]",
+        "totalAuditDays": "[Number of audit person-days]"
+      },
+      "limitations": [
+        "[Any limitations encountered during the audit that may affect conclusions]"
+      ],
+      "entityCooperation": "[Assessment of entity's cooperation and responsiveness during the audit]"
+    },
+    "entityProfile": {
+      "sectionNumber": "3",
+      "title": "Entity Profile and NCII Context",
+      "entityOverview": {
+        "legalName": "[Full legal name]",
+        "tradingName": "[Trading name if different]",
+        "entityType": "[Government agency | GLC | Private sector | Critical infrastructure operator]",
+        "sector": "[NCII sector]",
+        "primaryBusiness": "[Description of primary business activities]",
+        "employeeCount": "[Approximate number of employees]",
+        "itStaffCount": "[Number of IT/cybersecurity staff]",
+        "annualRevenue": "[Revenue range if applicable]"
+      },
+      "nciiContext": {
+        "designationHistory": "[When and how the entity was designated as NCII]",
+        "nciiSystemCount": "[Number of designated NCII systems]",
+        "nciiSystemsSummary": "[Summary description of NCII systems and their function]",
+        "sectorDependencies": "[Key sector interdependencies]",
+        "regulatoryEnvironment": "[Other regulatory obligations relevant to cybersecurity]"
+      },
+      "governanceStructure": {
+        "boardOversight": "[Description of board-level cybersecurity governance]",
+        "cisoOrEquivalent": "[Name and reporting line of CISO or equivalent]",
+        "cybersecurityTeamSize": "[Size and structure of cybersecurity team]"
+      }
+    },
+    "domainComplianceRatings": {
+      "sectionNumber": "4",
+      "title": "Domain Compliance Rating Summary",
+      "guidance": "Rate each control domain assessed during the audit. Ratings should be consistent with findings documented in Section 5.",
+      "ratingScale": {
+        "Effective": "Controls are well-designed and operating effectively. No significant findings identified.",
+        "PartiallyEffective": "Controls are in place but have notable gaps in design or operation. Medium-severity findings identified.",
+        "Ineffective": "Controls are absent, poorly designed, or not operating. High or critical-severity findings identified.",
+        "NotAssessed": "Domain was excluded from audit scope with documented justification."
+      },
+      "domainRatings": [
+        {
+          "domainSlug": "governance",
+          "domainName": "Governance and Leadership",
+          "rating": "[Effective | Partially Effective | Ineffective | Not Assessed]",
+          "findingCount": { "critical": 0, "high": 0, "medium": 0, "low": 0 },
+          "keyObservation": "[One-sentence summary of domain status]",
+          "priorRating": "[Prior audit rating or N/A]",
+          "trend": "[Improved | Unchanged | Deteriorated | N/A]"
+        },
+        {
+          "domainSlug": "risk-management",
+          "domainName": "Risk Management",
+          "rating": "[Effective | Partially Effective | Ineffective | Not Assessed]",
+          "findingCount": { "critical": 0, "high": 0, "medium": 0, "low": 0 },
+          "keyObservation": "[One-sentence summary of domain status]",
+          "priorRating": "[Prior audit rating or N/A]",
+          "trend": "[Improved | Unchanged | Deteriorated | N/A]"
+        },
+        {
+          "domainSlug": "asset-management",
+          "domainName": "Asset Management",
+          "rating": "[Effective | Partially Effective | Ineffective | Not Assessed]",
+          "findingCount": { "critical": 0, "high": 0, "medium": 0, "low": 0 },
+          "keyObservation": "[One-sentence summary of domain status]",
+          "priorRating": "[Prior audit rating or N/A]",
+          "trend": "[Improved | Unchanged | Deteriorated | N/A]"
+        },
+        {
+          "domainSlug": "access-control",
+          "domainName": "Access Control",
+          "rating": "[Effective | Partially Effective | Ineffective | Not Assessed]",
+          "findingCount": { "critical": 0, "high": 0, "medium": 0, "low": 0 },
+          "keyObservation": "[One-sentence summary of domain status]",
+          "priorRating": "[Prior audit rating or N/A]",
+          "trend": "[Improved | Unchanged | Deteriorated | N/A]"
+        },
+        {
+          "domainSlug": "network-security",
+          "domainName": "Network Security",
+          "rating": "[Effective | Partially Effective | Ineffective | Not Assessed]",
+          "findingCount": { "critical": 0, "high": 0, "medium": 0, "low": 0 },
+          "keyObservation": "[One-sentence summary of domain status]",
+          "priorRating": "[Prior audit rating or N/A]",
+          "trend": "[Improved | Unchanged | Deteriorated | N/A]"
+        },
+        {
+          "domainSlug": "system-security",
+          "domainName": "System Security",
+          "rating": "[Effective | Partially Effective | Ineffective | Not Assessed]",
+          "findingCount": { "critical": 0, "high": 0, "medium": 0, "low": 0 },
+          "keyObservation": "[One-sentence summary of domain status]",
+          "priorRating": "[Prior audit rating or N/A]",
+          "trend": "[Improved | Unchanged | Deteriorated | N/A]"
+        },
+        {
+          "domainSlug": "incident-management",
+          "domainName": "Incident Management",
+          "rating": "[Effective | Partially Effective | Ineffective | Not Assessed]",
+          "findingCount": { "critical": 0, "high": 0, "medium": 0, "low": 0 },
+          "keyObservation": "[One-sentence summary of domain status]",
+          "priorRating": "[Prior audit rating or N/A]",
+          "trend": "[Improved | Unchanged | Deteriorated | N/A]"
+        },
+        {
+          "domainSlug": "business-continuity",
+          "domainName": "Business Continuity and Disaster Recovery",
+          "rating": "[Effective | Partially Effective | Ineffective | Not Assessed]",
+          "findingCount": { "critical": 0, "high": 0, "medium": 0, "low": 0 },
+          "keyObservation": "[One-sentence summary of domain status]",
+          "priorRating": "[Prior audit rating or N/A]",
+          "trend": "[Improved | Unchanged | Deteriorated | N/A]"
+        },
+        {
+          "domainSlug": "personnel-security",
+          "domainName": "Personnel Security",
+          "rating": "[Effective | Partially Effective | Ineffective | Not Assessed]",
+          "findingCount": { "critical": 0, "high": 0, "medium": 0, "low": 0 },
+          "keyObservation": "[One-sentence summary of domain status]",
+          "priorRating": "[Prior audit rating or N/A]",
+          "trend": "[Improved | Unchanged | Deteriorated | N/A]"
+        },
+        {
+          "domainSlug": "physical-security",
+          "domainName": "Physical and Environmental Security",
+          "rating": "[Effective | Partially Effective | Ineffective | Not Assessed]",
+          "findingCount": { "critical": 0, "high": 0, "medium": 0, "low": 0 },
+          "keyObservation": "[One-sentence summary of domain status]",
+          "priorRating": "[Prior audit rating or N/A]",
+          "trend": "[Improved | Unchanged | Deteriorated | N/A]"
+        },
+        {
+          "domainSlug": "third-party",
+          "domainName": "Third-Party Security Management",
+          "rating": "[Effective | Partially Effective | Ineffective | Not Assessed]",
+          "findingCount": { "critical": 0, "high": 0, "medium": 0, "low": 0 },
+          "keyObservation": "[One-sentence summary of domain status]",
+          "priorRating": "[Prior audit rating or N/A]",
+          "trend": "[Improved | Unchanged | Deteriorated | N/A]"
+        },
+        {
+          "domainSlug": "compliance",
+          "domainName": "Legal and Regulatory Compliance",
+          "rating": "[Effective | Partially Effective | Ineffective | Not Assessed]",
+          "findingCount": { "critical": 0, "high": 0, "medium": 0, "low": 0 },
+          "keyObservation": "[One-sentence summary of domain status]",
+          "priorRating": "[Prior audit rating or N/A]",
+          "trend": "[Improved | Unchanged | Deteriorated | N/A]"
+        }
+      ]
+    },
+    "detailedFindings": {
+      "sectionNumber": "5",
+      "title": "Detailed Findings",
+      "guidance": "Findings are organized by control domain. Each finding uses the 5 C's framework as defined in finding-template.json. Present findings in order of severity within each domain (Critical first, then High, Medium, Low).",
+      "domainFindings": [
+        {
+          "domainSlug": "[Domain slug]",
+          "domainName": "[Domain name]",
+          "domainSummary": "[Brief narrative of overall domain assessment]",
+          "findings": [
+            {
+              "_ref": "finding-template.json#/findingTemplate",
+              "guidance": "Insert completed finding templates here. Use the findingTemplate structure from finding-template.json."
+            }
+          ]
+        }
+      ]
+    },
+    "vulnerabilityAndWeaknessSummary": {
+      "sectionNumber": "6",
+      "title": "Vulnerability and Weakness Summary",
+      "guidance": "Consolidate technical vulnerabilities and systemic weaknesses identified across all domains. This section provides a holistic view of the entity's security posture.",
+      "technicalVulnerabilities": {
+        "guidance": "Summarize findings from vulnerability assessments, penetration tests, or configuration reviews referenced during the audit.",
+        "vulnerabilitySummary": {
+          "critical": "[Count]",
+          "high": "[Count]",
+          "medium": "[Count]",
+          "low": "[Count]",
+          "informational": "[Count]"
+        },
+        "topVulnerabilities": [
+          {
+            "description": "[Vulnerability description]",
+            "affectedSystems": "[Systems affected]",
+            "cveReference": "[CVE ID if applicable]",
+            "riskRating": "[Critical | High | Medium | Low]",
+            "relatedFinding": "[Finding ID reference]"
+          }
+        ]
+      },
+      "systemicWeaknesses": {
+        "guidance": "Identify patterns or recurring themes across multiple findings that indicate systemic issues.",
+        "weaknesses": [
+          {
+            "theme": "[Weakness theme - e.g., 'Inconsistent policy enforcement']",
+            "description": "[Description of the systemic weakness]",
+            "affectedDomains": ["[List of domains affected]"],
+            "relatedFindings": ["[List of finding IDs]"],
+            "recommendedApproach": "[Strategic recommendation to address the systemic issue]"
+          }
+        ]
+      }
+    },
+    "recommendationsSummary": {
+      "sectionNumber": "7",
+      "title": "Recommendations Summary",
+      "guidance": "Consolidate all recommendations from findings into a prioritized action plan. Group by priority and provide a clear roadmap for remediation.",
+      "priorityGroups": [
+        {
+          "priority": "Immediate (within 30 days)",
+          "description": "Actions required to address critical findings that pose immediate risk to NCII systems.",
+          "recommendations": [
+            {
+              "findingRef": "[Finding ID]",
+              "recommendation": "[Recommendation description]",
+              "domain": "[Domain affected]",
+              "estimatedEffort": "[Low | Medium | High]",
+              "managementAccepted": "[Yes | No | Partial]",
+              "targetDate": "[YYYY-MM-DD]"
+            }
+          ]
+        },
+        {
+          "priority": "Short-term (within 90 days)",
+          "description": "Actions required to address high-severity findings and strengthen control effectiveness.",
+          "recommendations": [
+            {
+              "findingRef": "[Finding ID]",
+              "recommendation": "[Recommendation description]",
+              "domain": "[Domain affected]",
+              "estimatedEffort": "[Low | Medium | High]",
+              "managementAccepted": "[Yes | No | Partial]",
+              "targetDate": "[YYYY-MM-DD]"
+            }
+          ]
+        },
+        {
+          "priority": "Medium-term (within 180 days)",
+          "description": "Actions to address medium-severity findings and improve overall compliance posture.",
+          "recommendations": [
+            {
+              "findingRef": "[Finding ID]",
+              "recommendation": "[Recommendation description]",
+              "domain": "[Domain affected]",
+              "estimatedEffort": "[Low | Medium | High]",
+              "managementAccepted": "[Yes | No | Partial]",
+              "targetDate": "[YYYY-MM-DD]"
+            }
+          ]
+        },
+        {
+          "priority": "Next audit cycle",
+          "description": "Low-priority observations and improvement opportunities to be addressed in the normal course of operations.",
+          "recommendations": [
+            {
+              "findingRef": "[Finding ID]",
+              "recommendation": "[Recommendation description]",
+              "domain": "[Domain affected]",
+              "estimatedEffort": "[Low | Medium | High]",
+              "managementAccepted": "[Yes | No | Partial]",
+              "targetDate": "[YYYY-MM-DD]"
+            }
+          ]
+        }
+      ]
+    },
+    "priorAuditComparison": {
+      "sectionNumber": "8",
+      "title": "Prior Audit Comparison",
+      "guidance": "For follow-up or periodic audits, provide a detailed comparison with the prior audit. For initial audits, note 'Not applicable - initial audit' and skip this section.",
+      "applicability": "[Applicable | Not Applicable - Initial Audit]",
+      "priorAuditReference": {
+        "auditDate": "[YYYY-MM-DD]",
+        "auditFirm": "[Firm name]",
+        "reportReference": "[Report reference number]",
+        "overallRating": "[Prior overall rating]"
+      },
+      "ratingComparison": {
+        "priorOverallRating": "[Prior rating]",
+        "currentOverallRating": "[Current rating]",
+        "trend": "[Improved | Unchanged | Deteriorated]",
+        "commentary": "[Narrative explaining the trend]"
+      },
+      "domainTrendAnalysis": [
+        {
+          "domainName": "[Domain name]",
+          "priorRating": "[Prior rating]",
+          "currentRating": "[Current rating]",
+          "trend": "[Improved | Unchanged | Deteriorated]"
+        }
+      ],
+      "priorFindingsDisposition": [
+        {
+          "priorFindingRef": "[Prior finding ID]",
+          "priorFindingTitle": "[Finding title]",
+          "priorSeverity": "[Prior severity]",
+          "currentStatus": "[Remediated | Partially Remediated | Not Remediated | No Longer Applicable]",
+          "currentFindingRef": "[Current finding ID if still open, or N/A]",
+          "assessmentNotes": "[Auditor assessment of remediation status]"
+        }
+      ],
+      "newFindingsSummary": {
+        "totalNewFindings": "[Count]",
+        "narrative": "[Brief description of new findings not present in prior audit]"
+      }
+    },
+    "overallComplianceOpinion": {
+      "sectionNumber": "9",
+      "title": "Overall Compliance Opinion",
+      "guidance": "Provide the auditor's formal compliance opinion in accordance with Direction No. 8 requirements.",
+      "opinionStatement": "[Formal auditor opinion statement on the entity's compliance with the applicable Code of Practice]",
+      "basisForOpinion": "[Summary of the basis for the opinion, referencing key findings and overall assessment]",
+      "emphasis": "[Any matters the auditor wishes to emphasize without qualifying the opinion]",
+      "qualifications": "[Any qualifications or limitations to the opinion, if applicable]",
+      "nacsaRecommendation": "[Auditor's recommendation to NACSA regarding the entity's compliance status and any recommended regulatory actions]"
+    },
+    "appendices": {
+      "appendixA": {
+        "title": "Prepared by Client (PBC) List",
+        "guidance": "Document all evidence and documentation requested from the entity, including receipt status.",
+        "pbcItems": [
+          {
+            "pbcId": "[PBC-NNN]",
+            "description": "[Document or evidence description]",
+            "domain": "[Related control domain]",
+            "dateRequested": "[YYYY-MM-DD]",
+            "dateReceived": "[YYYY-MM-DD or 'Not Received']",
+            "status": "[Received | Partially Received | Not Received | Not Applicable]",
+            "notes": "[Any relevant notes about the evidence received]"
+          }
+        ]
+      },
+      "appendixB": {
+        "title": "Sampling Methodology and Details",
+        "guidance": "Document the sampling approach and specific samples selected for each test procedure.",
+        "samplingMethodology": {
+          "approach": "[Statistical | Judgmental | Hybrid]",
+          "confidenceLevel": "[e.g., 95%]",
+          "tolerableErrorRate": "[e.g., 5%]",
+          "overallRationale": "[Rationale for the sampling approach adopted]"
+        },
+        "samplingDetails": [
+          {
+            "testId": "[Test procedure ID]",
+            "controlTested": "[Control description]",
+            "populationSize": "[Total population]",
+            "sampleSize": "[Number sampled]",
+            "samplingMethod": "[Random | Stratified | Judgmental]",
+            "selectionCriteria": "[How samples were selected]",
+            "exceptionsFound": "[Number of exceptions]",
+            "exceptionRate": "[Percentage]",
+            "conclusion": "[Effective | Ineffective | Inconclusive]"
+          }
+        ]
+      },
+      "appendixC": {
+        "title": "Glossary of Terms and Abbreviations",
+        "terms": [
+          {
+            "term": "Act 854",
+            "definition": "National Cyber Security Act 2024 (Act 854) - The primary legislation governing cyber security of national critical information infrastructure in Malaysia"
+          },
+          {
+            "term": "CE",
+            "definition": "Chief Executive of the National Cyber Security Agency (NACSA)"
+          },
+          {
+            "term": "CoP",
+            "definition": "Code of Practice - Standards issued by NACSA specifying cyber security measures for NCII entities"
+          },
+          {
+            "term": "Direction No. 8",
+            "definition": "NACSA direction establishing audit and compliance standards for NCII entities"
+          },
+          {
+            "term": "MAP",
+            "definition": "Management Action Plan - Entity's plan to remediate audit findings"
+          },
+          {
+            "term": "MFA",
+            "definition": "Multi-Factor Authentication"
+          },
+          {
+            "term": "NACSA",
+            "definition": "National Cyber Security Agency - The regulatory body responsible for cyber security of NCII in Malaysia"
+          },
+          {
+            "term": "NCII",
+            "definition": "National Critical Information Infrastructure - Computer or computer system designated under s23 of Act 854"
+          },
+          {
+            "term": "PBC",
+            "definition": "Prepared by Client - Evidence and documentation requested from the audited entity"
+          }
+        ]
+      },
+      "appendixD": {
+        "title": "Auditor Qualifications",
+        "guidance": "Document the qualifications and experience of the audit team in accordance with Direction No. 8 requirements.",
+        "teamQualifications": [
+          {
+            "name": "[Full name]",
+            "role": "[Lead Auditor | Audit Team Member | Technical Specialist]",
+            "professionalCertifications": ["[e.g., CISA, CISSP, ISO 27001 LA]"],
+            "relevantExperience": "[Years of relevant cybersecurity audit experience]",
+            "sectorExperience": "[Relevant sector-specific experience]",
+            "nacsaRegistration": "[Registration number and status]",
+            "continuingProfessionalEducation": "[CPE hours completed in current period]"
+          }
+        ]
+      },
+      "appendixE": {
+        "title": "Independence Declaration",
+        "guidance": "Formal declaration of auditor independence as required by Direction No. 8.",
+        "declaration": {
+          "statement": "We hereby declare that the audit team members listed in this report are independent of the audited entity and have no conflicts of interest that would impair our objectivity or professional judgment in conducting this audit.",
+          "confirmations": [
+            "No financial interest in the audited entity",
+            "No prior employment with the audited entity within the past 24 months",
+            "No provision of non-audit services to the audited entity that could compromise independence",
+            "No family or personal relationships with key personnel of the audited entity",
+            "No other circumstances that could reasonably be perceived as impairing independence"
+          ],
+          "disclosures": "[Any matters requiring disclosure, or 'None']",
+          "signedBy": "[Lead Auditor name]",
+          "signatureDate": "[YYYY-MM-DD]"
+        }
+      },
+      "appendixF": {
+        "title": "Entity Management Sign-Off",
+        "guidance": "Management acknowledgment of audit findings and commitment to the Management Action Plan.",
+        "signOff": {
+          "statement": "We acknowledge receipt of this audit report and confirm that the findings have been discussed with the audit team. We accept the findings and have committed to the Management Action Plan as detailed in the accompanying MAP tracker document.",
+          "signatories": [
+            {
+              "name": "[Name]",
+              "title": "[Title - e.g., Chief Executive Officer]",
+              "date": "[YYYY-MM-DD]"
+            },
+            {
+              "name": "[Name]",
+              "title": "[Title - e.g., Chief Information Security Officer]",
+              "date": "[YYYY-MM-DD]"
+            }
+          ],
+          "managementComments": "[Any additional comments from management]"
+        }
+      }
+    }
+  }
+}

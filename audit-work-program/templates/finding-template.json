@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-13",
+    "description": "Audit finding template for NACSA Act 854 CoP compliance audits using the 5 C's framework"
+  },
+  "findingTemplate": {
+    "findingId": "[AUTO: YYYY-NNN]",
+    "auditRef": "[Audit engagement reference]",
+    "date": "[Date finding identified]",
+    "domain": "[Control domain slug]",
+    "controlSlug": "[Affected control slug]",
+    "testId": "[Related test procedure ID]",
+    "severity": "[Critical | High | Medium | Low]",
+    "title": "[Concise finding title - max 100 chars]",
+    "condition": {
+      "description": "[What was found - factual observation]",
+      "guidance": "Describe the current state objectively. Include specific quantities, dates, and system names. Reference evidence examined."
+    },
+    "criteria": {
+      "description": "[What the standard requires]",
+      "guidance": "Cite the specific Act section, CoP requirement, directive provision, or internal policy that establishes the obligation.",
+      "references": {
+        "actSection": "[e.g., s23]",
+        "copRequirement": "[e.g., gov-cop-1-req-3]",
+        "directiveProvision": "[e.g., audit-std-2]",
+        "internalPolicy": "[e.g., entity's Access Control Policy v2.1]"
+      }
+    },
+    "cause": {
+      "description": "[Root cause analysis]",
+      "guidance": "Explain why the gap exists. Common root causes: lack of awareness, resource constraints, process gaps, technology limitations, organizational change."
+    },
+    "consequence": {
+      "description": "[Risk/impact if not remediated]",
+      "guidance": "Describe the potential impact in terms relevant to NCII: national security, essential service disruption, data compromise, regulatory penalties.",
+      "penaltyReference": "[Act 854 penalty provision if applicable]"
+    },
+    "correctiveAction": {
+      "description": "[Recommended remediation]",
+      "guidance": "Provide actionable, specific recommendations. Include both immediate actions and longer-term improvements.",
+      "priority": "[Immediate | Short-term (90 days) | Medium-term (180 days)]",
+      "estimatedEffort": "[Low | Medium | High]"
+    },
+    "managementResponse": {
+      "accepted": "[Yes | No | Partial]",
+      "responsiblePerson": "[Name and title]",
+      "targetDate": "[YYYY-MM-DD]",
+      "actionPlan": "[Management's planned corrective actions]"
+    },
+    "auditorNotes": "[Internal auditor working notes - not included in final report]"
+  },
+  "severityGuidance": {
+    "Critical": {
+      "definition": "Finding poses an immediate and significant risk to the confidentiality, integrity, or availability of NCII systems. May indicate active compromise or imminent threat.",
+      "examples": [
+        "No incident response plan exists for NCII systems",
+        "Privileged access to NCII systems uses shared accounts with no MFA",
+        "Critical NCII systems have unpatched vulnerabilities with known active exploits",
+        "No backups exist for NCII systems or backups are untested for >12 months",
+        "NCII entity has not registered with NACSA despite designation"
+      ],
+      "remediationTimeline": "30 calendar days",
+      "nacsaAction": "Immediate notification to CE; follow-up audit may be directed"
+    },
+    "High": {
+      "definition": "Significant gap in control design or operation that materially weakens the entity's NCII cyber security posture.",
+      "examples": [
+        "Access reviews not conducted for >6 months on NCII systems",
+        "Incident notification procedures exist but have never been tested",
+        "Penetration testing not conducted in the past 12 months",
+        "Risk assessment methodology does not cover all NCII systems",
+        "Board has not been briefed on NCII obligations"
+      ],
+      "remediationTimeline": "90 calendar days",
+      "nacsaAction": "Included in audit report; follow-up audit may be required"
+    },
+    "Medium": {
+      "definition": "Notable gap that should be addressed but does not pose an immediate significant risk to NCII operations.",
+      "examples": [
+        "Security awareness training completion rate below 80%",
+        "Asset inventory exists but not reconciled in >6 months",
+        "Change management process lacks formal security impact assessment step",
+        "Certificate management is manual with some expired certificates found",
+        "Vendor risk assessments conducted but not on a regular schedule"
+      ],
+      "remediationTimeline": "180 calendar days",
+      "nacsaAction": "Included in audit report; tracked in next audit cycle"
+    },
+    "Low": {
+      "definition": "Minor improvement opportunity that would strengthen the entity's compliance posture.",
+      "examples": [
+        "Policy documents lack version control metadata",
+        "Training records maintained in spreadsheets rather than centralized system",
+        "Network diagrams current but missing some recently added segments",
+        "Backup monitoring alerts configured but notification list needs updating",
+        "Configuration baselines documented but not yet automated"
+      ],
+      "remediationTimeline": "Next audit cycle",
+      "nacsaAction": "Noted in audit report as observation"
+    }
+  }
+}

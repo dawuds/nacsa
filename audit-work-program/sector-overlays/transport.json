@@ -1,0 +1,249 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-13",
+    "sectorId": "transport",
+    "sectorName": "Code of Practice for the Transport Sector",
+    "sectorLead": "Ministry of Transport",
+    "copReference": "cop-transport.json",
+    "copStatus": "draft",
+    "sourceType": "constructed-indicative",
+    "description": "Sector-specific audit overlay for Code of Practice for the Transport Sector NCII entities"
+  },
+  "sectorContext": {
+    "regulatoryEnvironment": "Ministry of Transport (MOT), Civil Aviation Authority of Malaysia (CAAM), Maritime Institute of Malaysia. Transport safety systems are safety-critical.",
+    "criticalServices": [
+      "Air traffic management",
+      "Port management systems",
+      "Railway signalling and control",
+      "Maritime navigation systems",
+      "Traffic management systems"
+    ],
+    "typicalNCIISystems": [
+      "Air traffic control systems",
+      "Airport operations systems",
+      "Port community systems",
+      "Railway signalling systems",
+      "Vessel traffic services"
+    ],
+    "sectorSpecificThreats": [
+      "GPS spoofing/jamming",
+      "Attacks on signalling systems",
+      "Port logistics disruption",
+      "Aviation system compromise",
+      "Maritime navigation interference"
+    ]
+  },
+  "copDomains": [
+    {
+      "domainId": "tr-cop-1",
+      "domainName": "Governance and Oversight",
+      "description": "Governance structures for cyber security of transport NCII including aviation, maritime, rail, and road infrastructure",
+      "requirements": [
+        {
+          "requirementId": "tr-cop-1.1",
+          "requirement": "The NCII entity shall establish a dedicated cyber security governance function with authority over all operational technology (OT) and information technology (IT) systems designated as NCII, headed by a senior officer reporting directly to the chief executive or board.",
+          "rationale": "Transport NCII spans both IT and OT environments. A unified governance function prevents fragmented security management between traditionally separate IT and operational domains.",
+          "relatedActSection": "s18",
+          "relatedFramework": "ICAO Annex 17; IMO MSC-FAL.1/Circ.3"
+        },
+        {
+          "requirementId": "tr-cop-1.2",
+          "requirement": "The NCII entity shall develop and maintain a sector-specific cyber security strategy that addresses the convergence of safety and security risks in transport systems, ensuring that cyber security controls do not compromise physical safety functions.",
+          "rationale": "Transport systems have a unique dual mandate of safety and security. Cyber security measures must be designed to enhance, not degrade, safety-critical functions that protect passengers and the public.",
+          "relatedActSection": "s18",
+          "relatedFramework": "ICAO Doc 8973; IEC 62443; ISO 27001 A.5"
+        },
+        {
+          "requirementId": "tr-cop-1.3",
+          "requirement": "The NCII entity shall designate a qualified individual responsible for OT security with demonstrated experience in industrial control systems, SCADA, or transport-specific automation systems, separate from the IT security function.",
+          "rationale": "Transport OT systems such as signalling, air traffic management, and port control systems require specialised security expertise distinct from conventional IT security. Dedicated OT security leadership ensures these critical systems receive appropriate attention.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 62443-2-1; NIST SP 800-82"
+        }
+      ]
+    },
+    {
+      "domainId": "tr-cop-2",
+      "domainName": "Asset Management and OT/IT Convergence",
+      "description": "Identification and management of NCII assets across converged operational technology and information technology environments",
+      "requirements": [
+        {
+          "requirementId": "tr-cop-2.1",
+          "requirement": "The NCII entity shall maintain a unified asset inventory covering both IT and OT components of transport NCII, including programmable logic controllers (PLCs), SCADA systems, signalling equipment, radar systems, vessel traffic services, and supporting IT infrastructure.",
+          "rationale": "Transport NCII includes legacy OT systems that may not appear in conventional IT asset management tools. A unified inventory ensures complete visibility across all infrastructure that supports safe transport operations.",
+          "relatedActSection": "s16",
+          "relatedFramework": "IEC 62443-2-1; ISO 27001 A.8"
+        },
+        {
+          "requirementId": "tr-cop-2.2",
+          "requirement": "The NCII entity shall classify transport NCII systems using a criticality matrix that considers both cyber security impact and safety consequence, with systems affecting life safety or national transport capacity receiving the highest classification.",
+          "rationale": "Traditional information security classification does not account for safety consequences of transport system failures. A combined criticality matrix ensures protective measures are calibrated to both security and safety risks.",
+          "relatedActSection": "s16",
+          "relatedFramework": "IEC 62443-3-2; ICAO Cybersecurity Strategy"
+        },
+        {
+          "requirementId": "tr-cop-2.3",
+          "requirement": "All changes to NCII OT systems shall follow a formal change management process that includes cyber security impact assessment and safety validation testing prior to deployment in production environments.",
+          "rationale": "Uncontrolled changes to transport OT systems can introduce vulnerabilities or disrupt safety functions. Structured change management with security and safety validation protects against both intentional and accidental compromise.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 62443-2-4; ISO 27001 A.12.1; ITIL Change Management"
+        }
+      ]
+    },
+    {
+      "domainId": "tr-cop-3",
+      "domainName": "Network Security and OT Segmentation",
+      "description": "Network architecture controls protecting transport NCII with emphasis on isolation of safety-critical operational technology",
+      "requirements": [
+        {
+          "requirementId": "tr-cop-3.1",
+          "requirement": "Transport NCII networks shall implement a defence-in-depth architecture with demilitarised zones (DMZs) separating corporate IT, operational IT, and safety-critical OT networks, in accordance with the Purdue Enterprise Reference Architecture or equivalent model.",
+          "rationale": "Flat network architectures allow attackers to move from compromised corporate systems to safety-critical OT. Layered segmentation based on the Purdue model provides defence-in-depth appropriate for industrial environments.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 62443-3-3; NIST SP 800-82; Purdue Model"
+        },
+        {
+          "requirementId": "tr-cop-3.2",
+          "requirement": "Safety-critical transport OT systems including air traffic control, rail signalling, and vessel traffic management shall be isolated from internet-connected networks with unidirectional security gateways (data diodes) where real-time data export is required.",
+          "rationale": "Safety-critical transport systems must be protected from remote cyber attacks. Unidirectional gateways allow necessary data flows for monitoring while physically preventing inbound network traffic from reaching safety systems.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 62443-3-3; ICAO Doc 9985; EUROCONTROL Cyber Security Guidelines"
+        },
+        {
+          "requirementId": "tr-cop-3.3",
+          "requirement": "Remote access to transport NCII OT systems shall be disabled by default and enabled only through a documented, time-limited, and multi-authorised procedure, with all sessions monitored in real time by the security operations function.",
+          "rationale": "Remote access to transport OT represents a high-risk attack vector. Default-off with multi-authorisation and real-time monitoring ensures that remote maintenance does not create persistent vulnerabilities in safety-critical systems.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 62443-3-3; NIST SP 800-82 Section 5.2"
+        }
+      ]
+    },
+    {
+      "domainId": "tr-cop-4",
+      "domainName": "Incident Response and Safety Coordination",
+      "description": "Cyber incident detection and response with integrated coordination between cyber security and transport safety functions",
+      "requirements": [
+        {
+          "requirementId": "tr-cop-4.1",
+          "requirement": "The NCII entity shall establish incident response procedures that integrate cyber security response with transport safety management, ensuring that safety-critical decisions during a cyber incident are made by qualified transport safety personnel with real-time input from cyber security responders.",
+          "rationale": "During a cyber attack on transport NCII, safety and security responses must be coordinated. Cyber security actions such as system isolation must be balanced against potential safety impacts like loss of signalling or communications.",
+          "relatedActSection": "s26",
+          "relatedFramework": "IEC 62443-4-2; ICAO Annex 17; ISO 27035"
+        },
+        {
+          "requirementId": "tr-cop-4.2",
+          "requirement": "Cyber security incidents affecting transport NCII shall be reported to NACSA and the Ministry of Transport within six hours of detection, with immediate notification required if the incident has potential to cause physical harm, transport service disruption exceeding one hour, or cascading effects on other NCII sectors.",
+          "rationale": "Transport disruptions can have immediate physical safety consequences and cascading economic impacts. Accelerated reporting for high-impact incidents enables rapid national coordination and public safety response.",
+          "relatedActSection": "s26",
+          "relatedFramework": "IMO MSC-FAL.1/Circ.3; ICAO AVSEC Reporting; ISO 27035"
+        },
+        {
+          "requirementId": "tr-cop-4.3",
+          "requirement": "The NCII entity shall maintain pre-defined manual fallback procedures for all safety-critical transport functions, enabling continued safe operation during cyber incidents through non-digital means where feasible.",
+          "rationale": "Transport safety cannot be contingent solely on the availability of digital systems. Manual fallback procedures ensure that essential safety functions such as air traffic separation and rail safe-braking can continue during cyber disruptions.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 62443-3-3; ICAO Doc 4444; Rail Safety Standards"
+        }
+      ]
+    },
+    {
+      "domainId": "tr-cop-5",
+      "domainName": "Business Continuity and Transport Resilience",
+      "description": "Ensuring continuity and rapid recovery of transport services dependent on NCII during and after cyber incidents",
+      "requirements": [
+        {
+          "requirementId": "tr-cop-5.1",
+          "requirement": "The NCII entity shall develop transport-specific business continuity plans with defined Recovery Time Objectives: two hours for safety-critical systems, four hours for passenger-facing services, and 24 hours for administrative and back-office NCII systems.",
+          "rationale": "Transport NCII supports a hierarchy of functions from life-safety to administrative. Tiered RTOs ensure that recovery efforts prioritise systems with the greatest impact on public safety and essential mobility.",
+          "relatedActSection": "s18",
+          "relatedFramework": "ISO 22301; ICAO Annex 17; IMO ISPS Code"
+        },
+        {
+          "requirementId": "tr-cop-5.2",
+          "requirement": "The NCII entity shall participate in annual inter-agency transport sector cyber resilience exercises coordinated by the Ministry of Transport and NACSA, testing coordination between transport operators, regulators, emergency services, and other NCII sectors.",
+          "rationale": "Transport disruptions cascade across sectors including supply chains, healthcare, and energy. Cross-sector exercises validate that coordination mechanisms work effectively during events that transcend individual organisational boundaries.",
+          "relatedActSection": "s26",
+          "relatedFramework": "ISO 22301; Arahan MKN No. 20; NACSA Exercise Framework"
+        }
+      ]
+    }
+  ],
+  "additionalTestProcedures": [
+    {
+      "testId": "TRN-S-SECT-01",
+      "objective": "Verify safety-critical transport system isolation from NCII networks",
+      "testType": "ToD",
+      "procedure": "1. Identify safety-critical transport systems. 2. Verify network isolation from general NCII systems. 3. Review air-gap or unidirectional controls. 4. Assess physical security of safety system infrastructure.",
+      "copDomainRef": "trn-cop-4",
+      "evidenceRequired": [
+        "Safety system network architecture",
+        "Isolation verification evidence",
+        "Physical security assessment"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    },
+    {
+      "testId": "TRN-S-SECT-02",
+      "objective": "Verify transport-specific incident response coordination",
+      "testType": "ToE",
+      "procedure": "1. Review IR plan for transport-specific scenarios. 2. Verify coordination procedures with MOT, CAAM, or maritime authorities. 3. Test multi-agency notification procedures. 4. Review tabletop exercises covering transport disruption scenarios.",
+      "copDomainRef": "trn-cop-5",
+      "evidenceRequired": [
+        "Transport-specific IR playbooks",
+        "Multi-agency coordination procedures",
+        "Exercise reports"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    },
+    {
+      "testId": "TRN-S-SECT-03",
+      "objective": "Verify GPS and navigation system integrity controls",
+      "testType": "ToD",
+      "procedure": "1. Identify GPS-dependent transport systems. 2. Review GPS spoofing/jamming detection capabilities. 3. Verify backup navigation procedures. 4. Assess anti-spoofing controls.",
+      "copDomainRef": "trn-cop-4",
+      "evidenceRequired": [
+        "GPS dependency analysis",
+        "Anti-spoofing controls documentation",
+        "Backup navigation procedures"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    }
+  ],
+  "modifiedBaselineProcedures": [
+    {
+      "baselineTestId": "INC-ToE-01",
+      "modification": "IR plan must include transport safety authority coordination (MOT, CAAM, maritime)",
+      "reason": "Transport CoP requires multi-agency coordination for incidents affecting public safety"
+    },
+    {
+      "baselineTestId": "BCD-ToE-01",
+      "modification": "BC plans must address passenger/public safety during transport NCII outages",
+      "reason": "Transport CoP prioritizes public safety in continuity planning"
+    }
+  ],
+  "sectorSpecificEvidence": [
+    {
+      "documentName": "Safety-Critical System Isolation Assessment",
+      "description": "Assessment of isolation between safety-critical transport systems and NCII networks",
+      "mandatory": true
+    },
+    {
+      "documentName": "Multi-Agency Coordination Procedures",
+      "description": "Documented procedures for coordinating with MOT, CAAM, and maritime authorities during incidents",
+      "mandatory": true
+    }
+  ]
+}

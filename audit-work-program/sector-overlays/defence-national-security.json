@@ -1,0 +1,259 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-13",
+    "sectorId": "defence-and-national-security",
+    "sectorName": "Code of Practice for the Defence and National Security Sector",
+    "sectorLead": "Ministry of Defence",
+    "copReference": "cop-defence-national-security.json",
+    "copStatus": "draft",
+    "sourceType": "constructed-indicative",
+    "description": "Sector-specific audit overlay for Code of Practice for the Defence and National Security Sector NCII entities"
+  },
+  "sectorContext": {
+    "regulatoryEnvironment": "MINDEF directives, Official Secrets Act 1972, Defence procurement security requirements. Highest classification levels for national security systems.",
+    "criticalServices": [
+      "Military command and control",
+      "Defence intelligence systems",
+      "Military communications",
+      "Weapons systems networks",
+      "National security databases"
+    ],
+    "typicalNCIISystems": [
+      "Military C4I systems",
+      "Defence secure networks",
+      "Intelligence databases",
+      "Military satellite communications",
+      "Defence logistics systems"
+    ],
+    "sectorSpecificThreats": [
+      "State-sponsored cyber espionage",
+      "Advanced persistent threats targeting defence secrets",
+      "Supply chain compromise of defence systems",
+      "Signals intelligence collection",
+      "Insider threats with access to classified data"
+    ]
+  },
+  "copDomains": [
+    {
+      "domainId": "dns-cop-1",
+      "domainName": "Governance, Accountability, and Security Clearance",
+      "description": "Governance structures incorporating national security classification requirements and personnel vetting for NCII cyber security roles",
+      "requirements": [
+        {
+          "requirementId": "dns-cop-1.1",
+          "requirement": "The NCII entity shall establish a Cyber Defence Governance Board chaired by a senior officer of flag rank or equivalent civilian grade, with representation from operations, intelligence, communications, and security functions, meeting at minimum monthly or immediately upon elevated threat conditions.",
+          "rationale": "Defence NCII protects national sovereignty and military capability. Governance at flag rank ensures that cyber security decisions are integrated with operational planning and receive the command authority necessary for rapid action.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Arahan Keselamatan (Semakan dan Pindaan 2017); NATO Cyber Defence Policy"
+        },
+        {
+          "requirementId": "dns-cop-1.2",
+          "requirement": "All personnel with administrative or operational access to defence NCII shall hold valid security clearances at the level commensurate with the classification of the systems they access, with clearances reviewed annually and revoked immediately upon change of assignment, separation, or adverse security findings.",
+          "rationale": "Defence NCII contains information critical to national security. Personnel vetting through the national security clearance process provides assurance that individuals with access are trustworthy and not subject to coercion or compromise.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Arahan Keselamatan Chapter IV; Official Secrets Act 1972"
+        },
+        {
+          "requirementId": "dns-cop-1.3",
+          "requirement": "The NCII entity shall implement a comprehensive insider threat programme integrating technical monitoring, behavioural analytics, and counterintelligence indicators to detect potential compromise of defence NCII by trusted insiders.",
+          "rationale": "Insider threats represent a particularly acute risk to defence NCII given the value of military information to foreign intelligence services. A multi-layered programme combining technical and human indicators provides the best detection capability.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Arahan Keselamatan Chapter III; NIST SP 800-53 PM-12"
+        }
+      ]
+    },
+    {
+      "domainId": "dns-cop-2",
+      "domainName": "Classified Asset Protection and Handling",
+      "description": "Protection of classified NCII assets in accordance with national security classification and handling requirements",
+      "requirements": [
+        {
+          "requirementId": "dns-cop-2.1",
+          "requirement": "Defence NCII assets shall be classified, marked, and handled in accordance with the national security classification scheme under the Official Secrets Act 1972, with cyber security controls mapped to each classification level and no downward adjustment of controls without written approval from the classification authority.",
+          "rationale": "Defence NCII inherently contains or processes nationally classified information. Alignment of cyber security controls with official classification levels ensures consistent protection and legal compliance.",
+          "relatedActSection": "s16",
+          "relatedFramework": "Official Secrets Act 1972; Arahan Keselamatan Chapter V"
+        },
+        {
+          "requirementId": "dns-cop-2.2",
+          "requirement": "Processing of RAHSIA BESAR (Top Secret) and RAHSIA (Secret) information on NCII systems shall occur only on networks accredited for the respective classification level, with air-gapped isolation from lower-classification and unclassified networks.",
+          "rationale": "The highest classification levels of defence information require physical network isolation to prevent any possibility of data exfiltration through network-based attacks. Air-gapping is the baseline control for top-tier classified NCII.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Arahan Keselamatan Chapter V; Common Criteria EAL4+"
+        },
+        {
+          "requirementId": "dns-cop-2.3",
+          "requirement": "All removable media used with defence NCII systems shall be inventoried, encrypted with government-approved algorithms, and subject to scanning at authorised media transfer stations before connection to classified networks.",
+          "rationale": "Removable media has been a demonstrated vector for compromise of air-gapped military networks. Strict media controls prevent introduction of malware and unauthorised data extraction from classified NCII systems.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Arahan Keselamatan; NIST SP 800-53 MP-7; IEC 62443-3-3"
+        }
+      ]
+    },
+    {
+      "domainId": "dns-cop-3",
+      "domainName": "Cyber Defence Operations",
+      "description": "Active and passive cyber defence measures for protection of defence NCII against advanced persistent threats",
+      "requirements": [
+        {
+          "requirementId": "dns-cop-3.1",
+          "requirement": "The NCII entity shall operate or have access to a dedicated Defence Cyber Operations Centre (DCOC) providing 24/7 monitoring, threat hunting, and incident response capability for all defence NCII, staffed by security-cleared personnel with military cyber operations training.",
+          "rationale": "Defence NCII is subject to persistent targeting by nation-state actors. Dedicated cyber operations capability with cleared military personnel ensures that detection and response activities maintain the security standards required for classified environments.",
+          "relatedActSection": "s26",
+          "relatedFramework": "Malaysian Armed Forces Cyber Command; NATO CCDCOE"
+        },
+        {
+          "requirementId": "dns-cop-3.2",
+          "requirement": "The NCII entity shall implement continuous threat hunting on defence NCII networks, proactively searching for indicators of advanced persistent threats using classified threat intelligence shared through national intelligence channels and allied partner programmes.",
+          "rationale": "Passive monitoring alone is insufficient against sophisticated nation-state adversaries. Active threat hunting using classified intelligence sources provides the proactive detection capability needed to identify stealthy intrusions in defence NCII.",
+          "relatedActSection": "s18",
+          "relatedFramework": "NIST SP 800-53 SI-4; MITRE ATT&CK for Defence"
+        },
+        {
+          "requirementId": "dns-cop-3.3",
+          "requirement": "Defence NCII systems shall implement application whitelisting on all endpoints and servers, permitting only authorised and integrity-verified software to execute, with deviations requiring approval from the DCOC.",
+          "rationale": "Application whitelisting provides a strong preventive control against malware execution on defence NCII. In military environments where system configurations are more standardised, whitelisting is feasible and significantly reduces the attack surface.",
+          "relatedActSection": "s18",
+          "relatedFramework": "NIST SP 800-53 CM-7; ASD Essential Eight"
+        }
+      ]
+    },
+    {
+      "domainId": "dns-cop-4",
+      "domainName": "Cryptographic Protection and Communications Security",
+      "description": "Use of approved cryptographic mechanisms to protect defence NCII data and communications",
+      "requirements": [
+        {
+          "requirementId": "dns-cop-4.1",
+          "requirement": "All data at rest and in transit on defence NCII systems shall be protected using cryptographic mechanisms approved by the national cryptographic authority, with key management procedures that ensure cryptographic keys are protected at or above the classification level of the data they protect.",
+          "rationale": "Defence information requires government-approved cryptography to ensure protection against national-level adversaries with advanced cryptanalytic capabilities. Commercial-grade encryption may not meet the standard required for military NCII.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Arahan Keselamatan; NIST SP 800-53 SC-13; ISO 27001 A.10"
+        },
+        {
+          "requirementId": "dns-cop-4.2",
+          "requirement": "The NCII entity shall implement a cryptographic key lifecycle management system with hardware-backed key storage, ensuring that key generation, distribution, rotation, and destruction procedures are documented, auditable, and performed only by authorised cryptographic custodians.",
+          "rationale": "Cryptographic keys protecting defence NCII are the ultimate trust anchor for data confidentiality and integrity. Rigorous lifecycle management prevents key compromise that would render all protected communications vulnerable.",
+          "relatedActSection": "s18",
+          "relatedFramework": "NIST SP 800-57; ISO 11568; FIPS 140-3"
+        }
+      ]
+    },
+    {
+      "domainId": "dns-cop-5",
+      "domainName": "Incident Response and National Security Coordination",
+      "description": "Response to cyber incidents on defence NCII with coordination across national security agencies",
+      "requirements": [
+        {
+          "requirementId": "dns-cop-5.1",
+          "requirement": "Cyber security incidents on defence NCII shall be reported to the Defence Cyber Operations Centre immediately upon detection, with escalation to NACSA and the National Security Council within two hours if the incident involves suspected nation-state activity, data exfiltration of classified material, or compromise of weapons systems or command and control infrastructure.",
+          "rationale": "Attacks on defence NCII may constitute acts of cyber warfare or espionage requiring national-level response. Immediate internal reporting with rapid escalation ensures that national security decision-makers are informed of threats with strategic implications.",
+          "relatedActSection": "s26",
+          "relatedFramework": "Arahan MKN; Malaysian Armed Forces Standing Orders"
+        },
+        {
+          "requirementId": "dns-cop-5.2",
+          "requirement": "Incident response and forensic investigation on defence NCII shall be conducted by security-cleared personnel using accredited tools and procedures, with all forensic evidence handled in accordance with chain-of-custody requirements and national security classification protocols.",
+          "rationale": "Forensic investigation of defence NCII may uncover classified information and intelligence about adversary capabilities. Security-cleared investigators using accredited procedures ensure that evidence integrity and national security are maintained throughout the investigation.",
+          "relatedActSection": "s26",
+          "relatedFramework": "ISO 27037; Official Secrets Act 1972; NIST SP 800-86"
+        },
+        {
+          "requirementId": "dns-cop-5.3",
+          "requirement": "The NCII entity shall maintain classified contingency plans for degraded operations and communications fallback in the event of sustained cyber attack on defence NCII, exercised at least semi-annually in coordination with the Malaysian Armed Forces Cyber Command.",
+          "rationale": "Defence operations must continue even under sustained cyber attack. Classified contingency plans with regular exercises ensure that military command and control can be maintained through alternative means if primary NCII systems are compromised.",
+          "relatedActSection": "s18",
+          "relatedFramework": "ISO 22301; NATO Crisis Response Planning; Arahan MKN No. 24"
+        }
+      ]
+    }
+  ],
+  "additionalTestProcedures": [
+    {
+      "testId": "DEF-S-SECT-01",
+      "objective": "Verify security clearance integration with NCII access controls",
+      "testType": "ToE",
+      "procedure": "1. Verify security clearance verification integrated with IAM. 2. Test that NCII access requires valid clearance. 3. Verify clearance expiry triggers access revocation. 4. Review need-to-know enforcement.",
+      "copDomainRef": "def-cop-2",
+      "evidenceRequired": [
+        "Clearance-IAM integration records",
+        "Access revocation evidence",
+        "Need-to-know procedures"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    },
+    {
+      "testId": "DEF-S-SECT-02",
+      "objective": "Verify classified data handling controls for defence NCII",
+      "testType": "ToE",
+      "procedure": "1. Identify classified data within NCII scope. 2. Verify encryption meets government classification standards. 3. Test classified data transmission controls. 4. Verify secure destruction procedures.",
+      "copDomainRef": "def-cop-3",
+      "evidenceRequired": [
+        "Classification register",
+        "Encryption configuration",
+        "Destruction certificates"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    },
+    {
+      "testId": "DEF-S-SECT-03",
+      "objective": "Verify supply chain security for defence NCII components",
+      "testType": "ToD",
+      "procedure": "1. Review defence procurement security requirements. 2. Verify vendor security clearance requirements. 3. Test supply chain integrity verification procedures. 4. Review anti-tampering controls for delivered components.",
+      "copDomainRef": "def-cop-4",
+      "evidenceRequired": [
+        "Defence procurement security policy",
+        "Vendor clearance records",
+        "Supply chain integrity procedures"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    }
+  ],
+  "modifiedBaselineProcedures": [
+    {
+      "baselineTestId": "ACC-ToE-01",
+      "modification": "Access controls must integrate with national security clearance system",
+      "reason": "Defence CoP requires clearance-based access control for NCII systems"
+    },
+    {
+      "baselineTestId": "CRY-ToE-01",
+      "modification": "Encryption must meet government classification standards (not just commercial)",
+      "reason": "Defence CoP requires government-approved cryptographic standards for classified data"
+    },
+    {
+      "baselineTestId": "SUP-ToD-01",
+      "modification": "Vendor risk assessment must include security clearance verification and anti-tampering",
+      "reason": "Defence CoP requires enhanced supply chain security for defence systems"
+    }
+  ],
+  "sectorSpecificEvidence": [
+    {
+      "documentName": "Security Clearance Register for NCII Personnel",
+      "description": "Register of security clearances for all personnel with access to defence NCII systems",
+      "mandatory": true
+    },
+    {
+      "documentName": "Defence Procurement Security Assessment",
+      "description": "Security assessment of defence NCII system supply chain",
+      "mandatory": true
+    },
+    {
+      "documentName": "Classified Data Handling Compliance Report",
+      "description": "Assessment of compliance with Official Secrets Act for NCII data",
+      "mandatory": true
+    }
+  ]
+}

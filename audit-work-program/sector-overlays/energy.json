@@ -1,0 +1,267 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-13",
+    "sectorId": "energy",
+    "sectorName": "Code of Practice for the Energy Sector",
+    "sectorLead": "Energy Commission (Suruhanjaya Tenaga)",
+    "copReference": "cop-energy.json",
+    "copStatus": "template_issued",
+    "sourceType": "constructed-indicative",
+    "description": "Sector-specific audit overlay for Code of Practice for the Energy Sector NCII entities"
+  },
+  "sectorContext": {
+    "regulatoryEnvironment": "Energy Commission (Suruhanjaya Tenaga) regulatory framework, Electricity Supply Act 1990, Gas Supply Act 1993. OT/SCADA security requirements for power generation and distribution.",
+    "criticalServices": [
+      "Power generation",
+      "Electricity transmission and distribution",
+      "Gas distribution networks",
+      "Energy trading systems",
+      "Smart grid infrastructure"
+    ],
+    "typicalNCIISystems": [
+      "SCADA/ICS for power generation",
+      "Energy management systems (EMS)",
+      "Distribution management systems (DMS)",
+      "Smart meter infrastructure (AMI)",
+      "Gas SCADA networks"
+    ],
+    "sectorSpecificThreats": [
+      "ICS/SCADA-targeted attacks",
+      "Nation-state attacks on power grid",
+      "Ransomware targeting OT networks",
+      "Physical-cyber attacks on substations",
+      "Supply chain compromise of OT components"
+    ]
+  },
+  "copDomains": [
+    {
+      "domainId": "en-cop-1",
+      "domainName": "Governance and Regulatory Integration",
+      "description": "Cyber security governance for energy NCII operators integrated with Energy Commission regulatory requirements and grid operational responsibilities",
+      "requirements": [
+        {
+          "requirementId": "en-cop-1.1",
+          "requirement": "The NCII entity shall establish a dedicated Energy Cyber Security Committee with representation from generation, transmission, distribution, and grid operations functions, chaired by a senior executive with authority to direct security investments and operational changes across NCII systems.",
+          "rationale": "Energy NCII spans the entire electricity value chain from generation through transmission to distribution. Cross-functional governance ensures that cyber security decisions account for interdependencies across the energy supply chain.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Electricity Supply Act 1990; Energy Commission Grid Code; ISO 27001 A.5"
+        },
+        {
+          "requirementId": "en-cop-1.2",
+          "requirement": "The NCII entity shall integrate cyber security risk management with existing safety management systems required under the Electricity Supply Act, ensuring that cyber security controls complement and do not conflict with electrical safety requirements.",
+          "rationale": "Energy systems operate under strict electrical safety standards. Cyber security measures must be integrated with safety management to avoid unintended consequences where security controls could interfere with safety functions or vice versa.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Electricity Supply Act 1990 s20; IEC 62443-2-1; ISO 27001 A.5"
+        },
+        {
+          "requirementId": "en-cop-1.3",
+          "requirement": "The NCII entity shall submit an annual cyber security compliance report to the Energy Commission and NACSA, including the results of risk assessments, audit findings, incident statistics, and planned improvements for the following period.",
+          "rationale": "Regular reporting to both the sector regulator and NACSA provides dual oversight and enables identification of systemic weaknesses across the energy sector that may require coordinated industry or regulatory response.",
+          "relatedActSection": "s20",
+          "relatedFramework": "Energy Commission Licence Conditions; ISO 27001 Clause 9.3"
+        }
+      ]
+    },
+    {
+      "domainId": "en-cop-2",
+      "domainName": "ICS/SCADA and Grid Control System Security",
+      "description": "Protection of industrial control systems, energy management systems, and grid control infrastructure designated as NCII",
+      "requirements": [
+        {
+          "requirementId": "en-cop-2.1",
+          "requirement": "Energy Management Systems (EMS) and SCADA systems controlling generation dispatch, transmission switching, and load management shall be deployed on dedicated networks physically or logically segregated from corporate IT, with all inter-zone communications traversing application-layer firewalls with protocol-specific inspection for IEC 61850, DNP3, and Modbus.",
+          "rationale": "Grid control systems use specialised industrial protocols that general-purpose IT firewalls cannot properly inspect. Protocol-aware firewalls within a segmented architecture ensure that only legitimate control commands reach energy NCII systems.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 62443-3-3; NERC CIP-005; NIST SP 800-82"
+        },
+        {
+          "requirementId": "en-cop-2.2",
+          "requirement": "All access to energy NCII control systems shall require multi-factor authentication, with operator workstations hardened to allow only authorised applications. Shared accounts are prohibited; all operator actions shall be attributable to individual authenticated users.",
+          "rationale": "Energy control room operators have the ability to affect grid stability through SCADA commands. Individual authentication and attribution ensures accountability for all actions on grid control systems and enables forensic analysis of any anomalous operations.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 62443-3-3; NERC CIP-007; ISO 27001 A.9"
+        },
+        {
+          "requirementId": "en-cop-2.3",
+          "requirement": "The NCII entity shall implement continuous monitoring of ICS network traffic for anomalous commands, protocol violations, and communication patterns inconsistent with normal grid operations, with alerts correlated against the current grid operating state.",
+          "rationale": "Sophisticated attacks on energy NCII may involve subtle manipulation of control commands rather than obvious disruptions. Context-aware monitoring that understands normal grid operations can detect anomalies that generic security tools would miss.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 62443-3-3; NERC CIP-007; NIST SP 800-82"
+        }
+      ]
+    },
+    {
+      "domainId": "en-cop-3",
+      "domainName": "Generation and Transmission Asset Protection",
+      "description": "Cyber security requirements specific to power generation facilities and high-voltage transmission NCII",
+      "requirements": [
+        {
+          "requirementId": "en-cop-3.1",
+          "requirement": "Power generation NCII including turbine control systems, distributed control systems (DCS), and safety instrumented systems (SIS) shall implement defence-in-depth with safety instrumented systems on physically separate networks from process control, with no direct or indirect path from external networks to SIS.",
+          "rationale": "Safety instrumented systems in power plants are the last line of defence against hazardous conditions. Physical isolation of SIS from all other networks ensures that cyber attacks cannot disable safety protections that prevent equipment damage or environmental release.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 61511; IEC 62443-3-3; NERC CIP-002"
+        },
+        {
+          "requirementId": "en-cop-3.2",
+          "requirement": "Transmission substations designated as NCII shall implement electronic security perimeters around all cyber assets including protective relays, intelligent electronic devices (IEDs), and communications equipment, with electronic access controlled and monitored by the central energy SOC.",
+          "rationale": "Transmission substations are geographically distributed and often unmanned. Electronic security perimeters with centralised monitoring ensure that cyber access to substation NCII devices is controlled and visible even at remote sites.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 62351; NERC CIP-005; Energy Commission Transmission Standards"
+        },
+        {
+          "requirementId": "en-cop-3.3",
+          "requirement": "The NCII entity shall conduct vulnerability assessments of generation and transmission NCII systems at least annually, using assessment methodologies approved for ICS environments that avoid techniques capable of disrupting operational systems, with findings remediated according to risk-prioritised timelines.",
+          "rationale": "Standard IT vulnerability scanning can crash ICS devices and disrupt energy operations. ICS-safe assessment methodologies ensure that vulnerability identification does not itself become a cause of grid instability or equipment damage.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 62443-2-4; NERC CIP-010; NIST SP 800-82"
+        }
+      ]
+    },
+    {
+      "domainId": "en-cop-4",
+      "domainName": "Incident Response and Grid Stability",
+      "description": "Cyber incident response with priority on maintaining grid stability and preventing cascading power system failures",
+      "requirements": [
+        {
+          "requirementId": "en-cop-4.1",
+          "requirement": "The NCII entity shall establish a Cyber Security Incident Response Team with members qualified in both cyber security and power system operations, capable of making real-time decisions that balance incident containment with grid stability requirements.",
+          "rationale": "Cyber incident response in energy NCII requires understanding of power system dynamics. Isolating a compromised SCADA system may trigger load imbalances or cascading failures if not coordinated with grid operations.",
+          "relatedActSection": "s26",
+          "relatedFramework": "Energy Commission Grid Code; IEC 62443-2-1; ISO 27035"
+        },
+        {
+          "requirementId": "en-cop-4.2",
+          "requirement": "Cyber security incidents affecting energy NCII shall be reported to NACSA and the Energy Commission within two hours of detection, with immediate notification required for incidents that impact generation capacity exceeding 100MW, transmission system stability, or load shedding capability.",
+          "rationale": "Energy NCII incidents can cascade rapidly to affect national grid stability and all electricity-dependent sectors. Rapid reporting enables coordination between the national grid operator, NACSA, and the Energy Commission to prevent systemic power failures.",
+          "relatedActSection": "s26",
+          "relatedFramework": "Energy Commission Incident Reporting; Grid System Operator Procedures; ISO 27035"
+        },
+        {
+          "requirementId": "en-cop-4.3",
+          "requirement": "The NCII entity shall participate in annual sector-wide cyber resilience exercises coordinated by the Energy Commission, NACSA, and the Grid System Operator, simulating coordinated cyber attacks on multiple energy NCII operators with cascading grid impacts.",
+          "rationale": "The interconnected nature of the energy grid means that attacks on one operator can cascade to others. Sector-wide exercises test the collective ability to maintain grid stability during coordinated cyber attacks on multiple NCII entities.",
+          "relatedActSection": "s26",
+          "relatedFramework": "Energy Commission Emergency Response Framework; NERC GridEx; ISO 22301"
+        }
+      ]
+    },
+    {
+      "domainId": "en-cop-5",
+      "domainName": "Business Continuity and Grid Resilience",
+      "description": "Ensuring continuity of power generation, transmission, and distribution during cyber disruptions to NCII",
+      "requirements": [
+        {
+          "requirementId": "en-cop-5.1",
+          "requirement": "The NCII entity shall maintain the capability to operate generation and transmission systems in degraded mode without SCADA control for a minimum of four hours, with operators trained and certified in manual control procedures tested through quarterly drills.",
+          "rationale": "Loss of SCADA control does not mean loss of the physical power system. Manual control capability ensures that generation and transmission can continue operating safely during extended cyber disruptions, preventing unnecessary load shedding.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Energy Commission Grid Code; ISO 22301; NERC EOP Standards"
+        },
+        {
+          "requirementId": "en-cop-5.2",
+          "requirement": "Recovery Time Objectives for energy NCII shall not exceed one hour for grid control centre EMS/SCADA, two hours for generation dispatch systems, four hours for transmission substation remote monitoring, and eight hours for distribution management systems.",
+          "rationale": "Grid control centre systems are the highest priority for recovery as they provide national visibility and control of the power system. Tiered RTOs ensure recovery efforts focus on systems with the greatest impact on grid stability.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Energy Commission Performance Standards; ISO 22301 Clause 8.3; NERC EOP-005"
+        },
+        {
+          "requirementId": "en-cop-5.3",
+          "requirement": "The NCII entity shall maintain a backup grid control centre at a geographically separate location capable of assuming full EMS/SCADA functions within the defined RTO, with independent power supply, communications, and NCII system infrastructure.",
+          "rationale": "A single control centre represents a single point of failure for grid management. A geographically separate backup ensures that grid control can continue even if the primary control centre is physically or digitally compromised.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Energy Commission Grid Code; ISO 22301; NERC EOP-008"
+        }
+      ]
+    }
+  ],
+  "additionalTestProcedures": [
+    {
+      "testId": "ENR-S-SECT-01",
+      "objective": "Verify IT/OT segmentation for energy NCII systems",
+      "testType": "ToD",
+      "procedure": "1. Obtain network diagrams showing IT and OT boundaries. 2. Verify DMZ between IT and OT networks. 3. Test firewall rules restricting IT-OT traffic. 4. Review data diode or unidirectional gateway deployment.",
+      "copDomainRef": "enr-cop-4",
+      "evidenceRequired": [
+        "IT/OT network diagrams",
+        "Firewall rule sets",
+        "DMZ architecture documentation"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    },
+    {
+      "testId": "ENR-S-SECT-02",
+      "objective": "Verify SCADA/ICS-specific security controls",
+      "testType": "ToE",
+      "procedure": "1. Review ICS security policy. 2. Verify ICS-specific access controls (no default passwords, role-based). 3. Test ICS patch management process. 4. Verify ICS-specific monitoring and anomaly detection.",
+      "copDomainRef": "enr-cop-4",
+      "evidenceRequired": [
+        "ICS security policy",
+        "ICS access control configuration",
+        "ICS patch records",
+        "OT monitoring logs"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    },
+    {
+      "testId": "ENR-S-SECT-03",
+      "objective": "Verify safety system independence from NCII cyber systems",
+      "testType": "ToD",
+      "procedure": "1. Identify safety instrumented systems (SIS). 2. Verify SIS independence from NCII control systems. 3. Review safety system network isolation. 4. Verify SIS cannot be affected by cyber incidents on NCII systems.",
+      "copDomainRef": "enr-cop-6",
+      "evidenceRequired": [
+        "Safety system architecture",
+        "SIS independence assessment",
+        "Safety integrity level documentation"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    }
+  ],
+  "modifiedBaselineProcedures": [
+    {
+      "baselineTestId": "NET-ToD-01",
+      "modification": "Must include IT/OT segmentation assessment with DMZ verification and data diode review",
+      "reason": "Energy CoP mandates strict IT/OT separation for SCADA/ICS environments"
+    },
+    {
+      "baselineTestId": "CHG-ToE-01",
+      "modification": "Change management must include ICS-specific change procedures with safety impact assessment",
+      "reason": "Energy CoP requires OT-aware change management to prevent safety incidents"
+    },
+    {
+      "baselineTestId": "VUL-ToE-01",
+      "modification": "Vulnerability scanning must use ICS-safe scanning methods with vendor coordination",
+      "reason": "Standard vulnerability scanning can disrupt ICS/SCADA systems; energy CoP requires ICS-safe approaches"
+    }
+  ],
+  "sectorSpecificEvidence": [
+    {
+      "documentName": "IT/OT Segmentation Assessment",
+      "description": "Assessment of network segmentation between IT and OT/SCADA environments",
+      "mandatory": true
+    },
+    {
+      "documentName": "ICS/SCADA Security Assessment",
+      "description": "Security assessment specific to industrial control systems in energy infrastructure",
+      "mandatory": true
+    },
+    {
+      "documentName": "Safety System Independence Verification",
+      "description": "Verification that safety instrumented systems are independent from NCII cyber systems",
+      "mandatory": true
+    }
+  ]
+}

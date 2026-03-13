@@ -1,0 +1,221 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-13",
+    "sectorId": "trade-industry-and-economy",
+    "sectorName": "Code of Practice for the Trade, Industry and Economy Sector",
+    "sectorLead": "Ministry of Investment, Trade and Industry (MITI)",
+    "copReference": "cop-trade-industry-economy.json",
+    "copStatus": "indicative",
+    "sourceType": "constructed-indicative",
+    "description": "Sector-specific audit overlay for Code of Practice for the Trade, Industry and Economy Sector NCII entities"
+  },
+  "sectorContext": {
+    "regulatoryEnvironment": "Ministry of Investment, Trade, and Industry (MITI), Customs Act 1967, trade facilitation systems. E-commerce and supply chain platforms.",
+    "criticalServices": [
+      "Trade facilitation platforms",
+      "Customs clearance systems",
+      "Industrial control systems",
+      "E-commerce infrastructure",
+      "Economic data systems"
+    ],
+    "typicalNCIISystems": [
+      "National Single Window (NSW)",
+      "Customs IT systems",
+      "Trade statistics platforms",
+      "Industrial zone management systems",
+      "Economic monitoring systems"
+    ],
+    "sectorSpecificThreats": [
+      "Trade data manipulation",
+      "Customs system fraud",
+      "Industrial espionage",
+      "Supply chain disruption",
+      "Economic data theft"
+    ]
+  },
+  "copDomains": [
+    {
+      "domainId": "tie-cop-1",
+      "domainName": "Governance and Oversight",
+      "description": "Establishment of cyber security governance for trade, industry and economy NCII including customs and trade facilitation platforms, commodity exchange systems, industrial zone management, and economic planning infrastructure",
+      "requirements": [
+        {
+          "requirementId": "tie-cop-1.1",
+          "requirement": "The NCII entity shall designate a senior officer responsible for cyber security of trade, industry and economy NCII systems, with governance arrangements that reflect the cross-border nature of trade operations and the interconnection between customs, logistics, and financial settlement systems.",
+          "rationale": "Trade and economy NCII spans multiple interconnected platforms from customs declarations to commodity exchanges and investment tracking. Governance must account for cross-border data flows, multi-agency dependencies, and the cascading impact of trade system disruption on supply chains and economic stability.",
+          "relatedActSection": "s18",
+          "relatedFramework": "ISO 27001 A.5; WCO SAFE Framework of Standards"
+        },
+        {
+          "requirementId": "tie-cop-1.2",
+          "requirement": "The NCII entity shall develop a sector-specific cyber security policy addressing protection of trade facilitation platforms, customs management systems, commodity trading infrastructure, free trade zone operational technology, investment approval platforms, and economic data repositories.",
+          "rationale": "Trade and economy NCII encompasses systems critical to Malaysia's position as a major trading nation and manufacturing hub. A sector-specific policy ensures that cyber security measures address the unique risks to trade continuity, customs integrity, and economic planning capability.",
+          "relatedActSection": "s18",
+          "relatedFramework": "National Trade Blueprint; ISO 27001 A.5; WCO Data Model"
+        }
+      ]
+    },
+    {
+      "domainId": "tie-cop-2",
+      "domainName": "Trade Facilitation and Customs System Security",
+      "description": "Protection of digital systems managing trade facilitation, customs declarations, import/export permits, and cross-border commerce NCII",
+      "requirements": [
+        {
+          "requirementId": "tie-cop-2.1",
+          "requirement": "Trade facilitation systems designated as NCII, including the Malaysia National Single Window (MyTrade), shall implement end-to-end integrity controls for customs declarations, permit applications, and trade documentation, with tamper-evident audit logging of all transactions and authorisation changes.",
+          "rationale": "Compromise of trade facilitation NCII could enable fraudulent customs declarations, circumvention of import/export controls, or disruption of legitimate trade flows. Integrity controls protect revenue collection, trade compliance, and national security screening of cross-border goods.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Customs Act 1967; WCO SAFE Framework; ISO 27001 A.14"
+        },
+        {
+          "requirementId": "tie-cop-2.2",
+          "requirement": "Systems managing free trade zone operations and industrial zone access control designated as NCII shall implement network segmentation between operational technology, administrative systems, and external-facing trade portals, with continuous monitoring of inter-zone data flows.",
+          "rationale": "Free trade zones and industrial parks host critical manufacturing and logistics operations. Network segmentation prevents lateral movement from compromised trade portals to operational technology controlling physical infrastructure within industrial zones.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Free Zones Act 1990; IEC 62443-3-3; ISO 27001 A.13"
+        }
+      ]
+    },
+    {
+      "domainId": "tie-cop-3",
+      "domainName": "Risk Assessment and Vulnerability Management",
+      "description": "Cyber security risk assessment processes for trade, industry and economy NCII, accounting for cross-border interconnections and supply chain dependencies",
+      "requirements": [
+        {
+          "requirementId": "tie-cop-3.1",
+          "requirement": "The NCII entity shall conduct annual cyber security risk assessments that account for the unique threat landscape of trade and economy NCII, including risks from cross-border system interconnections, supply chain compromise of trading partners, commodity market manipulation through cyber means, and state-sponsored economic espionage.",
+          "rationale": "Trade and economy NCII faces distinctive risks from nation-state actors targeting economic intelligence, criminal groups exploiting customs processes, and supply chain attacks through interconnected trading partner systems. Risk assessments must address these sector-specific threat vectors.",
+          "relatedActSection": "s21",
+          "relatedFramework": "ISO 27005; NIST SP 800-30; WCO Risk Management Compendium"
+        },
+        {
+          "requirementId": "tie-cop-3.2",
+          "requirement": "The NCII entity shall implement a vulnerability management programme covering all NCII components, with particular attention to web-facing trade portals, API integrations with trading partners and government agencies, commodity exchange matching engines, and investment processing systems.",
+          "rationale": "Trade NCII includes highly interconnected systems with numerous external API integrations and web-facing portals. Vulnerability management must cover the expanded attack surface created by cross-agency data sharing and cross-border trade partner connectivity.",
+          "relatedActSection": "s21",
+          "relatedFramework": "ISO 27001 A.12.6; NIST SP 800-40; OWASP ASVS"
+        }
+      ]
+    },
+    {
+      "domainId": "tie-cop-4",
+      "domainName": "Incident Response and Economic Impact Coordination",
+      "description": "Cyber incident response with coordination for potential impacts on trade operations, customs processing, commodity markets, and economic stability",
+      "requirements": [
+        {
+          "requirementId": "tie-cop-4.1",
+          "requirement": "Cyber security incidents affecting trade, industry and economy NCII shall be reported to NACSA and the Ministry of Investment, Trade and Industry within six hours of detection, with immediate escalation if the incident may affect customs processing capability, commodity market integrity, foreign investment systems, or cross-border trade flows.",
+          "rationale": "Disruption of trade and economy NCII can have immediate cascading effects on import/export processing, commodity pricing, and investor confidence. Timely reporting enables coordinated response to maintain trade continuity and prevent economic contagion effects.",
+          "relatedActSection": "s26",
+          "relatedFramework": "P.U.(A) 220/2024; ISO 27035; WCO Business Continuity Guidelines"
+        },
+        {
+          "requirementId": "tie-cop-4.2",
+          "requirement": "The NCII entity shall develop incident response procedures that include coordination with Royal Malaysian Customs Department, Bank Negara Malaysia (where commodity trading or financial settlement systems are affected), and relevant international trading partners for incidents that may disrupt cross-border trade operations.",
+          "rationale": "Cyber attacks on trade NCII may simultaneously affect customs processing, financial settlement, and international supply chains. Cross-agency and cross-border coordination ensures that trade continuity measures are activated and trading partners are informed to prevent cascading disruptions.",
+          "relatedActSection": "s26",
+          "relatedFramework": "Customs Act 1967; ASEAN Single Window Agreement; ISO 27035"
+        }
+      ]
+    },
+    {
+      "domainId": "tie-cop-5",
+      "domainName": "Audit and Compliance",
+      "description": "Cyber security audit requirements for trade, industry and economy NCII entities, ensuring independent verification of controls and compliance with Act 854 obligations",
+      "requirements": [
+        {
+          "requirementId": "tie-cop-5.1",
+          "requirement": "The NCII entity shall engage a NACSA-licensed auditor to perform an independent cyber security audit at least biennially, covering all NCII-designated systems including trade facilitation platforms, customs interfaces, commodity exchange infrastructure, and investment processing systems.",
+          "rationale": "Independent audit verification ensures that cyber security controls for trade and economy NCII are effective and comply with Act 854 requirements. The interconnected and high-value nature of trade systems demands rigorous independent assurance.",
+          "relatedActSection": "s23",
+          "relatedFramework": "P.U.(A) 219/2024; ISO 27001 A.18; ISO 19011"
+        },
+        {
+          "requirementId": "tie-cop-5.2",
+          "requirement": "Audit findings classified as critical or high risk shall be remediated within the timeframe stipulated by NACSA, with interim compensating controls implemented within 14 days of finding notification where immediate remediation is not feasible.",
+          "rationale": "Trade and economy NCII operates in a time-sensitive environment where prolonged vulnerabilities may be exploited for financial gain, trade fraud, or economic espionage. Prompt remediation with interim controls minimises the window of exposure.",
+          "relatedActSection": "s23",
+          "relatedFramework": "P.U.(A) 219/2024; ISO 27001 A.18.2; NIST SP 800-53 CA-5"
+        }
+      ]
+    }
+  ],
+  "additionalTestProcedures": [
+    {
+      "testId": "TRD-S-SECT-01",
+      "objective": "Verify trade data integrity and anti-fraud controls",
+      "testType": "ToE",
+      "procedure": "1. Review trade data integrity controls. 2. Test anti-fraud mechanisms in customs systems. 3. Verify audit trail completeness for trade transactions. 4. Review reconciliation procedures.",
+      "copDomainRef": "trd-cop-2",
+      "evidenceRequired": [
+        "Trade system security assessment",
+        "Anti-fraud control documentation",
+        "Audit trail samples"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    },
+    {
+      "testId": "TRD-S-SECT-02",
+      "objective": "Verify cross-border data exchange security",
+      "testType": "ToD",
+      "procedure": "1. Identify cross-border data exchange interfaces. 2. Review encryption and authentication for international data flows. 3. Verify data sovereignty compliance. 4. Test secure channel configuration.",
+      "copDomainRef": "trd-cop-4",
+      "evidenceRequired": [
+        "Data exchange architecture",
+        "Encryption configuration",
+        "Data sovereignty assessment"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    },
+    {
+      "testId": "TRD-S-SECT-03",
+      "objective": "Verify industrial control system security for manufacturing NCII",
+      "testType": "ToD",
+      "procedure": "1. Identify ICS within trade/industry NCII scope. 2. Review IT/OT segmentation. 3. Verify ICS-specific security controls. 4. Assess ICS vendor security.",
+      "copDomainRef": "trd-cop-3",
+      "evidenceRequired": [
+        "ICS inventory",
+        "IT/OT segmentation diagrams",
+        "ICS security policy"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    }
+  ],
+  "modifiedBaselineProcedures": [
+    {
+      "baselineTestId": "CRY-ToE-01",
+      "modification": "Encryption must cover cross-border trade data exchanges",
+      "reason": "Trade CoP requires secure channels for international data flows"
+    },
+    {
+      "baselineTestId": "AUD-ToE-01",
+      "modification": "Audit programme must include trade transaction fraud detection controls",
+      "reason": "Trade CoP mandates anti-fraud controls in customs/trade systems"
+    }
+  ],
+  "sectorSpecificEvidence": [
+    {
+      "documentName": "Trade Data Integrity Assessment",
+      "description": "Assessment of data integrity controls for trade facilitation systems",
+      "mandatory": true
+    },
+    {
+      "documentName": "Cross-Border Data Flow Security Report",
+      "description": "Security assessment of international data exchange channels",
+      "mandatory": true
+    }
+  ]
+}

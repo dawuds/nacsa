@@ -1,0 +1,434 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-13",
+    "description": "Management Action Plan (MAP) tracker template for NACSA Act 854 CoP compliance audit findings remediation"
+  },
+  "mapHeader": {
+    "auditReference": "[Audit engagement reference]",
+    "entityName": "[Full legal name of NCII entity]",
+    "auditReportDate": "[YYYY-MM-DD]",
+    "mapCreatedDate": "[YYYY-MM-DD]",
+    "mapLastUpdated": "[YYYY-MM-DD]",
+    "mapVersion": "[e.g., 1.0]",
+    "mapOwner": {
+      "name": "[Name of overall MAP owner]",
+      "title": "[Title - typically CISO or equivalent]",
+      "email": "[Contact email]"
+    },
+    "auditFirm": "[Name of audit firm that issued findings]",
+    "nextReviewDate": "[YYYY-MM-DD]",
+    "nacsaSubmissionDeadline": "[YYYY-MM-DD - per Direction No. 8 requirements]"
+  },
+  "statusDefinitions": {
+    "NotStarted": {
+      "code": "NOT_STARTED",
+      "label": "Not Started",
+      "description": "Remediation actions have not yet commenced. The action item has been acknowledged but work has not begun.",
+      "colorCode": "#9E9E9E",
+      "allowedTransitions": ["IN_PROGRESS", "DEFERRED"]
+    },
+    "InProgress": {
+      "code": "IN_PROGRESS",
+      "label": "In Progress",
+      "description": "Remediation actions are actively underway. Work has commenced and is progressing toward the target completion date.",
+      "colorCode": "#2196F3",
+      "allowedTransitions": ["COMPLETED", "OVERDUE", "DEFERRED"]
+    },
+    "Completed": {
+      "code": "COMPLETED",
+      "label": "Completed",
+      "description": "All remediation actions have been implemented and evidence of completion has been provided. Pending verification by the auditor.",
+      "colorCode": "#4CAF50",
+      "allowedTransitions": ["IN_PROGRESS"],
+      "note": "May revert to In Progress if auditor verification identifies incomplete remediation."
+    },
+    "Overdue": {
+      "code": "OVERDUE",
+      "label": "Overdue",
+      "description": "The target completion date has passed and remediation actions are not yet complete. Escalation rules apply.",
+      "colorCode": "#F44336",
+      "allowedTransitions": ["IN_PROGRESS", "COMPLETED", "DEFERRED"],
+      "triggerCondition": "Automatically applied when current date exceeds target completion date and status is not Completed."
+    },
+    "Deferred": {
+      "code": "DEFERRED",
+      "label": "Deferred",
+      "description": "Remediation has been postponed with documented justification. Requires formal approval from entity management and notification to NACSA for high and critical findings.",
+      "colorCode": "#FF9800",
+      "allowedTransitions": ["NOT_STARTED", "IN_PROGRESS"],
+      "requiresJustification": true,
+      "requiresApproval": true
+    }
+  },
+  "mapItemTemplate": {
+    "mapItemId": "[AUTO: MAP-YYYY-NNN]",
+    "findingReference": {
+      "findingId": "[Audit finding ID from finding-template.json]",
+      "findingTitle": "[Title of the audit finding]",
+      "findingSeverity": "[Critical | High | Medium | Low]",
+      "findingDomain": "[Control domain slug]",
+      "controlSlug": "[Affected control slug]"
+    },
+    "actionDescription": {
+      "summary": "[Concise description of the corrective action to be taken]",
+      "detailedSteps": [
+        {
+          "stepNumber": 1,
+          "description": "[Description of remediation step]",
+          "responsible": "[Person responsible for this step]",
+          "targetDate": "[YYYY-MM-DD]",
+          "status": "[Not Started | In Progress | Completed]"
+        }
+      ],
+      "deliverables": [
+        "[List of tangible deliverables expected upon completion - e.g., updated policy document, system configuration change, training records]"
+      ]
+    },
+    "ownership": {
+      "actionOwner": {
+        "name": "[Name of person accountable for the action]",
+        "title": "[Job title]",
+        "department": "[Department or unit]",
+        "email": "[Contact email]"
+      },
+      "implementer": {
+        "name": "[Name of person performing the work, if different from owner]",
+        "title": "[Job title]",
+        "department": "[Department or unit]"
+      },
+      "escalationContact": {
+        "name": "[Name of person to escalate to if action is blocked or overdue]",
+        "title": "[Job title]",
+        "email": "[Contact email]"
+      }
+    },
+    "timeline": {
+      "dateIdentified": "[YYYY-MM-DD - date finding was communicated to entity]",
+      "targetStartDate": "[YYYY-MM-DD]",
+      "targetCompletionDate": "[YYYY-MM-DD]",
+      "actualStartDate": "[YYYY-MM-DD or null]",
+      "actualCompletionDate": "[YYYY-MM-DD or null]",
+      "revisedTargetDate": "[YYYY-MM-DD or null - only if original target was formally revised]",
+      "revisionJustification": "[Justification for revised target date, if applicable]",
+      "daysOverdue": "[AUTO: calculated if overdue, otherwise 0]"
+    },
+    "status": "[NOT_STARTED | IN_PROGRESS | COMPLETED | OVERDUE | DEFERRED]",
+    "progressNotes": [
+      {
+        "date": "[YYYY-MM-DD]",
+        "author": "[Name of person providing update]",
+        "note": "[Description of progress, challenges, or status change]",
+        "percentComplete": "[0-100]"
+      }
+    ],
+    "evidenceOfCompletion": {
+      "guidance": "Document all evidence that demonstrates the corrective action has been fully implemented.",
+      "evidenceItems": [
+        {
+          "evidenceId": "[EVD-NNN]",
+          "description": "[Description of the evidence]",
+          "evidenceType": "[Document | Screenshot | System Export | Configuration File | Training Record | Meeting Minutes | Other]",
+          "dateObtained": "[YYYY-MM-DD]",
+          "fileReference": "[File name or reference to evidence storage location]",
+          "providedBy": "[Name of person who provided the evidence]"
+        }
+      ]
+    },
+    "verification": {
+      "verificationRequired": true,
+      "verificationDate": "[YYYY-MM-DD or null]",
+      "verifiedBy": {
+        "name": "[Name of auditor or reviewer who verified]",
+        "organization": "[Audit firm or internal audit]",
+        "registrationNumber": "[Professional registration number]"
+      },
+      "verificationMethod": "[Document review | System inspection | Re-testing | Interview | Observation]",
+      "verificationResult": "[Verified - Remediated | Verified - Partially Remediated | Verified - Not Remediated | Pending]",
+      "verificationNotes": "[Detailed notes from verification procedure]"
+    },
+    "deferralDetails": {
+      "guidance": "Complete this section only if status is DEFERRED.",
+      "isDeferral": false,
+      "deferralJustification": "[Detailed justification for why remediation is being deferred]",
+      "deferralApprovedBy": {
+        "name": "[Name of approving authority]",
+        "title": "[Title]",
+        "approvalDate": "[YYYY-MM-DD]"
+      },
+      "nacsaNotified": "[Yes | No | Not Required]",
+      "nacsaNotificationDate": "[YYYY-MM-DD or null]",
+      "compensatingControls": "[Description of any interim or compensating controls in place while remediation is deferred]",
+      "revisedTargetDate": "[YYYY-MM-DD]",
+      "riskAcceptanceStatement": "[Formal statement of risk acceptance by entity management]"
+    }
+  },
+  "escalationRules": {
+    "description": "Escalation procedures based on finding severity and remediation status. These rules ensure timely remediation and appropriate oversight.",
+    "rules": [
+      {
+        "ruleId": "ESC-001",
+        "trigger": "Critical finding not started within 7 calendar days of MAP creation",
+        "escalationLevel": "Level 1",
+        "escalateTo": "CISO / MAP Owner",
+        "action": "Formal notification to MAP owner requesting immediate action plan with milestones",
+        "nacsaNotification": false
+      },
+      {
+        "ruleId": "ESC-002",
+        "trigger": "Critical finding overdue by 1-14 calendar days",
+        "escalationLevel": "Level 2",
+        "escalateTo": "Chief Executive Officer / Head of Entity",
+        "action": "Written escalation to entity head with revised timeline and resource allocation plan",
+        "nacsaNotification": true,
+        "nacsaNotificationType": "Advisory notification of delay in critical remediation"
+      },
+      {
+        "ruleId": "ESC-003",
+        "trigger": "Critical finding overdue by more than 14 calendar days",
+        "escalationLevel": "Level 3",
+        "escalateTo": "NACSA Chief Executive",
+        "action": "Formal notification to NACSA CE. NACSA may direct immediate remediation or impose additional measures under Act 854",
+        "nacsaNotification": true,
+        "nacsaNotificationType": "Formal escalation - critical finding remediation failure",
+        "regulatoryConsequence": "NACSA may exercise powers under Act 854 including directing specific actions or initiating enforcement proceedings"
+      },
+      {
+        "ruleId": "ESC-004",
+        "trigger": "High finding not started within 14 calendar days of MAP creation",
+        "escalationLevel": "Level 1",
+        "escalateTo": "CISO / MAP Owner",
+        "action": "Formal notification to MAP owner requesting action commencement with timeline",
+        "nacsaNotification": false
+      },
+      {
+        "ruleId": "ESC-005",
+        "trigger": "High finding overdue by 1-30 calendar days",
+        "escalationLevel": "Level 2",
+        "escalateTo": "Chief Executive Officer / Head of Entity",
+        "action": "Written escalation to entity head with revised timeline and justification for delay",
+        "nacsaNotification": false
+      },
+      {
+        "ruleId": "ESC-006",
+        "trigger": "High finding overdue by more than 30 calendar days",
+        "escalationLevel": "Level 3",
+        "escalateTo": "NACSA via audit report update",
+        "action": "Notification to NACSA through updated MAP status report. NACSA may require a follow-up audit.",
+        "nacsaNotification": true,
+        "nacsaNotificationType": "MAP status update - high finding remediation delay"
+      },
+      {
+        "ruleId": "ESC-007",
+        "trigger": "Medium finding overdue by 1-60 calendar days",
+        "escalationLevel": "Level 1",
+        "escalateTo": "CISO / MAP Owner",
+        "action": "Internal escalation to MAP owner for revised timeline and prioritization review",
+        "nacsaNotification": false
+      },
+      {
+        "ruleId": "ESC-008",
+        "trigger": "Medium finding overdue by more than 60 calendar days",
+        "escalationLevel": "Level 2",
+        "escalateTo": "Chief Executive Officer / Head of Entity",
+        "action": "Written escalation to entity head. Finding will be carried forward to next audit cycle.",
+        "nacsaNotification": false
+      },
+      {
+        "ruleId": "ESC-009",
+        "trigger": "Any finding deferred without formal approval",
+        "escalationLevel": "Level 2",
+        "escalateTo": "Chief Executive Officer / Head of Entity",
+        "action": "Immediate escalation. Deferral requires formal management approval and risk acceptance statement.",
+        "nacsaNotification": true,
+        "nacsaNotificationType": "Unauthorized deferral of audit finding remediation"
+      },
+      {
+        "ruleId": "ESC-010",
+        "trigger": "Critical or High finding deferred for any reason",
+        "escalationLevel": "Level 3",
+        "escalateTo": "NACSA Chief Executive",
+        "action": "NACSA notification required. Deferral of critical/high findings must include compensating controls and formal risk acceptance by entity board.",
+        "nacsaNotification": true,
+        "nacsaNotificationType": "Deferral of critical/high severity finding - requires NACSA review"
+      }
+    ],
+    "reviewCadence": {
+      "criticalFindings": "Weekly review by MAP owner; fortnightly reporting to entity head",
+      "highFindings": "Fortnightly review by MAP owner; monthly reporting to entity head",
+      "mediumFindings": "Monthly review by MAP owner",
+      "lowFindings": "Quarterly review by MAP owner",
+      "nacsaReporting": "Quarterly MAP status report submitted to NACSA as per Direction No. 8"
+    }
+  },
+  "summaryDashboard": {
+    "description": "Aggregated view of MAP progress for management reporting and NACSA submissions.",
+    "reportDate": "[YYYY-MM-DD]",
+    "reportPeriod": {
+      "from": "[YYYY-MM-DD]",
+      "to": "[YYYY-MM-DD]"
+    },
+    "totalFindingsBySeverity": {
+      "critical": {
+        "total": 0,
+        "notStarted": 0,
+        "inProgress": 0,
+        "completed": 0,
+        "overdue": 0,
+        "deferred": 0
+      },
+      "high": {
+        "total": 0,
+        "notStarted": 0,
+        "inProgress": 0,
+        "completed": 0,
+        "overdue": 0,
+        "deferred": 0
+      },
+      "medium": {
+        "total": 0,
+        "notStarted": 0,
+        "inProgress": 0,
+        "completed": 0,
+        "overdue": 0,
+        "deferred": 0
+      },
+      "low": {
+        "total": 0,
+        "notStarted": 0,
+        "inProgress": 0,
+        "completed": 0,
+        "overdue": 0,
+        "deferred": 0
+      }
+    },
+    "overallProgress": {
+      "totalFindings": 0,
+      "totalCompleted": 0,
+      "totalInProgress": 0,
+      "totalNotStarted": 0,
+      "totalOverdue": 0,
+      "totalDeferred": 0,
+      "completionPercentage": "[AUTO: (totalCompleted / totalFindings) * 100]",
+      "onTrackPercentage": "[AUTO: ((totalCompleted + totalInProgress) / totalFindings) * 100]"
+    },
+    "remediationProgress": {
+      "guidance": "Track remediation progress over time to identify trends.",
+      "progressSnapshots": [
+        {
+          "snapshotDate": "[YYYY-MM-DD]",
+          "totalFindings": 0,
+          "completed": 0,
+          "inProgress": 0,
+          "notStarted": 0,
+          "overdue": 0,
+          "deferred": 0,
+          "completionPercentage": 0
+        }
+      ],
+      "trend": "[Improving | Stable | Declining]",
+      "projectedCompletionDate": "[YYYY-MM-DD - estimated date when all findings will be remediated based on current trajectory]"
+    },
+    "overdueItems": {
+      "totalOverdue": 0,
+      "overdueByAge": {
+        "oneToFourteenDays": 0,
+        "fifteenToThirtyDays": 0,
+        "thirtyOneToSixtyDays": 0,
+        "overSixtyDays": 0
+      },
+      "overdueBySeverity": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "oldestOverdueItem": {
+        "mapItemId": "[MAP item ID]",
+        "findingTitle": "[Finding title]",
+        "severity": "[Severity]",
+        "daysOverdue": 0,
+        "escalationStatus": "[Current escalation level]"
+      }
+    },
+    "domainBreakdown": [
+      {
+        "domainSlug": "[Domain slug]",
+        "domainName": "[Domain name]",
+        "totalFindings": 0,
+        "completed": 0,
+        "inProgress": 0,
+        "notStarted": 0,
+        "overdue": 0,
+        "deferred": 0,
+        "completionPercentage": 0
+      }
+    ],
+    "activeEscalations": [
+      {
+        "mapItemId": "[MAP item ID]",
+        "findingTitle": "[Finding title]",
+        "severity": "[Severity]",
+        "escalationRule": "[ESC-NNN]",
+        "escalationLevel": "[Level 1 | Level 2 | Level 3]",
+        "escalationDate": "[YYYY-MM-DD]",
+        "escalatedTo": "[Name and title]",
+        "currentStatus": "[Awaiting Response | Action Taken | Resolved]"
+      }
+    ],
+    "upcomingDeadlines": {
+      "guidance": "List MAP items with target completion dates within the next 30 days.",
+      "items": [
+        {
+          "mapItemId": "[MAP item ID]",
+          "findingTitle": "[Finding title]",
+          "severity": "[Severity]",
+          "targetDate": "[YYYY-MM-DD]",
+          "daysRemaining": "[AUTO: calculated]",
+          "currentStatus": "[Current status]",
+          "actionOwner": "[Owner name]"
+        }
+      ]
+    }
+  },
+  "nacsaSubmission": {
+    "description": "Structure for quarterly MAP status submissions to NACSA as required by Direction No. 8.",
+    "submissionHeader": {
+      "entityName": "[Entity name]",
+      "entityRegistrationRef": "[NACSA registration reference]",
+      "submissionDate": "[YYYY-MM-DD]",
+      "reportingPeriod": {
+        "from": "[YYYY-MM-DD]",
+        "to": "[YYYY-MM-DD]"
+      },
+      "auditReference": "[Original audit report reference]",
+      "preparedBy": {
+        "name": "[Name]",
+        "title": "[Title]"
+      },
+      "approvedBy": {
+        "name": "[Name - typically entity head or CISO]",
+        "title": "[Title]"
+      }
+    },
+    "submissionSummary": {
+      "overallCompletionPercentage": "[Percentage]",
+      "criticalHighRemediationStatus": "[On Track | At Risk | Overdue]",
+      "keyAchievements": [
+        "[Summary of significant remediation milestones achieved in the reporting period]"
+      ],
+      "challengesAndRisks": [
+        "[Summary of challenges affecting remediation progress]"
+      ],
+      "supportRequested": [
+        "[Any support or guidance requested from NACSA]"
+      ]
+    },
+    "attachments": [
+      "Full MAP tracker (current version)",
+      "Evidence of completion for items marked as Completed in this period",
+      "Deferral justification forms (if any deferrals in this period)",
+      "Escalation correspondence (if any Level 3 escalations)"
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-13",
+    "description": "Compliance rating methodology for NACSA Act 854 CoP compliance audits per Direction No. 8"
+  },
+  "domainRatings": {
+    "scale": [
+      {
+        "rating": "Compliant",
+        "code": "C",
+        "description": "Control is designed appropriately and has operated effectively throughout the audit period",
+        "criteria": [
+          "Control documentation exists and is current (approved within 12 months)",
+          "Control design addresses all relevant CoP requirements",
+          "Test of effectiveness shows consistent operation with zero or minimal deviations",
+          "Evidence is sufficient and reliable"
+        ],
+        "color": "#28a745"
+      },
+      {
+        "rating": "Partially Compliant",
+        "code": "PC",
+        "description": "Control is designed but has gaps in design or has not operated consistently throughout the audit period",
+        "criteria": [
+          "Control documentation exists but may be outdated or incomplete",
+          "Control design addresses most but not all relevant CoP requirements",
+          "Test of effectiveness shows some deviations but the control operated for the majority of the audit period",
+          "Compensating controls may partially mitigate identified gaps",
+          "One or more Low or Medium severity findings exist in the domain"
+        ],
+        "color": "#ffc107"
+      },
+      {
+        "rating": "Non-Compliant",
+        "code": "NC",
+        "description": "Control is not designed, is fundamentally flawed in design, or has failed to operate effectively for a material portion of the audit period",
+        "criteria": [
+          "Control documentation does not exist or is critically deficient",
+          "Control design fails to address key CoP requirements",
+          "Test of effectiveness shows systemic or pervasive deviations",
+          "No compensating controls exist to mitigate the gap",
+          "One or more Critical or High severity findings exist in the domain",
+          "Evidence is insufficient or unreliable to support a higher rating"
+        ],
+        "color": "#dc3545"
+      },
+      {
+        "rating": "Not Applicable",
+        "code": "N/A",
+        "description": "The control domain or specific requirement is not applicable to the entity's NCII designation or operating environment",
+        "criteria": [
+          "The entity does not operate systems or processes within the scope of the domain",
+          "NACSA has granted a formal exemption or confirmed non-applicability in writing",
+          "The entity's NCII designation does not include asset types covered by the domain",
+          "Non-applicability has been documented and approved by the engagement lead"
+        ],
+        "color": "#6c757d"
+      }
+    ]
+  },
+  "overallRatings": {
+    "scale": [
+      {
+        "rating": "Fully Compliant",
+        "criteria": "No Non-Compliant domain ratings and no more than two Partially Compliant domain ratings",
+        "implications": "Entity demonstrates strong compliance posture. No mandatory follow-up audit required. Standard annual audit cycle continues. Positive assurance letter issued to NACSA."
+      },
+      {
+        "rating": "Substantially Compliant",
+        "criteria": "No Non-Compliant domain ratings, three or fewer Partially Compliant domain ratings",
+        "implications": "Entity demonstrates adequate compliance posture with areas for improvement. Remediation plans required for Partially Compliant domains within 180 days. Self-attestation of remediation to be submitted to NACSA. Next audit cycle remains annual."
+      },
+      {
+        "rating": "Partially Compliant",
+        "criteria": "One or more Non-Compliant domain ratings but none affecting Critical-rated NCII assets",
+        "implications": "Entity has material compliance gaps requiring urgent attention. Remediation plans required within 90 days for Non-Compliant domains. Follow-up audit required within 6 months to verify remediation. NACSA to be notified of Non-Compliant domains. Enhanced monitoring may be imposed by NACSA."
+      },
+      {
+        "rating": "Non-Compliant",
+        "criteria": "One or more Non-Compliant domain ratings affecting Critical-rated NCII assets",
+        "implications": "Entity has critical compliance failures posing immediate risk to national security. NACSA emergency notification required within 5 business days of report issuance. Mandatory remediation plan required within 30 days. Follow-up audit required within 3 months. NACSA may invoke Direction No. 8 enforcement powers including operational restrictions, mandatory third-party oversight, or designation review."
+      }
+    ]
+  },
+  "findingSeverity": {
+    "scale": [
+      {
+        "severity": "Critical",
+        "description": "A fundamental control failure that poses an immediate and material risk to the confidentiality, integrity, or availability of Critical-rated NCII assets, or a complete absence of a mandatory CoP control",
+        "remediationDeadline": "30 days",
+        "nacsaNotification": true,
+        "followUpAudit": true,
+        "examples": [
+          "No access control mechanism exists for Critical-rated NCII systems",
+          "Unpatched critical vulnerabilities with known active exploits on internet-facing NCII systems",
+          "No incident response plan exists and security incidents affecting NCII have gone undetected",
+          "Encryption of NCII data at rest uses deprecated or broken algorithms (e.g., DES, MD5)",
+          "No security monitoring or logging is implemented on Critical-rated NCII infrastructure",
+          "NACSA mandatory incident notifications were not made for reportable events"
+        ]
+      },
+      {
+        "severity": "High",
+        "description": "A significant control weakness that could lead to unauthorized access, data compromise, or service disruption of NCII assets if not remediated promptly",
+        "remediationDeadline": "90 days",
+        "nacsaNotification": false,
+        "followUpAudit": true,
+        "examples": [
+          "Privileged access accounts are shared and not individually attributable",
+          "Vulnerability scanning is not performed regularly and critical patches are overdue beyond SLA",
+          "Business continuity plan has not been tested in the past 12 months",
+          "Third-party vendors with NCII access have not undergone security assessment",
+          "Security awareness training for NCII personnel has not been conducted in the audit period",
+          "Firewall rules include overly permissive any-any rules on NCII network segments"
+        ]
+      },
+      {
+        "severity": "Medium",
+        "description": "A control deficiency that reduces the overall effectiveness of the security posture but does not pose an immediate risk of compromise. The deficiency could contribute to a security incident if combined with other weaknesses",
+        "remediationDeadline": "180 days",
+        "nacsaNotification": false,
+        "followUpAudit": false,
+        "examples": [
+          "User access reviews are performed but not within the required frequency",
+          "Change management approvals are documented but segregation of duties is not consistently enforced",
+          "Risk register exists but has not been updated to reflect recent threat landscape changes",
+          "BCP recovery time objectives are defined but DR test results show RTO was not achieved",
+          "System hardening baselines exist but compliance scanning is performed ad-hoc rather than on schedule",
+          "Security monitoring use cases have not been reviewed and updated in the past 12 months"
+        ]
+      },
+      {
+        "severity": "Low",
+        "description": "A minor control improvement opportunity that does not materially affect the security of NCII assets. Typically relates to documentation gaps, process efficiencies, or best practice enhancements",
+        "remediationDeadline": "Next audit cycle",
+        "nacsaNotification": false,
+        "followUpAudit": false,
+        "examples": [
+          "Policy documents exist but version control is inconsistent",
+          "Governance committee terms of reference do not explicitly reference all CoP domains",
+          "Risk assessment methodology is adequate but does not formally align with ISO 27005 or NIST SP 800-30",
+          "Physical security visitor log entries are complete but the log format is not standardized across sites",
+          "Incident response plan exists and is tested but post-incident review reports lack a formal template",
+          "Cryptographic key inventory is maintained but does not include automated expiry alerting"
+        ]
+      }
+    ]
+  },
+  "aggregationRules": {
+    "domainToOverall": "The overall compliance rating is determined by aggregating individual domain ratings using a worst-case escalation model. The presence of any Non-Compliant domain rating affecting Critical-rated NCII assets results in an overall Non-Compliant rating. Non-Compliant domains affecting non-Critical assets result in Partially Compliant overall. The number of Partially Compliant domains determines the distinction between Fully Compliant (0-2 PC domains) and Substantially Compliant (3 or fewer PC domains with no NC). Not Applicable domains are excluded from the aggregation calculation.",
+    "findingToRating": "Individual findings within a domain are aggregated to determine the domain rating. A single Critical finding results in a Non-Compliant domain rating. Two or more High findings in the same domain result in a Non-Compliant rating unless compensating controls are documented and validated. A single High finding or multiple Medium findings result in a Partially Compliant domain rating. Low findings alone do not affect the domain rating below Compliant, though they are reported as observations for improvement. The auditor must exercise professional judgment when borderline conditions exist and document the rationale.",
+    "priorAuditComparison": "The current audit results must be compared against prior audit findings to assess the entity's compliance trajectory. Recurring findings from prior audits that remain unremediated are automatically escalated by one severity level (e.g., a prior Medium finding that persists becomes High). New findings are rated on their own merit. Successfully remediated prior findings are noted as closed in the report. The comparison should highlight improvement trends, deterioration areas, and overall compliance maturity progression."
+  }
+}

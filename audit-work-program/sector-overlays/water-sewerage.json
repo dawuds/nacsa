@@ -1,0 +1,242 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-13",
+    "sectorId": "water-and-sewerage",
+    "sectorName": "Code of Practice for the Water and Sewerage Sector",
+    "sectorLead": "SPAN (Suruhanjaya Perkhidmatan Air Negara)",
+    "copReference": "cop-water-sewerage.json",
+    "copStatus": "draft",
+    "sourceType": "constructed-indicative",
+    "description": "Sector-specific audit overlay for Code of Practice for the Water and Sewerage Sector NCII entities"
+  },
+  "sectorContext": {
+    "regulatoryEnvironment": "SPAN (Suruhanjaya Perkhidmatan Air Negara) regulatory framework, Water Services Industry Act 2006. SCADA/ICS for water treatment and distribution.",
+    "criticalServices": [
+      "Water treatment plants",
+      "Water distribution networks",
+      "Sewerage treatment systems",
+      "Dam monitoring systems",
+      "Water quality monitoring"
+    ],
+    "typicalNCIISystems": [
+      "Water SCADA systems",
+      "Treatment plant control systems",
+      "Distribution SCADA",
+      "Water quality monitoring networks",
+      "Dam telemetry systems"
+    ],
+    "sectorSpecificThreats": [
+      "Water treatment chemical manipulation",
+      "SCADA attacks on distribution systems",
+      "Dam control system compromise",
+      "Water quality sensor tampering",
+      "Ransomware targeting OT systems"
+    ]
+  },
+  "copDomains": [
+    {
+      "domainId": "ws-cop-1",
+      "domainName": "Governance and Regulatory Compliance",
+      "description": "Cyber security governance for water and sewerage NCII operators aligned with SPAN regulatory requirements",
+      "requirements": [
+        {
+          "requirementId": "ws-cop-1.1",
+          "requirement": "The NCII entity shall appoint a senior officer responsible for NCII cyber security with authority over both IT and operational technology (OT) environments, reporting to the Chief Executive and accountable to the board for the security posture of water treatment, distribution, and sewerage processing systems.",
+          "rationale": "Water and sewerage NCII relies heavily on SCADA and industrial control systems. Unified governance over IT and OT ensures that cyber security is managed holistically across the entire water supply and treatment chain.",
+          "relatedActSection": "s18",
+          "relatedFramework": "SPAN Operating Standards; Water Services Industry Act 2006; ISO 27001 A.5"
+        },
+        {
+          "requirementId": "ws-cop-1.2",
+          "requirement": "The NCII entity shall conduct a gap analysis of existing cyber security controls against this Code of Practice within six months of its effective date, with a remediation plan approved by the board and submitted to SPAN and NACSA.",
+          "rationale": "Many water and sewerage operators have limited existing cyber security maturity. A structured gap analysis and remediation plan provides a realistic pathway to compliance while maintaining transparency with regulators.",
+          "relatedActSection": "s22",
+          "relatedFramework": "SPAN Performance Standards; ISO 27001 Clause 4.2"
+        },
+        {
+          "requirementId": "ws-cop-1.3",
+          "requirement": "The NCII entity shall allocate dedicated annual budget for NCII cyber security, separate from general IT expenditure, with investment proportionate to the population served and the criticality of the water or sewerage services operated.",
+          "rationale": "Water sector NCII operators vary significantly in scale and resources. Proportionate budgeting linked to service criticality ensures that security investment reflects the actual risk to public health and safety.",
+          "relatedActSection": "s18",
+          "relatedFramework": "SPAN Financial Reporting Requirements; ISO 27001 Clause 5.1"
+        }
+      ]
+    },
+    {
+      "domainId": "ws-cop-2",
+      "domainName": "SCADA and Industrial Control System Security",
+      "description": "Protection of SCADA systems, programmable logic controllers, and industrial control systems operating water treatment and distribution NCII",
+      "requirements": [
+        {
+          "requirementId": "ws-cop-2.1",
+          "requirement": "SCADA systems controlling water treatment processes including chlorination, pH adjustment, and fluoridation shall be isolated from corporate IT networks and the internet, accessible only through secured jump hosts located in a demilitarised zone with multi-factor authentication and session recording.",
+          "rationale": "Compromise of water treatment SCADA systems could enable manipulation of chemical dosing, posing a direct threat to public health. Network isolation is the most effective control against remote attacks on these safety-critical systems.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 62443-3-3; NIST SP 800-82; AWWA Cybersecurity Guidance"
+        },
+        {
+          "requirementId": "ws-cop-2.2",
+          "requirement": "Programmable logic controllers (PLCs) and remote terminal units (RTUs) in water and sewerage NCII shall have default credentials changed prior to deployment, with firmware maintained at the latest version supported by the manufacturer and verified through integrity checking.",
+          "rationale": "Water sector ICS devices are frequently deployed with default credentials that are publicly known. Credential hardening and firmware management are fundamental hygiene measures that prevent exploitation of well-known attack vectors.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 62443-4-2; NIST SP 800-82; CISA Water Sector Guidance"
+        },
+        {
+          "requirementId": "ws-cop-2.3",
+          "requirement": "All changes to SCADA programming, PLC logic, and control system setpoints on NCII systems shall be subject to a change management process that includes cyber security review, safety impact assessment, and authorisation by both the operations manager and the security officer.",
+          "rationale": "Unauthorised changes to control system logic could alter water treatment processes or disrupt distribution. Dual authorisation combining operational and security review prevents both accidental misconfiguration and malicious manipulation.",
+          "relatedActSection": "s18",
+          "relatedFramework": "IEC 62443-2-4; AWWA Process Control Standards"
+        }
+      ]
+    },
+    {
+      "domainId": "ws-cop-3",
+      "domainName": "Water Quality and Public Health Safeguards",
+      "description": "Cyber security controls specifically protecting systems that ensure water quality and public health outcomes",
+      "requirements": [
+        {
+          "requirementId": "ws-cop-3.1",
+          "requirement": "Water quality monitoring systems connected to NCII networks shall implement independent safety interlocks that prevent chemical dosing parameters from exceeding safe thresholds, regardless of SCADA commands, with hardware-based limits that cannot be overridden through software or network access.",
+          "rationale": "Even if SCADA systems are compromised, hardware safety interlocks ensure that water treatment processes cannot be manipulated to produce unsafe water. Defence-in-depth with physical safety limits protects public health against cyber attacks.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MOH Drinking Water Quality Standards; SPAN Water Quality Monitoring; IEC 61508"
+        },
+        {
+          "requirementId": "ws-cop-3.2",
+          "requirement": "The NCII entity shall implement real-time anomaly detection on water quality sensor data, with automated alerts for readings outside established operational baselines that may indicate sensor tampering, data manipulation, or process disruption caused by cyber attack.",
+          "rationale": "Manipulation of water quality sensor data could mask unsafe conditions or trigger unnecessary emergency responses. Anomaly detection provides an independent verification layer that identifies suspicious sensor behaviour potentially indicating cyber compromise.",
+          "relatedActSection": "s18",
+          "relatedFramework": "SPAN Water Quality Reporting; IEC 62443-3-3; AWWA Cybersecurity Guidance"
+        }
+      ]
+    },
+    {
+      "domainId": "ws-cop-4",
+      "domainName": "Incident Response and Public Health Notification",
+      "description": "Cyber incident response with integrated coordination for potential public health impacts from water system compromise",
+      "requirements": [
+        {
+          "requirementId": "ws-cop-4.1",
+          "requirement": "Cyber security incidents affecting water treatment or distribution NCII shall be reported to NACSA, SPAN, and the Ministry of Health within four hours of detection, with immediate escalation if there is any indication that water quality may have been compromised or that service disruption affects healthcare facilities or other dependent NCII.",
+          "rationale": "Water system cyber incidents have potential public health consequences. Rapid multi-agency reporting enables coordinated response including water quality testing, public health advisories, and protection of dependent critical infrastructure such as hospitals.",
+          "relatedActSection": "s26",
+          "relatedFramework": "SPAN Incident Reporting Standards; MOH Water Quality Incident Response; ISO 27035"
+        },
+        {
+          "requirementId": "ws-cop-4.2",
+          "requirement": "The NCII entity shall maintain a pre-defined communication protocol for public notification of water service disruptions caused by cyber incidents, coordinated with SPAN and local authorities, ensuring clear and timely information to affected populations.",
+          "rationale": "Public trust in water safety is paramount. Coordinated communication protocols ensure that populations are informed of service disruptions and any precautionary measures without causing unnecessary panic or inconsistent messaging from multiple agencies.",
+          "relatedActSection": "s26",
+          "relatedFramework": "SPAN Customer Communication Standards; Arahan MKN Crisis Communication"
+        },
+        {
+          "requirementId": "ws-cop-4.3",
+          "requirement": "The NCII entity shall conduct annual cyber incident response exercises that simulate attacks on water treatment SCADA systems, with participation from operations, IT security, public health, and emergency management functions.",
+          "rationale": "Cross-functional exercises ensure that response procedures work when cyber incidents on water NCII have operational, public health, and communication dimensions that require coordinated action across traditionally separate teams.",
+          "relatedActSection": "s26",
+          "relatedFramework": "SPAN Emergency Response Standards; ISO 22301; ISO 27035"
+        }
+      ]
+    },
+    {
+      "domainId": "ws-cop-5",
+      "domainName": "Business Continuity and Service Resilience",
+      "description": "Ensuring continuity of water supply and sewerage services during cyber disruptions to NCII",
+      "requirements": [
+        {
+          "requirementId": "ws-cop-5.1",
+          "requirement": "The NCII entity shall maintain the capability to operate water treatment and distribution in manual mode for a minimum of 72 hours during cyber incidents, with documented manual operating procedures tested semi-annually by operational staff.",
+          "rationale": "Water treatment and distribution are essential services that cannot be interrupted. Manual operating capability ensures that safe water supply continues even during extended SCADA system outages caused by cyber attacks.",
+          "relatedActSection": "s18",
+          "relatedFramework": "SPAN Service Continuity Standards; ISO 22301; AWWA Emergency Response Planning"
+        },
+        {
+          "requirementId": "ws-cop-5.2",
+          "requirement": "Recovery Time Objectives for water NCII systems shall not exceed four hours for SCADA control of treatment plants, eight hours for distribution network monitoring, and 24 hours for billing and administrative systems, with recovery procedures tested annually.",
+          "rationale": "Tiered RTOs ensure that recovery efforts focus first on systems that directly affect water quality and supply continuity, while accepting longer recovery times for systems that do not have immediate public health implications.",
+          "relatedActSection": "s18",
+          "relatedFramework": "SPAN Performance Standards; ISO 22301 Clause 8.3"
+        }
+      ]
+    }
+  ],
+  "additionalTestProcedures": [
+    {
+      "testId": "WTR-S-SECT-01",
+      "objective": "Verify water treatment SCADA security controls",
+      "testType": "ToE",
+      "procedure": "1. Review SCADA security architecture. 2. Verify chemical dosing system safeguards. 3. Test access controls on treatment control systems. 4. Verify safety interlocks for chemical processes.",
+      "copDomainRef": "wtr-cop-4",
+      "evidenceRequired": [
+        "SCADA architecture documentation",
+        "Safety interlock configuration",
+        "Treatment system access logs"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    },
+    {
+      "testId": "WTR-S-SECT-02",
+      "objective": "Verify water quality monitoring system integrity",
+      "testType": "ToE",
+      "procedure": "1. Identify water quality monitoring systems. 2. Verify sensor data integrity controls. 3. Test alerting thresholds and escalation procedures. 4. Verify manual verification procedures for anomalous readings.",
+      "copDomainRef": "wtr-cop-3",
+      "evidenceRequired": [
+        "Water quality monitoring configuration",
+        "Alert threshold documentation",
+        "Manual verification procedures"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    },
+    {
+      "testId": "WTR-S-SECT-03",
+      "objective": "Verify IT/OT segmentation for water infrastructure",
+      "testType": "ToD",
+      "procedure": "1. Obtain network diagrams of water IT/OT environments. 2. Verify segmentation between corporate IT and OT/SCADA. 3. Test firewall rules at IT/OT boundaries. 4. Review remote access controls to OT systems.",
+      "copDomainRef": "wtr-cop-4",
+      "evidenceRequired": [
+        "IT/OT network diagrams",
+        "Firewall rule sets",
+        "Remote access configuration"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    }
+  ],
+  "modifiedBaselineProcedures": [
+    {
+      "baselineTestId": "NET-ToD-01",
+      "modification": "Must include water SCADA/OT segmentation and safety interlock verification",
+      "reason": "Water CoP requires IT/OT separation with safety interlocks for chemical processes"
+    },
+    {
+      "baselineTestId": "PHY-ToE-01",
+      "modification": "Physical security must cover remote water treatment and pumping stations",
+      "reason": "Water infrastructure includes geographically dispersed unmanned facilities"
+    }
+  ],
+  "sectorSpecificEvidence": [
+    {
+      "documentName": "Water SCADA Security Assessment",
+      "description": "Assessment of SCADA security for water treatment and distribution systems",
+      "mandatory": true
+    },
+    {
+      "documentName": "Chemical Dosing Safety Interlock Report",
+      "description": "Verification of safety interlocks preventing unauthorized chemical dosing changes",
+      "mandatory": true
+    }
+  ]
+}

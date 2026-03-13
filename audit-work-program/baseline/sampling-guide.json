@@ -1,0 +1,243 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-13",
+    "description": "Sampling methodology and sample size tables for NACSA Act 854 CoP compliance audits"
+  },
+  "methodology": {
+    "approach": "Risk-based sampling aligned with ISACA ITAF and AICPA guidance",
+    "types": {
+      "statistical": {
+        "description": "Sampling method that uses probability theory to select samples and evaluate results, allowing the auditor to quantify sampling risk and make statistically valid conclusions about the population",
+        "whenToUse": "Use when the population is large (>250 items), results must withstand regulatory scrutiny, or when the auditor needs to project the deviation rate to the entire population with a defined confidence level"
+      },
+      "nonStatistical": {
+        "description": "Sampling method that relies on auditor judgment to select samples and evaluate results, without formal statistical inference about the population",
+        "whenToUse": "Use when the population is small (<50 items), for walkthrough testing, when testing design effectiveness, or when the control is highly manual and context-specific requiring professional judgment"
+      }
+    },
+    "selectionMethods": [
+      {
+        "method": "Random",
+        "description": "Each item in the population has an equal probability of being selected using a random number generator or equivalent tool. Provides the strongest basis for representative sampling and is required for formal statistical conclusions."
+      },
+      {
+        "method": "Systematic",
+        "description": "Items are selected at fixed intervals from an ordered population after a random starting point. Suitable when the population is sequentially ordered (e.g., change request logs) and no periodic patterns exist that could bias the sample."
+      },
+      {
+        "method": "Haphazard",
+        "description": "Items are selected without any conscious bias but without formal randomization. The auditor picks items throughout the population without any structured pattern. Acceptable for non-statistical sampling but not for formal statistical conclusions."
+      },
+      {
+        "method": "Judgmental",
+        "description": "Items are selected based on the auditor's professional judgment, targeting specific risk factors such as high-privilege accounts, critical system changes, or known vulnerability categories. Used to supplement other methods for targeted risk coverage."
+      }
+    ]
+  },
+  "sampleSizeTables": {
+    "attributeSampling": [
+      {
+        "populationSize": "1-10",
+        "sampleSize": "All",
+        "notes": "Full population testing required. Small populations do not provide sufficient basis for sampling."
+      },
+      {
+        "populationSize": "11-50",
+        "sampleSize": 10,
+        "notes": "Minimum sample for small populations. Increase to 15 if prior deviations were identified or if the control is high-risk."
+      },
+      {
+        "populationSize": "51-250",
+        "sampleSize": 25,
+        "notes": "Standard sample size at 90% confidence level with 5% expected deviation rate and 10% tolerable deviation rate."
+      },
+      {
+        "populationSize": "251-1000",
+        "sampleSize": 30,
+        "notes": "Appropriate for medium-sized populations. Consider increasing to 40 for critical NCII controls rated as high risk."
+      },
+      {
+        "populationSize": "1001-5000",
+        "sampleSize": 40,
+        "notes": "Increased sample to maintain confidence for larger populations. Apply stratification by risk category or system criticality where applicable."
+      },
+      {
+        "populationSize": ">5000",
+        "sampleSize": 60,
+        "notes": "Large population sample size at 95% confidence level. Must use random or systematic selection method. Consider stratified sampling across NCII asset classifications."
+      }
+    ],
+    "byControlFrequency": [
+      {
+        "frequency": "Annual",
+        "occurrences": 1,
+        "sampleSize": 1,
+        "notes": "Test the single occurrence. Verify timing, completeness, proper authorization, and evidence of follow-up on identified issues."
+      },
+      {
+        "frequency": "Semi-annual",
+        "occurrences": 2,
+        "sampleSize": 2,
+        "notes": "Test both occurrences. Verify consistency of execution across both periods and completeness of documentation."
+      },
+      {
+        "frequency": "Quarterly",
+        "occurrences": 4,
+        "sampleSize": 2,
+        "notes": "Select two quarters for testing. Include at least one quarter with known operational changes or incidents if applicable."
+      },
+      {
+        "frequency": "Monthly",
+        "occurrences": 12,
+        "sampleSize": 5,
+        "notes": "Select five months ensuring coverage across the audit period. Include the first month, last month, and three randomly selected months."
+      },
+      {
+        "frequency": "Weekly",
+        "occurrences": 52,
+        "sampleSize": 15,
+        "notes": "Select 15 weeks distributed across the audit period. Ensure representation from each quarter. Use systematic selection with random start."
+      },
+      {
+        "frequency": "Daily",
+        "occurrences": 365,
+        "sampleSize": 25,
+        "notes": "Select 25 days using random selection. Ensure coverage includes weekends and public holidays if the control operates continuously."
+      },
+      {
+        "frequency": "Multiple-times-daily",
+        "occurrences": ">365",
+        "sampleSize": 40,
+        "notes": "Select 40 occurrences using random selection across different times of day. Consider automated controls may warrant inspection of configuration rather than output testing."
+      }
+    ]
+  },
+  "deviationEvaluation": {
+    "zeroDeviations": "Control is operating effectively. Document the conclusion with reference to sample size, selection method, and period covered. The auditor may conclude that the control operated effectively throughout the audit period.",
+    "oneDeviation": "Investigate the root cause of the deviation. Determine if the deviation is isolated or indicative of a systemic issue. Consider expanding the sample size by 50% to validate. If the expanded sample reveals no additional deviations, the control may be rated as Partially Compliant with a Low severity finding. Document the nature, cause, and impact of the deviation.",
+    "twoOrMoreDeviations": "Two or more deviations indicate a potential systemic control failure. Expand the sample to the next population tier or test the full population if feasible. Assess whether compensating controls mitigate the risk. The control should be rated Non-Compliant unless compensating controls are sufficient. Escalate to the engagement lead for discussion.",
+    "compensatingControls": "When deviations are identified, assess whether compensating controls adequately address the underlying risk. Compensating controls must be (1) documented and approved, (2) directly address the same risk, (3) operate effectively for the audit period, and (4) be tested independently. Document the compensating control assessment in the working papers with a clear rationale for reliance."
+  },
+  "domainSpecificGuidance": [
+    {
+      "domain": "ncii-governance",
+      "population": "Governance committee meetings and NACSA compliance submissions",
+      "typicalSize": "12-24",
+      "recommendedSample": 5,
+      "notes": "Test all NACSA submissions (typically annual). For governance meetings, select 5 from the audit period ensuring coverage across quarters. Verify attendance of key personnel and follow-up on action items."
+    },
+    {
+      "domain": "risk-management",
+      "population": "Risk assessments, risk register entries, and risk treatment plans",
+      "typicalSize": "20-100",
+      "recommendedSample": 15,
+      "notes": "Stratify by NCII asset classification (Critical, Major, Minor). Ensure all Critical-rated assets have their risk assessments sampled. Test risk treatment plan progress for selected items."
+    },
+    {
+      "domain": "access-control",
+      "population": "User access accounts on NCII systems",
+      "typicalSize": ">100",
+      "recommendedSample": 25,
+      "notes": "Include privileged accounts in sample with over-representation (at least 50% of privileged accounts). Test joiners/movers/leavers lifecycle. Reconcile sample against HR records for terminated users."
+    },
+    {
+      "domain": "network-security",
+      "population": "Firewall rules, network change requests, and IDS/IPS alerts",
+      "typicalSize": ">500",
+      "recommendedSample": 30,
+      "notes": "For firewall rules, focus on any-any rules, overly permissive rules, and rules without expiry dates. For IDS/IPS, sample alerts across severity levels. Include external-facing network segments."
+    },
+    {
+      "domain": "physical-security",
+      "population": "Physical access events and visitor logs at NCII facilities",
+      "typicalSize": ">1000",
+      "recommendedSample": 25,
+      "notes": "Sample across all NCII facility locations. Include after-hours access events, visitor escorts, and tailgating incidents. Verify CCTV retention compliance for sampled dates."
+    },
+    {
+      "domain": "personnel-security",
+      "population": "Personnel with NCII access requiring security clearance and training",
+      "typicalSize": "50-500",
+      "recommendedSample": 25,
+      "notes": "Stratify by role type (permanent staff, contractors, third-party). Verify vetting currency for all sampled individuals. Cross-reference training completion records against access lists."
+    },
+    {
+      "domain": "incident-management",
+      "population": "Security incidents reported during the audit period",
+      "typicalSize": "10-200",
+      "recommendedSample": 15,
+      "notes": "Include all Critical and High severity incidents in the sample. For remaining, use random selection across the period. Verify NACSA notification compliance for notifiable incidents. Test end-to-end incident lifecycle."
+    },
+    {
+      "domain": "business-continuity",
+      "population": "BCP/DR tests, backup restoration tests, and BIA reviews",
+      "typicalSize": "5-20",
+      "recommendedSample": "All",
+      "notes": "Typically small population - test all BCP/DR exercises. Verify recovery times achieved against stated RTOs/RPOs. For backup tests, sample across different NCII systems and data classifications."
+    },
+    {
+      "domain": "change-management",
+      "population": "Change requests affecting NCII systems",
+      "typicalSize": "50-500",
+      "recommendedSample": 25,
+      "notes": "Stratify by change type (standard, normal, emergency). Include all emergency changes in sample. Verify segregation of duties between requester, approver, and implementer. Test rollback evidence for failed changes."
+    },
+    {
+      "domain": "data-protection",
+      "population": "Data handling events, DLP incidents, and encryption configurations",
+      "typicalSize": ">100",
+      "recommendedSample": 25,
+      "notes": "Sample DLP alerts across severity levels. Test encryption configurations on a sample of NCII databases and transmission channels. Verify data classification labeling on sampled documents."
+    },
+    {
+      "domain": "vulnerability-management",
+      "population": "Vulnerability scan findings and patch deployment records",
+      "typicalSize": ">500",
+      "recommendedSample": 30,
+      "notes": "Stratify by severity (Critical, High, Medium, Low). All Critical vulnerabilities should be in scope. Verify patch deployment timelines against SLA requirements. Test for recurrence of previously remediated vulnerabilities."
+    },
+    {
+      "domain": "security-monitoring",
+      "population": "SIEM alerts, SOC triage records, and log source configurations",
+      "typicalSize": ">1000",
+      "recommendedSample": 30,
+      "notes": "Sample alerts across different use case categories and severity levels. Verify triage decisions and response timelines. Test log source completeness against NCII asset inventory. Include overnight and weekend alerts."
+    },
+    {
+      "domain": "third-party-security",
+      "population": "Third-party vendors with NCII access or data handling",
+      "typicalSize": "10-50",
+      "recommendedSample": 10,
+      "notes": "Include all critical/high-risk vendors in sample. Verify security assessment currency (within 12 months). Test contract security clauses and SLA compliance. Review third-party access logs for sampled vendors."
+    },
+    {
+      "domain": "cryptography",
+      "population": "Cryptographic keys, certificates, and encrypted channels",
+      "typicalSize": "20-200",
+      "recommendedSample": 15,
+      "notes": "Include all certificates approaching expiry (within 90 days). Test key rotation compliance for sampled keys. Verify algorithm and key length compliance against policy. Include both data-at-rest and data-in-transit encryption."
+    },
+    {
+      "domain": "system-hardening",
+      "population": "NCII system instances requiring hardening baseline compliance",
+      "typicalSize": "20-500",
+      "recommendedSample": 20,
+      "notes": "Stratify by platform type (Windows, Linux, network devices, databases). Include internet-facing systems with over-representation. Compare scan results against approved baselines. Verify exception register for any deviations."
+    },
+    {
+      "domain": "compliance-legal",
+      "population": "Regulatory requirements, NACSA directions, and prior audit findings",
+      "typicalSize": "10-50",
+      "recommendedSample": "All",
+      "notes": "Test compliance with all applicable NACSA Directions. Verify remediation of all prior audit findings. Cross-reference regulatory register against current legislation. Typically small population requiring full coverage."
+    },
+    {
+      "domain": "secure-development",
+      "population": "Application releases and code deployments for NCII applications",
+      "typicalSize": "10-100",
+      "recommendedSample": 10,
+      "notes": "Include major releases and emergency fixes. Verify security testing was performed prior to production deployment. Test environment segregation controls. Review code review evidence for sampled releases."
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-13",
+    "sectorId": "agriculture-and-plantation",
+    "sectorName": "Code of Practice for the Agriculture and Food Sector",
+    "sectorLead": "Ministry of Agriculture and Food Security",
+    "copReference": "cop-agriculture-food.json",
+    "copStatus": "pending",
+    "sourceType": "constructed-indicative",
+    "description": "Sector-specific audit overlay for Code of Practice for the Agriculture and Food Sector NCII entities"
+  },
+  "sectorContext": {
+    "regulatoryEnvironment": "Ministry of Agriculture and Food Security (KPKM), Food Act 1983, Malaysian Quarantine and Inspection Services. Food supply chain and cold chain security.",
+    "criticalServices": [
+      "Food supply chain management",
+      "Agricultural monitoring systems",
+      "Food safety tracking",
+      "Cold chain logistics",
+      "Quarantine and inspection systems"
+    ],
+    "typicalNCIISystems": [
+      "Food traceability platforms",
+      "Agricultural supply chain management",
+      "Cold chain monitoring systems",
+      "Quarantine information systems",
+      "Food safety laboratory systems"
+    ],
+    "sectorSpecificThreats": [
+      "Supply chain data manipulation",
+      "Cold chain monitoring tampering",
+      "Food safety data falsification",
+      "Agricultural IoT device compromise",
+      "Disruption of quarantine systems"
+    ]
+  },
+  "copDomains": [
+    {
+      "domainId": "af-cop-1",
+      "domainName": "Governance and Oversight",
+      "description": "Establishment of cyber security governance for agriculture and food supply chain NCII including cold chain systems, national food reserve management, and agricultural commodity trading platforms",
+      "requirements": [
+        {
+          "requirementId": "af-cop-1.1",
+          "requirement": "The NCII entity shall designate a senior officer responsible for cyber security of agriculture and food NCII systems, with governance arrangements that address the unique characteristics of geographically distributed agricultural infrastructure and seasonal operational patterns.",
+          "rationale": "Agriculture and food NCII includes diverse systems from cold chain logistics to commodity exchanges. Governance must account for the distributed nature of agricultural operations and the seasonal variation in system criticality.",
+          "relatedActSection": "s18",
+          "relatedFramework": "ISO 27001 A.5; FAO Food Security Guidelines"
+        },
+        {
+          "requirementId": "af-cop-1.2",
+          "requirement": "The NCII entity shall develop a sector-specific cyber security policy addressing protection of food safety systems, supply chain management platforms, national strategic food reserve inventory systems, and agricultural subsidy distribution mechanisms.",
+          "rationale": "Agriculture NCII encompasses systems critical to national food security. A sector-specific policy ensures that cyber security measures address the unique risks to food supply continuity and food safety assurance.",
+          "relatedActSection": "s18",
+          "relatedFramework": "National Agrofood Policy 2021-2030; ISO 27001 A.5"
+        }
+      ]
+    },
+    {
+      "domainId": "af-cop-2",
+      "domainName": "Supply Chain and Cold Chain System Security",
+      "description": "Protection of digital systems managing food supply chain logistics, cold chain monitoring, and food traceability NCII",
+      "requirements": [
+        {
+          "requirementId": "af-cop-2.1",
+          "requirement": "Cold chain monitoring and control systems designated as NCII shall implement automated alerts for temperature excursions, with cyber security controls preventing unauthorised modification of temperature setpoints, sensor calibration data, and traceability records.",
+          "rationale": "Compromise of cold chain NCII could enable spoilage of perishable food stocks or falsification of food safety records, posing public health risks. Integrity controls protect both the physical cold chain and the records that assure food safety compliance.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Food Act 1983; MAQIS Import Controls; IEC 62443-3-3"
+        },
+        {
+          "requirementId": "af-cop-2.2",
+          "requirement": "Food traceability systems designated as NCII shall implement tamper-evident logging of all supply chain events, with cryptographic integrity verification preventing unauthorised modification of product origin, handling, and distribution records.",
+          "rationale": "Food traceability NCII supports recall capability and food safety assurance. Tamper-evident records ensure that supply chain provenance data cannot be falsified to disguise contaminated or counterfeit food products.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Food Safety and Quality Division Standards; ISO 22000; ISO 27001 A.12.4"
+        }
+      ]
+    },
+    {
+      "domainId": "af-cop-3",
+      "domainName": "Risk Assessment and Vulnerability Management",
+      "description": "Cyber security risk assessment processes for agriculture and food NCII, accounting for the distributed and heterogeneous nature of agricultural infrastructure",
+      "requirements": [
+        {
+          "requirementId": "af-cop-3.1",
+          "requirement": "The NCII entity shall conduct annual cyber security risk assessments that account for the unique threat landscape of agriculture NCII, including risks from IoT devices in precision agriculture, remote access to distributed facilities, and supply chain interdependencies with transport and energy sectors.",
+          "rationale": "Agriculture NCII faces distinctive risks from widely distributed IoT sensors, remote facility management, and deep supply chain dependencies. Risk assessments must address these sector-specific characteristics to be meaningful.",
+          "relatedActSection": "s18",
+          "relatedFramework": "ISO 27005; National Agrofood Policy 2021-2030; IEC 62443-3-2"
+        },
+        {
+          "requirementId": "af-cop-3.2",
+          "requirement": "The NCII entity shall implement a vulnerability management programme covering all NCII components, with particular attention to IoT devices, operational technology in processing facilities, and web-facing supply chain management platforms.",
+          "rationale": "Agriculture NCII encompasses a wide range of technology from industrial OT in food processing to consumer-grade IoT in farming. Vulnerability management must span this diversity to prevent exploitation of the weakest components.",
+          "relatedActSection": "s18",
+          "relatedFramework": "ISO 27001 A.12.6; NIST SP 800-40; IEC 62443-2-3"
+        }
+      ]
+    },
+    {
+      "domainId": "af-cop-4",
+      "domainName": "Incident Response and Food Security Coordination",
+      "description": "Cyber incident response with coordination for potential impacts on national food security and food safety",
+      "requirements": [
+        {
+          "requirementId": "af-cop-4.1",
+          "requirement": "Cyber security incidents affecting agriculture and food NCII shall be reported to NACSA and the Ministry of Agriculture and Food Security within six hours of detection, with immediate escalation if the incident may affect national food reserve integrity, food safety monitoring capability, or strategic commodity trading systems.",
+          "rationale": "Disruption of agriculture NCII can affect national food security. Timely reporting enables coordinated response to protect food supplies and activate contingency measures for affected supply chains.",
+          "relatedActSection": "s26",
+          "relatedFramework": "National Food Security Policy; ISO 27035; FAO Early Warning Systems"
+        },
+        {
+          "requirementId": "af-cop-4.2",
+          "requirement": "The NCII entity shall develop incident response procedures that include coordination with food safety authorities for incidents that may compromise food quality monitoring, contamination detection, or product recall systems.",
+          "rationale": "Cyber attacks on food safety NCII may have direct public health consequences if contamination detection or recall capabilities are degraded. Cross-agency coordination ensures public health response is activated in parallel with cyber incident response.",
+          "relatedActSection": "s26",
+          "relatedFramework": "Food Act 1983; MOH Food Safety Response Framework; ISO 27035"
+        }
+      ]
+    }
+  ],
+  "additionalTestProcedures": [
+    {
+      "testId": "AGR-S-SECT-01",
+      "objective": "Verify food supply chain data integrity controls",
+      "testType": "ToE",
+      "procedure": "1. Review food traceability system controls. 2. Test data integrity for supply chain records. 3. Verify tamper-evident logging for food safety data. 4. Review access controls on traceability systems.",
+      "copDomainRef": "agr-cop-2",
+      "evidenceRequired": [
+        "Traceability system security assessment",
+        "Data integrity controls documentation",
+        "Access logs"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    },
+    {
+      "testId": "AGR-S-SECT-02",
+      "objective": "Verify cold chain monitoring system security",
+      "testType": "ToD",
+      "procedure": "1. Identify cold chain monitoring within NCII scope. 2. Review IoT sensor security controls. 3. Verify monitoring data integrity. 4. Test alerting for cold chain breaches.",
+      "copDomainRef": "agr-cop-2",
+      "evidenceRequired": [
+        "Cold chain system architecture",
+        "IoT security assessment",
+        "Alert configuration"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    },
+    {
+      "testId": "AGR-S-SECT-03",
+      "objective": "Verify agricultural IoT device security controls",
+      "testType": "ToD",
+      "procedure": "1. Inventory IoT devices in agricultural NCII scope. 2. Review IoT device authentication and access controls. 3. Verify firmware update procedures. 4. Test network segmentation for IoT devices.",
+      "copDomainRef": "agr-cop-3",
+      "evidenceRequired": [
+        "IoT device inventory",
+        "IoT security policy",
+        "Network segmentation diagrams"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    }
+  ],
+  "modifiedBaselineProcedures": [
+    {
+      "baselineTestId": "NET-ToD-01",
+      "modification": "Network architecture must include IoT/OT segmentation for agricultural monitoring devices",
+      "reason": "Agriculture CoP requires segmentation of IoT devices from core NCII systems"
+    },
+    {
+      "baselineTestId": "SUP-ToE-01",
+      "modification": "Supply chain monitoring must include food supply chain data integrity verification",
+      "reason": "Agriculture CoP mandates supply chain data integrity for food safety"
+    }
+  ],
+  "sectorSpecificEvidence": [
+    {
+      "documentName": "Food Supply Chain Data Integrity Assessment",
+      "description": "Assessment of data integrity controls for food traceability and supply chain systems",
+      "mandatory": true
+    },
+    {
+      "documentName": "Agricultural IoT Device Security Assessment",
+      "description": "Security assessment of IoT devices used in agricultural NCII monitoring",
+      "mandatory": false
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-13",
+    "sectorId": "science-technology-and-innovation",
+    "sectorName": "Code of Practice for the Science and Technology Sector",
+    "sectorLead": "Ministry of Science, Technology and Innovation",
+    "copReference": "cop-science-technology.json",
+    "copStatus": "pending",
+    "sourceType": "constructed-indicative",
+    "description": "Sector-specific audit overlay for Code of Practice for the Science and Technology Sector NCII entities"
+  },
+  "sectorContext": {
+    "regulatoryEnvironment": "Ministry of Science, Technology and Innovation (MOSTI), research data governance, emerging technology regulatory frameworks. National R&D infrastructure protection.",
+    "criticalServices": [
+      "National research networks",
+      "Scientific computing infrastructure",
+      "R&D data repositories",
+      "Space and satellite systems",
+      "Nuclear research facilities"
+    ],
+    "typicalNCIISystems": [
+      "High-performance computing clusters",
+      "Research data platforms",
+      "Satellite ground stations",
+      "National research network infrastructure",
+      "Scientific instrument networks"
+    ],
+    "sectorSpecificThreats": [
+      "Research data theft and espionage",
+      "HPC resource hijacking",
+      "Satellite system interference",
+      "IP theft from R&D systems",
+      "Nation-state targeting of emerging technology research"
+    ]
+  },
+  "copDomains": [
+    {
+      "domainId": "st-cop-1",
+      "domainName": "Governance and Research Security",
+      "description": "Cyber security governance for science and technology NCII including national research networks, high-performance computing facilities, and sensitive research data repositories",
+      "requirements": [
+        {
+          "requirementId": "st-cop-1.1",
+          "requirement": "The NCII entity shall establish a Research Cyber Security Committee with representation from research leadership, IT security, and data governance functions, responsible for balancing the open and collaborative nature of scientific research with the protection requirements of NCII-designated systems.",
+          "rationale": "Science and technology NCII must balance research openness with security. Governance structures need to include researchers who understand the unique operational requirements of scientific computing alongside security professionals.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MOSTI National Science Policy; ISO 27001 A.5; NIST SP 800-171"
+        },
+        {
+          "requirementId": "st-cop-1.2",
+          "requirement": "The NCII entity shall develop a cyber security policy that addresses the protection of national research infrastructure, intellectual property in strategic technology domains, and sensitive research data including dual-use technologies, with classification levels aligned with national security requirements where applicable.",
+          "rationale": "Research NCII may contain dual-use technologies and strategic intellectual property targeted by foreign intelligence services. Policy must address these espionage risks alongside conventional cyber threats.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Strategic Trade Act 2010; Official Secrets Act 1972; ISO 27001 A.5"
+        }
+      ]
+    },
+    {
+      "domainId": "st-cop-2",
+      "domainName": "High-Performance Computing and Research Network Security",
+      "description": "Protection of national high-performance computing infrastructure, research networks, and scientific data storage designated as NCII",
+      "requirements": [
+        {
+          "requirementId": "st-cop-2.1",
+          "requirement": "High-performance computing (HPC) facilities designated as NCII shall implement multi-tier access control with separate security zones for publicly accessible research services, collaborative research environments, and restricted computation involving sensitive or classified data.",
+          "rationale": "HPC facilities serve diverse users from open science collaborations to sensitive national research. Tiered security zones enable appropriate access controls without imposing unnecessary restrictions on open research activities.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MOSTI HPC Policy; ISO 27001 A.9; NIST SP 800-171"
+        },
+        {
+          "requirementId": "st-cop-2.2",
+          "requirement": "National research networks designated as NCII shall implement network monitoring with detection capabilities for data exfiltration, credential abuse, and lateral movement, while respecting the privacy of legitimate research communications and data transfers.",
+          "rationale": "Research networks carry large volumes of legitimate data transfers that may resemble exfiltration. Monitoring must be calibrated to detect genuine threats without impeding the research data flows that are the network's primary purpose.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MYREN Operating Policy; ISO 27001 A.13; NIST CSF DE"
+        },
+        {
+          "requirementId": "st-cop-2.3",
+          "requirement": "Research data repositories designated as NCII shall implement integrity controls preventing unauthorised modification of scientific datasets, with version control and audit trails that support reproducibility and detection of data tampering.",
+          "rationale": "Integrity of scientific data is fundamental to research reliability. Tampering with research data in NCII repositories could undermine national scientific capabilities and lead to flawed conclusions in critical research domains.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MOSTI Data Governance Framework; ISO 27001 A.12.4; FAIR Data Principles"
+        }
+      ]
+    },
+    {
+      "domainId": "st-cop-3",
+      "domainName": "Intellectual Property and Technology Transfer Protection",
+      "description": "Protection of strategic intellectual property and controlled technology within science and technology NCII",
+      "requirements": [
+        {
+          "requirementId": "st-cop-3.1",
+          "requirement": "The NCII entity shall implement data loss prevention controls for research involving strategic technologies, dual-use materials, or nationally significant intellectual property, with monitoring for bulk data transfers to foreign jurisdictions and automated alerts for policy violations.",
+          "rationale": "State-sponsored intellectual property theft targeting science and technology NCII is a documented national security threat. DLP controls provide a technical layer of protection for strategic research outputs beyond administrative policies.",
+          "relatedActSection": "s18",
+          "relatedFramework": "Strategic Trade Act 2010; MOSTI IP Protection Guidelines; ISO 27001 A.13.2"
+        },
+        {
+          "requirementId": "st-cop-3.2",
+          "requirement": "International research collaborations involving NCII-designated systems or data shall be subject to cyber security review prior to granting foreign researcher access, with access controls, monitoring, and data sharing limitations proportionate to the sensitivity of the research domain.",
+          "rationale": "International collaboration is essential for scientific progress but creates potential vectors for unauthorised access to sensitive research NCII. Pre-collaboration security review balances openness with protection of national research interests.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MOSTI International Collaboration Policy; ISO 27001 A.15; NIST SP 800-171"
+        }
+      ]
+    },
+    {
+      "domainId": "st-cop-4",
+      "domainName": "Incident Response and Research Continuity",
+      "description": "Cyber incident response for science and technology NCII with focus on protecting research continuity and data integrity",
+      "requirements": [
+        {
+          "requirementId": "st-cop-4.1",
+          "requirement": "Cyber security incidents affecting science and technology NCII shall be reported to NACSA and MOSTI within six hours of detection, with immediate escalation for incidents involving suspected foreign intelligence activity, compromise of dual-use technology research, or disruption of nationally significant computational programmes.",
+          "rationale": "Science NCII may be targeted by sophisticated state-sponsored actors seeking strategic technology. Accelerated reporting for espionage-related incidents enables national security coordination beyond standard cyber incident response.",
+          "relatedActSection": "s26",
+          "relatedFramework": "MOSTI Incident Reporting Framework; ISO 27035; NIST SP 800-61"
+        },
+        {
+          "requirementId": "st-cop-4.2",
+          "requirement": "The NCII entity shall maintain backup and recovery procedures for research data and computational environments on NCII systems, with Recovery Time Objectives of four hours for active research computations and 24 hours for archival research data repositories.",
+          "rationale": "Loss of research computation progress can represent months of work and significant national investment. Recovery procedures with defined RTOs ensure that the impact of cyber incidents on national research programmes is minimised.",
+          "relatedActSection": "s18",
+          "relatedFramework": "MOSTI Data Governance Framework; ISO 22301; ISO 27001 A.12.3"
+        }
+      ]
+    }
+  ],
+  "additionalTestProcedures": [
+    {
+      "testId": "SCI-S-SECT-01",
+      "objective": "Verify research data protection controls for NCII systems",
+      "testType": "ToE",
+      "procedure": "1. Identify sensitive research data within NCII scope. 2. Review data classification for research outputs. 3. Verify access controls restrict research data to authorized researchers. 4. Test data exfiltration prevention controls.",
+      "copDomainRef": "sci-cop-2",
+      "evidenceRequired": [
+        "Research data classification register",
+        "Access control configuration",
+        "DLP policy documentation"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    },
+    {
+      "testId": "SCI-S-SECT-02",
+      "objective": "Verify HPC and scientific computing security controls",
+      "testType": "ToD",
+      "procedure": "1. Review HPC security architecture. 2. Verify user authentication and job scheduling security. 3. Test network isolation of computing clusters. 4. Review resource usage monitoring for unauthorized activity.",
+      "copDomainRef": "sci-cop-4",
+      "evidenceRequired": [
+        "HPC security architecture",
+        "Authentication configuration",
+        "Resource monitoring logs"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    },
+    {
+      "testId": "SCI-S-SECT-03",
+      "objective": "Verify IP protection and anti-espionage controls for R&D NCII",
+      "testType": "ToE",
+      "procedure": "1. Review IP protection policy. 2. Test DLP controls for research data. 3. Verify insider threat monitoring for research environments. 4. Review collaboration security controls for international research partnerships.",
+      "copDomainRef": "sci-cop-1",
+      "evidenceRequired": [
+        "IP protection policy",
+        "DLP configuration",
+        "Collaboration security procedures"
+      ],
+      "ratingCriteria": {
+        "compliant": "Sector-specific requirement is met with documented evidence",
+        "partiallyCompliant": "Partial implementation or documentation gaps",
+        "nonCompliant": "Requirement not addressed or fundamentally inadequate"
+      }
+    }
+  ],
+  "modifiedBaselineProcedures": [
+    {
+      "baselineTestId": "ACC-ToE-01",
+      "modification": "Access controls must accommodate federated research collaboration while maintaining security",
+      "reason": "Science CoP requires balancing open research collaboration with NCII protection"
+    },
+    {
+      "baselineTestId": "CRY-ToE-01",
+      "modification": "Encryption must protect research data including during international collaboration",
+      "reason": "Science CoP mandates IP protection for nationally significant research data"
+    }
+  ],
+  "sectorSpecificEvidence": [
+    {
+      "documentName": "Research Data Protection Assessment",
+      "description": "Assessment of protection controls for sensitive research data within NCII systems",
+      "mandatory": true
+    },
+    {
+      "documentName": "IP Protection and Anti-Espionage Report",
+      "description": "Assessment of controls preventing unauthorized access to or exfiltration of research IP",
+      "mandatory": true
+    }
+  ]
+}
