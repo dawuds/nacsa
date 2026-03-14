@@ -42,7 +42,7 @@
       "title": "Initial Notification Requirements",
       "requirement": "Where a national critical information infrastructure entity becomes aware of a cyber security incident that has or may have a significant impact, the entity shall submit an initial notification to the Chief Executive within six hours of becoming aware of the incident. The initial notification shall contain the following information: (a) the name and registration or identification number of the entity; (b) the name, designation, telephone number, and email address of the person submitting the notification and of the entity's principal point of contact for incident response; (c) the date and time the incident was detected or discovered; (d) the date and time the entity became aware that the incident has or may have a significant impact; (e) a preliminary description of the incident including the type of incident, the systems or networks affected, and the suspected or known attack vector; (f) the criteria under regulation 3 that the entity believes are met; (g) a preliminary assessment of the actual or potential impact on the entity's operations, data, and services; (h) a description of any immediate containment or mitigation measures taken or being taken; (i) whether law enforcement has been notified; (j) whether any other regulatory authority has been notified and, if so, which authority.",
       "explanation": "The 6-hour clock starts from the moment the entity 'becomes aware' of the incident meeting a significant impact criterion -- not from the time of the incident itself. The required information fields are designed to give NACSA an immediate operational picture. Entities do not need complete forensic analysis at this stage; preliminary assessments and descriptions are acceptable. However, all ten mandatory fields must be addressed even if some entries state that information is still being gathered.",
-      "relatedActSection": "s26(1)"
+      "relatedActSection": "s26"
     },
     {
       "id": "noi-r5",
@@ -50,7 +50,7 @@
       "title": "Follow-up Notification Requirements",
       "requirement": "The entity shall submit a follow-up notification to the Chief Executive within seventy-two hours of the submission of the initial notification. The follow-up notification shall contain the following information: (a) an updated and detailed description of the incident, including the root cause if known; (b) the scope of the incident, including the number and types of systems, networks, and devices affected; (c) the volume and categories of data compromised, exfiltrated, or otherwise affected; (d) a detailed assessment of the impact on the entity's operations, services, and any third parties; (e) a comprehensive description of all containment, eradication, and recovery measures taken, in progress, or planned; (f) indicators of compromise identified, including but not limited to IP addresses, domain names, file hashes, email addresses, and malware signatures; (g) a timeline of events from initial compromise to detection and response; (h) an assessment of whether the incident has been fully contained or whether it is ongoing; (i) any additional information requested by the Chief Executive in response to the initial notification. Further follow-up notifications shall be submitted at intervals not exceeding seventy-two hours until the Chief Executive confirms in writing that no further notifications are required.",
       "explanation": "The follow-up notification must be submitted within 72 hours after the initial notification (not after the incident). It requires substantially more detail than the initial notification, reflecting the expected progress of the entity's investigation. The requirement for indicators of compromise is particularly important as it enables NACSA to alert other NCII entities about emerging threats. Follow-up notifications continue on a rolling 72-hour cycle until NACSA explicitly closes the notification requirement in writing.",
-      "relatedActSection": "s26(2)"
+      "relatedActSection": "s26"
     },
     {
       "id": "noi-r6",
@@ -82,7 +82,8 @@
       "title": "Record Keeping",
       "requirement": "Every national critical information infrastructure entity shall maintain complete and accurate records of: (a) every cyber security incident detected, regardless of whether it meets the significant impact threshold under regulation 3; (b) the assessment conducted to determine whether each incident has or may have a significant impact; (c) copies of all notifications, reports, and correspondence submitted to or received from the Chief Executive under these Regulations; (d) all internal incident response actions, decisions, and communications related to each notifiable incident; (e) all indicators of compromise, forensic evidence, and technical analysis related to each notifiable incident. Records under this regulation shall be maintained for a period of not less than seven years from the date of the incident and shall be made available to the Chief Executive or any authorised officer upon request within forty-eight hours of such request.",
       "explanation": "Record keeping extends beyond just notifiable incidents -- entities must document ALL detected incidents and the triage assessment that determined whether notification was required. This creates an audit trail that NACSA can review during inspections to verify that entities are properly identifying and escalating significant incidents. The 7-year retention period aligns with general regulatory record-keeping expectations and ensures records remain available for any subsequent investigations or legal proceedings. The 48-hour production window upon request gives entities reasonable time to compile records.",
-      "relatedActSection": "s26, s30"
+      "relatedActSection": "s26",
+      "relatedActSections": ["s26", "s30"]
     },
     {
       "id": "noi-r10",
@@ -90,7 +91,8 @@
       "title": "Confidentiality of Notifications",
       "requirement": "All information contained in notifications, reports, and correspondence submitted under these Regulations shall be treated as confidential by the Chief Executive and shall not be disclosed except: (a) to authorised officers for the purpose of carrying out their functions under the Act; (b) to other national critical information infrastructure entities to the extent necessary to prevent, detect, or respond to cyber security threats, provided that the identity of the reporting entity shall not be disclosed without the entity's prior written consent; (c) to law enforcement agencies where the Chief Executive has reasonable grounds to believe that a criminal offence has been committed; (d) as required by any written law or order of a court.",
       "explanation": "This provision addresses a common concern among reporting entities: that their incident disclosures might be used against them or leaked publicly. The regulation provides strong confidentiality protections while preserving NACSA's ability to share threat intelligence (without identifying the source) with other NCII entities. Entity identity is protected unless consent is given or law enforcement referral is necessary.",
-      "relatedActSection": "s26, s49"
+      "relatedActSection": "s26",
+      "relatedActSections": ["s26", "s49"]
     },
     {
       "id": "noi-r11",
@@ -98,7 +100,8 @@
       "title": "Penalty for Non-Compliance",
       "requirement": "Any national critical information infrastructure entity that fails to comply with regulation 4, 5, or 6 commits an offence and shall, on conviction, be liable to a fine not exceeding five hundred thousand ringgit or, in the case of a continuing offence, to a further fine not exceeding ten thousand ringgit for every day during which the offence continues after conviction.",
       "explanation": "Non-compliance with notification requirements carries significant financial penalties. The RM500,000 maximum fine for a single offence and a daily continuing fine create strong incentives for timely compliance. CAUTION: Two unresolved conflicts require gazette verification before these figures can be relied upon for compliance purposes. First, the daily continuing fine stated here is RM10,000, but penalties/index.json records RM5,000 for the same offence — these figures cannot both be correct and the official gazette text must be checked. Second, this provision cites s26(5) as the enabling sub-section for this penalty but penalties/index.json cites s26(3) for notification-related offences — the correct sub-section reference must be verified. These penalties apply to the entity itself; individual liability for officers of the entity is addressed separately under the Act.",
-      "relatedActSection": "s26 [sub-section reference unverified: this provision cites s26(5); penalties/index.json cites s26(3) for notification offences — verify against gazette], s60",
+      "relatedActSection": "s26",
+      "relatedActSections": ["s26", "s60"],
       "verificationStatus": "penalty-figures-unverified: daily continuing fine stated as RM10,000 here but RM5,000 in penalties/index.json — must verify against official gazette; enabling sub-section s26(5) vs s26(3) also requires verification"
     }
   ],

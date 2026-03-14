@@ -26,7 +26,8 @@
       "title": "Interpretation",
       "requirement": "In these Regulations, unless the context otherwise requires: 'applicant' means a person who applies for a licence under these Regulations; 'licence' means a cyber security service provider licence issued under section 32 of the Act; 'licensee' means a person to whom a licence has been issued; 'Register' means the Register of Licensed Cyber Security Service Providers maintained under regulation 13; 'qualifying individual' means an individual designated by the applicant or licensee who satisfies the qualification requirements under regulation 6 and who is responsible for supervising the provision of the licensed cyber security service.",
       "explanation": "Introduces the concept of a 'qualifying individual' -- a natural person who holds the technical qualifications and is responsible for supervising service delivery. This is particularly important for corporate licensees, ensuring that qualified human oversight exists regardless of the entity's legal structure.",
-      "relatedActSection": "s2, s32"
+      "relatedActSection": "s32",
+      "relatedActSections": ["s2", "s32"]
     },
     {
       "id": "lic-r3",
@@ -34,7 +35,7 @@
       "title": "Classes of Cyber Security Services Requiring Licence",
       "requirement": "The following classes of cyber security services are prescribed for the purposes of section 32 of the Act: (a) Managed Security Operations -- the provision of continuous monitoring, detection, and response services for cyber security threats and incidents through a security operations centre operated on behalf of another person; (b) Penetration Testing -- the provision of authorised simulated cyber attacks against computer systems, networks, or applications for the purpose of evaluating security vulnerabilities, including network penetration testing, application penetration testing, wireless penetration testing, social engineering testing, and red team operations; (c) Digital Forensics -- the provision of identification, collection, preservation, analysis, and presentation of digital evidence from computer systems, networks, storage media, or electronic devices for the purpose of investigating cyber security incidents or supporting legal proceedings; (d) Threat Intelligence -- the provision of collection, analysis, and dissemination of information about current and emerging cyber security threats, threat actors, attack techniques, indicators of compromise, and vulnerabilities, for the purpose of informing another person's cyber security decision-making; (e) Cyber Security Consulting -- the provision of advisory services relating to the design, implementation, management, or improvement of cyber security governance, policies, strategies, architectures, or programmes, excluding services that are incidental to the provision of information technology products or general information technology consulting. A person who provides any service falling within two or more classes shall obtain a separate licence for each class.",
       "explanation": "The five prescribed classes cover the core commercial cyber security service activities: SOC operations, offensive testing, forensics, intelligence, and strategic consulting. The definitions are carefully scoped -- for example, cyber security consulting excludes incidental advice bundled with IT product sales, preventing the regulation from inadvertently capturing the entire IT vendor ecosystem. Each class requires a separate licence, meaning a full-service cyber security firm providing all five services must hold five licences.",
-      "relatedActSection": "s32(1)"
+      "relatedActSection": "s32"
     },
     {
       "id": "lic-r4",
@@ -51,7 +52,8 @@
       "title": "Grounds for Refusal",
       "requirement": "The Chief Executive may refuse to issue a licence if: (a) the applicant or qualifying individual does not meet the qualification requirements under regulation 6; (b) the applicant has provided false or misleading information in the application; (c) the applicant or any officer of the applicant has been convicted of an offence involving fraud, dishonesty, or breach of trust; (d) the applicant or any officer of the applicant has been convicted of an offence under the Act or any corresponding law in any jurisdiction; (e) the applicant does not have adequate facilities, equipment, or qualified personnel to provide the cyber security service applied for; (f) the professional indemnity insurance held by the applicant is inadequate; (g) the Chief Executive is satisfied that the issuance of the licence would be contrary to the public interest or national security. Where the Chief Executive refuses to issue a licence, the applicant may appeal the decision under section 48 of the Act.",
       "explanation": "The refusal grounds are broad but defined, ranging from straightforward qualification failures to the broader discretionary ground of public interest and national security. The inclusion of convictions under 'corresponding law in any jurisdiction' means that foreign criminal records for cyber-related offences are relevant. The right of appeal under section 48 (appeal to the Minister, within 30 days of the decision) ensures that refusal decisions are subject to review. Note: original file incorrectly cited 'section 53' (the prosecution provision); corrected to section 48 (appeal to the Minister) on 2026-03-04.",
-      "relatedActSection": "s29, s48"
+      "relatedActSection": "s29",
+      "relatedActSections": ["s29", "s48"]
     },
     {
       "id": "lic-r6",
@@ -85,7 +87,8 @@
       "title": "Licence Duration and Renewal Procedure",
       "requirement": "A licence shall be valid for a period of three years from the date of issuance. A licensee who wishes to renew a licence shall submit an application for renewal not less than ninety days and not more than one hundred and eighty days before the expiry of the licence. The renewal application shall include: (a) the prescribed renewal fee; (b) evidence that the qualifying individual continues to meet the requirements of regulation 6 and has undertaken continuing professional development of not less than forty hours per year during the licence period; (c) evidence that the professional indemnity insurance remains current and adequate; (d) a summary of the cyber security services provided during the licence period, including the number and types of engagements; (e) confirmation that no material changes have occurred that would affect the licensee's eligibility, or details of any such changes; (f) evidence that all annual licence fees and any outstanding amounts have been paid. The Chief Executive may conduct an inspection or review of the licensee before deciding on the renewal application and shall communicate the decision within sixty days of receiving a complete renewal application.",
       "explanation": "Licence duration, renewal windows, CPD hours, and CE processing timelines have NOT been verified against the official gazette (original file stated 3-year term, 90-180 day renewal window, 40 CPD hours/year, 60-day CE decision). These are indicative values only.",
-      "relatedActSection": "s29, s30",
+      "relatedActSection": "s29",
+      "relatedActSections": ["s29", "s30"],
       "verificationStatus": "specific-values-not-verified: licence term, renewal window, CPD hours, processing timeline — verify against official gazette"
     },
     {
@@ -94,7 +97,8 @@
       "title": "Suspension and Revocation of Licence",
       "requirement": "The Chief Executive may suspend or revoke a licence where: (a) the licensee has contravened any condition of the licence; (b) the licensee has contravened any provision of the Act or these Regulations; (c) the licence was obtained by means of false or misleading information; (d) the licensee no longer has a qualifying individual who meets the requirements of regulation 6; (e) the licensee's professional indemnity insurance has lapsed or is inadequate; (f) the licensee has failed to pay any fee or amount due under these Regulations; (g) the licensee or any officer of the licensee has been convicted of an offence involving fraud, dishonesty, or breach of trust; (h) the licensee has been wound up, dissolved, or has entered into receivership, judicial management, or any analogous proceeding; (i) the Chief Executive is satisfied that the continued licensing of the licensee would be contrary to the public interest or national security. Before suspending or revoking a licence, the Chief Executive shall give the licensee not less than thirty days' written notice of the proposed action and the grounds therefor, and shall afford the licensee an opportunity to make written representations. This requirement shall not apply where the Chief Executive is satisfied that an immediate suspension is necessary to protect the public interest or national security, in which case the suspension shall take effect immediately and the licensee shall be given an opportunity to make representations within fourteen days.",
       "explanation": "The suspension and revocation regime provides graduated enforcement tools. In most cases, the 30-day notice and representation process ensures procedural fairness. However, the immediate suspension power for public interest or national security situations allows NACSA to act swiftly when a licensee poses an imminent risk -- for example, if a licensed penetration testing firm is suspected of misusing its access to client systems.",
-      "relatedActSection": "s30, s48"
+      "relatedActSection": "s30",
+      "relatedActSections": ["s30", "s48"]
     },
     {
       "id": "lic-r11",
@@ -110,7 +114,8 @@
       "title": "Obligations Upon Cessation",
       "requirement": "Where a licence expires, is revoked, or is surrendered, the former licensee shall: (a) not hold itself out as a licensed cyber security service provider or use any designation, title, or description that suggests it is licensed; (b) maintain all records required under regulation 7(f) for the remainder of the seven-year retention period; (c) cooperate with any investigation or inspection that relates to conduct during the period in which the licence was in force; (d) comply with the confidentiality obligations under regulation 7(d) in respect of all information obtained during the licence period. Contravention of this regulation constitutes an offence punishable by a fine not exceeding one hundred thousand ringgit.",
       "explanation": "Post-cessation obligations ensure that the expiry or revocation of a licence does not create a regulatory vacuum. Record retention and cooperation obligations survive the licence and remain enforceable through criminal penalties, ensuring that NACSA can pursue investigations and that client information remains protected even after the provider exits the market.",
-      "relatedActSection": "s34, s56"
+      "relatedActSection": "s34",
+      "relatedActSections": ["s34", "s56"]
     },
     {
       "id": "lic-r13",
@@ -118,7 +123,8 @@
       "title": "Register of Licensed Cyber Security Service Providers",
       "requirement": "The Chief Executive shall establish and maintain a Register of Licensed Cyber Security Service Providers, which shall contain: (a) the name, business address, and company registration number or identity number of each licensee; (b) the licence number and the class or classes of cyber security service for which the licensee is licensed; (c) the date of issuance and the date of expiry of the licence; (d) the name and qualifications of the qualifying individual; (e) any conditions imposed on the licence in addition to the standard conditions under regulation 7; (f) any suspension, revocation, or surrender of the licence and the date thereof; (g) any disciplinary action taken against the licensee. The Register or a summary thereof shall be published on the NACSA portal and shall be updated within fourteen days of any change in the information contained therein. Any person may search the Register to verify the licensing status of a cyber security service provider.",
       "explanation": "The public register is a cornerstone of the licensing regime, enabling NCII entities and the general public to verify that their cyber security service providers are properly licensed. The 14-day update requirement ensures the register remains current. Public access promotes market transparency and helps clients make informed decisions when engaging cyber security service providers.",
-      "relatedActSection": "s32, s34"
+      "relatedActSection": "s32",
+      "relatedActSections": ["s32", "s34"]
     },
     {
       "id": "lic-r14",
@@ -126,7 +132,7 @@
       "title": "Penalty for Unlicensed Provision of Services",
       "requirement": "Any person who provides or holds themselves out as providing a cyber security service of a class prescribed under regulation 3 without a valid licence for that class commits an offence and shall, on conviction, be liable to a fine not exceeding five hundred thousand ringgit or to imprisonment for a term not exceeding [imprisonment term — see note] or to both, and in the case of a continuing offence, to a further fine not exceeding [daily amount — see note] for every day during which the offence continues after conviction.",
       "explanation": "PENALTY CONFLICT NOTE: The imprisonment term and continuing fine stated in this regulation conflict with the penalties/index.json entry for the same conduct (pen-s28-5). The parent Act (s28, Part V) provides a maximum of 10 years' imprisonment, but this regulation stated 3 years. Under Malaysian law the regulation cannot override the Act's maximum — the Act's 10-year maximum is controlling. The specific imprisonment term and daily fine in this regulation require gazette verification before reliance. The 'holding out' provision captures persons who falsely represent themselves as licensed even if they have not yet provided actual services.",
-      "relatedActSection": "s28(3)",
+      "relatedActSection": "s28",
       "verificationStatus": "penalty-conflict: imprisonment term (regulation stated 3 years, Act provides 10 years — Act controls); daily continuing fine amount not verified"
     }
   ],

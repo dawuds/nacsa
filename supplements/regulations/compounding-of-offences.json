@@ -26,7 +26,8 @@
       "title": "Interpretation",
       "requirement": "In these Regulations, unless the context otherwise requires: 'compoundable offence' means an offence specified in the Schedule to these Regulations; 'compound amount' means the amount of money determined under regulation 5 as the sum payable for the compounding of an offence; 'compounding officer' means the Chief Executive or any officer authorised in writing by the Chief Executive to compound offences under section 54 of the Act; 'offer to compound' means a written offer made by a compounding officer under regulation 4.",
       "explanation": "Defines the key terms. The concept of a 'compounding officer' allows the Chief Executive to delegate the compounding function to authorised subordinates. Note: original file referenced 'section 55' (protection against suits) — corrected to 'section 54' (compounding power).",
-      "relatedActSection": "s2, s54"
+      "relatedActSection": "s54",
+      "relatedActSections": ["s2", "s54"]
     },
     {
       "id": "com-r3",
@@ -43,7 +44,7 @@
       "title": "Offer to Compound",
       "requirement": "Where the compounding officer has reasonable grounds to believe that a person has committed a compoundable offence, the compounding officer may make a written offer to compound the offence. The offer to compound shall state: (a) the name and address of the person to whom the offer is made; (b) the nature of the offence and the provision of the Act contravened; (c) the date, time, and circumstances of the offence; (d) the compound amount payable; (e) the basis for calculating the compound amount under regulation 5; (f) the period within which the compound amount must be paid, which shall not be less than thirty days from the date of the offer; (g) the consequences of accepting or rejecting the offer, including that rejection may result in criminal prosecution; (h) the method of payment. The offer to compound may be made at any time before a charge has been preferred in court for the offence. An offer to compound shall not be construed as an admission or finding of guilt.",
       "explanation": "The offer to compound is an administrative alternative to criminal prosecution, providing efficiency benefits for both NACSA and the alleged offender. The requirement to specify the calculation basis ensures transparency. Critically, the offer can only be made before formal charges are filed, after which the matter must proceed through the courts. The explicit statement that an offer does not imply guilt protects the rights of the person to whom the offer is made if they choose to reject it.",
-      "relatedActSection": "s54(1)"
+      "relatedActSection": "s54"
     },
     {
       "id": "com-r5",
@@ -51,7 +52,7 @@
       "title": "Compound Amount Calculation",
       "requirement": "The compound amount for a compoundable offence shall not exceed fifty per centum of the maximum fine prescribed for the offence. In determining the compound amount within this limit, the compounding officer shall have regard to the following factors: (a) the nature and gravity of the offence; (b) the duration of the contravention; (c) whether the contravention was committed deliberately, recklessly, or negligently; (d) whether the person has previously been compounded for or convicted of an offence under the Act; (e) the extent of any harm or potential harm caused by the contravention, including harm to national security, public safety, or the functioning of national critical information infrastructure; (f) the degree to which the person cooperated with NACSA in identifying and rectifying the contravention; (g) the financial position and capacity of the person, including whether the person is an individual or a body corporate; (h) any remedial action taken by the person before the offer to compound was made; (i) any other factor the compounding officer considers relevant. The compounding officer shall record in writing the assessment of each factor and the basis for the compound amount determined.",
       "explanation": "The 50% ceiling means that for an offence carrying a maximum fine of RM500,000, the maximum compound amount is RM250,000. The nine assessment factors provide a structured framework for exercising discretion, promoting consistency across cases while allowing case-specific adjustments. The written assessment requirement creates an audit trail and supports internal quality assurance.",
-      "relatedActSection": "s54(2)"
+      "relatedActSection": "s54"
     },
     {
       "id": "com-r6",
@@ -75,7 +76,7 @@
       "title": "Effect of Compounding",
       "requirement": "Where a compoundable offence has been compounded under these Regulations: (a) no prosecution shall thereafter be instituted in respect of the offence against the person to whom the offer was made; (b) any document or thing seized in connection with the offence shall be released to the person from whom it was seized, unless it is required for the investigation or prosecution of any other offence; (c) the compounding shall not be treated as a conviction for the purposes of any written law; (d) the compounding shall, however, be recorded by the Chief Executive and may be taken into account as a factor under regulation 5(d) in any subsequent compounding offer, and may be taken into account by the Chief Executive in any decision relating to the licensing or registration of the person under the Act; (e) the compounding shall not affect any right of a third party to bring a civil action in respect of any loss or damage arising from the conduct that constituted the offence.",
       "explanation": "The legal effect of compounding is carefully delineated. It provides finality against prosecution for that specific offence (paragraph a) and is not a criminal conviction (paragraph c). However, the compounding is recorded and can influence future compound amounts and licensing decisions (paragraph d). The preservation of third-party civil rights (paragraph e) ensures that compounding between NACSA and the offender does not prejudice persons who suffered harm.",
-      "relatedActSection": "s54(3)"
+      "relatedActSection": "s54"
     },
     {
       "id": "com-r9",

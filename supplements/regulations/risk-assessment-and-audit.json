@@ -34,7 +34,7 @@
       "title": "Risk Assessment Frequency",
       "requirement": "Every national critical information infrastructure entity shall cause a cyber security risk assessment to be conducted on its national critical information infrastructure at intervals not exceeding twelve months from the date of the completion of the previous risk assessment. The first risk assessment shall be completed within twelve months of the date on which the entity is designated as a national critical information infrastructure entity under section 18 of the Act. Where a material change occurs to the entity's national critical information infrastructure, including but not limited to significant system upgrades, network architecture changes, migration to cloud infrastructure, or integration of new operational technology systems, the entity shall cause an additional risk assessment to be conducted within ninety days of the material change, regardless of when the previous assessment was completed.",
       "explanation": "The 12-month maximum cycle ensures that risk assessments remain current and reflect the evolving threat landscape. Newly designated NCII entities have 12 months from designation to complete their first assessment, providing reasonable time to engage an approved assessor. Critically, material changes to infrastructure trigger an additional out-of-cycle assessment within 90 days. This prevents entities from making significant changes and operating with an outdated risk profile until the next scheduled assessment.",
-      "relatedActSection": "s21(1)",
+      "relatedActSection": "s21",
       "verificationStatus": "specific-values-not-verified: 12-month cycle, 90-day material-change trigger — verify against official gazette"
     },
     {
@@ -43,7 +43,7 @@
       "title": "Approved Assessor Requirements",
       "requirement": "A cyber security risk assessment under these Regulations shall be conducted only by an approved assessor. No person shall act as an approved assessor unless the person: (a) is registered in the Register of Approved Assessors maintained by the Chief Executive; (b) holds a valid and current registration that has not been suspended or revoked; (c) is independent of the entity being assessed, meaning the assessor has no financial interest in, employment relationship with, or material business relationship with the entity other than the engagement for the risk assessment; (d) maintains professional indemnity insurance coverage of not less than [amount to be verified against gazette]. The Chief Executive may impose additional conditions on the registration of an approved assessor.",
       "explanation": "Independence is the cornerstone requirement -- assessors cannot have financial ties to the entity being assessed. This prevents conflicts of interest that could compromise assessment integrity. A minimum professional indemnity insurance requirement applies to protect NCII entities against negligent assessments (specific amount not verified against official gazette — original file stated RM2,000,000 but this figure cannot be confirmed). Only persons on NACSA's official register may conduct assessments, giving NACSA direct oversight of assessor quality.",
-      "relatedActSection": "s21(2)",
+      "relatedActSection": "s21",
       "verificationStatus": "specific-values-not-verified: PI insurance threshold — original indicative value RM2,000,000 replaced with placeholder pending gazette verification"
     },
     {
@@ -86,7 +86,7 @@
       "title": "Audit Frequency",
       "requirement": "Every national critical information infrastructure entity shall cause a cyber security audit to be conducted on its national critical information infrastructure at intervals not exceeding twelve months from the date of the completion of the previous audit. The first audit shall be completed within [period to be verified] of the date on which the entity is designated as a national critical information infrastructure entity under section 18 of the Act. The Chief Executive may, by written notice to an entity, require the entity to cause an additional audit to be conducted within a period specified in the notice where: (a) the entity has experienced a cyber security incident with significant impact; (b) a risk assessment has identified critical or high-risk findings that require independent verification; (c) the Chief Executive has reasonable grounds to believe that the entity is not complying with the Act, these Regulations, or any direction issued under the Act.",
       "explanation": "Audits follow a 12-month cycle similar to risk assessments. The grace period for a newly designated entity's first audit is subject to gazette verification (original file stated 18 months, which is longer than the 12-month risk assessment window, on the basis that entities should complete an assessment before being audited). The Chief Executive retains power to mandate additional audits in the three specified circumstances.",
-      "relatedActSection": "s23(1)",
+      "relatedActSection": "s23",
       "verificationStatus": "specific-values-not-verified: first-audit grace period (originally stated 18 months), 12-month audit cycle — verify against official gazette"
     },
     {
@@ -95,7 +95,7 @@
       "title": "Approved Auditor Requirements",
       "requirement": "A cyber security audit under these Regulations shall be conducted only by an approved auditor. No person shall act as an approved auditor unless the person: (a) is registered in the Register of Approved Auditors maintained by the Chief Executive; (b) holds a valid and current registration that has not been suspended or revoked; (c) is independent of the entity being audited, meaning the auditor has no financial interest in, employment relationship with, or material business relationship with the entity other than the engagement for the audit; (d) has not acted as the approved assessor for the same entity's most recent risk assessment; (e) maintains professional indemnity insurance coverage of not less than [amount to be verified against gazette]. A person may be registered as both an approved assessor and an approved auditor, provided that the person shall not perform both functions for the same entity within the same twelve-month period.",
       "explanation": "In addition to the independence requirements that mirror those for assessors, auditors face an additional restriction: they cannot have conducted the most recent risk assessment for the same entity. This separation prevents the scenario where an auditor is effectively reviewing their own prior work. However, the regulation pragmatically allows individuals to hold both registrations -- they simply cannot perform both roles for the same entity within 12 months. The PI insurance threshold (original file stated RM2,000,000) requires gazette verification.",
-      "relatedActSection": "s23(2)",
+      "relatedActSection": "s23",
       "verificationStatus": "specific-values-not-verified: PI insurance threshold (originally stated RM2,000,000) — verify against official gazette"
     },
     {
@@ -129,7 +129,8 @@
       "title": "Submission Timelines",
       "requirement": "The entity shall submit the risk assessment report to the Chief Executive within thirty days of the completion of the risk assessment. The entity shall submit the audit report to the Chief Executive within thirty days of the completion of the audit. Where the Chief Executive requests additional information or clarification in relation to a risk assessment report or audit report, the entity shall provide the requested information within fourteen days of the request. The entity shall, within sixty days of receiving the risk assessment report or audit report, submit to the Chief Executive a remediation plan addressing all critical and major findings identified in the report, including specific remediation actions, responsible persons, target completion dates, and resource allocation.",
       "explanation": "The 30-day submission window gives entities time to review reports before forwarding them to NACSA, while ensuring timely regulatory oversight. The mandatory 60-day remediation plan for critical and major findings creates accountability for addressing identified weaknesses. Specific timelines (30 days, 14 days, 60 days) require gazette verification.",
-      "relatedActSection": "s21, s23",
+      "relatedActSection": "s21",
+      "relatedActSections": ["s21", "s23"],
       "verificationStatus": "specific-values-not-verified: submission timelines (30 days, 14 days, 60 days) — verify against official gazette"
     },
     {
@@ -138,7 +139,8 @@
       "title": "Penalty for Non-Compliance",
       "requirement": "Any national critical information infrastructure entity that fails to comply with regulation 3, 9, or 14 commits an offence and shall, on conviction, be liable to a fine not exceeding [amount — see note] or, in the case of a continuing offence, to a further fine not exceeding [daily amount — see note] for every day during which the offence continues after conviction.",
       "explanation": "IMPORTANT — PENALTY CONFLICT: The penalty figures in this regulation (original file stated RM200,000 + RM5,000 daily) conflict with the penalties/index.json entries for the same conduct: s21(4) and s23(4) are listed there as RM500,000 and 10 years' imprisonment. Two possible explanations: (1) this regulation creates a lower-tier regulatory offence separate from the Act's criminal offence; or (2) the figures are AI-generated errors. In either case, the specific amounts must be verified against the official gazette before reliance. The Act-level penalties at s21(4) and s23(4) are the controlling maximum under the parent legislation.",
-      "relatedActSection": "s21(4), s23(4), s60",
+      "relatedActSection": "s21",
+      "relatedActSections": ["s21", "s23", "s60"],
       "verificationStatus": "specific-values-not-verified: penalty quantum conflicts with penalties/index.json — gazette verification mandatory"
     }
   ],
