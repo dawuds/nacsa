@@ -4,6 +4,12 @@
     "lastUpdated": "2026-03-09",
     "alignment": "Act 854 / P.U.(A) 220/2024"
   },
+  "_source": {
+    "sourceDocument": "Cyber Security Act 2024 (Act 854)",
+    "sourceVersion": "Act 854 / P.U.(A) 220/2024",
+    "sourceDate": "2024-06-26",
+    "sourceURL": "https://www.nacsa.gov.my"
+  },
   "domains": [
     {
       "slug": "ncii-governance",
