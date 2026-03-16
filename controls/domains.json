@@ -1,92 +1,170 @@
 {
-  "ncii-governance": {
-    "name": "NCII Governance",
-    "description": "Controls for NCII entity governance, designation management, compliance oversight, and regulatory engagement under the Cyber Security Act 2024. Covers entity registration with NACSA, board-level accountability for cyber security, establishment of governance structures, and ongoing compliance with directives issued under Sections 17-18.",
-    "relatedSections": ["s17", "s18", "s52", "s53"],
+  "_meta": {
+    "version": "3.0.0",
+    "lastUpdated": "2026-03-16",
+    "alignment": "CoP Template v1.6 / NCSB v1.4",
+    "note": "Domains realigned to the NACSA Code of Practice Template (18 domains, sections 4.0-21.0) with NCSB v1.4 category cross-references. Previous v2.0 used 15 custom domains; v3.0 adopts the authoritative CoP structure."
+  },
+  "governance-leadership": {
+    "name": "Governance and Leadership",
+    "copSection": "4.0",
+    "ncsbCategory": null,
+    "ncsbDomain": "Govern",
+    "description": "Governance structures, leadership commitment, CISO/ICTSO appointment, roles and responsibilities, and director liability awareness under s52. CoP-only domain with no direct NCSB mapping.",
+    "relatedSections": ["s17", "s18", "s52"],
     "relatedSectors": ["all"]
   },
-  "asset-management": {
-    "name": "Asset Management",
-    "description": "Controls for identification, classification, and lifecycle management of national critical information infrastructure assets. Encompasses hardware, software, data, and service inventories required under NCII designation, including dependency mapping and criticality assessment aligned with NACSA classification criteria.",
-    "relatedSections": ["s17", "s22", "s23"],
+  "cyber-security-policy": {
+    "name": "Cyber Security Policy and Objectives",
+    "copSection": "5.0",
+    "ncsbCategory": "3.1",
+    "ncsbDomain": "Govern",
+    "description": "Establishment, alignment, application, review, and communication of the cyber security policy and measurable objectives. NCSB elements: 3.1.1 (Cyber Security Policy, 5 sub-reqs), 3.1.2 (Cyber Security Objectives, 3 sub-reqs).",
+    "relatedSections": ["s18", "s22"],
     "relatedSectors": ["all"]
   },
-  "risk-assessment": {
-    "name": "Risk Assessment",
-    "description": "Controls for systematic identification, analysis, evaluation, and treatment of cyber security risks to NCII systems. Includes threat modelling, vulnerability assessment, impact analysis, risk appetite definition, and periodic reassessment obligations mandated by NACSA directives and sector-specific requirements.",
-    "relatedSections": ["s22", "s23", "s24"],
+  "organisational-development": {
+    "name": "Organisational Development",
+    "copSection": "6.0",
+    "ncsbCategory": "3.2",
+    "ncsbDomain": "Identify",
+    "description": "Resources (manpower and budget), authorities and special interest groups (NC4, NACSA, RMP), and cyber security awareness and training. NCSB elements: 3.2.1 (Resources, 4 sub-reqs), 3.2.2 (Authorities, 3 sub-reqs), 3.2.3 (Awareness & Training, 3 sub-reqs).",
+    "relatedSections": ["s18", "s25"],
     "relatedSectors": ["all"]
   },
-  "access-control": {
-    "name": "Access Control",
-    "description": "Controls governing identity management, authentication, authorization, and access provisioning for NCII systems. Covers privileged access management, multi-factor authentication, role-based access control, access reviews, and remote access security in accordance with NACSA standards for critical infrastructure protection.",
-    "relatedSections": ["s22", "s23"],
-    "relatedSectors": ["all"]
-  },
-  "network-security": {
-    "name": "Network Security",
-    "description": "Controls for securing network infrastructure supporting NCII operations. Includes network segmentation, perimeter defense, intrusion detection and prevention, traffic monitoring, secure architecture design, and protection of inter-entity communication channels as required for critical infrastructure resilience.",
-    "relatedSections": ["s22", "s23", "s24"],
-    "relatedSectors": ["all"]
-  },
-  "incident-response": {
-    "name": "Incident Response",
-    "description": "Controls for detecting, reporting, containing, eradicating, and recovering from cyber security incidents affecting NCII. Implements mandatory incident notification to NACSA under Section 25, establishes incident response teams, defines escalation procedures, and ensures coordination with the National Cyber Coordination and Command Centre (NC4).",
-    "relatedSections": ["s25", "s26", "s27", "s28"],
-    "relatedSectors": ["all"]
-  },
-  "bcdr": {
-    "name": "Business Continuity & Disaster Recovery",
-    "description": "Controls for maintaining continuity of NCII operations during and after cyber security incidents or disruptions. Covers business impact analysis, continuity planning, disaster recovery procedures, backup management, failover testing, and restoration objectives aligned with the national critical infrastructure protection mandate.",
-    "relatedSections": ["s22", "s23", "s24"],
-    "relatedSectors": ["all"]
-  },
-  "audit-compliance": {
-    "name": "Audit & Compliance",
-    "description": "Controls for verifying and demonstrating compliance with the Cyber Security Act 2024, NACSA directives, and sector-specific regulations. Encompasses internal audit programmes, external assessments by NACSA-authorized auditors under Section 30, compliance monitoring, evidence management, and regulatory reporting obligations.",
-    "relatedSections": ["s29", "s30", "s31", "s32", "s52"],
-    "relatedSectors": ["all"]
-  },
-  "supply-chain": {
-    "name": "Supply Chain Security",
-    "description": "Controls for managing cyber security risks in the supply chain of NCII entities. Addresses vendor risk assessment, third-party access governance, supply chain integrity verification, contractual security requirements, and oversight of managed service providers and technology suppliers with access to or impact on critical infrastructure.",
+  "cyber-security-assurance": {
+    "name": "Cyber Security Assurance",
+    "copSection": "7.0",
+    "ncsbCategory": "3.3",
+    "ncsbDomain": "Protect",
+    "description": "IT Acceptable Use Policy, cyber security audit (biennial, CE submission within 30 days), and supplier relationship security (SCM policy, CSSP licensing per P.U.(A) 221/2024). NCSB elements: 3.3.1 (IT AUP, 3 sub-reqs), 3.3.2 (Audit, 5 sub-reqs), 3.3.3 (Suppliers, 3 sub-reqs).",
     "relatedSections": ["s22", "s23", "s47"],
     "relatedSectors": ["all"]
   },
-  "awareness-training": {
-    "name": "Security Awareness & Training",
-    "description": "Controls for developing and maintaining cyber security competencies across NCII entity personnel. Covers role-based training programmes, board-level cyber awareness, security culture development, phishing simulation, and specialized training for NCII system administrators and incident responders as required by NACSA directives.",
-    "relatedSections": ["s22", "s23"],
+  "resource-allocation": {
+    "name": "Resource Allocation and Optimisation",
+    "copSection": "8.0",
+    "ncsbCategory": "3.4",
+    "ncsbDomain": "Identify",
+    "description": "Asset management (inventory, classification, ownership, lifecycle) and capacity management (monitoring, forecasting, performance testing). NCSB elements: 3.4.1 (Asset Management, 4 sub-reqs), 3.4.2 (Capacity Management, 4 sub-reqs).",
+    "relatedSections": ["s17", "s18", "s22"],
     "relatedSectors": ["all"]
   },
-  "vulnerability-management": {
-    "name": "Vulnerability Management",
-    "description": "Controls for identifying, assessing, prioritizing, and remediating vulnerabilities in NCII systems. Includes vulnerability scanning, penetration testing, patch management, threat intelligence consumption, coordination with NACSA on vulnerability disclosures, and compliance with mandated remediation timelines for critical infrastructure.",
-    "relatedSections": ["s22", "s23", "s24", "s25"],
+  "risk-management": {
+    "name": "Risk Management",
+    "copSection": "9.0",
+    "ncsbCategory": "3.5",
+    "ncsbDomain": "Identify",
+    "description": "Risk assessment (methodology, best practice alignment, annual conduct per P.U.(A) 219/2024, CE submission, prioritisation) and risk treatment (RTP, approval, implementation, reporting). NCSB elements: 3.5.1 (Risk Assessment, 5 sub-reqs), 3.5.2 (Risk Treatment, 4 sub-reqs).",
+    "relatedSections": ["s21", "s22", "s23"],
     "relatedSectors": ["all"]
   },
-  "cryptography": {
-    "name": "Cryptography",
-    "description": "Controls for the use of cryptographic techniques to protect the confidentiality, integrity, and authenticity of data within NCII systems. Covers encryption standards, key management, certificate lifecycle management, cryptographic protocol selection, and compliance with national cryptographic policies for sensitive government and critical infrastructure data.",
-    "relatedSections": ["s22", "s23"],
+  "operational-efficiency": {
+    "name": "Operational Efficiency",
+    "copSection": "10.0",
+    "ncsbCategory": "3.6",
+    "ncsbDomain": "Protect",
+    "description": "Change management procedures, application, authorisation, and review. NCSB elements: 3.6.1 (Change Management, 4 sub-reqs).",
+    "relatedSections": ["s18", "s22"],
+    "relatedSectors": ["all"]
+  },
+  "data-security": {
+    "name": "Data Security",
+    "copSection": "11.0",
+    "ncsbCategory": "3.7",
+    "ncsbDomain": "Protect",
+    "description": "Data leakage prevention (DLP), data privacy and protection (PDPA Act 709, OSA Act 88), software and application security (OWASP, SDLC), and secure configuration (hardening, drift detection, logs). NCSB elements: 3.7.1 (DLP, 3 sub-reqs), 3.7.2 (Privacy, 5 sub-reqs), 3.7.3 (AppSec, 4 sub-reqs), 3.7.4 (Config, 3 sub-reqs).",
+    "relatedSections": ["s18", "s22", "s49"],
+    "relatedSectors": ["all"]
+  },
+  "contractual-management": {
+    "name": "Contractual Management",
+    "copSection": "12.0",
+    "ncsbCategory": "3.8",
+    "ncsbDomain": "Protect",
+    "description": "Non-disclosure agreements — establishment, signing by all parties, and compliance monitoring. NCSB elements: 3.8.1 (NDA, 3 sub-reqs).",
+    "relatedSections": ["s22", "s49"],
     "relatedSectors": ["all"]
   },
   "physical-security": {
     "name": "Physical Security",
-    "description": "Controls for protecting the physical environments housing NCII systems and infrastructure. Addresses facility access controls, environmental protections, physical monitoring, secure areas for critical equipment, data centre security, and coordination between physical and logical security measures for holistic infrastructure protection.",
-    "relatedSections": ["s22", "s23"],
+    "copSection": "13.0",
+    "ncsbCategory": "3.9",
+    "ncsbDomain": "Protect",
+    "description": "Physical security procedures (access control, CCTV, visitor management, emergency response) and security perimeters (zones, monitoring, threat protection). NCSB elements: 3.9.1 (Procedure, 5 sub-reqs), 3.9.2 (Perimeters, 3 sub-reqs).",
+    "relatedSections": ["s18", "s22"],
     "relatedSectors": ["all"]
   },
-  "cloud-security": {
-    "name": "Cloud Security",
-    "description": "Controls for securing cloud-hosted NCII systems and data. Covers cloud service provider assessment, data sovereignty and residency requirements, shared responsibility model governance, cloud-specific access controls, workload protection, and compliance with NACSA directives on the use of cloud services for critical information infrastructure.",
-    "relatedSections": ["s22", "s23", "s47"],
+  "system-network-security": {
+    "name": "System and Network Security",
+    "copSection": "14.0",
+    "ncsbCategory": "3.10",
+    "ncsbDomain": "Protect",
+    "description": "Network security policies and procedures, physical and logical network diagrams, network security controls (firewall, IDS/IPS, NAC), and malware detection and prevention. NCSB elements: 3.10.1 (Policies, 5 sub-reqs), 3.10.2 (Diagrams, 4 sub-reqs), 3.10.3 (Controls, 4 sub-reqs), 3.10.4 (Malware, 3 sub-reqs).",
+    "relatedSections": ["s18", "s22", "s24"],
     "relatedSectors": ["all"]
   },
-  "change-management": {
-    "name": "Change Management",
-    "description": "Controls for governing modifications to NCII systems, configurations, and processes. Ensures that changes are assessed for security impact, approved through formal processes, tested prior to deployment, documented, and reversible. Includes emergency change procedures and notification requirements for significant changes to NCII infrastructure.",
-    "relatedSections": ["s22", "s23", "s24"],
+  "access-control": {
+    "name": "Access Control",
+    "copSection": "15.0",
+    "ncsbCategory": "3.11",
+    "ncsbDomain": "Protect",
+    "description": "Identity and access management (IAM with MFA), segregation of duties, and password management. NCSB elements: 3.11.1 (IAM, 4 sub-reqs), 3.11.2 (SoD, 3 sub-reqs), 3.11.3 (Password, 4 sub-reqs).",
+    "relatedSections": ["s18", "s22"],
+    "relatedSectors": ["all"]
+  },
+  "technical-vulnerability": {
+    "name": "Technical Vulnerability",
+    "copSection": "16.0",
+    "ncsbCategory": "3.12",
+    "ncsbDomain": "Detect",
+    "description": "Vulnerability management procedure (VMP) and vulnerability assessment (VAP) including scanning, evaluation, remediation tracking, and reporting. NCSB elements: 3.12.1 (VMP, 4 sub-reqs), 3.12.2 (VA, 5 sub-reqs).",
+    "relatedSections": ["s18", "s22", "s24"],
+    "relatedSectors": ["all"]
+  },
+  "event-management": {
+    "name": "Cyber Security Event Management",
+    "copSection": "17.0",
+    "ncsbCategory": "3.13",
+    "ncsbDomain": "Detect",
+    "description": "Security monitoring procedure (SMP) — objectives, scope, tools (IDPS/SIEM/endpoint), roles, threat intelligence integration, KPIs (MTTD/MTTR), and review. NCSB elements: 3.13.1 (Event Management, 3 sub-reqs).",
+    "relatedSections": ["s18", "s22", "s25"],
+    "relatedSectors": ["all"]
+  },
+  "incident-management": {
+    "name": "Cyber Security Incident Management",
+    "copSection": "18.0",
+    "ncsbCategory": "3.14",
+    "ncsbDomain": "Respond",
+    "description": "Cyber security incident management procedure (CSIMP) — lifecycle (Plan/Detect/Respond/Update), CSIRT, 6-hour notification to CE via NC4 portal per P.U.(A) 220/2024, handling, escalation, documentation, and review. NCSB elements: 3.14.1 (Incident Procedure, 3 sub-reqs).",
+    "relatedSections": ["s25", "s26", "s27"],
+    "relatedSectors": ["all"]
+  },
+  "business-continuity": {
+    "name": "Business Continuity Management",
+    "copSection": "19.0",
+    "ncsbCategory": "3.15",
+    "ncsbDomain": "Recover",
+    "description": "Business continuity plan (BIA, crisis management, recovery strategies, communication, documentation) and testing and simulation (scenario-based, tabletop, live, red team, reporting). NCSB elements: 3.15.1 (BCP, 3 sub-reqs), 3.15.2 (Testing, 2 sub-reqs).",
+    "relatedSections": ["s18", "s22"],
+    "relatedSectors": ["all"]
+  },
+  "sector-specific": {
+    "name": "Sector-Specific Requirements",
+    "copSection": "20.0",
+    "ncsbCategory": null,
+    "ncsbDomain": "Cross-cutting",
+    "description": "Placeholder for sector-specific requirements defined by NCII sector leads in their sector CoPs. Examples include OT security (ICS/SCADA/IoT) for energy, transport, and water sectors, and e-commerce security (PCI-DSS) for banking and trade sectors. CoP-only domain with no NCSB mapping.",
+    "relatedSections": ["s22"],
+    "relatedSectors": ["sector-dependent"]
+  },
+  "monitoring-compliance": {
+    "name": "Monitoring and Compliance",
+    "copSection": "21.0",
+    "ncsbCategory": null,
+    "ncsbDomain": "Cross-cutting",
+    "description": "Compliance monitoring reports (training %, incident response effectiveness, security control implementation status) and review and continuous improvement (annual CoP review, triggered reviews, action plans). CoP-only domain with no NCSB mapping.",
+    "relatedSections": ["s22", "s23", "s52"],
     "relatedSectors": ["all"]
   }
 }
