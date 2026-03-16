@@ -1,4 +1,6 @@
 {
+  "_mappingType": "clause-level",
+  "_mappingNote": "Internal mapping within the NACSA framework: Act 854 section numbers to subsidiary regulations. These are legislative references, not cross-repo control slug references.",
   "description": "Mappings from Cyber Security Act 2024 (Act 854) provisions to subsidiary regulations",
   "lastUpdated": "2024-12-31",
   "mappings": [

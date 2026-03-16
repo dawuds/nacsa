@@ -305,6 +305,8 @@
     "frameworkName": "BNM Risk Management in Technology (RMiT)",
     "frameworkReference": "BNM/RH/PD 028-100",
     "effectiveDate": "2020-06-01",
+    "_mappingType": "clause-level",
+    "_mappingNote": "References use RMiT clause numbers (e.g. 10.1, 10.18) which map to regulatory text, not to individual control slugs in the RMIT controls/library.json. Closest slug-level equivalents: 10.1 -> technology-risk-management-framework; 10.7 -> technology-risk-assessment; 10.18 -> board-technology-risk-oversight; 10.49 -> outsourcing-governance; 10.51 -> cloud-security-controls; 11.18 -> incident-notification-framework; 13.1 -> it-audit-program.",
     "mappings": [
       {
         "nacsaSection": "s17",
@@ -368,6 +370,8 @@
     "frameworkName": "Personal Data Protection Act 2010 (Act 709)",
     "frameworkReference": "Act 709 (as amended by A1699)",
     "effectiveDate": "2025-06-01",
+    "_mappingType": "clause-level",
+    "_mappingNote": "References use PDPA section numbers (e.g. s9, s129A, s133, s143A) which map to statutory provisions, not to individual control slugs in the pdpa-my controls/library.json. Closest slug-level equivalents: s9 -> information-security-risk-management; s129A -> transfer-mechanism-selection; s133 -> board-reporting-and-accountability; s143A -> breach-notification-to-commissioner.",
     "mappings": [
       {
         "nacsaSection": "s18",

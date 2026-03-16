@@ -1,10 +1,11 @@
 {
   "_meta": {
-    "version": "2.1.0",
+    "version": "2.2.0",
     "lastUpdated": "2026-03-09",
     "alignment": "Act 854 / P.U.(A) 220/2024",
     "copAlignment": "CoP Template v1.6 / NCSB v1.4",
-    "note": "v2.1 adds copSection, ncsbElement, and ncsbSubRequirements fields to align with the NACSA CoP Template structure. Original control slugs and domains retained for backward compatibility."
+    "sourceType": "official-paraphrase",
+    "note": "v2.1 adds copSection, ncsbElement, and ncsbSubRequirements fields to align with the NACSA CoP Template structure. Original control slugs and domains retained for backward compatibility. v2.2 adds auditApproaches applicability flags per CE Directive 08 para 6(e). Compliance-Based and Risk-Based approaches are mandatory for all controls and not flagged."
   },
   "_source": {
     "sourceDocument": "Cyber Security Act 2024 (Act 854)",
@@ -136,7 +137,13 @@
       ],
       "copSection": "4.0",
       "ncsbElement": null,
-      "ncsbSubRequirements": []
+      "ncsbSubRequirements": [],
+      "auditApproaches": {
+        "controlBased": false,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-governance-structure",
@@ -188,7 +195,13 @@
       ],
       "copSection": "4.0",
       "ncsbElement": null,
-      "ncsbSubRequirements": []
+      "ncsbSubRequirements": [],
+      "auditApproaches": {
+        "controlBased": false,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-compliance-programme",
@@ -242,7 +255,13 @@
       ],
       "copSection": "21.0",
       "ncsbElement": null,
-      "ncsbSubRequirements": []
+      "ncsbSubRequirements": [],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-policy-framework",
@@ -299,7 +318,13 @@
         "3.1.1.3",
         "3.1.1.4",
         "3.1.1.5"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": false,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-asset-inventory",
@@ -357,7 +382,13 @@
       "ncsbSubRequirements": [
         "3.4.1.1",
         "3.4.1.2"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-asset-classification",
@@ -412,7 +443,13 @@
       "ncsbElement": "3.4.1",
       "ncsbSubRequirements": [
         "3.4.1.3"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-asset-lifecycle",
@@ -468,7 +505,13 @@
       "ncsbElement": "3.4.1",
       "ncsbSubRequirements": [
         "3.4.1.4"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-risk-assessment-programme",
@@ -525,7 +568,13 @@
         "3.5.1.1",
         "3.5.1.2",
         "3.5.1.3"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-threat-modelling",
@@ -578,7 +627,13 @@
       "ncsbElement": "3.5.1",
       "ncsbSubRequirements": [
         "3.5.1.3"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-risk-treatment",
@@ -634,7 +689,13 @@
         "3.5.2.2",
         "3.5.2.3",
         "3.5.2.4"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-bia",
@@ -688,7 +749,13 @@
       "ncsbElement": "3.5.1",
       "ncsbSubRequirements": [
         "3.5.1.3"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-identity-management",
@@ -751,7 +818,13 @@
         "3.11.1.2",
         "3.11.1.3",
         "3.11.1.4"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-privileged-access",
@@ -807,7 +880,13 @@
       "ncsbElement": "3.11.1",
       "ncsbSubRequirements": [
         "3.11.1.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-mfa",
@@ -859,7 +938,13 @@
       "ncsbElement": "3.11.1",
       "ncsbSubRequirements": [
         "3.11.1.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-remote-access",
@@ -915,7 +1000,13 @@
       "ncsbElement": "3.11.1",
       "ncsbSubRequirements": [
         "3.11.1.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-network-architecture",
@@ -971,7 +1062,13 @@
       "ncsbSubRequirements": [
         "3.10.2.1",
         "3.10.2.3"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-network-monitoring",
@@ -1028,7 +1125,13 @@
       "ncsbElement": "3.10.3",
       "ncsbSubRequirements": [
         "3.10.3.2"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-dns-security",
@@ -1081,7 +1184,13 @@
       "ncsbElement": "3.10.3",
       "ncsbSubRequirements": [
         "3.10.3.2"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-network-access-control",
@@ -1135,7 +1244,13 @@
       "ncsbElement": "3.10.3",
       "ncsbSubRequirements": [
         "3.10.3.3"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-incident-response-plan",
@@ -1193,7 +1308,13 @@
       "ncsbElement": "3.14.1",
       "ncsbSubRequirements": [
         "3.14.1.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-incident-notification",
@@ -1249,7 +1370,13 @@
       "ncsbElement": "3.14.1",
       "ncsbSubRequirements": [
         "3.14.1.2"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-soc-operations",
@@ -1311,7 +1438,13 @@
       "ncsbSubRequirements": [
         "3.13.1.1",
         "3.13.1.2"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-digital-forensics",
@@ -1367,7 +1500,13 @@
       "ncsbElement": "3.14.1",
       "ncsbSubRequirements": [
         "3.14.1.2"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-continuity-plan",
@@ -1424,7 +1563,13 @@
         "3.15.1.1",
         "3.15.1.2",
         "3.15.1.3"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-backup-recovery",
@@ -1482,7 +1627,13 @@
       "ncsbElement": "3.15.1",
       "ncsbSubRequirements": [
         "3.15.1.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-disaster-recovery",
@@ -1539,7 +1690,13 @@
       "ncsbElement": "3.15.2",
       "ncsbSubRequirements": [
         "3.15.2.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-internal-audit",
@@ -1594,7 +1751,13 @@
       "ncsbSubRequirements": [
         "3.3.2.1",
         "3.3.2.2"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-external-audit",
@@ -1653,7 +1816,13 @@
         "3.3.2.3",
         "3.3.2.4",
         "3.3.2.5"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-compliance-monitoring",
@@ -1707,7 +1876,13 @@
       ],
       "copSection": "21.0",
       "ncsbElement": null,
-      "ncsbSubRequirements": []
+      "ncsbSubRequirements": [],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-evidence-management",
@@ -1762,7 +1937,13 @@
       "ncsbElement": "3.3.2",
       "ncsbSubRequirements": [
         "3.3.2.4"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-vendor-risk-assessment",
@@ -1822,7 +2003,13 @@
       "ncsbSubRequirements": [
         "3.3.3.1",
         "3.3.3.2"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-supply-chain-contracts",
@@ -1876,7 +2063,13 @@
       "ncsbElement": "3.3.3",
       "ncsbSubRequirements": [
         "3.3.3.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-supply-chain-monitoring",
@@ -1932,7 +2125,13 @@
       "ncsbElement": "3.3.3",
       "ncsbSubRequirements": [
         "3.3.3.3"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-security-awareness",
@@ -1987,7 +2186,13 @@
       "ncsbSubRequirements": [
         "3.2.3.1",
         "3.2.3.2"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": false,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-technical-training",
@@ -2040,7 +2245,13 @@
       "ncsbElement": "3.2.3",
       "ncsbSubRequirements": [
         "3.2.3.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": false,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-board-awareness",
@@ -2089,7 +2300,13 @@
       ],
       "copSection": "4.0",
       "ncsbElement": null,
-      "ncsbSubRequirements": []
+      "ncsbSubRequirements": [],
+      "auditApproaches": {
+        "controlBased": false,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-vulnerability-scanning",
@@ -2146,7 +2363,13 @@
       "ncsbSubRequirements": [
         "3.12.2.1",
         "3.12.2.2"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-patch-management",
@@ -2202,7 +2425,13 @@
       "ncsbElement": "3.12.1",
       "ncsbSubRequirements": [
         "3.12.1.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-penetration-testing",
@@ -2261,7 +2490,13 @@
       "ncsbElement": "3.12.2",
       "ncsbSubRequirements": [
         "3.12.2.2"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-vulnerability-disclosure",
@@ -2314,7 +2549,13 @@
       "ncsbElement": "3.12.1",
       "ncsbSubRequirements": [
         "3.12.1.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-encryption-standards",
@@ -2368,7 +2609,13 @@
       "ncsbElement": "3.7.2",
       "ncsbSubRequirements": [
         "3.7.2.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-key-management",
@@ -2421,7 +2668,13 @@
       "ncsbElement": "3.7.2",
       "ncsbSubRequirements": [
         "3.7.2.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-certificate-management",
@@ -2474,7 +2727,13 @@
       "ncsbElement": "3.7.2",
       "ncsbSubRequirements": [
         "3.7.2.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-facility-access",
@@ -2531,7 +2790,13 @@
         "3.9.1.1",
         "3.9.1.3",
         "3.9.1.4"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-environmental-protection",
@@ -2584,7 +2849,13 @@
       "ncsbElement": "3.9.2",
       "ncsbSubRequirements": [
         "3.9.2.3"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-physical-monitoring",
@@ -2637,7 +2908,13 @@
       "ncsbElement": "3.9.2",
       "ncsbSubRequirements": [
         "3.9.2.2"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-cloud-governance",
@@ -2695,7 +2972,13 @@
       "ncsbElement": "3.3.3",
       "ncsbSubRequirements": [
         "3.3.3.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-cloud-workload-protection",
@@ -2751,7 +3034,13 @@
       "ncsbElement": "3.7.4",
       "ncsbSubRequirements": [
         "3.7.4.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-cloud-identity",
@@ -2808,7 +3097,13 @@
       "ncsbElement": "3.11.1",
       "ncsbSubRequirements": [
         "3.11.1.1"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-change-control",
@@ -2862,7 +3157,13 @@
         "3.6.1.1",
         "3.6.1.2",
         "3.6.1.3"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-configuration-management",
@@ -2921,7 +3222,13 @@
         "3.7.4.1",
         "3.7.4.2",
         "3.7.4.3"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-emergency-change",
@@ -2973,7 +3280,13 @@
       "ncsbElement": "3.6.1",
       "ncsbSubRequirements": [
         "3.6.1.3"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": false,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     },
     {
       "slug": "ncii-release-management",
@@ -3032,7 +3345,13 @@
       "ncsbSubRequirements": [
         "3.7.3.2",
         "3.7.3.4"
-      ]
+      ],
+      "auditApproaches": {
+        "controlBased": true,
+        "technicalTesting": true,
+        "inspectionVerification": true,
+        "continuousImprovement": true
+      }
     }
   ]
 }

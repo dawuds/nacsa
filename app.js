@@ -31,7 +31,7 @@ async function fetchJSON(path) {
 }
 
 function renderFetchError(container, path, message) {
-  const msg = message || `Failed to load data from ${path}.`;
+  const msg = message || `Failed to load data from ${esc(path)}.`;
   container.innerHTML = `<div class="error-state"><h2>Data Load Error</h2><p>${msg}</p><p>Please check your connection and try refreshing the page.</p></div>`;
 }
 

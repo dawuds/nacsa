@@ -1,4 +1,6 @@
 {
+  "_mappingType": "clause-level",
+  "_mappingNote": "Internal mapping within the NACSA framework: Act 854 section numbers to CE Directives. These are legislative references, not cross-repo control slug references.",
   "description": "Mappings from Cyber Security Act 2024 (Act 854) provisions to Chief Executive Directives issued under s15",
   "enablingSection": "s15",
   "lastUpdated": "2024-12-31",
