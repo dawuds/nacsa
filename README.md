@@ -11,6 +11,8 @@ This repository follows the **GRC Portfolio v2.0 Standardized Schema**, optimize
 Data is structured to maintain a strict bidirectional mapping:
 `Cyber Security Act (Act 854) Section` $\leftrightarrow$ `NCII Global Control` $\leftrightarrow$ `Audit Evidence` $\leftrightarrow$ `Artifact Template`
 
+> **Control structure context**: The primary control structure is the CoP Template (18 domains, 4.0-21.0) issued under s22 of Act 854. The NCSB v1.4 (15 categories, 33 elements, ~122 sub-requirements) serves as the baseline test criteria. The 53 controls in `library.json` are an earlier indicative mapping that predates the CoP alignment; see the [Tech-Audit/NACSA audit work program](../Tech-Audit/NACSA/) for the fieldwork-ready structure aligned to the CoP and NCSB.
+
 ### Data Layers
 - **Controls (`/controls/library.json`):** 53 controls re-aligned to Act 854 (specifically s26 incident notification) using the unified schema.
 - **Evidence (`/evidence/index.json`):** 116 items mapped across 56 sections, bound to 11 sectoral Codes of Practice (COP).
@@ -179,6 +181,40 @@ Issued under s15, covering NCII registration, risk assessment methodology, audit
 
 ### Codes of Practice (11)
 Sector-specific CoPs under s22, with varying status: published (Banking & Finance), template issued (Government, ICT, Energy), draft (Transport, Defence, Healthcare, Water & Sewerage), pending (Trade/Industry/Economy, Agriculture, Science & Technology).
+
+## Audit Methodology
+
+The NACSA cyber security audit framework is defined by **CE Directive 08** (Arahan Ketua Eksekutif No. 8), effective 17 July 2025, issued under s15 of Act 854. The framework prescribes six audit approaches:
+
+**Mandatory approaches** (required for every NCII entity audit):
+- **Compliance-Based** — assessing conformity against the CoP and NCSB baseline
+- **Risk-Based** — evaluating adequacy of risk identification, assessment, and treatment
+
+**Optional approaches** (elected per engagement letter):
+- **Control-Based** — testing design and operating effectiveness of specific controls
+- **Technical Testing** — vulnerability assessments, penetration testing, configuration reviews
+- **Inspection & Verification** — physical inspection of infrastructure and facilities
+- **Continuous Improvement** — evaluating maturity progression and remediation tracking
+
+### Compliance Ratings
+
+| Rating | Malay Term |
+| :--- | :--- |
+| Compliant | Patuh |
+| Partially Compliant | Separa Patuh |
+| Non-Compliant | Tidak Patuh |
+| Not Applicable | Tidak Berkenaan |
+
+### Finding Severity
+
+| Severity | Malay Term |
+| :--- | :--- |
+| Critical | Kritikal |
+| High | Tinggi |
+| Medium | Sederhana |
+| Low | Rendah |
+
+The complete audit work program with detailed procedures for all 18 CoP domains is maintained at `Tech-Audit/NACSA/`. For rating definitions, aggregation logic, and conclusion (rumusan) requirements, see [Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md](../Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md).
 
 ## License
 

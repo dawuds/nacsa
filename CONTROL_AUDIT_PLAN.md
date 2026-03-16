@@ -1,6 +1,8 @@
 # NACSA Control Integrity & COP Alignment Plan
 
-**Objective:** Systematic verification of all 53 NACSA controls against the 11 Sector-Specific Codes of Practice (COP) mandated by Act 854.
+**Objective:** Systematic verification of NACSA controls against the 11 Sector-Specific Codes of Practice (COP) mandated by Act 854.
+
+> **Alignment note**: The primary control structure is now the **CoP Template (18 domains, 4.0-21.0)** with **NCSB v1.4 (15 categories, 33 elements, ~122 sub-requirements)** as the baseline test criteria. The original 53 controls across 15 domains in `library.json` are an earlier indicative mapping. The fieldwork-ready audit program aligned to the CoP and NCSB structure is maintained at [Tech-Audit/NACSA/Work-Program/](../Tech-Audit/NACSA/Work-Program/). For compliance rating definitions (Patuh / Separa Patuh / Tidak Patuh / Tidak Berkenaan), finding severity criteria, and conclusion requirements, see [Rating-and-Conclusion-Methodology.md](../Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md).
 
 ## Audit Tracker (11 NCII Sectors)
 
@@ -22,3 +24,4 @@
 1. **COP Integration:** Verify that controls in `library.json` correctly pull requirements from the 11 `supplements/codes-of-practice/*.json` files.
 2. **NCII Duty Sync:** Align Part IV duties (s20-s31) with specific COP control requirements.
 3. **Evidence Audit:** Match `evidence/index.json` items to COP-specific documentation (e.g., NC4 reporting logs).
+4. **Fieldwork Execution:** Use the [NACSA Audit Work Program](../Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md) as the fieldwork execution layer for detailed audit procedures, expected evidence, and compliance assessment across all 18 CoP domains and 33 NCSB elements.
