@@ -404,6 +404,70 @@
         "pdpaName": "Offences by body corporate",
         "similarity": "high",
         "notes": "Both create reverse-burden director liability with due diligence defence. Act 854 adds 10x corporate fine multiplier"
+      },
+      {
+        "nacsaSection": "s22",
+        "nacsaName": "Codes of Practice — Data Privacy",
+        "pdpaSection": "s9",
+        "pdpaName": "Security Principle",
+        "similarity": "high",
+        "notes": "CoP 11.2 (Data Privacy and Protection) directly implements PDPA Security Principle for NCII systems processing personal data"
+      },
+      {
+        "nacsaSection": "s18",
+        "nacsaName": "Access control measures",
+        "pdpaSection": "s9",
+        "pdpaName": "Security Principle — access controls",
+        "similarity": "high",
+        "notes": "CoP 15.0 IAM controls satisfy both NACSA access control requirements and PDPA Security Principle for personal data access"
+      },
+      {
+        "nacsaSection": "s22",
+        "nacsaName": "DLP and data handling",
+        "pdpaSection": "s8",
+        "pdpaName": "Disclosure Principle",
+        "similarity": "medium",
+        "notes": "CoP 11.1 DLP controls support PDPA Disclosure Principle by preventing unauthorised data disclosure"
+      },
+      {
+        "nacsaSection": "s22",
+        "nacsaName": "Supplier relationship security",
+        "pdpaSection": "s129A",
+        "pdpaName": "Cross-border data transfer",
+        "similarity": "medium",
+        "notes": "CoP 7.3 vendor management overlaps with PDPA cross-border transfer requirements where vendors process personal data offshore"
+      },
+      {
+        "nacsaSection": "s22",
+        "nacsaName": "NDA and contractual management",
+        "pdpaSection": "s4",
+        "pdpaName": "Data processor obligations",
+        "similarity": "medium",
+        "notes": "CoP 12.0 NDA requirements should incorporate PDPA data processing agreement provisions for third parties handling personal data"
+      },
+      {
+        "nacsaSection": "s18",
+        "nacsaName": "Governance and board oversight",
+        "pdpaSection": "s143B",
+        "pdpaName": "DPO appointment (A1727)",
+        "similarity": "medium",
+        "notes": "CoP 4.0 governance requires CISO; PDPA A1727 requires DPO. Both roles may be needed for NCII entities processing personal data"
+      },
+      {
+        "nacsaSection": "s22",
+        "nacsaName": "Training and awareness",
+        "pdpaSection": "s9",
+        "pdpaName": "Security Principle — staff competency",
+        "similarity": "high",
+        "notes": "CoP 6.3 training programme should include PDPA data handling requirements alongside Act 854 awareness"
+      },
+      {
+        "nacsaSection": "s22",
+        "nacsaName": "Vulnerability management",
+        "pdpaSection": "s9",
+        "pdpaName": "Security Principle — technical measures",
+        "similarity": "high",
+        "notes": "CoP 16.0 vulnerability management satisfies PDPA Security Principle requirement for technical security measures protecting personal data"
       }
     ]
   },
