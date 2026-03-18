@@ -54,6 +54,7 @@ function parseRoute() {
   if (hash.startsWith('control/')) return { view: 'control-detail', slug: hash.slice(8) };
   if (hash === 'risk') return { view: 'risk' };
   if (hash.startsWith('risk/')) return { view: 'risk', sub: hash.slice(5) };
+  if (hash === 'audit') return { view: 'audit' };
   if (hash === 'sectors') return { view: 'sectors' };
   if (hash.startsWith('sector/')) return { view: 'sector', id: hash.slice(7) };
   if (hash === 'penalties') return { view: 'reference', subtab: 'penalties' };
@@ -112,6 +113,7 @@ function render() {
     case 'controls': renderControls(app); break;
     case 'control-detail': renderControlDetail(app, state.route.slug); break;
     case 'risk': renderRiskManagement(app); break;
+    case 'audit': renderAudit(app); break;
     case 'sectors': renderSectors(app); break;
     case 'sector': renderSector(app, state.route.id); break;
     case 'supplement-detail': renderSupplementDetail(app, state.route.id); break;
@@ -1849,6 +1851,143 @@ function renderRiskTreatment(rm) {
           ` : ''}
         </div>
       `).join('')}
+    </div>
+  `;
+}
+
+/* ===== AUDIT ===== */
+function renderAudit(el) {
+  el.innerHTML = `
+    <div class="content-area">
+      <h2>NCII Entity Audit Work Program</h2>
+      <p class="section-intro">Complete fieldwork-ready audit program aligned to the <strong>NACSA Code of Practice (CoP) Template</strong> (18 domains, sections 4.0-21.0) with <strong>NCSB v1.4</strong> baseline test criteria (33 elements, ~122 sub-requirements). Defined by <strong>CE Directive No. 8</strong> (Arahan Ketua Eksekutif No. 8, effective 17 July 2025).</p>
+
+      <div class="stats-grid">
+        <div class="stat-card"><div class="stat-value">18</div><div class="stat-label">CoP Domains (4.0-21.0)</div></div>
+        <div class="stat-card"><div class="stat-value">33</div><div class="stat-label">NCSB Elements</div></div>
+        <div class="stat-card"><div class="stat-value">~122</div><div class="stat-label">Sub-Requirements</div></div>
+        <div class="stat-card"><div class="stat-value">6</div><div class="stat-label">Audit Approaches</div></div>
+        <div class="stat-card"><div class="stat-value">11</div><div class="stat-label">Sector Guides</div></div>
+        <div class="stat-card"><div class="stat-value">30</div><div class="stat-label">Program Files</div></div>
+      </div>
+
+      <h3>Audit Approaches (CE Directive 08, Para 6(e))</h3>
+      <table class="data-table">
+        <thead><tr><th>Approach</th><th>Malay</th><th>Status</th><th>What It Assesses</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Compliance-Based</strong></td><td>Pendekatan Berasaskan Pematuhan</td><td><span style="background:#0d9488;color:white;padding:2px 8px;border-radius:4px;font-size:0.75rem">Mandatory</span></td><td>Extent NCII entity meets Act 854, regulations, CE Directives, CoP, and guidelines</td></tr>
+          <tr><td><strong>Risk-Based</strong></td><td>Pendekatan Berasaskan Risiko</td><td><span style="background:#0d9488;color:white;padding:2px 8px;border-radius:4px;font-size:0.75rem">Mandatory</span></td><td>Threats, weaknesses, and impact on NCII — determines finding severity</td></tr>
+          <tr><td>Control-Based</td><td>Pendekatan Berasaskan Kawalan</td><td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:4px;font-size:0.75rem">Optional</span></td><td>Whether security controls are operating effectively</td></tr>
+          <tr><td>Technical Testing</td><td>Pendekatan Berasaskan Ujian Teknikal</td><td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:4px;font-size:0.75rem">Optional</span></td><td>Technical security weaknesses via scanning, penetration testing</td></tr>
+          <tr><td>Inspection &amp; Verification</td><td>Pendekatan Berasaskan Pemeriksaan dan Verifikasi</td><td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:4px;font-size:0.75rem">Optional</span></td><td>Document review, interviews, record inspection</td></tr>
+          <tr><td>Continuous Improvement</td><td>Pendekatan Berorientasikan Penambahbaikan Berterusan</td><td><span style="background:#6b7280;color:white;padding:2px 8px;border-radius:4px;font-size:0.75rem">Optional</span></td><td>Enhancement opportunities even where compliant</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Compliance Ratings</h3>
+      <table class="data-table">
+        <thead><tr><th>Rating</th><th>Malay</th><th>Definition</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge" style="background:var(--success)">Compliant</span></td><td>Patuh</td><td>Sub-requirement fully meets audit criteria</td></tr>
+          <tr><td><span class="badge" style="background:var(--warning)">Partially Compliant</span></td><td>Separa Patuh</td><td>Partially met — some elements exist but gaps remain</td></tr>
+          <tr><td><span class="badge" style="background:var(--danger)">Non-Compliant</span></td><td>Tidak Patuh</td><td>Not met or evidence absent</td></tr>
+          <tr><td><span class="badge" style="background:var(--text-muted)">Not Applicable</span></td><td>Tidak Berkenaan</td><td>Does not apply (with justification)</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Finding Severity (Risk-Based)</h3>
+      <table class="data-table">
+        <thead><tr><th>Severity</th><th>Malay</th><th>Criteria</th><th>Remediation</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge" style="background:#dc2626">Critical</span></td><td>Kritikal</td><td>Direct threat to NCII with national-level impact. Statutory penalty exposure.</td><td>30 days</td></tr>
+          <tr><td><span class="badge" style="background:#ea580c">High</span></td><td>Tinggi</td><td>Significant vulnerability exploitable to compromise NCII. Material impact.</td><td>90 days</td></tr>
+          <tr><td><span class="badge" style="background:#ca8a04">Medium</span></td><td>Sederhana</td><td>Moderate risk. Exploitation requires additional factors. Compensating controls exist.</td><td>180 days</td></tr>
+          <tr><td><span class="badge" style="background:#65a30d">Low</span></td><td>Rendah</td><td>Minor risk. Documentation/process gap with limited impact.</td><td>Next cycle</td></tr>
+        </tbody>
+      </table>
+
+      <h3>CoP Template Structure (18 Domains)</h3>
+      <table class="data-table">
+        <thead><tr><th>CoP</th><th>Domain</th><th>NCSB</th><th>NCSB Domain</th><th>Elements</th></tr></thead>
+        <tbody>
+          <tr><td>4.0</td><td>Governance and Leadership</td><td>\u2014</td><td>Govern</td><td>CoP-only</td></tr>
+          <tr><td>5.0</td><td>Cyber Security Policy &amp; Objectives</td><td>3.1</td><td>Govern</td><td>2</td></tr>
+          <tr><td>6.0</td><td>Organisational Development</td><td>3.2</td><td>Identify</td><td>3</td></tr>
+          <tr><td>7.0</td><td>Cyber Security Assurance</td><td>3.3</td><td>Protect</td><td>3</td></tr>
+          <tr><td>8.0</td><td>Resource Allocation &amp; Optimisation</td><td>3.4</td><td>Identify</td><td>2</td></tr>
+          <tr><td>9.0</td><td>Risk Management</td><td>3.5</td><td>Identify</td><td>2</td></tr>
+          <tr><td>10.0</td><td>Operational Efficiency</td><td>3.6</td><td>Protect</td><td>1</td></tr>
+          <tr><td>11.0</td><td>Data Security</td><td>3.7</td><td>Protect</td><td>4</td></tr>
+          <tr><td>12.0</td><td>Contractual Management</td><td>3.8</td><td>Protect</td><td>1</td></tr>
+          <tr><td>13.0</td><td>Physical Security</td><td>3.9</td><td>Protect</td><td>2</td></tr>
+          <tr><td>14.0</td><td>System &amp; Network Security</td><td>3.10</td><td>Protect</td><td>4</td></tr>
+          <tr><td>15.0</td><td>Access Control</td><td>3.11</td><td>Protect</td><td>3</td></tr>
+          <tr><td>16.0</td><td>Technical Vulnerability</td><td>3.12</td><td>Detect</td><td>2</td></tr>
+          <tr><td>17.0</td><td>Cyber Security Event Management</td><td>3.13</td><td>Detect</td><td>1</td></tr>
+          <tr><td>18.0</td><td>Cyber Security Incident Management</td><td>3.14</td><td>Respond</td><td>1</td></tr>
+          <tr><td>19.0</td><td>Business Continuity Management</td><td>3.15</td><td>Recover</td><td>2</td></tr>
+          <tr><td>20.0</td><td>Sector-Specific Requirements</td><td>\u2014</td><td>Cross-cutting</td><td>Sector CoP</td></tr>
+          <tr><td>21.0</td><td>Monitoring &amp; Compliance</td><td>\u2014</td><td>Cross-cutting</td><td>CoP-only</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Audit Work Program Files</h3>
+      <p>The complete fieldwork-ready audit program is maintained at <a href="https://github.com/dawuds/Tech-Audit/tree/main/NACSA" target="_blank" rel="noopener">Tech-Audit/NACSA</a> (30 files):</p>
+      <table class="data-table">
+        <thead><tr><th>Category</th><th>Files</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Work Program</strong></td><td>10</td><td>Master audit program, rating methodology, 4 approach supplements, CE Direction 08 checklist, NCSB self-assessment, tech cross-reference, worked example</td></tr>
+          <tr><td><strong>Document Requests</strong></td><td>2</td><td>127-item PBC request list, evidence traceability matrix</td></tr>
+          <tr><td><strong>Templates</strong></td><td>3</td><td>Finding template (5 C\u2019s), audit report template, fieldwork status tracker</td></tr>
+          <tr><td><strong>Sector Guides</strong></td><td>11</td><td>All NCII sectors \u2014 Banking, Government, Transport, Defence, ICT, Healthcare, Energy, Water, Agriculture, Trade, Science</td></tr>
+          <tr><td><strong>Appendices</strong></td><td>4</td><td>Legal practitioner scope (Mode A/B), PDPA integration, service provider obligations (s28-s32), sector lead obligations (s19)</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Finding Classification</h3>
+      <div class="callout">
+        <p><strong>Ketidakpatuhan</strong> (Non-Compliance Finding) \u2014 Raised when a sub-requirement is Tidak Patuh or Separa Patuh. Carries severity rating. Requires remediation plan.</p>
+        <p><strong>Peluang Penambahbaikan</strong> (Improvement Opportunity) \u2014 Raised when compliant but could improve. No severity rating. Advisory recommendation only. Per CE Directive 08 para 23(i).</p>
+      </div>
+
+      <h3>Key Regulatory Requirements</h3>
+      <table class="data-table">
+        <thead><tr><th>Requirement</th><th>Authority</th><th>Detail</th></tr></thead>
+        <tbody>
+          <tr><td>Audit frequency</td><td>P.U.(A) 219/2024</td><td>At least biennially, or more frequently if directed by CE</td></tr>
+          <tr><td>Approved auditor</td><td>CE Directive 08, para 14</td><td>Audit by auditors approved by CE under s22(1)(b)</td></tr>
+          <tr><td>Auditor appointment</td><td>CE Directive 08, para 9</td><td>Submit appointment form to CE at least 30 days before audit</td></tr>
+          <tr><td>NDA requirement</td><td>CE Directive 08, para 10</td><td>Auditor must sign NDA with NCII entity before audit</td></tr>
+          <tr><td>Report submission</td><td>CE Directive 08, para 27</td><td>Submit to CE via auditpematuhan@nacsa.gov.my within 30 days</td></tr>
+          <tr><td>Report copy</td><td>CE Directive 08, para 27</td><td>Copy to NCII sector lead</td></tr>
+          <tr><td>Report signing</td><td>CE Directive 08, para 26</td><td>Signed by lead auditor AND NCII entity before submission</td></tr>
+          <tr><td>CE rejection</td><td>Act 854 s22(4)</td><td>CE may direct entity to rectify insufficient report</td></tr>
+          <tr><td>Audit principles</td><td>CE Directive 08, para 18</td><td>Integrity, Fair Presentation, Due Professional Care, Confidentiality, Independence</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Overall Audit Opinion</h3>
+      <table class="data-table">
+        <thead><tr><th>Opinion</th><th>Malay</th><th>Criteria</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge" style="background:var(--success)">Satisfactory</span></td><td>Memuaskan</td><td>No Critical/High findings. Near-zero Tidak Patuh. Active remediation plans for any Separa Patuh.</td></tr>
+          <tr><td><span class="badge" style="background:var(--warning)">Needs Improvement</span></td><td>Perlu Penambahbaikan</td><td>One or more High findings, or systemic Medium findings. Material gaps across domains.</td></tr>
+          <tr><td><span class="badge" style="background:var(--danger)">Unsatisfactory</span></td><td>Tidak Memuaskan</td><td>One or more Critical findings, or multiple High findings. Significant non-compliance posing material NCII risk.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Legal Practitioner Engagement</h3>
+      <table class="data-table">
+        <thead><tr><th>Mode</th><th>Client</th><th>Privilege</th><th>Scope</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Mode A</strong> \u2014 Audit Support</td><td>Audit team</td><td>No</td><td>Legal input on CoP 4.0, 7.2, 7.3, 9.1, 11.2, 12.0, 18.0, 21.0. Informs auditor\u2019s findings.</td></tr>
+          <tr><td><strong>Mode B</strong> \u2014 Privileged Opinion</td><td>Board / Audit Committee</td><td>Yes</td><td>s52 defence adequacy, penalty exposure, enforcement readiness, PDPA compliance. Never in NACSA report.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <p><strong>Conclusion (Rumusan)</strong> per CE Directive 08 para 23(j): The audit conclusion must address both the <em>tahap pematuhan</em> (compliance level) and <em>keberkesanan kawalan keselamatan siber</em> (effectiveness of cyber security controls).</p>
+      </div>
     </div>
   `;
 }
