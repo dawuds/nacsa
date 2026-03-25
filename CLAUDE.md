@@ -3,6 +3,9 @@
 ## What This Is
 Structured compliance database for Malaysia's Cyber Security Act 2024 (Act 854). SPA explorer with JSON data layers.
 
+## Quick Start
+Open `index.html` in a browser. Run `node validate.js` to check data integrity.
+
 ## Architecture
 - **SPA**: `index.html` + `app.js` + `style.css` (vanilla JS, no build step)
 - **Data**: 185 JSON files across 11 layers (provisions, sectors, requirements, evidence, controls, artifacts, penalties, cross-references, risk-management, supplements, templates)
