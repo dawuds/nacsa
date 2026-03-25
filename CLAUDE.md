@@ -1,5 +1,7 @@
 # NACSA Act 854 Explorer
 
+**Last updated:** 2026-03-25
+
 ## What This Is
 Structured compliance database for Malaysia's Cyber Security Act 2024 (Act 854). SPA explorer with JSON data layers.
 
@@ -35,8 +37,9 @@ node validate.js
 ```
 
 ## Related Repos
-- `Tech-Audit/NACSA/` — Fieldwork-ready audit program (30 files, CoP-aligned)
-- `audit-work-program/` — General audit methodology
-- `grc/` — Portfolio hub
-- `cybercompliance/reference/nacsa/` — Source PDFs (CoP Template, NCSB v1.4, CE Directives)
-- `pdpa-my/` — PDPA controls (49) mapped to NACSA in cross-references
+
+- [Tech-Audit](https://github.com/dawuds/Tech-Audit) — Fieldwork-ready audit program (30 files, CoP-aligned)
+- [audit-work-program](https://github.com/dawuds/audit-work-program) — General audit methodology
+- [grc](https://github.com/dawuds/grc) — Portfolio hub
+- [cybercompliance](https://github.com/dawuds/cybercompliance) — Source PDFs (CoP Template, NCSB v1.4, CE Directives)
+- [pdpa-my](https://github.com/dawuds/pdpa-my) — PDPA controls (49) mapped to NACSA in cross-references
