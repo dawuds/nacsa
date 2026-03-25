@@ -3,7 +3,10 @@
 **Last updated:** 2026-03-25
 
 ## What This Is
-Structured compliance database for Malaysia's Cyber Security Act 2024 (Act 854). SPA explorer with JSON data layers.
+Structured compliance database for Malaysia's Cyber Security Act 2024 (Act 854). SPA explorer with JSON data layers. **Tier 1 Focus Area** in the GRC portfolio.
+
+## Portfolio Role
+One of 5 Tier 1 focus areas receiving full investment toward audit-readiness. Primary cybersecurity compliance framework for Malaysian NCII entities. Cross-references PDPA-MY, IESP, AI-Governance, and SC-GTRM.
 
 ## Quick Start
 Open `index.html` in a browser. Run `node validate.js` to check data integrity.
@@ -37,9 +40,10 @@ node validate.js
 ```
 
 ## Related Repos
-
-- [Tech-Audit](https://github.com/dawuds/Tech-Audit) — Fieldwork-ready audit program (30 files, CoP-aligned)
-- [audit-work-program](https://github.com/dawuds/audit-work-program) — General audit methodology
+- [Tech-Audit/NACSA](https://github.com/dawuds/Tech-Audit) — Fieldwork-ready audit program (30 files, CoP-aligned)
+- [Tech-Audit/00-Methodology](https://github.com/dawuds/Tech-Audit) — General audit methodology (absorbed from audit-work-program)
+- [pdpa-my](https://github.com/dawuds/pdpa-my) — PDPA controls (49) mapped to NACSA in cross-references (Tier 1)
+- [iesp](https://github.com/dawuds/IESP) — BNM IESP assessment toolkit, overlaps with NACSA for BNM-regulated entities (Tier 1)
+- [AI-Governance](https://github.com/dawuds/AI-Governance) — AI governance frameworks; NCII designation may apply to AI systems (Tier 1)
+- [sc-gtrm](https://github.com/dawuds/sc-gtrm) — SC capital markets tech risk; NCII may apply to capital market systems (Tier 1)
 - [grc](https://github.com/dawuds/grc) — Portfolio hub
-- [cybercompliance](https://github.com/dawuds/cybercompliance) — Source PDFs (CoP Template, NCSB v1.4, CE Directives)
-- [pdpa-my](https://github.com/dawuds/pdpa-my) — PDPA controls (49) mapped to NACSA in cross-references
