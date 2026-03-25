@@ -1,0 +1,157 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-26",
+    "purpose": "Maps the 15 control domains in library.json (v2.x legacy) to the 18 CoP Template domains in domains.json (v3.0). This bridge enables the SPA to render controls under CoP sections while preserving backward compatibility.",
+    "note": "Some controls map to multiple CoP domains. The primary mapping is listed first."
+  },
+  "mappings": [
+    {
+      "controlDomain": "ncii-governance",
+      "controlDomainName": "NCII Governance",
+      "controlCount": 4,
+      "copDomains": [
+        {"copSection": "4.0", "copDomain": "governance-leadership", "relationship": "primary"},
+        {"copSection": "5.0", "copDomain": "cyber-security-policy", "relationship": "secondary"}
+      ],
+      "ncsbCategories": ["3.1"]
+    },
+    {
+      "controlDomain": "risk-assessment",
+      "controlDomainName": "Risk Assessment",
+      "controlCount": 4,
+      "copDomains": [
+        {"copSection": "9.0", "copDomain": "risk-management", "relationship": "primary"}
+      ],
+      "ncsbCategories": ["3.5"]
+    },
+    {
+      "controlDomain": "access-control",
+      "controlDomainName": "Access Control",
+      "controlCount": 4,
+      "copDomains": [
+        {"copSection": "15.0", "copDomain": "access-control", "relationship": "primary"}
+      ],
+      "ncsbCategories": ["3.11"]
+    },
+    {
+      "controlDomain": "network-security",
+      "controlDomainName": "Network Security",
+      "controlCount": 4,
+      "copDomains": [
+        {"copSection": "14.0", "copDomain": "system-network-security", "relationship": "primary"}
+      ],
+      "ncsbCategories": ["3.10"]
+    },
+    {
+      "controlDomain": "incident-response",
+      "controlDomainName": "Incident Response",
+      "controlCount": 4,
+      "copDomains": [
+        {"copSection": "18.0", "copDomain": "incident-management", "relationship": "primary"},
+        {"copSection": "17.0", "copDomain": "event-management", "relationship": "secondary"}
+      ],
+      "ncsbCategories": ["3.13", "3.14"]
+    },
+    {
+      "controlDomain": "audit-compliance",
+      "controlDomainName": "Audit & Compliance",
+      "controlCount": 4,
+      "copDomains": [
+        {"copSection": "7.0", "copDomain": "cyber-security-assurance", "relationship": "primary"},
+        {"copSection": "21.0", "copDomain": "monitoring-compliance", "relationship": "secondary"}
+      ],
+      "ncsbCategories": ["3.3"]
+    },
+    {
+      "controlDomain": "vulnerability-management",
+      "controlDomainName": "Vulnerability Management",
+      "controlCount": 4,
+      "copDomains": [
+        {"copSection": "16.0", "copDomain": "technical-vulnerability", "relationship": "primary"}
+      ],
+      "ncsbCategories": ["3.12"]
+    },
+    {
+      "controlDomain": "change-management",
+      "controlDomainName": "Change Management",
+      "controlCount": 4,
+      "copDomains": [
+        {"copSection": "10.0", "copDomain": "operational-efficiency", "relationship": "primary"}
+      ],
+      "ncsbCategories": ["3.6"]
+    },
+    {
+      "controlDomain": "asset-management",
+      "controlDomainName": "Asset Management",
+      "controlCount": 3,
+      "copDomains": [
+        {"copSection": "8.0", "copDomain": "resource-allocation", "relationship": "primary"}
+      ],
+      "ncsbCategories": ["3.4"]
+    },
+    {
+      "controlDomain": "bcdr",
+      "controlDomainName": "Business Continuity & DR",
+      "controlCount": 3,
+      "copDomains": [
+        {"copSection": "19.0", "copDomain": "business-continuity", "relationship": "primary"}
+      ],
+      "ncsbCategories": ["3.15"]
+    },
+    {
+      "controlDomain": "supply-chain",
+      "controlDomainName": "Supply Chain Security",
+      "controlCount": 3,
+      "copDomains": [
+        {"copSection": "12.0", "copDomain": "contractual-management", "relationship": "primary"},
+        {"copSection": "7.0", "copDomain": "cyber-security-assurance", "relationship": "secondary"}
+      ],
+      "ncsbCategories": ["3.8", "3.3"]
+    },
+    {
+      "controlDomain": "awareness-training",
+      "controlDomainName": "Awareness & Training",
+      "controlCount": 3,
+      "copDomains": [
+        {"copSection": "6.0", "copDomain": "organisational-development", "relationship": "primary"}
+      ],
+      "ncsbCategories": ["3.2"]
+    },
+    {
+      "controlDomain": "cryptography",
+      "controlDomainName": "Cryptography",
+      "controlCount": 3,
+      "copDomains": [
+        {"copSection": "11.0", "copDomain": "data-security", "relationship": "primary"}
+      ],
+      "ncsbCategories": ["3.7"]
+    },
+    {
+      "controlDomain": "physical-security",
+      "controlDomainName": "Physical Security",
+      "controlCount": 3,
+      "copDomains": [
+        {"copSection": "13.0", "copDomain": "physical-security", "relationship": "primary"}
+      ],
+      "ncsbCategories": ["3.9"]
+    },
+    {
+      "controlDomain": "cloud-security",
+      "controlDomainName": "Cloud Security",
+      "controlCount": 3,
+      "copDomains": [
+        {"copSection": "14.0", "copDomain": "system-network-security", "relationship": "primary"},
+        {"copSection": "20.0", "copDomain": "sector-specific", "relationship": "secondary"}
+      ],
+      "ncsbCategories": ["3.10"]
+    }
+  ],
+  "summary": {
+    "controlDomains": 15,
+    "copDomains": 18,
+    "totalControls": 53,
+    "unmappedCopDomains": ["sector-specific", "monitoring-compliance"],
+    "note": "CoP 20.0 (Sector-Specific) and CoP 21.0 (Monitoring & Compliance) have no direct control mappings — they are composite domains drawing from multiple control areas."
+  }
+}
