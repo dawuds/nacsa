@@ -1,6 +1,6 @@
 # NACSA Act 854 Explorer
 
-**Last updated:** 2026-03-25
+**Last updated:** 2026-03-26
 
 ## What This Is
 Structured compliance database for Malaysia's Cyber Security Act 2024 (Act 854). SPA explorer with JSON data layers. **Tier 1 Focus Area** in the GRC portfolio.

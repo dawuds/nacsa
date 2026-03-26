@@ -1,0 +1,1039 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-26",
+    "source": "NACSA Act 854 / CoP Template v1.6",
+    "techAuditDomain": "NACSA",
+    "techAuditPath": "Tech-Audit/NACSA/",
+    "description": "Maps 53 NACSA controls to Tech-Audit/NACSA audit procedures"
+  },
+  "domainMappings": [
+    {
+      "domainSlug": "governance-leadership",
+      "domainName": "Governance and Leadership",
+      "copSection": "4.0",
+      "ncsbCategory": null,
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-entity-registration",
+          "controlName": "NCII Entity Registration",
+          "controlDomainLegacy": "ncii-governance",
+          "procedureRefs": [
+            "4.1.1.1",
+            "4.1.2.1",
+            "4.1.3.1",
+            "4.1.4.1",
+            "4.1.5.1"
+          ],
+          "relatedSections": [
+            "s17",
+            "s18"
+          ]
+        },
+        {
+          "controlSlug": "ncii-governance-structure",
+          "controlName": "NCII Governance Structure",
+          "controlDomainLegacy": "ncii-governance",
+          "procedureRefs": [
+            "4.1.1.1",
+            "4.1.2.1",
+            "4.1.3.1",
+            "4.1.4.1",
+            "4.1.5.1"
+          ],
+          "relatedSections": [
+            "s18",
+            "s52"
+          ]
+        },
+        {
+          "controlSlug": "ncii-board-awareness",
+          "controlName": "NCII Board Cyber Security Awareness",
+          "controlDomainLegacy": "awareness-training",
+          "procedureRefs": [
+            "4.1.1.1",
+            "4.1.2.1",
+            "4.1.3.1",
+            "4.1.4.1",
+            "4.1.5.1"
+          ],
+          "relatedSections": [
+            "s18",
+            "s52"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "cyber-security-policy",
+      "domainName": "Cyber Security Policy and Objectives",
+      "copSection": "5.0",
+      "ncsbCategory": "3.1",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-policy-framework",
+          "controlName": "NCII Policy Framework",
+          "controlDomainLegacy": "ncii-governance",
+          "procedureRefs": [
+            "5.1.1.1",
+            "5.1.1.2",
+            "5.1.1.3",
+            "5.1.1.4",
+            "5.1.1.5"
+          ],
+          "relatedSections": [
+            "s18",
+            "s22"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "organisational-development",
+      "domainName": "Organisational Development",
+      "copSection": "6.0",
+      "ncsbCategory": "3.2",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-security-awareness",
+          "controlName": "NCII Security Awareness Programme",
+          "controlDomainLegacy": "awareness-training",
+          "procedureRefs": [
+            "6.3.1.1",
+            "6.3.2.1",
+            "6.3.3.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-technical-training",
+          "controlName": "NCII Technical Security Training",
+          "controlDomainLegacy": "awareness-training",
+          "procedureRefs": [
+            "6.3.1.1",
+            "6.3.2.1",
+            "6.3.3.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "cyber-security-assurance",
+      "domainName": "Cyber Security Assurance",
+      "copSection": "7.0",
+      "ncsbCategory": "3.3",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-internal-audit",
+          "controlName": "NCII Internal Audit Programme",
+          "controlDomainLegacy": "audit-compliance",
+          "procedureRefs": [
+            "7.2.1.1",
+            "7.2.2.1",
+            "7.2.3.1",
+            "7.2.4.1",
+            "7.2.5.1"
+          ],
+          "relatedSections": [
+            "s29",
+            "s30"
+          ]
+        },
+        {
+          "controlSlug": "ncii-external-audit",
+          "controlName": "NCII External Audit & Assessment",
+          "controlDomainLegacy": "audit-compliance",
+          "procedureRefs": [
+            "7.2.1.1",
+            "7.2.2.1",
+            "7.2.3.1",
+            "7.2.4.1",
+            "7.2.5.1"
+          ],
+          "relatedSections": [
+            "s29",
+            "s30",
+            "s31",
+            "s32"
+          ]
+        },
+        {
+          "controlSlug": "ncii-evidence-management",
+          "controlName": "NCII Compliance Evidence Management",
+          "controlDomainLegacy": "audit-compliance",
+          "procedureRefs": [
+            "7.2.1.1",
+            "7.2.2.1",
+            "7.2.3.1",
+            "7.2.4.1",
+            "7.2.5.1"
+          ],
+          "relatedSections": [
+            "s30",
+            "s31",
+            "s32"
+          ]
+        },
+        {
+          "controlSlug": "ncii-vendor-risk-assessment",
+          "controlName": "NCII Vendor Risk Assessment",
+          "controlDomainLegacy": "supply-chain",
+          "procedureRefs": [
+            "7.3.1.1",
+            "7.3.2.1",
+            "7.3.3.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23",
+            "s47"
+          ]
+        },
+        {
+          "controlSlug": "ncii-supply-chain-contracts",
+          "controlName": "NCII Supply Chain Security Contracts",
+          "controlDomainLegacy": "supply-chain",
+          "procedureRefs": [
+            "7.3.1.1",
+            "7.3.2.1",
+            "7.3.3.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s47"
+          ]
+        },
+        {
+          "controlSlug": "ncii-supply-chain-monitoring",
+          "controlName": "NCII Supply Chain Monitoring",
+          "controlDomainLegacy": "supply-chain",
+          "procedureRefs": [
+            "7.3.1.1",
+            "7.3.2.1",
+            "7.3.3.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23",
+            "s47"
+          ]
+        },
+        {
+          "controlSlug": "ncii-cloud-governance",
+          "controlName": "NCII Cloud Security Governance",
+          "controlDomainLegacy": "cloud-security",
+          "procedureRefs": [
+            "7.3.1.1",
+            "7.3.2.1",
+            "7.3.3.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23",
+            "s47"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "resource-allocation",
+      "domainName": "Resource Allocation and Optimisation",
+      "copSection": "8.0",
+      "ncsbCategory": "3.4",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-asset-inventory",
+          "controlName": "NCII Asset Inventory",
+          "controlDomainLegacy": "asset-management",
+          "procedureRefs": [
+            "8.1.1.1",
+            "8.1.2.1",
+            "8.1.3.1",
+            "8.1.4.1"
+          ],
+          "relatedSections": [
+            "s17",
+            "s22"
+          ]
+        },
+        {
+          "controlSlug": "ncii-asset-classification",
+          "controlName": "NCII Asset Classification & Labelling",
+          "controlDomainLegacy": "asset-management",
+          "procedureRefs": [
+            "8.1.1.1",
+            "8.1.2.1",
+            "8.1.3.1",
+            "8.1.4.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-asset-lifecycle",
+          "controlName": "NCII Asset Lifecycle Management",
+          "controlDomainLegacy": "asset-management",
+          "procedureRefs": [
+            "8.1.1.1",
+            "8.1.2.1",
+            "8.1.3.1",
+            "8.1.4.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "risk-management",
+      "domainName": "Risk Management",
+      "copSection": "9.0",
+      "ncsbCategory": "3.5",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-risk-assessment-programme",
+          "controlName": "NCII Risk Assessment Programme",
+          "controlDomainLegacy": "risk-assessment",
+          "procedureRefs": [
+            "9.1.1.1",
+            "9.1.2.1",
+            "9.1.3.1",
+            "9.1.4.1",
+            "9.1.5.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-threat-modelling",
+          "controlName": "NCII Threat Modelling",
+          "controlDomainLegacy": "risk-assessment",
+          "procedureRefs": [
+            "9.1.1.1",
+            "9.1.2.1",
+            "9.1.3.1",
+            "9.1.4.1",
+            "9.1.5.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s24"
+          ]
+        },
+        {
+          "controlSlug": "ncii-risk-treatment",
+          "controlName": "NCII Risk Treatment & Acceptance",
+          "controlDomainLegacy": "risk-assessment",
+          "procedureRefs": [
+            "9.2.1.1",
+            "9.2.2.1",
+            "9.2.3.1",
+            "9.2.4.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-bia",
+          "controlName": "NCII Business Impact Analysis",
+          "controlDomainLegacy": "risk-assessment",
+          "procedureRefs": [
+            "9.1.1.1",
+            "9.1.2.1",
+            "9.1.3.1",
+            "9.1.4.1",
+            "9.1.5.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23",
+            "s24"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "operational-efficiency",
+      "domainName": "Operational Efficiency",
+      "copSection": "10.0",
+      "ncsbCategory": "3.6",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-change-control",
+          "controlName": "NCII Change Control Process",
+          "controlDomainLegacy": "change-management",
+          "procedureRefs": [
+            "10.1.1.1",
+            "10.1.2.1",
+            "10.1.3.1",
+            "10.1.4.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-emergency-change",
+          "controlName": "NCII Emergency Change Procedures",
+          "controlDomainLegacy": "change-management",
+          "procedureRefs": [
+            "10.1.1.1",
+            "10.1.2.1",
+            "10.1.3.1",
+            "10.1.4.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s24",
+            "s25"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "data-security",
+      "domainName": "Data Security",
+      "copSection": "11.0",
+      "ncsbCategory": "3.7",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-encryption-standards",
+          "controlName": "NCII Encryption Standards",
+          "controlDomainLegacy": "cryptography",
+          "procedureRefs": [
+            "11.2.1.1",
+            "11.2.2.1",
+            "11.2.3.1",
+            "11.2.4.1",
+            "11.2.5.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-key-management",
+          "controlName": "NCII Key Management",
+          "controlDomainLegacy": "cryptography",
+          "procedureRefs": [
+            "11.2.1.1",
+            "11.2.2.1",
+            "11.2.3.1",
+            "11.2.4.1",
+            "11.2.5.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-certificate-management",
+          "controlName": "NCII Certificate Lifecycle Management",
+          "controlDomainLegacy": "cryptography",
+          "procedureRefs": [
+            "11.2.1.1",
+            "11.2.2.1",
+            "11.2.3.1",
+            "11.2.4.1",
+            "11.2.5.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-cloud-workload-protection",
+          "controlName": "NCII Cloud Workload Protection",
+          "controlDomainLegacy": "cloud-security",
+          "procedureRefs": [
+            "11.4.1.1",
+            "11.4.2.1",
+            "11.4.3.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-configuration-management",
+          "controlName": "NCII Configuration Management",
+          "controlDomainLegacy": "change-management",
+          "procedureRefs": [
+            "11.4.1.1",
+            "11.4.2.1",
+            "11.4.3.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-release-management",
+          "controlName": "NCII Secure Release Management",
+          "controlDomainLegacy": "change-management",
+          "procedureRefs": [
+            "11.3.1.1",
+            "11.3.2.1",
+            "11.3.3.1",
+            "11.3.4.1"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "contractual-management",
+      "domainName": "Contractual Management",
+      "copSection": "12.0",
+      "ncsbCategory": "3.8",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": []
+    },
+    {
+      "domainSlug": "physical-security",
+      "domainName": "Physical Security",
+      "copSection": "13.0",
+      "ncsbCategory": "3.9",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-facility-access",
+          "controlName": "NCII Facility Access Control",
+          "controlDomainLegacy": "physical-security",
+          "procedureRefs": [
+            "13.1.1.1",
+            "13.1.1.2",
+            "13.1.1.3",
+            "13.1.1.4",
+            "13.1.1.5"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-environmental-protection",
+          "controlName": "NCII Environmental Protection",
+          "controlDomainLegacy": "physical-security",
+          "procedureRefs": [
+            "13.2.1.1",
+            "13.2.1.2",
+            "13.2.1.3"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-physical-monitoring",
+          "controlName": "NCII Physical Monitoring & Surveillance",
+          "controlDomainLegacy": "physical-security",
+          "procedureRefs": [
+            "13.2.1.1",
+            "13.2.1.2",
+            "13.2.1.3"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "system-network-security",
+      "domainName": "System and Network Security",
+      "copSection": "14.0",
+      "ncsbCategory": "3.10",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-network-architecture",
+          "controlName": "NCII Secure Network Architecture",
+          "controlDomainLegacy": "network-security",
+          "procedureRefs": [
+            "14.2.1.1",
+            "14.2.1.2",
+            "14.2.1.3",
+            "14.2.1.4"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-network-monitoring",
+          "controlName": "NCII Network Monitoring & Detection",
+          "controlDomainLegacy": "network-security",
+          "procedureRefs": [
+            "14.3.1.1",
+            "14.3.1.2",
+            "14.3.1.3",
+            "14.3.1.4"
+          ],
+          "relatedSections": [
+            "s22",
+            "s24"
+          ]
+        },
+        {
+          "controlSlug": "ncii-dns-security",
+          "controlName": "NCII DNS Security",
+          "controlDomainLegacy": "network-security",
+          "procedureRefs": [
+            "14.3.1.1",
+            "14.3.1.2",
+            "14.3.1.3",
+            "14.3.1.4"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-network-access-control",
+          "controlName": "NCII Network Access Control",
+          "controlDomainLegacy": "network-security",
+          "procedureRefs": [
+            "14.3.1.1",
+            "14.3.1.2",
+            "14.3.1.3",
+            "14.3.1.4"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "access-control",
+      "domainName": "Access Control",
+      "copSection": "15.0",
+      "ncsbCategory": "3.11",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-identity-management",
+          "controlName": "NCII Identity & Access Management",
+          "controlDomainLegacy": "access-control",
+          "procedureRefs": [
+            "15.1.1.1",
+            "15.1.1.2",
+            "15.1.1.3",
+            "15.1.1.4"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-privileged-access",
+          "controlName": "NCII Privileged Access Management",
+          "controlDomainLegacy": "access-control",
+          "procedureRefs": [
+            "15.1.1.1",
+            "15.1.1.2",
+            "15.1.1.3",
+            "15.1.1.4"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-mfa",
+          "controlName": "NCII Multi-Factor Authentication",
+          "controlDomainLegacy": "access-control",
+          "procedureRefs": [
+            "15.1.1.1",
+            "15.1.1.2",
+            "15.1.1.3",
+            "15.1.1.4"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-remote-access",
+          "controlName": "NCII Remote Access Security",
+          "controlDomainLegacy": "access-control",
+          "procedureRefs": [
+            "15.1.1.1",
+            "15.1.1.2",
+            "15.1.1.3",
+            "15.1.1.4"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-cloud-identity",
+          "controlName": "NCII Cloud Identity & Access Governance",
+          "controlDomainLegacy": "cloud-security",
+          "procedureRefs": [
+            "15.1.1.1",
+            "15.1.1.2",
+            "15.1.1.3",
+            "15.1.1.4"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "technical-vulnerability",
+      "domainName": "Technical Vulnerability",
+      "copSection": "16.0",
+      "ncsbCategory": "3.12",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-vulnerability-scanning",
+          "controlName": "NCII Vulnerability Scanning",
+          "controlDomainLegacy": "vulnerability-management",
+          "procedureRefs": [
+            "16.2.1.1",
+            "16.2.1.2",
+            "16.2.1.3",
+            "16.2.1.4",
+            "16.2.1.5"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-patch-management",
+          "controlName": "NCII Patch Management",
+          "controlDomainLegacy": "vulnerability-management",
+          "procedureRefs": [
+            "16.1.1.1",
+            "16.1.1.2",
+            "16.1.1.3",
+            "16.1.1.4"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23",
+            "s24"
+          ]
+        },
+        {
+          "controlSlug": "ncii-penetration-testing",
+          "controlName": "NCII Penetration Testing",
+          "controlDomainLegacy": "vulnerability-management",
+          "procedureRefs": [
+            "16.2.1.1",
+            "16.2.1.2",
+            "16.2.1.3",
+            "16.2.1.4",
+            "16.2.1.5"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23",
+            "s24"
+          ]
+        },
+        {
+          "controlSlug": "ncii-vulnerability-disclosure",
+          "controlName": "NCII Vulnerability Disclosure Coordination",
+          "controlDomainLegacy": "vulnerability-management",
+          "procedureRefs": [
+            "16.1.1.1",
+            "16.1.1.2",
+            "16.1.1.3",
+            "16.1.1.4"
+          ],
+          "relatedSections": [
+            "s22",
+            "s25"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "event-management",
+      "domainName": "Cyber Security Event Management",
+      "copSection": "17.0",
+      "ncsbCategory": "3.13",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-soc-operations",
+          "controlName": "NCII Security Operations Centre",
+          "controlDomainLegacy": "incident-response",
+          "procedureRefs": [
+            "17.1.1.1",
+            "17.1.1.2",
+            "17.1.1.3"
+          ],
+          "relatedSections": [
+            "s22",
+            "s24",
+            "s25"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "incident-management",
+      "domainName": "Cyber Security Incident Management",
+      "copSection": "18.0",
+      "ncsbCategory": "3.14",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-incident-response-plan",
+          "controlName": "NCII Incident Response Plan",
+          "controlDomainLegacy": "incident-response",
+          "procedureRefs": [
+            "18.1.1.1",
+            "18.1.1.2",
+            "18.1.1.3"
+          ],
+          "relatedSections": [
+            "s25",
+            "s26",
+            "s27"
+          ]
+        },
+        {
+          "controlSlug": "ncii-incident-notification",
+          "controlName": "NCII Incident Notification",
+          "controlDomainLegacy": "incident-response",
+          "procedureRefs": [
+            "18.1.1.1",
+            "18.1.1.2",
+            "18.1.1.3"
+          ],
+          "relatedSections": [
+            "s25",
+            "s26",
+            "s27",
+            "s28"
+          ]
+        },
+        {
+          "controlSlug": "ncii-digital-forensics",
+          "controlName": "NCII Digital Forensics Capability",
+          "controlDomainLegacy": "incident-response",
+          "procedureRefs": [
+            "18.1.1.1",
+            "18.1.1.2",
+            "18.1.1.3"
+          ],
+          "relatedSections": [
+            "s26",
+            "s27",
+            "s28"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "business-continuity",
+      "domainName": "Business Continuity Management",
+      "copSection": "19.0",
+      "ncsbCategory": "3.15",
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-continuity-plan",
+          "controlName": "NCII Business Continuity Plan",
+          "controlDomainLegacy": "bcdr",
+          "procedureRefs": [
+            "19.1.1.1",
+            "19.1.1.2",
+            "19.1.1.3"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-backup-recovery",
+          "controlName": "NCII Backup & Recovery",
+          "controlDomainLegacy": "bcdr",
+          "procedureRefs": [
+            "19.1.1.1",
+            "19.1.1.2",
+            "19.1.1.3"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23"
+          ]
+        },
+        {
+          "controlSlug": "ncii-disaster-recovery",
+          "controlName": "NCII Disaster Recovery",
+          "controlDomainLegacy": "bcdr",
+          "procedureRefs": [
+            "19.2.1.1",
+            "19.2.1.2"
+          ],
+          "relatedSections": [
+            "s22",
+            "s23",
+            "s24"
+          ]
+        }
+      ]
+    },
+    {
+      "domainSlug": "sector-specific",
+      "domainName": "Sector-Specific Requirements",
+      "copSection": "20.0",
+      "ncsbCategory": null,
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": []
+    },
+    {
+      "domainSlug": "monitoring-compliance",
+      "domainName": "Monitoring and Compliance",
+      "copSection": "21.0",
+      "ncsbCategory": null,
+      "workProgramFile": "Tech-Audit/NACSA/Work-Program/NACSA-Audit-Program.md",
+      "pbcFile": "Tech-Audit/NACSA/Document-Requests/PBC-Request-List.md",
+      "ratingFile": "Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md",
+      "findingTemplateFile": "Tech-Audit/NACSA/Templates/Finding-Template.md",
+      "controlMappings": [
+        {
+          "controlSlug": "ncii-compliance-programme",
+          "controlName": "NCII Compliance Programme",
+          "controlDomainLegacy": "ncii-governance",
+          "procedureRefs": [
+            "21.1.1.1",
+            "21.1.1.2",
+            "21.1.1.3",
+            "21.1.1.4",
+            "21.2.1.1",
+            "21.2.1.2"
+          ],
+          "relatedSections": [
+            "s52",
+            "s53"
+          ]
+        },
+        {
+          "controlSlug": "ncii-compliance-monitoring",
+          "controlName": "NCII Continuous Compliance Monitoring",
+          "controlDomainLegacy": "audit-compliance",
+          "procedureRefs": [
+            "21.1.1.1",
+            "21.1.1.2",
+            "21.1.1.3",
+            "21.1.1.4",
+            "21.2.1.1",
+            "21.2.1.2"
+          ],
+          "relatedSections": [
+            "s52",
+            "s30"
+          ]
+        }
+      ]
+    }
+  ]
+}
