@@ -2,7 +2,7 @@
 
 **Objective:** Systematic verification of NACSA controls against the 11 Sector-Specific Codes of Practice (COP) mandated by Act 854.
 
-> **Alignment note**: The primary control structure is now the **CoP Template (18 domains, 4.0-21.0)** with **NCSB v1.4 (15 categories, 33 elements, ~122 sub-requirements)** as the baseline test criteria. The original 53 controls across 15 domains in `library.json` are an earlier indicative mapping. The fieldwork-ready audit program aligned to the CoP and NCSB structure is maintained at [Tech-Audit/NACSA/Work-Program/](../Tech-Audit/NACSA/Work-Program/). For compliance rating definitions (Patuh / Separa Patuh / Tidak Patuh / Tidak Berkenaan), finding severity criteria, and conclusion requirements, see [Rating-and-Conclusion-Methodology.md](../Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md).
+> **Alignment note**: The control library (`library.json` v3.1) now contains **67 controls mapped to 160 AWP requirements** across the **CoP Template (18 domains, 4.0-21.0)**. The fieldwork-ready audit program is at [Tech-Audit/NACSA/](../Tech-Audit/NACSA/) — Excel AWP workbook (28 sheets, automated scoring) + Word report template. For methodology, see [Rating-and-Conclusion-Methodology.md](../Tech-Audit/NACSA/Work-Program/Rating-and-Conclusion-Methodology.md). Sector CoPs are **unverified** — do not rely on sector data without obtaining official CoPs from NACSA.
 
 ## Audit Tracker (11 NCII Sectors)
 

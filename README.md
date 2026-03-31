@@ -11,10 +11,10 @@ This repository follows the **GRC Portfolio v2.0 Standardized Schema**, optimize
 Data is structured to maintain a strict bidirectional mapping:
 `Cyber Security Act (Act 854) Section` $\leftrightarrow$ `NCII Global Control` $\leftrightarrow$ `Audit Evidence` $\leftrightarrow$ `Artifact Template`
 
-> **Control structure context**: The primary control structure is the CoP Template (18 domains, 4.0-21.0) issued under s22 of Act 854. The NCSB v1.4 (15 categories, 33 elements, ~122 sub-requirements) serves as the baseline test criteria. The 53 controls in `library.json` are an earlier indicative mapping that predates the CoP alignment; see the [Tech-Audit/NACSA audit work program](../Tech-Audit/NACSA/) for the fieldwork-ready structure aligned to the CoP and NCSB.
+> **Control structure context**: The primary control structure is the CoP Template (18 domains, 4.0-21.0) issued under s22 of Act 854. The control library (`library.json` v3.1) contains 67 controls mapped to 160 AWP requirements with control objectives, sampling guidance, and risk tier classification. See the [Tech-Audit/NACSA audit work program](../Tech-Audit/NACSA/) for the fieldwork-ready structure.
 
 ### Data Layers
-- **Controls (`/controls/library.json`):** 53 controls re-aligned to Act 854 (specifically s26 incident notification) using the unified schema.
+- **Controls (`/controls/library.json`):** 67 controls (v3.1) aligned to CoP Template with awpRequirements mapping, riskTier, controlObjective, whatGoodLooksLike, keyRiskIfAbsent, and samplingGuidance fields.
 - **Evidence (`/evidence/index.json`):** 116 items mapped across 56 sections, bound to 11 sectoral Codes of Practice (COP).
 - **Templates (`/templates/`):** 120 Markdown artifacts including NCII-specific reporting forms.
 
@@ -115,7 +115,7 @@ nacsa/
 | Requirements | 7 | index.json + 6 by-part files (46 sections) |
 | Evidence | 1 | 116 evidence items across 56 sections |
 | Artifacts | 2 | 120 artifacts + section map |
-| Controls | 3 | 15 domains, 53 controls + section map |
+| Controls | 3 | 18 CoP domains, 67 controls (v3.1) + section map |
 | Penalties | 1 | 20 penalty provisions |
 | Cross-references | 4 | Framework mappings + regulatory mappings |
 | Risk Management | 5 | Methodology, risk matrix, 20-risk register, checklist, treatment options |
@@ -180,7 +180,7 @@ The Risk Management section provides NCII operators with a structured risk asses
 Issued under s15, covering NCII registration, risk assessment methodology, audit standards, incident notification, information sharing, service provider obligations, CoP development, vulnerability disclosure, threat intelligence sharing, and NCII asset categorization.
 
 ### Codes of Practice (11)
-Sector-specific CoPs under s22, with varying status: published (Banking & Finance), template issued (Government, ICT, Energy), draft (Transport, Defence, Healthcare, Water & Sewerage), pending (Trade/Industry/Economy, Agriculture, Science & Technology).
+Sector-specific CoPs under s22. All 11 sector CoP files in this repository are **constructed-indicative** -- they are based on the CoP Template structure and have NOT been verified against any officially published sector CoP. CoP publication status per sector is unverified. Sector-specific CoPs must be obtained directly from NACSA or the relevant sector lead before use in any engagement.
 
 ## Audit Methodology
 

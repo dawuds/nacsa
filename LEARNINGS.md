@@ -118,7 +118,7 @@ The Audit Package pattern is **documented with data linkages in place**:
 
 - `artifacts/inventory.json`: 120 artifacts with `controlSlugs[]` added — median 2 slugs per artifact, curated semantic mappings
 - `evidence/index.json`: 116 evidence items across 56 sections — `artifactSlugs[]` added, 1-2 artifact links per item (expanded from 9/64 to 56/64 section coverage)
-- `controls/library.json`: 53 controls across 15 domains — broken directive references cleaned (100 removed, 5 valid kept)
+- `controls/library.json`: expanded from 53 to 67 controls (v3.1) across 18 CoP domains — reconciled with 160 AWP requirements, added controlObjective, whatGoodLooksLike, keyRiskIfAbsent, riskTier, samplingGuidance fields
 - `app.js`: Audit Package UI implemented in `renderControlDetail()` with accordion-based artifact cards and evidence checklist
 
 **Fixed issues:**
